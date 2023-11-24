@@ -8,7 +8,8 @@ const educationData = {
   certificates: [
     {
       certificationName: "IBM Full Stack Software Developer Certificate",
-      certificateLink: "",
+      certificateLink:
+        "https://coursera.org/share/2c288e462af814df334a75f4e59cbfe6",
       completionDate: "Nov 11, 2023",
     },
   ],
