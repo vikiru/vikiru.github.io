@@ -4,8 +4,8 @@ import projectData from "../../assets/projects";
 
 function ProjectContainer() {
   const projects = projectData.projects;
-  const projectDisplay = (
-    <div className="h-screen w-screen overflow-y-auto overflow-x-hidden bg-black">
+  return (
+    <div className="overflow-x-hidden overflow-y-hidden bg-black">
       <h1 className="section-text">Projects</h1>
       <div className="flex flex-col">
         {/* Project Info Div */}
@@ -16,7 +16,6 @@ function ProjectContainer() {
       </div>
     </div>
   );
-  return projectDisplay;
 }
 
 export default ProjectContainer;
