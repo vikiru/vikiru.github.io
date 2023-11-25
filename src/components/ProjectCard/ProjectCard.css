@@ -19,10 +19,6 @@
         @apply text-right uppercase text-slate-100 font-thin
     }
 
-    .section-text {
-        @apply text-left text-xl uppercase text-white underline font-sans
-    }
-
     .social-icon {
         @apply pt-4 text-3xl text-black dark:text-white
     }

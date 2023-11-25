@@ -5,7 +5,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
+    <footer id="contact">
       <p className="pb-2 text-lg uppercase text-white">Connect with me</p>
       <div>
         <a href="https://github.com/vikiru">
