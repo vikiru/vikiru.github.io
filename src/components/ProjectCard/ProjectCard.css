@@ -8,7 +8,7 @@
     }
 
     .project-name {
-        @apply font-semibold uppercase text-black font-sans
+        @apply font-semibold uppercase text-black font-sans p-1
     }
 
     .project-desc {
@@ -17,10 +17,6 @@
 
     .project-dates {
         @apply text-right uppercase text-slate-100 font-thin
-    }
-
-    .social-icon {
-        @apply pt-4 text-3xl text-black dark:text-white
     }
 
     .shield-image {

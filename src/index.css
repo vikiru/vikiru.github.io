@@ -21,5 +21,13 @@ code {
 }
 
 .nav-text {
-  @apply text-white uppercase hover:text-black
+  @apply text-white uppercase ease-in-out-anim
+}
+
+.social-icon {
+  @apply pt-4 text-3xl text-black dark:text-white ease-in-out-anim
+}
+
+.ease-in-out-anim {
+  @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
 }

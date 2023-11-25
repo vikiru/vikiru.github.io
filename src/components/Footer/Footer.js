@@ -11,13 +11,13 @@ function Footer() {
         <a href="https://github.com/vikiru">
           <FontAwesomeIcon
             icon={faGithub}
-            className="pr-2 text-3xl text-white"
+            className="ease-in-out-anim pr-2 text-3xl text-white"
           />
         </a>
         <a href="https://www.linkedin.com/in/viskirubakaran/">
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="pr-2 text-3xl text-white"
+            className="ease-in-out-anim pr-2 text-3xl text-white"
           />
         </a>
       </div>
