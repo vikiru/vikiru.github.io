@@ -25,7 +25,7 @@ const projectData = {
     },
     {
       name: "CodeSmell",
-      githubUrl: "https://github.com/vikiru/Urvo",
+      githubUrl: "https://github.com/vikiru/CodeSmell",
       documentationUrl:
         "https://vikiru.github.io/CodeSmell/jfx/module-summary.html",
       description:
