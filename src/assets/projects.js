@@ -15,8 +15,8 @@ const projectData = {
         "Verified external API functionality by developing tests using Mocha and Chai",
       ],
       technologiesUsed: [
-        "Node.js",
-        "discord.js",
+        "Nodejs",
+        "discordjs",
         "SQLite",
         "Sequelize",
         "Mocha",
@@ -45,7 +45,7 @@ const projectData = {
         "Maven",
         "JUnit",
         "Python",
-        "JavaFX WebView",
+        "JavaFX",
         "HTML",
         "CSS",
         "JavaScript",
@@ -83,7 +83,7 @@ const projectData = {
       technologiesUsed: [
         "Java",
         "Maven",
-        "Spring Boot",
+        "Spring",
         "Thymeleaf",
         "JUnit",
         "HTML",
