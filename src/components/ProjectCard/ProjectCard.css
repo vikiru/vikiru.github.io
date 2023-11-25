@@ -8,11 +8,11 @@
     }
 
     .project-name {
-        @apply font-semibold uppercase text-black font-sans p-1
+        @apply font-semibold uppercase text-black font-sans pl-1
     }
 
     .project-desc {
-        @apply text-sm text-slate-50 pt-1 pb-1 font-mono text-justify
+        @apply text-sm text-slate-50 pt-1 pb-1 font-mono text-justify pl-1
     }
 
     .project-dates {
@@ -20,6 +20,6 @@
     }
 
     .shield-image {
-        @apply pt-1 h-8 object-contain lg:h-6 2xl:h-7
+        @apply pt-1 h-8 object-contain lg:h-6 2xl:h-7 pl-1
     }
 }

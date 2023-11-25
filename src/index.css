@@ -21,7 +21,7 @@ code {
 }
 
 .nav-text {
-  @apply text-white uppercase ease-in-out-anim
+  @apply text-white uppercase ease-in-out-anim hover:text-black hover:text-xl
 }
 
 .social-icon {
