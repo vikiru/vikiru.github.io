@@ -5,8 +5,8 @@ import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <ProjectContainer></ProjectContainer>
+    <div className="App h-screen w-screen overflow-x-hidden bg-black">
+      <ProjectContainer />
     </div>
   );
 }
