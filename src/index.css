@@ -15,3 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.section-text {
+  @apply text-left text-xl uppercase text-white underline font-sans
+}
+
+.nav-text {
+  @apply text-white uppercase hover:text-black
+}
