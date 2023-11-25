@@ -2,24 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .project-card {
-        @apply m-2 rounded-xl bg-blue-400 p-5 text-white
-    }
+.project-card {
+    @apply m-2 rounded-xl bg-blue-400 p-5 text-white
+}
 
-    .project-name {
-        @apply font-semibold uppercase text-black font-sans pl-1
-    }
+.project-name {
+    @apply font-semibold uppercase text-black font-sans pl-1
+}
 
-    .project-desc {
-        @apply text-sm text-slate-50 pt-1 pb-1 font-mono text-justify pl-1
-    }
+.project-desc {
+    @apply text-sm text-slate-50 pt-1 pb-1 font-mono text-justify pl-1
+}
 
-    .project-dates {
-        @apply text-right uppercase text-slate-100 font-thin
-    }
+.project-dates {
+    @apply text-right uppercase text-slate-100 font-thin
+}
 
-    .shield-image {
-        @apply pt-1 h-8 object-contain lg:h-6 2xl:h-7 pl-1
-    }
+.shield-image {
+    @apply pt-1 h-8 object-contain lg:h-6 2xl:h-7 pl-1
 }
