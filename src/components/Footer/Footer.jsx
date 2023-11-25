@@ -2,6 +2,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,6 +21,12 @@ function Footer() {
             <FontAwesomeIcon
               icon={faLinkedin}
               className="ease-in-out-anim pr-2 text-3xl text-white"
+            />
+          </a>
+          <a href="mailto:viskirubakaran@outlook.com">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="ease-in-out-anime pr-2 text-3xl text-white"
             />
           </a>
           <div className=" pt-1">
