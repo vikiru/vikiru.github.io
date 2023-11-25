@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .project-card {
+        @apply m-2 rounded-xl bg-blue-400 p-5 text-white
+    }
+
+    .project-name {
+        @apply font-semibold uppercase text-black font-sans
+    }
+
+    .project-desc {
+        @apply text-sm text-slate-50 pt-1 pb-1 font-mono text-justify
+    }
+
+    .project-dates {
+        @apply text-right uppercase text-slate-100 font-thin
+    }
+
+    .section-text {
+        @apply text-left text-xl uppercase text-white underline font-sans
+    }
+
+    .social-icon {
+        @apply pt-4 text-3xl text-black dark:text-white
+    }
+
+    .shield-image {
+        @apply pt-1 h-8 object-contain lg:h-6 2xl:h-7
+    }
+}
