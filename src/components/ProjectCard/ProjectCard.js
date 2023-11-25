@@ -24,11 +24,13 @@ function ProjectCard(props) {
         <div className="grid grid-cols-1 lg:flex">
           {project.technologiesUsed.map((technology) =>
             shieldImages[`${technology}`] != "" ? (
-              <img
-                key={technology}
-                src={shieldImages[`${technology}`]}
-                className="shield-image"
-              ></img>
+              <div key={technology} className="relative">
+                <img
+                  src={shieldImages[`${technology}`]}
+                  className="shield-image w-full"
+                  alt={technology}
+                ></img>
+              </div>
             ) : null,
           )}
         </div>
