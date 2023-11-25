@@ -7,6 +7,9 @@ function NavBar() {
         <a href="#" className="nav-text">
           Home
         </a>
+        <a href="#skills" className="nav-text">
+          Skills
+        </a>
         <a href="#projects" className="nav-text">
           Projects
         </a>
