@@ -19,6 +19,7 @@ const skillsData = {
   ide: ["IntelliJ", "Eclipse"],
   editor: ["VSCode"],
   hosting: ["GitHub Pages", "Heroku", "Render"],
+  os: ["Windows", "Ubuntu"],
 };
 
 export default skillsData;
