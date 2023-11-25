@@ -60,11 +60,13 @@ function ProjectContainer() {
               </div>
             </div>
             <details>
-              <summary className=" text-black">View My Accomplishments</summary>
+              <summary className=" font-mono text-black">
+                View My Accomplishments
+              </summary>
               <ul className="list-disc">
                 {project.accomplishments.map((accomplishment) => (
                   <li
-                    className="text-left text-sm text-black"
+                    className="text-left font-mono text-sm text-black"
                     key={accomplishment}
                   >
                     {accomplishment}
