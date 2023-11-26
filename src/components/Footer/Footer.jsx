@@ -21,13 +21,21 @@ function Footer() {
               className="lg:ease-in-out-anim pr-2 text-3xl text-white"
             />
           </a>
-          <a href="https://www.linkedin.com/in/viskirubakaran/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/viskirubakaran/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               icon={faLinkedin}
               className="lg:ease-in-out-anim pr-2 text-3xl text-white"
             />
           </a>
-          <a href="mailto:viskirubakaran@outlook.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="mailto:viskirubakaran@outlook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               icon={faEnvelope}
               className="lg:ease-in-out-anim pr-2 text-3xl text-white"
