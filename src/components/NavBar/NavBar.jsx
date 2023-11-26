@@ -10,14 +10,17 @@ function NavBar() {
   };
 
   return (
-    <nav className="snap-center bg-sky-500/80">
-      <div className="flex items-center justify-between">
+    <nav className="mb-2 ml-2 mr-2 snap-center bg-sky-500/80" id="mainNav">
+      <div className="ml-2 mr-2 flex items-center justify-between">
         <div className="xs:block lg:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
-              <FontAwesomeIcon icon={faBars} className="text-white" />
+              <FontAwesomeIcon
+                icon={faBars}
+                className="pb-1 pl-1 pt-1 text-white"
+              />
             ) : (
-              <FontAwesomeIcon icon={faX} className="text-white" />
+              <FontAwesomeIcon icon={faX} className="pl-1 pt-1 text-white" />
             )}
           </button>
         </div>
