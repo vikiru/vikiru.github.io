@@ -38,17 +38,17 @@ function NavBar() {
           </a>
         </div>
       ) : (
-        <div className="sm:hidden lg:flex lg:items-center lg:justify-center lg:px-4 lg:pb-3 lg:pt-2">
+        <div className="px-4 pb-3 pt-2 sm:hidden lg:flex lg:items-center lg:justify-center">
           <a href="#" className="nav-text block">
             Home
           </a>
-          <a href="#skills" className="nav-text ml-2 mt-0 block">
+          <a href="#skills" className="nav-text block lg:ml-2">
             Skills
           </a>
-          <a href="#projects" className="nav-text ml-2 block">
+          <a href="#projects" className="nav-text lg: ml-2 block">
             Projects
           </a>
-          <a href="#contact" className="nav-text ml-2 block">
+          <a href="#contact" className="nav-text block lg:ml-2">
             Contact
           </a>
         </div>
