@@ -18,18 +18,18 @@ code {
 
 @layer utilities {
   .ease-in-out-anim {
-    @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+    @apply transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
   }
 }
 
 .section-text {
-  @apply text-left text-xl uppercase text-white underline font-sans
+  @apply text-left font-sans text-xl uppercase text-white underline;
 }
 
 .nav-text {
-  @apply text-white uppercase lg:ease-in-out-anim lg:hover:text-black
+  @apply lg:ease-in-out-anim uppercase text-white lg:hover:text-black;
 }
 
 .social-icon {
-  @apply pt-4 text-3xl text-black dark:text-white lg:ease-in-out-anim
+  @apply lg:ease-in-out-anim pt-4 text-3xl text-black dark:text-white;
 }
