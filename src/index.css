@@ -31,5 +31,5 @@ code {
 }
 
 .social-icon {
-  @apply lg:ease-in-out-anim pt-4 text-3xl text-black dark:text-white;
+  @apply lg:ease-in-out-anim pt-4 text-3xl text-black;
 }
