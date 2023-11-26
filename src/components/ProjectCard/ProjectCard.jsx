@@ -50,10 +50,10 @@ function ProjectCard(props) {
         <summary className="font-mono capitalize text-black">
           View My Accomplishments
         </summary>
-        <ul className="list-disc marker:text-white">
+        <ul className="list-disc marker:text-black">
           {project.accomplishments.map((accomplishment) => (
             <li
-              className="text-left font-mono text-sm text-black"
+              className="text-left font-mono text-sm text-slate-50"
               key={accomplishment}
             >
               {accomplishment}
