@@ -11,7 +11,7 @@ function About() {
             <p className="font-mono text-2xl text-black">
               {aboutData.greeting}
             </p>
-            <p className="md:pb-4 font-mono text-4xl text-slate-100 sm:pb-2">
+            <p className="font-mono text-4xl text-slate-100 sm:pb-2 md:pb-4">
               {aboutData.fullName}
             </p>
             <p className="font-mono text-2xl text-black">I am a</p>

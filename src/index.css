@@ -24,7 +24,7 @@ code {
 
 @layer components {
   .section-text {
-    @apply lg:text-left font-sans text-xl uppercase text-white lg:pl-5 lg:pt-2 underline xs:text-center xs:pl-0;
+    @apply font-sans text-xl uppercase text-white underline xs:pl-0 xs:text-center lg:pl-5 lg:pt-2 lg:text-left;
   }
 
   .nav-text {
