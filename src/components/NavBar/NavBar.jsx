@@ -1,22 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="mb-2 flex justify-around bg-blue-400 py-4">
-      <div className="space-x-8">
-        <a href="#" className="nav-text">
-          Home
-        </a>
-        <a href="#skills" className="nav-text">
-          Skills
-        </a>
-        <a href="#projects" className="nav-text">
-          Projects
-        </a>
-        <a href="#contact" className="nav-text">
-          Contact
-        </a>
+    <nav className="bg-blue-400">
+      <div className="flex items-center justify-between">
+        <div className="lg:hidden">
+          <button onClick={handleClick}>
+            {!isOpen ? (
+              <FontAwesomeIcon icon={faBars} className="text-white" />
+            ) : (
+              <FontAwesomeIcon icon={faX} className="text-white" />
+            )}
+          </button>
+        </div>
       </div>
+      {isOpen ? (
+        <div className="block px-4 pb-3 pt-2">
+          <a href="#" className="nav-text block">
+            Home
+          </a>
+          <a href="#skills" className="nav-text block">
+            Skills
+          </a>
+          <a href="#projects" className="nav-text block">
+            Projects
+          </a>
+          <a href="#contact" className="nav-text block">
+            Contact
+          </a>
+        </div>
+      ) : (
+        <div className="flex items-center justify-center px-4 pb-3 pt-2">
+          <a href="#" className="nav-text block">
+            Home
+          </a>
+          <a href="#skills" className="nav-text ml-2 mt-0 block">
+            Skills
+          </a>
+          <a href="#projects" className="nav-text ml-2 block">
+            Projects
+          </a>
+          <a href="#contact" className="nav-text ml-2 block">
+            Contact
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
