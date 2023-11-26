@@ -45,7 +45,7 @@ function NavBar() {
           <a href="#skills" className="nav-text block lg:ml-2">
             Skills
           </a>
-          <a href="#projects" className="nav-text lg:ml-2 block">
+          <a href="#projects" className="nav-text block lg:ml-2">
             Projects
           </a>
           <a href="#contact" className="nav-text block lg:ml-2">
