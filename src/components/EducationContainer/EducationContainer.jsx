@@ -8,17 +8,21 @@ function EducationContainer() {
   return (
     <section className="snap-center" id="education">
       <p className="section-text">Education</p>
-      <section className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl bg-blue-400 p-2">
+      <section className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl bg-sky-500/80 p-2">
         <section
           id="university-enrollment-info"
           className="flex justify-between"
         >
-          <p className="pl-1 font-sans text-lg uppercase text-black">
-            {educationData.universityName}
-          </p>
-          <p className="font-thin uppercase text-slate-100">
-            {educationData.enrollmentStart} - {educationData.enrollmentEnd}
-          </p>
+          <section>
+            <p className="pl-1 font-sans text-lg uppercase text-black">
+              {educationData.universityName}
+            </p>
+          </section>
+          <section>
+            <p className="font-thin uppercase text-slate-100">
+              {educationData.enrollmentStart} - {educationData.enrollmentEnd}
+            </p>
+          </section>
         </section>
         <section id="university-degree" className="flex pb-1">
           <p className="left-0 pl-1 font-mono italic text-slate-50">
@@ -29,12 +33,16 @@ function EducationContainer() {
         {certificates.map((certificate) => (
           <section id="certificates" key={certificate}>
             <div className="flex justify-between">
-              <p className="pl-1 font-sans text-lg uppercase text-black">
-                {certificate.provider}
-              </p>
-              <p className="font-thin uppercase text-slate-100">
-                {certificate.startDate} - {certificate.completionDate}
-              </p>
+              <section>
+                <p className="font-sans text-lg uppercase text-black sm:pl-11 md:pl-1">
+                  {certificate.provider}
+                </p>
+              </section>
+              <section className="sm:pl-10">
+                <p className="font-thin uppercase text-slate-100">
+                  {certificate.startDate} - {certificate.completionDate}
+                </p>
+              </section>
             </div>
             <section className="flex pb-1">
               <p className="left-0 pl-1 font-mono italic text-slate-50">
