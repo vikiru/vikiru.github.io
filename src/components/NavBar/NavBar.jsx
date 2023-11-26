@@ -44,7 +44,7 @@ function NavBar() {
           </a>
         </div>
       ) : (
-        <div className="xs:hidden px-4 pb-3 pt-2 lg:flex lg:items-center lg:justify-center">
+        <div className="px-4 pb-3 pt-2 xs:hidden lg:flex lg:items-center lg:justify-center">
           <a href="#" className="nav-text block">
             Home
           </a>
