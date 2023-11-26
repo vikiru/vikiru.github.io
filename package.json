@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . *.js --fix",
+    "lint": "eslint ./src/**/*.{html,js,jsx} --fix",
     "prettier": "prettier --write .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
