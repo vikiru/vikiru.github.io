@@ -1,5 +1,6 @@
 import "./App.css";
 
+import About from "./components/About/About";
 import EducationContainer from "./components/EducationContainer/EducationContainer";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App h-screen w-screen overflow-x-hidden bg-black">
       <NavBar />
+      <About />
       <EducationContainer />
       <SkillsContainer />
       <ProjectContainer />
