@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <nav className="bg-blue-400">
       <div className="flex items-center justify-between">
-        <div className="xxs:block lg:hidden">
+        <div className="xs:block lg:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon icon={faBars} className="text-white" />
@@ -41,7 +41,7 @@ function NavBar() {
           </a>
         </div>
       ) : (
-        <div className="px-4 pb-3 pt-2 xxs:hidden lg:flex lg:items-center lg:justify-center">
+        <div className="xs:hidden px-4 pb-3 pt-2 lg:flex lg:items-center lg:justify-center">
           <a href="#" className="nav-text block">
             Home
           </a>
