@@ -5,7 +5,7 @@ import projectData from "../../assets/projects";
 function ProjectContainer() {
   const projects = projectData.projects;
   return (
-    <div id="projects" className="overflow-x-hidden overflow-y-hidden bg-black">
+    <section id="projects" className="snap-center">
       <h1 className="section-text">Projects</h1>
       <div className="flex flex-col">
         {/* Project Info Div */}
@@ -14,7 +14,7 @@ function ProjectContainer() {
         ))}
         ;
       </div>
-    </div>
+    </section>
   );
 }
 

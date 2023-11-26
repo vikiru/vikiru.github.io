@@ -7,10 +7,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="m-2 rounded-xl">
-      <footer id="contact">
+    <section id="contact" className="m-2 snap-center rounded-xl">
+      <footer>
         <p className="pb-2 text-lg uppercase text-white">Connect with me</p>
-        <div>
+        <section id="social-icons">
           <a href="https://github.com/vikiru">
             <FontAwesomeIcon
               icon={faGithub}
@@ -36,9 +36,9 @@ function Footer() {
               </span>
             </p>
           </div>
-        </div>
+        </section>
       </footer>
-    </div>
+    </section>
   );
 }
 

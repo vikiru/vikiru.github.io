@@ -3,11 +3,11 @@ import aboutData from "./../../assets/about";
 
 function About() {
   return (
-    <div className="bg-black-400" id="about">
+    <section className="snap-center" id="about">
       <p className="section-text">About</p>
       <div className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl bg-blue-400 p-2">
         <div className="md:flex lg:grid lg:grid-cols-2 lg:gap-4">
-          <div>
+          <section id="about-greeting">
             <p className="font-mono text-2xl text-black">
               {aboutData.greeting}
             </p>
@@ -15,18 +15,18 @@ function About() {
               {aboutData.fullName}
             </p>
             <p className="font-mono text-2xl text-black">I am a</p>
-            <p className="font-mono text-4xl text-slate-100">
+            <p className="font-mono text-4xl tracking-[15px] text-slate-100">
               {aboutData.title}
             </p>
-          </div>
-          <div>
+          </section>
+          <section id="hero">
             <p className="text-justify font-mono text-slate-50">
               {aboutData.hero}
             </p>
-          </div>
+          </section>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

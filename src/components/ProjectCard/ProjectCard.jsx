@@ -38,7 +38,7 @@ function ProjectCard(props) {
         <div className="pt-4 2xl:flex">
           {project.githubUrl != "" && (
             <a href={project.githubUrl}>
-            <FontAwesomeIcon icon={faGithub} className="social-icon pr-1" />
+              <FontAwesomeIcon icon={faGithub} className="social-icon pr-1" />
             </a>
           )}
           {project.documentationUrl != "" && (

@@ -6,35 +6,38 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 function EducationContainer() {
   const certificates = educationData.certificates;
   return (
-    <div className="bg-black-400" id="education">
+    <section className="snap-center" id="education">
       <p className="section-text">Education</p>
-      <div className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl bg-blue-400 p-2">
-        <div className="flex justify-between">
-          <p className="font-sans text-lg uppercase text-black">
+      <section className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl bg-blue-400 p-2">
+        <section
+          id="university-enrollment-info"
+          className="flex justify-between"
+        >
+          <p className="pl-1 font-sans text-lg uppercase text-black">
             {educationData.universityName}
           </p>
           <p className="font-thin uppercase text-slate-100">
             {educationData.enrollmentStart} - {educationData.enrollmentEnd}
           </p>
-        </div>
-        <div className="flex pb-1">
-          <p className="left-0 font-mono italic text-slate-50">
+        </section>
+        <section id="university-degree" className="flex pb-1">
+          <p className="left-0 pl-1 font-mono italic text-slate-50">
             {educationData.degree} - {educationData.acronym}.,{" "}
             {educationData.degreeProgram}
           </p>
-        </div>
+        </section>
         {certificates.map((certificate) => (
-          <div key={certificate}>
+          <section id="certificates" key={certificate}>
             <div className="flex justify-between">
-              <p className="font-sans text-lg uppercase text-black">
+              <p className="pl-1 font-sans text-lg uppercase text-black">
                 {certificate.provider}
               </p>
               <p className="font-thin uppercase text-slate-100">
-                {certificate.completionDate}
+                {certificate.startDate} - {certificate.completionDate}
               </p>
             </div>
-            <div className="flex pb-1">
-              <p className="left-0 font-mono italic text-slate-50">
+            <section className="flex pb-1">
+              <p className="left-0 pl-1 font-mono italic text-slate-50">
                 {certificate.certificationName}{" "}
                 <span>
                   <a href={certificate.certificateLink}>
@@ -45,11 +48,11 @@ function EducationContainer() {
                   </a>
                 </span>
               </p>
-            </div>
-          </div>
+            </section>
+          </section>
         ))}
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
 
