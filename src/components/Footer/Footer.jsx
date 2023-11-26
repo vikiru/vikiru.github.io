@@ -11,19 +11,23 @@ function Footer() {
       <footer>
         <p className="pb-2 text-lg uppercase text-white">Connect with me</p>
         <section id="social-icons">
-          <a href="https://github.com/vikiru">
+          <a
+            href="https://github.com/vikiru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               icon={faGithub}
               className="lg:ease-in-out-anim pr-2 text-3xl text-white"
             />
           </a>
-          <a href="https://www.linkedin.com/in/viskirubakaran/">
+          <a href="https://www.linkedin.com/in/viskirubakaran/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faLinkedin}
               className="lg:ease-in-out-anim pr-2 text-3xl text-white"
             />
           </a>
-          <a href="mailto:viskirubakaran@outlook.com">
+          <a href="mailto:viskirubakaran@outlook.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={faEnvelope}
               className="lg:ease-in-out-anim pr-2 text-3xl text-white"

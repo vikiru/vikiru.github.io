@@ -37,12 +37,20 @@ function ProjectCard(props) {
         {/* Project URLs */}
         <div className="pt-4 2xl:flex">
           {project.githubUrl != "" && (
-            <a href={project.githubUrl}>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} className="social-icon pr-1" />
             </a>
           )}
           {project.documentationUrl != "" && (
-            <a href={project.documentationUrl}>
+            <a
+              href={project.documentationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faBookOpen} className="social-icon" />
             </a>
           )}

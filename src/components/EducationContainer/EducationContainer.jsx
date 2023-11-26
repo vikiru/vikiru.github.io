@@ -48,7 +48,11 @@ function EducationContainer() {
               <p className="left-0 pl-1 font-mono italic text-slate-50">
                 {certificate.certificationName}{" "}
                 <span>
-                  <a href={certificate.certificateLink}>
+                  <a
+                    href={certificate.certificateLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={faLink}
                       className="ease-in-out-anim text-md pr-2 text-black"
