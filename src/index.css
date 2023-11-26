@@ -22,14 +22,16 @@ code {
   }
 }
 
-.section-text {
-  @apply text-left font-sans text-xl uppercase text-white underline;
-}
+@layer components {
+  .section-text {
+    @apply lg:text-left font-sans text-xl uppercase text-white lg:pl-5 lg:pt-2 underline xs:text-center xs:pl-0;
+  }
 
-.nav-text {
-  @apply lg:ease-in-out-anim uppercase text-white lg:hover:text-black;
-}
+  .nav-text {
+    @apply lg:ease-in-out-anim uppercase text-white lg:hover:text-black;
+  }
 
-.social-icon {
-  @apply lg:ease-in-out-anim pt-4 text-3xl text-black;
+  .social-icon {
+    @apply lg:ease-in-out-anim pt-4 text-3xl text-black;
+  }
 }

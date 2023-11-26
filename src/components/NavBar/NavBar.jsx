@@ -10,7 +10,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-blue-400">
+    <nav className="snap-center bg-sky-500/80">
       <div className="flex items-center justify-between">
         <div className="xs:block lg:hidden">
           <button onClick={handleClick}>

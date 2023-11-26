@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .project-card {
-  @apply m-2 rounded-xl bg-blue-400 p-5 text-white;
+  @apply m-2 rounded-xl bg-sky-500/80 p-5 text-white;
 }
 
 .project-name {
