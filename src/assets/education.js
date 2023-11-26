@@ -12,6 +12,7 @@ const educationData = {
       provider: "Coursera",
       certificateLink:
         "https://coursera.org/share/2c288e462af814df334a75f4e59cbfe6",
+      startDate: "Oct 2023",
       completionDate: "Nov 2023",
     },
   ],
