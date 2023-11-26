@@ -30,7 +30,7 @@
     "lint": "eslint ./src/**/*.{html,js,jsx} --fix",
     "prettier": "prettier --write .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -m \"Deployed to Github Pages using gh-pages package\""
   },
   "eslintConfig": {
     "extends": [
