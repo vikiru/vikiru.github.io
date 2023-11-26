@@ -11,7 +11,7 @@ import SkillsContainer from "./components/SkillsContainer/SkillsContainer";
 
 function App() {
   return (
-    <div className="App z-0 h-screen w-screen snap-y snap-mandatory overflow-x-hidden scroll-smooth bg-gray-800 scrollbar scrollbar-track-gray-800/20 scrollbar-thumb-sky-500/80">
+    <div className="text-center scrollbar scrollbar-track-gray-800/20 scrollbar-thumb-sky-500/80 h-screen w-screen snap-y snap-mandatory overflow-x-hidden scroll-smooth bg-gray-800">
       <NavBar />
       <About />
       <EducationContainer />

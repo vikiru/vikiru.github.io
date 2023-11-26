@@ -7,12 +7,12 @@ function ProjectContainer() {
   return (
     <section id="projects" className="snap-center">
       <h1 className="section-text">Projects</h1>
-      <div className="flex flex-col">
+      <section className="grid grid-cols-1">
         {/* Project Info Div */}
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
-      </div>
+      </section>
     </section>
   );
 }
