@@ -1,4 +1,5 @@
 import "./App.css";
+import "./index.css";
 
 import About from "./components/About/About";
 import EducationContainer from "./components/EducationContainer/EducationContainer";
