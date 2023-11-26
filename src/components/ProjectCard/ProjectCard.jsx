@@ -10,7 +10,7 @@ import shieldImages from "../../assets/shieldImages";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <div className="project-card" key={project}>
+    <section className="project-card" key={project}>
       {/* Project Name, Start - End Section */}
       <div className="flex justify-between">
         <p className="project-name">{project.name}</p>
@@ -63,7 +63,7 @@ function ProjectCard(props) {
           ))}
         </ul>
       </details>
-    </div>
+    </section>
   );
 }
 
