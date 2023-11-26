@@ -1,6 +1,17 @@
 const projectData = {
   projects: [
     {
+      name: "Portfolio Website",
+      githubUrl: "https://github.com/vikiru/vikiru.github.io",
+      documentationUrl: "",
+      description:
+        "Personal Portfolio Website | Built with React and TailwindCSS",
+      startDate: "Nov 2023",
+      endDate: "Dec 2023",
+      accomplishments: [],
+      technologiesUsed: ["React", "TailwindCSS"],
+    },
+    {
       name: "Urvo",
       githubUrl: "https://github.com/vikiru/Urvo",
       documentationUrl: "https://vikiru.github.io/Urvo/",
