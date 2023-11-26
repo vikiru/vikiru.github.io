@@ -27,6 +27,9 @@ function NavBar() {
           <a href="#" className="nav-text block">
             Home
           </a>
+          <a href="#education" className="nav-text block">
+            Education
+          </a>
           <a href="#skills" className="nav-text block">
             Skills
           </a>
@@ -41,6 +44,9 @@ function NavBar() {
         <div className="px-4 pb-3 pt-2 sm:hidden lg:flex lg:items-center lg:justify-center">
           <a href="#" className="nav-text block">
             Home
+          </a>
+          <a href="#education" className="nav-text block lg:ml-2">
+            Education
           </a>
           <a href="#skills" className="nav-text block lg:ml-2">
             Skills
