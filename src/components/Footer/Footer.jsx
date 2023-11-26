@@ -26,7 +26,7 @@ function Footer() {
           <a href="mailto:viskirubakaran@outlook.com">
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="ease-in-out-anime pr-2 text-3xl text-white"
+              className="ease-in-out-anim pr-2 text-3xl text-white"
             />
           </a>
           <div className=" pt-1">
