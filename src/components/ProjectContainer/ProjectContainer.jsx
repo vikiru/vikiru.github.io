@@ -12,7 +12,6 @@ function ProjectContainer() {
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
-        ;
       </div>
     </section>
   );
