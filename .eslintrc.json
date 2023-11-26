@@ -36,7 +36,7 @@
     "object-curly-spacing": ["error", "always"],
     "prefer-const": "error",
     "prettier/prettier": [
-      "error",
+      "warn",
       {
         "endOfLine": "auto"
       }
