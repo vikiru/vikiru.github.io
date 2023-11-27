@@ -6,7 +6,7 @@ function SkillsContainer() {
   return (
     <section className="snap-center" id="skills">
       <p className="section-text">Skills</p>
-      <section className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl bg-sky-500/80 xs:grid xs:grid-cols-4 2xl:grid 2xl:grid-cols-7">
+      <section className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl xs:grid xs:grid-cols-4 2xl:grid 2xl:grid-cols-7">
         {Object.keys(skillsData).map((key) => (
           <section className="xs:m-2 2xl:block" key={key} id={key}>
             <p className="rounded uppercase text-white">{key}</p>
