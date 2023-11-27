@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+<h1 align="center">Visakan Kirubakaran <br> Portfolio</h1>
+
+<p align="center">
+	<a href="https://github.com/vikiru/vikiru.github.io/blob/main/LICENSE">
+		<img src="https://img.shields.io/badge/license-MIT-aqua" alt="MIT License Badge"/>
+	</a>
+	<a href="https://github.com/prettier/prettier">
+		<img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Code Style - Prettier"/>
+	</a>
+    <img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg" alt="wakatime"></img>
+</p>
+
+## 🌐 Portfolio Overview
+
+<p align="justify">My portfolio website serves as a comprehensive showcase of my expertise, abilities, and the breadth of my project experience. It’s crafted using the dynamic capabilities of React coupled with the aesthetic flexibility of TailwindCSS.</p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<details>
 
-In the project directory, you can run:
+<summary>View an overview of my portfolio here</summary>
 
-### `npm start`
+### 📄 About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Name**: Visakan Kirubakaran
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Title**: Software Developer
 
-### `npm test`
+### 🎓 Education
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Bachelor of Engineering - BEng., Software Engineering** - Carleton University (Sept 2018 - Apr 2023)
 
-### `npm run build`
+**IBM Full Stack Software Developer Certificate** - [Coursera](https://coursera.org/share/2c288e462af814df334a75f4e59cbfe6) (Oct 2023 - Nov 2023)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💡 Skills
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Languages**: Java, Python, HTML, CSS, JavaScript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Runtime**: Node.js
 
-### `npm run eject`
+**Frameworks**: Spring, JUnit5, Mocha, Chai, Django, Flask, React, TailwindCSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Libraries**: NumPy, SciPy, SimPy, Pandas, Chai
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Database**: MySQL, SQLite, MongoDB, Sequelize
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**DevOps**: CircleCI, GitHub Actions, Snyk
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Tools**: Maven, npm, pip, git, GitHub, GitHub Desktop, Postman, ESLint, Prettier
 
-## Learn More
+**Editor/IDE**: VSCode, IntelliJ, Eclipse
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Hosting**: GitHub Pages, Heroku, Render
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**OS**: Windows, Ubuntu
 
-### Code Splitting
+### 📚 Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+|                   Project Name                    |                                Technologies Used                                 |                            Link                            |
+| :-----------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------: |
+| Portfolio Website | `React`, `TailwindCSS` | [GitHub Repo](https://github.com/vikiru/vikiru.github.io) |
+|         Urvo \| Multi-purpose Discord Bot         |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 |       [GitHub Repo](https://github.com/vikiru/Urvo)        |
+|         CodeSmell \| Static Analysis Tool         | `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript` |     [GitHub Repo](https://github.com/vikiru/CodeSmell)     |
+| discrete-sim \| Manufacturing Facility Simulation |                       `Python`, `NumPy`, `SciPy`, `SimPy`                        |   [GitHub Repo](https://github.com/vikiru/discrete-sim)    |
+|   Mini-SurveyMonkey \| Spring Boot CRUD Web App   |       `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`        | [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey) |
+|       Elevator Simulator \| Threads and UDP       |                             `Java`, `Maven`, `JUnit`                             |                         `private`                          |
+|           digitalRisk \| MVC Swing Game           |                        `Java`, `Maven`, `JUnit`, `Swing`                         |    [GitHub Repo](https://github.com/flavji/digitalRisk)    |
 
-### Analyzing the Bundle Size
+### 📧 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ <p align="left">
+  <a href="https://www.linkedin.com/in/viskirubakaran/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+  <a href="https://wakatime.com/@vikiru">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+  <a href="https://linktr.ee/vikiru">
+    <img src="https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white">
+  </a>
+</p>
 
-### Making a Progressive Web App
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📖 Table of Contents
 
-### Advanced Configuration
+- [🌐 Portfolio Overview](#-portfolio-overview)
+	- [📄 About](#-about)
+	- [🎓 Education](#-education)
+	- [💡 Skills](#-skills)
+	- [📚 Projects](#-projects)
+	- [📧 Contact](#-contact)
+- [📖 Table of Contents](#-table-of-contents)
+- [📝 Prerequisites](#-prerequisites)
+- [⚡ Setup](#-setup)
+- [🚀 Run](#-run)
+- [✨ Acknowledgements](#-acknowledgements)
+- [©️ License](#️-license)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 Prerequisites
 
-### Deployment
+Ensure that the following dependencies are installed onto your machine.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Node.js](https://nodejs.org/en/download)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⚡ Setup
+
+1. Clone this repository to your local machine.
+```bash
+git clone https://github.com/vikiru/vikiru.github.io.git
+cd vikiru.github.io
+```
+2. Download and install all dependencies.
+```bash
+npm install
+```
+
+## 🚀 Run
+
+The portfolio website can be started locally via the following command:
+
+```bash
+npm run start
+```
+
+## ✨ Acknowledgements
+
+- [React.js](https://fontawesome.com)
+- [Font Awesome Icons](https://fontawesome.com/)
+- [Shields Badges](https://github.com/badges/shields)
+- [TailwindCSS](https://tailwindcss.com/)
+- [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
+
+## ©️ License
+
+The contents of this repository are licensed under the terms and conditions of the [MIT](https://choosealicense.com/licenses/mit/) license.
+
+[MIT](LICENSE) &copy; 2023-present Visakan Kirubakaran.
