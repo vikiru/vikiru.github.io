@@ -5,7 +5,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/vikiru.github.io",
       documentationUrl: "",
       description:
-        "Personal Portfolio Website | Built with React and TailwindCSS",
+        "Personal Portfolio Website | Built with React and TailwindCSS.",
       startDate: "Nov 2023",
       endDate: "Dec 2023",
       accomplishments: [],
@@ -15,8 +15,7 @@ const projectData = {
       name: "Urvo",
       githubUrl: "https://github.com/vikiru/Urvo",
       documentationUrl: "https://vikiru.github.io/Urvo/",
-      description:
-        "🤖 A multi-purpose Discord bot built using discord.js | Over 65 Commands across 8 categories 🔥",
+      description: "A multi-purpose Discord bot built using discord.js.",
       startDate: "June 2021",
       endDate: "July 2023",
       accomplishments: [
@@ -67,7 +66,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/discrete-sim",
       documentationUrl: "",
       description:
-        "Manufacturing Facility Simulation | NumPy, SciPy, and SimPy",
+        "Manufacturing Facility Simulation | NumPy, SciPy, and SimPy.",
       startDate: "Jan 2022",
       endDate: "Apr 2022",
       accomplishments: [
@@ -82,7 +81,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/Mini-SurveyMonkey",
       documentationUrl: "",
       description:
-        "A SurveyMonkey clone built as a Spring Boot Web Application.",
+        "A SurveyMonkey clone built as a Spring Boot CRUD Web Application.",
       startDate: "Mar 2022",
       endDate: "Apr 2022",
       accomplishments: [
