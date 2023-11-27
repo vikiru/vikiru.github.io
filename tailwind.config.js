@@ -8,6 +8,13 @@ module.exports = {
       xs: "300px",
       ...defaultTheme.screens,
     },
+    fontFamily: {
+      signature: ["Great Vibes"],
+      heading: ["Montserrat"],
+      subheading: ["Raleway"],
+      body: ["Source Sans 3"],
+      ...defaultTheme.fontFamily,
+    },
   },
   extend: {},
   plugins: [require("tailwind-scrollbar")],

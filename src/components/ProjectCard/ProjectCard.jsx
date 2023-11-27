@@ -10,7 +10,10 @@ import shieldImages from "../../assets/shieldImages";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <section className="project-card snap-center" key={project}>
+    <section
+      className="project-card snap-center bg-sky-400/10 shadow-xl"
+      key={project}
+    >
       {/* Project Name, Start - End Section */}
       <div className="flex justify-between">
         <p className="project-name">{project.name}</p>
@@ -57,13 +60,13 @@ function ProjectCard(props) {
         </div>
       </div>
       <details>
-        <summary className="font-mono capitalize text-black">
+        <summary className="font-subheading uppercase text-gray-400">
           View My Accomplishments
         </summary>
         <ul className="list-disc marker:text-black">
           {project.accomplishments.map((accomplishment) => (
             <li
-              className="text-left font-mono text-sm text-slate-50"
+              className="font-heading text-left text-sm text-slate-50"
               key={accomplishment}
             >
               {accomplishment}

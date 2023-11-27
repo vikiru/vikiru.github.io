@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+html {
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,6 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -24,14 +37,14 @@ code {
 
 @layer components {
   .section-text {
-    @apply font-sans text-xl uppercase text-white underline xs:pl-0 xs:text-center lg:pl-5 lg:pt-2 lg:text-left;
+    @apply font-heading text-xl uppercase text-white underline xs:pl-0 xs:text-center lg:pl-5 lg:pt-2 lg:text-left;
   }
 
   .nav-text {
-    @apply lg:ease-in-out-anim uppercase text-white lg:hover:text-black;
+    @apply font-heading lg:ease-in-out-anim uppercase text-white lg:hover:text-gray-400;
   }
 
   .social-icon {
-    @apply lg:ease-in-out-anim pt-4 text-3xl text-black;
+    @apply lg:ease-in-out-anim pt-4 text-3xl text-gray-400;
   }
 }
