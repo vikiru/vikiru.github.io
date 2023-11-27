@@ -10,10 +10,7 @@ import shieldImages from "../../assets/shieldImages";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <section
-      className="project-card snap-center bg-sky-400/10 shadow-xl"
-      key={project}
-    >
+    <section className="project-card snap-center shadow-lg" key={project}>
       {/* Project Name, Start - End Section */}
       <div className="flex justify-between">
         <p className="project-name">{project.name}</p>
