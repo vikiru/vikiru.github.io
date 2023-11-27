@@ -9,7 +9,9 @@ function Footer() {
   return (
     <section id="contact" className="m-2 snap-center rounded-xl">
       <footer>
-        <p className="pb-2 text-lg uppercase text-white">Connect with me</p>
+        <p className="font-heading pb-2 text-lg uppercase text-white">
+          Connect with me
+        </p>
         <section id="social-icons">
           <a
             href="https://github.com/vikiru"
@@ -42,7 +44,7 @@ function Footer() {
             />
           </a>
           <div className=" pt-1">
-            <p className="text-white">
+            <p className="font-heading text-gray-400">
               <span>
                 Visakan Kirubakaran &copy; {currentYear}. All rights reserved.
               </span>
