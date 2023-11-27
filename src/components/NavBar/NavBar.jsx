@@ -10,7 +10,10 @@ function NavBar() {
   };
 
   return (
-    <nav className="mb-2 ml-2 mr-2 snap-center bg-sky-500/80" id="mainNav">
+    <nav
+      className="mb-2 ml-2 mr-2 snap-center bg-sky-400/10 shadow-xl"
+      id="mainNav"
+    >
       <div className="ml-2 mr-2 flex items-center justify-between">
         <div className="xs:block lg:hidden">
           <button onClick={handleClick}>
