@@ -60,7 +60,7 @@ function ProjectCard(props) {
         <summary className="font-subheading uppercase text-gray-400">
           View My Accomplishments
         </summary>
-        <ul className="list-disc marker:text-black">
+        <ul className="list-disc marker:text-gray-400">
           {project.accomplishments.map((accomplishment) => (
             <li
               className="font-heading text-left text-sm text-slate-50"
