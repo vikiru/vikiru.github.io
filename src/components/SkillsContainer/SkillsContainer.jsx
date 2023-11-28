@@ -7,21 +7,29 @@ function SkillsContainer() {
   return (
     <section className="snap-center" id="skills">
       <p className="section-text">Skills</p>
-      <section className="section-container xs:grid xs:grid-cols-2 2xl:grid 2xl:grid-cols-4">
+      <section className="md:grid md:grid-cols-2 lg:grid-cols-4">
         {Object.keys(skillsData).map((skillCategory) => (
-          <section
-            className="m-1 max-w-lg 2xl:block"
-            key={skillCategory}
-            id={skillCategory}
-          >
-            <p className="skill-category">{skillCategory}</p>
-            <ul className="list-none text-center">
-              {skillsData[`${skillCategory}`].map((skill) => (
-                <li key={skill} className="skill">
-                  {skill}
-                </li>
-              ))}
-            </ul>
+          <section className="2xl:block" key={skillCategory} id={skillCategory}>
+            <section id="skills-md" className="xs:hidden md:block">
+              <p className="skill-category">{skillCategory}</p>
+              <ul className="list-none text-center">
+                {skillsData[`${skillCategory}`].map((skill) => (
+                  <li key={skill} className="skill">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </section>
+            <section id="skills-xs" className="md:hidden">
+              <p>
+                <span className="text-justify font-heading font-bold uppercase text-white">
+                  {skillCategory}:{" "}
+                </span>
+                <span className="font-subheading font-semibold text-gray-400">
+                  {skillsData[`${skillCategory}`].join(", ")}
+                </span>
+              </p>
+            </section>
           </section>
         ))}
       </section>
