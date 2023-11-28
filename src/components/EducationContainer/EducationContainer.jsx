@@ -14,7 +14,7 @@ function EducationContainer() {
   return (
     <section className="snap-center" id="education">
       <p className="section-text">Education</p>
-      <section className="section-container p-2">
+      <section className="pl-2 pr-2">
         <section
           id="university-enrollment-info"
           className="flex justify-between"
@@ -23,7 +23,7 @@ function EducationContainer() {
             <p className="university-name">{educationData.universityName}</p>
           </section>
           <section>
-            <p className="date">
+            <p className="date pl-4">
               {educationData.enrollmentStart} - {educationData.enrollmentEnd}
             </p>
           </section>
@@ -61,7 +61,7 @@ function EducationContainer() {
                   </p>
                 </section>
                 <section>
-                  <p className="date">
+                  <p className="date pl-2">
                     {certificate.startDate} - {certificate.completionDate}
                   </p>
                 </section>
