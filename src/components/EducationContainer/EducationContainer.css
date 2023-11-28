@@ -19,5 +19,5 @@
 }
 
 .certificate-link {
-    @apply ease-in-out-anim pr-2 text-gray-400
+    @apply pr-2 text-gray-400
 }

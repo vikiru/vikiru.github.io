@@ -54,7 +54,7 @@ function EducationContainer() {
                       >
                         <FontAwesomeIcon
                           icon={faLink}
-                          className="certificate-link"
+                          className="ease-in-out-anim certificate-link"
                         />
                       </a>
                     </span>
