@@ -1,14 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 
 html {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Alex Brush', cursive;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: 'Source Sans 3', sans-serif;
@@ -38,6 +39,10 @@ code {
 @layer components {
   .section-text {
     @apply font-heading text-xl uppercase text-white underline xs:pl-0 xs:text-center lg:pl-5 lg:pt-2 lg:text-left;
+  }
+
+  .section-container {
+    @apply m-2 overflow-x-hidden overflow-y-hidden;
   }
 
   .nav-text {
