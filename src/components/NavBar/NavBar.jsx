@@ -53,22 +53,37 @@ function NavBar() {
         </section>
       ) : (
         <section className="px-4 pb-3 pt-2 xs:hidden lg:flex lg:items-center lg:justify-center">
-          <a href="#" className="nav-text block">
+          <a href="#" className="nav-text lg:ease-in-out-anim block lg:ml-2">
             Home
           </a>
-          <a href="#about" className="nav-text block lg:ml-2">
+          <a
+            href="#about"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             About
           </a>
-          <a href="#education" className="nav-text block lg:ml-2">
+          <a
+            href="#education"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Education
           </a>
-          <a href="#skills" className="nav-text block lg:ml-2">
+          <a
+            href="#skills"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Skills
           </a>
-          <a href="#projects" className="nav-text block lg:ml-2">
+          <a
+            href="#projects"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Projects
           </a>
-          <a href="#contact" className="nav-text block lg:ml-2">
+          <a
+            href="#contact"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Contact
           </a>
         </section>

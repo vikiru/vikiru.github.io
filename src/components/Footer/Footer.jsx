@@ -22,7 +22,10 @@ function Footer() {
             rel="noopener noreferrer"
             id="github-url"
           >
-            <FontAwesomeIcon icon={faGithub} className="social-icon" />
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="social-icon lg:ease-in-out-anim"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/viskirubakaran/"
@@ -30,7 +33,10 @@ function Footer() {
             rel="noopener noreferrer"
             id="linkedin-url"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="social-icon lg:ease-in-out-anim"
+            />
           </a>
           <a
             href="mailto:viskirubakaran@outlook.com"
@@ -38,7 +44,10 @@ function Footer() {
             rel="noopener noreferrer"
             id="email"
           >
-            <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="social-icon lg:ease-in-out-anim"
+            />
           </a>
         </section>
         <div className="pt-1">
