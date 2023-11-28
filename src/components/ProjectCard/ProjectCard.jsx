@@ -35,7 +35,7 @@ function ProjectCard(props) {
           )}
         </div>
         {/* Project URLs */}
-        <div className="pt-4 2xl:flex">
+        <section id="project-urls" className="flex justify-center pt-4">
           {project.githubUrl != "" && (
             <a
               href={project.githubUrl}
@@ -54,16 +54,16 @@ function ProjectCard(props) {
               <FontAwesomeIcon icon={faBookOpen} className="social-icon" />
             </a>
           )}
-        </div>
+        </section>
       </div>
       <details>
-        <summary className="font-subheading uppercase text-gray-400">
+        <summary className="text-center font-subheading uppercase text-gray-400">
           View My Accomplishments
         </summary>
         <ul className="list-disc marker:text-gray-400">
           {project.accomplishments.map((accomplishment) => (
             <li
-              className="font-heading text-left text-sm text-slate-50"
+              className="text-left font-heading text-sm text-slate-50"
               key={accomplishment}
             >
               {accomplishment}
