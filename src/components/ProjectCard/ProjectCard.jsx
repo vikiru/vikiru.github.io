@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import shieldImages from "../../assets/data/shieldImages";
 
 function ProjectCard(props) {
   const project = props.project;
@@ -21,18 +20,15 @@ function ProjectCard(props) {
       <p className="project-desc">{project.description}</p>
       <div className="2xl:flex 2xl:justify-between">
         {/* Technologies Used within Project Section */}
-        <div className="grid grid-cols-1 lg:flex">
-          {project.technologiesUsed.map((technology) =>
-            shieldImages[`${technology}`] != "" ? (
-              <div key={technology} className="relative">
-                <img
-                  src={shieldImages[`${technology}`]}
-                  className="shield-image w-full"
-                  alt={technology}
-                ></img>
-              </div>
-            ) : null,
-          )}
+        <div>
+          <p className="pl-1 text-sm">
+            <span className="font subheading text-gray-400">
+              Technologies:{" "}
+            </span>
+            <span className="text-center font-body text-white">
+              {project.technologiesUsed.join(", ")}
+            </span>
+          </p>
         </div>
         {/* Project URLs */}
         <section id="project-urls" className="flex justify-center pt-4">
