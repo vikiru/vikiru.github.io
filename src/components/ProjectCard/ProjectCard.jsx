@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import shieldImages from "../../assets/shieldImages";
+import shieldImages from "../../assets/data/shieldImages";
 
 function ProjectCard(props) {
   const project = props.project;

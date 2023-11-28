@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import educationData from "../../assets/education";
+import educationData from "../../assets/data/education";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 function EducationContainer() {

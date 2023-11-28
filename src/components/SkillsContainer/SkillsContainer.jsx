@@ -1,6 +1,6 @@
 import React from "react";
-import shieldImages from "../../assets/shieldImages";
-import skillsData from "../../assets/skills";
+import shieldImages from "../../assets/data/shieldImages";
+import skillsData from "../../assets/data/skills";
 
 function SkillsContainer() {
   return (
