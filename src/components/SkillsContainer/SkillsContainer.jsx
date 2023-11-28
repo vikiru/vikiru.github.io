@@ -7,7 +7,7 @@ function SkillsContainer() {
   return (
     <section className="snap-center" id="skills">
       <p className="section-text">Skills</p>
-      <section className="md:grid md:grid-cols-2 lg:grid-cols-4">
+      <section className="section-container md:grid md:grid-cols-2 lg:grid-cols-4">
         {Object.keys(skillsData).map((skillCategory) => (
           <section className="2xl:block" key={skillCategory} id={skillCategory}>
             <section id="skills-md" className="xs:hidden md:block">
@@ -20,7 +20,7 @@ function SkillsContainer() {
                 ))}
               </ul>
             </section>
-            <section id="skills-xs" className="md:hidden">
+            <section id="skills-xs" className="pl-2 md:hidden">
               <p>
                 <span className="text-justify font-heading font-bold uppercase text-white">
                   {skillCategory}:{" "}
