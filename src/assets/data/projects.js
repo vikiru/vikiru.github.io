@@ -8,7 +8,10 @@ const projectData = {
         "Personal Portfolio Website | Built with React and TailwindCSS.",
       startDate: "Nov 2023",
       endDate: "Dec 2023",
-      accomplishments: [],
+      accomplishments: [
+        "Developed a portfolio website using React and TailwindCSS",
+        "Utilized Chrome Dev Tools and TailwindCSS utilty classes to achieve a responsive design",
+      ],
       technologiesUsed: ["React", "TailwindCSS"],
     },
     {
