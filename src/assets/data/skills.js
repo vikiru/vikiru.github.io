@@ -1,6 +1,6 @@
 const skillsData = {
   languages: ["Java", "Python", "HTML", "CSS", "JavaScript", "Markdown"],
-  runtime: ["Nodejs"],
+  runtime: ["Node.js"],
   frameworks: [
     "Spring",
     "JUnit",
@@ -12,21 +12,21 @@ const skillsData = {
   ],
   libraries: ["NumPy", "SciPy", "SimPy", "Pandas", "Chai"],
   database: ["MySQL", "SQLite", "MongoDB", "Sequelize"],
-  devops: ["CircleCI", "GithubActions", "Snyk"],
+  devops: ["CircleCI", "Github Actions", "Snyk"],
   tools: [
     "Maven",
     "NPM",
     "pip",
     "Git",
     "Github",
-    "GithubDesktop",
+    "Github Desktop",
     "Postman",
     "ESLint",
     "Prettier",
   ],
   ide: ["IntelliJ", "Eclipse"],
-  editor: ["VSCode"],
-  hosting: ["GithubPages", "Heroku", "Render"],
+  editor: ["VS Code"],
+  hosting: ["Github Pages", "Heroku", "Render"],
   os: ["Windows", "Ubuntu"],
 };
 

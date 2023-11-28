@@ -10,7 +10,7 @@ const projectData = {
       endDate: "Dec 2023",
       accomplishments: [
         "Developed a portfolio website using React and TailwindCSS",
-        "Utilized Chrome Dev Tools and TailwindCSS utilty classes to achieve a responsive design",
+        "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design",
       ],
       technologiesUsed: ["React", "TailwindCSS"],
     },
@@ -28,8 +28,8 @@ const projectData = {
         "Verified external API functionality by developing tests using Mocha and Chai",
       ],
       technologiesUsed: [
-        "Nodejs",
-        "discordjs",
+        "Node.js",
+        "discord.js",
         "SQLite",
         "Sequelize",
         "Mocha",
