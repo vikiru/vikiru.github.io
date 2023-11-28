@@ -31,7 +31,7 @@ function NavBar() {
         </section>
       </div>
       {isOpen ? (
-        <section id="small-screen-nav" className="block px-4 pb-3 pt-2">
+        <section className="block px-4 pb-3 pt-2">
           <a href="#" className="nav-text block">
             Home
           </a>
@@ -52,10 +52,7 @@ function NavBar() {
           </a>
         </section>
       ) : (
-        <section
-          id="normal-nav"
-          className="px-4 pb-3 pt-2 xs:hidden lg:flex lg:items-center lg:justify-center"
-        >
+        <section className="px-4 pb-3 pt-2 xs:hidden lg:flex lg:items-center lg:justify-center">
           <a href="#" className="nav-text block">
             Home
           </a>

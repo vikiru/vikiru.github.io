@@ -11,7 +11,7 @@
 }
 
 .certificate-provider {
-    @apply font-heading text-lg uppercase text-gray-400 sm:pl-11 md:pl-1
+    @apply font-heading text-lg uppercase text-gray-400 pl-1
 }
 
 .certificate-name {
