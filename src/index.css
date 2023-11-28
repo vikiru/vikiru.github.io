@@ -43,9 +43,7 @@ code {
     @apply m-2 overflow-x-hidden overflow-y-hidden;
   }
 
-  .nav-text {
-    @apply font-heading lg:ease-in-out-anim uppercase text-white lg:hover:text-gray-400;
-  }
+
 
   .social-icon {
     @apply lg:ease-in-out-anim pt-4 text-3xl text-gray-400;

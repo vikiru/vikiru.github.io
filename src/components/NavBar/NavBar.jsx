@@ -1,3 +1,5 @@
+import "./NavBar.css";
+
 import React, { useState } from "react";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,7 +17,7 @@ function NavBar() {
       id="mainNav"
     >
       <div className="ml-2 mr-2 flex items-center justify-between">
-        <div className="xs:block lg:hidden">
+        <section id="small-screen-nav-toggler" className="xs:block lg:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
@@ -26,10 +28,10 @@ function NavBar() {
               <FontAwesomeIcon icon={faX} className="pl-1 pt-1 text-white" />
             )}
           </button>
-        </div>
+        </section>
       </div>
       {isOpen ? (
-        <div className="block px-4 pb-3 pt-2">
+        <section id="small-screen-nav" className="block px-4 pb-3 pt-2">
           <a href="#" className="nav-text block">
             Home
           </a>
@@ -48,9 +50,12 @@ function NavBar() {
           <a href="#contact" className="nav-text block">
             Contact
           </a>
-        </div>
+        </section>
       ) : (
-        <div className="px-4 pb-3 pt-2 xs:hidden lg:flex lg:items-center lg:justify-center">
+        <section
+          id="normal-nav"
+          className="px-4 pb-3 pt-2 xs:hidden lg:flex lg:items-center lg:justify-center"
+        >
           <a href="#" className="nav-text block">
             Home
           </a>
@@ -69,7 +74,7 @@ function NavBar() {
           <a href="#contact" className="nav-text block lg:ml-2">
             Contact
           </a>
-        </div>
+        </section>
       )}
     </nav>
   );
