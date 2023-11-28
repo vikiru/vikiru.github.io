@@ -1,26 +1,32 @@
+import "./SkillsContainer.css";
+
 import React from "react";
-import shieldImages from "../../assets/data/shieldImages";
 import skillsData from "../../assets/data/skills";
 
 function SkillsContainer() {
   return (
     <section className="snap-center" id="skills">
       <p className="section-text">Skills</p>
-      <section className="m-2 overflow-x-hidden overflow-y-hidden rounded-xl xs:grid xs:grid-cols-4 2xl:grid 2xl:grid-cols-7">
-        {Object.keys(skillsData).map((key) => (
-          <section className="xs:m-2 2xl:block" key={key} id={key}>
-            <p className="rounded uppercase text-white">{key}</p>
-            {skillsData[key].map((skill) =>
-              shieldImages[`${skill}`] != "" ? (
-                <section key={skill}>
-                  <img
-                    src={shieldImages[`${skill}`]}
-                    className="shield-image w-full"
-                    alt={skill}
-                  ></img>
-                </section>
-              ) : null,
-            )}
+      <section className="section-container sm:grid sm:grid-cols-2 2xl:grid 2xl:grid-cols-7">
+        {Object.keys(skillsData).map((skillCategory) => (
+          <section
+            className="xs:m-2 2xl:block"
+            key={skillCategory}
+            id={skillCategory}
+          >
+            <p className="skill-category">
+              {skillCategory}
+            </p>
+            <ul className="list-none text-center">
+              {skillsData[`${skillCategory}`].map((skill) => (
+                <li
+                  key={skill}
+                  className="skill"
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
           </section>
         ))}
       </section>
