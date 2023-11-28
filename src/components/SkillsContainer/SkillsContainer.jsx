@@ -10,7 +10,7 @@ function SkillsContainer() {
       <section className="section-container sm:grid sm:grid-cols-2 2xl:grid 2xl:grid-cols-7">
         {Object.keys(skillsData).map((skillCategory) => (
           <section
-            className="xs:m-2 2xl:block"
+            className="max-w-lg 2xl:block"
             key={skillCategory}
             id={skillCategory}
           >

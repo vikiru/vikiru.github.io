@@ -42,7 +42,7 @@ function Footer() {
           </a>
         </section>
         <div className="pt-1">
-          <p className="font-heading text-gray-400">
+          <p className="text-center font-heading text-gray-400">
             <span>
               Visakan Kirubakaran &copy; {currentYear}. All rights reserved.
             </span>

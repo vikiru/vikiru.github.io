@@ -43,8 +43,6 @@ code {
     @apply m-2 overflow-x-hidden overflow-y-hidden;
   }
 
-
-
   .social-icon {
     @apply lg:ease-in-out-anim pt-4 text-3xl text-gray-400;
   }

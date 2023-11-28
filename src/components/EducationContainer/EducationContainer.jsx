@@ -67,7 +67,6 @@ function EducationContainer() {
                 </section>
               </section>
             ))}
-            ;
           </section>
         </section>
       </section>
