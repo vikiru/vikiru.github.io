@@ -9,7 +9,6 @@ module.exports = {
       ...defaultTheme.screens,
     },
     fontFamily: {
-      signature: ["Great Vibes"],
       heading: ["Montserrat"],
       subheading: ["Raleway"],
       body: ["Source Sans 3"],
