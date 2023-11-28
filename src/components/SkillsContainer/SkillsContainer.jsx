@@ -14,15 +14,10 @@ function SkillsContainer() {
             key={skillCategory}
             id={skillCategory}
           >
-            <p className="skill-category">
-              {skillCategory}
-            </p>
+            <p className="skill-category">{skillCategory}</p>
             <ul className="list-none text-center">
               {skillsData[`${skillCategory}`].map((skill) => (
-                <li
-                  key={skill}
-                  className="skill"
-                >
+                <li key={skill} className="skill">
                   {skill}
                 </li>
               ))}
