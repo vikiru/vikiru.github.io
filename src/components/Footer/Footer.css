@@ -1,0 +1,7 @@
+.footer-connect {
+    @apply text-center font-heading text-lg uppercase text-white
+}
+
+.social-icon {
+    @apply lg:ease-in-out-anim pr-2 text-3xl text-white
+}

@@ -1,3 +1,5 @@
+import "./Footer.css";
+
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,50 +9,45 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <section id="contact" className="m-2 snap-center rounded-xl">
+    <section
+      id="contact"
+      className="section-container flex snap-center justify-center"
+    >
       <footer>
-        <p className="font-heading pb-2 text-lg uppercase text-white">
-          Connect with me
-        </p>
-        <section id="social-icons">
+        <p className="footer-connect">Connect with me</p>
+        <section id="social-icons" className="flex justify-center">
           <a
             href="https://github.com/vikiru"
             target="_blank"
             rel="noopener noreferrer"
+            id="github-url"
           >
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="lg:ease-in-out-anim pr-2 text-3xl text-white"
-            />
+            <FontAwesomeIcon icon={faGithub} className="social-icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/viskirubakaran/"
             target="_blank"
             rel="noopener noreferrer"
+            id="linkedin-url"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="lg:ease-in-out-anim pr-2 text-3xl text-white"
-            />
+            <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
           </a>
           <a
             href="mailto:viskirubakaran@outlook.com"
             target="_blank"
             rel="noopener noreferrer"
+            id="email"
           >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="lg:ease-in-out-anim pr-2 text-3xl text-white"
-            />
+            <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
           </a>
-          <div className=" pt-1">
-            <p className="font-heading text-gray-400">
-              <span>
-                Visakan Kirubakaran &copy; {currentYear}. All rights reserved.
-              </span>
-            </p>
-          </div>
         </section>
+        <div className="pt-1">
+          <p className="font-heading text-gray-400">
+            <span>
+              Visakan Kirubakaran &copy; {currentYear}. All rights reserved.
+            </span>
+          </p>
+        </div>
       </footer>
     </section>
   );
