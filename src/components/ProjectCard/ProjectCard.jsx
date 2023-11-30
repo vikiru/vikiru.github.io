@@ -11,9 +11,9 @@ function ProjectCard(props) {
   return (
     <section className="project-card snap-center shadow-lg" key={project}>
       {/* Project Name, Start - End Section */}
-      <div className="flex justify-between">
-        <p className="project-name">{project.name}</p>
-        <p className="project-dates">
+      <div className="lg:flex lg:justify-between">
+        <p className="project-name xs:text-center">{project.name}</p>
+        <p className="lg:project-dates xs:text-center xs:font-body xs:font-thin xs:uppercase xs:text-slate-100">
           {project.startDate} - {project.endDate}
         </p>
       </div>
@@ -21,11 +21,8 @@ function ProjectCard(props) {
       <div className="2xl:flex 2xl:justify-between">
         {/* Technologies Used within Project Section */}
         <div>
-          <p className="pl-1 text-sm">
-            <span className="font subheading text-gray-400">
-              Technologies:{" "}
-            </span>
-            <span className="text-center font-body text-white">
+          <p className="pl-1 text-sm xs:text-center lg:text-left">
+            <span className="font-subheading font-thin text-gray-400">
               {project.technologiesUsed.join(", ")}
             </span>
           </p>
@@ -52,8 +49,9 @@ function ProjectCard(props) {
           )}
         </section>
       </div>
+      {/* Project Accomplishments */}
       <details>
-        <summary className="text-center font-subheading uppercase text-gray-400">
+        <summary className="text-center font-subheading uppercase text-gray-400 xs:text-sm md:text-base">
           View My Accomplishments
         </summary>
         <ul className="list-disc marker:text-gray-400">

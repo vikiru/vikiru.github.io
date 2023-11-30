@@ -31,28 +31,28 @@ function NavBar() {
         </section>
       </div>
       {isOpen ? (
-        <section className="block px-4 pb-3 pt-2">
-          <a href="#" className="nav-text block">
+        <section className="block justify-center px-4 pb-3 pt-2">
+          <a href="#" className="nav-text block text-center">
             Home
           </a>
-          <a href="#about" className="nav-text block">
+          <a href="#about" className="nav-text block text-center">
             About
           </a>
-          <a href="#education" className="nav-text block">
+          <a href="#education" className="nav-text block text-center">
             Education
           </a>
-          <a href="#skills" className="nav-text block">
+          <a href="#skills" className="nav-text block text-center">
             Skills
           </a>
-          <a href="#projects" className="nav-text block">
+          <a href="#projects" className="nav-text block text-center">
             Projects
           </a>
-          <a href="#contact" className="nav-text block">
+          <a href="#contact" className="nav-text block text-center">
             Contact
           </a>
         </section>
       ) : (
-        <section className="xxs:hidden px-4 pb-3 pt-2 lg:flex lg:items-center lg:justify-center">
+        <section className="px-4 pb-3 pt-2 xxs:hidden lg:flex lg:items-center lg:justify-center">
           <a href="#" className="nav-text lg:ease-in-out-anim block lg:ml-2">
             Home
           </a>
