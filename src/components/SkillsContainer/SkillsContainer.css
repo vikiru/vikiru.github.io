@@ -1,0 +1,7 @@
+.skill-category {
+    @apply text-center font-heading font-bold uppercase font-primary
+}
+
+.skill {
+    @apply font-subheading font-semibold text-gray-400
+}

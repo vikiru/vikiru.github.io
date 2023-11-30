@@ -1,3 +1,5 @@
+import "./NavBar.css";
+
 import React, { useState } from "react";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,65 +13,80 @@ function NavBar() {
 
   return (
     <nav
-      className="mb-2 ml-2 mr-2 snap-center bg-sky-400/10 shadow-xl"
+      className="secondary-colour mb-2 ml-2 mr-2 snap-center shadow-xl"
       id="mainNav"
     >
       <div className="ml-2 mr-2 flex items-center justify-between">
-        <div className="xs:block lg:hidden">
+        <section id="small-screen-nav-toggler" className="xs:block lg:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
                 icon={faBars}
-                className="pb-1 pl-1 pt-1 text-white"
+                className="font-primary pb-1 pl-1 pt-1"
               />
             ) : (
-              <FontAwesomeIcon icon={faX} className="pl-1 pt-1 text-white" />
+              <FontAwesomeIcon icon={faX} className="font-primary pl-1 pt-1" />
             )}
           </button>
-        </div>
+        </section>
       </div>
       {isOpen ? (
-        <div className="block px-4 pb-3 pt-2">
-          <a href="#" className="nav-text block">
+        <section className="block justify-center px-4 pb-3 pt-2">
+          <a href="#" className="nav-text block text-center">
             Home
           </a>
-          <a href="#about" className="nav-text block">
+          <a href="#about" className="nav-text block text-center">
             About
           </a>
-          <a href="#education" className="nav-text block">
+          <a href="#education" className="nav-text block text-center">
             Education
           </a>
-          <a href="#skills" className="nav-text block">
+          <a href="#skills" className="nav-text block text-center">
             Skills
           </a>
-          <a href="#projects" className="nav-text block">
+          <a href="#projects" className="nav-text block text-center">
             Projects
           </a>
-          <a href="#contact" className="nav-text block">
+          <a href="#contact" className="nav-text block text-center">
             Contact
           </a>
-        </div>
+        </section>
       ) : (
-        <div className="px-4 pb-3 pt-2 xs:hidden lg:flex lg:items-center lg:justify-center">
-          <a href="#" className="nav-text block">
+        <section className="px-4 pb-3 pt-2 xxs:hidden lg:flex lg:items-center lg:justify-center">
+          <a href="#" className="nav-text lg:ease-in-out-anim block lg:ml-2">
             Home
           </a>
-          <a href="#about" className="nav-text block lg:ml-2">
+          <a
+            href="#about"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             About
           </a>
-          <a href="#education" className="nav-text block lg:ml-2">
+          <a
+            href="#education"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Education
           </a>
-          <a href="#skills" className="nav-text block lg:ml-2">
+          <a
+            href="#skills"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Skills
           </a>
-          <a href="#projects" className="nav-text block lg:ml-2">
+          <a
+            href="#projects"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Projects
           </a>
-          <a href="#contact" className="nav-text block lg:ml-2">
+          <a
+            href="#contact"
+            className="nav-text lg:ease-in-out-anim block lg:ml-2"
+          >
             Contact
           </a>
-        </div>
+        </section>
       )}
     </nav>
   );

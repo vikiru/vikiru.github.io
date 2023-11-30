@@ -1,4 +1,3 @@
-import "./App.css";
 import "./index.css";
 
 import About from "./components/About/About";
@@ -11,7 +10,7 @@ import SkillsContainer from "./components/SkillsContainer/SkillsContainer";
 
 function App() {
   return (
-    <div className="h-screen w-screen snap-y snap-mandatory overflow-x-hidden scroll-smooth bg-gray-800 text-center scrollbar scrollbar-track-gray-800/20 scrollbar-thumb-sky-400/5">
+    <div className="primary-colour scrollbar-track-trk-colour scrollbar-thumb-thmb-colour h-screen w-screen snap-y snap-mandatory overflow-x-hidden scroll-smooth scrollbar">
       <NavBar />
       <About />
       <EducationContainer />

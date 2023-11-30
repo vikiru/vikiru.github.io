@@ -1,9 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .project-card {
-  @apply m-2 p-5 text-white rounded-xl;
+  @apply m-2 p-5 font-primary rounded-xl;
 }
 
 .project-name {
@@ -11,7 +7,7 @@
 }
 
 .project-desc {
-  @apply pb-1 pl-1 pt-1 text-justify font-subheading text-sm text-slate-50;
+  @apply pb-1 pl-1 pt-1 lg:text-justify font-subheading text-sm text-slate-50 max-w-lg xs:text-center;
 }
 
 .project-dates {

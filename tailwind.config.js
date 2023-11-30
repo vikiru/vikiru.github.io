@@ -5,11 +5,11 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     screens: {
-      xs: "300px",
+      xxs: "200px",
+      xs: "250px",
       ...defaultTheme.screens,
     },
     fontFamily: {
-      signature: ["Great Vibes"],
       heading: ["Montserrat"],
       subheading: ["Raleway"],
       body: ["Source Sans 3"],
