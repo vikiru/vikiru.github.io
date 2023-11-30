@@ -9,7 +9,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <section className="project-card snap-center shadow-lg" key={project}>
+    <section
+      className="project-card snap-center shadow-lg"
+      key={project}
+      id={project.name}
+    >
       {/* Project Name, Start - End Section */}
       <div className="lg:flex lg:justify-between">
         <p className="project-name xs:text-center">{project.name}</p>

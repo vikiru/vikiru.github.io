@@ -35,8 +35,32 @@ code {
 }
 
 @layer components {
+  .primary-colour {
+    @apply bg-gray-800
+  }
+
+  .trk-colour {
+    @apply gray-800/20
+  }
+
+  .thmb-colour {
+    @apply sky-400/5
+  }
+
+  .secondary-colour {
+    @apply bg-sky-400/10
+  }
+
+  .font-primary {
+    @apply text-white
+  }
+
+  .font-secondary {
+    @apply text-gray-400;
+  }
+
   .section-text {
-    @apply font-heading text-xl uppercase text-white underline xs:pl-0 xs:text-center lg:pl-5 lg:pt-2 lg:text-left;
+    @apply font-heading text-xl uppercase font-primary underline xs:pl-0 xs:text-center lg:pl-5 lg:pt-2 lg:text-left;
   }
 
   .section-container {

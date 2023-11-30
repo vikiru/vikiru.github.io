@@ -13,7 +13,7 @@ function NavBar() {
 
   return (
     <nav
-      className="mb-2 ml-2 mr-2 snap-center bg-sky-400/10 shadow-xl"
+      className="secondary-colour mb-2 ml-2 mr-2 snap-center shadow-xl"
       id="mainNav"
     >
       <div className="ml-2 mr-2 flex items-center justify-between">
@@ -22,10 +22,10 @@ function NavBar() {
             {!isOpen ? (
               <FontAwesomeIcon
                 icon={faBars}
-                className="pb-1 pl-1 pt-1 text-white"
+                className="font-primary pb-1 pl-1 pt-1"
               />
             ) : (
-              <FontAwesomeIcon icon={faX} className="pl-1 pt-1 text-white" />
+              <FontAwesomeIcon icon={faX} className="font-primary pl-1 pt-1" />
             )}
           </button>
         </section>

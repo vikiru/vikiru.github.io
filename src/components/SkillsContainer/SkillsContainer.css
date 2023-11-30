@@ -1,5 +1,5 @@
 .skill-category {
-    @apply text-center font-heading font-bold uppercase text-white
+    @apply text-center font-heading font-bold uppercase font-primary
 }
 
 .skill {

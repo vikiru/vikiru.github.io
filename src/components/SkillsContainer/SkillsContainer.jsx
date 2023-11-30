@@ -22,7 +22,7 @@ function SkillsContainer() {
             </section>
             <section id="skills-xs" className="pl-2 md:hidden">
               <p>
-                <span className="text-justify font-heading font-bold uppercase text-white">
+                <span className="font-primary text-justify font-heading font-bold uppercase">
                   {skillCategory}:{" "}
                 </span>
                 <span className="font-subheading font-semibold text-gray-400">

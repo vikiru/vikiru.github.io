@@ -1,5 +1,5 @@
 .project-card {
-  @apply m-2 p-5 text-white rounded-xl;
+  @apply m-2 p-5 font-primary rounded-xl;
 }
 
 .project-name {
