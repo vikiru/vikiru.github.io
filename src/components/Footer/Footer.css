@@ -1,7 +1,7 @@
 .footer-connect {
-    @apply text-center font-heading text-lg uppercase font-primary
+  @apply font-primary text-center font-heading text-lg uppercase;
 }
 
 .social-icon {
-    @apply pr-2 text-3xl font-primary
+  @apply font-primary pr-2 text-3xl;
 }
