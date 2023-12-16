@@ -20,6 +20,7 @@ jobs:
         run: |
           git config --global user.name "${{ secrets.GIT_USER_NAME }}"
           git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/vikiru/vikiru.github.io.git
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
