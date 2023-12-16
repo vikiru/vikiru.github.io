@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/**/*.{html,js,jsx} --fix",
+    "lint": "eslint ./src/**/*.{html,js,jsx} --fix-dry-run",
     "prettier": "prettier --write .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -m \"Deployed to Github Pages using gh-pages package\""
