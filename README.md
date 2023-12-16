@@ -7,7 +7,14 @@
 	<a href="https://github.com/prettier/prettier">
 		<img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Code Style - Prettier"/>
 	</a>
-    <img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg" alt="wakatime"></img>
+	<a href="https://wakatime.com/@vikiru/projects/fqvyqubpbg">
+		<img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
+		alt="Wakatime Coding Stats for Portfolio Website"></img>
+	</a>
+	<br>
+	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
+	<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="Github Lint Action Workflow Status"></img>
+	</a>
 </p>
 
 ## 🌐 Portfolio Overview
