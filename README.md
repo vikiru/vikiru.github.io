@@ -145,7 +145,7 @@ npm run start
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-
+- [Wakatime](https://wakatime.com/)
 
 ## ©️ License
 
