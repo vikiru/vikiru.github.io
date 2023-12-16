@@ -1,5 +1,11 @@
 {
-  "extends": ["prettier", "eslint:recommended", "plugin:react/recommended"],
+  "root": true,
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
   "plugins": ["prettier", "react", "jest"],
   "env": {
     "node": true,
@@ -7,7 +13,12 @@
     "browser": true,
     "jest/globals": true
   },
-  "settings": { "react": { "version": "detect" } },
+  "settings": {
+    "react": { "version": "detect" }
+  },
+  "overrides": [
+    { "files": ["*.js", "*.jsx"], "parser": "@typescript-eslint/parser" }
+  ],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 11,
@@ -59,6 +70,7 @@
     "space-infix-ops": "error",
     "space-unary-ops": "error",
     "spaced-comment": "error",
-    "yoda": "error"
+    "yoda": "error",
+    "tailwindcss/no-custom-classname": "off"
   }
 }

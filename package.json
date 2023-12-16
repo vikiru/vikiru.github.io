@@ -53,6 +53,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@tailwindcss/typography": "^0.5.10",
+    "@typescript-eslint/parser": "^5.62.0",
     "autoprefixer": "^10.4.16",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.56.0",
@@ -60,6 +61,7 @@
     "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "gh-pages": "^6.0.0",
     "postcss": "^8.4.31",
     "postcss-import": "^15.1.0",
