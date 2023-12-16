@@ -18,3 +18,4 @@ jobs:
         with:
           urls: |
             https://vikiru.github.io/
+          uploadArtifacts: true
