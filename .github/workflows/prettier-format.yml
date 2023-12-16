@@ -10,7 +10,7 @@ permissions:
   actions: write
 
 jobs:
-  build:
+  prettier-format:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
