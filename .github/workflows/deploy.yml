@@ -10,7 +10,7 @@ permissions:
   actions: write
 
 jobs:
-  lint:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
