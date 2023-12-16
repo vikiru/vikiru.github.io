@@ -14,7 +14,7 @@ function EducationContainer() {
   return (
     <section className="snap-center" id="education">
       <p className="section-text">Education</p>
-      <section className="pl-2 pr-2">
+      <section className="px-2">
         <section
           id="university-enrollment-info"
           className="flex justify-between"

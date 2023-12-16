@@ -13,16 +13,16 @@ function NavBar() {
 
   return (
     <nav
-      className="secondary-colour mb-2 ml-2 mr-2 snap-center shadow-xl"
+      className="secondary-colour mx-2 mb-2 snap-center shadow-xl"
       id="mainNav"
     >
-      <div className="ml-2 mr-2 flex items-center justify-between">
+      <div className="mx-2 flex items-center justify-between">
         <section id="small-screen-nav-toggler" className="xs:block lg:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
                 icon={faBars}
-                className="font-primary pb-1 pl-1 pt-1"
+                className="font-primary py-1 pl-1"
               />
             ) : (
               <FontAwesomeIcon icon={faX} className="font-primary pl-1 pt-1" />
