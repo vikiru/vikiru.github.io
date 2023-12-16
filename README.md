@@ -16,7 +16,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<details open>
+<details closed>
 
 <summary>View an overview of my portfolio here</summary>
 
@@ -107,11 +107,14 @@ Ensure that the following dependencies are installed onto your machine.
 ## ⚡ Setup
 
 1. Clone this repository to your local machine.
+
 ```bash
 git clone https://github.com/vikiru/vikiru.github.io.git
 cd vikiru.github.io
 ```
+
 2. Download and install all dependencies.
+
 ```bash
 npm install
 ```
@@ -131,6 +134,9 @@ npm run start
 - [Shields Badges](https://github.com/badges/shields)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+
 
 ## ©️ License
 
