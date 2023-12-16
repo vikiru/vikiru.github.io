@@ -1,7 +1,8 @@
 name: Lighthouse CI
 on:
   workflow_run:
-    workflows: [pages-build-deployment]
+    workflows:
+      - Deploy to GitHub Pages
     types:
         - completed
 
@@ -19,3 +20,4 @@ jobs:
           urls: |
             https://vikiru.github.io/
           uploadArtifacts: true
+          temporaryPublicStorage: true
