@@ -30,7 +30,7 @@
     "lint": "eslint ./src/**/*.{html,js,jsx} --fix-dry-run",
     "prettier": "prettier --write .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -m \"Deployed to Github Pages using gh-pages package\""
+    "deploy": "gh-pages -d build -m \"Deployed to Github Pages using gh-pages package\" -a"
   },
   "eslintConfig": {
     "extends": [
@@ -62,7 +62,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.0",
     "postcss": "^8.4.31",
     "postcss-import": "^15.1.0",
     "prettier": "^3.1.1",
