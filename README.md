@@ -147,15 +147,16 @@ npm run start
 ```
 
 ## ✨ Acknowledgements
-
-- [React.js](https://fontawesome.com)
-- [Font Awesome Icons](https://fontawesome.com/)
-- [Shields Badges](https://github.com/badges/shields)
+- [React.js](https://fontawesome.com) 
 - [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
+- [Font Awesome Icons](https://fontawesome.com/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [Shields Badges](https://github.com/badges/shields)
 - [WakaTime](https://wakatime.com/)
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
+- [GitHub Pages](https://pages.github.com/)
 
 ## ©️ License
 
