@@ -12,8 +12,21 @@
 		alt="Wakatime Coding Stats for Portfolio Website"></img>
 	</a>
 	<br>
+	<a href="https://github.com/vikiru/vikiru.github.io/releases">
+		<img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release"/>
+	</a>
+	<a href="https://github.com/vikiru/vikiru.github.io/issues?q=is%3Aissue+is%3Aclosed">
+		<img src="https://img.shields.io/github/issues-closed/vikiru/vikiru.github.io" alt="Closed Issues"/>
+	</a>
+	<a href="https://github.com/vikiru/vikiru.github.io/pulls?q=is%3Apr+is%3Aclosed">
+		<img src="https://img.shields.io/github/issues-pr-closed/vikiru/vikiru.github.io?label=closed%20prs" alt="Closed PRs">
+	</a>
+	<br>
 	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
-	<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="Github Lint Action Workflow Status"></img>
+		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status"></img>
+	</a>
+	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml">
+		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml/badge.svg" alt="GitHub Pages Deployment Workflow Status"></img>
 	</a>
 </p>
 
@@ -67,8 +80,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 |                   Project Name                    |                                Technologies Used                                 |                            Link                            |
 | :-----------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------: |
-| Portfolio Website | `React`, `TailwindCSS` | [GitHub Repo](https://github.com/vikiru/vikiru.github.io) |
-|         Urvo \| Multi-purpose Discord Bot         |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 |       [GitHub Repo](https://github.com/vikiru/Urvo)        |
+|                 Portfolio Website                 |                              `React`, `TailwindCSS`                              | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
+|   vikiru.github.io \| Multi-purpose Discord Bot   |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
 |         CodeSmell \| Static Analysis Tool         | `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript` |     [GitHub Repo](https://github.com/vikiru/CodeSmell)     |
 | discrete-sim \| Manufacturing Facility Simulation |                       `Python`, `NumPy`, `SciPy`, `SimPy`                        |   [GitHub Repo](https://github.com/vikiru/discrete-sim)    |
 |   Mini-SurveyMonkey \| Spring Boot CRUD Web App   |       `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`        | [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey) |
@@ -94,11 +107,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 📖 Table of Contents
 
 - [🌐 Portfolio Overview](#-portfolio-overview)
-	- [📄 About](#-about)
-	- [🎓 Education](#-education)
-	- [💡 Skills](#-skills)
-	- [📚 Projects](#-projects)
-	- [📧 Contact](#-contact)
+  - [📄 About](#-about)
+  - [🎓 Education](#-education)
+  - [💡 Skills](#-skills)
+  - [📚 Projects](#-projects)
+  - [📧 Contact](#-contact)
 - [📖 Table of Contents](#-table-of-contents)
 - [📝 Prerequisites](#-prerequisites)
 - [⚡ Setup](#-setup)
@@ -111,7 +124,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Ensure that the following dependencies are installed onto your machine.
 
 - [Node.js](https://nodejs.org/en/download)
-
 
 ## ⚡ Setup
 
@@ -145,7 +157,7 @@ npm run start
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [Wakatime](https://wakatime.com/)
+- [WakaTime](https://wakatime.com/)
 
 ## ©️ License
 
