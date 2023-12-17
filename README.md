@@ -11,7 +11,9 @@
 		<img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
 		alt="Wakatime Coding Stats for Portfolio Website"></img>
 	</a>
-	<br>
+</p>
+
+<p align="center">
 	<a href="https://github.com/vikiru/vikiru.github.io/releases">
 		<img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release"/>
 	</a>
@@ -21,7 +23,9 @@
 	<a href="https://github.com/vikiru/vikiru.github.io/pulls?q=is%3Apr+is%3Aclosed">
 		<img src="https://img.shields.io/github/issues-pr-closed/vikiru/vikiru.github.io?label=closed%20prs" alt="Closed PRs">
 	</a>
-	<br>
+</p>
+
+<p align="center">
 	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
 		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status"></img>
 	</a>
@@ -97,9 +101,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   <a href="https://wakatime.com/@vikiru">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
   </a>
-  <a href="https://linktr.ee/vikiru">
-    <img src="https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white">
-  </a>
 </p>
 
 </details>
@@ -107,11 +108,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 📖 Table of Contents
 
 - [🌐 Portfolio Overview](#-portfolio-overview)
-  - [📄 About](#-about)
-  - [🎓 Education](#-education)
-  - [💡 Skills](#-skills)
-  - [📚 Projects](#-projects)
-  - [📧 Contact](#-contact)
+	- [📄 About](#-about)
+	- [🎓 Education](#-education)
+	- [💡 Skills](#-skills)
+	- [📚 Projects](#-projects)
+	- [📧 Contact](#-contact)
 - [📖 Table of Contents](#-table-of-contents)
 - [📝 Prerequisites](#-prerequisites)
 - [⚡ Setup](#-setup)
