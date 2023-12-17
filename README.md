@@ -11,11 +11,25 @@
 		<img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
 		alt="Wakatime Coding Stats for Portfolio Website"></img>
 	</a>
+	<a href="https://github.com/vikiru/vikiru.github.io/releases">
+		<img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release"/>
+	</a>
+	<br>
+	<a href="https://github.com/vikiru/vikiru.github.io/issues?q=is%3Aissue+is%3Aclosed">
+		<img src="https://img.shields.io/github/issues-closed/vikiru/vikiru.github.io" alt="Closed Issues"/>
+	</a>
+	<a href="https://github.com/vikiru/vikiru.github.io/pulls?q=is%3Apr+is%3Aclosed">
+		<img src="https://img.shields.io/github/issues-pr-closed/vikiru/vikiru.github.io?label=closed%20prs" alt="Closed PRs">
+	</a>
 	<br>
 	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
-	<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="Github Lint Action Workflow Status"></img>
+		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status"></img>
+	</a>
+	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml">
+		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml/badge.svg" alt="GitHub Pages Deployment Workflow Status"></img>
 	</a>
 </p>
+
 
 ## 🌐 Portfolio Overview
 
@@ -67,8 +81,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 |                   Project Name                    |                                Technologies Used                                 |                            Link                            |
 | :-----------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------: |
-| Portfolio Website | `React`, `TailwindCSS` | [GitHub Repo](https://github.com/vikiru/vikiru.github.io) |
-|         Urvo \| Multi-purpose Discord Bot         |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 |       [GitHub Repo](https://github.com/vikiru/Urvo)        |
+|                 Portfolio Website                 |                              `React`, `TailwindCSS`                              | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
+|   vikiru.github.io \| Multi-purpose Discord Bot   |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
 |         CodeSmell \| Static Analysis Tool         | `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript` |     [GitHub Repo](https://github.com/vikiru/CodeSmell)     |
 | discrete-sim \| Manufacturing Facility Simulation |                       `Python`, `NumPy`, `SciPy`, `SimPy`                        |   [GitHub Repo](https://github.com/vikiru/discrete-sim)    |
 |   Mini-SurveyMonkey \| Spring Boot CRUD Web App   |       `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`        | [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey) |
@@ -83,9 +97,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   </a>
   <a href="https://wakatime.com/@vikiru">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-  <a href="https://linktr.ee/vikiru">
-    <img src="https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white">
   </a>
 </p>
 
@@ -112,7 +123,6 @@ Ensure that the following dependencies are installed onto your machine.
 
 - [Node.js](https://nodejs.org/en/download)
 
-
 ## ⚡ Setup
 
 1. Clone this repository to your local machine.
@@ -137,15 +147,16 @@ npm run start
 ```
 
 ## ✨ Acknowledgements
-
-- [React.js](https://fontawesome.com)
-- [Font Awesome Icons](https://fontawesome.com/)
-- [Shields Badges](https://github.com/badges/shields)
+- [React.js](https://fontawesome.com) 
 - [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
+- [Font Awesome Icons](https://fontawesome.com/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [Wakatime](https://wakatime.com/)
+- [Shields Badges](https://github.com/badges/shields)
+- [WakaTime](https://wakatime.com/)
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
+- [GitHub Pages](https://pages.github.com/)
 
 ## ©️ License
 
