@@ -3,6 +3,7 @@ import "../../index";
 import {
   faArrowUpRightFromSquare,
   faEnvelope,
+  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -137,6 +138,19 @@ function Home() {
                 <div className="max-w-lg">
                   <h3 className="font-subheading font-thin">
                     {certificate.certificationName}
+                    <span>
+                      {" "}
+                      <a
+                        href={certificate.certificateLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faLink}
+                          className="lg:ease-in-out-anim text-lg"
+                        />
+                      </a>
+                    </span>
                   </h3>
                 </div>
                 <div className="ml-4 max-w-xs text-right font-body font-thin uppercase">
