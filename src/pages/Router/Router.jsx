@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
+import Courses from "../Courses/Courses";
 import Home from "../Home/Home";
 import ProjectShowcase from "../ProjectShowcase/ProjectShowcase";
 import Projects from "../Projects/Projects";
@@ -11,7 +12,8 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
-      <Route path="/projects" element={<Projects />}></Route>
+      <Route path="/education/courses" element={<Courses />} />
+      <Route path="/projects" element={<Projects />} />
       {projects.map((project) => (
         <Route
           key={project}
@@ -19,7 +21,6 @@ function Router() {
           element={<ProjectShowcase project={project} />}
         />
       ))}
-      <Route path="/projects/Urvo" element={<ProjectShowcase />}></Route>
     </Routes>
   );
 }
