@@ -9,7 +9,7 @@ function ProjectShowcase(props) {
   return (
     <main className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-gradient-to-r from-red-500 to-teal-400 pb-4 scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
       {/* Project Main Image/GIF */}
-      <div className="mx-auto max-w-sm flex-shrink-0 justify-center bg-gradient-to-r from-red-500 to-teal-400 px-2 shadow-xl">
+      <div className="mx-auto max-w-sm justify-center bg-gradient-to-r from-red-500 to-teal-400 px-2 shadow-xl">
         <img
           src={
             "https://github.com/vikiru/Urvo/raw/docs/urvo-docs/public/utility/help.gif"
