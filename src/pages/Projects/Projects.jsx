@@ -9,14 +9,17 @@ function Projects() {
   const projects = projectData.projects;
   return (
     <main className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-gradient-to-r from-red-500 to-teal-400 pb-4 scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
-      <section className="mx-auto bg-white py-6">
+      <section className="mx-auto py-6">
         <div>
-          <h2 className="pt-2 text-center text-2xl font-bold uppercase underline">
+          <h2 className="pt-2 text-center text-2xl font-bold uppercase text-white underline">
             Projects
           </h2>
           <div className="mx-auto grid max-w-2xl grid-cols-2">
             {projects.map((project) => (
-              <div key={project} className="m-1 pb-6 shadow-md">
+              <div
+                key={project}
+                className="m-1 rounded-lg bg-white px-2 pb-6 shadow-md"
+              >
                 <h2 className="text-center font-heading font-semibold uppercase">
                   {project.name}
                 </h2>
