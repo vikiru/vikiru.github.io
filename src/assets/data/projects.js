@@ -50,7 +50,7 @@ const projectData = {
         "Contributed to the development and enhancement of a collection of classes representing Java's OOP Model",
         "Contributed to the development of a Parser class to convert JSON data from Joern to Java objects",
         "Designed classes for UML relationship assignment and code smell detection statistics",
-        " Implemented and tested algorithms for three specific code smells (Inappropriate Intimacy, Refused Bequest, and Orphan Variable)",
+        "Implemented and tested algorithms for three specific code smells (Inappropriate Intimacy, Refused Bequest, and Orphan Variable)",
       ],
       technologiesUsed: [
         "Java",

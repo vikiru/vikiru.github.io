@@ -1,5 +1,5 @@
 .project-card {
-  @apply font-primary m-2 rounded-xl p-5;
+  @apply m-2 rounded-xl p-5;
 }
 
 .project-name {

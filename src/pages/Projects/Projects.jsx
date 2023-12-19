@@ -68,7 +68,7 @@ function Projects() {
                       Read More
                     </span>
                     <a
-                      href={project.name}
+                      href={"/projects/" + project.name.toLowerCase()}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

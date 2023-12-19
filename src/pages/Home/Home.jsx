@@ -184,7 +184,7 @@ function Home() {
       </section>
 
       {/* footer section */}
-      <footer className="mt-2">
+      <footer className="mt-2 ">
         <div>
           <p className="text-center font-heading font-thin text-white">
             <span>
