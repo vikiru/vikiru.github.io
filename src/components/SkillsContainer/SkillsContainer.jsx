@@ -1,38 +1,26 @@
-import "./SkillsContainer.css";
-
 import React from "react";
 import skillsData from "../../assets/data/skills";
 
 function SkillsContainer() {
   return (
-    <section className="snap-center" id="skills">
-      <p className="section-text">Skills</p>
-      <section className="section-container md:grid md:grid-cols-2 lg:grid-cols-4">
-        {Object.keys(skillsData).map((skillCategory) => (
-          <section className="2xl:block" key={skillCategory} id={skillCategory}>
-            <section id="skills-md" className="xs:hidden md:block">
-              <p className="skill-category">{skillCategory}</p>
-              <ul className="list-none text-center">
-                {skillsData[`${skillCategory}`].map((skill) => (
-                  <li key={skill} className="skill">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </section>
-            <section id="skills-xs" className="pl-2 md:hidden">
-              <p>
-                <span className="font-primary text-justify font-heading font-bold uppercase">
-                  {skillCategory}:{" "}
-                </span>
-                <span className="font-subheading font-semibold text-gray-400">
-                  {skillsData[`${skillCategory}`].join(", ")}
-                </span>
+    <section className="mx-auto bg-white py-6" id="skills">
+      <div className="mx-auto">
+        <h2 className="pt-2 text-center text-2xl font-bold uppercase underline">
+          Skills
+        </h2>
+        <div className="mx-auto lg:grid lg:grid-cols-2">
+          {Object.keys(skillsData).map((skillCategory) => (
+            <div key={skillCategory} className="mx-auto max-w-sm">
+              <h2 className="text-center font-heading text-xl font-semibold uppercase">
+                {skillCategory}
+              </h2>
+              <p className="text-center font-subheading text-lg font-thin leading-6 text-black">
+                {skillsData[`${skillCategory}`].join(", ")}
               </p>
-            </section>
-          </section>
-        ))}
-      </section>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
