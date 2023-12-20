@@ -4,7 +4,7 @@ import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-function ProjectShowcase(props) {
+function ProjectShowcasePage(props) {
   const project = props.project;
   return (
     <main className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-gradient-to-r from-red-500 to-teal-400 pb-4 scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
@@ -89,8 +89,8 @@ function ProjectShowcase(props) {
   );
 }
 
-ProjectShowcase.propTypes = {
+ProjectShowcasePage.propTypes = {
   project: PropTypes.object,
 };
 
-export default ProjectShowcase;
+export default ProjectShowcasePage;

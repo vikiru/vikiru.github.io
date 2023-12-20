@@ -1,6 +1,6 @@
 import React from "react";
 
-function Home() {
+function HomePage() {
   return (
     <main className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-gradient-to-r from-red-500 to-teal-400 scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
       <div className="mx-2 my-12 rounded-lg py-4 ">
@@ -36,4 +36,4 @@ function Home() {
     </main>
   );
 }
-export default Home;
+export default HomePage;

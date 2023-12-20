@@ -2,7 +2,7 @@ import React from "react";
 import courseData from "./../../assets/data/courses";
 import educationData from "../../assets/data/education";
 
-function Courses() {
+function CoursesPage() {
   return (
     <main className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-gradient-to-r from-red-500 to-teal-400 pb-4 scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
       <div className="m-2 bg-white py-6">
@@ -62,4 +62,4 @@ function Courses() {
   );
 }
 
-export default Courses;
+export default CoursesPage;
