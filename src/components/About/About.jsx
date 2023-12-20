@@ -9,7 +9,7 @@ function About() {
   return (
     <section className="mx-auto">
       <div className="lg:grid lg:grid-cols-2">
-        <div className="max-w-sm">
+        <div className="mx-auto max-w-sm">
           <div className="mx-auto my-1 flex max-w-sm justify-center">
             <img
               className="h-40 w-40 rounded-full"
@@ -60,7 +60,7 @@ function About() {
             </a>
           </div>
         </div>
-        <div className="max-w-sm">
+        <div className="mx-auto max-w-sm ">
           <p className="my-2 font-body text-xl font-thin leading-6 text-white xxs:text-center lg:text-justify">
             {aboutData.hero}
           </p>
