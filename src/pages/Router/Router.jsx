@@ -13,7 +13,7 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />}></Route>
+      <Route path="/about" element={<About />} />
       <Route path="/education/courses" element={<Courses />} />
       <Route path="/projects" element={<Projects />} />
       {projects.map((project) => (
