@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
+import About from "../About/About";
 import Courses from "../Courses/Courses";
 import Home from "../Home/Home";
 import ProjectShowcase from "../ProjectShowcase/ProjectShowcase";
@@ -11,7 +12,8 @@ function Router() {
   const projects = projectData.projects;
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />}></Route>
       <Route path="/education/courses" element={<Courses />} />
       <Route path="/projects" element={<Projects />} />
       {projects.map((project) => (
