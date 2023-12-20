@@ -7,17 +7,17 @@ function Courses() {
       <h2 className="pt-2 text-center text-2xl font-bold uppercase text-white underline">
         Courses
       </h2>
-      <div className="grid grid-cols-4">
+      <div>
         {courseData.years.map((year) => (
           <div key={year.title}>
-            <h3 className="text-center font-subheading text-xl font-semibold uppercase text-white underline">
+            <h3 className="pl-3 font-subheading text-xl font-semibold uppercase text-white underline xxs:text-center lg:text-left">
               {year.title}
             </h3>
-            <div>
+            <div className="md:grid md:grid-cols-2 lg:grid-cols-3 lg:overflow-x-auto">
               {year.courses.map((course) => (
                 <div
                   key={course.courseCode}
-                  className="m-2 max-w-sm rounded-md bg-white px-4 pb-4 pt-2"
+                  className="m-2 max-w-sm rounded-md bg-white px-4 pt-2 lg:pb-4"
                 >
                   <h3 className="text-center font-semibold">
                     {course.courseCode}
@@ -29,14 +29,11 @@ function Courses() {
                   </h4>
 
                   {/* Course Description */}
-                  <details className="max-w-sm text-center">
-                    <summary className="font-subheading text-sm font-thin">
-                      Read More
-                    </summary>
+                  <div className="max-w-sm text-center">
                     <p className="text-center font-body text-sm leading-6">
                       {course.description}
                     </p>
-                  </details>
+                  </div>
                 </div>
               ))}
             </div>
