@@ -11,6 +11,7 @@
 		<img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
 		alt="Wakatime Coding Stats for Portfolio Website"></img>
 	</a>
+	<br>
 	<a href="https://github.com/vikiru/vikiru.github.io/releases">
 		<img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release"/>
 	</a>
