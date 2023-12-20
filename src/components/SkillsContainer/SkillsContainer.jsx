@@ -3,7 +3,7 @@ import skillsData from "../../assets/data/skills";
 
 function SkillsContainer() {
   return (
-    <section className="mx-auto bg-white py-6" id="skills">
+    <section className="mx-auto bg-white py-4" id="skills">
       <div className="mx-auto">
         <h2 className="pt-2 text-center text-2xl font-bold uppercase underline">
           Skills
