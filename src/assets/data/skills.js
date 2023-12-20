@@ -1,6 +1,5 @@
 const skillsData = {
   languages: ["Java", "Python", "HTML", "CSS", "JavaScript", "Markdown"],
-  runtime: ["Node.js"],
   frameworks: [
     "Spring",
     "JUnit",
@@ -11,8 +10,6 @@ const skillsData = {
     "TailwindCSS",
   ],
   libraries: ["NumPy", "SciPy", "SimPy", "Pandas", "Chai"],
-  database: ["MySQL", "SQLite", "MongoDB", "Sequelize"],
-  devops: ["CircleCI", "Github Actions", "Snyk"],
   tools: [
     "Maven",
     "NPM",
@@ -24,10 +21,13 @@ const skillsData = {
     "ESLint",
     "Prettier",
   ],
+  database: ["MySQL", "SQLite", "MongoDB", "Sequelize"],
+  devops: ["CircleCI", "Github Actions", "Snyk"],
+  hosting: ["Github Pages", "Heroku", "Render"],
   ide: ["IntelliJ", "Eclipse"],
   editor: ["VS Code"],
-  hosting: ["Github Pages", "Heroku", "Render"],
   os: ["Windows", "Ubuntu"],
+  runtime: ["Node.js"],
 };
 
 export default skillsData;
