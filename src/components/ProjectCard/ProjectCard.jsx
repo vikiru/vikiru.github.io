@@ -59,7 +59,7 @@ function ProjectCard(props) {
             Read More
           </span>
           <a
-            href={"/projects/" + project.name.toLowerCase()}
+            href={project.projectPageUrl}
             target="_blank"
             rel="noopener noreferrer"
           >

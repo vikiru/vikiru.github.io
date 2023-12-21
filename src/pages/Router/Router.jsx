@@ -19,7 +19,7 @@ function Router() {
       {projects.map((project) => (
         <Route
           key={project}
-          path={"/projects/" + project.name.toLowerCase()}
+          path={project.projectPageUrl}
           element={<ProjectShowcase project={project} />}
         />
       ))}
