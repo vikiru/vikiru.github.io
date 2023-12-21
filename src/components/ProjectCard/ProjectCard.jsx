@@ -1,73 +1,76 @@
+import {
+  faArrowUpRightFromSquare,
+  faBookOpen,
+} from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import React from "react";
-import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <section
-      className="project-card snap-center shadow-lg"
-      key={project}
-      id={project.name}
-    >
-      {/* Project Name, Start - End Section */}
-      <div className="lg:flex lg:justify-between">
-        <p className="project-name xs:text-center">{project.name}</p>
-        <p className="lg:project-dates xs:text-center xs:font-body xs:font-thin xs:uppercase xs:text-slate-100">
-          {project.startDate} - {project.endDate}
+    <div key={project} className="m-1 rounded-lg bg-white px-2 pb-6 shadow-md">
+      <h2 className="text-center font-heading font-semibold uppercase">
+        {project.name}
+      </h2>
+      <p className="text-center font-body font-thin uppercase">
+        {project.startDate} - {project.endDate}
+      </p>
+      <div className="max-w-sm">
+        <h3 className="text-center font-subheading leading-6">
+          {project.description}
+        </h3>
+      </div>
+
+      <div className="max-w-sm">
+        <p className="text-center font-body font-thin text-slate-500">
+          {project.technologiesUsed.join(", ")}
         </p>
       </div>
-      <p className="project-desc">{project.description}</p>
-      <div className="2xl:flex 2xl:justify-between">
-        {/* Technologies Used within Project Section */}
-        <div>
-          <p className="pl-1 text-sm xs:text-center lg:text-left">
-            <span className="font-subheading font-thin text-gray-400">
-              {project.technologiesUsed.join(", ")}
-            </span>
-          </p>
-        </div>
-        {/* Project URLs */}
-        <section id="project-urls" className="flex justify-center pt-4">
-          {project.githubUrl != "" && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} className="social-icon pr-1" />
-            </a>
-          )}
-          {project.documentationUrl != "" && (
-            <a
-              href={project.documentationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faBookOpen} className="social-icon" />
-            </a>
-          )}
-        </section>
+
+      <div className="flex justify-center pt-1">
+        {project.githubUrl != "" && (
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="lg:ease-in-out-anim pr-1 text-3xl text-black"
+            />
+          </a>
+        )}
+        {project.documentationUrl != "" && (
+          <a
+            href={project.documentationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faBookOpen}
+              className="lg:ease-in-out-anim pr-1 text-3xl text-black"
+            />
+          </a>
+        )}
       </div>
-      {/* Project Accomplishments */}
-      <details>
-        <summary className="text-center font-subheading uppercase text-gray-400 xs:text-sm md:text-base">
-          View My Accomplishments
-        </summary>
-        <ul className="list-disc marker:text-gray-400">
-          {project.accomplishments.map((accomplishment) => (
-            <li
-              className="text-left font-heading text-sm text-slate-50"
-              key={accomplishment}
-            >
-              {accomplishment}
-            </li>
-          ))}
-        </ul>
-      </details>
-    </section>
+
+      <div className="flex justify-center pt-1">
+        <button className="rounded bg-black px-4 py-2">
+          <span className="text-md font-subheading uppercase text-white">
+            Read More
+          </span>
+          <a
+            href={"/projects/" + project.name.toLowerCase()}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className="lg:ease-in-out-anim pl-1 text-lg text-white"
+              icon={faArrowUpRightFromSquare}
+            />
+          </a>
+        </button>
+      </div>
+    </div>
   );
 }
 
