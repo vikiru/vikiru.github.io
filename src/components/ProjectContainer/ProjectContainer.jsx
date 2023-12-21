@@ -5,14 +5,17 @@ import projectData from "../../assets/data/projects";
 function ProjectContainer() {
   const projects = projectData.projects;
   return (
-    <section id="projects" className="snap-center">
-      <h1 className="section-text">Projects</h1>
-      <section className="grid grid-cols-1">
-        {/* Project Info Div */}
-        {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
-        ))}
-      </section>
+    <section className="mx-auto py-6">
+      <div>
+        <h2 className="pt-2 text-center text-2xl font-bold uppercase text-white underline">
+          Projects
+        </h2>
+        <div className="mx-auto grid max-w-2xl grid-cols-2">
+          {projects.map((project) => (
+            <ProjectCard project={project} key={project} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
