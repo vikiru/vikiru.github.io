@@ -19,6 +19,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/Urvo",
       documentationUrl: "https://vikiru.github.io/Urvo/",
       projectPageUrl: "/projects/Urvo",
+      imagePath: "/src/assets/images/Urvo/Urvo-demo.gif",
       description: "A multi-purpose Discord bot.",
       startDate: "June 2021",
       endDate: "July 2023",
@@ -43,6 +44,7 @@ const projectData = {
       documentationUrl:
         "https://vikiru.github.io/CodeSmell/jfx/module-summary.html",
       projectPageUrl: "/projects/CodeSmell",
+      imagePath: "/src/assets/images/CodeSmell/CodeSmell-demo.gif",
       description:
         "A tool for detection and visualization of code smells for object-oriented languages.",
       startDate: "Sept 2022",
@@ -71,6 +73,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/discrete-sim",
       documentationUrl: "",
       projectPageUrl: "/projects/discrete-sim",
+      imagePath: "/src/assets/images/discrete-sim/discrete-sim-demo.gif",
       description: "Manufacturing facility simulation.",
       startDate: "Jan 2022",
       endDate: "Apr 2022",
@@ -86,6 +89,8 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/Mini-SurveyMonkey",
       documentationUrl: "",
       projectPageUrl: "/projects/Mini-SurveyMonkey",
+      imagePath:
+        "/src/assets/images/Mini-SurveyMonkey/Min-SurveyMonkey-demo.gif",
       description:
         "A SurveyMonkey clone built as a Spring Boot CRUD Web Application.",
       startDate: "Mar 2022",
@@ -111,6 +116,8 @@ const projectData = {
       githubUrl: "",
       documentationUrl: "",
       projectPageUrl: "/projects/Elevator-Simulator",
+      imagePath:
+        "/src/assets/images/Concurrent-Elevator/Concurrent-Elevator-demo.gif",
       description:
         "The aim of this project was to create a simulation of an elevator transporting passengers among floors, with the capability to introduce and handle errors that may arise during operation. ",
       startDate: "Jan 2021",
@@ -128,6 +135,7 @@ const projectData = {
       githubUrl: "https://github.com/flavji/digitalRisk",
       documentationUrl: "",
       projectPageUrl: "/projects/digitalRisk",
+      imagePath: "/src/assets/images/digitalRisk/digitalRisk-demo.gif",
       description:
         "Digital Risk is a re-creation of the board game Risk: Global Domination using Java Swing and following the MVC design pattern.",
       startDate: "Oct 2020",
