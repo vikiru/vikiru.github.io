@@ -14,16 +14,19 @@ function ProjectShowcasePage(props) {
           <h2 className="text-center font-heading text-4xl font-bold">
             {project.name}
           </h2>
-          <div className="max-w-sm">
-            <h3 className="text-center font-thin">{project.description}</h3>
+          <p className="text-center font-body font-thin uppercase">
+            {project.startDate} - {project.endDate}
+          </p>
+          <div className="mx-auto max-w-sm">
+            <h3 className="text-center font-body">{project.description}</h3>
           </div>
-          <div className="max-w-sm">
+          <div className="mx-auto max-w-sm py-1">
             <p className="text-center font-body text-black">
               {project.technologiesUsed.join(", ")}
             </p>
           </div>
           <div>
-            <div className="flex justify-center pt-1">
+            <div className="flex justify-center py-2">
               {project.githubUrl != "" && (
                 <a
                   href={project.githubUrl}
