@@ -11,7 +11,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <div key={project} className="m-1 rounded-lg bg-white px-2 pb-6">
+    <div className="m-1 rounded-md bg-white px-2 pb-6 shadow-md">
       <h2 className="text-center font-heading font-semibold uppercase ">
         {project.name}
       </h2>
