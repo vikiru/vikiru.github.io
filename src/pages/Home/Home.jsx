@@ -3,7 +3,7 @@ import React from "react";
 
 function HomePage() {
   return (
-    <div className="scroll-smoothscrollbar h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scrollbar-track-teal-400 scrollbar-thumb-red-500">
+    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
       <main>
         <div className="mx-2 my-12 rounded-lg py-4 ">
           <div className="max-w-5xl">
