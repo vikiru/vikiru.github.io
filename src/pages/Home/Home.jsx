@@ -1,9 +1,11 @@
 import Footer from "../../components/Footer/Footer";
+import NavBar from "./../../components/NavBar/NavBar";
 import React from "react";
 
 function HomePage() {
   return (
     <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
+      <NavBar />
       <main>
         <div className="mx-2 my-12 rounded-lg py-4 ">
           <div className="max-w-5xl">

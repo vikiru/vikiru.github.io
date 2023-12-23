@@ -1,93 +1,32 @@
-import "./NavBar.css";
+import React from "react";
+import navData from "../../assets/data/nav";
 
-import React, { useState } from "react";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+// import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => {
+  // const [isOpen, setIsOpen] = useState(false);
+  /** const handleClick = () => {
     setIsOpen(!isOpen);
   };
+ */
 
   return (
-    <nav
-      className="secondary-colour mx-2 mb-2 snap-center shadow-xl"
-      id="mainNav"
-    >
-      <div className="mx-2 flex items-center justify-between">
-        <section id="small-screen-nav-toggler" className="xs:block lg:hidden">
-          <button onClick={handleClick}>
-            {!isOpen ? (
-              <FontAwesomeIcon
-                icon={faBars}
-                className="font-primary py-1 pl-1"
-              />
-            ) : (
-              <FontAwesomeIcon icon={faX} className="font-primary pl-1 pt-1" />
-            )}
-          </button>
-        </section>
-      </div>
-      {isOpen ? (
-        <section className="block justify-center px-4 pb-3 pt-2">
-          <a href="#" className="nav-text block text-center">
-            Home
-          </a>
-          <a href="#about" className="nav-text block text-center">
-            About
-          </a>
-          <a href="#education" className="nav-text block text-center">
-            Education
-          </a>
-          <a href="#skills" className="nav-text block text-center">
-            Skills
-          </a>
-          <a href="#projects" className="nav-text block text-center">
-            Projects
-          </a>
-          <a href="#contact" className="nav-text block text-center">
-            Contact
-          </a>
-        </section>
-      ) : (
-        <section className="px-4 pb-3 pt-2 xxs:hidden lg:flex lg:items-center lg:justify-center">
-          <a href="#" className="nav-text lg:ease-in-out-anim block lg:ml-2">
-            Home
-          </a>
-          <a
-            href="#about"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            About
-          </a>
-          <a
-            href="#education"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Education
-          </a>
-          <a
-            href="#skills"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Skills
-          </a>
-          <a
-            href="#projects"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Contact
-          </a>
-        </section>
-      )}
+    <nav>
+      <section id="navigation-menu" className="mx-2 mt-1 bg-black py-4">
+        <div className="flex justify-center">
+          {navData.map((nav) => (
+            <a
+              key={nav}
+              href={nav.navLink}
+              className="px-2 text-center font-heading uppercase text-white hover:underline"
+            >
+              {nav.navTitle}
+            </a>
+          ))}
+        </div>
+      </section>
     </nav>
   );
 }
