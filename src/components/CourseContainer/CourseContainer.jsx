@@ -29,7 +29,7 @@ function CourseContainer() {
       <div>
         {courseData.years.map((year) => (
           <div key={year.title}>
-            <h3 className="pl-3 font-subheading text-xl font-semibold uppercase text-black underline xxs:text-center lg:text-left">
+            <h3 className="pl-3 font-subheading text-xl font-semibold uppercase text-black underline xxs:text-center">
               {year.title}
             </h3>
             <div className="md:grid md:grid-cols-2 lg:grid-cols-3 lg:overflow-x-auto">
