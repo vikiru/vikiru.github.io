@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
-    <section className="mx-auto">
+    <section className="mx-auto bg-gradient-to-r from-red-500 to-teal-400 ">
       <div className="lg:grid lg:grid-cols-2">
         <div className="mx-auto max-w-sm">
           <div className="mx-auto my-1 flex max-w-sm justify-center">
