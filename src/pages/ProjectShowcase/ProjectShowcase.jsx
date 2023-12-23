@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "./../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
 import PropTypes from "prop-types";
 import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +10,7 @@ function ProjectShowcasePage(props) {
   const project = props.project;
   return (
     <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-white scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
+      <NavBar />
       <main>
         <section className="mb-auto flex justify-center py-6">
           <div className="max-w-md  ">
