@@ -19,8 +19,9 @@ const projectData = {
       accomplishments: [
         "Developed a portfolio website using React and TailwindCSS",
         "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design",
+        "Utilized React Router to create static and dynamic routes, displayed as individual pages",
       ],
-      technologiesUsed: ["React", "TailwindCSS"],
+      technologiesUsed: ["React", "React Router", "TailwindCSS"],
     },
     {
       name: "Urvo",
