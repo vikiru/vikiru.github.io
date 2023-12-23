@@ -62,9 +62,9 @@ function ProjectShowcasePage(props) {
             <h2 className="pt-2 text-center text-2xl font-bold uppercase underline">
               Demo
             </h2>
-            <div className="mx-auto flex max-w-3xl justify-center rounded-lg">
+            <div className="mx-auto flex max-w-2xl justify-center">
               <img
-                className="object-fit h-auto w-auto"
+                className="object-fit h-auto w-full"
                 src={project.imagePath}
                 alt={`${project.name} Demo`}
                 title={`${project.name} Demo`}
@@ -73,7 +73,7 @@ function ProjectShowcasePage(props) {
           </div>
         )}
 
-        <div className="mx-auto mb-auto bg-white py-4">
+        <div className="mx-auto max-w-3xl py-4">
           <h2 className="pt-2 text-center text-2xl font-bold uppercase underline">
             Accomplishments
           </h2>
