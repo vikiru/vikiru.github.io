@@ -45,9 +45,11 @@ function HomePage() {
             </a>
           </div>
           <div className="w-60 rounded-full bg-orange-400 p-2 hover:cursor-pointer hover:ring-4">
-            <h2 className="text-center text-2xl uppercase text-white">
-              View My Work
-            </h2>
+            <a href="/projects" target="_blank" rel="noopener noreferrer">
+              <h2 className="text-center text-2xl uppercase text-white">
+                View My Work
+              </h2>
+            </a>
           </div>
           <div className="w-60 rounded-full bg-green-400 p-2 hover:cursor-pointer hover:ring-4">
             <a
