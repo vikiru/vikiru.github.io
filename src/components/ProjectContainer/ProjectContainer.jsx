@@ -7,10 +7,10 @@ function ProjectContainer() {
   return (
     <section className="mx-auto py-6">
       <div>
-        <h2 className="pt-2 text-center text-2xl font-bold uppercase text-black underline">
+        <h2 className="pt-2 text-center text-2xl font-bold uppercase text-black underline lg:text-4xl">
           Projects
         </h2>
-        <div className="mx-auto grid max-w-2xl grid-cols-2 gap-4">
+        <div className="mx-auto grid grid-cols-2 gap-4">
           {projects.map((project) => (
             <ProjectCard project={project} key={project} />
           ))}
