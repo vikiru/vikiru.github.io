@@ -25,9 +25,12 @@ function ProjectCard(props) {
         </h3>
       </div>
 
-      <div className="flex justify-center gap-2">
+      <div className="m-2 mx-auto flex max-w-lg justify-center xs:grid xs:grid-cols-2 lg:gap-2">
         {project.technologiesUsed.map((tech) => (
-          <div key={tech} className="w-auto max-w-lg bg-white px-2 lg:py-2">
+          <div
+            key={tech}
+            className="mx-auto flex w-auto max-w-xl items-center bg-white px-2 lg:py-2"
+          >
             <h2 className="text-center font-subheading font-semibold text-black lg:text-xl">
               {tech}
             </h2>
@@ -35,35 +38,34 @@ function ProjectCard(props) {
         ))}
       </div>
 
-      {project.githubUrl !== "" ||
-        (project.documentationUrl !== "" && (
-          <div className="flex justify-center pt-1">
-            {project.githubUrl != "" && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
-                />
-              </a>
-            )}
-            {project.documentationUrl != "" && (
-              <a
-                href={project.documentationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faBookOpen}
-                  className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
-                />
-              </a>
-            )}
-          </div>
-        ))}
+      {project.githubUrl !== "" && (
+        <div className="flex justify-center pt-1">
+          {project.githubUrl != "" && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
+              />
+            </a>
+          )}
+          {project.documentationUrl != "" && (
+            <a
+              href={project.documentationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
+              />
+            </a>
+          )}
+        </div>
+      )}
 
       <div className="flex justify-center pt-1">
         <button className="rounded bg-black px-4 py-2">
