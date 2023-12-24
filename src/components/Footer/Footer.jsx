@@ -7,7 +7,12 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <footer className="mt-2 w-full">
-      <div className="grid grid-cols-2 bg-black">
+      <div className="grid grid-cols-3 bg-black">
+        <div className="m-auto max-w-lg">
+          <h2 className="font-cinzel tracking-widest text-white xxs:text-lg md:text-5xl">
+            Visakan
+          </h2>
+        </div>
         <div>
           <h2 className="text-center text-xl uppercase text-white">
             Read More
