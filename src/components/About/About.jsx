@@ -17,10 +17,10 @@ function About() {
             ></img>
           </div>
           <div className="mx-auto max-w-sm">
-            <h2 className="text-bold hover: text-center font-heading text-3xl font-bold text-white">
+            <h2 className="text-center font-heading text-3xl text-white lg:text-4xl">
               {aboutData.fullName}
             </h2>
-            <h3 className="text-center font-subheading text-2xl font-thin text-white">
+            <h3 className="text-center font-subheading text-2xl text-white">
               {aboutData.title}
             </h3>
           </div>
@@ -33,7 +33,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim text-3xl text-white"
+                className="lg:ease-in-out-anim text-3xl text-white lg:text-5xl"
               />
             </a>
             <a
@@ -44,7 +44,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="lg:ease-in-out-anim text-3xl text-white"
+                className="lg:ease-in-out-anim text-3xl text-white lg:text-5xl"
               />
             </a>
             <a
@@ -55,13 +55,13 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="lg:ease-in-out-anim text-3xl text-white"
+                className="lg:ease-in-out-anim text-3xl text-white lg:text-5xl"
               />
             </a>
           </div>
         </div>
-        <div className="mx-auto max-w-sm ">
-          <p className="my-2 font-body text-xl font-thin leading-6 text-white xxs:text-center lg:text-justify">
+        <div className="mx-auto max-w-sm lg:max-w-xl">
+          <p className="my-2 font-body text-xl text-white xxs:text-center lg:text-justify lg:text-2xl">
             {aboutData.hero}
           </p>
         </div>

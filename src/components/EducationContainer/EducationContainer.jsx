@@ -16,7 +16,7 @@ function EducationContainer() {
   return (
     <section className="mx-auto bg-white py-4">
       <div className="mx-auto">
-        <h2 className="pt-2 text-center text-2xl font-bold uppercase underline">
+        <h2 className="pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
           Education
         </h2>
       </div>
@@ -24,17 +24,17 @@ function EducationContainer() {
       {/* University Section - XSS - XL screens*/}
       <section className="m-2 mx-auto max-w-lg xl:hidden" id="unversity-info">
         <div className="mx-2 px-2">
-          <h2 className="text-center font-heading font-semibold uppercase">
+          <h2 className="text-center font-heading font-semibold uppercase lg:text-3xl">
             {educationData.universityName}
           </h2>
         </div>
         <div className="mx-auto max-w-sm">
-          <h3 className="pl-2 text-center font-body font-thin uppercase">
+          <h3 className="pl-2 text-center font-body uppercase lg:text-2xl">
             {educationData.enrollmentStart} - {educationData.enrollmentEnd}
           </h3>
         </div>
         <div className="max-w-lg px-2">
-          <h3 className="text-center font-subheading font-thin">
+          <h3 className="text-center font-subheading lg:text-3xl">
             {educationData.degree} - {educationData.acronym}.,{" "}
             {educationData.degreeProgram}
           </h3>
@@ -65,19 +65,19 @@ function EducationContainer() {
         id="unversity-info"
       >
         <div className="mx-2 px-2">
-          <h2 className="text-left font-heading font-semibold uppercase">
+          <h2 className="text-left font-heading font-semibold uppercase lg:text-3xl">
             {educationData.universityName}
           </h2>
         </div>
         <div className="mx-2 flex justify-between">
-          <div className="max-w-lg px-2">
-            <h3 className="text-left font-subheading font-thin">
+          <div className="max-w-xl px-2 lg:max-w-4xl">
+            <h3 className="text-left font-subheading lg:text-2xl">
               {educationData.degree} - {educationData.acronym}.,{" "}
               {educationData.degreeProgram}
             </h3>
           </div>
           <div className="max-w-xs">
-            <h3 className="pl-2 text-left font-body font-thin uppercase">
+            <h3 className="pl-2 text-left font-body uppercase lg:text-xl">
               {educationData.enrollmentStart} - {educationData.enrollmentEnd}
             </h3>
           </div>
@@ -153,14 +153,14 @@ function EducationContainer() {
         className="m-2 px-2 xxs:hidden xl:block"
         id="coursera-certificate-info"
       >
-        <h2 className="mx-2 pt-2 text-left font-heading font-semibold uppercase">
+        <h2 className="mx-2 pt-2 text-left font-heading font-semibold uppercase lg:text-3xl">
           Coursera
         </h2>
         {courseraCertificates.map((certificate) => (
           <div key={certificate.certificationName}>
             <div className="flex justify-between">
-              <div className="mx-2 max-w-lg">
-                <h3 className="font-subheading font-thin">
+              <div className="mx-2 max-w-lg lg:max-w-4xl">
+                <h3 className="font-subheading lg:text-2xl">
                   {certificate.certificationName}
                   <span>
                     {" "}
@@ -178,7 +178,7 @@ function EducationContainer() {
                 </h3>
               </div>
               <div className="max-w-xs">
-                <h3 className="pl-2 text-left font-body font-thin uppercase">
+                <h3 className="pl-2 text-left font-body uppercase lg:text-xl">
                   {certificate.startDate} - {certificate.completionDate}
                 </h3>
               </div>
