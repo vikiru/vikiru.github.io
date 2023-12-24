@@ -13,6 +13,7 @@ module.exports = {
       heading: ["Montserrat"],
       subheading: ["Raleway"],
       body: ["Source Sans 3"],
+      cinzel: ["Cinzel"],
       ...defaultTheme.fontFamily,
     },
   },
