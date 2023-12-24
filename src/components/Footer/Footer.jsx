@@ -3,47 +3,37 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import navData from "./../../assets/data/nav";
 
 function Footer() {
   return (
     <footer className="mt-2 w-full">
       <div className="grid grid-cols-3 bg-black">
-        <div className="m-auto max-w-lg">
+        <div className="m-auto max-w-sm pr-4">
           <h2 className="font-cinzel tracking-widest text-white xxs:text-lg md:text-5xl">
             Visakan
           </h2>
         </div>
         <div>
-          <h2 className="text-center text-xl uppercase text-white">
+          <h2 className="text-center font-heading text-xl uppercase text-white lg:text-2xl">
             Read More
           </h2>
-          <div>
-            <a href="/">
-              <h2 className="text-center text-lg text-white hover:underline">
-                Home
-              </h2>
-            </a>
-            <a href="/about">
-              <h2 className="text-center text-lg text-white hover:underline">
-                About
-              </h2>
-            </a>
-            <a href="/education/courses">
-              <h2 className="text-center text-lg text-white hover:underline">
-                Courses
-              </h2>
-            </a>
-            <a href="/projects">
-              <h2 className="text-center text-lg text-white hover:underline">
-                Projects
-              </h2>
-            </a>
-          </div>
+          {navData.map((navItem) => (
+            <div key={navItem} className="mx-auto w-20">
+              <a href={navItem.navLink}>
+                <h2 className="text-center text-lg text-white hover:underline lg:text-xl">
+                  {navItem.navTitle}
+                </h2>
+              </a>
+            </div>
+          ))}
         </div>
         <div className="mx-auto">
-          <h2 className="text-center text-xl uppercase text-white">Contact</h2>
+          <h2 className="text-center font-heading text-xl uppercase text-white lg:text-2xl">
+            Contact
+          </h2>
           <div>
-            <h2 className="py-2 text-center text-lg font-semibold text-white">
+            <h2 className="py-2 text-center font-subheading text-lg text-white lg:text-xl">
               Ottawa, ON
             </h2>
             <a
@@ -54,7 +44,7 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-white"
+                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-white lg:text-5xl"
               />
             </a>
             <a
@@ -65,7 +55,7 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-white"
+                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-white lg:text-5xl"
               />
             </a>
             <a
@@ -76,7 +66,7 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-white"
+                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-white lg:text-5xl"
               />
             </a>
           </div>
