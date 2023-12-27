@@ -11,7 +11,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <div className="bg-primary rounded-md px-2 pb-6 shadow-md">
+    <div className="bg-primary rounded-md px-2 pb-6 shadow-md ring-2">
       <h2 className="text-secondary text-center font-heading font-semibold uppercase lg:text-3xl">
         {project.name}
       </h2>
@@ -20,7 +20,7 @@ function ProjectCard(props) {
       </p>
 
       <div className="mx-auto max-w-sm">
-        <h3 className="text-center font-subheading leading-6 lg:text-2xl">
+        <h3 className="text-center font-subheading leading-6 lg:text-xl">
           {project.description}
         </h3>
       </div>
@@ -39,7 +39,7 @@ function ProjectCard(props) {
       </div>
 
       {project.githubUrl !== "" && (
-        <div className="mx-auto flex max-w-xs justify-center pt-1 pb-2">
+        <div className="mx-auto flex max-w-xs justify-center pb-2 pt-1">
           {project.githubUrl != "" && (
             <a
               href={project.githubUrl}
@@ -67,9 +67,9 @@ function ProjectCard(props) {
         </div>
       )}
 
-      <div className="flex justify-center pt-1 bg-secondary max-w-sm mx-auto">
+      <div className="bg-secondary mx-auto flex max-w-sm justify-center pt-1">
         <button className="rounded px-4 py-2">
-          <span className="text-md font-subheading uppercase text-accent lg:text-xl">
+          <span className="text-md text-accent font-subheading uppercase lg:text-xl">
             Read More
           </span>
           <a
@@ -78,7 +78,7 @@ function ProjectCard(props) {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon
-              className="lg:ease-in-out-anim pl-1 text-lg text-accent"
+              className="lg:ease-in-out-anim text-accent pl-1 text-lg"
               icon={faArrowUpRightFromSquare}
             />
           </a>
