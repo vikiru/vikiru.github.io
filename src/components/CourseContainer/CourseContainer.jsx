@@ -32,7 +32,7 @@ function CourseContainer() {
             <h3 className="text-primary bg-secondary pl-3 font-subheading text-xl font-semibold uppercase underline xxs:text-center lg:text-4xl">
               {year.title}
             </h3>
-            <div className="grid gap-3 lg:grid-cols-2">
+            <div className="grid gap-3 pt-2 px-2 lg:grid-cols-2">
               {year.courses.map((course) => (
                 <CourseCard key={course} course={course} />
               ))}
