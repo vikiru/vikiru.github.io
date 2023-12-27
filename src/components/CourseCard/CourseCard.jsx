@@ -6,7 +6,7 @@ function CourseCard(props) {
   return (
     <div
       key={course.courseCode}
-      className="m-2 rounded-md bg-white px-4 pt-2 shadow-md lg:pb-4"
+      className="mx-auto max-w-lg rounded-md bg-white px-4 pt-2 shadow-md lg:pb-4"
     >
       <h3 className="text-center font-semibold lg:text-3xl">
         {course.courseCode}
@@ -19,7 +19,7 @@ function CourseCard(props) {
 
       {/* Course Description */}
       <div className="mx-auto">
-        <p className="text-center font-body text-sm leading-6 lg:text-justify lg:text-xl">
+        <p className="text-center text-center font-body text-sm leading-6 lg:text-xl">
           {course.description}
         </p>
       </div>
