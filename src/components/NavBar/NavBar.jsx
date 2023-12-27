@@ -14,11 +14,11 @@ function NavBar() {
 
   return (
     <nav>
-      <section id="navigation-menu" className="bg-white py-4">
+      <section id="navigation-menu" className="bg-secondary py-4">
         <div className="flex justify-center">
           {navData.map((nav) => (
             <a key={nav} href={nav.navLink}>
-              <h2 className="px-2 text-lg uppercase text-black hover:underline lg:text-2xl">
+              <h2 className="text-primary px-2 text-lg uppercase hover:underline lg:text-2xl">
                 {nav.navTitle}
               </h2>
             </a>
