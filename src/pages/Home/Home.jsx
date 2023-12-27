@@ -6,17 +6,17 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
   return (
-    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-white">
+    <div className="bg-primary scrollbar-track-primary scrollbar-thumb-secondary h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar">
       <NavBar />
-      <main className="h-screen">
+      <main>
         <div className="flex justify-center">
-          <h2 className="font-cinzel text-8xl tracking-widest text-black">
+          <h2 className="text-secondary text-center font-cinzel tracking-widest lg:text-8xl">
             Visakan Kirubakaran
           </h2>
         </div>
 
-        <div className="flex justify-center">
-          <h3 className="font-subheading text-5xl font-thin text-black">
+        <div className="mx-auto flex max-w-lg justify-center">
+          <h3 className="text-secondary font-subheading text-5xl font-thin">
             Software Developer
           </h3>
         </div>
@@ -26,39 +26,41 @@ function HomePage() {
             icon={faLocationDot}
             className="px-2 pt-1 text-2xl"
           />
-          <span className="font-subheading text-2xl">Ottawa, ON</span>
+          <span className="text-secondary font-subheading text-2xl">
+            Ottawa, ON
+          </span>
         </div>
 
         <div className="mx-auto max-w-xl py-1">
-          <p className="text-center font-body text-4xl text-black">
+          <p className="text-secondary text-center font-body text-4xl">
             I have a passion for software design and web technologies. Committed
             to learning and contributing to meaningful projects!
           </p>
         </div>
 
         <div className="flex justify-center gap-2 py-4">
-          <div className="w-60 rounded-full bg-blue-400 p-2 hover:cursor-pointer hover:ring-4">
+          <div className="bg-accent w-60 rounded-full bg-blue-400 p-2 hover:cursor-pointer hover:ring-4">
             <a href="/about" target="_blank" rel="noopener noreferrer">
-              <h2 className="text-center text-2xl uppercase text-white">
+              <h2 className="text-secondary text-center text-2xl uppercase">
                 Read More
               </h2>
             </a>
           </div>
-          <div className="w-60 rounded-full bg-orange-400 p-2 hover:cursor-pointer hover:ring-4">
+          <div className="bg-accent w-60 rounded-full p-2 hover:cursor-pointer hover:ring-4">
             <a href="/projects" target="_blank" rel="noopener noreferrer">
-              <h2 className="text-center text-2xl uppercase text-white">
+              <h2 className="text-secondary text-center text-2xl uppercase tracking-widest">
                 View My Work
               </h2>
             </a>
           </div>
-          <div className="w-60 rounded-full bg-green-400 p-2 hover:cursor-pointer hover:ring-4">
+          <div className="bg-accent w-60 rounded-full p-2 hover:cursor-pointer hover:ring-4">
             <a
               href="mailto:viskirubakaran@outlook.com"
               target="_blank"
               rel="noopener noreferrer"
               id="email"
             >
-              <h2 className="text-center text-2xl uppercase text-white">
+              <h2 className="text-secondary text-center text-2xl uppercase tracking-widest">
                 Contact Me
               </h2>
             </a>
