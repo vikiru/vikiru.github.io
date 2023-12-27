@@ -13,14 +13,14 @@ function CourseContainer() {
           </h2>
         </div>
         <div className="mx-2 flex justify-between">
-          <div className="px-2">
+          <div className="px-2 max-w-md">
             <h3 className="text-secondary text-left font-subheading font-thin lg:text-2xl">
               {educationData.degree} - {educationData.acronym}.,{" "}
               {educationData.degreeProgram}
             </h3>
           </div>
-          <div className="max-w-xs">
-            <h3 className="pl-2 text-left font-body uppercase lg:text-xl">
+          <div className="max-w-md">
+            <h3 className="px-2 text-left font-body uppercase lg:text-xl">
               {educationData.enrollmentStart} - {educationData.enrollmentEnd}
             </h3>
           </div>

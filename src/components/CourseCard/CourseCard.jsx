@@ -19,7 +19,7 @@ function CourseCard(props) {
       </div>
 
       {/* Course Description */}
-      <div className="mx-auto">
+      <div className="mx-auto pb-4">
         <p className="text-center text-center font-body text-sm leading-6 lg:text-xl">
           {course.description}
         </p>
