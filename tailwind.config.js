@@ -18,7 +18,7 @@ module.exports = {
       ...defaultTheme.fontFamily,
     },
     colors: {
-      primary: "F2EFE9",
+      primary: "FFFFFF",
       secondary: "252627",
       accent: "F37748",
       backup: "564E58",
