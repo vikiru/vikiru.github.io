@@ -11,11 +11,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <div className="rounded-md bg-white px-2 pb-6 shadow-md">
-      <h2 className="text-center font-heading font-semibold uppercase lg:text-3xl">
+    <div className="bg-primary rounded-md px-2 pb-6 shadow-md">
+      <h2 className="text-secondary text-center font-heading font-semibold uppercase lg:text-3xl">
         {project.name}
       </h2>
-      <p className="mx-auto text-center font-body uppercase lg:text-xl">
+      <p className="text-backup mx-auto text-center font-body uppercase lg:text-xl">
         {project.startDate} - {project.endDate}
       </p>
 
@@ -25,13 +25,13 @@ function ProjectCard(props) {
         </h3>
       </div>
 
-      <div className="m-2 mx-auto flex max-w-lg justify-center xs:grid xs:grid-cols-2 lg:gap-2">
+      <div className="m-2 mx-auto max-w-lg justify-center xs:grid xs:grid-cols-2 lg:gap-2">
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto flex w-auto max-w-xl items-center bg-white px-2 lg:py-2"
+            className="mx-auto flex w-auto max-w-xl items-center rounded-full px-2 lg:py-2"
           >
-            <h2 className="text-center font-subheading font-semibold text-black lg:text-xl">
+            <h2 className="text-secondary text-center font-subheading font-semibold">
               {tech}
             </h2>
           </div>
@@ -39,7 +39,7 @@ function ProjectCard(props) {
       </div>
 
       {project.githubUrl !== "" && (
-        <div className="flex justify-center pt-1">
+        <div className="mx-auto flex max-w-xs justify-center pt-1 pb-2">
           {project.githubUrl != "" && (
             <a
               href={project.githubUrl}
@@ -48,7 +48,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
+                className="lg:ease-in-out-anim text-accent pr-4 text-3xl lg:text-5xl"
               />
             </a>
           )}
@@ -60,16 +60,16 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
-                className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
+                className="lg:ease-in-out-anim text-accent pr-1 text-3xl lg:text-5xl"
               />
             </a>
           )}
         </div>
       )}
 
-      <div className="flex justify-center pt-1">
-        <button className="rounded bg-black px-4 py-2">
-          <span className="text-md font-subheading uppercase text-white lg:text-xl">
+      <div className="flex justify-center pt-1 bg-secondary max-w-sm mx-auto">
+        <button className="rounded px-4 py-2">
+          <span className="text-md font-subheading uppercase text-accent lg:text-xl">
             Read More
           </span>
           <a
@@ -78,7 +78,7 @@ function ProjectCard(props) {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon
-              className="lg:ease-in-out-anim pl-1 text-lg text-white"
+              className="lg:ease-in-out-anim pl-1 text-lg text-accent"
               icon={faArrowUpRightFromSquare}
             />
           </a>

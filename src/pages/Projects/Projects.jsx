@@ -5,7 +5,7 @@ import React from "react";
 
 function ProjectsPage() {
   return (
-    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-white">
+    <div className="bg-primary scrollbar-track-primary scrollbar-thumb-secondary h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar">
       <NavBar />
       <main>
         <ProjectContainer />
