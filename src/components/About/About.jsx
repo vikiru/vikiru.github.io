@@ -7,8 +7,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
-    <section className="mx-auto bg-gradient-to-r from-red-500 to-teal-400 ">
-      <div className="lg:grid lg:grid-cols-2">
+    <section className="mx-auto">
+      <div className="flex flex-col py-4">
         <div className="mx-auto max-w-sm">
           <div className="mx-auto my-1 flex max-w-sm justify-center">
             <img
@@ -17,10 +17,10 @@ function About() {
             ></img>
           </div>
           <div className="mx-auto max-w-sm">
-            <h2 className="text-center font-heading text-3xl text-white lg:text-4xl">
+            <h2 className="text-white text-center font-heading text-3xl lg:text-4xl">
               {aboutData.fullName}
             </h2>
-            <h3 className="text-center font-subheading text-2xl text-white">
+            <h3 className="text-white text-center font-subheading text-2xl">
               {aboutData.title}
             </h3>
           </div>
@@ -33,7 +33,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim text-3xl text-white lg:text-5xl"
+                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl"
               />
             </a>
             <a
@@ -44,7 +44,7 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="lg:ease-in-out-anim text-3xl text-white lg:text-5xl"
+                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl"
               />
             </a>
             <a
@@ -55,13 +55,13 @@ function About() {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="lg:ease-in-out-anim text-3xl text-white lg:text-5xl"
+                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl"
               />
             </a>
           </div>
         </div>
         <div className="mx-auto max-w-sm lg:max-w-xl">
-          <p className="my-2 font-body text-xl text-white xxs:text-center lg:text-justify lg:text-2xl">
+          <p className="my-2 font-body text-xl text-secondary xxs:text-center lg:text-2xl">
             {aboutData.hero}
           </p>
         </div>
