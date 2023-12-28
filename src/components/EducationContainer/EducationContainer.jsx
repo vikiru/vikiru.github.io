@@ -24,7 +24,7 @@ function EducationContainer() {
             {educationData.universityName}
           </h2>
         </div>
-        <div className="mx-auto max-w-sm">
+        <div className="mx-auto max-w-sm pt-1">
           <h3 className="pl-2 text-center font-body uppercase lg:text-xl">
             {educationData.enrollmentStart} - {educationData.enrollmentEnd}
           </h3>
@@ -38,7 +38,7 @@ function EducationContainer() {
 
         <div className="flex justify-center bg-accent">
           <button className="rounded px-4 py-2">
-            <span className="text-md font-subheading uppercase text-secondary tracking-widest">
+            <span className="text-md font-subheading uppercase tracking-widest text-secondary">
               View Courses
             </span>
             <a
@@ -63,7 +63,7 @@ function EducationContainer() {
           </h2>
         </div>
         {courseraCertificates.map((certificate) => (
-          <div key={certificate.certificationName} className="pb-4 pt-2">
+          <div key={certificate.certificationName} className="pb-4 pt-1">
             <div>
               <div className="mx-2 max-w-lg">
                 <div className="mx-auto max-w-xs">
