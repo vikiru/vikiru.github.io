@@ -9,7 +9,7 @@ import SkillsContainer from "../../components/SkillsContainer/SkillsContainer";
 
 function AboutPage() {
   return (
-    <div className="scrollbar-track-primary scrollbar-thumb-secondary h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar">
+    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
       <NavBar />
       <main>
         {/* About Section */}
