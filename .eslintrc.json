@@ -1,5 +1,6 @@
 {
   "root": true,
+  "parser": "@babel/eslint-parser",
   "extends": [
     "prettier",
     "eslint:recommended",
@@ -16,14 +17,14 @@
   "settings": {
     "react": { "version": "detect" }
   },
-  "overrides": [
-    { "files": ["*.js", "*.jsx"], "parser": "@typescript-eslint/parser" }
-  ],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 11,
     "ecmaFeatures": { "jsx": true }
   },
+  "overrides": [
+    { "files": ["*.js", "*.jsx"], "parser": "@typescript-eslint/parser" }
+  ],
   "rules": {
     "arrow-spacing": ["warn", { "before": true, "after": true }],
     "comma-dangle": ["error", "always-multiline"],
