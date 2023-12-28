@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "./../../components/NavBar/NavBar";
 import React from "react";
+import aboutData from "./../../assets/data/about";
 
 function HomePage() {
   return (
@@ -13,19 +14,19 @@ function HomePage() {
       <main className="py-4">
         <div className="flex justify-center">
           <h2 className="text-center font-cinzel tracking-widest text-secondary lg:text-6xl">
-            Visakan Kirubakaran
+            {aboutData.fullName}
           </h2>
         </div>
         <div className="mx-auto my-1 flex max-w-sm justify-center rounded-full">
           <img
             className="object-fit h-40 w-40 rounded-full ring-4"
-            src={"https://avatars.githubusercontent.com/u/72267229?v=4"}
+            src={aboutData.profilePic}
           ></img>
         </div>
 
         <div className="mx-auto flex max-w-lg justify-center">
           <h3 className="font-subheading font-thin text-secondary lg:text-4xl">
-            Software Developer
+            {aboutData.title}
           </h3>
         </div>
 
@@ -35,7 +36,7 @@ function HomePage() {
             className="px-2 pt-1 text-2xl text-accent"
           />
           <span className="font-subheading text-2xl tracking-wide text-secondary">
-            Ottawa, ON
+            {aboutData.location}
           </span>
         </div>
 
