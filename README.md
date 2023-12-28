@@ -54,7 +54,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **IBM Full Stack Software Developer Certificate** - [Coursera](https://coursera.org/share/2c288e462af814df334a75f4e59cbfe6) (Oct 2023 - Nov 2023)
 
-**IBM DevOps and Software Engineering Certificate** [Coursera](https://coursera.org/share/ff5dc718cd4f17208f60c5004f079928) (Nov 2023 - Dec 2023)
+**IBM DevOps and Software Engineering Certificate** - [Coursera](https://coursera.org/share/ff5dc718cd4f17208f60c5004f079928) (Nov 2023 - Dec 2023)
 
 ### 💡 Skills
 
@@ -82,7 +82,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 |                   Project Name                    |                                Technologies Used                                 |                            Link                            |
 | :-----------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------: |
-|                 Portfolio Website                 |                              `React`, `TailwindCSS`                              | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
+|                 Portfolio Website                 |                       `React`, `React Router`, `TailwindCSS`                     | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
 |   vikiru.github.io \| Multi-purpose Discord Bot   |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
 |         CodeSmell \| Static Analysis Tool         | `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript` |     [GitHub Repo](https://github.com/vikiru/CodeSmell)     |
 | discrete-sim \| Manufacturing Facility Simulation |                       `Python`, `NumPy`, `SciPy`, `SimPy`                        |   [GitHub Repo](https://github.com/vikiru/discrete-sim)    |
@@ -148,7 +148,8 @@ npm run start
 ```
 
 ## ✨ Acknowledgements
-- [React.js](https://fontawesome.com) 
+- [React](https://react.dev/)
+- [React Router](https://reactrouter.com/en/main)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [Font Awesome Icons](https://fontawesome.com/)
