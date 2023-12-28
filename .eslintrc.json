@@ -17,9 +17,6 @@
   "settings": {
     "react": { "version": "detect" }
   },
-  "overrides": [
-    { "files": ["*.js", "*.jsx"], "parser": "@typescript-eslint/parser" }
-  ],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 11,
