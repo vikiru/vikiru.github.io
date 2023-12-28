@@ -10,9 +10,9 @@ function About() {
     <section className="mx-auto">
       <div className="flex flex-col py-4">
         <div className="mx-auto max-w-sm">
-          <div className="mx-auto my-1 flex max-w-sm justify-center">
+          <div className="mx-auto my-1 flex max-w-sm justify-center rounded-full">
             <img
-              className="h-40 w-40 rounded-full"
+              className="object-fit h-40 w-40 rounded-full ring-4"
               src={"https://avatars.githubusercontent.com/u/72267229?v=4"}
             ></img>
           </div>
