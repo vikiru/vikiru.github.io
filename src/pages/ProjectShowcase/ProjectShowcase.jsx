@@ -9,11 +9,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectShowcasePage(props) {
   const project = props.project;
   return (
-    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-white scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
+    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
       <NavBar />
       <main>
-        <section className="mb-auto flex justify-center py-6">
-          <div className="max-w-md  ">
+        <section className="mb-auto flex justify-center bg-primary py-6">
+          <div className="max-w-md">
             <h2 className="text-center font-heading text-4xl font-bold lg:text-5xl">
               {project.name}
             </h2>
@@ -30,14 +30,15 @@ function ProjectShowcasePage(props) {
               {project.technologiesUsed.map((tech) => (
                 <div
                   key={tech}
-                  className="w-auto max-w-lg bg-white px-2 lg:py-2"
+                  className="w-auto max-w-lg bg-primary px-2 lg:py-2"
                 >
-                  <h2 className="text-center font-subheading font-semibold text-black lg:text-xl">
+                  <h2 className="text-center font-subheading font-semibold text-secondary lg:text-xl">
                     {tech}
                   </h2>
                 </div>
               ))}
             </div>
+
             <div>
               <div className="flex justify-center py-2">
                 {project.githubUrl != "" && (
@@ -48,7 +49,7 @@ function ProjectShowcasePage(props) {
                   >
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
+                      className="lg:ease-in-out-anim pr-1 text-3xl text-accent lg:text-5xl"
                     />
                   </a>
                 )}
@@ -60,7 +61,7 @@ function ProjectShowcasePage(props) {
                   >
                     <FontAwesomeIcon
                       icon={faBookOpen}
-                      className="lg:ease-in-out-anim pr-1 text-3xl text-black lg:text-5xl"
+                      className="lg:ease-in-out-anim pr-1 text-3xl text-accent lg:text-5xl"
                     />
                   </a>
                 )}
@@ -70,11 +71,11 @@ function ProjectShowcasePage(props) {
         </section>
 
         {project.imagePath !== "" && (
-          <div className="mx-auto bg-white py-4">
+          <div className="mx-auto max-w-xl bg-primary py-4">
             <h2 className="py-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
               Demo
             </h2>
-            <div className="mx-auto flex max-w-2xl justify-center lg:max-w-5xl">
+            <div className="mx-auto flex justify-center ring-4">
               <img
                 className="object-fit h-auto w-full"
                 src={project.imagePath}
