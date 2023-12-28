@@ -11,11 +11,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <div className="bg-primary rounded-md px-2 pb-6 shadow-md ring-2">
-      <h2 className="text-secondary text-center font-heading font-semibold uppercase lg:text-3xl">
+    <div className="rounded-md bg-primary px-2 pb-6 shadow-md ring-2">
+      <h2 className="text-center font-heading font-semibold uppercase text-secondary lg:text-3xl">
         {project.name}
       </h2>
-      <p className="text-backup mx-auto text-center font-body uppercase lg:text-xl">
+      <p className="mx-auto text-center font-body uppercase text-backup lg:text-xl">
         {project.startDate} - {project.endDate}
       </p>
 
@@ -31,7 +31,7 @@ function ProjectCard(props) {
             key={tech}
             className="mx-auto flex w-auto max-w-xl items-center rounded-full px-2 lg:py-2"
           >
-            <h2 className="text-secondary text-center font-subheading font-semibold">
+            <h2 className="text-center font-subheading font-semibold text-secondary">
               {tech}
             </h2>
           </div>
@@ -48,7 +48,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim text-accent pr-4 text-3xl lg:text-5xl"
+                className="lg:ease-in-out-anim pr-4 text-3xl text-accent lg:text-5xl"
               />
             </a>
           )}
@@ -60,16 +60,16 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
-                className="lg:ease-in-out-anim text-accent pr-1 text-3xl lg:text-5xl"
+                className="lg:ease-in-out-anim pr-1 text-3xl text-accent lg:text-5xl"
               />
             </a>
           )}
         </div>
       )}
 
-      <div className="bg-secondary mx-auto flex max-w-sm justify-center pt-1">
+      <div className="mx-auto flex max-w-sm justify-center bg-accent pt-1">
         <button className="rounded px-4 py-2">
-          <span className="text-md text-accent font-subheading uppercase lg:text-xl">
+          <span className="text-md font-subheading uppercase tracking-widest text-secondary lg:text-xl">
             Read More
           </span>
           <a
@@ -78,7 +78,7 @@ function ProjectCard(props) {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon
-              className="lg:ease-in-out-anim text-accent pl-1 text-lg"
+              className="lg:ease-in-out-anim pl-1 text-lg text-secondary"
               icon={faArrowUpRightFromSquare}
             />
           </a>

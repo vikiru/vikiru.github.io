@@ -7,7 +7,7 @@ function ProjectContainer() {
   return (
     <section className="mx-auto py-6">
       <div>
-        <h2 className="text-secondary pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
+        <h2 className="pt-2 text-center text-2xl font-bold uppercase text-secondary underline lg:text-4xl">
           Projects
         </h2>
         <div className="mx-auto grid grid-cols-2 gap-4 px-2 pt-2">
