@@ -22,7 +22,7 @@ function Footer() {
           {navData.map((navItem) => (
             <div key={navItem} className="mx-auto w-20">
               <a href={navItem.navLink}>
-                <h2 className="text-center text-lg text-primary hover:underline lg:text-xl">
+                <h2 className="text-center text-lg uppercase text-primary hover:underline lg:text-xl">
                   {navItem.navTitle}
                 </h2>
               </a>
