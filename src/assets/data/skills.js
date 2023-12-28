@@ -12,7 +12,7 @@ const skillsData = {
   libraries: ["NumPy", "SciPy", "SimPy", "Pandas", "Chai"],
   tools: [
     "Maven",
-    "NPM",
+    "npm",
     "pip",
     "Git",
     "Github",

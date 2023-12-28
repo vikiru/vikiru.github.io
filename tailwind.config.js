@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -13,7 +14,14 @@ module.exports = {
       heading: ["Montserrat"],
       subheading: ["Raleway"],
       body: ["Source Sans 3"],
+      cinzel: ["Cinzel"],
       ...defaultTheme.fontFamily,
+    },
+    colors: {
+      primary: "FFFFFF",
+      secondary: "252627",
+      accent: "648DE5",
+      backup: "564E58",
     },
   },
   extend: {},

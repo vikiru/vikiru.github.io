@@ -1,93 +1,39 @@
-import "./NavBar.css";
+import React from "react";
+import navData from "../../assets/data/nav";
 
-import React, { useState } from "react";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+// import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => {
+  // const [isOpen, setIsOpen] = useState(false);
+  /** const handleClick = () => {
     setIsOpen(!isOpen);
   };
+ */
 
   return (
-    <nav
-      className="secondary-colour mx-2 mb-2 snap-center shadow-xl"
-      id="mainNav"
-    >
-      <div className="mx-2 flex items-center justify-between">
-        <section id="small-screen-nav-toggler" className="xs:block lg:hidden">
-          <button onClick={handleClick}>
-            {!isOpen ? (
-              <FontAwesomeIcon
-                icon={faBars}
-                className="font-primary py-1 pl-1"
-              />
-            ) : (
-              <FontAwesomeIcon icon={faX} className="font-primary pl-1 pt-1" />
-            )}
-          </button>
-        </section>
-      </div>
-      {isOpen ? (
-        <section className="block justify-center px-4 pb-3 pt-2">
-          <a href="#" className="nav-text block text-center">
-            Home
-          </a>
-          <a href="#about" className="nav-text block text-center">
-            About
-          </a>
-          <a href="#education" className="nav-text block text-center">
-            Education
-          </a>
-          <a href="#skills" className="nav-text block text-center">
-            Skills
-          </a>
-          <a href="#projects" className="nav-text block text-center">
-            Projects
-          </a>
-          <a href="#contact" className="nav-text block text-center">
-            Contact
-          </a>
-        </section>
-      ) : (
-        <section className="px-4 pb-3 pt-2 xxs:hidden lg:flex lg:items-center lg:justify-center">
-          <a href="#" className="nav-text lg:ease-in-out-anim block lg:ml-2">
-            Home
-          </a>
-          <a
-            href="#about"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            About
-          </a>
-          <a
-            href="#education"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Education
-          </a>
-          <a
-            href="#skills"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Skills
-          </a>
-          <a
-            href="#projects"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="nav-text lg:ease-in-out-anim block lg:ml-2"
-          >
-            Contact
-          </a>
-        </section>
-      )}
+    <nav>
+      <section
+        id="navigation-menu"
+        className="flex justify-between bg-secondary py-4"
+      >
+        <div className="mx-auto">
+          <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg md:text-3xl">
+            <span className="text-primary">Visa</span>
+            <span className="text-accent">kan</span>
+          </h2>
+        </div>
+        <div className="flex justify-center">
+          {navData.map((nav) => (
+            <a key={nav} href={nav.navLink}>
+              <h2 className="px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-2xl">
+                {nav.navTitle}
+              </h2>
+            </a>
+          ))}
+        </div>
+      </section>
     </nav>
   );
 }

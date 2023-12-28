@@ -11,51 +11,65 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <div key={project} className="m-1 rounded-lg bg-white px-2 pb-6 shadow-md">
-      <h2 className="text-center font-heading font-semibold uppercase">
+    <div className="rounded-md bg-primary px-2 pb-6 shadow-md ring-2">
+      <h2 className="text-center font-heading font-semibold uppercase text-secondary lg:text-3xl">
         {project.name}
       </h2>
-      <p className="text-center font-body font-thin uppercase">
+      <p className="mx-auto text-center font-body uppercase text-backup lg:text-xl">
         {project.startDate} - {project.endDate}
       </p>
-      <div className="max-w-sm">
-        <h3 className="text-center font-subheading leading-6">
+
+      <div className="mx-auto max-w-sm">
+        <h3 className="text-center font-subheading leading-6 lg:text-xl">
           {project.description}
         </h3>
       </div>
 
-      <div className="max-w-sm">
-        <p className="text-center font-body font-thin text-slate-500">
-          {project.technologiesUsed.join(", ")}
-        </p>
-      </div>
-
-      <div className="flex justify-center pt-1">
-        {project.githubUrl != "" && (
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="lg:ease-in-out-anim pr-1 text-3xl text-black"
-            />
-          </a>
-        )}
-        {project.documentationUrl != "" && (
-          <a
-            href={project.documentationUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+      <div className="m-2 mx-auto max-w-lg justify-center xs:grid xs:grid-cols-2 lg:gap-2">
+        {project.technologiesUsed.map((tech) => (
+          <div
+            key={tech}
+            className="mx-auto flex w-auto max-w-xl items-center rounded-full px-2 lg:py-2"
           >
-            <FontAwesomeIcon
-              icon={faBookOpen}
-              className="lg:ease-in-out-anim pr-1 text-3xl text-black"
-            />
-          </a>
-        )}
+            <h2 className="text-center font-subheading font-semibold text-secondary">
+              {tech}
+            </h2>
+          </div>
+        ))}
       </div>
 
-      <div className="flex justify-center pt-1">
-        <button className="rounded bg-black px-4 py-2">
-          <span className="text-md font-subheading uppercase text-white">
+      {project.githubUrl !== "" && (
+        <div className="mx-auto flex max-w-xs justify-center pb-2 pt-1">
+          {project.githubUrl != "" && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="lg:ease-in-out-anim pr-4 text-3xl text-accent lg:text-5xl"
+              />
+            </a>
+          )}
+          {project.documentationUrl != "" && (
+            <a
+              href={project.documentationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                className="lg:ease-in-out-anim pr-1 text-3xl text-accent lg:text-5xl"
+              />
+            </a>
+          )}
+        </div>
+      )}
+
+      <div className="mx-auto flex max-w-sm justify-center bg-accent pt-1">
+        <button className="rounded px-4 py-2">
+          <span className="text-md font-subheading uppercase tracking-widest text-secondary lg:text-xl">
             Read More
           </span>
           <a
@@ -64,7 +78,7 @@ function ProjectCard(props) {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon
-              className="lg:ease-in-out-anim pl-1 text-lg text-white"
+              className="lg:ease-in-out-anim pl-1 text-lg text-secondary"
               icon={faArrowUpRightFromSquare}
             />
           </a>

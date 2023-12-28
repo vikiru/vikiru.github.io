@@ -1,13 +1,17 @@
 import CourseContainer from "../../components/CourseContainer/CourseContainer";
 import Footer from "./../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
 import React from "react";
 
 function CoursesPage() {
   return (
-    <main className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-gradient-to-r from-red-500 to-teal-400 pb-4 scrollbar scrollbar-track-teal-400 scrollbar-thumb-red-500">
-      <CourseContainer />
+    <div className="bg-primary scrollbar-track-primary scrollbar-thumb-secondary h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar">
+      <NavBar />
+      <main>
+        <CourseContainer />
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 }
 
