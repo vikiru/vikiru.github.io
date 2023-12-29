@@ -15,7 +15,7 @@ function ProjectCard(props) {
       <h2 className="text-center font-heading font-semibold uppercase text-secondary lg:text-3xl">
         {project.name}
       </h2>
-      <p className="mx-auto text-center font-body uppercase text-backup lg:text-xl">
+      <p className="mx-auto text-center font-body font-thin uppercase text-backup lg:text-xl">
         {project.startDate} - {project.endDate}
       </p>
 
@@ -25,13 +25,13 @@ function ProjectCard(props) {
         </h3>
       </div>
 
-      <div className="m-2 mx-auto max-w-lg justify-center xs:grid xs:grid-cols-2 lg:gap-2">
+      <div className="m-2 mx-auto grid max-w-lg justify-center md:grid-cols-2 lg:grid-cols-3 lg:gap-2">
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto flex w-auto max-w-xl items-center rounded-full px-2 lg:py-2"
+            className="mx-auto mb-2 flex w-auto max-w-xl items-center rounded-full bg-secondary px-2 lg:py-2"
           >
-            <h2 className="text-center font-subheading font-semibold text-secondary">
+            <h2 className="text-center font-subheading font-thin text-primary">
               {tech}
             </h2>
           </div>
