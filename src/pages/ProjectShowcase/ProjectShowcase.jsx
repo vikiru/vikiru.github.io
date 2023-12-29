@@ -12,27 +12,27 @@ function ProjectShowcasePage(props) {
     <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
       <NavBar />
       <main>
-        <section className="mb-auto flex justify-center bg-primary py-6">
-          <div className="max-w-md">
+        <section className="mx-auto flex justify-center bg-primary py-8">
+          <div>
             <h2 className="text-center font-heading text-4xl font-bold lg:text-5xl">
               {project.name}
             </h2>
             <p className="text-center font-body uppercase lg:text-xl">
               {project.startDate} - {project.endDate}
             </p>
-            <div className="mx-auto max-w-sm">
+            <div className="mx-auto max-w-lg">
               <h3 className="text-center font-body lg:text-2xl">
                 {project.description}
               </h3>
             </div>
 
-            <div className="flex justify-center gap-2">
+            <div className="my-2 flex justify-center gap-2">
               {project.technologiesUsed.map((tech) => (
                 <div
                   key={tech}
-                  className="w-auto max-w-lg bg-primary px-2 lg:py-2"
+                  className="w-auto max-w-lg rounded-full bg-secondary px-2 lg:py-2"
                 >
-                  <h2 className="text-center font-subheading font-semibold text-secondary lg:text-xl">
+                  <h2 className="text-center font-subheading font-thin text-primary lg:text-xl">
                     {tech}
                   </h2>
                 </div>

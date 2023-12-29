@@ -10,7 +10,7 @@ function ProjectContainer() {
         <h2 className="pt-2 text-center text-2xl font-bold uppercase text-secondary underline lg:text-4xl">
           Projects
         </h2>
-        <div className="mx-auto grid grid-cols-2 gap-4 px-2 pt-2">
+        <div className="mx-auto grid gap-4 px-2 pt-2 lg:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard project={project} key={project} />
           ))}
