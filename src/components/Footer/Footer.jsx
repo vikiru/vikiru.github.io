@@ -9,21 +9,21 @@ import navData from "./../../assets/data/nav";
 function Footer() {
   return (
     <footer className="mt-auto w-full">
-      <div className="dark:bg-darkPrimary bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-3">
+      <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-3 dark:bg-darkPrimary">
         <div className="m-auto">
-          <h2 className="dark:text-darkSecondary font-cinzel tracking-widest text-primary  xxs:text-lg md:text-3xl lg:text-4xl xl:text-5xl">
-            <span className="dark:text-darkSecondary  text-primary">Visa</span>
-            <span className="dark:text-darkAccent text-accent">kan</span>
+          <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg  md:text-3xl lg:text-4xl xl:text-5xl dark:text-darkSecondary">
+            <span className="text-primary  dark:text-darkSecondary">Visa</span>
+            <span className="text-accent dark:text-darkAccent">kan</span>
           </h2>
         </div>
         <div>
-          <h2 className="dark:text-darkSecondary text-center font-heading text-xl uppercase  text-primary lg:text-2xl">
+          <h2 className="text-center font-heading text-xl uppercase text-primary  lg:text-2xl dark:text-darkSecondary">
             Read More
           </h2>
           {navData.map((navItem) => (
             <div key={navItem} className="mx-auto w-20">
               <Link to={navItem.navLink}>
-                <h2 className="dark:text-darkSecondary dark:decoration-darkAccent text-center font-body text-lg  uppercase text-primary hover:underline lg:text-xl">
+                <h2 className="text-center font-body text-lg uppercase text-primary  hover:underline lg:text-xl dark:text-darkSecondary dark:decoration-darkAccent">
                   {navItem.navTitle}
                 </h2>
               </Link>
@@ -31,11 +31,11 @@ function Footer() {
           ))}
         </div>
         <div className="mx-auto">
-          <h2 className="dark:text-darkSecondary text-center font-heading text-xl uppercase text-primary  lg:text-2xl">
+          <h2 className="text-center font-heading text-xl uppercase text-primary lg:text-2xl  dark:text-darkSecondary">
             Contact
           </h2>
           <div>
-            <h2 className="dark:text-darkSecondary py-2 text-center font-subheading text-lg text-primary  lg:text-xl">
+            <h2 className="py-2 text-center font-subheading text-lg text-primary lg:text-xl  dark:text-darkSecondary">
               Ottawa, ON
             </h2>
             <a
@@ -46,7 +46,7 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim  dark:text-darkAccent px-2 py-4 text-3xl text-accent lg:text-5xl"
+                className="lg:ease-in-out-anim  px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
               />
             </a>
             <a
@@ -57,7 +57,7 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="lg:ease-in-out-anim dark:text-darkAccent px-2 py-4 text-3xl text-accent lg:text-5xl"
+                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
               />
             </a>
             <a
@@ -68,15 +68,15 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="lg:ease-in-out-anim dark:text-darkAccent px-2 py-4 text-3xl text-accent lg:text-5xl"
+                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
               />
             </a>
           </div>
         </div>
       </div>
-      <div className="dark:bg-darkPrimary bg-secondary">
+      <div className="bg-secondary dark:bg-darkPrimary">
         <div className="mx-auto flex max-w-lg items-center justify-center py-2">
-          <span className="dark:text-darkSecondary text-center font-heading font-thin text-primary  lg:text-lg">
+          <span className="text-center font-heading font-thin text-primary lg:text-lg  dark:text-darkSecondary">
             Visakan Kirubakaran &copy; {new Date().getFullYear()}. All rights
             reserved.
           </span>
