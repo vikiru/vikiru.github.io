@@ -41,7 +41,7 @@ function NavBar() {
               About
             </h2>
           </a>
-          <a href="/courses">
+          <a href="/education/courses">
             <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               Courses
             </h2>
