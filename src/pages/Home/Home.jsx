@@ -71,7 +71,7 @@ function HomePage() {
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="lg:ease-in-out-anim text-white text-accent lg:text-5xl"
+              className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl"
             />
           </a>
         </div>
