@@ -7,10 +7,10 @@ import navData from "./../../assets/data/nav";
 
 function Footer() {
   return (
-    <footer className="mt-2 w-full">
-      <div className="grid grid-cols-3 bg-secondary">
+    <footer className="mt-auto w-full">
+      <div className="bg-secondary md:grid md:grid-cols-3 xxs:flex xxs:flex-col">
         <div className="m-auto">
-          <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg md:text-5xl">
+          <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg md:text-3xl lg:text-4xl xl:text-5xl">
             <span className="text-primary">Visa</span>
             <span className="text-accent">kan</span>
           </h2>

@@ -9,7 +9,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectShowcasePage(props) {
   const project = props.project;
   return (
-    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
       <NavBar />
       <main>
         <section className="mx-auto flex justify-center bg-primary py-8">
@@ -71,7 +71,7 @@ function ProjectShowcasePage(props) {
         </section>
 
         {project.imagePath !== "" && (
-          <div className="mx-auto max-w-xl bg-primary py-4">
+          <div className="mx-auto bg-primary py-4 lg:max-w-xl xl:max-w-4xl">
             <h2 className="py-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
               Demo
             </h2>

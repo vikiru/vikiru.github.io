@@ -25,7 +25,7 @@ function ProjectCard(props) {
         </h3>
       </div>
 
-      <div className="m-2 mx-auto grid max-w-lg justify-center md:grid-cols-2 lg:grid-cols-3 lg:gap-2">
+      <div className="m-2 mx-auto grid max-w-lg justify-center sm:grid-cols-2 lg:grid-cols-3 lg:gap-2">
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}

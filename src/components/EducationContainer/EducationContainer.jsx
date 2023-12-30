@@ -36,7 +36,7 @@ function EducationContainer() {
           </h3>
         </div>
 
-        <div className="flex justify-center bg-accent">
+        <div className="mt-2 flex justify-center bg-accent">
           <button className="rounded px-4 py-2">
             <span className="text-md font-subheading uppercase tracking-widest text-secondary">
               View Courses
@@ -64,7 +64,10 @@ function EducationContainer() {
         </div>
         <div className="lg:grid lg:grid-cols-2">
           {courseraCertificates.map((certificate) => (
-            <div key={certificate.certificationName} className="pb-4 pt-1">
+            <div
+              key={certificate.certificationName}
+              className="mx-auto pb-4 pt-1"
+            >
               <div>
                 <div className="mx-2 max-w-lg">
                   <div>
@@ -79,7 +82,7 @@ function EducationContainer() {
                   </div>
                 </div>
               </div>
-              <div className="mx-2 flex bg-accent py-1 xxs:justify-center">
+              <div className="mx-2 mt-2 flex bg-accent py-1 xxs:justify-center">
                 <button className="bg-black rounded px-4 py-2">
                   <span className="text-md text-white font-subheading uppercase tracking-widest">
                     View Certificate
