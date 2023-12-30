@@ -5,12 +5,12 @@ const navData = [
   },
   {
     navTitle: "About",
-    navLink: "/#about",
+    navLink: "/about",
   },
-  { navTitle: "Courses", navLink: "/#education/courses" },
+  { navTitle: "Courses", navLink: "/education/courses" },
   {
     navTitle: "Projects",
-    navLink: "/#projects",
+    navLink: "/projects",
   },
 ];
 
