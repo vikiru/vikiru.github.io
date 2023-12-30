@@ -90,7 +90,7 @@ function HomePage() {
               </h2>
             </a>
           </div>
-          <div className="rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60">
+          <div className="rounded-full bg-accent hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60 lg:px-2 xl:p-2">
             <a href="/projects" target="_blank" rel="noopener noreferrer">
               <h2 className="text-center uppercase tracking-widest text-secondary lg:text-2xl">
                 View My Work
