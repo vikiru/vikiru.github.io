@@ -10,9 +10,9 @@ function EducationContainer() {
   );
 
   return (
-    <section className="mx-auto bg-primary py-4 dark:bg-darkPrimary">
+    <section className="dark:bg-darkPrimary mx-auto bg-primary py-4">
       <div className="mx-auto">
-        <h2 className="pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl dark:text-darkSecondary">
+        <h2 className="dark:text-darkSecondary pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
           Education
         </h2>
       </div>
@@ -20,25 +20,25 @@ function EducationContainer() {
       {/* University Section - XSS - XL screens*/}
       <section className="m-2 mx-auto max-w-lg" id="unversity-info">
         <div className="mx-2 px-2">
-          <h2 className="text-center font-heading font-semibold uppercase lg:text-3xl dark:text-darkSecondary">
+          <h2 className="dark:text-darkSecondary text-center font-heading font-semibold uppercase lg:text-3xl">
             {educationData.universityName}
           </h2>
         </div>
         <div className="max-w-lg px-2">
-          <h3 className="text-center font-subheading lg:text-2xl dark:text-darkSecondary">
+          <h3 className="dark:text-darkSecondary text-center font-subheading lg:text-2xl">
             {educationData.degree} - {educationData.acronym}.,{" "}
             {educationData.degreeProgram}
           </h3>
         </div>
         <div className="mx-auto max-w-sm pt-1">
-          <h3 className="pl-2 text-center font-body font-thin uppercase lg:text-xl dark:text-darkSecondary">
+          <h3 className="dark:text-darkSecondary pl-2 text-center font-body font-thin uppercase lg:text-xl">
             {educationData.enrollmentStart} - {educationData.enrollmentEnd}
           </h3>
         </div>
 
-        <div className="mt-2 flex justify-center bg-accent dark:bg-darkAccent">
+        <div className="dark:bg-darkAccent mt-2 flex justify-center bg-accent">
           <button className="rounded px-4 py-2">
-            <span className="text-md font-subheading uppercase tracking-widest text-secondary dark:text-darkSecondary">
+            <span className="text-md dark:text-darkSecondary font-subheading uppercase tracking-widest text-secondary">
               View Courses
             </span>
             <a
@@ -47,7 +47,7 @@ function EducationContainer() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
-                className="lg:ease-in-out-anim pl-1 text-lg text-secondary dark:text-darkSecondary dark:text-darkSecondary"
+                className="lg:ease-in-out-anim dark:text-darkSecondary pl-1 text-lg text-secondary"
                 icon={faArrowUpRightFromSquare}
               />
             </a>
@@ -58,7 +58,7 @@ function EducationContainer() {
       {/* Coursera Section - XXS - XL Screens */}
       <section className="m-2 mx-auto" id="coursera-certificate-info">
         <div className="mx-2 px-2">
-          <h2 className="text-center font-heading font-semibold uppercase lg:text-3xl dark:text-darkSecondary">
+          <h2 className="dark:text-darkSecondary text-center font-heading font-semibold uppercase lg:text-3xl">
             Coursera
           </h2>
         </div>
@@ -71,20 +71,20 @@ function EducationContainer() {
               <div>
                 <div className="mx-2 max-w-lg">
                   <div>
-                    <h3 className="text-center font-subheading lg:text-2xl dark:text-darkSecondary">
+                    <h3 className="dark:text-darkSecondary text-center font-subheading lg:text-2xl">
                       {certificate.certificationName}
                     </h3>
                   </div>
                   <div className="mx-auto max-w-xs">
-                    <p className="text-md pl-2 text-center font-body font-thin uppercase lg:text-xl dark:text-darkSecondary">
+                    <p className="text-md dark:text-darkSecondary pl-2 text-center font-body font-thin uppercase lg:text-xl">
                       {certificate.startDate} - {certificate.completionDate}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="mx-2 mt-2 flex bg-accent py-1 xxs:justify-center dark:bg-darkAccent">
+              <div className="dark:bg-darkAccent mx-2 mt-2 flex bg-accent py-1 xxs:justify-center">
                 <button className="bg-black rounded px-4 py-2">
-                  <span className="text-md text-white font-subheading uppercase tracking-widest dark:text-darkSecondary">
+                  <span className="text-md text-white dark:text-darkSecondary font-subheading uppercase tracking-widest">
                     View Certificate
                   </span>
                   <a
@@ -93,7 +93,7 @@ function EducationContainer() {
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon
-                      className="lg:ease-in-out-anim text-white pl-1 text-lg dark:text-darkSecondary"
+                      className="lg:ease-in-out-anim text-white dark:text-darkSecondary pl-1 text-lg"
                       icon={faArrowUpRightFromSquare}
                     />
                   </a>
