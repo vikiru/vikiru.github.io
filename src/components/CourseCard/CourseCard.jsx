@@ -6,7 +6,7 @@ function CourseCard(props) {
   return (
     <div
       key={course.courseCode}
-      className="bg-white mx-auto rounded-md bg-primary shadow-md ring-2 md:px-4 md:pt-4 lg:pb-4"
+      className="bg-white mx-auto w-full rounded-md bg-primary shadow-md ring-2 md:px-4 md:pt-4 lg:pb-4"
     >
       <div>
         <h3 className="text-center font-semibold xxs:text-sm lg:text-3xl">
