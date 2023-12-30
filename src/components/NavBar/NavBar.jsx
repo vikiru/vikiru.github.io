@@ -24,7 +24,10 @@ function NavBar() {
                 className="font-primary py-2 pl-1 text-accent"
               />
             ) : (
-              <FontAwesomeIcon icon={faX} className="font-primary py-2 pl-1 text-accent" />
+              <FontAwesomeIcon
+                icon={faX}
+                className="font-primary py-2 pl-1 text-accent"
+              />
             )}
           </button>
         </section>
