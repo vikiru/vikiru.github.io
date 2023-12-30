@@ -15,19 +15,19 @@ function NavBar() {
     <nav>
       <section
         id="navigation-menu"
-        className="flex items-center justify-between bg-secondary"
+        className="dark:bg-darkPrimary flex items-center justify-between bg-secondary"
       >
         <section id="small-screen-nav-toggler" className="xs:block xl:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
                 icon={faBars}
-                className="font-primary py-2 pl-1 text-accent"
+                className="font-primary dark:text-darkAccent py-2 pl-1 text-accent"
               />
             ) : (
               <FontAwesomeIcon
                 icon={faX}
-                className="font-primary py-2 pl-1 text-accent"
+                className="font-primary dark:text-darkAccent py-2 pl-1 text-accent"
               />
             )}
           </button>
@@ -36,22 +36,22 @@ function NavBar() {
       {isOpen ? (
         <section className="block justify-center xl:hidden">
           <Link to="/">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
+            <h2 className="dark:text-darkSecondary dark:bg-darkPrimary dark:hover:decoration-darkAccent bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               Home
             </h2>
           </Link>
           <Link to="/about">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
+            <h2 className="dark:text-darkSecondary dark:bg-darkPrimary dark:hover:decoration-darkAccent bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               About
             </h2>
           </Link>
           <Link to="/education/courses">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
+            <h2 className="dark:text-darkSecondary dark:bg-darkPrimary dark:hover:decoration-darkAccent bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               Courses
             </h2>
           </Link>
           <Link to="/projects">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
+            <h2 className="dark:text-darkSecondary dark:bg-darkPrimary dark:hover:decoration-darkAccent bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               Projects
             </h2>
           </Link>
@@ -70,7 +70,7 @@ function NavBar() {
           <div className="flex justify-center">
             {navData.map((nav) => (
               <Link key={nav} to={nav.navLink}>
-                <h2 className="px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl">
+                <h2 className="dark:hover:decoration-darkAccent px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl">
                   {nav.navTitle}
                 </h2>
               </Link>

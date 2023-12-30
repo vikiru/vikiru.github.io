@@ -6,12 +6,12 @@ function About() {
     <section className="mx-auto">
       <div className="flex flex-col py-4">
         <div className="mx-auto">
-          <h2 className="pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
+          <h2 className="pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl dark:text-darkSecondary">
             About
           </h2>
         </div>
         <div className="mx-auto max-w-sm lg:max-w-xl">
-          <p className="my-2 font-body text-xl text-secondary xxs:text-center lg:text-2xl xl:text-3xl">
+          <p className="my-2 font-body text-xl text-secondary dark:text-darkSecondary xxs:text-center lg:text-2xl xl:text-3xl">
             {aboutData.hero}
           </p>
         </div>
