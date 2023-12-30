@@ -12,10 +12,6 @@ const navData = [
     navTitle: "Projects",
     navLink: "/projects",
   },
-  {
-    navTitle: "Contact",
-    navLink: "/contact",
-  },
 ];
 
 export default navData;
