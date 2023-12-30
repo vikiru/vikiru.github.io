@@ -68,7 +68,7 @@ function NavBar() {
           </div>
           <div className="flex justify-center">
             {navData.map((nav) => (
-              <a key={nav} href={"#" + nav.navLink}>
+              <a key={nav} href={nav.navLink}>
                 <h2 className="px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl">
                   {nav.navTitle}
                 </h2>
