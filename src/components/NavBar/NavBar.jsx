@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import navData from "../../assets/data/nav";
 
 function NavBar() {
@@ -34,26 +35,26 @@ function NavBar() {
       </section>
       {isOpen ? (
         <section className="block justify-center xl:hidden">
-          <a href="/">
+          <Link to="/">
             <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               Home
             </h2>
-          </a>
-          <a href="/about">
+          </Link>
+          <Link to="/about">
             <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               About
             </h2>
-          </a>
-          <a href="/education/courses">
+          </Link>
+          <Link to="/education/courses">
             <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               Courses
             </h2>
-          </a>
-          <a href="/projects">
+          </Link>
+          <Link to="/projects">
             <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl">
               Projects
             </h2>
-          </a>
+          </Link>
         </section>
       ) : (
         <section
@@ -68,11 +69,11 @@ function NavBar() {
           </div>
           <div className="flex justify-center">
             {navData.map((nav) => (
-              <a key={nav} href={nav.navLink}>
+              <Link key={nav} to={nav.navLink}>
                 <h2 className="px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl">
                   {nav.navTitle}
                 </h2>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
