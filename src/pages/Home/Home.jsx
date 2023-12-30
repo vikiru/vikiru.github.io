@@ -9,7 +9,7 @@ import aboutData from "./../../assets/data/about";
 
 function HomePage() {
   return (
-    <div className="h-screen w-screen snap-y overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
       <NavBar />
       <main className="py-4">
         <div className="flex justify-center">
@@ -19,7 +19,7 @@ function HomePage() {
         </div>
         <div className="mx-auto my-1 flex max-w-sm justify-center rounded-full">
           <img
-            className="object-fit h-40 w-40 rounded-full ring-4"
+            className="object-fit xxs:h-30 rounded-full ring-4 xxs:w-20 lg:h-40 lg:w-40"
             src={aboutData.profilePic}
           ></img>
         </div>
@@ -33,9 +33,9 @@ function HomePage() {
         <div className="flex justify-center py-1">
           <FontAwesomeIcon
             icon={faLocationDot}
-            className="px-2 pt-1 text-2xl text-accent"
+            className="px-2 pt-1 text-accent lg:text-2xl"
           />
-          <span className="font-subheading text-2xl tracking-wide text-secondary">
+          <span className="xxs:text-md font-subheading tracking-wide text-secondary lg:text-2xl">
             {aboutData.location}
           </span>
         </div>
@@ -76,35 +76,35 @@ function HomePage() {
           </a>
         </div>
         <div className="mx-auto max-w-xl py-1">
-          <p className="text-center font-body text-3xl text-secondary">
+          <p className="text-center font-body text-3xl text-secondary xxs:text-sm">
             I have a passion for software design and web technologies. Committed
             to learning and contributing to meaningful projects!
           </p>
         </div>
 
-        <div className="flex justify-center gap-2 py-4">
-          <div className="bg-blue-400 w-60 rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4">
+        <div className="flex gap-2 xxs:flex-col lg:justify-center lg:py-4">
+          <div className="bg-blue-400 rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 lg:w-60">
             <a href="/about" target="_blank" rel="noopener noreferrer">
-              <h2 className="text-center text-2xl uppercase text-secondary">
+              <h2 className="text-center uppercase text-secondary lg:text-2xl">
                 Read More
               </h2>
             </a>
           </div>
-          <div className="w-60 rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4">
+          <div className="rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 lg:w-60">
             <a href="/projects" target="_blank" rel="noopener noreferrer">
-              <h2 className="text-center text-2xl uppercase tracking-widest text-secondary">
+              <h2 className="text-center uppercase tracking-widest text-secondary lg:text-2xl">
                 View My Work
               </h2>
             </a>
           </div>
-          <div className="w-60 rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4">
+          <div className="rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 lg:w-60">
             <a
               href="mailto:viskirubakaran@outlook.com"
               target="_blank"
               rel="noopener noreferrer"
               id="email"
             >
-              <h2 className="text-center text-2xl uppercase tracking-widest text-secondary">
+              <h2 className="text-center uppercase tracking-widest text-secondary lg:text-2xl">
                 Contact Me
               </h2>
             </a>
