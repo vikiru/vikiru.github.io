@@ -4,6 +4,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import React from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -72,8 +73,8 @@ function ProjectCard(props) {
           <span className="text-md font-subheading uppercase tracking-widest text-secondary lg:text-xl">
             Read More
           </span>
-          <a
-            href={project.projectPageUrl}
+          <Link
+            to={project.projectPageUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -81,7 +82,7 @@ function ProjectCard(props) {
               className="lg:ease-in-out-anim pl-1 text-lg text-secondary"
               icon={faArrowUpRightFromSquare}
             />
-          </a>
+          </Link>
         </button>
       </div>
     </div>
