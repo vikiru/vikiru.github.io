@@ -11,7 +11,7 @@ function About() {
           </h2>
         </div>
         <div className="mx-auto max-w-sm lg:max-w-xl">
-          <p className="my-2 font-body text-xl text-secondary dark:text-darkSecondary xxs:text-center lg:text-2xl xl:text-3xl">
+          <p className="my-2 font-body text-xl text-secondary xxs:text-center lg:text-2xl xl:text-3xl dark:text-darkSecondary">
             {aboutData.hero}
           </p>
         </div>

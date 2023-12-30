@@ -10,7 +10,7 @@ function EducationContainer() {
   );
 
   return (
-    <section className="dark:bg-darkPrimary mx-auto bg-primary py-4">
+    <section className="mx-auto bg-primary py-4 dark:bg-darkPrimary">
       <div className="mx-auto">
         <h2 className="pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl dark:text-darkSecondary">
           Education
@@ -36,9 +36,9 @@ function EducationContainer() {
           </h3>
         </div>
 
-        <div className="dark:bg-darkAccent mt-2 flex justify-center bg-accent">
+        <div className="mt-2 flex justify-center bg-accent dark:bg-darkAccent">
           <button className="rounded px-4 py-2">
-            <span className="text-md dark:text-darkSecondary font-subheading uppercase tracking-widest text-secondary">
+            <span className="text-md font-subheading uppercase tracking-widest text-secondary dark:text-darkSecondary">
               View Courses
             </span>
             <a
@@ -47,7 +47,7 @@ function EducationContainer() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
-                className="lg:ease-in-out-anim dark:text-darkSecondary dark:text-darkSecondary pl-1 text-lg text-secondary"
+                className="lg:ease-in-out-anim pl-1 text-lg text-secondary dark:text-darkSecondary dark:text-darkSecondary"
                 icon={faArrowUpRightFromSquare}
               />
             </a>

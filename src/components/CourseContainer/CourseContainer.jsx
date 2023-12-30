@@ -27,7 +27,7 @@ function CourseContainer() {
       <div>
         {courseData.years.map((year) => (
           <div key={year.title} className="py-2 ">
-            <h3 className="xxs:text-md bg-secondary dark:bg-darkSecondary pl-3 font-subheading font-semibold uppercase text-primary underline xxs:text-center md:text-xl lg:text-4xl dark:text-darkPrimary">
+            <h3 className="xxs:text-md bg-secondary pl-3 font-subheading font-semibold uppercase text-primary underline xxs:text-center md:text-xl lg:text-4xl dark:bg-darkSecondary dark:text-darkPrimary">
               {year.title}
             </h3>
             <div className="grid gap-3 px-2 pt-2 lg:grid-cols-2">
