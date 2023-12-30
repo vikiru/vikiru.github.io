@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -22,6 +21,9 @@ module.exports = {
       secondary: "#252627",
       accent: "#648DE5",
       backup: "#564E58",
+      darkPrimary: "#001514",
+      darkSecondary: "#c0c0c0",
+      darkAccent: "#C84C09",
     },
   },
   extend: {},

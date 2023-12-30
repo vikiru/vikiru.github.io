@@ -9,11 +9,11 @@ import aboutData from "./../../assets/data/about";
 
 function HomePage() {
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
+    <div className="dark:bg-darkPrimary flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
       <NavBar />
       <main className="py-4">
         <div className="flex justify-center">
-          <h2 className="text-center font-cinzel tracking-widest text-secondary lg:text-6xl">
+          <h2 className="dark:text-darkSecondary text-center font-cinzel tracking-widest text-secondary lg:text-6xl">
             {aboutData.fullName}
           </h2>
         </div>
@@ -25,7 +25,7 @@ function HomePage() {
         </div>
 
         <div className="mx-auto flex max-w-lg justify-center">
-          <h3 className="font-subheading font-thin text-secondary lg:text-4xl">
+          <h3 className="dark:text-darkSecondary font-subheading font-thin text-secondary lg:text-4xl ">
             {aboutData.title}
           </h3>
         </div>
@@ -33,9 +33,9 @@ function HomePage() {
         <div className="flex justify-center py-1">
           <FontAwesomeIcon
             icon={faLocationDot}
-            className="px-2 pt-1 text-accent lg:text-2xl"
+            className="px-2 pt-1 text-accent dark:text-darkAccent lg:text-2xl"
           />
-          <span className="xxs:text-md font-subheading tracking-wide text-secondary lg:text-2xl">
+          <span className="xxs:text-md font-subheading tracking-wide text-secondary lg:text-2xl dark:text-darkSecondary">
             {aboutData.location}
           </span>
         </div>
@@ -49,7 +49,7 @@ function HomePage() {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl"
+              className="lg:ease-in-out-anim text-white dark:text-darkAccent text-3xl text-accent lg:text-5xl"
             />
           </a>
           <a
@@ -60,7 +60,7 @@ function HomePage() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl"
+              className="lg:ease-in-out-anim text-white dark:text-darkAccent text-3xl text-accent lg:text-5xl"
             />
           </a>
           <a
@@ -71,40 +71,40 @@ function HomePage() {
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl"
+              className="lg:ease-in-out-anim text-white dark:text-darkAccent text-3xl text-accent lg:text-5xl"
             />
           </a>
         </div>
         <div className="mx-auto max-w-xl py-1">
-          <p className="text-center font-body text-secondary xxs:text-sm lg:text-3xl">
+          <p className="dark:text-darkSecondary text-center font-body text-secondary xxs:text-sm lg:text-3xl ">
             I have a passion for software design and web technologies. Committed
             to learning and contributing to meaningful projects!
           </p>
         </div>
 
         <div className="flex gap-2 xxs:flex-col lg:flex-row lg:justify-center lg:py-4">
-          <div className="bg-blue-400 rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60">
+          <div className="bg-blue-400 dark:bg-darkAccent rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60">
             <a href="/about" target="_blank" rel="noopener noreferrer">
-              <h2 className="text-center uppercase text-secondary lg:text-2xl">
+              <h2 className="dark:text-darkSecondary text-center uppercase text-secondary lg:text-2xl ">
                 Read More
               </h2>
             </a>
           </div>
-          <div className="rounded-full bg-accent hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60 lg:px-2 xl:p-2">
+          <div className="dark:bg-darkAccent rounded-full bg-accent hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60 lg:px-2 xl:p-2">
             <a href="/projects" target="_blank" rel="noopener noreferrer">
-              <h2 className="text-center uppercase tracking-widest text-secondary lg:text-2xl">
+              <h2 className="dark:text-darkSecondary text-center uppercase tracking-widest text-secondary lg:text-2xl ">
                 View My Work
               </h2>
             </a>
           </div>
-          <div className="rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60">
+          <div className="dark:bg-darkAccent rounded-full bg-accent p-2 hover:cursor-pointer hover:ring-4 md:mx-auto lg:mx-0 lg:w-60">
             <a
               href="mailto:viskirubakaran@outlook.com"
               target="_blank"
               rel="noopener noreferrer"
               id="email"
             >
-              <h2 className="text-center uppercase tracking-widest text-secondary lg:text-2xl">
+              <h2 className="dark:text-darkSecondary text-center uppercase tracking-widest text-secondary lg:text-2xl ">
                 Contact Me
               </h2>
             </a>

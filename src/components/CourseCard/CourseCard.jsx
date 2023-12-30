@@ -6,21 +6,21 @@ function CourseCard(props) {
   return (
     <div
       key={course.courseCode}
-      className="bg-white mx-auto w-full rounded-md bg-primary shadow-md ring-2 md:px-4 md:pt-4 lg:pb-4"
+      className="bg-white mx-auto w-full rounded-md bg-primary shadow-md ring-2 md:px-4 md:pt-4 lg:pb-4 dark:bg-darkSecondary"
     >
       <div>
-        <h3 className="text-center font-semibold xxs:text-sm lg:text-3xl">
+        <h3 className="text-center font-semibold xxs:text-sm lg:text-3xl dark:text-darkPrimary">
           {course.courseCode}
         </h3>
         {/* Course Name */}
-        <h4 className="py-2 text-center font-subheading xxs:text-sm lg:text-2xl">
+        <h4 className="py-2 text-center font-subheading xxs:text-sm lg:text-2xl dark:text-darkPrimary">
           {course.name}
         </h4>
       </div>
 
       {/* Course Description */}
       <div className="mx-auto pb-4">
-        <p className="text-center font-body leading-6 xxs:text-xs sm:text-sm lg:text-xl">
+        <p className="text-center font-body leading-6 xxs:text-xs sm:text-sm lg:text-xl dark:text-darkPrimary">
           {course.description}
         </p>
       </div>

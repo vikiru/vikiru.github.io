@@ -9,19 +9,19 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectShowcasePage(props) {
   const project = props.project;
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
+    <div className="dark:bg-darkPrimary flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary">
       <NavBar />
       <main>
-        <section className="mx-auto flex justify-center bg-primary py-8">
+        <section className="dark:bg-darkPrimary mx-auto flex justify-center bg-primary py-8">
           <div>
-            <h2 className="text-center font-heading text-4xl font-bold lg:text-5xl">
+            <h2 className="dark:text-darkSecondary text-center font-heading text-4xl font-bold  lg:text-5xl">
               {project.name}
             </h2>
-            <p className="text-center font-body uppercase lg:text-xl">
+            <p className="dark:text-darkSecondary text-center font-body uppercase  lg:text-xl">
               {project.startDate} - {project.endDate}
             </p>
             <div className="mx-auto max-w-lg">
-              <h3 className="text-center font-body lg:text-2xl">
+              <h3 className="dark:text-darkSecondary text-center font-body  lg:text-2xl">
                 {project.description}
               </h3>
             </div>
@@ -30,9 +30,9 @@ function ProjectShowcasePage(props) {
               {project.technologiesUsed.map((tech) => (
                 <div
                   key={tech}
-                  className="w-auto max-w-lg rounded-full bg-secondary px-2 lg:py-2"
+                  className="dark:bg-darkSecondary w-auto max-w-lg rounded-full bg-secondary px-2 lg:py-2"
                 >
-                  <h2 className="text-center font-subheading font-thin text-primary lg:text-xl">
+                  <h2 className="dark:text-darkPrimary text-center font-subheading font-thin text-primary  lg:text-xl">
                     {tech}
                   </h2>
                 </div>
@@ -49,7 +49,7 @@ function ProjectShowcasePage(props) {
                   >
                     <FontAwesomeIcon
                       icon={faGithub}
-                      className="lg:ease-in-out-anim pr-1 text-3xl text-accent lg:text-5xl"
+                      className="lg:ease-in-out-anim dark:text-darkAccent pr-1 text-3xl text-accent lg:text-5xl"
                     />
                   </a>
                 )}
@@ -61,7 +61,7 @@ function ProjectShowcasePage(props) {
                   >
                     <FontAwesomeIcon
                       icon={faBookOpen}
-                      className="lg:ease-in-out-anim pr-1 text-3xl text-accent lg:text-5xl"
+                      className="lg:ease-in-out-anim dark:text-darkAccent pr-1 text-3xl  text-accent lg:text-5xl"
                     />
                   </a>
                 )}
@@ -71,8 +71,8 @@ function ProjectShowcasePage(props) {
         </section>
 
         {project.imagePath !== "" && (
-          <div className="mx-auto bg-primary py-4 lg:max-w-xl xl:max-w-4xl">
-            <h2 className="py-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
+          <div className="dark:bg-darkPrimary mx-auto bg-primary py-4 lg:max-w-xl xl:max-w-4xl">
+            <h2 className="dark:text-darkSecondary py-2 text-center text-2xl font-bold uppercase underline  lg:text-4xl">
               Demo
             </h2>
             <div className="mx-auto flex justify-center ring-4">
@@ -87,13 +87,16 @@ function ProjectShowcasePage(props) {
         )}
 
         <div className="mx-auto max-w-3xl py-4 lg:max-w-7xl">
-          <h2 className="pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
+          <h2 className="dark:text-darkSecondary pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl">
             Accomplishments
           </h2>
           <div className="mb-auto p-6">
             <ul className="list-inside list-disc">
               {project.accomplishments.map((accomplishment) => (
-                <li key={accomplishment} className="lg:text-2xl">
+                <li
+                  key={accomplishment}
+                  className="dark:text-darkSecondary  lg:text-2xl"
+                >
                   {accomplishment}
                 </li>
               ))}
