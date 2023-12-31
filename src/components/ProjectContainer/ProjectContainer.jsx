@@ -12,7 +12,7 @@ function ProjectContainer() {
         </h2>
         <div className="mx-auto grid gap-4 px-2 pt-2 xl:grid-cols-2">
           {projects.map((project) => (
-            <ProjectCard project={project} key={project} />
+            <ProjectCard project={project} key={project.name} />
           ))}
         </div>
       </div>
