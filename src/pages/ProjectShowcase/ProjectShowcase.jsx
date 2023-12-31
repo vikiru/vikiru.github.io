@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "./../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/NavBar";
 import PropTypes from "prop-types";
 import React from "react";
@@ -12,70 +13,83 @@ function ProjectShowcasePage(props) {
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary">
       <NavBar />
       <main>
-        <section className="mx-auto flex justify-center bg-primary py-8 dark:bg-darkPrimary">
+        <section
+          className="bg-primary p-4 dark:bg-darkPrimary"
+          id="project-info"
+        >
+          <h2 className="pb-2 font-heading font-bold xxs:text-lg md:text-4xl lg:text-5xl  dark:text-darkSecondary">
+            <Link
+              to="/projects"
+              className="font-semibold text-accent underline hover:bg-accent/80 hover:text-secondary"
+            >
+              projects
+            </Link>{" "}
+            / {project.name}
+          </h2>
+          <p className="font-body uppercase lg:text-xl  dark:text-darkSecondary">
+            {project.startDate} - {project.endDate}
+          </p>
           <div>
-            <h2 className="text-center font-heading text-4xl font-bold lg:text-5xl  dark:text-darkSecondary">
-              {project.name}
-            </h2>
-            <p className="text-center font-body uppercase lg:text-xl  dark:text-darkSecondary">
-              {project.startDate} - {project.endDate}
-            </p>
-            <div className="mx-auto max-w-lg">
-              <h3 className="text-center font-body lg:text-2xl  dark:text-darkSecondary">
-                {project.description}
-              </h3>
-            </div>
-
-            <div className="my-2 flex justify-center gap-2">
-              {project.technologiesUsed.map((tech) => (
-                <div
-                  key={tech}
-                  className="w-auto max-w-lg rounded-full bg-secondary px-2 lg:py-2 dark:bg-darkSecondary"
-                >
-                  <h2 className="text-center font-subheading font-thin text-primary lg:text-xl  dark:text-darkPrimary">
-                    {tech}
-                  </h2>
-                </div>
-              ))}
-            </div>
-
-            <div>
-              <div className="flex justify-center py-2">
-                {project.githubUrl != "" && (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      className="lg:ease-in-out-anim pr-1 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
-                    />
-                  </a>
-                )}
-                {project.documentationUrl != "" && (
-                  <a
-                    href={project.documentationUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faBookOpen}
-                      className="lg:ease-in-out-anim pr-1 text-3xl text-accent  lg:text-5xl dark:text-darkAccent"
-                    />
-                  </a>
-                )}
-              </div>
-            </div>
+            <h3 className=" font-body lg:text-2xl  dark:text-darkSecondary">
+              {project.description}
+            </h3>
           </div>
+
+          <section
+            id="technologies-used"
+            className="py-2 xxs:grid sm:grid-cols-2 lg:flex lg:gap-2"
+          >
+            {project.technologiesUsed.map((tech) => (
+              <div
+                key={tech}
+                className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer dark:bg-darkAccent"
+              >
+                <h2 className="py-2 text-center font-heading font-semibold text-primary">
+                  {tech}
+                </h2>
+              </div>
+            ))}
+          </section>
+
+          <section id="project-icons" className="flex justify-center">
+            <div className="py-2">
+              {project.githubUrl != "" && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="lg:ease-in-out-anim pr-4 text-5xl text-accent lg:text-5xl dark:text-darkAccent"
+                  />
+                </a>
+              )}
+              {project.documentationUrl != "" && (
+                <a
+                  href={project.documentationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faBookOpen}
+                    className="lg:ease-in-out-anim pr-1 text-5xl text-accent  lg:text-5xl dark:text-darkAccent"
+                  />
+                </a>
+              )}
+            </div>
+          </section>
         </section>
 
         {project.imagePath !== "" && (
-          <div className="mx-auto bg-primary py-4 lg:max-w-xl xl:max-w-4xl dark:bg-darkPrimary">
-            <h2 className="py-2 text-center text-2xl font-bold uppercase underline lg:text-4xl  dark:text-darkSecondary">
+          <section
+            id="project-demo"
+            className="bg-primary p-4 dark:bg-darkPrimary"
+          >
+            <h2 className="py-2  text-2xl font-bold uppercase underline lg:text-4xl  dark:text-darkSecondary">
               Demo
             </h2>
-            <div className="mx-auto flex justify-center ring-4">
+            <div className="flex justify-center">
               <img
                 className="object-fit h-auto w-full"
                 src={project.imagePath}
@@ -83,14 +97,14 @@ function ProjectShowcasePage(props) {
                 title={`${project.name} Demo`}
               ></img>
             </div>
-          </div>
+          </section>
         )}
 
-        <div className="mx-auto max-w-3xl py-4 lg:max-w-7xl">
-          <h2 className="pt-2 text-center text-2xl font-bold uppercase underline lg:text-4xl dark:text-darkSecondary">
+        <section id="project-accomplishments" className="py px-4">
+          <h2 className="pt-2 text-2xl font-bold uppercase underline lg:text-4xl dark:text-darkSecondary">
             Accomplishments
           </h2>
-          <div className="mb-auto p-6">
+          <div className="p-4">
             <ul className="list-inside list-disc">
               {project.accomplishments.map((accomplishment) => (
                 <li
@@ -102,7 +116,7 @@ function ProjectShowcasePage(props) {
               ))}
             </ul>
           </div>
-        </div>
+        </section>
       </main>
       <Footer />
     </div>
