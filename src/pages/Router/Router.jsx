@@ -18,7 +18,7 @@ function Router() {
       <Route path="/projects" element={<Projects />} />
       {projects.map((project) => (
         <Route
-          key={project}
+          key={project.name}
           path={project.projectPageUrl}
           element={<ProjectShowcase project={project} />}
         />

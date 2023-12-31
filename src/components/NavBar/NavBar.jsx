@@ -17,7 +17,7 @@ function NavBar() {
         id="navigation-menu"
         className="flex items-center justify-between bg-secondary dark:bg-darkPrimary"
       >
-        <section id="small-screen-nav-toggler" className="xs:block xl:hidden">
+        <div id="small-screen-nav-toggler" className="xs:block xl:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
@@ -31,10 +31,10 @@ function NavBar() {
               />
             )}
           </button>
-        </section>
+        </div>
       </section>
       {isOpen ? (
-        <section className="block justify-center xl:hidden">
+        <section className="block justify-center xl:hidden" id="nav-links">
           <Link to="/">
             <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
               Home
@@ -67,15 +67,15 @@ function NavBar() {
               <span className="text-accent">kan</span>
             </h2>
           </div>
-          <div className="flex justify-center">
+          <section id="nav-links" className="flex justify-center">
             {navData.map((nav) => (
-              <Link key={nav} to={nav.navLink}>
-                <h2 className="px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl dark:hover:decoration-darkAccent">
+              <Link key={nav.navTitle} to={nav.navLink}>
+                <h2 className="px-2 tracking-wide text-primary hover:underline hover:decoration-accent lg:text-xl dark:hover:decoration-darkAccent">
                   {nav.navTitle}
                 </h2>
               </Link>
             ))}
-          </div>
+          </section>
         </section>
       )}
     </nav>

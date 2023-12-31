@@ -10,78 +10,84 @@ function Footer() {
   return (
     <footer className="mt-auto w-full">
       <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-3 dark:bg-darkPrimary">
-        <div className="m-auto">
-          <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg  md:text-3xl lg:text-4xl xl:text-5xl dark:text-darkSecondary">
+        <section id="logo" className="m-auto py-2">
+          <h2 className="font-cinzel tracking-widest text-primary xxs:text-2xl  md:text-3xl lg:text-4xl xl:text-5xl dark:text-darkSecondary">
             <span className="text-primary  dark:text-darkSecondary">Visa</span>
             <span className="text-accent dark:text-darkAccent">kan</span>
           </h2>
-        </div>
-        <div>
-          <h2 className="text-center font-heading text-xl uppercase text-primary  lg:text-2xl dark:text-darkSecondary">
-            Read More
-          </h2>
-          {navData.map((navItem) => (
-            <div key={navItem} className="mx-auto w-20">
-              <Link to={navItem.navLink}>
-                <h2 className="text-center font-body text-lg uppercase text-primary  hover:underline lg:text-xl dark:text-darkSecondary dark:decoration-darkAccent">
-                  {navItem.navTitle}
-                </h2>
-              </Link>
-            </div>
-          ))}
-        </div>
-        <div className="mx-auto">
-          <h2 className="text-center font-heading text-xl uppercase text-primary lg:text-2xl  dark:text-darkSecondary">
-            Contact
-          </h2>
-          <div>
-            <h2 className="py-2 text-center font-subheading text-lg text-primary lg:text-xl  dark:text-darkSecondary">
-              Ottawa, ON
+        </section>
+
+        <div className="lg:normal col-span-2 sm:grid sm:grid-cols-2">
+          <section id="footer-navigation">
+            <h2 className="text-center font-heading text-xl text-primary  lg:text-2xl dark:text-darkSecondary">
+              Read more
             </h2>
-            <a
-              href="https://github.com/vikiru"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="github-url"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="lg:ease-in-out-anim  px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/viskirubakaran/"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="linkedin-url"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
-              />
-            </a>
-            <a
-              href="mailto:viskirubakaran@outlook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="email"
-            >
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
-              />
-            </a>
-          </div>
+            {navData.map((navItem) => (
+              <div key={navItem.navTitle} className="mx-auto w-20">
+                <Link to={navItem.navLink}>
+                  <h2 className="text-center font-body text-lg tracking-wide text-primary decoration-accent hover:underline lg:text-xl dark:text-darkSecondary dark:decoration-darkAccent">
+                    {navItem.navTitle}
+                  </h2>
+                </Link>
+              </div>
+            ))}
+          </section>
+          <section id="contact" className="mx-auto px-4">
+            <h2 className="text-center font-heading text-xl text-primary lg:text-2xl  dark:text-darkSecondary">
+              Connect with me
+            </h2>
+            <div>
+              <h2 className="py-2 text-center font-subheading text-lg text-primary lg:text-xl  dark:text-darkSecondary">
+                Ottawa, ON
+              </h2>
+              <div className="flex justify-center">
+                <a
+                  href="https://github.com/vikiru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="github-url"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/viskirubakaran/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="linkedin-url"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                  />
+                </a>
+                <a
+                  href="mailto:viskirubakaran@outlook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="email"
+                >
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                  />
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <div className="bg-secondary dark:bg-darkPrimary">
+
+      <section id="copyright" className="bg-secondary dark:bg-darkPrimary">
         <div className="mx-auto flex max-w-lg items-center justify-center py-2">
           <span className="text-center font-heading font-thin text-primary lg:text-lg  dark:text-darkSecondary">
             Visakan Kirubakaran &copy; {new Date().getFullYear()}. All rights
             reserved.
           </span>
         </div>
-      </div>
+      </section>
     </footer>
   );
 }

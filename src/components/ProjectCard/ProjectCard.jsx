@@ -12,11 +12,14 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectCard(props) {
   const project = props.project;
   return (
-    <div className="rounded-md bg-primary px-2 pb-6 shadow-md ring-2 dark:bg-darkSecondary">
+    <section
+      id={project.name}
+      className="rounded-lg bg-primary px-2 pb-6 shadow-md ring-2 dark:bg-darkSecondary"
+    >
       <h2 className="text-center font-heading font-semibold uppercase text-secondary lg:text-3xl">
         {project.name}
       </h2>
-      <p className="mx-auto text-center font-body font-thin uppercase text-backup lg:text-xl">
+      <p className="mx-auto text-center font-body uppercase text-secondary lg:text-xl">
         {project.startDate} - {project.endDate}
       </p>
 
@@ -26,21 +29,27 @@ function ProjectCard(props) {
         </h3>
       </div>
 
-      <div className="m-2 mx-auto grid max-w-lg justify-center sm:grid-cols-2 lg:grid-cols-3 lg:gap-2">
+      <section
+        id="technologies-used"
+        className="m-2 mx-auto grid max-w-lg justify-center sm:grid-cols-2 lg:gap-2"
+      >
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 flex w-auto max-w-xl items-center rounded-full bg-secondary px-2 lg:py-2 dark:bg-darkPrimary"
+            className="mx-auto mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer dark:bg-darkAccent"
           >
-            <h2 className="text-center font-subheading font-thin text-primary dark:text-darkSecondary">
+            <h2 className="m-auto py-2 text-center font-heading font-semibold text-primary">
               {tech}
             </h2>
           </div>
         ))}
-      </div>
+      </section>
 
       {project.githubUrl !== "" && (
-        <div className="mx-auto flex max-w-xs justify-center pb-2 pt-1">
+        <section
+          id="project-icons"
+          className="mx-auto flex max-w-xs justify-center pb-2 pt-1"
+        >
           {project.githubUrl != "" && (
             <a
               href={project.githubUrl}
@@ -49,7 +58,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim pr-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-4 text-5xl text-accent dark:text-darkAccent"
               />
             </a>
           )}
@@ -61,31 +70,29 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
-                className="lg:ease-in-out-anim pr-1 text-3xl text-accent  lg:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-1 text-5xl text-accent  dark:text-darkAccent"
               />
             </a>
           )}
-        </div>
+        </section>
       )}
 
-      <div className="mx-auto flex max-w-sm justify-center bg-accent pt-1 dark:bg-darkAccent">
-        <button className="rounded px-4 py-2">
-          <span className="text-md font-subheading uppercase tracking-widest text-secondary lg:text-xl dark:text-darkSecondary">
-            Read More
-          </span>
-          <Link
-            to={project.projectPageUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              className="lg:ease-in-out-anim pl-1 text-lg text-secondary dark:text-darkSecondary"
-              icon={faArrowUpRightFromSquare}
-            />
-          </Link>
-        </button>
-      </div>
-    </div>
+      <section
+        id="project-additional-info"
+        className="mx-auto w-36 rounded-lg bg-accent drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80"
+      >
+        <Link
+          to={project.projectPageUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          id="about"
+        >
+          <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary">
+            Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          </h2>
+        </Link>
+      </section>
+    </section>
   );
 }
 
