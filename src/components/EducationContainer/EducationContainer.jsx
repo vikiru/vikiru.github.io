@@ -38,12 +38,12 @@ function EducationContainer() {
               </h3>
             </div>
             <div className="pt-1">
-              <h3 className="font-body font-thin uppercase lg:text-xl dark:text-darkSecondary">
+              <h3 className="font-body uppercase lg:text-xl dark:text-darkSecondary">
                 {educationData.enrollmentStart} - {educationData.enrollmentEnd}
               </h3>
             </div>
           </div>
-          <div className="h-[75px] w-[300px] rounded-lg bg-accent drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full  lg:h-[75px]  lg:w-[300px] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               target="_blank"
@@ -59,7 +59,7 @@ function EducationContainer() {
 
       {/* Coursera Section - XXS - XL Screens */}
       <section className="m-2 mx-auto" id="coursera-certificate-info">
-        <div className="mx-2 px-2">
+        <div className="px-4">
           <h2 className=" font-heading font-semibold uppercase lg:text-3xl dark:text-darkSecondary">
             Coursera
           </h2>
@@ -67,7 +67,7 @@ function EducationContainer() {
         {courseraCertificates.map((certificate) => (
           <div
             key={certificate.certificationName}
-            className="px-4 xxs:block lg:flex lg:justify-between"
+            className="px-4 xxs:block lg:flex lg:justify-between pb-2"
             id={certificate.certificationName.toLowerCase()}
           >
             <div>
@@ -77,12 +77,12 @@ function EducationContainer() {
                 </h3>
               </div>
               <div>
-                <p className="text-md font-body font-thin uppercase lg:text-xl dark:text-darkSecondary">
+                <p className="text-md font-body  uppercase lg:text-xl dark:text-darkSecondary">
                   {certificate.startDate} - {certificate.completionDate}
                 </p>
               </div>
             </div>
-            <div className="h-[75px] w-[300px] rounded-lg bg-accent drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="h-[75px] rounded-lg bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full  lg:w-[300px] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"
