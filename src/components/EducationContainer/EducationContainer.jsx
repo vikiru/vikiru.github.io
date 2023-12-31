@@ -67,7 +67,7 @@ function EducationContainer() {
         {courseraCertificates.map((certificate) => (
           <div
             key={certificate.certificationName}
-            className="px-4 xxs:block lg:flex lg:justify-between pb-2"
+            className="px-4 pb-2 xxs:block lg:flex lg:justify-between"
             id={certificate.certificationName.toLowerCase()}
           >
             <div>
