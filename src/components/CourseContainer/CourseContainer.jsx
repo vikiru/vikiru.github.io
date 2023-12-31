@@ -6,38 +6,42 @@ import educationData from "../../assets/data/education";
 function CourseContainer() {
   return (
     <section id="university-courses">
-      <section className="m-2 mx-auto max-w-lg" id="unversity-info">
-        <div className="mx-2 px-2">
-          <h2 className="xxs:text-md text-center font-heading font-semibold uppercase lg:text-4xl dark:text-darkSecondary">
+      <section id="unversity-info" className="px-4">
+        <div>
+          <h2 className="xxs:text-md  font-heading font-semibold uppercase lg:text-4xl dark:text-darkSecondary">
             {educationData.universityName}
           </h2>
         </div>
-        <div className="mx-auto max-w-sm">
-          <h3 className="pl-2 text-center font-body uppercase xxs:text-sm lg:text-2xl dark:text-darkSecondary">
+        <div>
+          <h3 className="font-body uppercase xxs:text-sm lg:text-2xl dark:text-darkSecondary">
             {educationData.enrollmentStart} - {educationData.enrollmentEnd}
           </h3>
         </div>
-        <div className="max-w-lg px-2">
-          <h3 className="text-center font-subheading xxs:text-sm lg:text-3xl dark:text-darkSecondary">
+        <div>
+          <h3 className=" font-subheading xxs:text-sm lg:text-3xl dark:text-darkSecondary">
             {educationData.degree} - {educationData.acronym}.,{" "}
             {educationData.degreeProgram}
           </h3>
         </div>
       </section>
-      <div>
+      <section id="course-container">
         {courseData.years.map((year) => (
-          <div key={year.title} className="py-2 ">
-            <h3 className="xxs:text-md bg-secondary pl-3 font-subheading font-semibold uppercase text-primary underline xxs:text-center md:text-xl lg:text-4xl dark:bg-darkSecondary dark:text-darkPrimary">
+          <section
+            key={year.title}
+            id={year.title.toLowerCase() + " courses"}
+            className="py-2"
+          >
+            <h3 className="xxs:text-md bg-secondary px-4 font-subheading font-semibold uppercase text-primary underline md:text-xl lg:text-4xl dark:bg-darkSecondary dark:text-darkPrimary">
               {year.title}
             </h3>
             <div className="grid gap-3 px-2 pt-2 lg:grid-cols-2">
               {year.courses.map((course) => (
-                <CourseCard key={course} course={course} />
+                <CourseCard key={course.courseCode} course={course} />
               ))}
             </div>
-          </div>
+          </section>
         ))}
-      </div>
+      </section>
     </section>
   );
 }

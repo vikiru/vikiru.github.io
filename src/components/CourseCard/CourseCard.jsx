@@ -4,27 +4,28 @@ import React from "react";
 function CourseCard(props) {
   const course = props.course;
   return (
-    <div
+    <section
+      id={course.courseCode + ":" + course.name}
       key={course.courseCode}
-      className="bg-white mx-auto w-full rounded-md bg-primary shadow-md ring-2 md:px-4 md:pt-4 lg:pb-4 dark:bg-darkSecondary"
+      className="bg-white w-full rounded-md bg-primary px-4 pt-2 shadow-md ring-2 lg:pb-4 dark:bg-darkSecondary"
     >
       <div>
-        <h3 className="text-center font-semibold xxs:text-sm lg:text-3xl dark:text-darkPrimary">
+        <h3 className="font-semibold xxs:text-sm lg:text-3xl dark:text-darkPrimary">
           {course.courseCode}
         </h3>
         {/* Course Name */}
-        <h4 className="py-2 text-center font-subheading xxs:text-sm lg:text-2xl dark:text-darkPrimary">
+        <h4 className="py-2 font-subheading xxs:text-sm lg:text-2xl dark:text-darkPrimary">
           {course.name}
         </h4>
       </div>
 
       {/* Course Description */}
-      <div className="mx-auto pb-4">
-        <p className="text-center font-body leading-6 xxs:text-xs sm:text-sm lg:text-xl dark:text-darkPrimary">
+      <div className="pb-4">
+        <p className="font-body leading-6 xxs:text-xs sm:text-sm lg:text-xl dark:text-darkPrimary">
           {course.description}
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
