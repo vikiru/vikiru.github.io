@@ -55,7 +55,7 @@ function HomePage() {
                 id="about"
               >
                 <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary">
-                  Read More
+                  Read more
                 </h2>
               </Link>
             </div>
@@ -79,7 +79,7 @@ function HomePage() {
                 id="email"
               >
                 <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary">
-                  Contact Me
+                  Contact me
                 </h2>
               </a>
             </div>
