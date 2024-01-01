@@ -14,7 +14,7 @@ function ProjectShowcasePage(props) {
       <NavBar />
       <main>
         <section
-          className="bg-primary p-4 dark:bg-darkPrimary"
+          className="bg-primary p-4 pb-2 dark:bg-darkPrimary"
           id="project-info"
         >
           <h2 className="heading-text pb-2 xxs:text-lg md:text-4xl lg:text-5xl  dark:text-darkSecondary">
@@ -85,7 +85,7 @@ function ProjectShowcasePage(props) {
         {project.imagePath !== "" && (
           <section
             id="project-demo"
-            className="bg-primary p-4 dark:bg-darkPrimary"
+            className="bg-primary p-4 pb-2 dark:bg-darkPrimary"
           >
             <h2 className="heading-text py-2 uppercase underline lg:text-4xl  dark:text-darkSecondary">
               Demo
@@ -105,7 +105,7 @@ function ProjectShowcasePage(props) {
           <h2 className="heading-text pt-2 uppercase underline lg:text-4xl dark:text-darkSecondary">
             Accomplishments
           </h2>
-          <div className="p-4">
+          <div className="p-4 pb-6">
             <ul className="list-inside list-disc">
               {project.accomplishments.map((accomplishment) => (
                 <li
