@@ -16,13 +16,13 @@ function HomePage() {
       <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
         <section>
           <section id="hero">
-            <h2 className="font-heading text-4xl font-extrabold leading-none tracking-tight">
+            <h2 className="heading-text">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
               </span>
             </h2>
-            <p className="pt-2 font-body text-base font-light leading-8">
+            <p className="body-text pt-2">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -31,7 +31,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="pt-2 font-body text-base font-light leading-8">
+            <p className="body-text pt-2">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more
@@ -103,7 +103,11 @@ function HomePage() {
               {aboutData.location}
             </span>
           </div>
-          <div id="social-icons" className="flex justify-center space-x-4 pt-2">
+
+          <section
+            id="social-icons"
+            className="flex justify-center space-x-4 pt-2"
+          >
             <a
               href="https://github.com/vikiru"
               target="_blank"
@@ -137,7 +141,7 @@ function HomePage() {
                 className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl dark:text-darkAccent"
               />
             </a>
-          </div>
+          </section>
         </section>
       </main>
 
