@@ -99,7 +99,7 @@ function HomePage() {
               icon={faLocationDot}
               className="px-2 pt-1 text-xl text-accent dark:text-darkAccent"
             />
-            <span className="xxs:text-md font-subheading text-xl text-secondary dark:text-darkSecondary">
+            <span className="xxs:text-md subheading-text text-secondary dark:text-darkSecondary">
               {aboutData.location}
             </span>
           </div>

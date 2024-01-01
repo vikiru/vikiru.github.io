@@ -36,22 +36,22 @@ function NavBar() {
       {isOpen ? (
         <section className="block justify-center xl:hidden" id="nav-links">
           <Link to="/">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
               Home
             </h2>
           </Link>
           <Link to="/about">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
               About
             </h2>
           </Link>
           <Link to="/education/courses">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
               Courses
             </h2>
           </Link>
           <Link to="/projects">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
               Projects
             </h2>
           </Link>
@@ -70,7 +70,7 @@ function NavBar() {
           <section id="nav-links" className="flex justify-center">
             {navData.map((nav) => (
               <Link key={nav.navTitle} to={nav.navLink}>
-                <h2 className="px-2 tracking-wide text-primary hover:underline hover:decoration-accent lg:text-xl dark:hover:decoration-darkAccent">
+                <h2 className="subheading-text px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl dark:hover:decoration-darkAccent">
                   {nav.navTitle}
                 </h2>
               </Link>
