@@ -14,10 +14,10 @@ function ProjectShowcasePage(props) {
       <NavBar />
       <main>
         <section
-          className="bg-primary p-4 pb-2 dark:bg-darkPrimary"
+          className="bg-primary p-4 pb-2 xxs:p-2 dark:bg-darkPrimary"
           id="project-info"
         >
-          <h2 className="heading-text pb-2 xxs:text-lg md:text-4xl lg:text-5xl  dark:text-darkSecondary">
+          <h2 className="heading-text pb-2 dark:text-darkSecondary">
             <Link
               to="/projects"
               className="text-accent underline hover:bg-accent hover:text-secondary"
@@ -27,7 +27,7 @@ function ProjectShowcasePage(props) {
             </Link>{" "}
             / {project.name}
           </h2>
-          <h3 className="subheading-text uppercase lg:text-xl  dark:text-darkSecondary">
+          <h3 className="body-text uppercase dark:text-darkSecondary">
             {project.startDate} - {project.endDate}
           </h3>
           <div>
@@ -43,9 +43,9 @@ function ProjectShowcasePage(props) {
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer dark:bg-darkAccent"
+                className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer xxs:w-1/2 xxs:mx-auto dark:bg-darkAccent"
               >
-                <h2 className="py-2 text-center font-body text-sm text-primary">
+                <h2 className="m-auto py-2 text-center font-body text-sm text-primary xxs:text-xs">
                   {tech}
                 </h2>
               </div>
@@ -53,7 +53,7 @@ function ProjectShowcasePage(props) {
           </section>
 
           <section id="project-icons" className="flex justify-center">
-            <div className="py-2">
+            <div className="p-2">
               {project.githubUrl != "" && (
                 <a
                   href={project.githubUrl}
@@ -62,7 +62,7 @@ function ProjectShowcasePage(props) {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="lg:ease-in-out-anim pr-4 text-5xl text-accent lg:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim pr-4 text-5xl text-accent xxs:text-4xl md:text-5xl lg:text-5xl dark:text-darkAccent"
                   />
                 </a>
               )}
@@ -74,7 +74,7 @@ function ProjectShowcasePage(props) {
                 >
                   <FontAwesomeIcon
                     icon={faBookOpen}
-                    className="lg:ease-in-out-anim pr-1 text-5xl text-accent  lg:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim pr-1 text-5xl text-accent xxs:text-4xl md:text-5xl  lg:text-5xl dark:text-darkAccent"
                   />
                 </a>
               )}
@@ -85,14 +85,14 @@ function ProjectShowcasePage(props) {
         {project.imagePath !== "" && (
           <section
             id="project-demo"
-            className="bg-primary p-4 pb-2 dark:bg-darkPrimary"
+            className="bg-primary p-4 pb-2 xxs:p-2 dark:bg-darkPrimary"
           >
-            <h2 className="heading-text py-2 uppercase underline lg:text-4xl  dark:text-darkSecondary">
+            <h2 className="heading-text py-2 uppercase underline dark:text-darkSecondary">
               Demo
             </h2>
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <img
-                className="object-fit h-auto w-full"
+                className="xxs:h-30 h-auto w-full object-scale-down"
                 src={project.imagePath}
                 alt={`${project.name} Demo`}
                 title={`${project.name} Demo`}
@@ -101,8 +101,8 @@ function ProjectShowcasePage(props) {
           </section>
         )}
 
-        <section id="project-accomplishments" className="px-4 pb-6">
-          <h2 className="heading-text pt-2 uppercase underline lg:text-4xl dark:text-darkSecondary">
+        <section id="project-accomplishments" className="pb-6 xxs:px-2 lg:px-4">
+          <h2 className="heading-text pt-2 uppercase underline dark:text-darkSecondary">
             Accomplishments
           </h2>
           <div className="p-4 pb-6">
