@@ -17,22 +17,23 @@ function ProjectShowcasePage(props) {
           className="bg-primary p-4 dark:bg-darkPrimary"
           id="project-info"
         >
-          <h2 className="pb-2 font-heading font-bold xxs:text-lg md:text-4xl lg:text-5xl  dark:text-darkSecondary">
+          <h2 className="heading-text pb-2 xxs:text-lg md:text-4xl lg:text-5xl  dark:text-darkSecondary">
             <Link
               to="/projects"
-              className="font-semibold text-accent underline hover:bg-accent/80 hover:text-secondary"
+              className="text-accent underline hover:bg-accent hover:text-secondary"
+              title="View my other projects"
             >
               projects
             </Link>{" "}
             / {project.name}
           </h2>
-          <p className="font-body uppercase lg:text-xl  dark:text-darkSecondary">
+          <h3 className="subheading-text uppercase lg:text-xl  dark:text-darkSecondary">
             {project.startDate} - {project.endDate}
-          </p>
+          </h3>
           <div>
-            <h3 className=" font-body lg:text-2xl  dark:text-darkSecondary">
+            <p className="body-text lg:text-2xl  dark:text-darkSecondary">
               {project.description}
-            </h3>
+            </p>
           </div>
 
           <section
@@ -44,7 +45,7 @@ function ProjectShowcasePage(props) {
                 key={tech}
                 className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer dark:bg-darkAccent"
               >
-                <h2 className="py-2 text-center font-heading font-semibold text-primary">
+                <h2 className="py-2 text-center font-body text-sm text-primary">
                   {tech}
                 </h2>
               </div>
@@ -86,7 +87,7 @@ function ProjectShowcasePage(props) {
             id="project-demo"
             className="bg-primary p-4 dark:bg-darkPrimary"
           >
-            <h2 className="py-2  text-2xl font-bold uppercase underline lg:text-4xl  dark:text-darkSecondary">
+            <h2 className="heading-text py-2 uppercase underline lg:text-4xl  dark:text-darkSecondary">
               Demo
             </h2>
             <div className="flex justify-center">
@@ -101,7 +102,7 @@ function ProjectShowcasePage(props) {
         )}
 
         <section id="project-accomplishments" className="py px-4">
-          <h2 className="pt-2 text-2xl font-bold uppercase underline lg:text-4xl dark:text-darkSecondary">
+          <h2 className="heading-text pt-2 uppercase underline lg:text-4xl dark:text-darkSecondary">
             Accomplishments
           </h2>
           <div className="p-4">
@@ -109,7 +110,7 @@ function ProjectShowcasePage(props) {
               {project.accomplishments.map((accomplishment) => (
                 <li
                   key={accomplishment}
-                  className="lg:text-2xl  dark:text-darkSecondary"
+                  className="body-text lg:text-2xl  dark:text-darkSecondary"
                 >
                   {accomplishment}
                 </li>
