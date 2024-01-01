@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section id="about" className="mx-auto min-h-screen">
+    <section id="about" className="mx-auto pb-6">
       <div className="pt-4">
         <div className="px-4">
           <h2 className="heading-text pt-2 uppercase underline lg:text-4xl dark:text-darkSecondary">

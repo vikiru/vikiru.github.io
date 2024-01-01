@@ -13,7 +13,7 @@ function HomePage() {
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary">
       <NavBar />
       {/* Main Content - XL and up */}
-      <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
+      <main className="min-h-screen gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
         <section>
           <section id="hero">
             <h2 className="heading-text">
