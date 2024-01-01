@@ -10,9 +10,9 @@ module.exports = {
       ...defaultTheme.screens,
     },
     fontFamily: {
-      heading: ["Montserrat"],
-      subheading: ["Raleway"],
-      body: ["Source Sans 3"],
+      heading: ["Raleway"],
+      subheading: ["Open Sans"],
+      body: ["Lato"],
       cinzel: ["Cinzel"],
       ...defaultTheme.fontFamily,
     },
