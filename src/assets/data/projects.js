@@ -50,8 +50,7 @@ const projectData = {
     {
       name: "CodeSmell",
       githubUrl: "https://github.com/vikiru/CodeSmell",
-      documentationUrl:
-        "https://vikiru.github.io/CodeSmell/jfx/module-summary.html",
+      documentationUrl: "https://github.com/vikiru/CodeSmell/wiki",
       projectPageUrl: "/projects/CodeSmell",
       imagePath: CodeSmell,
       description:
