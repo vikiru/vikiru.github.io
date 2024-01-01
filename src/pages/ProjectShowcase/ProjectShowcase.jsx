@@ -101,7 +101,7 @@ function ProjectShowcasePage(props) {
           </section>
         )}
 
-        <section id="project-accomplishments" className="py px-4">
+        <section id="project-accomplishments" className="px-4 pb-6">
           <h2 className="heading-text pt-2 uppercase underline lg:text-4xl dark:text-darkSecondary">
             Accomplishments
           </h2>

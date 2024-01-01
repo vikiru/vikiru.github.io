@@ -24,7 +24,7 @@ function CourseContainer() {
           </h3>
         </div>
       </section>
-      <section id="course-container">
+      <section id="course-container" className="pb-6">
         {courseData.years.map((year) => (
           <section
             key={year.title}
