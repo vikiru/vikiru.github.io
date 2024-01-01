@@ -17,11 +17,12 @@ const projectData = {
       startDate: "Nov 2023",
       endDate: "Dec 2023",
       accomplishments: [
-        "Developed a portfolio website using React and TailwindCSS",
-        "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design",
+        "Developed a portfolio website using React and TailwindCSS and hosted it via GitHub Pages",
+        "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design across various screen sizes",
         "Utilized React Router to create static and dynamic routes, displayed as individual pages",
+        "Used Figma to create mockups of components and pages",
       ],
-      technologiesUsed: ["React", "React Router", "TailwindCSS"],
+      technologiesUsed: ["React", "React Router", "TailwindCSS", "Figma"],
     },
     {
       name: "Urvo",
