@@ -12,7 +12,7 @@ function EducationContainer() {
 
   return (
     <section
-      className="mx-auto bg-primary pb-6 pt-2 dark:bg-darkPrimary"
+      className="mx-auto h-screen w-screen bg-primary pb-6 pt-2 dark:bg-darkPrimary"
       id="education"
     >
       <div className="px-4">
@@ -49,7 +49,7 @@ function EducationContainer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary">
+              <h2 className="m-auto py-2 text-center font-subheading font-semibold text-secondary xxs:text-sm">
                 View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h2>
             </Link>
@@ -82,13 +82,13 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="h-[75px] rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full  lg:w-[300px] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full lg:h-[75px]  lg:w-[300px] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="m-auto py-2 text-center font-heading font-semibold text-secondary">
+                <p className="m-auto py-2 text-center font-subheading font-semibold text-secondary xxs:text-sm">
                   View certificate{"  "}
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </p>
