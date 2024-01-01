@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 
@@ -30,5 +30,19 @@ code {
 @layer utilities {
   .ease-in-out-anim {
     @apply transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
+  }
+}
+
+@layer components {
+  .heading-text {
+    @apply font-heading text-4xl font-extrabold leading-none tracking-tight;
+  }
+
+  .subheading-text {
+    @apply text-2xl font-semibold;
+  }
+
+  .body-text {
+    @apply font-body text-base font-light leading-8;
   }
 }
