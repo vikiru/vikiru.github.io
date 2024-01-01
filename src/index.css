@@ -39,7 +39,7 @@ code {
   }
 
   .subheading-text {
-    @apply text-2xl font-semibold xxs:text-xs;
+    @apply font-subheading text-2xl font-semibold xxs:text-xs;
   }
 
   .body-text {
