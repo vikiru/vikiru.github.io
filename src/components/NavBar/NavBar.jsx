@@ -17,7 +17,13 @@ function NavBar() {
         id="navigation-menu"
         className="flex items-center justify-between bg-secondary dark:bg-darkPrimary"
       >
-        <div id="small-screen-nav-toggler" className="xs:block xl:hidden">
+        <div className="px-2">
+          <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg lg:text-2xl">
+            <span className="text-primary">Visa</span>
+            <span className="text-accent">kan</span>
+          </h2>
+        </div>
+        <div id="small-screen-nav-toggler" className="xs:block xl:hidden px-2">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
