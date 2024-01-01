@@ -149,7 +149,7 @@ function HomePage() {
       <main className="p-10 xl:hidden">
         <section>
           <section id="hero">
-            <h2 className="font-heading text-4xl font-extrabold leading-none tracking-tight">
+            <h2 className="heading-text">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
@@ -164,12 +164,12 @@ function HomePage() {
                 ></img>
               </div>
             </section>
-            <section id="location" className="flex justify-center py-1">
+            <section id="location" className="flex justify-center py-1 pr-4">
               <FontAwesomeIcon
                 icon={faLocationDot}
-                className="px-2 pt-1 text-accent md:text-lg dark:text-darkAccent"
+                className="px-2 pt-1 text-accent xxs:text-lg md:text-lg dark:text-darkAccent"
               />
-              <span className="xxs:text-md font-heading font-semibold tracking-wide text-secondary xxs:text-xs md:text-lg dark:text-darkSecondary">
+              <span className="subheading-text text-secondary dark:text-darkSecondary">
                 {aboutData.location}
               </span>
             </section>
@@ -186,7 +186,7 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-3xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
@@ -197,7 +197,7 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-3xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
@@ -208,12 +208,12 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-3xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
             </section>
 
-            <p className="pt-2 font-body text-base font-light leading-6">
+            <p className="body-text pt-2">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -222,7 +222,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="pt-2 text-base leading-6">
+            <p className="body-text pt-2">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more
@@ -241,7 +241,7 @@ function HomePage() {
             id="cta"
             className="gap-3 py-4 xxs:space-y-2 lg:flex lg:space-y-0"
           >
-            <div className="w-38 rounded-lg bg-accent px-2 drop-shadow-lg hover:cursor-pointer  hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="w-38 rounded-lg border-b-4  border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer  hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <Link
                 to="/about"
                 target="_blank"
@@ -253,7 +253,7 @@ function HomePage() {
                 </h2>
               </Link>
             </div>
-            <div className="lg:w-38 rounded-lg bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="lg:w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <Link
                 to="/projects"
                 target="_blank"
@@ -265,7 +265,7 @@ function HomePage() {
                 </h2>
               </Link>
             </div>
-            <div className="w-38 rounded-lg bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="w-38 rounded-lg border-b-4  border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href="mailto:viskirubakaran@outlook.com"
                 target="_blank"
