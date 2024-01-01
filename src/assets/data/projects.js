@@ -23,7 +23,14 @@ const projectData = {
         "Utilized GitHub Actions to create a CI/CD pipeline to lint and format files prior to pushing into main branch and added a deploy workflow to host the website on GitHub Pages",
         "Utilized Figma to create mockups of components and pages",
       ],
-      technologiesUsed: ["React", "React Router", "TailwindCSS", "Figma"],
+      technologiesUsed: [
+        "React",
+        "React Router",
+        "TailwindCSS",
+        "Figma",
+        "GitHub Pages",
+        "GitHub Actions",
+      ],
     },
     {
       name: "Urvo",
@@ -47,6 +54,8 @@ const projectData = {
         "Sequelize",
         "Mocha",
         "Chai",
+        "Docusaurus",
+        "GitHub Pages",
       ],
     },
     {
@@ -76,6 +85,7 @@ const projectData = {
         "HTML",
         "CSS",
         "JavaScript",
+        "GitHub Pages",
       ],
     },
     {
@@ -92,7 +102,14 @@ const projectData = {
         "Used SciPy and NumPy to perform statistical analysis on the simulation output data and compare different operating policies",
         "Used MkDocs to create a professional documentation website and hosting it on GitHub Pages",
       ],
-      technologiesUsed: ["Python", "NumPy", "SciPy", "SimPy"],
+      technologiesUsed: [
+        "Python",
+        "NumPy",
+        "SciPy",
+        "SimPy",
+        "MkDocs",
+        "GitHub Pages",
+      ],
     },
     {
       name: "Mini-SurveyMonkey",
@@ -118,6 +135,8 @@ const projectData = {
         "JUnit",
         "HTML",
         "CSS",
+        "Render",
+        "Heroku",
       ],
     },
     {
