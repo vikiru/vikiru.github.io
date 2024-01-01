@@ -75,6 +75,7 @@ const projectData = {
         "Contributed to the development of a Parser class to convert JSON data from Joern to Java objects",
         "Designed classes for UML relationship assignment and code smell detection statistics",
         "Implemented and tested algorithms for three specific code smells (Inappropriate Intimacy, Refused Bequest, and Orphan Variable)",
+        "Created a wiki that traces the project's milestone-wise evolution, team member contributions, and setup procedures, paired with explanatory gifs and screenshots",
       ],
       technologiesUsed: [
         "Java",
@@ -114,7 +115,7 @@ const projectData = {
     {
       name: "Mini-SurveyMonkey",
       githubUrl: "https://github.com/vikiru/Mini-SurveyMonkey",
-      documentationUrl: "",
+      documentationUrl: "https://github.com/Imcool4789/Mini-SurveyMonkey/wiki",
       projectPageUrl: "/projects/Mini-SurveyMonkey",
       imagePath: MiniSurveyMonkey,
       description:
@@ -126,6 +127,7 @@ const projectData = {
         "Created Thymeleaf pages for key endpoints such as creating and displaying surveys (including survey results)",
         "Integrated Spring Security, Google Charts, and html2pdf for security, visualization, and export of survey results",
         "Integrated CircleCI for CI/CD and developed JUnit tests",
+        "Constructed a wiki detailing the project's milestone-based advancements",
       ],
       technologiesUsed: [
         "Java",
