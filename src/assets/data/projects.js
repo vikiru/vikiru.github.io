@@ -21,6 +21,7 @@ const projectData = {
         "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design across various screen sizes",
         "Utilized React Router to create static and dynamic routes, displayed as individual pages",
         "Used Figma to create mockups of components and pages",
+        "Utilized GitHub Actions to create a CI/CD pipeline to lint and format files prior to pushing into main branch and added a deploy workflow to host the website on GitHub Pages",
       ],
       technologiesUsed: ["React", "React Router", "TailwindCSS", "Figma"],
     },
