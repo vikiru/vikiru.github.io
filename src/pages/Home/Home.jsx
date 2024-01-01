@@ -80,7 +80,7 @@ function HomePage() {
                 id="projects"
               >
                 <p className="m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-                  Read more
+                  Contact me
                 </p>
               </Link>
             </div>
