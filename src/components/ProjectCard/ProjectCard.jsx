@@ -14,18 +14,18 @@ function ProjectCard(props) {
   return (
     <section
       id={project.name}
-      className="rounded-lg border-4 border-accent bg-primary bg-gradient-to-r px-2 pb-6 shadow-md dark:bg-darkSecondary"
+      className="w-full rounded-lg border-4 border-accent bg-primary bg-gradient-to-r px-2 pb-6 shadow-md dark:bg-darkSecondary"
     >
-      <h2 className="heading-text pt-2 text-center text-secondary lg:text-3xl">
+      <h2 className="heading-text pt-2 text-center text-secondary">
         {project.name}
       </h2>
 
-      <p className="subheading-text text-center uppercase text-secondary lg:text-xl">
+      <p className="subheading-text text-center uppercase text-secondary">
         {project.startDate} - {project.endDate}
       </p>
 
       <div>
-        <h3 className="body-text text-center leading-8 lg:text-xl">
+        <h3 className="body-text text-center lg:text-xl">
           {project.description}
         </h3>
       </div>
@@ -37,9 +37,9 @@ function ProjectCard(props) {
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 w-36 rounded-full border-b-4 border-accent bg-secondary hover:cursor-default dark:bg-darkAccent"
+            className="mx-auto mb-2 w-36 rounded-full border-b-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 dark:bg-darkAccent"
           >
-            <h2 className="m-auto py-2 text-center font-body text-sm text-primary">
+            <h2 className="m-auto py-2 text-center font-body text-sm text-primary xxs:text-xs">
               {tech}
             </h2>
           </div>
@@ -49,7 +49,7 @@ function ProjectCard(props) {
       {project.githubUrl !== "" && (
         <section
           id="project-icons"
-          className="mx-auto flex max-w-xs justify-center pb-2 pt-1"
+          className="mx-auto flex w-full justify-center pb-2 pt-1"
         >
           {project.githubUrl != "" && (
             <a
@@ -59,7 +59,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim pr-4 text-5xl text-accent dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-4xl md:text-5xl  dark:text-darkAccent"
               />
             </a>
           )}
@@ -71,7 +71,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
-                className="lg:ease-in-out-anim pr-1 text-5xl text-accent  dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-4xl md:text-5xl  dark:text-darkAccent"
               />
             </a>
           )}
@@ -80,7 +80,7 @@ function ProjectCard(props) {
 
       <section
         id="project-additional-info"
-        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80"
+        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer  hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
         <Link
           to={project.projectPageUrl}
@@ -88,7 +88,7 @@ function ProjectCard(props) {
           rel="noopener noreferrer"
           id="about"
         >
-          <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary">
+          <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-sm">
             Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </h2>
         </Link>
