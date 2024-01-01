@@ -137,6 +137,7 @@ const projectData = {
         "JUnit",
         "HTML",
         "CSS",
+        "CircleCI",
         "Render",
         "Heroku",
       ],
