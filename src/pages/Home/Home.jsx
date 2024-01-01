@@ -16,13 +16,13 @@ function HomePage() {
       <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
         <section>
           <section id="hero">
-            <h2 className="font-heading text-4xl tracking-wide">
+            <h2 className="font-heading text-4xl font-extrabold leading-none tracking-tight">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
               </span>
             </h2>
-            <p className="pt-2 font-body text-xl leading-8">
+            <p className="pt-2 font-body text-base font-light leading-8">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -31,7 +31,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="pt-2 text-xl leading-8">
+            <p className="pt-2 font-body text-base font-light leading-8">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more
@@ -48,41 +48,41 @@ function HomePage() {
           </section>
 
           <section id="cta" className="flex gap-3 py-4">
-            <div className="w-38 rounded-lg bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <Link
                 to="/about"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="projects"
+                id="about"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <p className="m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Read more
-                </h2>
+                </p>
               </Link>
             </div>
-            <div className="w-38 rounded-lg bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <Link
                 to="/projects"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <p className="m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   View my work
-                </h2>
+                </p>
               </Link>
             </div>
-            <div className="w-38 rounded-lg bg-accent px-2 drop-shadow-lg hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-              <a
-                href="mailto:viskirubakaran@outlook.com"
+            <div className="w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+              <Link
+                to="mailto:viskirubakaran@outlook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="email"
+                id="projects"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-                  Contact me
-                </h2>
-              </a>
+                <p className="m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                  Read more
+                </p>
+              </Link>
             </div>
           </section>
         </section>
@@ -97,9 +97,9 @@ function HomePage() {
           <div className="flex justify-center py-1">
             <FontAwesomeIcon
               icon={faLocationDot}
-              className="px-2 pt-1 text-accent lg:text-2xl dark:text-darkAccent"
+              className="px-2 pt-1 text-xl text-accent dark:text-darkAccent"
             />
-            <span className="xxs:text-md font-subheading tracking-wide text-secondary lg:text-2xl dark:text-darkSecondary">
+            <span className="xxs:text-md font-subheading text-xl text-secondary dark:text-darkSecondary">
               {aboutData.location}
             </span>
           </div>
@@ -145,7 +145,7 @@ function HomePage() {
       <main className="p-10 xl:hidden">
         <section>
           <section id="hero">
-            <h2 className="font-heading tracking-wide xxs:text-sm md:text-xl">
+            <h2 className="font-heading text-4xl font-extrabold leading-none tracking-tight">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
@@ -169,7 +169,11 @@ function HomePage() {
                 {aboutData.location}
               </span>
             </section>
-            <div id="social-icons" className="flex justify-center space-x-2">
+
+            <section
+              id="social-icons"
+              className="flex justify-center space-x-2"
+            >
               <a
                 href="https://github.com/vikiru"
                 target="_blank"
@@ -203,8 +207,9 @@ function HomePage() {
                   className="lg:ease-in-out-anim text-white text-accent xxs:text-3xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
-            </div>
-            <p className="pt-2 font-body leading-6 xxs:text-xs md:text-lg">
+            </section>
+
+            <p className="pt-2 font-body text-base font-light leading-6">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -213,7 +218,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="pt-2 text-xs leading-6 xxs:text-xs md:text-lg ">
+            <p className="pt-2 text-base leading-6">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more
