@@ -14,31 +14,32 @@ function ProjectCard(props) {
   return (
     <section
       id={project.name}
-      className="rounded-lg bg-primary px-2 pb-6 shadow-md ring-2 dark:bg-darkSecondary"
+      className="rounded-lg border-4 border-accent bg-primary bg-gradient-to-r px-2 pb-6 shadow-md dark:bg-darkSecondary"
     >
-      <h2 className="text-center font-heading font-semibold uppercase text-secondary lg:text-3xl">
+      <h2 className="heading-text pt-2 text-center text-secondary lg:text-3xl">
         {project.name}
       </h2>
-      <p className="mx-auto text-center font-body uppercase text-secondary lg:text-xl">
+
+      <p className="subheading-text text-center uppercase text-secondary lg:text-xl">
         {project.startDate} - {project.endDate}
       </p>
 
-      <div className="mx-auto max-w-sm">
-        <h3 className="text-center font-subheading leading-6 lg:text-xl">
+      <div>
+        <h3 className="body-text text-center leading-8 lg:text-xl">
           {project.description}
         </h3>
       </div>
 
       <section
         id="technologies-used"
-        className="m-2 mx-auto grid max-w-lg justify-center sm:grid-cols-2 lg:gap-2"
+        className="m-2 mx-auto grid max-w-lg justify-center py-2 sm:grid-cols-2 lg:gap-2"
       >
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer dark:bg-darkAccent"
+            className="mx-auto mb-2 w-36 rounded-full border-b-4 border-accent bg-secondary hover:cursor-default dark:bg-darkAccent"
           >
-            <h2 className="m-auto py-2 text-center font-heading font-semibold text-primary">
+            <h2 className="m-auto py-2 text-center font-body text-sm text-primary">
               {tech}
             </h2>
           </div>
@@ -79,7 +80,7 @@ function ProjectCard(props) {
 
       <section
         id="project-additional-info"
-        className="mx-auto w-36 rounded-lg bg-accent drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80"
+        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
         <Link
           to={project.projectPageUrl}
