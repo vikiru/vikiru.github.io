@@ -6,32 +6,32 @@ import educationData from "../../assets/data/education";
 function CourseContainer() {
   return (
     <section id="university-courses">
-      <section id="unversity-info" className="px-4">
+      <section id="unversity-info" className="min-w-screen px-4 py-2">
         <div>
-          <h2 className="xxs:text-md  font-heading font-semibold uppercase lg:text-4xl dark:text-darkSecondary">
+          <h2 className="xxs:text-md heading-text uppercase lg:text-4xl dark:text-primary">
             {educationData.universityName}
           </h2>
         </div>
         <div>
-          <h3 className="font-body uppercase xxs:text-sm lg:text-2xl dark:text-darkSecondary">
-            {educationData.enrollmentStart} - {educationData.enrollmentEnd}
-          </h3>
-        </div>
-        <div>
-          <h3 className=" font-subheading xxs:text-sm lg:text-3xl dark:text-darkSecondary">
+          <h3 className="subheading-text dark:text-primary">
             {educationData.degree} - {educationData.acronym}.,{" "}
             {educationData.degreeProgram}
           </h3>
         </div>
+        <div>
+          <h3 className="body-text uppercase dark:text-primary">
+            {educationData.enrollmentStart} - {educationData.enrollmentEnd}
+          </h3>
+        </div>
       </section>
-      <section id="course-container">
+      <section id="course-container" className="pb-6">
         {courseData.years.map((year) => (
           <section
             key={year.title}
             id={year.title.toLowerCase() + " courses"}
-            className="py-2"
+            className="min-h-screen py-2"
           >
-            <h3 className="xxs:text-md bg-secondary px-4 font-subheading font-semibold uppercase text-primary underline md:text-xl lg:text-4xl dark:bg-darkSecondary dark:text-darkPrimary">
+            <h3 className="heading-text bg-secondary px-4 uppercase text-primary underline dark:bg-darkSecondary dark:text-primary">
               {year.title}
             </h3>
             <div className="grid gap-3 px-2 pt-2 lg:grid-cols-2">

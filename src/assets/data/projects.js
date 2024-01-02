@@ -17,11 +17,20 @@ const projectData = {
       startDate: "Nov 2023",
       endDate: "Dec 2023",
       accomplishments: [
-        "Developed a portfolio website using React and TailwindCSS",
-        "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design",
+        "Developed a portfolio website using React and TailwindCSS and hosted it via GitHub Pages",
+        "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design across various screen sizes",
         "Utilized React Router to create static and dynamic routes, displayed as individual pages",
+        "Utilized GitHub Actions to create a CI/CD pipeline to lint and format files and added a deploy workflow to host the website on GitHub Pages",
+        "Utilized Figma to create mockups of components and pages",
       ],
-      technologiesUsed: ["React", "React Router", "TailwindCSS"],
+      technologiesUsed: [
+        "React",
+        "React Router",
+        "TailwindCSS",
+        "Figma",
+        "GitHub Pages",
+        "GitHub Actions",
+      ],
     },
     {
       name: "Urvo",
@@ -45,13 +54,14 @@ const projectData = {
         "Sequelize",
         "Mocha",
         "Chai",
+        "Docusaurus",
+        "GitHub Pages",
       ],
     },
     {
       name: "CodeSmell",
       githubUrl: "https://github.com/vikiru/CodeSmell",
-      documentationUrl:
-        "https://vikiru.github.io/CodeSmell/jfx/module-summary.html",
+      documentationUrl: "https://github.com/vikiru/CodeSmell/wiki",
       projectPageUrl: "/projects/CodeSmell",
       imagePath: CodeSmell,
       description:
@@ -65,6 +75,7 @@ const projectData = {
         "Contributed to the development of a Parser class to convert JSON data from Joern to Java objects",
         "Designed classes for UML relationship assignment and code smell detection statistics",
         "Implemented and tested algorithms for three specific code smells (Inappropriate Intimacy, Refused Bequest, and Orphan Variable)",
+        "Created a wiki that traces the project's milestone-wise evolution, team member contributions, and setup procedures, paired with explanatory gifs and screenshots",
       ],
       technologiesUsed: [
         "Java",
@@ -75,6 +86,7 @@ const projectData = {
         "HTML",
         "CSS",
         "JavaScript",
+        "GitHub Pages",
       ],
     },
     {
@@ -91,12 +103,19 @@ const projectData = {
         "Used SciPy and NumPy to perform statistical analysis on the simulation output data and compare different operating policies",
         "Used MkDocs to create a professional documentation website and hosting it on GitHub Pages",
       ],
-      technologiesUsed: ["Python", "NumPy", "SciPy", "SimPy"],
+      technologiesUsed: [
+        "Python",
+        "NumPy",
+        "SciPy",
+        "SimPy",
+        "MkDocs",
+        "GitHub Pages",
+      ],
     },
     {
       name: "Mini-SurveyMonkey",
       githubUrl: "https://github.com/vikiru/Mini-SurveyMonkey",
-      documentationUrl: "",
+      documentationUrl: "https://github.com/Imcool4789/Mini-SurveyMonkey/wiki",
       projectPageUrl: "/projects/Mini-SurveyMonkey",
       imagePath: MiniSurveyMonkey,
       description:
@@ -108,6 +127,7 @@ const projectData = {
         "Created Thymeleaf pages for key endpoints such as creating and displaying surveys (including survey results)",
         "Integrated Spring Security, Google Charts, and html2pdf for security, visualization, and export of survey results",
         "Integrated CircleCI for CI/CD and developed JUnit tests",
+        "Constructed a wiki detailing the project's milestone-based advancements",
       ],
       technologiesUsed: [
         "Java",
@@ -117,6 +137,9 @@ const projectData = {
         "JUnit",
         "HTML",
         "CSS",
+        "CircleCI",
+        "Render",
+        "Heroku",
       ],
     },
     {

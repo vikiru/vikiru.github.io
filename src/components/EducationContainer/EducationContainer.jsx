@@ -12,11 +12,11 @@ function EducationContainer() {
 
   return (
     <section
-      className="mx-auto min-h-screen bg-primary pt-2 dark:bg-darkPrimary"
+      className="mx-auto min-h-screen w-screen bg-primary pb-6 pt-2 dark:bg-darkPrimary"
       id="education"
     >
       <div className="px-4">
-        <h2 className="pt-2 text-2xl font-bold uppercase underline lg:text-4xl dark:text-darkSecondary">
+        <h2 className="heading-text pt-2 uppercase underline lg:text-4xl  dark:text-primary">
           Education
         </h2>
       </div>
@@ -24,32 +24,32 @@ function EducationContainer() {
       {/* University Section - XSS - XL screens*/}
       <section id="unversity-info" className="px-4 pt-4">
         <div>
-          <h2 className="font-heading font-semibold uppercase lg:text-3xl dark:text-darkSecondary">
+          <h3 className="subheading-text uppercase lg:text-3xl  dark:text-primary">
             {educationData.universityName}
-          </h2>
+          </h3>
         </div>
 
-        <div className="xs:block lg:flex lg:justify-between">
+        <div className="xs:block xl:flex xl:justify-between">
           <div className="py-2">
             <div>
-              <h3 className="font-subheading lg:text-2xl dark:text-darkSecondary">
+              <p className="subheading-text lg:text-2xl  dark:text-primary">
                 {educationData.degree} - {educationData.acronym}.,{" "}
                 {educationData.degreeProgram}
-              </h3>
+              </p>
             </div>
             <div className="pt-1">
-              <h3 className="font-body uppercase lg:text-xl dark:text-darkSecondary">
+              <h3 className="body-text uppercase tracking-wide lg:text-xl  dark:text-primary">
                 {educationData.enrollmentStart} - {educationData.enrollmentEnd}
               </h3>
             </div>
           </div>
-          <div className="rounded-lg bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full  lg:h-[75px]  lg:w-[300px] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:h-[75px] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary">
+              <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl dark:text-primary">
                 View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h2>
             </Link>
@@ -60,38 +60,38 @@ function EducationContainer() {
       {/* Coursera Section - XXS - XL Screens */}
       <section className="m-2 mx-auto" id="coursera-certificate-info">
         <div className="px-4">
-          <h2 className=" font-heading font-semibold uppercase lg:text-3xl dark:text-darkSecondary">
+          <h2 className="heading-text uppercase lg:text-3xl  dark:text-primary">
             Coursera
           </h2>
         </div>
         {courseraCertificates.map((certificate) => (
           <div
             key={certificate.certificationName}
-            className="px-4 pb-2 xxs:block lg:flex lg:justify-between"
+            className="px-4 pb-2 xxs:block xl:flex xl:justify-between"
             id={certificate.certificationName.toLowerCase()}
           >
             <div>
               <div>
-                <h3 className="font-subheading lg:text-2xl dark:text-darkSecondary">
+                <p className="subheading-text lg:text-2xl  dark:text-primary">
                   {certificate.certificationName}
-                </h3>
+                </p>
               </div>
               <div>
-                <p className="text-md font-body  uppercase lg:text-xl dark:text-darkSecondary">
+                <p className="body-text uppercase tracking-wide lg:text-xl  dark:text-primary">
                   {certificate.startDate} - {certificate.completionDate}
                 </p>
               </div>
             </div>
-            <div className="h-[75px] rounded-lg bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full  lg:w-[300px] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:h-[75px] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary">
+                <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl dark:text-primary">
                   View certificate{"  "}
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </h2>
+                </p>
               </a>
             </div>
           </div>

@@ -15,9 +15,16 @@ function NavBar() {
     <nav>
       <section
         id="navigation-menu"
-        className="flex items-center justify-between bg-secondary dark:bg-darkPrimary"
+        className="flex items-center justify-between bg-secondary dark:bg-darkSecondary"
       >
-        <div id="small-screen-nav-toggler" className="xs:block xl:hidden">
+        <div className="px-2 lg:hidden">
+          <h2 className="dark:text-text-primary/50 text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <span className="text-primary">Visa</span>
+            <span className="text-accent dark:text-darkAccent">kan</span>
+          </h2>
+        </div>
+
+        <div id="small-screen-nav-toggler" className="px-2 xs:block lg:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
@@ -34,24 +41,24 @@ function NavBar() {
         </div>
       </section>
       {isOpen ? (
-        <section className="block justify-center xl:hidden" id="nav-links">
+        <section className="block justify-center lg:hidden" id="nav-links">
           <Link to="/">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
               Home
             </h2>
           </Link>
           <Link to="/about">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
               About
             </h2>
           </Link>
           <Link to="/education/courses">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
               Courses
             </h2>
           </Link>
           <Link to="/projects">
-            <h2 className="bg-secondary px-2 text-lg uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
               Projects
             </h2>
           </Link>
@@ -59,18 +66,18 @@ function NavBar() {
       ) : (
         <section
           id="navigation-menu"
-          className="bg-secondary py-4 xxs:hidden xl:flex xl:justify-between"
+          className="bg-secondary py-4 xxs:hidden lg:flex lg:justify-between dark:bg-darkSecondary"
         >
-          <div className="px-4">
-            <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg lg:text-2xl">
+          <div className="lg:px-1 xl:px-4">
+            <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-xl xl:text-5xl dark:text-primary">
               <span className="text-primary">Visa</span>
-              <span className="text-accent">kan</span>
+              <span className="text-accent dark:text-darkAccent">kan</span>
             </h2>
           </div>
-          <section id="nav-links" className="flex justify-center">
+          <section id="nav-links" className="flex justify-center pt-3">
             {navData.map((nav) => (
               <Link key={nav.navTitle} to={nav.navLink}>
-                <h2 className="px-2 tracking-wide text-primary hover:underline hover:decoration-accent lg:text-xl dark:hover:decoration-darkAccent">
+                <h2 className="subheading-text px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl dark:text-primary dark:hover:decoration-darkAccent">
                   {nav.navTitle}
                 </h2>
               </Link>
