@@ -10,7 +10,7 @@ import aboutData from "./../../assets/data/about";
 
 function HomePage() {
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-secondary dark:scrollbar-track-darkPrimary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary dark:scrollbar-track-darkPrimary">
       <NavBar />
       {/* Main Content - XL and up */}
       <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
@@ -100,7 +100,7 @@ function HomePage() {
               icon={faLocationDot}
               className="px-2 pt-1 text-xl text-accent dark:text-darkAccent"
             />
-            <span className="xxs:text-md subheading-text text-secondary dark:text-darkSecondary">
+            <span className="xxs:text-md subheading-text text-secondary dark:text-primary/50">
               {aboutData.location}
             </span>
           </div>

@@ -47,6 +47,6 @@ code {
   }
 
   .cta-btn {
-    @apply w-28 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:border-primary/60 dark:bg-darkAccent dark:hover:bg-darkAccent/80;
+    @apply rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:border-darkPrimary dark:bg-darkAccent dark:hover:bg-darkAccent/80;
   }
 }

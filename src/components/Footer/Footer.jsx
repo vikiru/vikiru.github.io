@@ -9,7 +9,7 @@ import navData from "./../../assets/data/nav";
 function Footer() {
   return (
     <footer className="mt-auto w-full">
-      <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-2 dark:bg-darkPrimary/10">
+      <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-2 dark:bg-darkSecondary">
         <section
           id="logo"
           className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center"
@@ -84,7 +84,7 @@ function Footer() {
         </div>
       </div>
 
-      <section id="copyright" className="bg-secondary dark:bg-darkPrimary/10">
+      <section id="copyright" className="bg-secondary dark:bg-darkSecondary">
         <div className="mx-auto flex items-center justify-center py-2">
           <p className="body-text text-center font-thin text-primary dark:text-darkSecondary">
             Visakan Kirubakaran &copy; {new Date().getFullYear()}. All rights
