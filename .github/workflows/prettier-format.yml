@@ -1,8 +1,10 @@
 name: Prettier Format Files
+run-name: Format files using Prettier
 on:
   push:
     branches:
       - main
+      - gh-pages
 
 permissions:
   contents: write
