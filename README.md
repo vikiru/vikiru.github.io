@@ -9,7 +9,7 @@
 	</a>
 	<a href="https://wakatime.com/@vikiru/projects/fqvyqubpbg">
 		<img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
-		alt="Wakatime Coding Stats for Portfolio Website"></img>
+		alt="Wakatime Coding Stats for Portfolio Website"/>
 	</a>
 	<br>
 	<a href="https://github.com/vikiru/vikiru.github.io/releases">
@@ -24,10 +24,10 @@
 	</a>
 	<br>
 	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
-		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status"></img>
+		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status"/>
 	</a>
 	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml">
-		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml/badge.svg" alt="GitHub Pages Deployment Workflow Status"></img>
+		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml/badge.svg" alt="GitHub Pages Deployment Workflow Status"/>
 	</a>
 </p>
 
@@ -112,11 +112,34 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 	- [📚 Projects](#-projects)
 	- [📧 Contact](#-contact)
 - [📖 Table of Contents](#-table-of-contents)
+- [🛠️ Tech Stack](#️-tech-stack)
 - [📝 Prerequisites](#-prerequisites)
 - [⚡ Setup](#-setup)
 - [🚀 Run](#-run)
 - [✨ Acknowledgements](#-acknowledgements)
 - [©️ License](#️-license)
+
+## 🛠️ Tech Stack
+
+**Frontend**:
+
+- [React](https://react.dev/)
+- [React Router](https://reactrouter.com/en/main)
+- [TailwindCSS](https://tailwindcss.com/)
+
+**Hosting**: [GitHub Pages](https://pages.github.com/) - deployed using [gh-pages](https://github.com/tschaub/gh-pages) package
+
+**CI/CD**:
+
+- [GitHub Actions](https://github.com/features/actions)
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
+
+**Dev Tools**:
+
+- **Linting**: [ESLint](https://eslint.org/)
+- **Formatting**: [Prettier](https://prettier.io/)
+- **Code Time Tracking**: [WakaTime](https://wakatime.com/)
+- **Design**: [Figma](https://www.figma.com/) - initial design mockup files can be seen [here](https://www.figma.com/file/eFWKPcabJAf7FLOdOXd5d6/Portfolio-Website?type=design&t=HThRE3vIBx3VTIwe-6)
 
 ## 📝 Prerequisites
 
@@ -148,17 +171,19 @@ npm run start
 ```
 
 ## ✨ Acknowledgements
+
 - [React](https://react.dev/)
 - [React Router](https://reactrouter.com/en/main)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [Font Awesome Icons](https://fontawesome.com/)
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
+- [GitHub Actions](https://github.com/features/actions)
+- [GitHub Pages](https://pages.github.com/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
-- [Shields Badges](https://github.com/badges/shields)
 - [WakaTime](https://wakatime.com/)
-- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
-- [GitHub Pages](https://pages.github.com/)
+- [Shields Badges](https://github.com/badges/shields)
 
 ## ©️ License
 
