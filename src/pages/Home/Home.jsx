@@ -10,19 +10,19 @@ import aboutData from "./../../assets/data/about";
 
 function HomePage() {
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-secondary dark:scrollbar-track-darkPrimary">
       <NavBar />
       {/* Main Content - XL and up */}
-      <main className="min-h-screen gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
-        <section>
+      <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
+        <section className="min-h-screen">
           <section id="hero">
-            <h2 className="heading-text">
+            <h2 className="heading-text dark:text-primary/50">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
               </span>
             </h2>
-            <p className="body-text pt-2">
+            <p className="body-text pt-2 dark:text-primary/50">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -31,7 +31,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="body-text pt-2">
+            <p className="body-text pt-2 dark:text-primary/50">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more
@@ -48,7 +48,7 @@ function HomePage() {
           </section>
 
           <section id="cta" className="flex gap-3 py-4">
-            <div className="w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="cta-btn">
               <Link
                 to="/about"
                 target="_blank"
@@ -60,7 +60,7 @@ function HomePage() {
                 </p>
               </Link>
             </div>
-            <div className="w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="cta-btn">
               <Link
                 to="/projects"
                 target="_blank"
@@ -72,7 +72,7 @@ function HomePage() {
                 </p>
               </Link>
             </div>
-            <div className="w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg  hover:cursor-pointer  hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="cta-btn">
               <Link
                 to="mailto:viskirubakaran@outlook.com"
                 target="_blank"
@@ -88,9 +88,9 @@ function HomePage() {
         </section>
 
         <section id="profile" className="mx-auto mr-10">
-          <div className="m-auto flex max-w-sm justify-center rounded-full border-4 border-accent py-2">
+          <div className="m-auto flex justify-center rounded-full  py-2">
             <img
-              className="xxs:h-30 rounded-full xxs:w-20 lg:h-full lg:w-[500px]"
+              className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px]"
               src={aboutData.profilePic}
               alt="GitHub Profile Pic"
             ></img>
@@ -150,7 +150,7 @@ function HomePage() {
       <main className="p-10 xl:hidden">
         <section>
           <section id="hero">
-            <h2 className="heading-text">
+            <h2 className="heading-text dark:text-primary/50">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
@@ -159,7 +159,7 @@ function HomePage() {
             <section id="profile" className="flex justify-center pt-2">
               <div className="flex justify-center rounded-full">
                 <img
-                  className="h-auto w-full rounded-full border-4 border-accent object-scale-down xxs:w-[180px] md:w-[360px]"
+                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[360px]"
                   src={aboutData.profilePic}
                   alt="GitHub Profile Pic"
                 ></img>
@@ -170,7 +170,7 @@ function HomePage() {
                 icon={faLocationDot}
                 className="px-2 pt-1 text-accent xxs:text-lg md:text-lg dark:text-darkAccent"
               />
-              <span className="subheading-text text-secondary dark:text-darkSecondary">
+              <span className="subheading-text text-secondary dark:text-primary/50">
                 {aboutData.location}
               </span>
             </section>
@@ -214,7 +214,7 @@ function HomePage() {
               </a>
             </section>
 
-            <p className="body-text pt-2">
+            <p className="body-text pt-2 dark:text-primary/50">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -223,7 +223,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="body-text pt-2">
+            <p className="body-text pt-2 dark:text-primary/50">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more
@@ -249,7 +249,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary sm:text-base md:text-lg lg:text-xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Read more
                 </h2>
               </Link>
@@ -261,7 +261,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary sm:text-base md:text-lg lg:text-xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   View projects
                 </h2>
               </Link>
@@ -273,7 +273,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="email"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary sm:text-base md:text-lg lg:text-xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Contact me
                 </h2>
               </a>

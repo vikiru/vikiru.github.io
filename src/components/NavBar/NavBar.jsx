@@ -74,7 +74,7 @@ function NavBar() {
               <span className="text-accent">kan</span>
             </h2>
           </div>
-          <section id="nav-links" className="flex justify-center">
+          <section id="nav-links" className="flex justify-center pt-3">
             {navData.map((nav) => (
               <Link key={nav.navTitle} to={nav.navLink}>
                 <h2 className="subheading-text px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl dark:hover:decoration-darkAccent">

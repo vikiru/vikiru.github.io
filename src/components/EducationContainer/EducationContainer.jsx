@@ -29,7 +29,7 @@ function EducationContainer() {
           </h3>
         </div>
 
-        <div className="xs:block lg:flex lg:justify-between">
+        <div className="xs:block xl:flex xl:justify-between">
           <div className="py-2">
             <div>
               <p className="subheading-text lg:text-2xl dark:text-darkSecondary">
@@ -43,7 +43,7 @@ function EducationContainer() {
               </h3>
             </div>
           </div>
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full lg:h-[75px] lg:w-[60%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:h-[75px] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               target="_blank"
@@ -67,7 +67,7 @@ function EducationContainer() {
         {courseraCertificates.map((certificate) => (
           <div
             key={certificate.certificationName}
-            className="px-4 pb-2 xxs:block lg:flex lg:justify-between"
+            className="px-4 pb-2 xxs:block xl:flex xl:justify-between"
             id={certificate.certificationName.toLowerCase()}
           >
             <div>
@@ -82,7 +82,7 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full lg:h-[75px] lg:w-[60%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:h-[75px] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"

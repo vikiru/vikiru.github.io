@@ -9,10 +9,10 @@ import navData from "./../../assets/data/nav";
 function Footer() {
   return (
     <footer className="mt-auto w-full">
-      <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-2 xl:grid-cols-3 dark:bg-darkPrimary">
+      <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-2 dark:bg-darkPrimary/10">
         <section
           id="logo"
-          className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center xl:m-auto"
+          className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center"
         >
           <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-darkSecondary">
             <span className="text-primary  dark:text-darkSecondary">Visa</span>
@@ -20,22 +20,23 @@ function Footer() {
           </h2>
         </section>
 
-        <div className="col-span-2 sm:grid sm:grid-cols-2">
+        <div className="sm:grid sm:grid-cols-2 md:col-span-2">
           <section id="footer-navigation">
-            <h2 className="heading-text text-center uppercase tracking-wide text-primary lg:text-2xl dark:text-darkSecondary">
+            <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-darkSecondary">
               Read more
             </h2>
             {navData.map((navItem) => (
               <div key={navItem.navTitle} className="mx-auto w-20">
                 <Link to={navItem.navLink}>
-                  <h2 className="subheading-text text-center uppercase tracking-wide text-primary decoration-accent hover:underline lg:text-xl dark:text-darkSecondary dark:decoration-darkAccent">
+                  <h2 className="body-text text-center uppercase tracking-wide text-primary decoration-accent hover:underline lg:text-xl dark:text-darkSecondary dark:decoration-darkAccent">
                     {navItem.navTitle}
                   </h2>
                 </Link>
               </div>
             ))}
           </section>
-          <section id="contact" className="mx-auto lg:px-4">
+
+          <section id="contact" className="xxs:mx-auto lg:px-4 xl:mx-0">
             <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-darkSecondary">
               Connect with me
             </h2>
@@ -83,12 +84,12 @@ function Footer() {
         </div>
       </div>
 
-      <section id="copyright" className="bg-secondary dark:bg-darkPrimary">
-        <div className="mx-auto flex max-w-lg items-center justify-center py-2">
-          <span className="body-text text-center font-thin text-primary lg:text-lg dark:text-darkSecondary">
+      <section id="copyright" className="bg-secondary dark:bg-darkPrimary/10">
+        <div className="mx-auto flex items-center justify-center py-2">
+          <p className="body-text text-center font-thin text-primary dark:text-darkSecondary">
             Visakan Kirubakaran &copy; {new Date().getFullYear()}. All rights
             reserved.
-          </span>
+          </p>
         </div>
       </section>
     </footer>
