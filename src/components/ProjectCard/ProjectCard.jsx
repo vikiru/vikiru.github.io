@@ -14,7 +14,7 @@ function ProjectCard(props) {
   return (
     <section
       id={project.name}
-      className="w-full rounded-lg border-4 border-accent bg-primary bg-gradient-to-r px-2 pb-6 shadow-md dark:bg-darkSecondary"
+      className="rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:bg-darkSecondary"
     >
       <h2 className="heading-text pt-2 text-center text-secondary">
         {project.name}
