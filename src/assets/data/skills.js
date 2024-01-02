@@ -1,5 +1,5 @@
 const skillsData = {
-  languages: ["Java", "Python", "HTML", "CSS", "JavaScript", "Markdown"],
+  languages: ["Java", "Python", "HTML", "CSS", "JavaScript"],
   frameworks: [
     "Spring",
     "JUnit",
