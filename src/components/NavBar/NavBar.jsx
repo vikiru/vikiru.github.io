@@ -23,7 +23,7 @@ function NavBar() {
             <span className="text-accent">kan</span>
           </h2>
         </div>
-        <div id="small-screen-nav-toggler" className="xs:block xl:hidden px-2">
+        <div id="small-screen-nav-toggler" className="px-2 xs:block xl:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon

@@ -6,7 +6,7 @@ import educationData from "../../assets/data/education";
 function CourseContainer() {
   return (
     <section id="university-courses">
-      <section id="unversity-info" className="px-4 py-2 min-w-screen">
+      <section id="unversity-info" className="min-w-screen px-4 py-2">
         <div>
           <h2 className="xxs:text-md  heading-text uppercase lg:text-4xl dark:text-darkSecondary">
             {educationData.universityName}

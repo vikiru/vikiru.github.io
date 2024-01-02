@@ -43,7 +43,7 @@ function ProjectShowcasePage(props) {
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer xxs:w-1/2 xxs:mx-auto dark:bg-darkAccent"
+                className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer xxs:mx-auto xxs:w-1/2 dark:bg-darkAccent"
               >
                 <h2 className="m-auto py-2 text-center font-body text-sm text-primary xxs:text-xs">
                   {tech}
