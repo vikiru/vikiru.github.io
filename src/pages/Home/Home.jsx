@@ -14,7 +14,7 @@ function HomePage() {
       <NavBar />
       {/* Main Content - XL and up */}
       <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
-        <section className="pb-6">
+        <section>
           <section id="hero">
             <h2 className="heading-text dark:text-primary">
               {aboutData.greeting}{" "}
@@ -55,7 +55,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <p className="m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Read more
                 </p>
               </Link>
@@ -67,7 +67,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <p className="m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   View my work
                 </p>
               </Link>
@@ -79,7 +79,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <p className="m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Contact me
                 </p>
               </Link>
@@ -98,9 +98,9 @@ function HomePage() {
           <div className="flex justify-center py-1">
             <FontAwesomeIcon
               icon={faLocationDot}
-              className="px-2 pt-1 text-xl text-accent dark:text-darkAccent"
+              className="3xl:text-4xl 4xl:text-5xl px-2 pt-1 text-xl text-accent xl:text-2xl 2xl:text-3xl dark:text-darkAccent"
             />
-            <span className="xxs:text-md subheading-text text-secondary dark:text-primary">
+            <span className="subheading-text text-secondary dark:text-primary">
               {aboutData.location}
             </span>
           </div>
@@ -117,7 +117,7 @@ function HomePage() {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
             <a
@@ -128,7 +128,7 @@ function HomePage() {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
             <a
@@ -139,7 +139,7 @@ function HomePage() {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl  xl:text-6xl dark:text-darkAccent"
               />
             </a>
           </section>
@@ -249,7 +249,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Read more
                 </h2>
               </Link>
@@ -261,7 +261,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   View projects
                 </h2>
               </Link>
@@ -273,7 +273,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="email"
               >
-                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Contact me
                 </h2>
               </a>
