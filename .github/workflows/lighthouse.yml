@@ -1,4 +1,5 @@
 name: Lighthouse CI
+run-name: Conduct tests on deployed site using Lighthouse CI
 on:
   workflow_run:
     workflows:
