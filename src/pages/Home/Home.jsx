@@ -242,38 +242,38 @@ function HomePage() {
             id="cta"
             className="gap-3 py-4 xxs:space-y-2 lg:flex lg:space-y-0"
           >
-            <div className="w-38 rounded-lg border-b-4  border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer  hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="w-38 rounded-lg border-b-4 border-secondary  bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full  dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <Link
                 to="/about"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="about"
               >
-                <h2 className="m-auto py-2 text-center font-heading text-sm font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary sm:text-base md:text-lg lg:text-xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Read more
                 </h2>
               </Link>
             </div>
-            <div className="lg:w-38 rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="w-38 rounded-lg border-b-4 border-secondary  bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full  dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <Link
                 to="/projects"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <h2 className="m-auto py-2 text-center font-heading text-sm font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-                  View my work
+                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary sm:text-base md:text-lg lg:text-xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                  View projects
                 </h2>
               </Link>
             </div>
-            <div className="w-38 rounded-lg border-b-4  border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="w-38 rounded-lg border-b-4 border-secondary  bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full  dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href="mailto:viskirubakaran@outlook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 id="email"
               >
-                <h2 className="m-auto py-2 text-center font-heading text-sm font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary sm:text-base md:text-lg lg:text-xl dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                   Contact me
                 </h2>
               </a>

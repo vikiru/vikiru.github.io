@@ -38,14 +38,14 @@ function ProjectShowcasePage(props) {
 
           <section
             id="technologies-used"
-            className="py-2 xxs:grid sm:grid-cols-2 lg:flex lg:gap-2"
+            className="py-2 xxs:grid sm:grid-cols-2"
           >
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
                 className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer xxs:w-full xxs:px-2 sm:w-[90%] md:w-[80%] dark:bg-darkAccent"
               >
-                <h2 className="body-text m-auto py-2 text-center text-primary xxs:text-xs sm:text-base md:text-lg">
+                <h2 className="body-text m-auto py-2 text-center text-primary ">
                   {tech}
                 </h2>
               </div>

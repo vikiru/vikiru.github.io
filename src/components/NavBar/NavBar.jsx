@@ -18,12 +18,13 @@ function NavBar() {
         className="flex items-center justify-between bg-secondary dark:bg-darkPrimary"
       >
         <div className="px-2 lg:hidden">
-          <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg lg:text-2xl">
+          <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-darkSecondary">
             <span className="text-primary">Visa</span>
             <span className="text-accent">kan</span>
           </h2>
         </div>
-        <div id="small-screen-nav-toggler" className="px-2 xs:block xl:hidden">
+
+        <div id="small-screen-nav-toggler" className="px-2 xs:block lg:hidden">
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
@@ -65,10 +66,10 @@ function NavBar() {
       ) : (
         <section
           id="navigation-menu"
-          className="bg-secondary py-4 xxs:hidden xl:flex xl:justify-between"
+          className="bg-secondary py-4 xxs:hidden lg:flex lg:justify-between"
         >
-          <div className="px-4">
-            <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg lg:text-2xl">
+          <div className="lg:px-1 xl:px-4">
+            <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-xl xl:text-5xl dark:text-darkSecondary">
               <span className="text-primary">Visa</span>
               <span className="text-accent">kan</span>
             </h2>

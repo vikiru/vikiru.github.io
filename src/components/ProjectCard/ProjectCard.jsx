@@ -14,7 +14,7 @@ function ProjectCard(props) {
   return (
     <section
       id={project.name}
-      className="rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:bg-darkSecondary"
+      className="mt-2 rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:bg-darkSecondary"
     >
       <h2 className="heading-text pt-2 text-center text-secondary">
         {project.name}
@@ -25,9 +25,7 @@ function ProjectCard(props) {
       </p>
 
       <div className="md:px-2">
-        <h3 className="body-text text-center lg:text-xl">
-          {project.description}
-        </h3>
+        <h3 className="body-text text-center">{project.description}</h3>
       </div>
 
       <section
@@ -88,7 +86,7 @@ function ProjectCard(props) {
           rel="noopener noreferrer"
           id="about"
         >
-          <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary xxs:text-sm">
+          <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl">
             Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </h2>
         </Link>
