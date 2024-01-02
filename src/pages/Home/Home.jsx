@@ -10,19 +10,19 @@ import aboutData from "./../../assets/data/about";
 
 function HomePage() {
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary dark:scrollbar-track-darkPrimary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary dark:scrollbar-thumb-darkSecondary">
       <NavBar />
       {/* Main Content - XL and up */}
       <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
         <section className="min-h-screen">
           <section id="hero">
-            <h2 className="heading-text dark:text-primary/50">
+            <h2 className="heading-text dark:text-primary">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
               </span>
             </h2>
-            <p className="body-text pt-2 dark:text-primary/50">
+            <p className="body-text pt-2 dark:text-primary">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -31,7 +31,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="body-text pt-2 dark:text-primary/50">
+            <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more
@@ -100,7 +100,7 @@ function HomePage() {
               icon={faLocationDot}
               className="px-2 pt-1 text-xl text-accent dark:text-darkAccent"
             />
-            <span className="xxs:text-md subheading-text text-secondary dark:text-primary/50">
+            <span className="xxs:text-md subheading-text text-secondary dark:text-primary">
               {aboutData.location}
             </span>
           </div>
@@ -150,7 +150,7 @@ function HomePage() {
       <main className="p-10 xl:hidden">
         <section>
           <section id="hero">
-            <h2 className="heading-text dark:text-primary/50">
+            <h2 className="heading-text dark:text-primary">
               {aboutData.greeting}{" "}
               <span className="text-accent dark:text-darkAccent">
                 {aboutData.fullName}
@@ -170,7 +170,7 @@ function HomePage() {
                 icon={faLocationDot}
                 className="px-2 pt-1 text-accent xxs:text-lg md:text-lg dark:text-darkAccent"
               />
-              <span className="subheading-text text-secondary dark:text-primary/50">
+              <span className="subheading-text text-secondary dark:text-primary">
                 {aboutData.location}
               </span>
             </section>
@@ -214,7 +214,7 @@ function HomePage() {
               </a>
             </section>
 
-            <p className="body-text pt-2 dark:text-primary/50">
+            <p className="body-text pt-2 dark:text-primary">
               Welcome to my portfolio! I am a dedicated{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
@@ -223,7 +223,7 @@ function HomePage() {
               learning is my driving force, and I strive to apply my expanding
               knowledge to meaningful projects.
             </p>
-            <p className="body-text pt-2 dark:text-primary/50">
+            <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
                 read more

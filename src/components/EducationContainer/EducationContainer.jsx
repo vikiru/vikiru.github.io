@@ -16,7 +16,7 @@ function EducationContainer() {
       id="education"
     >
       <div className="px-4">
-        <h2 className="heading-text pt-2 uppercase underline lg:text-4xl dark:text-darkSecondary">
+        <h2 className="heading-text pt-2 uppercase underline lg:text-4xl  dark:text-primary">
           Education
         </h2>
       </div>
@@ -24,7 +24,7 @@ function EducationContainer() {
       {/* University Section - XSS - XL screens*/}
       <section id="unversity-info" className="px-4 pt-4">
         <div>
-          <h3 className="subheading-text uppercase lg:text-3xl dark:text-darkSecondary">
+          <h3 className="subheading-text uppercase lg:text-3xl  dark:text-primary">
             {educationData.universityName}
           </h3>
         </div>
@@ -32,13 +32,13 @@ function EducationContainer() {
         <div className="xs:block xl:flex xl:justify-between">
           <div className="py-2">
             <div>
-              <p className="subheading-text lg:text-2xl dark:text-darkSecondary">
+              <p className="subheading-text lg:text-2xl  dark:text-primary">
                 {educationData.degree} - {educationData.acronym}.,{" "}
                 {educationData.degreeProgram}
               </p>
             </div>
             <div className="pt-1">
-              <h3 className="body-text uppercase tracking-wide lg:text-xl dark:text-darkSecondary">
+              <h3 className="body-text uppercase tracking-wide lg:text-xl  dark:text-primary">
                 {educationData.enrollmentStart} - {educationData.enrollmentEnd}
               </h3>
             </div>
@@ -49,7 +49,7 @@ function EducationContainer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl">
+              <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl dark:text-primary">
                 View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h2>
             </Link>
@@ -60,7 +60,7 @@ function EducationContainer() {
       {/* Coursera Section - XXS - XL Screens */}
       <section className="m-2 mx-auto" id="coursera-certificate-info">
         <div className="px-4">
-          <h2 className="heading-text uppercase lg:text-3xl dark:text-darkSecondary">
+          <h2 className="heading-text uppercase lg:text-3xl  dark:text-primary">
             Coursera
           </h2>
         </div>
@@ -72,12 +72,12 @@ function EducationContainer() {
           >
             <div>
               <div>
-                <p className="subheading-text lg:text-2xl dark:text-darkSecondary">
+                <p className="subheading-text lg:text-2xl  dark:text-primary">
                   {certificate.certificationName}
                 </p>
               </div>
               <div>
-                <p className="body-text uppercase tracking-wide lg:text-xl dark:text-darkSecondary">
+                <p className="body-text uppercase tracking-wide lg:text-xl  dark:text-primary">
                   {certificate.startDate} - {certificate.completionDate}
                 </p>
               </div>
@@ -88,7 +88,7 @@ function EducationContainer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl">
+                <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl dark:text-primary">
                   View certificate{"  "}
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </p>

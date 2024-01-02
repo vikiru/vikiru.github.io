@@ -5,16 +5,16 @@ function SkillsContainer() {
   return (
     <section className="mx-auto min-h-screen pb-6" id="skills">
       <div className="px-4">
-        <h2 className="heading-text uppercase underline lg:text-4xl dark:text-darkSecondary">
+        <h2 className="heading-text uppercase underline lg:text-4xl dark:text-primary">
           Skills
         </h2>
         <div className="lg:grid lg:grid-cols-2">
           {Object.keys(skillsData).map((skillCategory) => (
             <div key={skillCategory} className="py-2" id={skillCategory}>
-              <h2 className="subheading-text uppercase lg:text-3xl dark:text-darkSecondary">
+              <h2 className="subheading-text uppercase lg:text-3xl dark:text-primary">
                 {skillCategory}
               </h2>
-              <p className="body-text pr-2 text-secondary lg:text-2xl dark:text-darkSecondary">
+              <p className="body-text pr-2 text-secondary lg:text-2xl dark:text-primary">
                 {skillsData[`${skillCategory}`].join(", ")}
               </p>
             </div>

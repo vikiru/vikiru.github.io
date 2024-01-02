@@ -10,28 +10,28 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectShowcasePage(props) {
   const project = props.project;
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary dark:scrollbar-thumb-darkSecondary">
       <NavBar />
       <main>
         <section
           className="bg-primary p-4 pb-2 xxs:p-2 dark:bg-darkPrimary"
           id="project-info"
         >
-          <h2 className="heading-text pb-2 dark:text-darkSecondary">
+          <h2 className="heading-text pb-2 dark:text-primary">
             <Link
               to="/projects"
-              className="text-accent underline hover:bg-accent hover:text-secondary"
+              className="text-accent underline hover:bg-accent hover:text-secondary dark:text-darkAccent hover:dark:bg-darkAccent hover:dark:text-darkSecondary"
               title="View my other projects"
             >
               projects
             </Link>{" "}
             / {project.name}
           </h2>
-          <h3 className="body-text uppercase dark:text-darkSecondary">
+          <h3 className="body-text uppercase dark:text-primary">
             {project.startDate} - {project.endDate}
           </h3>
           <div>
-            <p className="body-text lg:text-2xl  dark:text-darkSecondary">
+            <p className="body-text lg:text-2xl  dark:text-primary">
               {project.description}
             </p>
           </div>
@@ -43,9 +43,9 @@ function ProjectShowcasePage(props) {
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2 w-36 rounded-full bg-secondary hover:cursor-pointer xxs:w-full xxs:px-2 sm:w-[90%] md:w-[80%] dark:bg-darkAccent"
+                className="mb-2  mr-2 rounded-full border-4 bg-secondary hover:cursor-pointer dark:border-darkAccent dark:bg-darkSecondary"
               >
-                <h2 className="body-text m-auto py-2 text-center text-primary ">
+                <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
                   {tech}
                 </h2>
               </div>
@@ -87,7 +87,7 @@ function ProjectShowcasePage(props) {
             id="project-demo"
             className="bg-primary p-4 pb-2 xxs:p-2 dark:bg-darkPrimary"
           >
-            <h2 className="heading-text py-2 uppercase underline dark:text-darkSecondary">
+            <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
             <div className="flex justify-center ">
@@ -102,7 +102,7 @@ function ProjectShowcasePage(props) {
         )}
 
         <section id="project-accomplishments" className="pb-6 xxs:px-2 lg:px-4">
-          <h2 className="heading-text pt-2 uppercase underline dark:text-darkSecondary">
+          <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
             Accomplishments
           </h2>
           <div className="p-4 pb-6">
@@ -110,7 +110,7 @@ function ProjectShowcasePage(props) {
               {project.accomplishments.map((accomplishment) => (
                 <li
                   key={accomplishment}
-                  className="body-text lg:text-2xl  dark:text-darkSecondary"
+                  className="body-text lg:text-2xl  dark:text-primary"
                 >
                   {accomplishment}
                 </li>

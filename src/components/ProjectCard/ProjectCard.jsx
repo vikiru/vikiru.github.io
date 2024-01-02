@@ -14,18 +14,20 @@ function ProjectCard(props) {
   return (
     <section
       id={project.name}
-      className="mt-2 rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:bg-darkSecondary"
+      className="mt-2 rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:border-darkAccent dark:bg-darkSecondary"
     >
-      <h2 className="heading-text pt-2 text-center text-secondary">
+      <h2 className="heading-text pt-2 text-center text-secondary dark:text-primary">
         {project.name}
       </h2>
 
-      <p className="subheading-text text-center uppercase text-secondary">
+      <p className="subheading-text text-center uppercase text-secondary dark:text-primary">
         {project.startDate} - {project.endDate}
       </p>
 
       <div className="md:px-2">
-        <h3 className="body-text text-center">{project.description}</h3>
+        <h3 className="body-text text-center dark:text-primary">
+          {project.description}
+        </h3>
       </div>
 
       <section
@@ -35,9 +37,9 @@ function ProjectCard(props) {
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 w-36 rounded-full border-b-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] md:w-[80%] dark:bg-darkAccent"
+            className="mx-auto mb-2 w-36 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] md:w-[80%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
-            <h2 className="body-text m-auto py-2 text-center text-primary">
+            <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
               {tech}
             </h2>
           </div>
@@ -57,7 +59,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim pr-4 text-accent  xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
               />
             </a>
           )}
@@ -86,7 +88,7 @@ function ProjectCard(props) {
           rel="noopener noreferrer"
           id="about"
         >
-          <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl">
+          <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl dark:text-primary">
             Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </h2>
         </Link>

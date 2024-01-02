@@ -8,18 +8,18 @@ function CourseContainer() {
     <section id="university-courses">
       <section id="unversity-info" className="min-w-screen px-4 py-2">
         <div>
-          <h2 className="xxs:text-md heading-text uppercase lg:text-4xl dark:text-darkSecondary">
+          <h2 className="xxs:text-md heading-text uppercase lg:text-4xl dark:text-primary">
             {educationData.universityName}
           </h2>
         </div>
         <div>
-          <h3 className="subheading-text dark:text-darkSecondary">
+          <h3 className="subheading-text dark:text-primary">
             {educationData.degree} - {educationData.acronym}.,{" "}
             {educationData.degreeProgram}
           </h3>
         </div>
         <div>
-          <h3 className="body-text uppercase dark:text-darkSecondary">
+          <h3 className="body-text uppercase dark:text-primary">
             {educationData.enrollmentStart} - {educationData.enrollmentEnd}
           </h3>
         </div>
@@ -31,7 +31,7 @@ function CourseContainer() {
             id={year.title.toLowerCase() + " courses"}
             className="min-h-screen py-2"
           >
-            <h3 className="heading-text bg-secondary px-4 uppercase text-primary underline dark:bg-darkSecondary dark:text-darkPrimary">
+            <h3 className="heading-text bg-secondary px-4 uppercase text-primary underline dark:bg-darkSecondary dark:text-primary">
               {year.title}
             </h3>
             <div className="grid gap-3 px-2 pt-2 lg:grid-cols-2">
