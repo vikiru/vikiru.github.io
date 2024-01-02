@@ -14,7 +14,7 @@ function HomePage() {
       <NavBar />
       {/* Main Content - XL and up */}
       <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
-        <section className="min-h-screen">
+        <section className="pb-6">
           <section id="hero">
             <h2 className="heading-text dark:text-primary">
               {aboutData.greeting}{" "}

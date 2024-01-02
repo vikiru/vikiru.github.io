@@ -12,7 +12,7 @@ function EducationContainer() {
 
   return (
     <section
-      className="mx-auto min-h-screen w-screen bg-primary pb-6 pt-2 dark:bg-darkPrimary"
+      className="mx-auto w-screen bg-primary pb-6 pt-2 dark:bg-darkPrimary"
       id="education"
     >
       <div className="px-4">
