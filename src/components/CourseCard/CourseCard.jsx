@@ -10,7 +10,7 @@ function CourseCard(props) {
       className="bg-white rounded-md border-4 border-accent bg-primary pt-2 lg:w-full lg:px-4 lg:pb-4 dark:bg-darkSecondary"
     >
       <div>
-        <h3 className="subheading-text px-2 xxs:text-sm lg:text-3xl dark:text-darkPrimary">
+        <h3 className="subheading-text px-2 dark:text-darkPrimary">
           {course.courseCode}
         </h3>
         {/* Course Name */}

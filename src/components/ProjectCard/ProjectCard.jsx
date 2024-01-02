@@ -37,7 +37,7 @@ function ProjectCard(props) {
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 w-36 rounded-full border-b-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 dark:bg-darkAccent"
+            className="mx-auto mb-2 w-36 rounded-full border-b-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] dark:bg-darkAccent"
           >
             <h2 className="m-auto py-2 text-center font-body text-sm text-primary xxs:text-xs">
               {tech}
@@ -80,7 +80,7 @@ function ProjectCard(props) {
 
       <section
         id="project-additional-info"
-        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer  hover:bg-accent/80  xxs:w-full dark:bg-darkAccent dark:hover:bg-darkAccent/80"
+        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full  sm:w-[90%] dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
         <Link
           to={project.projectPageUrl}
