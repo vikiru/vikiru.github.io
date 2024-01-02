@@ -49,7 +49,7 @@ function EducationContainer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className="m-auto py-2 text-center font-subheading font-semibold text-secondary xxs:text-sm">
+              <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-sm">
                 View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h2>
             </Link>
@@ -88,7 +88,7 @@ function EducationContainer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="m-auto py-2 text-center font-subheading font-semibold text-secondary xxs:text-sm">
+                <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-sm">
                   View certificate{"  "}
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </p>

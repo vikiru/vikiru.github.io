@@ -88,7 +88,7 @@ function ProjectCard(props) {
           rel="noopener noreferrer"
           id="about"
         >
-          <h2 className="m-auto py-2 text-center font-heading font-semibold text-secondary xxs:text-sm">
+          <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-sm">
             Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </h2>
         </Link>
