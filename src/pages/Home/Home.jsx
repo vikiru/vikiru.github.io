@@ -98,7 +98,7 @@ function HomePage() {
           <div className="flex justify-center py-1">
             <FontAwesomeIcon
               icon={faLocationDot}
-              className="3xl:text-4xl 4xl:text-5xl px-2 pt-1 text-xl text-accent xl:text-2xl 2xl:text-3xl dark:text-darkAccent"
+              className="px-2 pt-1 text-xl text-accent xl:text-2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl dark:text-darkAccent"
             />
             <span className="subheading-text text-secondary dark:text-primary">
               {aboutData.location}

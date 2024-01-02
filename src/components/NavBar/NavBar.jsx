@@ -18,7 +18,7 @@ function NavBar() {
         className="flex items-center justify-between bg-secondary dark:bg-darkSecondary"
       >
         <div className="px-2 lg:hidden">
-          <h2 className="3xl:text-7xl 4xl:text-8xl text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl dark:text-primary">
+          <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
             <span className="text-primary  dark:text-primary">Visa</span>
             <span className="text-accent dark:text-darkAccent">kan</span>
           </h2>
@@ -69,7 +69,7 @@ function NavBar() {
           className="bg-secondary py-4 xxs:hidden lg:flex lg:justify-between dark:bg-darkSecondary"
         >
           <div className="lg:px-1 xl:px-4">
-            <h2 className="3xl:text-7xl 4xl:text-8xl text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl dark:text-primary">
+            <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
               <span className="text-primary  dark:text-primary">Visa</span>
               <span className="text-accent dark:text-darkAccent">kan</span>
             </h2>

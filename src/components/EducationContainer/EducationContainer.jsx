@@ -49,7 +49,7 @@ function EducationContainer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className="3xl:text-4xl m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl dark:text-primary">
+              <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
                 View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h2>
             </Link>
@@ -86,7 +86,7 @@ function EducationContainer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="3xl:text-4xl m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl dark:text-primary">
+                <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
                   View certificate{"  "}
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </p>
