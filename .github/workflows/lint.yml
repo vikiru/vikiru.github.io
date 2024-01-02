@@ -1,4 +1,5 @@
 name: Lint Files
+run-name: Lint files using ESLint
 on:
   pull_request:
     branches:
