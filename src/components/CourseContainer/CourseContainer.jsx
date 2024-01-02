@@ -29,7 +29,7 @@ function CourseContainer() {
           <section
             key={year.title}
             id={year.title.toLowerCase() + " courses"}
-            className="min-h-screen py-2"
+            className="py-2 pb-6"
           >
             <h3 className="heading-text bg-secondary px-4 uppercase text-primary underline dark:bg-darkSecondary dark:text-primary">
               {year.title}

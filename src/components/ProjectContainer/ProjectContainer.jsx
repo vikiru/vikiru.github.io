@@ -5,7 +5,7 @@ import projectData from "../../assets/data/projects";
 function ProjectContainer() {
   const projects = projectData.projects;
   return (
-    <section className="mx-auto min-h-screen py-6" id="projects">
+    <section className="mx-auto py-6" id="projects">
       <div className="px-4">
         <h2 className="heading-text pt-2 font-bold uppercase text-secondary underline lg:text-4xl dark:text-primary">
           Projects
