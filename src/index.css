@@ -35,14 +35,14 @@ code {
 
 @layer components {
   .heading-text {
-    @apply font-heading text-4xl font-extrabold leading-none tracking-tight xxs:text-base sm:text-lg;
+    @apply font-heading text-4xl font-extrabold leading-none tracking-tight xxs:text-base sm:text-lg md:text-xl;
   }
 
   .subheading-text {
-    @apply font-subheading text-2xl font-semibold xxs:text-xs sm:text-base;
+    @apply font-subheading text-2xl font-semibold xxs:text-xs sm:text-base md:text-lg;
   }
 
   .body-text {
-    @apply font-body text-base font-light leading-8 xxs:text-xs sm:text-base;
+    @apply font-body text-base font-light leading-8 xxs:text-xs sm:text-base md:text-lg;
   }
 }

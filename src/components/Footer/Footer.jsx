@@ -9,15 +9,18 @@ import navData from "./../../assets/data/nav";
 function Footer() {
   return (
     <footer className="mt-auto w-full">
-      <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-3 dark:bg-darkPrimary">
-        <section id="logo" className="m-auto py-2">
-          <h2 className="font-cinzel tracking-widest text-primary xxs:text-2xl  md:text-3xl lg:text-4xl xl:text-5xl dark:text-darkSecondary">
+      <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-2 lg:grid-cols-3 dark:bg-darkPrimary">
+        <section
+          id="logo"
+          className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center xl:m-auto"
+        >
+          <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl  md:text-3xl lg:text-4xl xl:text-5xl dark:text-darkSecondary">
             <span className="text-primary  dark:text-darkSecondary">Visa</span>
             <span className="text-accent dark:text-darkAccent">kan</span>
           </h2>
         </section>
 
-        <div className="lg:normal col-span-2 sm:grid sm:grid-cols-2">
+        <div className="col-span-2 sm:grid sm:grid-cols-2">
           <section id="footer-navigation">
             <h2 className="heading-text text-center uppercase text-primary  lg:text-2xl dark:text-darkSecondary">
               Read more
@@ -32,7 +35,7 @@ function Footer() {
               </div>
             ))}
           </section>
-          <section id="contact" className="mx-auto px-4">
+          <section id="contact" className="mx-auto lg:px-4">
             <h2 className="heading-text text-center uppercase text-primary lg:text-2xl  dark:text-darkSecondary">
               Connect with me
             </h2>

@@ -17,7 +17,7 @@ function NavBar() {
         id="navigation-menu"
         className="flex items-center justify-between bg-secondary dark:bg-darkPrimary"
       >
-        <div className="px-2">
+        <div className="px-2 lg:hidden">
           <h2 className="font-cinzel tracking-widest text-primary xxs:text-lg lg:text-2xl">
             <span className="text-primary">Visa</span>
             <span className="text-accent">kan</span>
@@ -40,7 +40,7 @@ function NavBar() {
         </div>
       </section>
       {isOpen ? (
-        <section className="block justify-center xl:hidden" id="nav-links">
+        <section className="block justify-center lg:hidden" id="nav-links">
           <Link to="/">
             <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-darkSecondary dark:hover:decoration-darkAccent">
               Home
