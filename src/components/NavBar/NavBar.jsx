@@ -18,8 +18,8 @@ function NavBar() {
         className="flex items-center justify-between bg-secondary dark:bg-darkSecondary"
       >
         <div className="px-2 lg:hidden">
-          <h2 className="dark:text-text-primary/50 text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-            <span className="text-primary">Visa</span>
+          <h2 className="3xl:text-7xl 4xl:text-8xl text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl dark:text-primary">
+            <span className="text-primary  dark:text-primary">Visa</span>
             <span className="text-accent dark:text-darkAccent">kan</span>
           </h2>
         </div>
@@ -69,15 +69,15 @@ function NavBar() {
           className="bg-secondary py-4 xxs:hidden lg:flex lg:justify-between dark:bg-darkSecondary"
         >
           <div className="lg:px-1 xl:px-4">
-            <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-xl xl:text-5xl dark:text-primary">
-              <span className="text-primary">Visa</span>
+            <h2 className="3xl:text-7xl 4xl:text-8xl text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl dark:text-primary">
+              <span className="text-primary  dark:text-primary">Visa</span>
               <span className="text-accent dark:text-darkAccent">kan</span>
             </h2>
           </div>
-          <section id="nav-links" className="flex justify-center pt-3">
+          <section id="nav-links" className="flex justify-center pt-3 xl:pt-6">
             {navData.map((nav) => (
               <Link key={nav.navTitle} to={nav.navLink}>
-                <h2 className="subheading-text px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent lg:text-xl dark:text-primary dark:hover:decoration-darkAccent">
+                <h2 className="subheading-text px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent dark:text-primary dark:hover:decoration-darkAccent">
                   {nav.navTitle}
                 </h2>
               </Link>

@@ -37,7 +37,7 @@ function ProjectCard(props) {
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 w-36 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] md:w-[80%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] md:w-[80%] xl:w-full dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
             <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
               {tech}
@@ -59,7 +59,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
           )}
@@ -71,7 +71,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
-                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
           )}
@@ -88,7 +88,7 @@ function ProjectCard(props) {
           rel="noopener noreferrer"
           id="about"
         >
-          <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl dark:text-primary">
+          <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary dark:text-primary">
             Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </h2>
         </Link>

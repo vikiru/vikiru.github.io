@@ -27,13 +27,11 @@ function ProjectShowcasePage(props) {
             </Link>{" "}
             / {project.name}
           </h2>
-          <h3 className="body-text uppercase dark:text-primary">
+          <h3 className="body-text py-1 uppercase dark:text-primary">
             {project.startDate} - {project.endDate}
           </h3>
-          <div>
-            <p className="body-text lg:text-2xl  dark:text-primary">
-              {project.description}
-            </p>
+          <div className="py-2">
+            <p className="body-text dark:text-primary">{project.description}</p>
           </div>
 
           <section
@@ -62,7 +60,7 @@ function ProjectShowcasePage(props) {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="lg:ease-in-out-anim pr-4 text-5xl text-accent xxs:text-4xl md:text-5xl lg:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim pr-4 text-accent xxs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
               )}
@@ -74,7 +72,7 @@ function ProjectShowcasePage(props) {
                 >
                   <FontAwesomeIcon
                     icon={faBookOpen}
-                    className="lg:ease-in-out-anim pr-1 text-5xl text-accent xxs:text-4xl md:text-5xl  lg:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim pr-1 text-accent xxs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
               )}
@@ -110,7 +108,7 @@ function ProjectShowcasePage(props) {
               {project.accomplishments.map((accomplishment) => (
                 <li
                   key={accomplishment}
-                  className="body-text lg:text-2xl  dark:text-primary"
+                  className="body-text dark:text-primary"
                 >
                   {accomplishment}
                 </li>

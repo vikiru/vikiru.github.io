@@ -14,7 +14,7 @@ function Footer() {
           id="logo"
           className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center"
         >
-          <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-primary">
+          <h2 className="3xl:text-7xl 4xl:text-8xl text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl dark:text-primary">
             <span className="text-primary  dark:text-primary">Visa</span>
             <span className="text-accent dark:text-darkAccent">kan</span>
           </h2>
@@ -22,13 +22,13 @@ function Footer() {
 
         <div className="sm:grid sm:grid-cols-2 md:col-span-2">
           <section id="footer-navigation">
-            <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
-              Read more
+            <h2 className="heading-text text-center tracking-wide text-primary dark:text-primary">
+              Read more about me
             </h2>
             {navData.map((navItem) => (
               <div key={navItem.navTitle} className="mx-auto w-20">
                 <Link to={navItem.navLink}>
-                  <h2 className="body-text text-center uppercase tracking-wide text-primary decoration-accent hover:underline lg:text-xl dark:text-primary dark:decoration-darkAccent">
+                  <h2 className="body-text text-center text-primary decoration-accent hover:underline dark:text-primary dark:decoration-darkAccent">
                     {navItem.navTitle}
                   </h2>
                 </Link>
@@ -37,7 +37,7 @@ function Footer() {
           </section>
 
           <section id="contact" className="xxs:mx-auto lg:px-4 xl:mx-0">
-            <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
+            <h2 className="heading-text text-center tracking-wide text-primary dark:text-primary">
               Connect with me
             </h2>
             <div>
@@ -53,7 +53,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
                 <a
@@ -64,7 +64,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
                 <a
@@ -75,7 +75,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
               </div>
