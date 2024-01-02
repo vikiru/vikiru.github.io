@@ -59,7 +59,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-4xl md:text-5xl  dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-4 text-accent  xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
               />
             </a>
           )}
@@ -71,7 +71,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
-                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-4xl md:text-5xl  dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
               />
             </a>
           )}
