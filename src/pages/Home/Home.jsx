@@ -88,10 +88,11 @@ function HomePage() {
         </section>
 
         <section id="profile" className="mx-auto mr-10">
-          <div className="m-auto flex max-w-sm justify-center rounded-full py-2">
+          <div className="m-auto flex max-w-sm justify-center rounded-full border-4 border-accent py-2">
             <img
               className="xxs:h-30 rounded-full xxs:w-20 lg:h-full lg:w-[500px]"
               src={aboutData.profilePic}
+              alt="GitHub Profile Pic"
             ></img>
           </div>
           <div className="flex justify-center py-1">
@@ -158,7 +159,7 @@ function HomePage() {
             <section id="profile" className="flex justify-center">
               <div className="flex justify-center rounded-full">
                 <img
-                  className="h-auto w-full rounded-full xxs:w-[180px] md:w-[360px]"
+                  className="h-auto w-full rounded-full border-4 border-accent object-scale-down xxs:w-[180px] md:w-[360px]"
                   src={aboutData.profilePic}
                   alt="GitHub Profile Pic"
                 ></img>
