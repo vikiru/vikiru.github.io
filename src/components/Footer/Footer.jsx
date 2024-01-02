@@ -49,7 +49,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                   />
                 </a>
                 <a
@@ -60,7 +60,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                   />
                 </a>
                 <a
@@ -71,7 +71,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent lg:text-5xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                   />
                 </a>
               </div>

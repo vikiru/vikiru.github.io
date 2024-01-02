@@ -156,7 +156,7 @@ function HomePage() {
                 {aboutData.fullName}
               </span>
             </h2>
-            <section id="profile" className="flex justify-center">
+            <section id="profile" className="flex justify-center pt-2">
               <div className="flex justify-center rounded-full">
                 <img
                   className="h-auto w-full rounded-full border-4 border-accent object-scale-down xxs:w-[180px] md:w-[360px]"
@@ -187,7 +187,7 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
@@ -198,7 +198,7 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
@@ -209,7 +209,7 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
             </section>
