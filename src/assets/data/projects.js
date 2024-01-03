@@ -4,7 +4,6 @@ const projectData = {
       name: "Portfolio Website",
       githubUrl: "https://github.com/vikiru/vikiru.github.io",
       documentationUrl: "",
-      gifPath: "",
       videoPath: "",
       projectPageUrl: "/projects/Portfolio",
       description: "Personal portfolio website.",
@@ -31,7 +30,6 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/Urvo",
       documentationUrl: "https://vikiru.github.io/Urvo/",
       projectPageUrl: "/projects/Urvo",
-      gifPath: require("../images/Urvo/Urvo-demo.gif"),
       videoPath: require("../images/Urvo/Urvo-demo.mp4"),
       description: "A multi-purpose Discord bot.",
       startDate: "June 2021",
@@ -58,7 +56,6 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/CodeSmell",
       documentationUrl: "https://github.com/vikiru/CodeSmell/wiki",
       projectPageUrl: "/projects/CodeSmell",
-      gifPath: require("../images/CodeSmell/CodeSmell-demo.gif"),
       videoPath: require("../images/CodeSmell/CodeSmell-demo.mp4"),
       description:
         "A tool for detection and visualization of code smells for object-oriented languages.",
@@ -90,7 +87,6 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/discrete-sim",
       documentationUrl: "https://vikiru.github.io/discrete-sim/",
       projectPageUrl: "/projects/discrete-sim",
-      gifPath: require("../images/discrete-sim/discrete-sim-demo.gif"),
       videoPath: require("../images/discrete-sim/discrete-sim-demo.mp4"),
       description: "Manufacturing facility simulation.",
       startDate: "Jan 2022",
@@ -114,7 +110,6 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/Mini-SurveyMonkey",
       documentationUrl: "https://github.com/Imcool4789/Mini-SurveyMonkey/wiki",
       projectPageUrl: "/projects/Mini-SurveyMonkey",
-      gifPath: require("../images/Mini-SurveyMonkey/Mini-SurveyMonkey-demo.gif"),
       videoPath: require("../images/Mini-SurveyMonkey/Mini-SurveyMonkey-demo.mp4"),
       description:
         "A SurveyMonkey clone built as a Spring Boot CRUD Web Application.",
@@ -145,7 +140,6 @@ const projectData = {
       githubUrl: "",
       documentationUrl: "",
       projectPageUrl: "/projects/Elevator-Simulator",
-      gifPath: require("../images/Concurrent-Elevator/Concurrent-Elevator-demo.gif"),
       videoPath: require("../images/Concurrent-Elevator/Concurrent-Elevator-demo.mp4"),
       description:
         "The aim of this project was to create a simulation of an elevator transporting passengers among floors, with the capability to introduce and handle errors that may arise during operation. ",
@@ -164,7 +158,6 @@ const projectData = {
       githubUrl: "https://github.com/flavji/digitalRisk",
       documentationUrl: "",
       projectPageUrl: "/projects/digitalRisk",
-      gifPath: require("../images/digitalRisk/digitalRisk-demo.gif"),
       videoPath: require("../images/digitalRisk/digitalRisk-demo.mp4"),
       description:
         "Digital Risk is a re-creation of the board game Risk: Global Domination using Java Swing and following the MVC design pattern.",
