@@ -41,7 +41,7 @@ function ProjectShowcasePage(props) {
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2  mr-2 rounded-full border-4 bg-secondary hover:cursor-pointer dark:border-darkAccent dark:bg-darkSecondary"
+                className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer sm:w-[90%] md:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
               >
                 <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
                   {tech}
@@ -88,9 +88,9 @@ function ProjectShowcasePage(props) {
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="flex justify-center ">
+            <div className="flex justify-center">
               <img
-                className="xxs:h-30 h-auto w-full border-4 border-accent object-scale-down"
+                className="h-auto w-full border-4 border-accent object-cover dark:border-darkAccent"
                 src={project.imagePath}
                 alt={`${project.name} Demo`}
                 title={`${project.name} Demo`}
