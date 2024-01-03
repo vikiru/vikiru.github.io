@@ -44,38 +44,44 @@ function Footer() {
               <h2 className="subheading-text text-center text-primary lg:py-2 dark:text-primary">
                 Ottawa, ON
               </h2>
-              <div className="flex justify-center">
+              <div
+                className="flex justify-center space-x-2 pt-1"
+                id="social-icons"
+              >
                 <a
                   href="https://github.com/vikiru"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="github-url"
+                  id="GitHub Profile Link"
+                  title="View my GitHub"
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="lg:ease-in-out-anim px-2 text-3xl text-accent xxs:py-2 xxs:text-2xl sm:text-4xl lg:py-4 lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/viskirubakaran/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="linkedin-url"
+                  id="LinkedIn Link"
+                  title="View my LinkedIn"
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="lg:ease-in-out-anim px-2 text-3xl text-accent xxs:py-2 xxs:text-2xl sm:text-4xl lg:py-4 lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
                 <a
                   href="mailto:viskirubakaran@outlook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="email"
+                  id="Email Link"
+                  title="Send me an email"
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="lg:ease-in-out-anim px-2 text-accent xxs:py-2 xxs:text-2xl sm:text-4xl lg:py-4 lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
               </div>

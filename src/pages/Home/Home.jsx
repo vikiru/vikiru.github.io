@@ -93,6 +93,7 @@ function HomePage() {
               className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px] xl:w-[600px]"
               src={aboutData.profilePic}
               alt="GitHub Profile Pic"
+              title="GitHub Profile Pic"
             ></img>
           </div>
           <div className="flex justify-center py-1">
@@ -103,39 +104,42 @@ function HomePage() {
 
           <section
             id="social-icons"
-            className="flex justify-center space-x-4 pt-2"
+            className="flex justify-center space-x-2 pt-2"
           >
             <a
               href="https://github.com/vikiru"
               target="_blank"
               rel="noopener noreferrer"
-              id="github-url"
+              id="GitHub Profile Link"
+              title="View my GitHub"
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
             <a
               href="https://www.linkedin.com/in/viskirubakaran/"
               target="_blank"
               rel="noopener noreferrer"
-              id="linkedin-url"
+              id="LinkedIn Link"
+              title="View my LinkedIn"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
             <a
               href="mailto:viskirubakaran@outlook.com"
               target="_blank"
               rel="noopener noreferrer"
-              id="email"
+              id="Email Link"
+              title="Send me an email"
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl  xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
           </section>
@@ -158,6 +162,7 @@ function HomePage() {
                   className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[260px]"
                   src={aboutData.profilePic}
                   alt="GitHub Profile Pic"
+                  title="GitHub Profile Pic"
                 ></img>
               </div>
             </section>
@@ -175,7 +180,8 @@ function HomePage() {
                 href="https://github.com/vikiru"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="github-url"
+                id="GitHub Profile Link"
+                title="View my GitHub"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -186,7 +192,8 @@ function HomePage() {
                 href="https://www.linkedin.com/in/viskirubakaran/"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="linkedin-url"
+                id="LinkedIn Link"
+                title="View my LinkedIn"
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
@@ -197,7 +204,8 @@ function HomePage() {
                 href="mailto:viskirubakaran@outlook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="email"
+                id="Email Link"
+                title="Send me an email"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}

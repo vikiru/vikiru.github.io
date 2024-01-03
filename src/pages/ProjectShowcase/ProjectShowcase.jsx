@@ -57,6 +57,8 @@ function ProjectShowcasePage(props) {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="Project GitHub Link"
+                  title="View the GitHub repository"
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
@@ -69,6 +71,8 @@ function ProjectShowcasePage(props) {
                   href={project.documentationUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="Project Documentation Link"
+                  title="View the project documentation"
                 >
                   <FontAwesomeIcon
                     icon={faBookOpen}
@@ -89,11 +93,15 @@ function ProjectShowcasePage(props) {
               Demo
             </h2>
             <div className="flex flex-col">
-              <video muted controls preload="auto">
+              <video
+                muted
+                controls
+                preload="auto"
+                title={`${project.name} Demo`}
+              >
                 <source
                   src={project.videoPath}
                   alt={`${project.name} Demo`}
-                  title={`${project.name} Demo`}
                   type="video/mp4"
                 />
               </video>

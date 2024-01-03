@@ -48,6 +48,8 @@ function EducationContainer() {
               to="/education/courses"
               target="_blank"
               rel="noopener noreferrer"
+              title="View my courses"
+              id="Courses Link"
             >
               <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
                 View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -87,6 +89,8 @@ function EducationContainer() {
                 href={certificate.certificateLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                title="View my certificate"
+                id={certificate.certificationName.toLowerCase() + "Link"}
               >
                 <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
                   View certificate{"  "}

@@ -56,6 +56,8 @@ function ProjectCard(props) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              id="Project GitHub Link"
+              title="View the GitHub repository"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -68,6 +70,8 @@ function ProjectCard(props) {
               href={project.documentationUrl}
               target="_blank"
               rel="noopener noreferrer"
+              id="Project Documentation Link"
+              title="View the project documentation"
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
