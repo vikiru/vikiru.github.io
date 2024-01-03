@@ -10,7 +10,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectShowcasePage(props) {
   const project = props.project;
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
       <main>
         <section
@@ -27,16 +27,18 @@ function ProjectShowcasePage(props) {
             </Link>{" "}
             / {project.name}
           </h2>
+
           <h3 className="body-text py-1 uppercase dark:text-primary">
             {project.startDate} - {project.endDate}
           </h3>
+
           <div className="py-2">
             <p className="body-text dark:text-primary">{project.description}</p>
           </div>
 
           <section
             id="technologies-used"
-            className="py-2 xxs:grid sm:grid-cols-3"
+            className="py-2 xxs:grid xxs:grid-cols-2 sm:grid-cols-3"
           >
             {project.technologiesUsed.map((tech) => (
               <div

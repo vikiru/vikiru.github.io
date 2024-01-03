@@ -32,7 +32,7 @@ function ProjectCard(props) {
 
       <section
         id="technologies-used"
-        className="m-2 mx-auto grid max-w-lg justify-center py-2 xs:grid-cols-2 sm:grid-cols-2"
+        className="m-2 mx-auto grid justify-center py-2 sm:grid-cols-2"
       >
         {project.technologiesUsed.map((tech) => (
           <div
@@ -61,7 +61,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
           )}
@@ -75,7 +75,7 @@ function ProjectCard(props) {
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
-                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
           )}
