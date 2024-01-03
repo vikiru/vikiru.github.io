@@ -89,7 +89,7 @@ function ProjectShowcasePage(props) {
               Demo
             </h2>
             <div className="flex flex-col">
-              <video muted controls>
+              <video muted controls preload="auto">
                 <source
                   src={project.videoPath}
                   alt={`${project.name} Demo`}

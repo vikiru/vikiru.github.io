@@ -17,7 +17,6 @@ module.exports = {
       subheading: ["Open Sans"],
       body: ["Lato"],
       cinzel: ["Cinzel"],
-      ...defaultTheme.fontFamily,
     },
     colors: {
       primary: "#FFFFFF",
