@@ -80,21 +80,23 @@ function ProjectShowcasePage(props) {
           </section>
         </section>
 
-        {project.imagePath !== "" && (
+        {project.videoPath !== "" && (
           <section
             id="project-demo"
-            className="bg-primary pb-2 xxs:p-2 dark:bg-darkPrimary"
+            className="w-full bg-primary pb-2 xxs:p-2 dark:bg-darkPrimary"
           >
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="flex justify-center xxs:h-[8rem] sm:h-[20rem] md:h-auto">
-              <img
-                className="w-full border-4 border-accent object-cover dark:border-darkAccent"
-                src={project.imagePath}
-                alt={`${project.name} Demo`}
-                title={`${project.name} Demo`}
-              ></img>
+            <div className="flex flex-col">
+              <video muted controls>
+                <source
+                  src={project.videoPath}
+                  alt={`${project.name} Demo`}
+                  title={`${project.name} Demo`}
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </section>
         )}
