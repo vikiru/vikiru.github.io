@@ -1,4 +1,3 @@
-import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +6,7 @@ import { Link } from "react-router-dom";
 import NavBar from "./../../components/NavBar/NavBar";
 import React from "react";
 import aboutData from "./../../assets/data/about";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
   return (
@@ -90,16 +90,12 @@ function HomePage() {
         <section id="profile" className="mx-auto mr-10">
           <div className="m-auto flex justify-center rounded-full  py-2">
             <img
-              className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px]"
+              className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px] xl:w-[600px]"
               src={aboutData.profilePic}
               alt="GitHub Profile Pic"
             ></img>
           </div>
           <div className="flex justify-center py-1">
-            <FontAwesomeIcon
-              icon={faLocationDot}
-              className="px-2 pt-1 text-xl text-accent xl:text-2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl dark:text-darkAccent"
-            />
             <span className="subheading-text text-secondary dark:text-primary">
               {aboutData.location}
             </span>
@@ -159,17 +155,13 @@ function HomePage() {
             <section id="profile" className="flex justify-center pt-2">
               <div className="flex justify-center rounded-full">
                 <img
-                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[360px]"
+                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[260px]"
                   src={aboutData.profilePic}
                   alt="GitHub Profile Pic"
                 ></img>
               </div>
             </section>
-            <section id="location" className="flex justify-center py-1 pr-4">
-              <FontAwesomeIcon
-                icon={faLocationDot}
-                className="px-2 pt-1 text-accent xxs:text-lg md:text-lg dark:text-darkAccent"
-              />
+            <section id="location" className="flex justify-center py-1">
               <span className="subheading-text text-secondary dark:text-primary">
                 {aboutData.location}
               </span>
@@ -187,7 +179,7 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
@@ -198,7 +190,7 @@ function HomePage() {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
