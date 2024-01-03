@@ -43,7 +43,7 @@ function EducationContainer() {
               </h3>
             </div>
           </div>
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               target="_blank"
@@ -84,7 +84,7 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"
