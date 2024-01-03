@@ -92,7 +92,7 @@ const projectData = {
     {
       name: "discrete-sim",
       githubUrl: "https://github.com/vikiru/discrete-sim",
-      documentationUrl: "",
+      documentationUrl: "https://vikiru.github.io/discrete-sim/",
       projectPageUrl: "/projects/discrete-sim",
       imagePath: discreteSim,
       description: "Manufacturing facility simulation.",
