@@ -10,7 +10,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectShowcasePage(props) {
   const project = props.project;
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary dark:scrollbar-thumb-darkSecondary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
       <main>
         <section
@@ -36,12 +36,12 @@ function ProjectShowcasePage(props) {
 
           <section
             id="technologies-used"
-            className="py-2 xxs:grid sm:grid-cols-2"
+            className="py-2 xxs:grid sm:grid-cols-3"
           >
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2  mr-2 rounded-full border-4 bg-secondary hover:cursor-pointer dark:border-darkAccent dark:bg-darkSecondary"
+                className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
               >
                 <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
                   {tech}
@@ -57,6 +57,8 @@ function ProjectShowcasePage(props) {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="Project GitHub Link"
+                  title="View the GitHub repository"
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
@@ -69,6 +71,8 @@ function ProjectShowcasePage(props) {
                   href={project.documentationUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="Project Documentation Link"
+                  title="View the project documentation"
                 >
                   <FontAwesomeIcon
                     icon={faBookOpen}
@@ -80,21 +84,27 @@ function ProjectShowcasePage(props) {
           </section>
         </section>
 
-        {project.imagePath !== "" && (
+        {project.videoPath !== "" && (
           <section
             id="project-demo"
-            className="bg-primary p-4 pb-2 xxs:p-2 dark:bg-darkPrimary"
+            className="w-full bg-primary pb-2 xxs:p-2 dark:bg-darkPrimary"
           >
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="flex justify-center ">
-              <img
-                className="xxs:h-30 h-auto w-full border-4 border-accent object-scale-down"
-                src={project.imagePath}
-                alt={`${project.name} Demo`}
+            <div className="flex flex-col">
+              <video
+                muted
+                controls
+                preload="auto"
                 title={`${project.name} Demo`}
-              ></img>
+              >
+                <source
+                  src={project.videoPath}
+                  alt={`${project.name} Demo`}
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </section>
         )}

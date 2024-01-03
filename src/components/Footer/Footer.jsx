@@ -12,7 +12,7 @@ function Footer() {
       <div className="bg-secondary xxs:flex xxs:flex-col md:grid md:grid-cols-2 dark:bg-darkSecondary">
         <section
           id="logo"
-          className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center"
+          className="md:col-span-2 md:mx-auto md:flex md:justify-center lg:py-2"
         >
           <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
             <span className="text-primary  dark:text-primary">Visa</span>
@@ -41,41 +41,47 @@ function Footer() {
               Connect with me
             </h2>
             <div>
-              <h2 className="subheading-text py-2 text-center text-primary dark:text-primary">
+              <h2 className="subheading-text text-center text-primary lg:py-2 dark:text-primary">
                 Ottawa, ON
               </h2>
-              <div className="flex justify-center">
+              <div
+                className="flex justify-center space-x-2 pt-1"
+                id="social-icons"
+              >
                 <a
                   href="https://github.com/vikiru"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="github-url"
+                  id="GitHub Profile Link"
+                  title="View my GitHub"
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/viskirubakaran/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="linkedin-url"
+                  id="LinkedIn Link"
+                  title="View my LinkedIn"
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="lg:ease-in-out-anim px-2 py-4 text-3xl text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
                 <a
                   href="mailto:viskirubakaran@outlook.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="email"
+                  id="Email Link"
+                  title="Send me an email"
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="lg:ease-in-out-anim px-2 py-4 text-accent xxs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
               </div>

@@ -43,11 +43,13 @@ function EducationContainer() {
               </h3>
             </div>
           </div>
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               target="_blank"
               rel="noopener noreferrer"
+              title="View my courses"
+              id="Courses Link"
             >
               <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
                 View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -60,7 +62,9 @@ function EducationContainer() {
       {/* Coursera Section - XXS - XL Screens */}
       <section className="m-2 mx-auto" id="coursera-certificate-info">
         <div className="px-4">
-          <h2 className="heading-text uppercase dark:text-primary">Coursera</h2>
+          <h2 className="subheading-text uppercase dark:text-primary">
+            Coursera
+          </h2>
         </div>
         {courseraCertificates.map((certificate) => (
           <div
@@ -80,11 +84,13 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                title="View my certificate"
+                id={certificate.certificationName.toLowerCase() + "Link"}
               >
                 <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
                   View certificate{"  "}

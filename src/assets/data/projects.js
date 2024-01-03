@@ -1,17 +1,10 @@
-import CodeSmell from "../images/CodeSmell/CodeSmell-demo.gif";
-import Elevator from "../images/Concurrent-Elevator/Concurrent-Elevator-demo.gif";
-import MiniSurveyMonkey from "../images/Mini-SurveyMonkey/Min-SurveyMonkey-demo.gif";
-import Urvo from "../images/Urvo/Urvo-demo.gif";
-import digitalRisk from "../images/digitalRisk/digitalRisk-demo.gif";
-import discreteSim from "../images/discrete-sim/discrete-sim-demo.gif";
-
 const projectData = {
   projects: [
     {
       name: "Portfolio Website",
       githubUrl: "https://github.com/vikiru/vikiru.github.io",
       documentationUrl: "",
-      imagePath: "",
+      videoPath: "",
       projectPageUrl: "/projects/Portfolio",
       description: "Personal portfolio website.",
       startDate: "Nov 2023",
@@ -37,7 +30,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/Urvo",
       documentationUrl: "https://vikiru.github.io/Urvo/",
       projectPageUrl: "/projects/Urvo",
-      imagePath: Urvo,
+      videoPath: require("../images/Urvo/Urvo-demo.mp4"),
       description: "A multi-purpose Discord bot.",
       startDate: "June 2021",
       endDate: "July 2023",
@@ -63,7 +56,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/CodeSmell",
       documentationUrl: "https://github.com/vikiru/CodeSmell/wiki",
       projectPageUrl: "/projects/CodeSmell",
-      imagePath: CodeSmell,
+      videoPath: require("../images/CodeSmell/CodeSmell-demo.mp4"),
       description:
         "A tool for detection and visualization of code smells for object-oriented languages.",
       startDate: "Sept 2022",
@@ -92,9 +85,9 @@ const projectData = {
     {
       name: "discrete-sim",
       githubUrl: "https://github.com/vikiru/discrete-sim",
-      documentationUrl: "",
+      documentationUrl: "https://vikiru.github.io/discrete-sim/",
       projectPageUrl: "/projects/discrete-sim",
-      imagePath: discreteSim,
+      videoPath: require("../images/discrete-sim/discrete-sim-demo.mp4"),
       description: "Manufacturing facility simulation.",
       startDate: "Jan 2022",
       endDate: "Apr 2022",
@@ -117,7 +110,7 @@ const projectData = {
       githubUrl: "https://github.com/vikiru/Mini-SurveyMonkey",
       documentationUrl: "https://github.com/Imcool4789/Mini-SurveyMonkey/wiki",
       projectPageUrl: "/projects/Mini-SurveyMonkey",
-      imagePath: MiniSurveyMonkey,
+      videoPath: require("../images/Mini-SurveyMonkey/Mini-SurveyMonkey-demo.mp4"),
       description:
         "A SurveyMonkey clone built as a Spring Boot CRUD Web Application.",
       startDate: "Mar 2022",
@@ -147,7 +140,7 @@ const projectData = {
       githubUrl: "",
       documentationUrl: "",
       projectPageUrl: "/projects/Elevator-Simulator",
-      imagePath: Elevator,
+      videoPath: require("../images/Concurrent-Elevator/Concurrent-Elevator-demo.mp4"),
       description:
         "The aim of this project was to create a simulation of an elevator transporting passengers among floors, with the capability to introduce and handle errors that may arise during operation. ",
       startDate: "Jan 2021",
@@ -165,7 +158,7 @@ const projectData = {
       githubUrl: "https://github.com/flavji/digitalRisk",
       documentationUrl: "",
       projectPageUrl: "/projects/digitalRisk",
-      imagePath: digitalRisk,
+      videoPath: require("../images/digitalRisk/digitalRisk-demo.mp4"),
       description:
         "Digital Risk is a re-creation of the board game Risk: Global Domination using Java Swing and following the MVC design pattern.",
       startDate: "Oct 2020",

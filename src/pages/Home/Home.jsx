@@ -1,4 +1,3 @@
-import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,10 +6,11 @@ import { Link } from "react-router-dom";
 import NavBar from "./../../components/NavBar/NavBar";
 import React from "react";
 import aboutData from "./../../assets/data/about";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-secondary dark:bg-darkPrimary dark:scrollbar-thumb-darkSecondary">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
       {/* Main Content - XL and up */}
       <main className="gap-2 p-10 xxs:hidden xl:grid xl:grid-cols-2">
@@ -55,9 +55,9 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
                   Read more
-                </p>
+                </h2>
               </Link>
             </div>
             <div className="cta-btn">
@@ -67,9 +67,9 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
                   View my work
-                </p>
+                </h2>
               </Link>
             </div>
             <div className="cta-btn">
@@ -79,9 +79,9 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
                   Contact me
-                </p>
+                </h2>
               </Link>
             </div>
           </section>
@@ -90,16 +90,13 @@ function HomePage() {
         <section id="profile" className="mx-auto mr-10">
           <div className="m-auto flex justify-center rounded-full  py-2">
             <img
-              className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px]"
+              className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px] xl:h-[300px] xl:w-[300px]"
               src={aboutData.profilePic}
               alt="GitHub Profile Pic"
+              title="GitHub Profile Pic"
             ></img>
           </div>
           <div className="flex justify-center py-1">
-            <FontAwesomeIcon
-              icon={faLocationDot}
-              className="px-2 pt-1 text-xl text-accent xl:text-2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl dark:text-darkAccent"
-            />
             <span className="subheading-text text-secondary dark:text-primary">
               {aboutData.location}
             </span>
@@ -107,39 +104,42 @@ function HomePage() {
 
           <section
             id="social-icons"
-            className="flex justify-center space-x-4 pt-2"
+            className="flex justify-center space-x-2 pt-2"
           >
             <a
               href="https://github.com/vikiru"
               target="_blank"
               rel="noopener noreferrer"
-              id="github-url"
+              id="GitHub Profile Link"
+              title="View my GitHub"
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
             <a
               href="https://www.linkedin.com/in/viskirubakaran/"
               target="_blank"
               rel="noopener noreferrer"
-              id="linkedin-url"
+              id="LinkedIn Link"
+              title="View my LinkedIn"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
             <a
               href="mailto:viskirubakaran@outlook.com"
               target="_blank"
               rel="noopener noreferrer"
-              id="email"
+              id="Email Link"
+              title="Send me an email"
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="lg:ease-in-out-anim text-white text-3xl text-accent lg:text-5xl  xl:text-6xl dark:text-darkAccent"
+                className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
               />
             </a>
           </section>
@@ -159,17 +159,14 @@ function HomePage() {
             <section id="profile" className="flex justify-center pt-2">
               <div className="flex justify-center rounded-full">
                 <img
-                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[360px]"
+                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[260px]"
                   src={aboutData.profilePic}
                   alt="GitHub Profile Pic"
+                  title="GitHub Profile Pic"
                 ></img>
               </div>
             </section>
-            <section id="location" className="flex justify-center py-1 pr-4">
-              <FontAwesomeIcon
-                icon={faLocationDot}
-                className="px-2 pt-1 text-accent xxs:text-lg md:text-lg dark:text-darkAccent"
-              />
+            <section id="location" className="flex justify-center py-1">
               <span className="subheading-text text-secondary dark:text-primary">
                 {aboutData.location}
               </span>
@@ -183,29 +180,32 @@ function HomePage() {
                 href="https://github.com/vikiru"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="github-url"
+                id="GitHub Profile Link"
+                title="View my GitHub"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
                 href="https://www.linkedin.com/in/viskirubakaran/"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="linkedin-url"
+                id="LinkedIn Link"
+                title="View my LinkedIn"
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
+                  className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl dark:text-darkAccent"
                 />
               </a>
               <a
                 href="mailto:viskirubakaran@outlook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="email"
+                id="Email Link"
+                title="Send me an email"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -249,7 +249,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary">
                   Read more
                 </h2>
               </Link>
@@ -261,8 +261,8 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-                  View projects
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary ">
+                  View my work
                 </h2>
               </Link>
             </div>
@@ -273,7 +273,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="email"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary">
                   Contact me
                 </h2>
               </a>

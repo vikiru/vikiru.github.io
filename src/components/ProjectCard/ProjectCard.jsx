@@ -32,14 +32,14 @@ function ProjectCard(props) {
 
       <section
         id="technologies-used"
-        className="m-2 mx-auto grid max-w-lg justify-center py-2 sm:grid-cols-2 lg:gap-2"
+        className="m-2 mx-auto grid max-w-lg justify-center py-2 xs:grid-cols-2 sm:grid-cols-2"
       >
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] md:w-[80%] xl:w-full dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
-            <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
+            <h2 className="body-text py-2 text-center text-primary dark:text-primary">
               {tech}
             </h2>
           </div>
@@ -56,6 +56,8 @@ function ProjectCard(props) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              id="Project GitHub Link"
+              title="View the GitHub repository"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -68,6 +70,8 @@ function ProjectCard(props) {
               href={project.documentationUrl}
               target="_blank"
               rel="noopener noreferrer"
+              id="Project Documentation Link"
+              title="View the project documentation"
             >
               <FontAwesomeIcon
                 icon={faBookOpen}
