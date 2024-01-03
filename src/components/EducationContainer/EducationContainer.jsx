@@ -60,7 +60,9 @@ function EducationContainer() {
       {/* Coursera Section - XXS - XL Screens */}
       <section className="m-2 mx-auto" id="coursera-certificate-info">
         <div className="px-4">
-          <h2 className="heading-text uppercase dark:text-primary">Coursera</h2>
+          <h2 className="subheading-text uppercase dark:text-primary">
+            Coursera
+          </h2>
         </div>
         {courseraCertificates.map((certificate) => (
           <div
