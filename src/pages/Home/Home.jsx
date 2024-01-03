@@ -55,9 +55,9 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
                   Read more
-                </p>
+                </h2>
               </Link>
             </div>
             <div className="cta-btn">
@@ -67,9 +67,9 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
                   View my work
-                </p>
+                </h2>
               </Link>
             </div>
             <div className="cta-btn">
@@ -79,9 +79,9 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <p className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
                   Contact me
-                </p>
+                </h2>
               </Link>
             </div>
           </section>
@@ -90,7 +90,7 @@ function HomePage() {
         <section id="profile" className="mx-auto mr-10">
           <div className="m-auto flex justify-center rounded-full  py-2">
             <img
-              className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px] xl:w-[600px]"
+              className="xxs:h-30 w-full rounded-full xxs:w-20 lg:h-full lg:w-[500px] xl:h-[300px] xl:w-[300px]"
               src={aboutData.profilePic}
               alt="GitHub Profile Pic"
               title="GitHub Profile Pic"
@@ -249,7 +249,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary">
                   Read more
                 </h2>
               </Link>
@@ -261,8 +261,8 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-                  View projects
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary ">
+                  View my work
                 </h2>
               </Link>
             </div>
@@ -273,7 +273,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="email"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary">
                   Contact me
                 </h2>
               </a>
