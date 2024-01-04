@@ -43,6 +43,7 @@ function NavBar() {
           </button>
         </div>
       </section>
+
       {isOpen ? (
         <section className="block justify-center lg:hidden" id="nav-links">
           <Link to="/">
@@ -50,16 +51,19 @@ function NavBar() {
               Home
             </h2>
           </Link>
+
           <Link to="/about">
             <h2 className="subheading-text bg-secondary p-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
               About
             </h2>
           </Link>
+
           <Link to="/education/courses">
             <h2 className="subheading-text bg-secondary p-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
               Courses
             </h2>
           </Link>
+
           <Link to="/projects">
             <h2 className="subheading-text bg-secondary p-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
               Projects
@@ -77,6 +81,7 @@ function NavBar() {
               <span className="text-accent dark:text-darkAccent">kan</span>
             </h2>
           </div>
+
           <section id="nav-links" className="flex justify-center pt-3 xl:pt-6">
             {navData.map((nav) => (
               <Link key={nav.navTitle} to={nav.navLink}>

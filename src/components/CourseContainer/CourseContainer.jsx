@@ -12,18 +12,21 @@ function CourseContainer() {
             {educationData.universityName}
           </h2>
         </div>
+
         <div>
           <h3 className="subheading-text dark:text-primary">
             {educationData.degree} - {educationData.acronym}.,{" "}
             {educationData.degreeProgram}
           </h3>
         </div>
+
         <div>
           <h3 className="body-text uppercase dark:text-primary">
             {educationData.enrollmentStart} - {educationData.enrollmentEnd}
           </h3>
         </div>
       </section>
+
       <section id="course-container" className="pb-6">
         {courseData.years.map((year) => (
           <section

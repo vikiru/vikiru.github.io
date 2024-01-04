@@ -37,12 +37,14 @@ function EducationContainer() {
                 {educationData.degreeProgram}
               </p>
             </div>
+
             <div className="pt-1">
               <h3 className="body-text uppercase tracking-wide  dark:text-primary">
                 {educationData.enrollmentStart} - {educationData.enrollmentEnd}
               </h3>
             </div>
           </div>
+
           <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"

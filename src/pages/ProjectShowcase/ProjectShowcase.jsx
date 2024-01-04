@@ -14,7 +14,7 @@ function ProjectShowcasePage(props) {
       <NavBar />
       <main>
         <section
-          className="bg-primary p-4 pb-2 xxs:p-2 dark:bg-darkPrimary"
+          className="bg-primary p-4 pb-2 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
           id="project-info"
         >
           <h2 className="heading-text pb-2 dark:text-primary">
@@ -45,7 +45,7 @@ function ProjectShowcasePage(props) {
                 key={tech}
                 className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
               >
-                <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
+                <h2 className="body-text m-auto p-2 text-center text-primary dark:text-primary">
                   {tech}
                 </h2>
               </div>
@@ -94,18 +94,16 @@ function ProjectShowcasePage(props) {
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="flex flex-col">
+            <div className="mx-auto flex flex-col">
               <video
                 muted
                 controls
                 preload="auto"
                 title={`${project.name} Demo`}
+                alt={`${project.name} Demo`}
+                className="h-auto w-full"
               >
-                <source
-                  src={project.videoPath}
-                  alt={`${project.name} Demo`}
-                  type="video/mp4"
-                />
+                <source src={project.videoPath} type="video/mp4" />
               </video>
             </div>
           </section>

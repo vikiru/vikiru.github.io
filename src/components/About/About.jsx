@@ -15,6 +15,7 @@ function About() {
             As a recent graduate in software engineering, I stand on the
             precipice of an exciting journey into the professional realm.
           </p>
+
           <p className="body-text mt-2 text-secondary dark:text-primary">
             Equipped with a solid foundation of knowledge and a thirst for
             learning, I am eager to navigate the dynamic landscape of the
@@ -22,6 +23,7 @@ function About() {
             unfamiliar, is fueled by a passion for problem-solving and
             innovation.
           </p>
+
           <p className="body-text mt-2 text-secondary dark:text-primary">
             I am committed to leveraging my skills and education to contribute
             to meaningful projects, fostering growth and driving progress.
