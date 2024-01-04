@@ -6,6 +6,7 @@ import Home from "../Home/Home";
 import ProjectShowcase from "../ProjectShowcase/ProjectShowcase";
 import Projects from "../Projects/Projects";
 import React from "react";
+import Sitemap from "../Sitemap/Sitemap";
 import projectData from "../../assets/data/projects";
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
           element={<ProjectShowcase project={project} />}
         />
       ))}
+      <Route path="/sitemap" element={<Sitemap />} />
     </Routes>
   );
 }
