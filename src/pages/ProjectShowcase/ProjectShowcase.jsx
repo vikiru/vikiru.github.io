@@ -10,11 +10,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 function ProjectShowcasePage(props) {
   const project = props.project;
   return (
-    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
+    <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
       <main>
         <section
-          className="bg-primary p-4 pb-2 xxs:p-2 dark:bg-darkPrimary"
+          className="bg-primary p-4 pb-2 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
           id="project-info"
         >
           <h2 className="heading-text pb-2 dark:text-primary">
@@ -27,23 +27,25 @@ function ProjectShowcasePage(props) {
             </Link>{" "}
             / {project.name}
           </h2>
+
           <h3 className="body-text py-1 uppercase dark:text-primary">
             {project.startDate} - {project.endDate}
           </h3>
+
           <div className="py-2">
             <p className="body-text dark:text-primary">{project.description}</p>
           </div>
 
           <section
             id="technologies-used"
-            className="py-2 xxs:grid sm:grid-cols-3"
+            className="py-2 xxs:grid xxs:grid-cols-2 sm:grid-cols-3"
           >
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
+                className="mb-2 mr-2 rounded-full border-8 border-accent bg-secondary hover:cursor-pointer sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
               >
-                <h2 className="body-text m-auto py-2 text-center text-primary dark:text-primary">
+                <h2 className="body-text m-auto p-2 text-center text-primary dark:text-primary">
                   {tech}
                 </h2>
               </div>
@@ -92,18 +94,16 @@ function ProjectShowcasePage(props) {
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="flex flex-col">
+            <div className="mx-auto flex flex-col">
               <video
                 muted
                 controls
                 preload="auto"
                 title={`${project.name} Demo`}
+                alt={`${project.name} Demo`}
+                className="h-auto w-full"
               >
-                <source
-                  src={project.videoPath}
-                  alt={`${project.name} Demo`}
-                  type="video/mp4"
-                />
+                <source src={project.videoPath} type="video/mp4" />
               </video>
             </div>
           </section>

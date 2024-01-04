@@ -14,7 +14,7 @@ function NavBar() {
   return (
     <nav>
       <section
-        id="navigation-menu"
+        id="small-navigation-menu"
         className="flex items-center justify-between bg-secondary dark:bg-darkSecondary"
       >
         <div className="px-2 lg:hidden">
@@ -24,41 +24,48 @@ function NavBar() {
           </h2>
         </div>
 
-        <div id="small-screen-nav-toggler" className="px-2 xs:block lg:hidden">
+        <div
+          id="small-screen-nav-toggler"
+          className="py-2 pr-3 xs:block lg:hidden"
+        >
           <button onClick={handleClick}>
             {!isOpen ? (
               <FontAwesomeIcon
                 icon={faBars}
-                className="font-primary py-2 pl-1 text-accent dark:text-darkAccent"
+                className="font-primary pl-1 text-accent dark:text-darkAccent"
               />
             ) : (
               <FontAwesomeIcon
                 icon={faX}
-                className="font-primary py-2 pl-1 text-accent dark:text-darkAccent"
+                className="font-primary pl-1 text-accent dark:text-darkAccent"
               />
             )}
           </button>
         </div>
       </section>
+
       {isOpen ? (
         <section className="block justify-center lg:hidden" id="nav-links">
           <Link to="/">
-            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary p-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
               Home
             </h2>
           </Link>
+
           <Link to="/about">
-            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary p-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
               About
             </h2>
           </Link>
+
           <Link to="/education/courses">
-            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary p-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
               Courses
             </h2>
           </Link>
+
           <Link to="/projects">
-            <h2 className="subheading-text bg-secondary px-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkPrimary dark:text-primary dark:hover:decoration-darkAccent">
+            <h2 className="subheading-text bg-secondary p-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
               Projects
             </h2>
           </Link>
@@ -74,6 +81,7 @@ function NavBar() {
               <span className="text-accent dark:text-darkAccent">kan</span>
             </h2>
           </div>
+
           <section id="nav-links" className="flex justify-center pt-3 xl:pt-6">
             {navData.map((nav) => (
               <Link key={nav.navTitle} to={nav.navLink}>

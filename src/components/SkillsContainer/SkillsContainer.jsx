@@ -8,6 +8,7 @@ function SkillsContainer() {
         <h2 className="heading-text uppercase underline dark:text-primary">
           Skills
         </h2>
+
         <div className="lg:grid lg:grid-cols-2">
           {Object.keys(skillsData).map((skillCategory) => (
             <div key={skillCategory} className="py-2" id={skillCategory}>
