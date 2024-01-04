@@ -14,7 +14,7 @@ function ProjectCard(props) {
   return (
     <section
       id={project.name}
-      className="mt-2 rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:border-darkAccent dark:bg-darkSecondary"
+      className="mt-2 rounded-lg border-8 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:border-darkAccent dark:bg-darkSecondary"
     >
       <h2 className="heading-text px-2 pt-2 text-center text-secondary dark:text-primary">
         {project.name}
@@ -37,7 +37,7 @@ function ProjectCard(props) {
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="mx-auto mb-2 rounded-full border-8 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
             <h2 className="body-text p-2 text-center text-primary dark:text-primary">
               {tech}
