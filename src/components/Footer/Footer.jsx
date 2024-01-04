@@ -15,7 +15,7 @@ function Footer() {
           id="logo"
           className="md:col-span-2 md:mx-auto md:flex md:justify-center lg:py-2"
         >
-          <h2 className=" font-cinzel tracking-widest text-primary xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
+          <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
             <span className="text-primary  dark:text-primary">Visa</span>
             <span className="text-accent dark:text-darkAccent">kan</span>
           </h2>
@@ -62,7 +62,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="lg:ease-in-out-anim text-white p-2 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white p-1 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
 
@@ -75,7 +75,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="lg:ease-in-out-anim text-white p-2 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white p-1 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
 
@@ -88,7 +88,7 @@ function Footer() {
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="lg:ease-in-out-anim text-white p-2 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
+                    className="lg:ease-in-out-anim text-white p-1 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
                   />
                 </a>
               </div>
@@ -104,6 +104,19 @@ function Footer() {
             Visakan Kirubakaran &copy; {new Date().getFullYear()}. All rights
             reserved.
           </p>
+        </div>
+        <div>
+          <Link
+            to="/sitemap"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="Sitemap"
+            title="View the sitemap for this website"
+          >
+            <p className="text-center text-primary decoration-accent hover:underline xxs:text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl dark:text-primary dark:decoration-darkAccent">
+              Sitemap
+            </p>
+          </Link>
         </div>
       </section>
     </footer>
