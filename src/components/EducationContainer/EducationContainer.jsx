@@ -45,7 +45,7 @@ function EducationContainer() {
             </div>
           </div>
 
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               target="_blank"
@@ -54,7 +54,8 @@ function EducationContainer() {
               id="Courses Link"
             >
               <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
-                View courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                View courses {"  "}
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h2>
             </Link>
           </div>
@@ -86,7 +87,7 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"

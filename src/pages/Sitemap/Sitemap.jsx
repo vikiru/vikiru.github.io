@@ -1,7 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "./../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import NavBar from "./../../components/NavBar/NavBar";
 import React from "react";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import projectData from "../../assets/data/projects";
 
 function Sitemap() {
@@ -10,7 +12,7 @@ function Sitemap() {
       <NavBar />
       <main>
         <div className="px-4 pt-4">
-          <h2 className="heading-text uppercase underline dark:text-darkAccent">
+          <h2 className="heading-text uppercase text-secondary underline dark:text-primary">
             Sitemap
           </h2>
         </div>
@@ -25,7 +27,7 @@ function Sitemap() {
               title="View the homepage"
             >
               <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
-                Home
+                Home <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h3>
             </Link>
           </div>
@@ -39,7 +41,7 @@ function Sitemap() {
               title="Read more about me"
             >
               <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
-                About
+                About <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h3>
             </Link>
 
@@ -52,7 +54,7 @@ function Sitemap() {
                 title="View my university courses"
               >
                 <h4 className="body-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
-                  Courses
+                  Courses <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </h4>
               </Link>
             </div>
@@ -66,7 +68,7 @@ function Sitemap() {
               title="Read more about me"
             >
               <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
-                Projects
+                Projects <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h3>
             </Link>
 
@@ -79,7 +81,8 @@ function Sitemap() {
                   title={"Read more about " + project.name}
                 >
                   <h4 className="body-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
-                    {project.name}
+                    {project.name}{" "}
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </h4>
                 </Link>
               </div>
