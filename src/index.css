@@ -11,14 +11,17 @@ body {
 
 h2 {
   font-family: "Raleway", sans-serif;
+  text-align: left;
 }
 
 h3 {
   font-family: "Open Sans", sans-serif;
+  text-align: left;
 }
 
 p {
   font-family: "Lato", sans-serif;
+  text-align: left;
 }
 
 @layer utilities {
@@ -41,7 +44,7 @@ p {
   }
 
   .cta-btn {
-    @apply rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  lg:w-full dark:border-darkPrimary dark:bg-darkAccent dark:hover:bg-darkAccent/80;
+    @apply rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 lg:w-full  dark:border-darkPrimary dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80;
   }
 
   .social-icons {

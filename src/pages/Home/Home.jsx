@@ -30,11 +30,12 @@ function HomePage() {
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
               </span>{" "}
-              with a passion for software and web development. Continual
-              learning is my driving force, and I strive to apply my expanding
-              knowledge to meaningful projects.
+              with a passion for software and web development.
             </p>
-
+            <p className="body-text pt-2 text-secondary dark:text-primary">
+              Continual learning is my driving force, and I strive to apply my
+              expanding knowledge to meaningful projects.
+            </p>
             <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
               <span className="font-semibold text-accent dark:text-darkAccent">
@@ -61,7 +62,7 @@ function HomePage() {
                 id="about"
                 title="Read more about me"
               >
-                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:text-primary">
                   Read more
                 </h2>
               </Link>
@@ -75,7 +76,7 @@ function HomePage() {
                 id="projects"
                 title="View my GitHub projects"
               >
-                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:text-primary">
                   View my work
                 </h2>
               </Link>
@@ -89,7 +90,7 @@ function HomePage() {
                 id="email"
                 title="Send me an email"
               >
-                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary">
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:text-primary">
                   Contact me
                 </h2>
               </Link>
@@ -222,9 +223,11 @@ function HomePage() {
               <span className="font-semibold text-accent dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
               </span>{" "}
-              with a passion for software and web development. Continual
-              learning is my driving force, and I strive to apply my expanding
-              knowledge to meaningful projects.
+              with a passion for software and web development.
+            </p>
+            <p className="body-text pt-2 dark:text-primary">
+              Continual learning is my driving force, and I strive to apply my
+              expanding knowledge to meaningful projects.
             </p>
             <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
@@ -254,7 +257,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="about"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
                   Read more
                 </h2>
               </Link>
@@ -267,7 +270,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="projects"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary ">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
                   View my work
                 </h2>
               </Link>
@@ -280,7 +283,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 id="email"
               >
-                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary">
+                <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
                   Contact me
                 </h2>
               </a>

@@ -14,7 +14,7 @@ function ProjectShowcasePage(props) {
       <NavBar />
       <main>
         <section
-          className="bg-primary p-4 pb-2 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
+          className="bg-primary p-4 pb-6 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
           id="project-info"
         >
           <h2 className="heading-text pb-2 dark:text-primary">
@@ -38,12 +38,12 @@ function ProjectShowcasePage(props) {
 
           <section
             id="technologies-used"
-            className="py-2 xxs:grid xxs:grid-cols-2 sm:grid-cols-3"
+            className="py-2 xxs:grid xxs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-3"
           >
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
+                className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer xxs:w-[90%] sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
               >
                 <h2 className="body-text m-auto p-2 text-center text-primary dark:text-primary">
                   {tech}
@@ -80,29 +80,10 @@ function ProjectShowcasePage(props) {
           </section>
         </section>
 
-        {project.videoPath !== "" && (
-          <section
-            id="project-demo"
-            className="w-full bg-primary pb-2 xxs:p-2 dark:bg-darkPrimary"
-          >
-            <h2 className="heading-text py-2 uppercase underline dark:text-primary">
-              Demo
-            </h2>
-            <div className="container flex flex-col">
-              <video
-                muted
-                controls
-                preload="auto"
-                title={`${project.name} Demo`}
-                alt={`${project.name} Demo`}
-              >
-                <source src={project.videoPath} type="video/mp4" />
-              </video>
-            </div>
-          </section>
-        )}
-
-        <section id="project-accomplishments" className="pb-6 xxs:px-2 lg:px-4">
+        <section
+          id="project-accomplishments"
+          className="p-4 pb-6 xxs:px-2 lg:px-4"
+        >
           <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
             Accomplishments
           </h2>
@@ -119,6 +100,30 @@ function ProjectShowcasePage(props) {
             </ul>
           </div>
         </section>
+
+        {project.videoPath !== "" && (
+          <section
+            id="project-demo"
+            className="w-full bg-primary xxs:p-2 dark:bg-darkPrimary"
+          >
+            <h2 className="heading-text py-2 uppercase underline dark:text-primary">
+              Demo
+            </h2>
+            <div className="container mx-auto flex min-h-screen flex-col">
+              <video
+                muted
+                controls
+                preload="auto"
+                title={`${project.name} Demo`}
+                alt={`${project.name} Demo`}
+                height="1500"
+                width="100%"
+              >
+                <source src={project.videoPath} type="video/mp4" />
+              </video>
+            </div>
+          </section>
+        )}
       </main>
       <Footer />
     </div>

@@ -14,7 +14,7 @@ function ProjectCard(props) {
   return (
     <section
       id={project.name}
-      className="mt-2 rounded-lg border-8 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:border-darkAccent dark:bg-darkSecondary"
+      className="mt-2 rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:border-darkAccent dark:bg-darkSecondary"
     >
       <h2 className="heading-text px-2 pt-2 text-center text-secondary dark:text-primary">
         {project.name}
@@ -32,12 +32,12 @@ function ProjectCard(props) {
 
       <section
         id="technologies-used"
-        className="m-2 mx-auto grid justify-center py-2 sm:grid-cols-2"
+        className="m-2 mx-auto grid justify-center py-2 xs:grid-cols-2"
       >
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 rounded-full border-8 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 lg:w-[50%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
             <h2 className="body-text p-2 text-center text-primary dark:text-primary">
               {tech}
@@ -59,10 +59,7 @@ function ProjectCard(props) {
               id="Project GitHub Link"
               title="View the GitHub repository"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="lg:ease-in-out-anim pr-4 text-accent xxs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
-              />
+              <FontAwesomeIcon icon={faGithub} className="social-icons" />
             </a>
           )}
           {project.documentationUrl != "" && (
@@ -73,10 +70,7 @@ function ProjectCard(props) {
               id="Project Documentation Link"
               title="View the project documentation"
             >
-              <FontAwesomeIcon
-                icon={faBookOpen}
-                className="lg:ease-in-out-anim pr-1 text-accent xxs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
-              />
+              <FontAwesomeIcon icon={faBookOpen} className="social-icons" />
             </a>
           )}
         </section>
