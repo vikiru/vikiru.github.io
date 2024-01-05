@@ -13,7 +13,7 @@ function Footer() {
         {/*  Logo */}
         <section
           id="logo"
-          className="md:col-span-2 md:mx-auto md:flex md:justify-center lg:py-2"
+          className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center lg:pt-4"
         >
           <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
             <span className="text-primary  dark:text-primary">Visa</span>
@@ -42,6 +42,8 @@ function Footer() {
                     hover:underline
                     dark:text-primary
                     dark:decoration-darkAccent"
+                  title={navItem.navDesc}
+                  id={navItem.navDesc}
                 >
                   {navItem.navTitle}
                 </Link>
@@ -60,15 +62,12 @@ function Footer() {
                 Ottawa, ON
               </h2>
 
-              <div
-                className="flex justify-center space-x-2 pt-1"
-                id="social-icons"
-              >
+              <div className="flex justify-center pt-1" id="social-icons">
                 <a
                   href="https://github.com/vikiru"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="GitHub Profile Link"
+                  id="GitHub Profile Link - Footer"
                   title="View my GitHub"
                 >
                   <FontAwesomeIcon icon={faGithub} className="social-icons" />
@@ -78,7 +77,7 @@ function Footer() {
                   href="https://www.linkedin.com/in/viskirubakaran/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  id="LinkedIn Link"
+                  id="LinkedIn Link - Footer"
                   title="View my LinkedIn"
                 >
                   <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
@@ -86,9 +85,9 @@ function Footer() {
 
                 <a
                   href="mailto:viskirubakaran@outlook.com"
-                  target="_blank"
+                  target="_top"
                   rel="noopener noreferrer"
-                  id="Email Link"
+                  id="Email Link - Footer"
                   title="Send me an email"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="social-icons" />

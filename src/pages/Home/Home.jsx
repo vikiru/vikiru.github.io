@@ -85,7 +85,7 @@ function HomePage() {
             <div className="cta-btn">
               <Link
                 to="mailto:viskirubakaran@outlook.com"
-                target="_blank"
+                target="_top"
                 rel="noopener noreferrer"
                 id="email"
                 title="Send me an email"
@@ -141,7 +141,7 @@ function HomePage() {
 
             <a
               href="mailto:viskirubakaran@outlook.com"
-              target="_blank"
+              target="_top"
               rel="noopener noreferrer"
               id="Email Link"
               title="Send me an email"
@@ -208,7 +208,7 @@ function HomePage() {
 
               <a
                 href="mailto:viskirubakaran@outlook.com"
-                target="_blank"
+                target="_top"
                 rel="noopener noreferrer"
                 id="Email Link"
                 title="Send me an email"
@@ -279,7 +279,7 @@ function HomePage() {
             <div className="cta-btn">
               <a
                 href="mailto:viskirubakaran@outlook.com"
-                target="_blank"
+                target="_top"
                 rel="noopener noreferrer"
                 id="email"
               >

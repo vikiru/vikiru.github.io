@@ -81,6 +81,18 @@ function ProjectShowcasePage(props) {
         </section>
 
         <section
+          id="project-contributors"
+          className="p-4 pb-6 xxs:px-2 lg:px-4"
+        >
+          <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
+            Co-Authors
+          </h2>
+          <div className="p-4 pb-6">
+            <h3 className="subheading-text"> {project.contributors} </h3>
+          </div>
+        </section>
+
+        <section
           id="project-accomplishments"
           className="p-4 pb-6 xxs:px-2 lg:px-4"
         >
@@ -104,20 +116,18 @@ function ProjectShowcasePage(props) {
         {project.videoPath !== "" && (
           <section
             id="project-demo"
-            className="w-full bg-primary xxs:p-2 dark:bg-darkPrimary"
+            className="w-full bg-primary p-4 pb-6 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
           >
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="container mx-auto flex min-h-screen flex-col">
+            <div className="container mx-auto w-full flex-col overflow-hidden">
               <video
                 muted
                 controls
                 preload="auto"
                 title={`${project.name} Demo`}
                 alt={`${project.name} Demo`}
-                height="1500"
-                width="100%"
               >
                 <source src={project.videoPath} type="video/mp4" />
               </video>
