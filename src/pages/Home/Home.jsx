@@ -125,10 +125,7 @@ function HomePage() {
               id="GitHub Profile Link"
               title="View my GitHub"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
-              />
+              <FontAwesomeIcon icon={faGithub} className="social-icons" />
             </a>
 
             <a
@@ -138,10 +135,7 @@ function HomePage() {
               id="LinkedIn Link"
               title="View my LinkedIn"
             >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
-              />
+              <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
             </a>
 
             <a
@@ -151,10 +145,7 @@ function HomePage() {
               id="Email Link"
               title="Send me an email"
             >
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className="lg:ease-in-out-anim text-white text-accent xxs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
-              />
+              <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
             </a>
           </section>
         </section>
@@ -201,10 +192,7 @@ function HomePage() {
                 id="GitHub Profile Link"
                 title="View my GitHub"
               >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-3xl sm:text-4xl md:text-5xl dark:text-darkAccent"
-                />
+                <FontAwesomeIcon icon={faGithub} className="social-icons" />
               </a>
 
               <a
@@ -214,10 +202,7 @@ function HomePage() {
                 id="LinkedIn Link"
                 title="View my LinkedIn"
               >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  className="lg:ease-in-out-anim text-white pr-2 text-accent xxs:text-3xl sm:text-4xl md:text-5xl dark:text-darkAccent"
-                />
+                <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
               </a>
 
               <a
@@ -227,10 +212,7 @@ function HomePage() {
                 id="Email Link"
                 title="Send me an email"
               >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  className="lg:ease-in-out-anim text-white text-accent xxs:text-3xl sm:text-4xl md:text-5xl dark:text-darkAccent"
-                />
+                <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
               </a>
             </section>
 

@@ -43,4 +43,8 @@ p {
   .cta-btn {
     @apply rounded-lg border-b-4 border-secondary bg-accent px-2 drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  lg:w-full dark:border-darkPrimary dark:bg-darkAccent dark:hover:bg-darkAccent/80;
   }
+
+  .social-icons {
+    @apply lg:ease-in-out-anim pr-4 text-accent xxs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl dark:text-darkAccent;
+  }
 }

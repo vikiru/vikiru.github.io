@@ -43,7 +43,7 @@ function ProjectShowcasePage(props) {
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2 mr-2 rounded-full border-8 border-accent bg-secondary hover:cursor-pointer sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
+                className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
               >
                 <h2 className="body-text m-auto p-2 text-center text-primary dark:text-primary">
                   {tech}
@@ -62,10 +62,7 @@ function ProjectShowcasePage(props) {
                   id="Project GitHub Link"
                   title="View the GitHub repository"
                 >
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className="lg:ease-in-out-anim pr-4 text-accent xxs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
-                  />
+                  <FontAwesomeIcon icon={faGithub} className="social-icons" />
                 </a>
               )}
               {project.documentationUrl != "" && (
@@ -76,10 +73,7 @@ function ProjectShowcasePage(props) {
                   id="Project Documentation Link"
                   title="View the project documentation"
                 >
-                  <FontAwesomeIcon
-                    icon={faBookOpen}
-                    className="lg:ease-in-out-anim pr-1 text-accent xxs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl dark:text-darkAccent"
-                  />
+                  <FontAwesomeIcon icon={faBookOpen} className="social-icons" />
                 </a>
               )}
             </div>
@@ -94,14 +88,13 @@ function ProjectShowcasePage(props) {
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="mx-auto flex flex-col">
+            <div className="container flex flex-col">
               <video
                 muted
                 controls
                 preload="auto"
                 title={`${project.name} Demo`}
                 alt={`${project.name} Demo`}
-                className="h-auto w-full"
               >
                 <source src={project.videoPath} type="video/mp4" />
               </video>
