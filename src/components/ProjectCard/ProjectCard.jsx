@@ -78,7 +78,7 @@ function ProjectCard(props) {
 
       <section
         id="project-additional-info"
-        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-[90%] dark:bg-darkAccent dark:hover:bg-darkAccent/80"
+        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%]  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
         <Link
           to={project.projectPageUrl}
