@@ -28,11 +28,22 @@ function Footer() {
               Read more
             </h2>
             {navData.map((navItem) => (
-              <div key={navItem.navTitle} className="w-[48px] py-2">
-                <Link to={navItem.navLink}>
-                  <h2 className="body-text text-center text-primary decoration-accent hover:underline dark:text-primary dark:decoration-darkAccent">
-                    {navItem.navTitle}
-                  </h2>
+              <div
+                key={navItem.navTitle}
+                className="mx-auto flex justify-center py-2"
+              >
+                <Link
+                  to={navItem.navLink}
+                  className="
+                    body-text
+                    text-center
+                    text-primary
+                    decoration-accent
+                    hover:underline
+                    dark:text-primary
+                    dark:decoration-darkAccent"
+                >
+                  {navItem.navTitle}
                 </Link>
               </div>
             ))}
