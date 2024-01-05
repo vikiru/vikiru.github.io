@@ -10,7 +10,7 @@ function Sitemap() {
       <NavBar />
       <main>
         <div className="px-4 pt-4">
-          <h2 className="heading-text uppercase underline dark:text-darkAccent">
+          <h2 className="heading-text uppercase text-primary underline dark:text-primary">
             Sitemap
           </h2>
         </div>
