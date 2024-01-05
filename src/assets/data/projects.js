@@ -9,6 +9,7 @@ const projectData = {
       description: "Personal portfolio website.",
       startDate: "Nov 2023",
       endDate: "Dec 2023",
+      contributors: "Project completed individually",
       accomplishments: [
         "Developed a portfolio website using React and TailwindCSS and hosted it via GitHub Pages",
         "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design across various screen sizes",
@@ -34,6 +35,7 @@ const projectData = {
       description: "A multi-purpose Discord bot.",
       startDate: "June 2021",
       endDate: "July 2023",
+      contributors: "Project completed individually",
       accomplishments: [
         "Developed a Discord bot that leveraged 25 external REST APIs to fetch and display JSON data in rich embeds, enhancing user engagement and interactivity",
         "Utilized Sequelize with SQLite to design and manage a database for a Discord-based economy and game-like system",
@@ -61,6 +63,7 @@ const projectData = {
         "A tool for detection and visualization of code smells for object-oriented languages.",
       startDate: "Sept 2022",
       endDate: "Apr 2023",
+      contributors: "Project completed as a group, with 3 co-authors",
       accomplishments: [
         "Integrated Maven and Joern, an existing external static analysis tool via Python",
         "Optimized data retrieval from local Joern server instance by 80%, reducing time to 180s from 840s (or less depending on hardware and os)",
@@ -91,6 +94,7 @@ const projectData = {
       description: "Manufacturing facility simulation.",
       startDate: "Jan 2022",
       endDate: "Apr 2022",
+      contributors: "Project completed individually",
       accomplishments: [
         "Used SimPy to model the facility and its operations based on a given problem statement",
         "Used SciPy and NumPy to perform statistical analysis on the simulation output data and compare different operating policies",
@@ -115,6 +119,7 @@ const projectData = {
         "A SurveyMonkey clone built as a Spring Boot CRUD Web Application.",
       startDate: "Mar 2022",
       endDate: "Apr 2022",
+      contributors: "Project completed as a group, with 2 co-authors",
       accomplishments: [
         "Contributed to the development of a model for survey creation (questions, answers, survey and different users)",
         "Created Thymeleaf pages for key endpoints such as creating and displaying surveys (including survey results)",
@@ -145,6 +150,7 @@ const projectData = {
         "The aim of this project was to create a simulation of an elevator transporting passengers among floors, with the capability to introduce and handle errors that may arise during operation. ",
       startDate: "Jan 2021",
       endDate: "Apr 2021",
+      contributors: "Project completed as a group, with 3 co-authors",
       accomplishments: [
         "Developed UML Class diagrams representing the system design",
         "Added the ability to inject and handle errors that can occur within an elevator such as doors not closing",
@@ -163,6 +169,7 @@ const projectData = {
         "Digital Risk is a re-creation of the board game Risk: Global Domination using Java Swing and following the MVC design pattern.",
       startDate: "Oct 2020",
       endDate: "Dec 2020",
+      contributors: "Project completed as a group, with 3 co-authors",
       accomplishments: [
         "Contributed to the development of a Swing GUI ",
         "Contributed to the development of classes representing aspects of the model, view, and controller of a Risk game",
