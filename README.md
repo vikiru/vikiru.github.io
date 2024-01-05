@@ -140,6 +140,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - **Formatting**: [Prettier](https://prettier.io/)
 - **Code Time Tracking**: [WakaTime](https://wakatime.com/)
 - **Design**: [Figma](https://www.figma.com/) - initial design mockup files can be seen [here](https://www.figma.com/file/eFWKPcabJAf7FLOdOXd5d6/Portfolio-Website?type=design&t=HThRE3vIBx3VTIwe-6)
+- **Analytics**: [Google Analytics](https://marketingplatform.google.com/about/analytics/)
 
 ## 📝 Prerequisites
 
@@ -184,6 +185,7 @@ npm run start
 - [Prettier](https://prettier.io/)
 - [WakaTime](https://wakatime.com/)
 - [Shields Badges](https://github.com/badges/shields)
+- [Favicon Generator](https://favicon.io/favicon-generator/)
 
 ## ©️ License
 
