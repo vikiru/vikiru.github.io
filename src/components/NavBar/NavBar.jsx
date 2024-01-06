@@ -28,7 +28,11 @@ function NavBar() {
           id="small-screen-nav-toggler"
           className="py-2 pr-3 xs:block lg:hidden"
         >
-          <button onClick={handleClick}>
+          <button
+            onClick={handleClick}
+            id="nav-menu"
+            aria-label="Navigation Menu Mobile"
+          >
             {!isOpen ? (
               <FontAwesomeIcon
                 icon={faBars}
