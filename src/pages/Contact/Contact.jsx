@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "./../../components/Footer/Footer";
 import NavBar from "./../../components/NavBar/NavBar";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import kwesforms from "kwesforms";
 
 function Contact() {
@@ -35,6 +37,27 @@ function Contact() {
               <p className="body-text dark:text-primary">
                 Feel free to send me an email using the contact form below, I
                 will try to respond to you as soon as possible.
+              </p>
+            </div>
+
+            <div className="py-2">
+              <p className="body-text dark:text-primary">
+                In case, the form below does not work for any reason, please
+                contact me directly via{" "}
+                <a
+                  href="mailto:viskirubakaran@outlook.com"
+                  target="_top"
+                  id="email-direct"
+                  title="Email me directly via your email"
+                  className="text-accent underline dark:text-darkAccent"
+                >
+                  email
+                </a>{" "}
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  className="text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl"
+                />
+                .
               </p>
             </div>
 
@@ -128,9 +151,9 @@ function Contact() {
 
                 <button
                   type="submit"
-                  id="send-email"
+                  id="email-kwesform"
                   className="cta-btn body-text py-2 uppercase tracking-widest xxs:w-full dark:text-primary"
-                  title="Send me an email"
+                  title="Send me an email through Kwes Forms"
                 >
                   Send Email
                 </button>
