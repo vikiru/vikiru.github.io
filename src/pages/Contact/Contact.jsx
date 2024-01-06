@@ -10,14 +10,22 @@ function Contact() {
   }, []);
 
   function handleSubmit() {
-    confirm("Are you sure you want to send this email?");
+    const form = document.forms["contact-form"];
+    const name = form["name"].value;
+    const email = form["email"].value;
+    const subject = form["subject"].value;
+    const content = form["content"].value;
+
+    if (name !== "" && email !== "" && subject !== "" && content !== "") {
+      confirm("Are you sure you want to send this email?");
+    }
   }
 
   return (
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
       <main>
-        <section id="contact" className="min-h-screen">
+        <section id="contact" className="pb-6">
           <div className="px-4">
             <h2 className="heading-text pt-6 uppercase underline dark:text-primary">
               Contact Me
@@ -32,6 +40,7 @@ function Contact() {
 
             <section id="contact-form" className="pb-6">
               <form
+                name="contact-form"
                 className="kwes-form"
                 action="https://kwesforms.com/api/foreign/forms/OcdSwYrzmf5Uw6fLcCC1"
                 onSubmit={handleSubmit}
@@ -47,10 +56,12 @@ function Contact() {
                   <input
                     type="text"
                     name="name"
+                    id="name"
+                    required
                     className="body-text w-full border-4 border-secondary text-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent"
-                    placeholder="Please enter your full name"
+                    placeholder="Enter full name"
                     title="Please enter your full name"
-                    data-kw-rules="required|max:255"
+                    data-kw-rules="max:255"
                   />
                   <br />
                 </div>
@@ -66,10 +77,33 @@ function Contact() {
                   <input
                     type="email"
                     name="email"
+                    id="email"
+                    required
                     className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary  dark:text-primary dark:hover:border-darkAccent"
                     data-kw-rules="required|email"
-                    placeholder="Please enter your email address"
+                    placeholder="Enter email address"
                     title="Please enter your email address"
+                  />
+                  <br />
+                </div>
+
+                <div className="py-2">
+                  <label
+                    htmlFor="subject"
+                    className="subheading-text dark:text-primary"
+                  >
+                    Subject
+                  </label>
+                  <br />
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary  dark:text-primary dark:hover:border-darkAccent"
+                    required
+                    data-kw-rules="required"
+                    placeholder="Enter email subject"
+                    title="Please enter the reason for your email"
                   />
                   <br />
                 </div>
@@ -87,7 +121,7 @@ function Contact() {
                     className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent"
                     rows="5"
                     cols="50"
-                    placeholder="Please enter your message here"
+                    placeholder="Enter message here"
                     required
                   ></textarea>
                 </div>
@@ -95,7 +129,7 @@ function Contact() {
                 <button
                   type="submit"
                   id="send-email"
-                  className="cta-btn py-2 uppercase tracking-widest xxs:w-full dark:text-primary"
+                  className="cta-btn body-text py-2 uppercase tracking-widest xxs:w-full dark:text-primary"
                   title="Send me an email"
                 >
                   Send Email
