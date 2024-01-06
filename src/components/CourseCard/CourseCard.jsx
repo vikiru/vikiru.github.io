@@ -7,7 +7,7 @@ function CourseCard(props) {
     <section
       id={course.courseCode + ":" + course.name}
       key={course.courseCode}
-      className="bg-white rounded-lg border-8 border-accent bg-primary pt-2 shadow-md lg:w-full lg:px-4 lg:pb-4 dark:border-darkAccent dark:bg-darkSecondary"
+      className="bg-white rounded-lg border-4 border-accent bg-primary pt-2 shadow-md lg:w-full lg:px-4 lg:pb-4 dark:border-darkAccent dark:bg-darkSecondary"
     >
       <div>
         <h3 className="subheading-text px-2 dark:text-primary">
