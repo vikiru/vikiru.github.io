@@ -27,7 +27,7 @@ function HomePage() {
             {/* Hero Body Text */}
             <p className="body-text pt-2 dark:text-primary">
               Welcome to my portfolio! I am a dedicated{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
               </span>{" "}
               with a passion for software and web development.
@@ -38,15 +38,15 @@ function HomePage() {
             </p>
             <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 read more
               </span>{" "}
               about me,{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 view
               </span>{" "}
               some of my GitHub projects, or{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 contact me!
               </span>
             </p>
@@ -208,7 +208,7 @@ function HomePage() {
             {/* Hero Body Text */}
             <p className="body-text pt-2 dark:text-primary">
               Welcome to my portfolio! I am a dedicated{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
               </span>{" "}
               with a passion for software and web development.
@@ -219,15 +219,15 @@ function HomePage() {
             </p>
             <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 read more
               </span>{" "}
               about me,{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 view
               </span>{" "}
               some of my GitHub projects, or{" "}
-              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
+              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
                 contact me!
               </span>
             </p>
