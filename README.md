@@ -115,6 +115,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [📝 Prerequisites](#-prerequisites)
 - [⚡ Setup](#-setup)
 - [🚀 Run](#-run)
+- [📜 Available Scripts](#-available-scripts)
 - [✨ Acknowledgements](#-acknowledgements)
 - [©️ License](#️-license)
 
@@ -170,20 +171,25 @@ The portfolio website can be started locally via the following command:
 ```bash
 npm run start
 ```
+Once started, you can access the website locally via:
+
+```bash
+localhost:3000
+```
+
+## 📜 Available Scripts
+
+1. `npm run start`: Start the local development server to make changes to the application
+2. `npm run build`: Build the ouput directory with all of the neccessary files, optimized for production
+3. `npm run lint`: Lint all files using [ESLint](https://eslint.org/)
+4. `npm run prettier`: Format all files using [Prettier](https://prettier.io/)
 
 ## ✨ Acknowledgements
 
-- [React](https://react.dev/)
-- [React Router](https://reactrouter.com/en/main)
-- [TailwindCSS](https://tailwindcss.com/)
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [Font Awesome Icons](https://fontawesome.com/)
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
 - [GitHub Actions](https://github.com/features/actions)
-- [GitHub Pages](https://pages.github.com/)
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [WakaTime](https://wakatime.com/)
 - [Shields Badges](https://github.com/badges/shields)
 - [Favicon Generator](https://favicon.io/favicon-generator/)
 
