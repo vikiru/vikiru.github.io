@@ -87,7 +87,7 @@ function ProjectShowcasePage(props) {
           <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
             Co-Authors
           </h2>
-          <div className="p-4">
+          <div className="py-2">
             <h3 className="subheading-text text-secondary dark:text-primary">
               {project.contributors}
             </h3>
