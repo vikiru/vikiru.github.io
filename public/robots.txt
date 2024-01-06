@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://vikiru.github.io/sitemap.xml
+Sitemap: https://vikiru.vercel.app/sitemap.xml
