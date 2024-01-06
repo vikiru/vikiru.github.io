@@ -32,12 +32,12 @@ function ProjectCard(props) {
 
       <section
         id="technologies-used"
-        className="container m-2 mx-auto grid justify-center py-2 xs:grid-cols-2"
+        className="container m-2 mx-auto grid justify-center py-2 sm:grid-cols-2"
       >
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 lg:w-[50%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[100%] sm:px-2 lg:w-[50%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
             <h2 className="body-text p-2 text-center text-primary dark:text-primary">
               {tech}
@@ -56,7 +56,7 @@ function ProjectCard(props) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              id="Project GitHub Link"
+              id={project.name + "- github"}
               title="View the GitHub repository"
             >
               <FontAwesomeIcon icon={faGithub} className="social-icons" />
@@ -67,7 +67,7 @@ function ProjectCard(props) {
               href={project.documentationUrl}
               target="_blank"
               rel="noopener noreferrer"
-              id="Project Documentation Link"
+              id={project.name + "- documentation"}
               title="View the project documentation"
             >
               <FontAwesomeIcon icon={faBookOpen} className="social-icons" />
@@ -80,7 +80,7 @@ function ProjectCard(props) {
         id="project-additional-info"
         className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%]  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
-        <Link to={project.projectPageUrl} id="about">
+        <Link to={project.projectPageUrl} id={project.name + "-showcase"}>
           <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary dark:text-primary">
             Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </h2>
