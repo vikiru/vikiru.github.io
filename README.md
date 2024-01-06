@@ -179,10 +179,29 @@ localhost:3000
 
 ## 📜 Available Scripts
 
-1. `npm run start`: Start the local development server to make changes to the application
-2. `npm run build`: Build the ouput directory with all of the neccessary files, optimized for production
-3. `npm run lint`: Lint all files using [ESLint](https://eslint.org/)
-4. `npm run prettier`: Format all files using [Prettier](https://prettier.io/)
+1. Start the local development server to make changes to the application
+
+```bash
+npm run start
+```
+
+2. Build the ouput directory with all of the neccessary files, optimized for production
+
+```bash
+npm run build
+```
+
+3. Lint all files using [ESLint](https://eslint.org/)
+
+```bash
+npm run lint
+```
+
+4. Format all files using [Prettier](https://prettier.io/)
+
+```bash
+npm run prettier
+```
 
 ## ✨ Acknowledgements
 
