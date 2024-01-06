@@ -32,12 +32,12 @@ function ProjectCard(props) {
 
       <section
         id="technologies-used"
-        className="m-2 mx-auto grid justify-center py-2 xs:grid-cols-2"
+        className="container m-2 mx-auto grid justify-center py-2 xs:grid-cols-2"
       >
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 lg:w-[50%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[90%] xxs:px-2 lg:w-full dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
             <h2 className="body-text p-2 text-center text-primary dark:text-primary">
               {tech}
