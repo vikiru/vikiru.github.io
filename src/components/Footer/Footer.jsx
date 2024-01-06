@@ -30,12 +30,12 @@ function Footer() {
             {navData.map((navItem) => (
               <div
                 key={navItem.navTitle}
-                className="mx-auto flex justify-center py-2"
+                className="mx-auto flex justify-center p-2"
               >
                 <Link
                   to={navItem.navLink}
                   className="
-                    body-text
+                    subheading-text
                     text-center
                     text-primary
                     decoration-accent
