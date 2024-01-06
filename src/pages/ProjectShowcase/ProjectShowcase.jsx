@@ -80,10 +80,7 @@ function ProjectShowcasePage(props) {
           </section>
         </section>
 
-        <section
-          id="project-contributors"
-          className="p-4 pb-6 xxs:px-2 lg:px-4"
-        >
+        <section id="project-contributors" className="xxs:px-2 lg:px-4">
           <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
             Co-Authors
           </h2>
