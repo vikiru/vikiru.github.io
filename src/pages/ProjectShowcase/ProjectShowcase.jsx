@@ -43,9 +43,9 @@ function ProjectShowcasePage(props) {
             {project.technologiesUsed.map((tech) => (
               <div
                 key={tech}
-                className="mb-2 mr-2 rounded-full border-4 border-accent bg-secondary hover:cursor-pointer xxs:w-[90%] sm:w-[80%] xl:w-[90%] dark:border-darkAccent dark:bg-darkSecondary"
+                className="container mb-2 rounded-full bg-secondary hover:cursor-default xxs:w-[100%] sm:w-[80%] sm:px-2 lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
               >
-                <h2 className="body-text m-auto p-2 text-center text-primary dark:text-primary">
+                <h2 className="tech-text text-center text-primary dark:text-primary">
                   {tech}
                 </h2>
               </div>
@@ -80,7 +80,7 @@ function ProjectShowcasePage(props) {
           </section>
         </section>
 
-        <section id="project-contributors" className="xxs:px-2 lg:px-4">
+        <section id="project-contributors" className="pb-4 xxs:px-2 lg:px-4">
           <h2 className="heading-text uppercase underline dark:text-primary">
             Co-Authors
           </h2>
@@ -120,7 +120,7 @@ function ProjectShowcasePage(props) {
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="mx-auto w-full flex-col overflow-hidden lg:container">
+            <div className="mx-auto h-full w-full flex-col overflow-hidden">
               <video
                 muted
                 controls
