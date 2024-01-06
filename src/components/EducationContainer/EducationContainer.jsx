@@ -48,8 +48,6 @@ function EducationContainer() {
           <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
-              target="_blank"
-              rel="noopener noreferrer"
               title="View my courses"
               id="Courses Link"
             >

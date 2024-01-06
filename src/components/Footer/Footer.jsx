@@ -83,15 +83,15 @@ function Footer() {
                   <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
                 </a>
 
-                <a
-                  href="mailto:viskirubakaran@outlook.com"
+                <Link
+                  to="/contact"
                   target="_top"
                   rel="noopener noreferrer"
                   id="Email Link - Footer"
                   title="Send me an email"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
-                </a>
+                </Link>
               </div>
             </div>
           </section>

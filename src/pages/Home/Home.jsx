@@ -55,13 +55,7 @@ function HomePage() {
           {/* Call to Action */}
           <section id="cta" className="flex gap-3 py-4">
             <div className="cta-btn">
-              <Link
-                to="/about"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="about"
-                title="Read more about me"
-              >
+              <Link to="/about" id="about" title="Read more about me">
                 <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:text-primary">
                   Read more
                 </h2>
@@ -71,8 +65,6 @@ function HomePage() {
             <div className="cta-btn">
               <Link
                 to="/projects"
-                target="_blank"
-                rel="noopener noreferrer"
                 id="projects"
                 title="View my GitHub projects"
               >
@@ -84,7 +76,7 @@ function HomePage() {
 
             <div className="cta-btn">
               <Link
-                to="mailto:viskirubakaran@outlook.com"
+                to="/contact"
                 target="_top"
                 rel="noopener noreferrer"
                 id="email"
@@ -139,15 +131,9 @@ function HomePage() {
               <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
             </a>
 
-            <a
-              href="mailto:viskirubakaran@outlook.com"
-              target="_top"
-              rel="noopener noreferrer"
-              id="Email Link"
-              title="Send me an email"
-            >
+            <Link to="/contact" id="Email Link" title="Send me an email">
               <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
-            </a>
+            </Link>
           </section>
         </section>
       </main>
@@ -206,15 +192,9 @@ function HomePage() {
                 <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
               </a>
 
-              <a
-                href="mailto:viskirubakaran@outlook.com"
-                target="_top"
-                rel="noopener noreferrer"
-                id="Email Link"
-                title="Send me an email"
-              >
+              <Link to="/contact" id="Email Link" title="Send me an email">
                 <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
-              </a>
+              </Link>
             </section>
 
             {/* Hero Body Text */}
@@ -251,12 +231,7 @@ function HomePage() {
             className="gap-3 py-4 xxs:space-y-2 lg:flex lg:space-y-0"
           >
             <div className="cta-btn">
-              <Link
-                to="/about"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="about"
-              >
+              <Link to="/about" id="about">
                 <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
                   Read more
                 </h2>
@@ -264,12 +239,7 @@ function HomePage() {
             </div>
 
             <div className="cta-btn">
-              <Link
-                to="/projects"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="projects"
-              >
+              <Link to="/projects" id="projects">
                 <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
                   View my work
                 </h2>
@@ -277,8 +247,8 @@ function HomePage() {
             </div>
 
             <div className="cta-btn">
-              <a
-                href="mailto:viskirubakaran@outlook.com"
+              <Link
+                to="/contact"
                 target="_top"
                 rel="noopener noreferrer"
                 id="email"
@@ -286,7 +256,7 @@ function HomePage() {
                 <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
                   Contact me
                 </h2>
-              </a>
+              </Link>
             </div>
           </section>
         </section>

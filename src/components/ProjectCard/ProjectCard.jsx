@@ -80,12 +80,7 @@ function ProjectCard(props) {
         id="project-additional-info"
         className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%]  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
-        <Link
-          to={project.projectPageUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          id="about"
-        >
+        <Link to={project.projectPageUrl} id="about">
           <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary dark:text-primary">
             Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </h2>
