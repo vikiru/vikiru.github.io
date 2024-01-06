@@ -12,8 +12,8 @@ function HomePage() {
   return (
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
-      {/* Main Content - 2XL and up */}
-      <main className="gap-2 p-10 xxs:hidden 2xl:grid 2xl:grid-cols-2">
+      {/* Main Content - 3XL and up */}
+      <main className="gap-2 p-10 xxs:hidden 3xl:grid 3xl:grid-cols-2">
         <section>
           {/* Hero Section*/}
           <section id="hero">
@@ -138,8 +138,8 @@ function HomePage() {
         </section>
       </main>
 
-      {/* Main Content - XXS - 2XL */}
-      <main className="p-10 2xl:hidden">
+      {/* Main Content - XXS - 3XL */}
+      <main className="p-10 3xl:hidden">
         <section>
           {/* Hero Section */}
           <section id="hero">
