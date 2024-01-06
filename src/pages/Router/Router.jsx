@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import About from "../About/About";
+import Contact from "../Contact/Contact";
 import Courses from "../Courses/Courses";
 import Home from "../Home/Home";
 import ProjectShowcase from "../ProjectShowcase/ProjectShowcase";
@@ -15,6 +16,7 @@ function Router() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/education/courses" element={<Courses />} />
       <Route path="/projects" element={<Projects />} />
       {projects.map((project) => (
