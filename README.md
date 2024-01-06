@@ -31,7 +31,6 @@
 	</a>
 </p>
 
-
 ## 🌐 Portfolio Overview
 
 <p align="justify">My portfolio website serves as a comprehensive showcase of my expertise, abilities, and the breadth of my project experience. It’s crafted using the dynamic capabilities of React coupled with the aesthetic flexibility of TailwindCSS.</p>
@@ -82,7 +81,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 |                   Project Name                    |                                Technologies Used                                 |                            Link                            |
 | :-----------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------: |
-|                 Portfolio Website                 |                       `React`, `React Router`, `TailwindCSS`                     | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
+|                 Portfolio Website                 |                      `React`, `React Router`, `TailwindCSS`                      | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
 |   vikiru.github.io \| Multi-purpose Discord Bot   |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
 |         CodeSmell \| Static Analysis Tool         | `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript` |     [GitHub Repo](https://github.com/vikiru/CodeSmell)     |
 | discrete-sim \| Manufacturing Facility Simulation |                       `Python`, `NumPy`, `SciPy`, `SimPy`                        |   [GitHub Repo](https://github.com/vikiru/discrete-sim)    |
@@ -141,6 +140,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - **Code Time Tracking**: [WakaTime](https://wakatime.com/)
 - **Design**: [Figma](https://www.figma.com/) - initial design mockup files can be seen [here](https://www.figma.com/file/eFWKPcabJAf7FLOdOXd5d6/Portfolio-Website?type=design&t=HThRE3vIBx3VTIwe-6)
 - **Analytics**: [Google Analytics](https://marketingplatform.google.com/about/analytics/)
+- **Contact Form Backend**: [Kwes Forms](https://kwesforms.com/)
 
 ## 📝 Prerequisites
 

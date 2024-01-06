@@ -29,7 +29,7 @@ function EducationContainer() {
           </h3>
         </div>
 
-        <div className="xs:block xl:flex xl:justify-between">
+        <div className="xs:block">
           <div className="py-2">
             <div>
               <p className="subheading-text dark:text-primary">
@@ -45,11 +45,9 @@ function EducationContainer() {
             </div>
           </div>
 
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
-              target="_blank"
-              rel="noopener noreferrer"
               title="View my courses"
               id="Courses Link"
             >
@@ -63,7 +61,10 @@ function EducationContainer() {
       </section>
 
       {/* Coursera Section - XXS - XL Screens */}
-      <section className="m-2 mx-auto" id="coursera-certificate-info">
+      <section
+        className="m-2 mx-auto xxs:block 4xl:hidden"
+        id="coursera-certificate-info"
+      >
         <div className="px-4">
           <h2 className="subheading-text uppercase dark:text-primary">
             Coursera
@@ -72,7 +73,7 @@ function EducationContainer() {
         {courseraCertificates.map((certificate) => (
           <div
             key={certificate.certificationName}
-            className="px-4 pb-2 xxs:block xl:flex xl:justify-between"
+            className="px-4 pb-2 xxs:block"
             id={certificate.certificationName.toLowerCase()}
           >
             <div>
@@ -87,7 +88,7 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:mr-5 xl:h-[50%] xl:w-[30%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:mr-5 xl:h-[50%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"

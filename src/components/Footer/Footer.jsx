@@ -30,12 +30,12 @@ function Footer() {
             {navData.map((navItem) => (
               <div
                 key={navItem.navTitle}
-                className="mx-auto flex justify-center py-2"
+                className="mx-auto flex justify-center p-2"
               >
                 <Link
                   to={navItem.navLink}
                   className="
-                    body-text
+                    subheading-text
                     text-center
                     text-primary
                     decoration-accent
@@ -83,15 +83,15 @@ function Footer() {
                   <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
                 </a>
 
-                <a
-                  href="mailto:viskirubakaran@outlook.com"
+                <Link
+                  to="/contact"
                   target="_top"
                   rel="noopener noreferrer"
                   id="Email Link - Footer"
                   title="Send me an email"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
-                </a>
+                </Link>
               </div>
             </div>
           </section>

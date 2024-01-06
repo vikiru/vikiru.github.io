@@ -17,27 +17,23 @@ function Sitemap() {
 
         <div className="pb-6 lg:grid lg:grid-cols-3">
           <div className="px-4 py-2">
-            <Link
-              to="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="home"
-              title="View the homepage"
-            >
+            <Link to="/" id="home" title="View the homepage">
               <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
                 Home
               </h3>
             </Link>
+
+            <div className="py-2">
+              <Link to="/contact" id="contact" title="Send me an email">
+                <h4 className="body-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
+                  Contact
+                </h4>
+              </Link>
+            </div>
           </div>
 
           <div className="px-4 py-2">
-            <Link
-              to="/about"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="about"
-              title="Read more about me"
-            >
+            <Link to="/about" id="about" title="Read more about me">
               <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
                 About
               </h3>
@@ -46,8 +42,6 @@ function Sitemap() {
             <div className="py-2">
               <Link
                 to="/education/courses"
-                target="_blank"
-                rel="noopener noreferrer"
                 id="courses"
                 title="View my university courses"
               >
@@ -58,13 +52,7 @@ function Sitemap() {
             </div>
           </div>
           <div className="px-4 pt-2">
-            <Link
-              to="/projects"
-              target="_blank"
-              rel="noopener noreferrer"
-              id="projects"
-              title="Read more about me"
-            >
+            <Link to="/projects" id="projects" title="Read more about me">
               <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-darkSecondary">
                 Projects
               </h3>
@@ -74,7 +62,6 @@ function Sitemap() {
               <div key={project.name} className="py-2">
                 <Link
                   to={project.projectPageUrl}
-                  rel="noopener noreferrer"
                   id={project.name}
                   title={"Read more about " + project.name}
                 >
