@@ -174,7 +174,7 @@ npm run start
 Once started, you can access the website locally via:
 
 ```bash
-localhost:3000
+http://localhost:3000/
 ```
 
 ## 📜 Available Scripts
