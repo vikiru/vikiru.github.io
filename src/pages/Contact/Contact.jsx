@@ -98,7 +98,7 @@ function Contact() {
                   className="cta-btn py-2 uppercase tracking-widest xxs:w-full dark:text-primary"
                   title="Send me an email"
                 >
-                  Send
+                  Send Email
                 </button>
               </form>
             </section>
