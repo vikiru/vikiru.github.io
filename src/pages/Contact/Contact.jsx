@@ -1,8 +1,18 @@
+import React, { useEffect } from "react";
+
 import Footer from "./../../components/Footer/Footer";
 import NavBar from "./../../components/NavBar/NavBar";
-import React from "react";
+import kwesforms from "kwesforms";
 
 function Contact() {
+  useEffect(() => {
+    kwesforms.init();
+  }, []);
+
+  function handleSubmit() {
+    confirm("Are you sure you want to send this email?");
+  }
+
   return (
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
@@ -21,7 +31,11 @@ function Contact() {
             </div>
 
             <section id="contact-form" className="pb-6">
-              <form>
+              <form
+                className="kwes-form"
+                action="https://kwesforms.com/api/foreign/forms/OcdSwYrzmf5Uw6fLcCC1"
+                onSubmit={handleSubmit}
+              >
                 <div className="py-2">
                   <label htmlFor="name" className="subheading-text">
                     Full Name
@@ -31,9 +45,9 @@ function Contact() {
                     type="text"
                     name="name"
                     className="body-text w-full border-4 border-secondary hover:border-accent dark:hover:border-darkAccent"
-                    required
                     placeholder="Please enter your full name"
                     title="Please enter your full name"
+                    data-kw-rules="required|max:255"
                   />
                   <br />
                 </div>
@@ -47,7 +61,7 @@ function Contact() {
                     type="email"
                     name="email"
                     className="body-text w-full border-4 border-secondary hover:border-accent  dark:hover:border-darkAccent"
-                    required
+                    data-kw-rules="required|email"
                     placeholder="Please enter your email address"
                     title="Please enter your email address"
                   />
@@ -60,6 +74,7 @@ function Contact() {
                   </label>
                   <textarea
                     id="content"
+                    name="content"
                     className="body-text w-full border-4 border-secondary hover:border-accent dark:hover:border-darkAccent"
                     rows="5"
                     cols="50"
@@ -70,7 +85,8 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="cta-btn py-2 uppercase tracking-widest"
+                  className="cta-btn py-2 uppercase tracking-widest xxs:w-full"
+                  title="Send me an email"
                 >
                   Send
                 </button>
