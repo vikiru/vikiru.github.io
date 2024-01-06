@@ -1,5 +1,3 @@
-import "../../index";
-
 import About from "../../components/About/About";
 import EducationContainer from "../../components/EducationContainer/EducationContainer";
 import Footer from "../../components/Footer/Footer";
