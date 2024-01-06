@@ -11,7 +11,7 @@ function ProjectContainer() {
           Projects
         </h2>
 
-        <div id="projects-container" className="mx-auto gap-4 pb-6 pr-2 pt-2">
+        <div id="projects-container" className="mx-auto gap-4 pb-6 pr-2 pt-2 2xl:grid 2xl:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard project={project} key={project.name} />
           ))}

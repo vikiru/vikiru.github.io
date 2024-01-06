@@ -92,7 +92,7 @@ function NavBar() {
 
           <section
             id="nav-links"
-            className="flex justify-between space-x-8 px-2 pt-2 xl:pt-1"
+            className="flex justify-between space-x-8 px-2 pt-0 lg:pt-2"
           >
             {navData.map((nav) => (
               <Link
