@@ -19,7 +19,7 @@ function Contact() {
       <main>
         <section id="contact" className="min-h-screen">
           <div className="px-4">
-            <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
+            <h2 className="heading-text pt-6 uppercase underline dark:text-primary">
               Contact Me
             </h2>
 
