@@ -126,7 +126,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [React Router](https://reactrouter.com/en/main)
 - [TailwindCSS](https://tailwindcss.com/)
 
-**Hosting**: [GitHub Pages](https://pages.github.com/) - deployed using [gh-pages](https://github.com/tschaub/gh-pages) package
+**Hosting**: [Vercel](https://vercel.com/)
 
 **CI/CD**:
 
