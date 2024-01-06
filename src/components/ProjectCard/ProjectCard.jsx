@@ -37,7 +37,7 @@ function ProjectCard(props) {
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="container mx-auto mb-2 rounded-full bg-secondary hover:cursor-default xxs:w-[100%] xxs:px-2 sm:w-[80%] lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[100%] xxs:px-2 sm:w-[80%] lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
             <h2 className="tech-text text-center text-primary dark:text-primary">
               {tech}
