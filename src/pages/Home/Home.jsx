@@ -19,7 +19,7 @@ function HomePage() {
           <section id="hero">
             <h2 className="heading-text dark:text-primary">
               {aboutData.greeting}{" "}
-              <span className="text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary dark:text-darkAccent">
                 {aboutData.fullName}
               </span>
             </h2>
@@ -27,7 +27,7 @@ function HomePage() {
             {/* Hero Body Text */}
             <p className="body-text pt-2 dark:text-primary">
               Welcome to my portfolio! I am a dedicated{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
               </span>{" "}
               with a passion for software and web development.
@@ -38,15 +38,15 @@ function HomePage() {
             </p>
             <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 read more
               </span>{" "}
               about me,{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 view
               </span>{" "}
               some of my GitHub projects, or{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 contact me!
               </span>
             </p>
@@ -55,9 +55,9 @@ function HomePage() {
           {/* Call to Action */}
           <section id="cta" className="flex gap-3 py-4">
             <div className="cta-btn">
-              <Link to="/about" id="about" title="Read more about me">
+              <Link to="/about" id="about-desktop" title="Read more about me">
                 <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:text-primary">
-                  Read more
+                  Read more about me
                 </h2>
               </Link>
             </div>
@@ -65,7 +65,7 @@ function HomePage() {
             <div className="cta-btn">
               <Link
                 to="/projects"
-                id="projects"
+                id="projects-desktop"
                 title="View my GitHub projects"
               >
                 <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:text-primary">
@@ -79,7 +79,7 @@ function HomePage() {
                 to="/contact"
                 target="_top"
                 rel="noopener noreferrer"
-                id="email"
+                id="email-desktop"
                 title="Send me an email"
               >
                 <h2 className="body-text m-auto py-2 text-center font-body font-semibold text-secondary dark:text-primary">
@@ -115,7 +115,7 @@ function HomePage() {
               href="https://github.com/vikiru"
               target="_blank"
               rel="noopener noreferrer"
-              id="GitHub Profile Link"
+              id="GitHub Profile Link - Desktop"
               title="View my GitHub"
             >
               <FontAwesomeIcon icon={faGithub} className="social-icons" />
@@ -125,13 +125,17 @@ function HomePage() {
               href="https://www.linkedin.com/in/viskirubakaran/"
               target="_blank"
               rel="noopener noreferrer"
-              id="LinkedIn Link"
+              id="LinkedIn Link - Desktop"
               title="View my LinkedIn"
             >
               <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
             </a>
 
-            <Link to="/contact" id="Email Link" title="Send me an email">
+            <Link
+              to="/contact"
+              id="Email Link - Desktop"
+              title="Send me an email"
+            >
               <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
             </Link>
           </section>
@@ -145,7 +149,7 @@ function HomePage() {
           <section id="hero">
             <h2 className="heading-text dark:text-primary">
               {aboutData.greeting}{" "}
-              <span className="text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary dark:text-darkAccent">
                 {aboutData.fullName}
               </span>
             </h2>
@@ -176,7 +180,7 @@ function HomePage() {
                 href="https://github.com/vikiru"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="GitHub Profile Link"
+                id="GitHub Profile Link - Mobile"
                 title="View my GitHub"
               >
                 <FontAwesomeIcon icon={faGithub} className="social-icons" />
@@ -186,13 +190,17 @@ function HomePage() {
                 href="https://www.linkedin.com/in/viskirubakaran/"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="LinkedIn Link"
+                id="LinkedIn Link - Mobile"
                 title="View my LinkedIn"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="social-icons" />
               </a>
 
-              <Link to="/contact" id="Email Link" title="Send me an email">
+              <Link
+                to="/contact"
+                id="Email Link - Mobile"
+                title="Send me an email"
+              >
                 <FontAwesomeIcon icon={faEnvelope} className="social-icons" />
               </Link>
             </section>
@@ -200,7 +208,7 @@ function HomePage() {
             {/* Hero Body Text */}
             <p className="body-text pt-2 dark:text-primary">
               Welcome to my portfolio! I am a dedicated{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 {aboutData.title.toLowerCase()}
               </span>{" "}
               with a passion for software and web development.
@@ -211,15 +219,15 @@ function HomePage() {
             </p>
             <p className="body-text pt-2 dark:text-primary">
               Feel free to{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 read more
               </span>{" "}
               about me,{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 view
               </span>{" "}
               some of my GitHub projects, or{" "}
-              <span className="font-semibold text-accent dark:text-darkAccent">
+              <span className="text-accentSecondary font-semibold dark:text-darkAccent">
                 contact me!
               </span>
             </p>
@@ -231,17 +239,17 @@ function HomePage() {
             className="gap-3 py-4 xxs:space-y-2 lg:flex lg:space-y-0"
           >
             <div className="cta-btn">
-              <Link to="/about" id="about">
+              <Link to="/about" id="about-mobile">
                 <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
-                  Read more
+                  Read more about me
                 </h2>
               </Link>
             </div>
 
             <div className="cta-btn">
-              <Link to="/projects" id="projects">
+              <Link to="/projects" id="projects-mobile">
                 <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
-                  View my work
+                  View my GitHub projects
                 </h2>
               </Link>
             </div>
@@ -251,10 +259,10 @@ function HomePage() {
                 to="/contact"
                 target="_top"
                 rel="noopener noreferrer"
-                id="email"
+                id="email-mobile"
               >
                 <h2 className="body-text m-auto py-2 text-center font-heading font-semibold text-secondary dark:text-primary">
-                  Contact me
+                  Send me an email
                 </h2>
               </Link>
             </div>

@@ -20,7 +20,7 @@ function ProjectShowcasePage(props) {
           <h2 className="heading-text pb-2 dark:text-primary">
             <Link
               to="/projects"
-              className="text-accent underline hover:bg-accent hover:text-secondary dark:text-darkAccent hover:dark:bg-darkAccent hover:dark:text-darkSecondary"
+              className="text-accentSecondary underline hover:bg-accent hover:text-secondary dark:text-darkAccent hover:dark:bg-darkAccent hover:dark:text-darkSecondary"
               title="View my other projects"
             >
               projects
@@ -38,7 +38,7 @@ function ProjectShowcasePage(props) {
 
           <section
             id="technologies-used"
-            className="py-2 xxs:grid xxs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-3"
+            className="py-2 xxs:grid xxs:grid-cols-2 lg:grid-cols-3"
           >
             {project.technologiesUsed.map((tech) => (
               <div
@@ -81,10 +81,10 @@ function ProjectShowcasePage(props) {
         </section>
 
         <section id="project-contributors" className="xxs:px-2 lg:px-4">
-          <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
+          <h2 className="heading-text uppercase underline dark:text-primary">
             Co-Authors
           </h2>
-          <div className="py-2">
+          <div className="pt-2">
             <h3 className="subheading-text text-secondary dark:text-primary">
               {project.contributors}
             </h3>

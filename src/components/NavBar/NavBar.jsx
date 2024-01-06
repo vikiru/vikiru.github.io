@@ -28,7 +28,11 @@ function NavBar() {
           id="small-screen-nav-toggler"
           className="py-2 pr-3 xs:block lg:hidden"
         >
-          <button onClick={handleClick}>
+          <button
+            onClick={handleClick}
+            id="nav-menu"
+            aria-label="Navigation Menu Mobile"
+          >
             {!isOpen ? (
               <FontAwesomeIcon
                 icon={faBars}
@@ -88,7 +92,7 @@ function NavBar() {
 
           <section
             id="nav-links"
-            className="flex justify-between space-x-8 px-2 pt-2 xl:pt-1"
+            className="flex justify-between space-x-8 px-2 pt-0 lg:pt-2"
           >
             {navData.map((nav) => (
               <Link
