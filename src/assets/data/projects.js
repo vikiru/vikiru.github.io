@@ -14,7 +14,7 @@ const projectData = {
         "Developed a portfolio website using React and TailwindCSS and hosted it via Vercel",
         "Utilized Chrome Dev Tools and TailwindCSS utility classes to achieve a responsive design across various screen sizes",
         "Utilized React Router to create static and dynamic routes, displayed as individual pages",
-        "Utilized GitHub Actions to create a CI/CD pipeline to lint and format files and added a deploy workflow to host the website on GitHub Pages",
+        "Utilized GitHub Actions to create a CI/CD pipeline to lint and format files",
         "Utilized Figma to create mockups of components and pages",
       ],
       technologiesUsed: [
