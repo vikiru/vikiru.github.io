@@ -1,17 +1,16 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import NavBar from "./../../components/NavBar/NavBar";
+import NavBar from "../components/NavBar";
 import React from "react";
-import aboutData from "./../../assets/data/about";
+import aboutData from "../assets/data/about";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
   return (
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
-      <NavBar />
       {/* Main Content - 2XL and up */}
       <main className="gap-2 p-10 xxs:hidden 2xl:grid 2xl:grid-cols-2">
         <section>
@@ -291,7 +290,6 @@ function HomePage() {
           </section>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

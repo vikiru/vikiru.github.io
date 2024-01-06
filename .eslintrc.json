@@ -6,7 +6,8 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "next/core-web-vitals"
   ],
   "plugins": ["prettier", "react", "jest", "jsx-a11y"],
   "env": {

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import React from "react";
-import educationData from "../../assets/data/education";
+import educationData from "../assets/data/education";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function EducationContainer() {

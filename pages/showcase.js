@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "./../../components/Footer/Footer";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../components/NavBar";
 import PropTypes from "prop-types";
 import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";

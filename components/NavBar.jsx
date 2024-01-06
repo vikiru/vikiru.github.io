@@ -3,7 +3,7 @@ import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import navData from "../../assets/data/nav";
+import navData from "../assets/data/nav";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,31 +47,31 @@ function NavBar() {
       {isOpen ? (
         <section className="block justify-center lg:hidden" id="nav-links">
           <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-            <Link to="/" title="View my homepage" id="homepage-navbar-sm">
+            <a href="/" title="View my homepage" id="homepage-navbar-sm">
               Home
-            </Link>
+            </a>
           </h2>
 
           <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-            <Link to="/about" title="Read more about me" id="about-navbar-sm">
+            <a href="/about" title="Read more about me" id="about-navbar-sm">
               About
-            </Link>
+            </a>
           </h2>
 
           <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-            <Link
-              to="/education/courses"
+            <a
+              href="/education/courses"
               title="View my courses"
               id="courses-navbar-sm"
             >
               Courses
-            </Link>
+            </a>
           </h2>
 
           <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-            <Link to="/projects" title="View my work" id="projects-navbar-sm">
+            <a href="/projects" title="View my work" id="projects-navbar-sm">
               Projects
-            </Link>
+            </a>
           </h2>
         </section>
       ) : (
@@ -91,15 +91,15 @@ function NavBar() {
             className="flex justify-between space-x-8 px-2 pt-2 xl:pt-1"
           >
             {navData.map((nav) => (
-              <Link
+              <a
                 key={nav.navTitle}
-                to={nav.navLink}
+                href={nav.navLink}
                 title={nav.navDesc}
                 id={nav.navTitle.toLowerCase() + "-navbar-lg"}
                 className="subheading-text uppercase tracking-widest text-primary hover:underline hover:decoration-accent xl:pt-2 dark:text-primary dark:hover:decoration-darkAccent"
               >
                 {nav.navTitle}
-              </Link>
+              </a>
             ))}
           </section>
         </section>
