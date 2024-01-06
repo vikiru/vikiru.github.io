@@ -47,7 +47,7 @@ function Contact() {
                   <input
                     type="text"
                     name="name"
-                    className="body-text w-full border-4 border-secondary hover:border-accent dark:text-primary dark:hover:border-darkAccent"
+                    className="body-text w-full border-4 border-secondary text-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent"
                     placeholder="Please enter your full name"
                     title="Please enter your full name"
                     data-kw-rules="required|max:255"
@@ -66,7 +66,7 @@ function Contact() {
                   <input
                     type="email"
                     name="email"
-                    className="body-text w-full border-4 border-secondary hover:border-accent  dark:text-primary dark:hover:border-darkAccent"
+                    className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary  dark:text-primary dark:hover:border-darkAccent"
                     data-kw-rules="required|email"
                     placeholder="Please enter your email address"
                     title="Please enter your email address"
@@ -84,7 +84,7 @@ function Contact() {
                   <textarea
                     id="content"
                     name="content"
-                    className="body-text w-full border-4 border-secondary hover:border-accent dark:text-primary dark:hover:border-darkAccent"
+                    className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent"
                     rows="5"
                     cols="50"
                     placeholder="Please enter your message here"
