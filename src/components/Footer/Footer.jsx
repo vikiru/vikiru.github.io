@@ -62,7 +62,10 @@ function Footer() {
                 Ottawa, ON
               </h2>
 
-              <div className="flex justify-center pt-1 space-x-2 xl:space-x-4" id="social-icons">
+              <div
+                className="flex justify-center space-x-2 pt-1 xl:space-x-4"
+                id="social-icons"
+              >
                 <a
                   href="https://github.com/vikiru"
                   target="_blank"

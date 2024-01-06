@@ -43,7 +43,10 @@ function HomePage() {
               </span>
             </section>
 
-            <section id="social-icons" className="flex justify-center space-x-2 xl:space-x-4">
+            <section
+              id="social-icons"
+              className="flex justify-center space-x-2 xl:space-x-4"
+            >
               <a
                 href="https://github.com/vikiru"
                 target="_blank"
