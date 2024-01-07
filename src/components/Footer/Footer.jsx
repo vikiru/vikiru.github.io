@@ -11,10 +11,7 @@ function Footer() {
     <footer className="mt-auto w-full">
       <div className="bg-secondary px-1 xxs:flex xxs:flex-col md:grid md:grid-cols-2 dark:bg-darkSecondary">
         {/*  Logo */}
-        <section
-          id="logo"
-          className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center lg:pt-4"
-        >
+        <section id="logo" className="mx-auto py-2 md:col-span-2 lg:pt-4">
           <Link
             to="/"
             title="View my homepage"
