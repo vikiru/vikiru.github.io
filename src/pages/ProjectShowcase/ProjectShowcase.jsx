@@ -17,7 +17,7 @@ function ProjectShowcasePage(props) {
           className="bg-primary p-4 pb-6 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
           id="project-info"
         >
-          <h2 className="heading-text pb-2 dark:text-primary">
+          <h2 className="heading-text py-2 dark:text-primary">
             <Link
               to="/projects"
               className="text-accentSecondary underline hover:bg-accent hover:text-secondary dark:text-darkAccent hover:dark:bg-darkAccent hover:dark:text-darkSecondary"
@@ -25,14 +25,14 @@ function ProjectShowcasePage(props) {
             >
               projects
             </Link>{" "}
-            / {project.name}
+            / <span className="font-bold">{project.name}</span>
           </h2>
 
-          <h3 className="body-text py-1 uppercase dark:text-primary">
+          <h3 className="body-text uppercase dark:text-primary">
             {project.startDate} - {project.endDate}
           </h3>
 
-          <div className="py-2">
+          <div className="py-1">
             <p className="body-text dark:text-primary">{project.description}</p>
           </div>
 
@@ -81,7 +81,7 @@ function ProjectShowcasePage(props) {
           </section>
         </section>
 
-        <section id="project-contributors" className="pb-4 xxs:px-2 lg:px-4">
+        <section id="project-contributors" className="pb-2 xxs:px-2 lg:px-4">
           <h2 className="heading-text uppercase underline dark:text-primary">
             Co-Authors
           </h2>
