@@ -54,32 +54,30 @@ function ProjectShowcasePage(props) {
 
           <section
             id="project-icons"
-            className="flex justify-center space-x-2 lg:space-x-4"
+            className="mx-auto flex w-full justify-center space-x-2 pb-2 pt-1 lg:space-x-4"
           >
-            <div className="p-2">
-              {project.githubUrl != "" && (
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  id="Project GitHub Link"
-                  title="View the GitHub repository"
-                >
-                  <FontAwesomeIcon icon={faGithub} className="social-icons" />
-                </a>
-              )}
-              {project.documentationUrl != "" && (
-                <a
-                  href={project.documentationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  id="Project Documentation Link"
-                  title="View the project documentation"
-                >
-                  <FontAwesomeIcon icon={faBookOpen} className="social-icons" />
-                </a>
-              )}
-            </div>
+            {project.githubUrl != "" && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                id="Project GitHub Link"
+                title="View the GitHub repository"
+              >
+                <FontAwesomeIcon icon={faGithub} className="social-icons" />
+              </a>
+            )}
+            {project.documentationUrl != "" && (
+              <a
+                href={project.documentationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                id="Project Documentation Link"
+                title="View the project documentation"
+              >
+                <FontAwesomeIcon icon={faBookOpen} className="social-icons" />
+              </a>
+            )}
           </section>
         </section>
 
