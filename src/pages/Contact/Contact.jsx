@@ -49,14 +49,14 @@ function Contact() {
                   target="_top"
                   id="email-direct"
                   title="Email me directly via your email"
-                  className="text-accent underline dark:text-darkAccent"
+                  className="text-accent dark:text-darkAccent"
                 >
-                  email
-                </a>{" "}
-                <FontAwesomeIcon
-                  icon={faArrowUpRightFromSquare}
-                  className="body-text"
-                />
+                  <span className="underline">email</span>{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
+                    className="body-text"
+                  />
+                </a>
                 .
               </p>
             </div>
