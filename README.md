@@ -15,7 +15,6 @@
 	<a href="https://github.com/vikiru/vikiru.github.io/releases">
 		<img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release"/>
 	</a>
-	<br>
 	<a href="https://github.com/vikiru/vikiru.github.io/issues?q=is%3Aissue+is%3Aclosed">
 		<img src="https://img.shields.io/github/issues-closed/vikiru/vikiru.github.io" alt="Closed Issues"/>
 	</a>
@@ -25,9 +24,6 @@
 	<br>
 	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
 		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status"/>
-	</a>
-	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml">
-		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/deploy.yml/badge.svg" alt="GitHub Pages Deployment Workflow Status"/>
 	</a>
 </p>
 
@@ -73,7 +69,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Editor/IDE**: VSCode, IntelliJ, Eclipse
 
-**Hosting**: GitHub Pages, Heroku, Render
+**Hosting**: GitHub Pages, Heroku, Render, Vercel
 
 **OS**: Windows, Ubuntu
 
@@ -129,7 +125,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Hosting**: [Vercel](https://vercel.com/)
 
-**CI/CD**:
+**CI**:
 
 - [GitHub Actions](https://github.com/features/actions)
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
