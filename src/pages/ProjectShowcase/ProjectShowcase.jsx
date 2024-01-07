@@ -52,7 +52,10 @@ function ProjectShowcasePage(props) {
             ))}
           </section>
 
-          <section id="project-icons" className="flex justify-center">
+          <section
+            id="project-icons"
+            className="flex justify-center space-x-2 lg:space-x-4"
+          >
             <div className="p-2">
               {project.githubUrl != "" && (
                 <a
