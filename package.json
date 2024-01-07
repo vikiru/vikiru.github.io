@@ -1,11 +1,11 @@
 {
   "name": "portfolio-website",
-  "version": "1.0.0",
-  "description": "My personal portfolio website showcasing my projects and skills",
+  "version": "2.0.0",
+  "description": "My personal portfolio website showcasing my projects and skills. Built using React, React Router and TailwindCSS.",
   "private": true,
   "author": "Visakan Kirubakaran",
   "license": "MIT",
-  "homepage": "http://vikiru.github.io/",
+  "homepage": "https://vikiru.vercel.app",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
@@ -24,12 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "lint": "eslint ./src/**/*.{html,js,jsx} --fix-dry-run",
-    "prettier": "prettier --write .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -m \"Deployed to Github Pages using gh-pages package\" -a"
+    "prettier": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
