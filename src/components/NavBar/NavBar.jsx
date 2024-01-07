@@ -18,10 +18,14 @@ function NavBar() {
         className="flex items-center justify-between bg-secondary lg:hidden dark:bg-darkSecondary"
       >
         <div className="px-2 lg:hidden" id="logo">
-          <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
+          <Link
+            to="/"
+            title="View my homepage"
+            className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
+          >
             <span className="text-primary  dark:text-primary">V</span>
             <span className="text-accent dark:text-darkAccent">K</span>
-          </h2>
+          </Link>
         </div>
 
         <div
@@ -84,10 +88,14 @@ function NavBar() {
           className="hidden bg-secondary py-4 lg:flex lg:justify-between dark:bg-darkSecondary"
         >
           <div className="lg:px-1 xl:px-4" id="logo">
-            <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
+            <Link
+              to="/"
+              title="View my homepage"
+              className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
+            >
               <span className="text-primary  dark:text-primary">V</span>
               <span className="text-accent dark:text-darkAccent">K</span>
-            </h2>
+            </Link>
           </div>
 
           <section

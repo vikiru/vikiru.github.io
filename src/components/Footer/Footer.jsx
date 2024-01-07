@@ -15,10 +15,14 @@ function Footer() {
           id="logo"
           className="py-2 md:col-span-2 md:mx-auto md:flex md:justify-center lg:pt-4"
         >
-          <h2 className="text-center font-cinzel tracking-widest text-primary xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary">
+          <Link
+            to="/"
+            title="View my homepage"
+            className="text-center font-cinzel tracking-widest text-primary xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
+          >
             <span className="text-primary  dark:text-primary">Visa</span>
             <span className="text-accent dark:text-darkAccent">kan</span>
-          </h2>
+          </Link>
         </section>
 
         {/* Footer Navigation */}
