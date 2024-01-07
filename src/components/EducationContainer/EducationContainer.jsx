@@ -29,7 +29,7 @@ function EducationContainer() {
           </h3>
         </div>
 
-        <div className="xxs:block 5xl:flex 5xl:justify-between">
+        <div className="5xl:flex 5xl:justify-between xxs:block">
           <div className="py-2">
             <div>
               <p className="subheading-text dark:text-primary">
@@ -45,7 +45,7 @@ function EducationContainer() {
             </div>
           </div>
 
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="5xl:w-[40rem] rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               title="View my courses"
@@ -85,7 +85,7 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full  xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="5xl:w-[40rem] rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80  xxs:w-full xl:mr-5 xl:h-[50%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"
