@@ -21,7 +21,7 @@ function EducationContainer() {
         </h2>
       </div>
 
-      {/* University Section - XSS - XL screens*/}
+      {/* University Section*/}
       <section id="unversity-info" className="px-4 pt-4">
         <div>
           <h3 className="subheading-text uppercase dark:text-primary">
@@ -29,7 +29,7 @@ function EducationContainer() {
           </h3>
         </div>
 
-        <div className="xxs:block 4xl:flex 4xl:justify-between">
+        <div className="xxs:block 5xl:flex 5xl:justify-between">
           <div className="py-2">
             <div>
               <p className="subheading-text dark:text-primary">
@@ -45,7 +45,7 @@ function EducationContainer() {
             </div>
           </div>
 
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] 4xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
             <Link
               to="/education/courses"
               title="View my courses"
@@ -70,7 +70,7 @@ function EducationContainer() {
         {courseraCertificates.map((certificate) => (
           <div
             key={certificate.certificationName}
-            className="px-4 pb-2 xxs:block 4xl:flex 4xl:justify-between"
+            className="5xl:flex 5xl:justify-between px-4 pb-2 xxs:block"
             id={certificate.certificationName.toLowerCase()}
           >
             <div>
@@ -85,7 +85,7 @@ function EducationContainer() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full  xl:mr-5 xl:h-[50%] 4xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full  xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <a
                 href={certificate.certificateLink}
                 target="_blank"
