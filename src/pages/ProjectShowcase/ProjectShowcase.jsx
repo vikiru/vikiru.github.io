@@ -52,31 +52,32 @@ function ProjectShowcasePage(props) {
             ))}
           </section>
 
-          <section id="project-icons" className="flex justify-center">
-            <div className="p-2">
-              {project.githubUrl != "" && (
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  id="Project GitHub Link"
-                  title="View the GitHub repository"
-                >
-                  <FontAwesomeIcon icon={faGithub} className="social-icons" />
-                </a>
-              )}
-              {project.documentationUrl != "" && (
-                <a
-                  href={project.documentationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  id="Project Documentation Link"
-                  title="View the project documentation"
-                >
-                  <FontAwesomeIcon icon={faBookOpen} className="social-icons" />
-                </a>
-              )}
-            </div>
+          <section
+            id="project-icons"
+            className="mx-auto flex w-full justify-center space-x-2 pb-2 pt-1 lg:space-x-4"
+          >
+            {project.githubUrl != "" && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                id="Project GitHub Link"
+                title="View the GitHub repository"
+              >
+                <FontAwesomeIcon icon={faGithub} className="social-icons" />
+              </a>
+            )}
+            {project.documentationUrl != "" && (
+              <a
+                href={project.documentationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                id="Project Documentation Link"
+                title="View the project documentation"
+              >
+                <FontAwesomeIcon icon={faBookOpen} className="social-icons" />
+              </a>
+            )}
           </section>
         </section>
 
@@ -84,18 +85,15 @@ function ProjectShowcasePage(props) {
           <h2 className="heading-text uppercase underline dark:text-primary">
             Co-Authors
           </h2>
-          <div className="pt-2">
-            <h3 className="subheading-text text-secondary dark:text-primary">
-              {project.contributors}
+          <div className="pt-3">
+            <h3 className="body-text text-secondary dark:text-primary">
+              {project.contributors}.
             </h3>
           </div>
         </section>
 
-        <section
-          id="project-accomplishments"
-          className="p-4 pb-6 xxs:px-2 lg:px-4"
-        >
-          <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
+        <section id="project-accomplishments" className="xxs:px-2 lg:px-4">
+          <h2 className="heading-text pt-6 uppercase underline dark:text-primary">
             Accomplishments
           </h2>
           <div className="p-4 pb-6">
@@ -115,12 +113,12 @@ function ProjectShowcasePage(props) {
         {project.videoPath !== "" && (
           <section
             id="project-demo"
-            className="w-full bg-primary p-4 pb-6 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
+            className="w-full bg-primary pb-6 pt-4 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
           >
             <h2 className="heading-text py-2 uppercase underline dark:text-primary">
               Demo
             </h2>
-            <div className="mx-auto h-full w-full flex-col overflow-hidden">
+            <div className="mx-auto flex h-full w-full max-w-[4000px] flex-col overflow-hidden">
               <video
                 muted
                 controls

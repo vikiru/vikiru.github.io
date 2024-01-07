@@ -49,7 +49,7 @@ function ProjectCard(props) {
       {project.githubUrl !== "" && (
         <section
           id="project-icons"
-          className="mx-auto flex w-full justify-center pb-2 pt-1"
+          className="mx-auto flex w-full justify-center space-x-2 pb-2 pt-1 lg:space-x-4"
         >
           {project.githubUrl != "" && (
             <a
