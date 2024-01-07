@@ -34,7 +34,7 @@ const projectData = {
       videoPath: require("../images/Urvo/Urvo-demo.mp4"),
       description: "A multi-purpose Discord bot.",
       startDate: "June 2021",
-      endDate: "July 2023",
+      endDate: "Nov 2023",
       contributors: "Project completed individually",
       accomplishments: [
         "Developed a Discord bot that leveraged 25 external REST APIs to fetch and display JSON data in rich embeds, enhancing user engagement and interactivity",
