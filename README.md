@@ -125,7 +125,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Hosting**: [Vercel](https://vercel.com/)
 
-**CI/CD**:
+**CI**:
 
 - [GitHub Actions](https://github.com/features/actions)
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
