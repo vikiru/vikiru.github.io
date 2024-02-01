@@ -8,8 +8,8 @@ const projectData = {
       projectPageUrl: "/projects/RESTasaurus",
       description:
         "A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.",
-      startDate: "Jan 2023",
-      endDate: "Feb 2023",
+      startDate: "Jan 2024",
+      endDate: "Feb 2024",
       contributors: "Project completed individually",
       accomplishments: [
         "Developed a fully functional dinosaur REST API using Express, MongoDB, and Mongoose and hosted it via Render",
@@ -45,7 +45,7 @@ const projectData = {
       projectPageUrl: "/projects/Portfolio",
       description: "Personal portfolio website.",
       startDate: "Nov 2023",
-      endDate: "Jan 2023",
+      endDate: "Jan 2024",
       contributors: "Project completed individually",
       accomplishments: [
         "Developed a portfolio website using React and TailwindCSS and hosted it via Vercel",
