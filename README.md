@@ -75,15 +75,50 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### 📚 Projects
 
-|                   Project Name                    |                                Technologies Used                                 |                            Link                            |
-| :-----------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------: |
-|                 Portfolio Website                 |                      `React`, `React Router`, `TailwindCSS`                      | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
-|   vikiru.github.io \| Multi-purpose Discord Bot   |                `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`                 | [GitHub Repo](https://github.com/vikiru/vikiru.github.io)  |
-|         CodeSmell \| Static Analysis Tool         | `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript` |     [GitHub Repo](https://github.com/vikiru/CodeSmell)     |
-| discrete-sim \| Manufacturing Facility Simulation |                       `Python`, `NumPy`, `SciPy`, `SimPy`                        |   [GitHub Repo](https://github.com/vikiru/discrete-sim)    |
-|   Mini-SurveyMonkey \| Spring Boot CRUD Web App   |       `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`        | [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey) |
-|       Elevator Simulator \| Threads and UDP       |                             `Java`, `Maven`, `JUnit`                             |                         `private`                          |
-|           digitalRisk \| MVC Swing Game           |                        `Java`, `Maven`, `JUnit`, `Swing`                         |    [GitHub Repo](https://github.com/flavji/digitalRisk)    |
+<details>
+<summary><h3> View all projects </h3></summary>
+
+- **RESTasaurus | Dinosaur REST API**
+  - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
+  - [GitHub Repo](https://github.com/vikiru/restasaurus)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/RESTasaurus)
+  
+- **Portfolio Website**
+  - Technologies Used: `React`, `React Router`, `TailwindCSS`
+  - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Portfolio)
+
+- **Urvo | Multi-purpose Discord Bot**
+  - Technologies Used: `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
+  - [GitHub Repo](https://github.com/vikiru/Urvo)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Urvo)
+
+- **CodeSmell | Static Analysis Tool**
+  - Technologies Used: `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
+  - [GitHub Repo](https://github.com/vikiru/CodeSmell)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/CodeSmell)
+
+- **discrete-sim | Manufacturing Facility Simulation**
+  - Technologies Used: `Python`, `NumPy`, `SciPy`, `SimPy`
+  - [GitHub Repo](https://github.com/vikiru/discrete-sim)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/discrete-sim)
+
+- **Mini-SurveyMonkey | Spring Boot CRUD Web App**
+  - Technologies Used: `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`
+  - [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Mini-SurveyMonkey)
+
+- **Elevator Simulator | Threads and UDP**
+  - Technologies Used: `Java`, `Maven`, `JUnit`
+  - GitHub Repo: `private`
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Elevator-Simulator)
+
+- **digitalRisk | MVC Swing Game**
+  - Technologies Used: `Java`, `Maven`, `JUnit`, `Swing`
+  - [GitHub Repo](https://github.com/flavji/digitalRisk)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/digitalRisk)
+
+</details>
 
 ### 📧 Contact
 
