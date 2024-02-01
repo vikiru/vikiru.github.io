@@ -1,6 +1,42 @@
 const projectData = {
   projects: [
     {
+      name: "RESTasaurus",
+      githubUrl: "https://github.com/vikiru/restasaurus",
+      documentationUrl: "https://vikiru.github.io/restasaurus/",
+      videoPath: require("../images/restasaurus/restasaurus-demo.mp4"),
+      projectPageUrl: "/projects/RESTasaurus",
+      description:
+        "A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.",
+      startDate: "Jan 2024",
+      endDate: "Feb 2024",
+      contributors: "Project completed individually",
+      accomplishments: [
+        "Developed a fully functional dinosaur REST API using Express, MongoDB, and Mongoose and hosted it via Render",
+        "Designed MongoDB schemas for Dinosaur, ClassificationInfo, DinosaurImage, and DinosaurSource info, and created a JavaScript class, MongooseData for use in data retrieval and processing prior to converting to schemas",
+        "Achieved 100% test coverage with over 200 tests using Sinon, Mocha, Chai and Istanbul, and showcased this with badges in the README",
+        "Built a comprehensive and user-friendly documentation website with Docusaurus, hosted via GitHub pages",
+        "Utilized Swagger Editor to create OpenAPI specification for all routes and MongoDB schemas",
+        "Utilized GitHub actions to create a CI pipeline for running tests, linting files and prettier formatting them",
+        "Developed scripts to retrieve and process data from Wikipedia articles via its API, and save the data to the MongoDB database.",
+      ],
+      technologiesUsed: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Render",
+        "Docusaurus",
+        "Github Pages",
+        "Postman",
+        "Swagger",
+        "Sinon",
+        "Mocha",
+        "Chai",
+        "Istanbul",
+      ],
+    },
+    {
       name: "Portfolio Website",
       githubUrl: "https://github.com/vikiru/vikiru.github.io",
       documentationUrl: "",
@@ -8,7 +44,7 @@ const projectData = {
       projectPageUrl: "/projects/Portfolio",
       description: "Personal portfolio website.",
       startDate: "Nov 2023",
-      endDate: "Jan 2023",
+      endDate: "Jan 2024",
       contributors: "Project completed individually",
       accomplishments: [
         "Developed a portfolio website using React and TailwindCSS and hosted it via Vercel",
