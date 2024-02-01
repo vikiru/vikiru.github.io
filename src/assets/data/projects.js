@@ -18,7 +18,7 @@ const projectData = {
         "Built a comprehensive and user-friendly documentation website with Docusaurus, hosted via GitHub pages",
         "Utilized Swagger Editor to create OpenAPI specification for all routes and MongoDB schemas",
         "Utilized GitHub actions to create a CI pipeline for running tests, linting files and prettier formatting them",
-        "Developed scripts to retrieve and process data from Wikipedia articles via its API, and save the data to the MongoDB database.",
+        "Developed scripts to retrieve and process data from Wikipedia articles via its API, and save the data to the MongoDB database",
       ],
       technologiesUsed: [
         "Node.js",
@@ -27,7 +27,8 @@ const projectData = {
         "Mongoose",
         "Render",
         "Docusaurus",
-        "Github Pages",
+        "GitHub Pages",
+        "GitHub Actions",
         "Postman",
         "Swagger",
         "Sinon",
