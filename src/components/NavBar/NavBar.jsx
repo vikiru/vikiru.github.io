@@ -87,7 +87,7 @@ function NavBar() {
           id="navigation-menu"
           className="hidden bg-secondary py-4 lg:flex lg:justify-between dark:bg-darkSecondary"
         >
-          <div className="lg:px-1 xl:px-4" id="logo">
+          <div className="lg:px-3 xl:px-4" id="logo">
             <Link
               to="/"
               title="View my homepage"
