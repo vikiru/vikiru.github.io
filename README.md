@@ -55,7 +55,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Languages**: Java, Python, HTML, CSS, JavaScript
 
-**Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Django, Flask 
+**Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Django, Flask
 
 **Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
 
@@ -82,12 +82,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
   - [GitHub Repo](https://github.com/vikiru/kelbrum)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/Kelbrum)
-  
+
 - **RESTasaurus | Dinosaur REST API**
   - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
   - [GitHub Repo](https://github.com/vikiru/restasaurus)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/RESTasaurus)
-  
+
 - **Portfolio Website**
   - Technologies Used: `React`, `React Router`, `TailwindCSS`
   - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
