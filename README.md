@@ -55,21 +55,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Languages**: Java, Python, HTML, CSS, JavaScript
 
-**Runtime**: Node.js
+**Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Django, Flask
 
-**Frameworks**: Spring, JUnit5, Mocha, Chai, Django, Flask, React, TailwindCSS
+**Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
 
-**Libraries**: NumPy, SciPy, SimPy, Pandas, Chai
+**Tools**: Maven, npm, pip, git, GitHub, GitHub Desktop, Postman
 
-**Database**: MySQL, SQLite, MongoDB, Sequelize
+**Database**: MySQL, SQLite, MongoDB, Sequelize, Mongoose
 
 **DevOps**: CircleCI, GitHub Actions, Snyk
 
-**Tools**: Maven, npm, pip, git, GitHub, GitHub Desktop, Postman, ESLint, Prettier
-
 **Editor/IDE**: VSCode, IntelliJ, Eclipse
 
-**Hosting**: GitHub Pages, Heroku, Render, Vercel
+**Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase
+
+**Runtime**: Node.js
 
 **OS**: Windows, Ubuntu
 
@@ -78,11 +78,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <details>
 <summary><h3> View all projects </h3></summary>
 
+- **Kelbrum | Anime Recommendation System**
+  - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
+  - [GitHub Repo](https://github.com/vikiru/kelbrum)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Kelbrum)
+
 - **RESTasaurus | Dinosaur REST API**
   - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
   - [GitHub Repo](https://github.com/vikiru/restasaurus)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/RESTasaurus)
-  
+
 - **Portfolio Website**
   - Technologies Used: `React`, `React Router`, `TailwindCSS`
   - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
@@ -94,7 +99,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [Project Showcase Page](https://vikiru.vercel.app/projects/Urvo)
 
 - **CodeSmell | Static Analysis Tool**
-  - Technologies Used: `Java`,`Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
+  - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
   - [GitHub Repo](https://github.com/vikiru/CodeSmell)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/CodeSmell)
 
@@ -104,7 +109,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [Project Showcase Page](https://vikiru.vercel.app/projects/discrete-sim)
 
 - **Mini-SurveyMonkey | Spring Boot CRUD Web App**
-  - Technologies Used: `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`
+  - Technologies Used: `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`, `JavaScript`
   - [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/Mini-SurveyMonkey)
 
@@ -136,11 +141,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 📖 Table of Contents
 
 - [🌐 Portfolio Overview](#-portfolio-overview)
-	- [📄 About](#-about)
-	- [🎓 Education](#-education)
-	- [💡 Skills](#-skills)
-	- [📚 Projects](#-projects)
-	- [📧 Contact](#-contact)
+  - [📄 About](#-about)
+  - [🎓 Education](#-education)
+  - [💡 Skills](#-skills)
+  - [📚 Projects](#-projects)
+  - [📧 Contact](#-contact)
 - [📖 Table of Contents](#-table-of-contents)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📝 Prerequisites](#-prerequisites)

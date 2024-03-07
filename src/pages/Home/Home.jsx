@@ -18,7 +18,7 @@ function HomePage() {
         <section>
           {/* Hero Section */}
           <section id="hero">
-            <h2 className="heading-text dark:text-primary">
+            <h2 className="heading-text text-center dark:text-primary">
               {aboutData.greeting}{" "}
               <span className="text-accentSecondary dark:text-darkAccent">
                 {aboutData.fullName}

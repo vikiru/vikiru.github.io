@@ -73,6 +73,7 @@
     "space-unary-ops": "error",
     "spaced-comment": "error",
     "yoda": "error",
-    "tailwindcss/no-custom-classname": "off"
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/enforces-shorthand": "off"
   }
 }
