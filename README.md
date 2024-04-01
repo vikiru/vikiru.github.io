@@ -83,6 +83,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [GitHub Repo](https://github.com/vikiru/kelbrum)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/Kelbrum)
 
+- **Parseum | Markdown Editor and Parser**
+  - Technologies Used: `Node.js`, `Peggy.js`, `React`, `TailwindCSS`, `DaisyUI`
+  - [GitHub Repo](https://github.com/vikiru/parseum)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Parseum)
+
 - **RESTasaurus | Dinosaur REST API**
   - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
   - [GitHub Repo](https://github.com/vikiru/restasaurus)
