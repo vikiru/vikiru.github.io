@@ -43,7 +43,7 @@ const projectData = {
       accomplishments: [
         'Created a simple and easy to use editor for users to write Markdown and view rendered HTML using React, TailwindCSS and DaisyUI',
         'Created a Markdown parser by using Peggy.js to generate a parser from a defined Parsing Expression Grammar (PEG) file, allowing for the potential to grow by defining further grammar rules',
-        'Developed tests for supported syntax to ensure that the parser was returning correct HTML for input Markdown',
+        'Developed tests for supported syntax to ensure that the parser was returning correct HTML for input Markdown using Mocha and Chai',
         "Utilized GitHub Actions to create a CI pipeline for running tests, linting files and prettier formatting them",
         "Deployed a live version of the website using Fl0 Hosting",
         "Created user friendly and comprehensive documentation for the project using Docusaurus and hosted it via GitHub Pages",
@@ -54,6 +54,8 @@ const projectData = {
         'React',
         'TailwindCSS',
         'DaisyUI',
+        "Mocha",
+        "Chai",
       ],
     },
     {
