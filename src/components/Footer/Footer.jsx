@@ -25,7 +25,7 @@ function Footer() {
         {/* Footer Navigation */}
         <div className="sm:grid sm:grid-cols-2 md:col-span-2">
           <section id="footer-navigation" className="mx-auto">
-            <h2 className="heading-text text-center tracking-wide text-primary dark:text-primary">
+            <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
               Read more
             </h2>
             {navData.map((navItem) => (
@@ -38,6 +38,7 @@ function Footer() {
                   className="
                     subheading-text
                     text-center
+                    uppercase
                     text-primary
                     decoration-accent
                     hover:underline
@@ -54,7 +55,7 @@ function Footer() {
 
           {/* Footer Contact Section */}
           <section id="contact" className="xxs:mx-auto lg:px-4 xl:mx-0">
-            <h2 className="heading-text text-center tracking-wide text-primary dark:text-primary">
+            <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
               Connect with me
             </h2>
 
@@ -106,7 +107,7 @@ function Footer() {
       <section id="copyright" className="bg-secondary dark:bg-darkSecondary">
         <div className="mx-auto flex flex-col space-y-2 py-2">
           <p className="body-text text-center font-thin text-primary dark:text-primary">
-            Visakan Kirubakaran &copy; {new Date().getFullYear()}. All rights
+            &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
             reserved.
           </p>
         </div>
@@ -118,7 +119,7 @@ function Footer() {
             id="Sitemap"
             title="View the sitemap for this website"
           >
-            <p className="text-center text-primary decoration-accent hover:underline xxs:text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl dark:text-primary dark:decoration-darkAccent">
+            <p className="body-text text-center text-primary decoration-accent hover:underline dark:text-primary dark:decoration-darkAccent">
               Sitemap
             </p>
           </Link>

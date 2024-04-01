@@ -34,7 +34,7 @@ function CourseContainer() {
             id={year.title.toLowerCase() + " courses"}
             className="py-6"
           >
-            <h3 className="heading-text bg-secondary px-4 uppercase text-primary underline lg:py-6 dark:bg-darkSecondary dark:text-primary">
+            <h3 className="heading-text bg-secondary px-4 text-center uppercase text-primary underline lg:py-6 dark:bg-darkSecondary dark:text-primary">
               {year.title}
             </h3>
             <div className="grid gap-3 px-2 pt-2 lg:grid-cols-2">

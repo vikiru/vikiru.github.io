@@ -32,19 +32,19 @@ p {
 
 @layer components {
   .heading-text {
-    @apply font-heading font-extrabold leading-none tracking-tight xxs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl;
+    @apply font-heading font-extrabold leading-normal tracking-tight xxs:text-sm sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl;
   }
 
   .subheading-text {
-    @apply font-subheading font-semibold xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl;
+    @apply font-subheading font-semibold leading-normal xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl;
   }
 
   .body-text {
-    @apply font-body font-light leading-8 xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl;
+    @apply font-body font-light leading-6 xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl;
   }
 
   .tech-text {
-    @apply font-body font-light xxs:text-xs sm:text-base md:text-lg lg:text-xl 3xl:text-2xl;
+    @apply font-body font-light leading-6 xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl;
   }
 
   .cta-btn {
@@ -52,6 +52,6 @@ p {
   }
 
   .social-icons {
-    @apply lg:ease-in-out-anim pr-2 text-accent xxs:text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl dark:text-darkAccent;
+    @apply ease-in-out-anim pr-2 text-accent xxs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl dark:text-darkAccent;
   }
 }

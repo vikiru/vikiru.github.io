@@ -1,12 +1,8 @@
-import {
-  faArrowUpRightFromSquare,
-  faBookOpen,
-} from "@fortawesome/free-solid-svg-icons";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import React from "react";
+import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function ProjectCard(props) {
@@ -24,7 +20,7 @@ function ProjectCard(props) {
         {project.startDate} - {project.endDate}
       </p>
 
-      <div className="md:px-2">
+      <div className="mx-2 md:px-2">
         <h3 className="body-text text-center dark:text-primary">
           {project.description}
         </h3>
@@ -37,7 +33,7 @@ function ProjectCard(props) {
         {project.technologiesUsed.map((tech) => (
           <div
             key={tech}
-            className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[100%] xxs:px-2 sm:w-[80%] lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+            className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-[100%] xxs:px-2 sm:w-[90%] lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
           >
             <h2 className="tech-text text-center text-primary dark:text-primary">
               {tech}
@@ -81,8 +77,8 @@ function ProjectCard(props) {
         className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%]  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
         <Link to={project.projectPageUrl} id={project.name + "-showcase"}>
-          <h2 className="body-text m-auto py-2 text-center font-semibold text-secondary dark:text-primary">
-            Read more <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          <h2 className="body-text m-auto py-2 text-center font-semibold uppercase text-secondary dark:text-primary">
+            Read more
           </h2>
         </Link>
       </section>

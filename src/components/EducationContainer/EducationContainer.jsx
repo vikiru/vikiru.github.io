@@ -1,8 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import React from "react";
 import educationData from "../../assets/data/education";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function EducationContainer() {
   const certificates = educationData.certificates;
@@ -16,91 +14,95 @@ function EducationContainer() {
       id="education"
     >
       <div className="px-4">
-        <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
+        <h2 className="heading-text pt-2 text-center uppercase underline dark:text-primary">
           Education
         </h2>
       </div>
 
-      {/* University Section*/}
-      <section id="unversity-info" className="px-4 pt-4">
-        <div>
-          <h3 className="subheading-text uppercase dark:text-primary">
-            {educationData.universityName}
-          </h3>
-        </div>
-
-        <div className="xxs:block 5xl:flex 5xl:justify-between">
-          <div className="py-2">
-            <div>
-              <p className="subheading-text dark:text-primary">
-                {educationData.degree} - {educationData.acronym}.,{" "}
-                {educationData.degreeProgram}
-              </p>
-            </div>
-
-            <div className="pt-1">
-              <h3 className="body-text uppercase tracking-wide  dark:text-primary">
-                {educationData.enrollmentStart} - {educationData.enrollmentEnd}
-              </h3>
-            </div>
+      <section className="xxs:grid-cols-1 lg:grid">
+        {/* University Section*/}
+        <section id="unversity-info" className="px-4 pt-4">
+          <div>
+            <h3 className="subheading-text text-center uppercase dark:text-primary">
+              {educationData.universityName}
+            </h3>
           </div>
 
-          <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-            <Link
-              to="/education/courses"
-              title="View my courses"
-              id="Courses Link"
-            >
-              <h2 className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
-                View courses {"  "}
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-              </h2>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Coursera Section - XXS - XL Screens */}
-      <section className="m-2 mx-auto xxs:block" id="coursera-certificate-info">
-        <div className="px-4">
-          <h2 className="subheading-text uppercase dark:text-primary">
-            Coursera
-          </h2>
-        </div>
-        {courseraCertificates.map((certificate) => (
-          <div
-            key={certificate.certificationName}
-            className="px-4 pb-2 xxs:block 5xl:flex 5xl:justify-between"
-            id={certificate.certificationName.toLowerCase()}
-          >
+          <div className="xxs:block 5xl:flex 5xl:justify-between">
             <div>
               <div>
-                <p className="subheading-text dark:text-primary">
-                  {certificate.certificationName}
+                <p className="subheading-text text-center dark:text-primary">
+                  {educationData.degree} - {educationData.acronym}.,{" "}
+                  {educationData.degreeProgram}
                 </p>
               </div>
+
               <div>
-                <p className="body-text uppercase tracking-wide dark:text-primary">
-                  {certificate.startDate} - {certificate.completionDate}
-                </p>
+                <h3 className="body-text text-center uppercase  tracking-wide dark:text-primary">
+                  {educationData.enrollmentStart} -{" "}
+                  {educationData.enrollmentEnd}
+                </h3>
               </div>
             </div>
-            <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full  xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-              <a
-                href={certificate.certificateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                title="View my certificate"
-                id={certificate.certificationName.toLowerCase() + "Link"}
+
+            <div className="mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full lg:w-[66%] xl:h-[50%] xl:w-[53%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+              <Link
+                to="/education/courses"
+                title="View my courses"
+                id="Courses Link"
               >
-                <p className="m-auto py-2 text-center font-body font-semibold text-secondary xxs:text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl dark:text-primary">
-                  View certificate{"  "}
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </p>
-              </a>
+                <h2 className="body-text m-auto py-2 text-center font-body font-semibold uppercase text-secondary dark:text-primary">
+                  View courses {"  "}
+                </h2>
+              </Link>
             </div>
           </div>
-        ))}
+        </section>
+
+        {/* Coursera Section */}
+        <section
+          className="m-2 mx-auto xxs:block"
+          id="coursera-certificate-info"
+        >
+          <div className="px-4">
+            <h2 className="subheading-text text-center uppercase dark:text-primary">
+              Coursera
+            </h2>
+          </div>
+          {courseraCertificates.map((certificate) => (
+            <div
+              key={certificate.certificationName}
+              className="px-4 pb-2 xxs:block 5xl:flex 5xl:justify-between"
+              id={certificate.certificationName.toLowerCase()}
+            >
+              <div>
+                <div>
+                  <h3 className="subheading-text text-center dark:text-primary">
+                    {certificate.certificationName}
+                  </h3>
+                </div>
+                <div>
+                  <h4 className="body-text text-center uppercase tracking-wide dark:text-primary">
+                    {certificate.startDate} - {certificate.completionDate}
+                  </h4>
+                </div>
+              </div>
+              <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+                <a
+                  href={certificate.certificateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="View my certificate"
+                  id={certificate.certificationName.toLowerCase() + "Link"}
+                >
+                  <h2 className="body-text m-auto py-2 text-center font-body font-semibold uppercase text-secondary dark:text-primary">
+                    View certificate{"  "}
+                  </h2>
+                </a>
+              </div>
+            </div>
+          ))}
+        </section>
       </section>
     </section>
   );

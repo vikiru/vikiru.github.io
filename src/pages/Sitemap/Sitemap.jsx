@@ -9,8 +9,8 @@ function Sitemap() {
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
       <main>
-        <div className="px-4 pt-4">
-          <h2 className="heading-text uppercase text-secondary underline dark:text-primary">
+        <div className="pt-4">
+          <h2 className="heading-text uppercase text-secondary underline dark:text-primary text-center">
             Sitemap
           </h2>
         </div>
