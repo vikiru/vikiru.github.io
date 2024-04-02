@@ -20,7 +20,7 @@ function ProjectCard(props) {
         {project.startDate} - {project.endDate}
       </p>
 
-      <div className="mx-2 md:px-2 py-2">
+      <div className="mx-2 py-2 md:px-2">
         <h3 className="body-text text-center dark:text-primary">
           {project.description}
         </h3>
@@ -74,7 +74,7 @@ function ProjectCard(props) {
 
       <section
         id="project-additional-info"
-        className="2xl:py-2 mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%]  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
+        className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%] 2xl:py-2  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
       >
         <Link to={project.projectPageUrl} id={project.name + "-showcase"}>
           <h2 className="body-text m-auto py-2 text-center font-semibold uppercase text-secondary dark:text-primary">

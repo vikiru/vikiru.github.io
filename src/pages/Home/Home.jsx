@@ -18,7 +18,7 @@ function HomePage() {
         <section>
           {/* Hero Section */}
           <section id="hero">
-            <h2 className="heading-text text-center dark:text-primary py-2">
+            <h2 className="heading-text py-2 text-center dark:text-primary">
               {aboutData.greeting}{" "}
               <span className="text-accentSecondary dark:text-darkAccent">
                 {aboutData.fullName}
@@ -45,7 +45,7 @@ function HomePage() {
 
             <section
               id="social-icons"
-              className="flex justify-center space-x-2 xl:space-x-4 py-2"
+              className="flex justify-center space-x-2 py-2 xl:space-x-4"
             >
               <a
                 href="https://github.com/vikiru"
