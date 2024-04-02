@@ -19,7 +19,7 @@ function EducationContainer() {
         </h2>
       </div>
 
-      <section className="grid-cols-1 grid">
+      <section className="grid grid-cols-1">
         {/* University Section*/}
         <section id="unversity-info" className="px-4 pt-4">
           <div>
