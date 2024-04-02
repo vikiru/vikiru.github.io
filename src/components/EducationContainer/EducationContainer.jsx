@@ -19,7 +19,7 @@ function EducationContainer() {
         </h2>
       </div>
 
-      <section className="xxs:grid-cols-1 lg:grid">
+      <section className="grid-cols-1 grid">
         {/* University Section*/}
         <section id="unversity-info" className="px-4 pt-4">
           <div>
@@ -28,7 +28,7 @@ function EducationContainer() {
             </h3>
           </div>
 
-          <div className="xxs:block 5xl:flex 5xl:justify-between">
+          <div className="xxs:block">
             <div>
               <div>
                 <p className="subheading-text text-center dark:text-primary">
@@ -45,7 +45,7 @@ function EducationContainer() {
               </div>
             </div>
 
-            <div className="mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full lg:w-[66%] xl:h-[50%] xl:w-[53%] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+            <div className="2xl:w-[50%]dark:border-primary mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:h-[50%] xl:w-[53%] 2xl:w-[50%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
               <Link
                 to="/education/courses"
                 title="View my courses"
@@ -72,7 +72,7 @@ function EducationContainer() {
           {courseraCertificates.map((certificate) => (
             <div
               key={certificate.certificationName}
-              className="px-4 pb-2 xxs:block 5xl:flex 5xl:justify-between"
+              className="px-4 pb-2 xxs:block"
               id={certificate.certificationName.toLowerCase()}
             >
               <div>

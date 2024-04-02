@@ -53,7 +53,7 @@
     "object-curly-spacing": ["error", "always"],
     "prefer-const": "error",
     "prettier/prettier": [
-      "warn",
+      "off",
       {
         "endOfLine": "auto"
       }
@@ -74,6 +74,7 @@
     "spaced-comment": "error",
     "yoda": "error",
     "tailwindcss/no-custom-classname": "off",
-    "tailwindcss/enforces-shorthand": "off"
+    "tailwindcss/enforces-shorthand": "off",
+    "tailwindcss/class-names-order": "off"
   }
 }

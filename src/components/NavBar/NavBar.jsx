@@ -91,7 +91,7 @@ function NavBar() {
             <Link
               to="/"
               title="View my homepage"
-              className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
+              className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-primary"
             >
               <span className="text-primary  dark:text-primary">V</span>
               <span className="text-accent dark:text-darkAccent">K</span>
