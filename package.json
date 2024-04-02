@@ -25,7 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint ./src/**/*.{html,js,jsx} --fix-dry-run",
-    "prettier": "prettier --write ."
+    "prettier": "eslint --ext js,jsx --fix && prettier --write ."
   },
   "eslintConfig": {
     "extends": [

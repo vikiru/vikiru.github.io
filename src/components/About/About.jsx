@@ -5,7 +5,7 @@ function About() {
     <section id="about" className="mx-auto pb-6">
       <div className="pt-4">
         <div className="px-4">
-          <h2 className="heading-text pt-2 uppercase underline dark:text-primary">
+          <h2 className="heading-text pt-2 text-center uppercase underline dark:text-primary">
             About
           </h2>
         </div>

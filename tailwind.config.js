@@ -7,13 +7,16 @@ module.exports = {
     screens: {
       xxs: "200px",
       xs: "300px",
+      sm: "600px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
       "2xl": "1792px",
       "3xl": "2048px",
       "4xl": "2304px",
       "5xl": "2560px",
       "6xl": "2816px",
       "7xl": "3072px",
-      ...defaultTheme.screens,
     },
     fontFamily: {
       heading: ["Raleway"],

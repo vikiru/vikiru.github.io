@@ -83,6 +83,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [GitHub Repo](https://github.com/vikiru/kelbrum)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/Kelbrum)
 
+- **Parseum | Markdown Editor and Parser**
+  - Technologies Used: `Node.js`, `Peggy.js`, `React`, `TailwindCSS`, `DaisyUI`
+  - [GitHub Repo](https://github.com/vikiru/parseum)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Parseum)
+
 - **RESTasaurus | Dinosaur REST API**
   - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
   - [GitHub Repo](https://github.com/vikiru/restasaurus)
@@ -152,7 +157,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [⚡ Setup](#-setup)
 - [🚀 Run](#-run)
 - [📜 Available Scripts](#-available-scripts)
-- [✨ Acknowledgements](#-acknowledgements)
+- [✨ Acknowledgments](#-acknowledgments)
 - [©️ License](#️-license)
 
 ## 🛠️ Tech Stack
@@ -215,31 +220,31 @@ http://localhost:3000/
 
 ## 📜 Available Scripts
 
-1. Start the local development server to make changes to the application
+1. Start the app in the development environment.
 
 ```bash
 npm run start
 ```
 
-2. Build the ouput directory with all of the neccessary files, optimized for production
+2. Build the project files and optimize for production.
 
 ```bash
 npm run build
 ```
 
-3. Lint all files using [ESLint](https://eslint.org/)
+3. Lint all files and check if there are any issues, with [ESLint](https://eslint.org/).
 
 ```bash
 npm run lint
 ```
 
-4. Format all files using [Prettier](https://prettier.io/)
+4. Fix all ESLint issues then format the files with [Prettier](https://prettier.io/).
 
 ```bash
 npm run prettier
 ```
 
-## ✨ Acknowledgements
+## ✨ Acknowledgments
 
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [Font Awesome Icons](https://fontawesome.com/)
