@@ -18,7 +18,7 @@ function HomePage() {
         <section>
           {/* Hero Section */}
           <section id="hero">
-            <h2 className="heading-text text-center dark:text-primary">
+            <h2 className="heading-text py-2 text-center dark:text-primary">
               {aboutData.greeting}{" "}
               <span className="text-accentSecondary dark:text-darkAccent">
                 {aboutData.fullName}
@@ -26,10 +26,10 @@ function HomePage() {
             </h2>
 
             {/* Profile Section - Profile Pic, Social Icons, and Location */}
-            <section id="profile" className="flex justify-center pt-2">
+            <section id="profile" className="flex justify-center py-2">
               <div className="flex justify-center rounded-full">
                 <img
-                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[260px] xl:w-[350px]"
+                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[260px] xl:w-[350px] 5xl:w-full"
                   src={aboutData.profilePic}
                   alt="GitHub Profile Pic"
                   title="GitHub Profile Pic"
@@ -37,7 +37,7 @@ function HomePage() {
               </div>
             </section>
 
-            <section id="location" className="flex justify-center py-1">
+            <section id="location" className="flex justify-center py-4">
               <span className="subheading-text text-secondary dark:text-primary">
                 {aboutData.location}
               </span>
@@ -45,7 +45,7 @@ function HomePage() {
 
             <section
               id="social-icons"
-              className="flex justify-center space-x-2 xl:space-x-4"
+              className="flex justify-center space-x-2 py-2 xl:space-x-4"
             >
               <a
                 href="https://github.com/vikiru"
@@ -77,31 +77,33 @@ function HomePage() {
             </section>
 
             {/* Hero Body Text */}
-            <p className="body-text pt-2 dark:text-primary">
-              Welcome to my portfolio! I am a dedicated{" "}
-              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
-                {aboutData.title.toLowerCase()}
-              </span>{" "}
-              with a passion for software and web development.
-            </p>
-            <p className="body-text pt-2 dark:text-primary">
-              Continual learning is my driving force, and I strive to apply my
-              expanding knowledge to meaningful projects.
-            </p>
-            <p className="body-text pt-2 dark:text-primary">
-              Feel free to{" "}
-              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
-                read more
-              </span>{" "}
-              about me,{" "}
-              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
-                view
-              </span>{" "}
-              some of my GitHub projects, or{" "}
-              <span className="font-semibold text-accentSecondary dark:text-darkAccent">
-                contact me!
-              </span>
-            </p>
+            <section className="lg:items-center lg:justify-center">
+              <p className="body-text pt-2 dark:text-primary">
+                Welcome to my portfolio! I am a dedicated{" "}
+                <span className="font-semibold text-accentSecondary dark:text-darkAccent">
+                  {aboutData.title.toLowerCase()}
+                </span>{" "}
+                with a passion for software and web development.
+              </p>
+              <p className="body-text pt-2 dark:text-primary">
+                Continual learning is my driving force, and I strive to apply my
+                expanding knowledge to meaningful projects.
+              </p>
+              <p className="body-text pt-2 dark:text-primary">
+                Feel free to{" "}
+                <span className="font-semibold text-accentSecondary dark:text-darkAccent">
+                  read more
+                </span>{" "}
+                about me,{" "}
+                <span className="font-semibold text-accentSecondary dark:text-darkAccent">
+                  view
+                </span>{" "}
+                some of my GitHub projects, or{" "}
+                <span className="font-semibold text-accentSecondary dark:text-darkAccent">
+                  contact me!
+                </span>
+              </p>
+            </section>
           </section>
 
           {/* Call to Action */}

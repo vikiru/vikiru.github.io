@@ -67,7 +67,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Editor/IDE**: VSCode, IntelliJ, Eclipse
 
-**Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase
+**Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase, Fl0
 
 **Runtime**: Node.js
 

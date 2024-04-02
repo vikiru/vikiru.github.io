@@ -32,19 +32,19 @@ p {
 
 @layer components {
   .heading-text {
-    @apply font-heading font-extrabold leading-normal tracking-tight xxs:text-sm sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl;
+    @apply font-heading font-extrabold leading-normal tracking-tight xxs:text-sm sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl 5xl:text-5xl 6xl:text-6xl 9xl:text-8xl;
   }
 
   .subheading-text {
-    @apply font-subheading font-semibold leading-normal xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl;
+    @apply font-subheading font-semibold leading-normal xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-2xl 5xl:text-3xl 6xl:text-4xl 9xl:text-6xl;
   }
 
   .body-text {
-    @apply font-body font-light leading-6 xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl;
+    @apply font-body font-light leading-6 xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl 4xl:text-2xl 5xl:text-3xl 6xl:text-4xl 9xl:text-6xl;
   }
 
   .tech-text {
-    @apply font-body font-light leading-6 xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl;
+    @apply font-body font-light leading-6 xxs:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl 4xl:text-2xl 5xl:text-3xl 6xl:text-4xl 9xl:text-6xl;
   }
 
   .cta-btn {
@@ -52,6 +52,6 @@ p {
   }
 
   .social-icons {
-    @apply ease-in-out-anim pr-2 text-accent xxs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl dark:text-darkAccent;
+    @apply ease-in-out-anim pr-2 text-accent xxs:text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 7xl:text-7xl 9xl:text-9xl dark:text-darkAccent;
   }
 }
