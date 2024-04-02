@@ -14,7 +14,7 @@ const skillsData = {
   tools: ["Maven", "npm", "pip", "git", "GitHub", "GitHub Desktop", "Postman"],
   database: ["MySQL", "SQLite", "MongoDB", "Sequelize", "Mongoose"],
   devops: ["CircleCI", "GitHub Actions", "Snyk"],
-  hosting: ["GitHub Pages", "Heroku", "Render", "Vercel", "Firebase"],
+  hosting: ["GitHub Pages", "Heroku", "Render", "Vercel", "Firebase", "Fl0"],
   ide: ["IntelliJ", "Eclipse"],
   editor: ["VS Code"],
   os: ["Windows", "Ubuntu"],
