@@ -77,7 +77,7 @@ function HomePage() {
             </section>
 
             {/* Hero Body Text */}
-            <section className="lg:mx-auto">
+            <section className="lg:items-center lg:justify-center">
               <p className="body-text pt-2 dark:text-primary">
                 Welcome to my portfolio! I am a dedicated{" "}
                 <span className="font-semibold text-accentSecondary dark:text-darkAccent">
