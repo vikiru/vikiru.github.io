@@ -87,7 +87,7 @@ function EducationContainer() {
                   </h4>
                 </div>
               </div>
-              <div className="rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full xl:mr-5 xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
+              <div className="mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                 <a
                   href={certificate.certificateLink}
                   target="_blank"

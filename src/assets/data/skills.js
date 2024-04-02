@@ -15,7 +15,7 @@ const skillsData = {
   database: ["MySQL", "SQLite", "MongoDB", "Sequelize", "Mongoose"],
   devops: ["CircleCI", "GitHub Actions", "Snyk"],
   hosting: ["GitHub Pages", "Heroku", "Render", "Vercel", "Firebase"],
-  ide: ["VSCode", "IntelliJ", "Eclipse"],
+  ide: ["IntelliJ", "Eclipse"],
   editor: ["VS Code"],
   os: ["Windows", "Ubuntu"],
   runtime: ["Node.js"],

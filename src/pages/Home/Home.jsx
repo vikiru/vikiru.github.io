@@ -18,7 +18,7 @@ function HomePage() {
         <section>
           {/* Hero Section */}
           <section id="hero">
-            <h2 className="heading-text text-center dark:text-primary">
+            <h2 className="heading-text text-center dark:text-primary py-2">
               {aboutData.greeting}{" "}
               <span className="text-accentSecondary dark:text-darkAccent">
                 {aboutData.fullName}
@@ -26,10 +26,10 @@ function HomePage() {
             </h2>
 
             {/* Profile Section - Profile Pic, Social Icons, and Location */}
-            <section id="profile" className="flex justify-center pt-2">
+            <section id="profile" className="flex justify-center py-2">
               <div className="flex justify-center rounded-full">
                 <img
-                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[260px] xl:w-[350px]"
+                  className="h-auto w-full rounded-full object-scale-down xxs:w-[180px] md:w-[260px] xl:w-[350px] 5xl:w-full"
                   src={aboutData.profilePic}
                   alt="GitHub Profile Pic"
                   title="GitHub Profile Pic"
@@ -37,7 +37,7 @@ function HomePage() {
               </div>
             </section>
 
-            <section id="location" className="flex justify-center py-1">
+            <section id="location" className="flex justify-center py-4">
               <span className="subheading-text text-secondary dark:text-primary">
                 {aboutData.location}
               </span>
@@ -45,7 +45,7 @@ function HomePage() {
 
             <section
               id="social-icons"
-              className="flex justify-center space-x-2 xl:space-x-4"
+              className="flex justify-center space-x-2 xl:space-x-4 py-2"
             >
               <a
                 href="https://github.com/vikiru"
