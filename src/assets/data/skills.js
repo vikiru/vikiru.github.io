@@ -2,7 +2,7 @@ const skillsData = {
   languages: ["Java", "Python", "HTML", "CSS", "JavaScript"],
   frameworks: [
     "Spring",
-    "JUnit5",
+    "JUnit",
     "Mocha",
     "Express.js",
     "React",
@@ -14,7 +14,7 @@ const skillsData = {
   tools: ["Maven", "npm", "pip", "git", "GitHub", "GitHub Desktop", "Postman"],
   database: ["MySQL", "SQLite", "MongoDB", "Sequelize", "Mongoose"],
   devops: ["CircleCI", "GitHub Actions", "Snyk"],
-  hosting: ["GitHub Pages", "Heroku", "Render", "Vercel", "Firebase", "Fl0"],
+  hosting: ["GitHub Pages", "Heroku", "Render", "Vercel", "Firebase", "Fl0", "Surge.sh"],
   ide: ["IntelliJ", "Eclipse"],
   editor: ["VS Code"],
   os: ["Windows", "Ubuntu"],
