@@ -1,0 +1,21 @@
+export const config = {
+  printWidth: 100,
+  tabWidth: 4,
+  useTabs: false,
+  semi: true,
+  singleQuote: true,
+  trailingComma: "all",
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: "always",
+  endOfLine: "auto",
+  singleAttributePerLine: false,
+  importOrder: ["^react", "^@\\w", "^\\w", "^.+/.*\\.css$", "^[../]"],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
+  plugins: [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+  ],
+  exclude: ["./node_modules"],
+};
