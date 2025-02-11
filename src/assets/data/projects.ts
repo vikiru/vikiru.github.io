@@ -1,4 +1,10 @@
-const projectData = {
+import { Project } from "~types/Project";
+
+type ProjectData = {
+  projects: Project[];
+};
+
+const projectData: ProjectData = {
   projects: [
     {
       name: "Kelbrum",

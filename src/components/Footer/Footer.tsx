@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import React from "react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import navData from "./../../assets/data/nav";
+import navData from "~assets/data/nav";
 
 function Footer() {
   return (

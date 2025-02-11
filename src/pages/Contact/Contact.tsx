@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "./../../components/Footer/Footer";
-import NavBar from "./../../components/NavBar/NavBar";
+import Footer from "~components/Footer/Footer";
+import NavBar from "~components/NavBar/NavBar";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import kwesforms from "kwesforms";
 

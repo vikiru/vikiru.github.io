@@ -1,7 +1,7 @@
-import CourseCard from "../../components/CourseCard/CourseCard";
+import CourseCard from "~components/CourseCard/CourseCard";
 import React from "react";
-import courseData from "./../../assets/data/courses";
-import educationData from "../../assets/data/education";
+import courseData from "~assets/data/courses";
+import educationData from "~assets/data/education";
 
 function CourseContainer() {
   return (

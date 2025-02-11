@@ -1,6 +1,6 @@
-import Footer from "../../components/Footer/Footer";
-import NavBar from "../../components/NavBar/NavBar";
-import ProjectContainer from "../../components/ProjectContainer/ProjectContainer";
+import Footer from "~components/Footer/Footer";
+import NavBar from "~components/NavBar/NavBar";
+import ProjectContainer from "~components/ProjectContainer/ProjectContainer";
 import React from "react";
 
 function ProjectsPage() {

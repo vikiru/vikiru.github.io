@@ -1,6 +1,6 @@
-import CourseContainer from "../../components/CourseContainer/CourseContainer";
-import Footer from "./../../components/Footer/Footer";
-import NavBar from "../../components/NavBar/NavBar";
+import CourseContainer from "~components/CourseContainer/CourseContainer";
+import Footer from "~components/Footer/Footer";
+import NavBar from "~components/NavBar/NavBar";
 import React from "react";
 
 function CoursesPage() {

@@ -1,4 +1,17 @@
-const skillsData = {
+type SkillsData = {
+  languages: string[];
+  frameworks: string[];
+  libraries: string[];
+  tools: string[];
+  database: string[];
+  devops: string[];
+  hosting: string[];
+  ide: string[];
+  editor: string[];
+  os: string[];
+};
+
+const skillsData: SkillsData = {
   languages: ["Java", "Python", "HTML", "CSS", "JavaScript"],
   frameworks: [
     "Spring",
@@ -11,7 +24,16 @@ const skillsData = {
     "Flask",
   ],
   libraries: ["NumPy", "SciPy", "SimPy", "Pandas", "Sinon", "Chai", "DaisyUI"],
-  tools: ["Maven", "npm", "pip", "git", "GitHub", "GitHub Desktop", "Postman"],
+  tools: [
+    "Maven",
+    "Node.js",
+    "npm",
+    "pip",
+    "git",
+    "GitHub",
+    "GitHub Desktop",
+    "Postman",
+  ],
   database: ["MySQL", "SQLite", "MongoDB", "Sequelize", "Mongoose"],
   devops: ["CircleCI", "GitHub Actions", "Snyk"],
   hosting: [
@@ -26,7 +48,6 @@ const skillsData = {
   ide: ["IntelliJ", "Eclipse"],
   editor: ["VS Code"],
   os: ["Windows", "Ubuntu"],
-  runtime: ["Node.js"],
 };
 
 export default skillsData;

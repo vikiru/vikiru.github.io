@@ -1,12 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Project } from "~types/Project";
 
-function ProjectCard(props) {
-  const project = props.project;
+type ProjectCardProps = {
+  project: Project;
+};
+
+function ProjectCard(props: ProjectCardProps) {
+  const project: Project = props.project;
+
   return (
     <section
       id={project.name}
@@ -85,9 +90,5 @@ function ProjectCard(props) {
     </section>
   );
 }
-
-ProjectCard.propTypes = {
-  project: PropTypes.object.isRequired,
-};
 
 export default ProjectCard;

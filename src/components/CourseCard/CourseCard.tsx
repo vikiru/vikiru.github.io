@@ -1,8 +1,13 @@
-import PropTypes from "prop-types";
 import React from "react";
+import { Course } from "~types/Course";
 
-function CourseCard(props) {
+type CourseCardProps = {
+  course: Course;
+};
+
+function CourseCard(props: CourseCardProps) {
   const course = props.course;
+
   return (
     <section
       id={course.courseCode + ":" + course.name}
@@ -27,9 +32,5 @@ function CourseCard(props) {
     </section>
   );
 }
-
-CourseCard.propTypes = {
-  course: PropTypes.object.isRequired,
-};
 
 export default CourseCard;

@@ -1,4 +1,6 @@
-const courseData = {
+import { CourseData } from "~types/CourseData";
+
+const courseData: CourseData = {
   years: [
     {
       title: "First Year",

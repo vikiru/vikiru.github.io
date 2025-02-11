@@ -1,5 +1,5 @@
 import React from "react";
-import skillsData from "../../assets/data/skills";
+import skillsData from "~assets/data/skills";
 
 function SkillsContainer() {
   return (

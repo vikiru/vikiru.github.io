@@ -3,7 +3,7 @@ import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import navData from "../../assets/data/nav";
+import navData from "~assets/data/nav";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);

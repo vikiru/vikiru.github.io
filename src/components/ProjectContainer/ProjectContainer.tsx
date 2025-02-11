@@ -1,6 +1,6 @@
-import ProjectCard from "../ProjectCard/ProjectCard";
+import ProjectCard from "~components/ProjectCard/ProjectCard";
 import React from "react";
-import projectData from "../../assets/data/projects";
+import projectData from "~assets/data/projects";
 
 function ProjectContainer() {
   const projects = projectData.projects;

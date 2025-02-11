@@ -1,9 +1,9 @@
-import About from "../../components/About/About";
-import EducationContainer from "../../components/EducationContainer/EducationContainer";
-import Footer from "../../components/Footer/Footer";
-import NavBar from "../../components/NavBar/NavBar";
+import About from "~components/About/About";
+import EducationContainer from "~components/EducationContainer/EducationContainer";
+import Footer from "~components/Footer/Footer";
+import NavBar from "~components/NavBar/NavBar";
 import React from "react";
-import SkillsContainer from "../../components/SkillsContainer/SkillsContainer";
+import SkillsContainer from "~components/SkillsContainer/SkillsContainer";
 
 function AboutPage() {
   return (

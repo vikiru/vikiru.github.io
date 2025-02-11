@@ -1,14 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "./../../components/Footer/Footer";
+import Footer from "~components/Footer/Footer";
 import { Link } from "react-router-dom";
-import NavBar from "../../components/NavBar/NavBar";
-import PropTypes from "prop-types";
+import NavBar from "~components/NavBar/NavBar";
 import React from "react";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Project } from "~types/Project";
 
-function ProjectShowcasePage(props) {
+type ProjectShowcaseProps = {
+  project: Project;
+};
+
+function ProjectShowcasePage(props: ProjectShowcaseProps) {
   const project = props.project;
+
   return (
     <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
       <NavBar />
@@ -136,9 +141,5 @@ function ProjectShowcasePage(props) {
     </div>
   );
 }
-
-ProjectShowcasePage.propTypes = {
-  project: PropTypes.object,
-};
 
 export default ProjectShowcasePage;

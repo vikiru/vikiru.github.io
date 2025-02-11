@@ -64,7 +64,9 @@ export default [
     },
 
     rules: {
-      "no-undef": "off",
+      "@typescript-eslint/no-undef": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
       "arrow-spacing": [
         "warn",
         {

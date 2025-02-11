@@ -1,11 +1,11 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "../../components/Footer/Footer";
+import Footer from "~components/Footer/Footer";
 import { Link } from "react-router-dom";
-import NavBar from "./../../components/NavBar/NavBar";
+import NavBar from "~components/NavBar/NavBar";
 import React from "react";
-import aboutData from "./../../assets/data/about";
+import aboutData from "~assets/data/about";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
