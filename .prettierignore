@@ -1,4 +1,13 @@
-node_modules/
-src/assets/images/
-README.md
 .github/
+.gitignore
+.prettierignore
+*.css
+*.json
+*.mjs
+*.xml
+dist/
+LICENSE
+node_modules/
+public/
+README.md
+src/assets/images/
