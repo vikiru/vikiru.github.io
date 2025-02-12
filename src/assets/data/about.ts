@@ -1,4 +1,4 @@
-import profilePic from '~images/profilePic.jpg';
+import profilePic from '~images/profile-pic.png';
 
 const aboutData = {
     firstName: 'Visakan',

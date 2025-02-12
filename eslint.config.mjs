@@ -159,6 +159,7 @@ export default [
             'tailwindcss/class-names-order': 'off',
             'tailwindcss/no-unnecessary-arbitrary-value': 'off',
             'react/react-in-jsx-scope': 'off',
+            'no-restricted-globals': 'off',
         },
     },
     {

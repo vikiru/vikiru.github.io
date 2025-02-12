@@ -25,8 +25,8 @@
     "url": "https://github.com/vikiru/vikiru.github.io/issues"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "lint": "eslint ./src/**/* --fix-dry-run",
     "prettier": "eslint --fix . && prettier --write ."
   },
@@ -64,8 +64,11 @@
     "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
+    "customize-cra": "^1.0.0",
     "kwesforms": "^2.2.6",
+    "module-alias": "^2.2.3",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "^5.0.1",

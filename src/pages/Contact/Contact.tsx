@@ -140,12 +140,12 @@ function Contact() {
                                     </label>
                                     <textarea
                                         className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent"
-                                        cols="50"
+                                        cols={50}
                                         id="content"
                                         name="content"
                                         placeholder="Enter message here"
                                         required
-                                        rows="5"
+                                        rows={5}
                                     ></textarea>
                                 </div>
 
