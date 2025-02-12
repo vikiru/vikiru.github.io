@@ -19,7 +19,7 @@ function SkillsContainer() {
                                 {skillCategory}
                             </h2>
                             <p className="body-text text-center text-secondary dark:text-primary">
-                                {skillsData[`${skillCategory}`].join(', ')}
+                                Skill
                             </p>
                         </div>
                     ))}
