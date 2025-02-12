@@ -18,7 +18,7 @@ function Contact() {
         const content = form['content'].value;
 
         if (name !== '' && email !== '' && subject !== '' && content !== '') {
-            confirm('Are you sure you want to send this email?');
+            // confirm('Are you sure you want to send this email?');
         }
     }
 
