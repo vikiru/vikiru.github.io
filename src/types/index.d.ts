@@ -1,1 +1,1 @@
-declare module "kwesforms";
+declare module 'kwesforms';

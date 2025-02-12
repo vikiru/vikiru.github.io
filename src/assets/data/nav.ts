@@ -1,24 +1,24 @@
 const navData = [
-  {
-    navTitle: "Home",
-    navLink: "/",
-    navDesc: "View my homepage",
-  },
-  {
-    navTitle: "About",
-    navDesc: "Read more about me",
-    navLink: "/about",
-  },
-  {
-    navTitle: "Courses",
-    navLink: "/education/courses",
-    navDesc: "View my courses",
-  },
-  {
-    navTitle: "Projects",
-    navLink: "/projects",
-    navDesc: "View my work",
-  },
+    {
+        navDesc: 'View my homepage',
+        navLink: '/',
+        navTitle: 'Home',
+    },
+    {
+        navDesc: 'Read more about me',
+        navLink: '/about',
+        navTitle: 'About',
+    },
+    {
+        navDesc: 'View my courses',
+        navLink: '/education/courses',
+        navTitle: 'Courses',
+    },
+    {
+        navDesc: 'View my work',
+        navLink: '/projects',
+        navTitle: 'Projects',
+    },
 ];
 
 export default navData;

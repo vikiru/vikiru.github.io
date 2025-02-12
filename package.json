@@ -28,7 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint ./src/**/* --fix-dry-run",
-    "prettier": "eslint --fix && prettier --write ."
+    "prettier": "eslint --fix . && prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -78,7 +78,6 @@
     "@babel/plugin-transform-private-property-in-object": "^7.23.4",
     "@eslint/js": "^9.20.0",
     "@tailwindcss/typography": "^0.5.12",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@types/react-router-dom": "^5.3.3",
@@ -89,19 +88,17 @@
     "eslint-plugin-jest": "^27.6.3",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-perfectionist": "^4.8.0",
+    "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-sonarjs": "^3.0.1",
-    "eslint-plugin-sort-exports": "^0.9.1",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "eslint-plugin-unicorn": "^56.0.1",
-    "eslint-plugin-unused-imports": "^4.1.4",
     "gh-pages": "^6.1.1",
     "globals": "^15.14.0",
     "postcss": "^8.4.33",
     "postcss-import": "^16.0.0",
     "prettier": "^3.5.0",
-    "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "react-axe": "^3.5.4",
     "tailwind-scrollbar": "^3.0.5",

@@ -1,6 +1,6 @@
-import { Course } from "~types/Course";
+import { Course } from '~types/Course';
 
 export type UniversityYear = {
-  title: string;
-  courses: Course[];
+    courses: Course[];
+    title: string;
 };

@@ -1,13 +1,13 @@
 export type Project = {
-  name: string;
-  githubUrl: string;
-  documentationUrl: string;
-  videoPath: string | any;
-  projectPageUrl: string;
-  description: string;
-  startDate: string;
-  endDate: string;
-  contributors: string;
-  accomplishments: string[];
-  technologiesUsed: string[];
+    accomplishments: string[];
+    contributors: string;
+    description: string;
+    documentationUrl: string;
+    endDate: string;
+    githubUrl: string;
+    name: string;
+    projectPageUrl: string;
+    startDate: string;
+    technologiesUsed: string[];
+    videoPath: any | string;
 };
