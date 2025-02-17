@@ -13,12 +13,12 @@ function NavBar() {
     return (
         <nav>
             <section
-                className="flex items-center justify-between bg-secondary lg:hidden dark:bg-darkSecondary"
+                className="bg-secondary dark:bg-darkSecondary flex items-center justify-between lg:hidden"
                 id="small-navigation-menu"
             >
                 <div className="px-2 lg:hidden" id="logo">
                     <Link
-                        className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
+                        className="text-primary dark:text-primary text-center font-cinzel tracking-widest xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl"
                         title="View my homepage"
                         to="/"
                     >
@@ -42,12 +42,12 @@ function NavBar() {
                     >
                         {!isOpen ? (
                             <FontAwesomeIcon
-                                className="font-primary pl-1 text-accent dark:text-darkAccent"
+                                className="font-primary text-accent dark:text-darkAccent pl-1"
                                 icon={faBars}
                             />
                         ) : (
                             <FontAwesomeIcon
-                                className="font-primary pl-1 text-accent dark:text-darkAccent"
+                                className="font-primary text-accent dark:text-darkAccent pl-1"
                                 icon={faX}
                             />
                         )}
@@ -60,7 +60,7 @@ function NavBar() {
                     className="block justify-center lg:hidden"
                     id="nav-links"
                 >
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
+                    <h2 className="subheading-text bg-secondary text-primary hover:decoration-accent dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent py-2 uppercase tracking-widest hover:underline xxs:text-center lg:text-2xl">
                         <Link
                             id="homepage-navbar-sm"
                             title="View my homepage"
@@ -70,7 +70,7 @@ function NavBar() {
                         </Link>
                     </h2>
 
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
+                    <h2 className="subheading-text bg-secondary text-primary hover:decoration-accent dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent py-2 uppercase tracking-widest hover:underline xxs:text-center lg:text-2xl">
                         <Link
                             id="about-navbar-sm"
                             title="Read more about me"
@@ -80,7 +80,7 @@ function NavBar() {
                         </Link>
                     </h2>
 
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
+                    <h2 className="subheading-text bg-secondary text-primary hover:decoration-accent dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent py-2 uppercase tracking-widest hover:underline xxs:text-center lg:text-2xl">
                         <Link
                             id="courses-navbar-sm"
                             title="View my courses"
@@ -90,7 +90,7 @@ function NavBar() {
                         </Link>
                     </h2>
 
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
+                    <h2 className="subheading-text bg-secondary text-primary hover:decoration-accent dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent py-2 uppercase tracking-widest hover:underline xxs:text-center lg:text-2xl">
                         <Link
                             id="projects-navbar-sm"
                             title="View my work"
@@ -102,12 +102,12 @@ function NavBar() {
                 </section>
             ) : (
                 <section
-                    className="hidden bg-secondary py-4 lg:flex lg:justify-between dark:bg-darkSecondary"
+                    className="bg-secondary dark:bg-darkSecondary hidden py-4 lg:flex lg:justify-between"
                     id="navigation-menu"
                 >
                     <div className="lg:px-3 xl:px-4" id="logo">
                         <Link
-                            className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 7xl:text-8xl dark:text-primary"
+                            className="text-primary dark:text-primary text-center font-cinzel tracking-widest xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 7xl:text-8xl"
                             title="View my homepage"
                             to="/"
                         >
@@ -126,7 +126,7 @@ function NavBar() {
                     >
                         {navData.map((nav) => (
                             <Link
-                                className="subheading-text uppercase tracking-widest text-primary hover:underline hover:decoration-accent xl:pt-2 dark:text-primary dark:hover:decoration-darkAccent"
+                                className="subheading-text text-primary hover:decoration-accent dark:text-primary dark:hover:decoration-darkAccent uppercase tracking-widest hover:underline xl:pt-2"
                                 id={nav.navTitle.toLowerCase() + '-navbar-lg'}
                                 key={nav.navTitle}
                                 title={nav.navDesc}

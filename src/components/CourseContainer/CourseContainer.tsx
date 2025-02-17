@@ -7,7 +7,7 @@ function CourseContainer() {
         <section id="university-courses">
             <section className="min-w-screen px-4 py-2" id="unversity-info">
                 <div className="pt-4">
-                    <h2 className="heading-text uppercase dark:text-primary">
+                    <h2 className="heading-text dark:text-primary uppercase">
                         {educationData.universityName}
                     </h2>
                 </div>
@@ -20,7 +20,7 @@ function CourseContainer() {
                 </div>
 
                 <div>
-                    <h3 className="body-text uppercase dark:text-primary">
+                    <h3 className="body-text dark:text-primary uppercase">
                         {educationData.enrollmentStart} -{' '}
                         {educationData.enrollmentEnd}
                     </h3>
@@ -34,7 +34,7 @@ function CourseContainer() {
                         id={year.title.toLowerCase() + ' courses'}
                         key={year.title}
                     >
-                        <h3 className="heading-text bg-secondary px-4 text-center uppercase text-primary underline lg:py-6 dark:bg-darkSecondary dark:text-primary">
+                        <h3 className="heading-text bg-secondary text-primary dark:bg-darkSecondary dark:text-primary px-4 text-center uppercase underline lg:py-6">
                             {year.title}
                         </h3>
                         <div className="grid gap-3 px-2 pt-2 lg:grid-cols-2">

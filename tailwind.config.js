@@ -22,23 +22,34 @@ module.exports = {
             '10xl': '3840px',
             '11xl': '4096px',
         },
-        fontFamily: {
-            heading: ['Raleway'],
-            subheading: ['Open Sans'],
-            body: ['Lato'],
-            cinzel: ['Cinzel'],
-        },
-        colors: {
-            primary: '#FFFFFF',
-            secondary: '#252627',
-            accentSecondary: '#2152B5',
-            accent: '#6F95E7',
-            darkPrimary: '#191919',
-            darkSecondary: '#222831',
-            darkAccent: '#C84C09',
+        extend: {
+            fontFamily: {
+                heading: ['Raleway'],
+                subheading: ['Open Sans'],
+                body: ['Lato'],
+                cinzel: ['Cinzel'],
+            },
         },
     },
-    extend: {},
+    extend: {
+        theme: {
+            colors: {
+                primary: '#FFFFFF',
+                secondary: '#252627',
+                accentSecondary: '#2152B5',
+                accent: '#6F95E7',
+                darkPrimary: '#191919',
+                darkSecondary: '#222831',
+                darkAccent: '#C84C09',
+            },
+            fontFamily: {
+                heading: ['Raleway'],
+                subheading: ['Open Sans'],
+                body: ['Lato'],
+                cinzel: ['Cinzel'],
+            },
+        },
+    },
     plugins: [
         require('@tailwindcss/typography'),
         require('tailwind-scrollbar'),

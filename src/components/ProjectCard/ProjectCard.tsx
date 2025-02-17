@@ -13,19 +13,19 @@ function ProjectCard(props: ProjectCardProps) {
 
     return (
         <section
-            className="mt-2 rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:border-darkAccent dark:bg-darkSecondary"
+            className="border-accent bg-primary dark:border-darkAccent dark:bg-darkSecondary mt-2 rounded-lg border-4 bg-gradient-to-r pb-6 shadow-md"
             id={project.name}
         >
-            <h2 className="heading-text px-2 pt-2 text-center text-secondary dark:text-primary">
+            <h2 className="heading-text text-secondary dark:text-primary px-2 pt-2 text-center">
                 {project.name}
             </h2>
 
-            <p className="subheading-text text-center uppercase text-secondary dark:text-primary">
+            <p className="subheading-text text-secondary dark:text-primary text-center uppercase">
                 {project.startDate} - {project.endDate}
             </p>
 
             <div className="mx-2 py-2 md:px-2">
-                <h3 className="body-text text-center dark:text-primary">
+                <h3 className="body-text dark:text-primary text-center">
                     {project.description}
                 </h3>
             </div>
@@ -36,10 +36,10 @@ function ProjectCard(props: ProjectCardProps) {
             >
                 {project.technologiesUsed.map((tech) => (
                     <div
-                        className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+                        className="border-accent bg-secondary dark:border-darkAccent dark:bg-darkSecondary dark:text-primary container mx-auto mb-2 rounded-full border-4 hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] lg:w-[90%]"
                         key={tech}
                     >
-                        <h2 className="tech-text text-center text-primary dark:text-primary">
+                        <h2 className="tech-text text-primary dark:text-primary text-center">
                             {tech}
                         </h2>
                     </div>
@@ -51,7 +51,7 @@ function ProjectCard(props: ProjectCardProps) {
                     className="mx-auto flex w-full justify-center space-x-2 pb-4 pt-2 lg:space-x-4"
                     id="project-icons"
                 >
-                    {project.githubUrl != '' && (
+                    {project.githubUrl !== '' && (
                         <a
                             href={project.githubUrl}
                             id={project.name + '- github'}
@@ -65,7 +65,7 @@ function ProjectCard(props: ProjectCardProps) {
                             />
                         </a>
                     )}
-                    {project.documentationUrl != '' && (
+                    {project.documentationUrl !== '' && (
                         <a
                             href={project.documentationUrl}
                             id={project.name + '- documentation'}
@@ -83,14 +83,14 @@ function ProjectCard(props: ProjectCardProps) {
             )}
 
             <section
-                className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%] 2xl:py-2  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
+                className="border-secondary bg-accent hover:bg-accent/80 dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80 mx-auto w-36 rounded-lg border-b-4 drop-shadow-lg  hover:cursor-pointer xxs:w-[90%] 2xl:py-2"
                 id="project-additional-info"
             >
                 <Link
                     id={project.name + '-showcase'}
                     to={project.projectPageUrl}
                 >
-                    <h2 className="body-text m-auto py-2 text-center font-semibold uppercase text-secondary dark:text-primary">
+                    <h2 className="body-text text-secondary dark:text-primary m-auto py-2 text-center font-semibold uppercase">
                         Read more
                     </h2>
                 </Link>

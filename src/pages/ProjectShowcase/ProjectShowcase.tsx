@@ -14,16 +14,16 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
     const project = props.project;
 
     return (
-        <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
+        <div className="bg-primary scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar-thin lg:scrollbar">
             <NavBar />
             <main>
                 <section
-                    className="bg-primary p-4 pb-6 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
+                    className="bg-primary dark:bg-darkPrimary p-4 pb-6 xxs:px-2 lg:px-4"
                     id="project-info"
                 >
-                    <h2 className="heading-text py-2 dark:text-primary">
+                    <h2 className="heading-text dark:text-primary py-2">
                         <Link
-                            className="text-accentSecondary underline hover:bg-accent hover:text-secondary dark:text-darkAccent hover:dark:bg-darkAccent hover:dark:text-darkSecondary"
+                            className="text-accentSecondary hover:bg-accent hover:text-secondary dark:text-darkAccent hover:dark:bg-darkAccent hover:dark:text-darkSecondary underline"
                             title="View my other projects"
                             to="/projects"
                         >
@@ -32,7 +32,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                         / <span className="font-bold">{project.name}</span>
                     </h2>
 
-                    <h3 className="body-text uppercase dark:text-primary">
+                    <h3 className="body-text dark:text-primary uppercase">
                         {project.startDate} - {project.endDate}
                     </h3>
 
@@ -48,10 +48,10 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                     >
                         {project.technologiesUsed.map((tech) => (
                             <div
-                                className="container mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-full sm:w-4/5 sm:px-2 lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
+                                className="border-accent bg-secondary dark:border-darkAccent dark:bg-darkSecondary dark:text-primary container mb-2 rounded-full border-4 hover:cursor-default xxs:w-full sm:w-4/5 sm:px-2 lg:w-[90%]"
                                 key={tech}
                             >
-                                <h2 className="tech-text text-center text-primary dark:text-primary">
+                                <h2 className="tech-text text-primary dark:text-primary text-center">
                                     {tech}
                                 </h2>
                             </div>
@@ -62,7 +62,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                         className="mx-auto flex w-full justify-center space-x-2 pb-2 pt-1 lg:space-x-4"
                         id="project-icons"
                     >
-                        {project.githubUrl != '' && (
+                        {project.githubUrl !== '' && (
                             <a
                                 href={project.githubUrl}
                                 id="Project GitHub Link"
@@ -76,7 +76,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                                 />
                             </a>
                         )}
-                        {project.documentationUrl != '' && (
+                        {project.documentationUrl !== '' && (
                             <a
                                 href={project.documentationUrl}
                                 id="Project Documentation Link"
@@ -97,7 +97,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                     className="pb-2 xxs:px-2 lg:px-4"
                     id="project-contributors"
                 >
-                    <h2 className="heading-text uppercase underline dark:text-primary">
+                    <h2 className="heading-text dark:text-primary uppercase underline">
                         Co-Authors
                     </h2>
                     <div className="pt-3">
@@ -111,7 +111,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                     className="xxs:px-2 lg:px-4"
                     id="project-accomplishments"
                 >
-                    <h2 className="heading-text pt-6 uppercase underline dark:text-primary">
+                    <h2 className="heading-text dark:text-primary pt-6 uppercase underline">
                         Accomplishments
                     </h2>
                     <div className="p-4 pb-6">
@@ -130,10 +130,10 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
 
                 {project.videoPath !== '' && (
                     <section
-                        className="w-full bg-primary pb-6 pt-4 xxs:px-2 lg:px-4 dark:bg-darkPrimary"
+                        className="bg-primary dark:bg-darkPrimary w-full pb-6 pt-4 xxs:px-2 lg:px-4"
                         id="project-demo"
                     >
-                        <h2 className="heading-text py-2 uppercase underline dark:text-primary">
+                        <h2 className="heading-text dark:text-primary py-2 uppercase underline">
                             Demo
                         </h2>
                         <div className="mx-auto flex h-full w-full max-w-[4000px] flex-col overflow-hidden">
