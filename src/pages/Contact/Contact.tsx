@@ -23,12 +23,12 @@ function Contact() {
     }
 
     return (
-        <div className="bg-primary scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar-thin lg:scrollbar">
+        <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
             <NavBar />
             <main>
                 <section className="pb-6" id="contact">
                     <div className="px-4">
-                        <h2 className="heading-text dark:text-primary pt-6 uppercase underline">
+                        <h2 className="heading-text pt-6 uppercase underline dark:text-primary">
                             Contact Me
                         </h2>
 
@@ -77,7 +77,7 @@ function Contact() {
                                     </label>
                                     <br />
                                     <input
-                                        className="body-text border-secondary text-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent w-full border-4"
+                                        className="body-text w-full border-4 border-secondary text-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent"
                                         data-kw-rules="max:255"
                                         id="name"
                                         name="name"
@@ -98,7 +98,7 @@ function Contact() {
                                     </label>
                                     <br />
                                     <input
-                                        className="body-text border-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent  w-full border-4"
+                                        className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary  dark:text-primary dark:hover:border-darkAccent"
                                         data-kw-rules="required|email"
                                         id="email"
                                         name="email"
@@ -119,7 +119,7 @@ function Contact() {
                                     </label>
                                     <br />
                                     <input
-                                        className="body-text border-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent  w-full border-4"
+                                        className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary  dark:text-primary dark:hover:border-darkAccent"
                                         data-kw-rules="required"
                                         id="subject"
                                         name="subject"
@@ -139,7 +139,7 @@ function Contact() {
                                         Message
                                     </label>
                                     <textarea
-                                        className="body-text border-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent w-full border-4"
+                                        className="body-text w-full border-4 border-secondary hover:border-accent dark:bg-darkSecondary dark:text-primary dark:hover:border-darkAccent"
                                         cols={50}
                                         id="content"
                                         name="content"
@@ -150,7 +150,7 @@ function Contact() {
                                 </div>
 
                                 <button
-                                    className="cta-btn body-text dark:text-primary py-2 uppercase tracking-widest xxs:w-full"
+                                    className="cta-btn body-text py-2 uppercase tracking-widest xxs:w-full dark:text-primary"
                                     id="email-kwesform"
                                     title="Send me an email through Kwes Forms"
                                     type="submit"

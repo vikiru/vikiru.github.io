@@ -9,17 +9,17 @@ function CourseCard(props: CourseCardProps) {
 
     return (
         <section
-            className="border-accent bg-primary dark:border-darkAccent dark:bg-darkSecondary rounded-lg border-4 bg-white pt-2 shadow-md lg:w-full lg:px-4 lg:pb-4"
+            className="rounded-lg border-4 border-accent bg-primary bg-white pt-2 shadow-md lg:w-full lg:px-4 lg:pb-4 dark:border-darkAccent dark:bg-darkSecondary"
             id={course.courseCode + ':' + course.name}
             key={course.courseCode}
         >
             <div>
-                <h3 className="subheading-text dark:text-primary px-2">
+                <h3 className="subheading-text px-2 dark:text-primary">
                     {course.courseCode}
                 </h3>
 
                 {/* Course Name */}
-                <h4 className="subheading-text dark:text-primary px-2 py-1">
+                <h4 className="subheading-text px-2 py-1 dark:text-primary">
                     {course.name}
                 </h4>
             </div>

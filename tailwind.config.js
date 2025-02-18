@@ -23,16 +23,6 @@ module.exports = {
             '11xl': '4096px',
         },
         extend: {
-            fontFamily: {
-                heading: ['Raleway'],
-                subheading: ['Open Sans'],
-                body: ['Lato'],
-                cinzel: ['Cinzel'],
-            },
-        },
-    },
-    extend: {
-        theme: {
             colors: {
                 primary: '#FFFFFF',
                 secondary: '#252627',
@@ -47,6 +37,12 @@ module.exports = {
                 subheading: ['Open Sans'],
                 body: ['Lato'],
                 cinzel: ['Cinzel'],
+            },
+            fontSize: {
+                '9xl': '8rem',
+                '10xl': '9rem',
+                '11xl': '10rem',
+                '12xl': '11rem',
             },
         },
     },

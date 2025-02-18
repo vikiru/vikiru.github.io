@@ -5,11 +5,11 @@ import NavBar from '~components/NavBar/NavBar';
 
 function Sitemap() {
     return (
-        <div className="bg-primary scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar-thin lg:scrollbar">
+        <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
             <NavBar />
             <main>
                 <div className="pt-4">
-                    <h2 className="heading-text text-secondary dark:text-primary text-center uppercase underline">
+                    <h2 className="heading-text text-center uppercase text-secondary underline dark:text-primary">
                         Sitemap
                     </h2>
                 </div>
@@ -17,7 +17,7 @@ function Sitemap() {
                 <div className="pb-6 lg:grid lg:grid-cols-3">
                     <div className="px-4 py-2">
                         <Link id="home" title="View the homepage" to="/">
-                            <h3 className="subheading-text text-accent decoration-secondary dark:text-darkAccent dark:decoration-primary hover:underline">
+                            <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-primary">
                                 Home
                             </h3>
                         </Link>
@@ -28,7 +28,7 @@ function Sitemap() {
                                 title="Send me an email"
                                 to="/contact"
                             >
-                                <h4 className="body-text text-accent decoration-secondary dark:text-darkAccent dark:decoration-primary hover:underline">
+                                <h4 className="body-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-primary">
                                     Contact
                                 </h4>
                             </Link>
@@ -37,7 +37,7 @@ function Sitemap() {
 
                     <div className="px-4 py-2">
                         <Link id="about" title="Read more about me" to="/about">
-                            <h3 className="subheading-text text-accent decoration-secondary dark:text-darkAccent dark:decoration-primary hover:underline">
+                            <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-primary">
                                 About
                             </h3>
                         </Link>
@@ -48,7 +48,7 @@ function Sitemap() {
                                 title="View my university courses"
                                 to="/education/courses"
                             >
-                                <h4 className="body-text text-accent decoration-secondary dark:text-darkAccent dark:decoration-primary hover:underline">
+                                <h4 className="body-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-primary">
                                     Courses
                                 </h4>
                             </Link>
@@ -60,7 +60,7 @@ function Sitemap() {
                             title="Read more about me"
                             to="/projects"
                         >
-                            <h3 className="subheading-text text-accent decoration-secondary dark:text-darkAccent dark:decoration-primary hover:underline">
+                            <h3 className="subheading-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-primary">
                                 Projects
                             </h3>
                         </Link>
@@ -72,7 +72,7 @@ function Sitemap() {
                                     title={'Read more about ' + project.name}
                                     to={project.projectPageUrl}
                                 >
-                                    <h4 className="body-text text-accent decoration-secondary dark:text-darkAccent dark:decoration-primary hover:underline">
+                                    <h4 className="body-text text-accent decoration-secondary hover:underline dark:text-darkAccent dark:decoration-primary">
                                         {project.name}{' '}
                                     </h4>
                                 </Link>

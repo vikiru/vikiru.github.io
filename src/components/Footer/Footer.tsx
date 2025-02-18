@@ -7,14 +7,14 @@ import navData from '~assets/data/nav';
 function Footer() {
     return (
         <footer className="mt-auto w-full">
-            <div className="bg-secondary dark:bg-darkSecondary px-1 xxs:flex xxs:flex-col md:grid md:grid-cols-2">
+            <div className="bg-secondary px-1 xxs:flex xxs:flex-col md:grid md:grid-cols-2 dark:bg-darkSecondary">
                 {/*  Logo */}
                 <section
                     className="mx-auto py-2 md:col-span-2 lg:pt-4"
                     id="logo"
                 >
                     <Link
-                        className="text-primary dark:text-primary text-center font-cinzel tracking-widest xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl"
+                        className="text-center font-cinzel tracking-widest text-primary xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
                         title="View my homepage"
                         to="/"
                     >
@@ -30,7 +30,7 @@ function Footer() {
                 {/* Footer Navigation */}
                 <div className="sm:grid sm:grid-cols-2 md:col-span-2">
                     <section className="mx-auto" id="footer-navigation">
-                        <h2 className="heading-text text-primary dark:text-primary text-center uppercase tracking-wide">
+                        <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
                             Read more
                         </h2>
                         {navData.map((navItem) => (
@@ -41,13 +41,13 @@ function Footer() {
                                 <Link
                                     className="
                     subheading-text
-                    text-primary
-                    decoration-accent
-                    dark:text-primary
-                    dark:decoration-darkAccent
                     text-center
                     uppercase
-                    hover:underline"
+                    text-primary
+                    decoration-accent
+                    hover:underline
+                    dark:text-primary
+                    dark:decoration-darkAccent"
                                     id={navItem.navDesc}
                                     title={navItem.navDesc}
                                     to={navItem.navLink}
@@ -63,12 +63,12 @@ function Footer() {
                         className="xxs:mx-auto lg:px-4 xl:mx-0"
                         id="contact"
                     >
-                        <h2 className="heading-text text-primary dark:text-primary text-center uppercase tracking-wide">
+                        <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
                             Connect with me
                         </h2>
 
                         <div>
-                            <h2 className="subheading-text text-primary dark:text-primary pt-2 text-center lg:py-2">
+                            <h2 className="subheading-text pt-2 text-center text-primary lg:py-2 dark:text-primary">
                                 Ottawa, ON
                             </h2>
 
@@ -126,7 +126,7 @@ function Footer() {
                 id="copyright"
             >
                 <div className="mx-auto flex flex-col space-y-2 py-2">
-                    <p className="body-text text-primary dark:text-primary text-center font-thin">
+                    <p className="body-text text-center font-thin text-primary dark:text-primary">
                         &copy; {new Date().getFullYear()} Visakan Kirubakaran.
                         All rights reserved.
                     </p>
@@ -139,7 +139,7 @@ function Footer() {
                         title="View the sitemap for this website"
                         to="/sitemap"
                     >
-                        <p className="body-text text-primary decoration-accent dark:text-primary dark:decoration-darkAccent text-center hover:underline">
+                        <p className="body-text text-center text-primary decoration-accent hover:underline dark:text-primary dark:decoration-darkAccent">
                             Sitemap
                         </p>
                     </Link>

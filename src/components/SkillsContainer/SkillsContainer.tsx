@@ -4,7 +4,7 @@ function SkillsContainer() {
     return (
         <section className="mx-auto pb-6" id="skills">
             <div className="px-4">
-                <h2 className="heading-text dark:text-primary text-center uppercase underline">
+                <h2 className="heading-text text-center uppercase underline dark:text-primary">
                     Skills
                 </h2>
 
@@ -15,10 +15,10 @@ function SkillsContainer() {
                             id={skillCategory}
                             key={skillCategory}
                         >
-                            <h2 className="subheading-text dark:text-primary text-center uppercase">
+                            <h2 className="subheading-text text-center uppercase dark:text-primary">
                                 {skillCategory}
                             </h2>
-                            <p className="body-text text-secondary dark:text-primary text-center">
+                            <p className="body-text text-center text-secondary dark:text-primary">
                                 Skill
                             </p>
                         </div>

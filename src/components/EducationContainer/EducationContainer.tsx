@@ -9,11 +9,11 @@ function EducationContainer() {
 
     return (
         <section
-            className="bg-primary dark:bg-darkPrimary mx-auto w-screen pb-6 pt-2"
+            className="mx-auto w-screen bg-primary pb-6 pt-2 dark:bg-darkPrimary"
             id="education"
         >
             <div className="px-4">
-                <h2 className="heading-text dark:text-primary pt-2 text-center uppercase underline">
+                <h2 className="heading-text pt-2 text-center uppercase underline dark:text-primary">
                     Education
                 </h2>
             </div>
@@ -22,7 +22,7 @@ function EducationContainer() {
                 {/* University Section*/}
                 <section className="px-4 pt-4" id="unversity-info">
                     <div>
-                        <h3 className="subheading-text dark:text-primary text-center uppercase">
+                        <h3 className="subheading-text text-center uppercase dark:text-primary">
                             {educationData.universityName}
                         </h3>
                     </div>
@@ -30,7 +30,7 @@ function EducationContainer() {
                     <div className="xxs:block">
                         <div>
                             <div>
-                                <p className="subheading-text dark:text-primary text-center">
+                                <p className="subheading-text text-center dark:text-primary">
                                     {educationData.degree} -{' '}
                                     {educationData.acronym}.,{' '}
                                     {educationData.degreeProgram}
@@ -38,20 +38,20 @@ function EducationContainer() {
                             </div>
 
                             <div>
-                                <h3 className="body-text dark:text-primary text-center  uppercase tracking-wide">
+                                <h3 className="body-text text-center uppercase  tracking-wide dark:text-primary">
                                     {educationData.enrollmentStart} -{' '}
                                     {educationData.enrollmentEnd}
                                 </h3>
                             </div>
                         </div>
 
-                        <div className="2xl:w-[50%]dark:border-primary border-secondary bg-accent hover:bg-accent/80 dark:bg-darkAccent dark:hover:bg-darkAccent/80 mx-auto rounded-lg border-b-4 drop-shadow-lg hover:cursor-pointer xxs:h-auto xxs:w-full xl:h-[50%] xl:w-[53%] 2xl:w-[50%]">
+                        <div className="2xl:w-[50%]dark:border-primary mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:h-[50%] xl:w-[53%] 2xl:w-[50%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                             <Link
                                 id="Courses Link"
                                 title="View my courses"
                                 to="/education/courses"
                             >
-                                <h2 className="body-text text-secondary dark:text-primary m-auto py-2 text-center font-body font-semibold uppercase">
+                                <h2 className="body-text m-auto py-2 text-center font-body font-semibold uppercase text-secondary dark:text-primary">
                                     View courses {'  '}
                                 </h2>
                             </Link>
@@ -65,7 +65,7 @@ function EducationContainer() {
                     id="coursera-certificate-info"
                 >
                     <div className="px-4">
-                        <h2 className="subheading-text dark:text-primary text-center uppercase">
+                        <h2 className="subheading-text text-center uppercase dark:text-primary">
                             Coursera
                         </h2>
                     </div>
@@ -77,18 +77,18 @@ function EducationContainer() {
                         >
                             <div>
                                 <div>
-                                    <h3 className="subheading-text dark:text-primary text-center">
+                                    <h3 className="subheading-text text-center dark:text-primary">
                                         {certificate.certificationName}
                                     </h3>
                                 </div>
                                 <div>
-                                    <h4 className="body-text dark:text-primary text-center uppercase tracking-wide">
+                                    <h4 className="body-text text-center uppercase tracking-wide dark:text-primary">
                                         {certificate.startDate} -{' '}
                                         {certificate.completionDate}
                                     </h4>
                                 </div>
                             </div>
-                            <div className="border-secondary bg-accent hover:bg-accent/80 dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80 mx-auto rounded-lg border-b-4 drop-shadow-lg hover:cursor-pointer xxs:w-full xl:h-[50%] 5xl:w-[40rem]">
+                            <div className="mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
                                 <a
                                     href={certificate.certificateLink}
                                     id={
@@ -99,7 +99,7 @@ function EducationContainer() {
                                     target="_blank"
                                     title="View my certificate"
                                 >
-                                    <h2 className="body-text text-secondary dark:text-primary m-auto py-2 text-center font-body font-semibold uppercase">
+                                    <h2 className="body-text m-auto py-2 text-center font-body font-semibold uppercase text-secondary dark:text-primary">
                                         View certificate{'  '}
                                     </h2>
                                 </a>
