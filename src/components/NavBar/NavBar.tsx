@@ -12,130 +12,102 @@ function NavBar() {
 
     return (
         <nav>
-            <section
-                className="flex items-center justify-between bg-secondary lg:hidden dark:bg-darkSecondary"
-                id="small-navigation-menu"
-            >
-                <div className="px-2 lg:hidden" id="logo">
+            <section className="flex justify-between py-2 lg:mx-10">
+                <div className="flex items-center justify-center px-4">
                     <Link
-                        className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
-                        title="View my homepage"
+                        className="font-cinzel font-semibold"
+                        style={{ fontSize: 'clamp(1.8rem, 2.5vw, 9rem)' }}
                         to="/"
                     >
-                        <span className="text-primary  dark:text-primary">
-                            V
-                        </span>
-                        <span className="text-accent dark:text-darkAccent">
-                            K
-                        </span>
+                        <span className="text-gray-800">V</span>
+                        <span className="text-blue-500">K</span>
                     </Link>
                 </div>
 
-                <div
-                    className="py-2 pr-3 xs:block lg:hidden"
-                    id="small-screen-nav-toggler"
-                >
-                    <button
-                        aria-label="Navigation Menu Mobile"
-                        id="nav-menu"
-                        onClick={handleClick}
+                <div className="gap-4 px-2 py-4 text-black xs:hidden lg:flex lg:items-center lg:justify-center 2xl:gap-8">
+                    <Link
+                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/"
                     >
+                        Home
+                    </Link>
+                    <Link
+                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/about"
+                    >
+                        About
+                    </Link>
+                    <Link
+                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/projects"
+                    >
+                        Projects
+                    </Link>
+                    <Link
+                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/contact"
+                    >
+                        Contact
+                    </Link>
+                </div>
+
+                <div className="lg:hidden">
+                    <button onClick={handleClick}>
                         {!isOpen ? (
                             <FontAwesomeIcon
-                                className="font-primary pl-1 text-accent dark:text-darkAccent"
+                                className="px-3 py-2 text-black"
                                 icon={faBars}
+                                style={{
+                                    fontSize: 'clamp(1.5rem, 2.5vw, 4rem)',
+                                }}
                             />
                         ) : (
                             <FontAwesomeIcon
-                                className="font-primary pl-1 text-accent dark:text-darkAccent"
+                                className="px-3 py-2 text-black"
                                 icon={faX}
+                                style={{
+                                    fontSize: 'clamp(1.5rem, 2.5vw, 4rem)',
+                                }}
                             />
                         )}
                     </button>
                 </div>
             </section>
 
-            {isOpen ? (
-                <section
-                    className="block justify-center lg:hidden"
-                    id="nav-links"
-                >
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-                        <Link
-                            id="homepage-navbar-sm"
-                            title="View my homepage"
-                            to="/"
-                        >
-                            Home
-                        </Link>
-                    </h2>
-
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-                        <Link
-                            id="about-navbar-sm"
-                            title="Read more about me"
-                            to="/about"
-                        >
-                            About
-                        </Link>
-                    </h2>
-
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-                        <Link
-                            id="courses-navbar-sm"
-                            title="View my courses"
-                            to="/education/courses"
-                        >
-                            Courses
-                        </Link>
-                    </h2>
-
-                    <h2 className="subheading-text bg-secondary py-2 uppercase tracking-widest text-primary hover:underline hover:decoration-accent xxs:text-center lg:text-2xl dark:bg-darkSecondary dark:text-primary dark:hover:decoration-darkAccent">
-                        <Link
-                            id="projects-navbar-sm"
-                            title="View my work"
-                            to="/projects"
-                        >
-                            Projects
-                        </Link>
-                    </h2>
-                </section>
-            ) : (
-                <section
-                    className="hidden bg-secondary py-4 lg:flex lg:justify-between dark:bg-darkSecondary"
-                    id="navigation-menu"
-                >
-                    <div className="lg:px-3 xl:px-4" id="logo">
-                        <Link
-                            className="text-center font-cinzel tracking-widest text-primary xxs:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 7xl:text-8xl dark:text-primary"
-                            title="View my homepage"
-                            to="/"
-                        >
-                            <span className="text-primary  dark:text-primary">
-                                V
-                            </span>
-                            <span className="text-accent dark:text-darkAccent">
-                                K
-                            </span>
-                        </Link>
-                    </div>
-
-                    <section
-                        className="flex justify-between space-x-8 px-2 pt-0 lg:pt-2 3xl:pt-4"
-                        id="nav-links"
+            {isOpen && (
+                <section className="flex flex-col items-center justify-center lg:hidden">
+                    <Link
+                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/"
                     >
-                        {navData.map((nav) => (
-                            <Link
-                                className="subheading-text uppercase tracking-widest text-primary hover:underline hover:decoration-accent xl:pt-2 dark:text-primary dark:hover:decoration-darkAccent"
-                                id={nav.navTitle.toLowerCase() + '-navbar-lg'}
-                                key={nav.navTitle}
-                                title={nav.navDesc}
-                                to={nav.navLink}
-                            >
-                                {nav.navTitle}
-                            </Link>
-                        ))}
-                    </section>
+                        Home
+                    </Link>
+                    <Link
+                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/about"
+                    >
+                        About
+                    </Link>
+                    <Link
+                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/projects"
+                    >
+                        Projects
+                    </Link>
+                    <Link
+                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        to="/contact"
+                    >
+                        Contact
+                    </Link>
                 </section>
             )}
         </nav>

@@ -51,7 +51,7 @@ function ProjectCard(props: ProjectCardProps) {
                     className="mx-auto flex w-full justify-center space-x-2 pb-4 pt-2 lg:space-x-4"
                     id="project-icons"
                 >
-                    {project.githubUrl != '' && (
+                    {project.githubUrl !== '' && (
                         <a
                             href={project.githubUrl}
                             id={project.name + '- github'}
@@ -65,7 +65,7 @@ function ProjectCard(props: ProjectCardProps) {
                             />
                         </a>
                     )}
-                    {project.documentationUrl != '' && (
+                    {project.documentationUrl !== '' && (
                         <a
                             href={project.documentationUrl}
                             id={project.name + '- documentation'}

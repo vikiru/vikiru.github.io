@@ -62,7 +62,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                         className="mx-auto flex w-full justify-center space-x-2 pb-2 pt-1 lg:space-x-4"
                         id="project-icons"
                     >
-                        {project.githubUrl != '' && (
+                        {project.githubUrl !== '' && (
                             <a
                                 href={project.githubUrl}
                                 id="Project GitHub Link"
@@ -76,7 +76,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                                 />
                             </a>
                         )}
-                        {project.documentationUrl != '' && (
+                        {project.documentationUrl !== '' && (
                             <a
                                 href={project.documentationUrl}
                                 id="Project Documentation Link"
