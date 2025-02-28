@@ -3,18 +3,47 @@ import ProjectCard from '~components/ProjectCard/ProjectCard';
 
 function ProjectContainer() {
     const projects = projectData.projects;
+
     return (
-        <section className="mx-auto py-6" id="projects">
-            <div className="px-4">
-                <h2 className="heading-text pt-2 text-center font-bold uppercase text-secondary underline dark:text-primary">
-                    Projects
-                </h2>
+        <section className="mx-auto bg-gray-50 py-12" id="projects">
+            <div className="px-6 sm:px-8 lg:px-12">
+                {/* Featured Projects Section */}
+                <div className="pb-6">
+                    <h2
+                        className="text-center font-heading font-semibold text-gray-800"
+                        style={{ fontSize: 'clamp(2rem, 2vw, 9rem)' }}
+                    >
+                        Featured Projects
+                    </h2>
+                </div>
 
                 <div
-                    className="mx-auto grid gap-4 pb-6 pr-2 pt-2 xl:grid-cols-2"
+                    className="mt-4 grid gap-6 xl:grid-cols-2"
                     id="projects-container"
                 >
-                    {projects.map((project) => (
+                    {projects.slice(0, 5).map((project) => (
+                        <ProjectCard key={project.name} project={project} />
+                    ))}
+                </div>
+
+                {/* Divider */}
+                <div className="my-8 border-t border-gray-300" />
+
+                {/* Other Projects Section */}
+                <div className="pb-6">
+                    <h2
+                        className="text-center font-heading font-semibold text-gray-800"
+                        style={{ fontSize: 'min(2rem, 2vw, 9rem)' }}
+                    >
+                        Other Projects
+                    </h2>
+                </div>
+
+                <div
+                    className="mt-4 grid gap-6 xl:grid-cols-2"
+                    id="projects-container"
+                >
+                    {projects.slice(5).map((project) => (
                         <ProjectCard key={project.name} project={project} />
                     ))}
                 </div>

@@ -12,90 +12,88 @@ function ProjectCard(props: ProjectCardProps) {
     const project: Project = props.project;
 
     return (
-        <section
-            className="mt-2 rounded-lg border-4 border-accent bg-primary bg-gradient-to-r pb-6 shadow-md dark:border-darkAccent dark:bg-darkSecondary"
-            id={project.name}
-        >
-            <h2 className="heading-text px-2 pt-2 text-center text-secondary dark:text-primary">
-                {project.name}
-            </h2>
+        <div className="flex flex-col rounded-2xl bg-slate-100 p-6 shadow-md">
+            {/* Header with Icons */}
+            <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-1">
+                    {/* Title */}
+                    <h3
+                        className="font-heading font-semibold text-gray-800"
+                        style={{ fontSize: 'clamp(1rem, 1.5vw, 4rem)' }}
+                    >
+                        {project.name}
+                    </h3>
 
-            <p className="subheading-text text-center uppercase text-secondary dark:text-primary">
-                {project.startDate} - {project.endDate}
-            </p>
+                    {/* Icons */}
+                    <div
+                        className="flex items-center space-x-2 pb-1 text-gray-800"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
+                    >
+                        <Link
+                            className="transition-colors duration-200 hover:text-accent"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            to={project.githubUrl}
+                        >
+                            <FontAwesomeIcon icon={faGithub} />
+                        </Link>
+                        <Link
+                            className="transition-colors duration-200 hover:text-accent"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            to={project.documentationUrl}
+                        >
+                            <FontAwesomeIcon icon={faBookOpen} />
+                        </Link>
+                    </div>
+                </div>
 
-            <div className="mx-2 py-2 md:px-2">
-                <h3 className="body-text text-center dark:text-primary">
-                    {project.description}
-                </h3>
+                {/* Date Range */}
+                <div
+                    className="italic text-gray-500"
+                    style={{ fontSize: 'clamp(0.65rem, 1.125vw, 4rem)' }}
+                >
+                    {project.startDate} - {project.endDate}
+                </div>
             </div>
 
-            <section
-                className="container m-2 mx-auto grid justify-center py-2 sm:grid sm:grid-cols-2"
-                id="technologies-used"
-            >
-                {project.technologiesUsed.map((tech) => (
+            {/* Description */}
+            <div className="container mt-3 min-h-20 pb-3">
+                <p
+                    className="font-body leading-relaxed text-gray-600"
+                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
+                >
+                    {project.description}
+                </p>
+            </div>
+
+            {/* Tech Stack Tags */}
+            <div className="container flex flex-wrap gap-3">
+                {project.technologiesUsed.map((tech, index) => (
                     <div
-                        className="container mx-auto mb-2 rounded-full border-4 border-accent bg-secondary hover:cursor-default xxs:w-full xxs:px-2 sm:w-[90%] lg:w-[90%] dark:border-darkAccent dark:bg-darkSecondary dark:text-primary"
-                        key={tech}
+                        className="flex items-center rounded-xl bg-accent font-body text-white xs:px-3 xs:py-1 5xl:px-6 5xl:py-2"
+                        key={index}
+                        style={{ fontSize: 'clamp(0.6rem, 0.84vw, 4rem)' }}
                     >
-                        <h2 className="tech-text text-center text-primary dark:text-primary">
-                            {tech}
-                        </h2>
+                        {tech}
                     </div>
                 ))}
-            </section>
+            </div>
 
-            {project.githubUrl !== '' && (
-                <section
-                    className="mx-auto flex w-full justify-center space-x-2 pb-4 pt-2 lg:space-x-4"
-                    id="project-icons"
-                >
-                    {project.githubUrl !== '' && (
-                        <a
-                            href={project.githubUrl}
-                            id={project.name + '- github'}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            title="View the GitHub repository"
-                        >
-                            <FontAwesomeIcon
-                                className="social-icons"
-                                icon={faGithub}
-                            />
-                        </a>
-                    )}
-                    {project.documentationUrl !== '' && (
-                        <a
-                            href={project.documentationUrl}
-                            id={project.name + '- documentation'}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            title="View the project documentation"
-                        >
-                            <FontAwesomeIcon
-                                className="social-icons"
-                                icon={faBookOpen}
-                            />
-                        </a>
-                    )}
-                </section>
-            )}
-
-            <section
-                className="mx-auto w-36 rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-[90%] 2xl:py-2  dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80"
-                id="project-additional-info"
-            >
+            {/* CTA */}
+            <div className="mt-4">
                 <Link
-                    id={project.name + '-showcase'}
+                    className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
+                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
                     to={project.projectPageUrl}
                 >
-                    <h2 className="body-text m-auto py-2 text-center font-semibold uppercase text-secondary dark:text-primary">
-                        Read more
-                    </h2>
+                    Read More{' '}
+                    <span style={{ fontSize: 'clamp(0.8rem, 1.55vw, 4rem)' }}>
+                        →
+                    </span>
                 </Link>
-            </section>
-        </section>
+            </div>
+        </div>
     );
 }
 

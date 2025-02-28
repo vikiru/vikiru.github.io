@@ -15,7 +15,7 @@ function AboutPage() {
                 <EducationContainer />
                 {/* Skills Section */}
                 <SkillsContainer />
-                {/* Fooer Section */}
+                {/* Footer Section */}
             </main>
             <Footer />
         </div>
