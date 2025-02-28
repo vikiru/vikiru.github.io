@@ -12,55 +12,68 @@ function ProjectCard(props: ProjectCardProps) {
     const project: Project = props.project;
 
     return (
-        <div className="rounded-2xl bg-slate-100 p-6 shadow-md">
+        <div className="flex flex-col rounded-2xl bg-slate-100 p-6 shadow-md">
             {/* Header with Icons */}
             <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center space-x-1">
                     {/* Title */}
-                    <h3 className="font-heading text-2xl font-semibold text-gray-800">
+                    <h3
+                        className="font-heading font-semibold text-gray-800"
+                        style={{ fontSize: 'clamp(1rem, 1.5vw, 4rem)' }}
+                    >
                         {project.name}
                     </h3>
 
                     {/* Icons */}
-                    <div className="flex items-center gap-3 text-xl text-gray-800">
-                        <a
-                            href={project.githubUrl}
-                            target="_blank"
+                    <div
+                        className="flex items-center space-x-2 pb-1 text-gray-800"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
+                    >
+                        <Link
+                            className="transition-colors duration-200 hover:text-accent"
                             rel="noopener noreferrer"
-                            className="hover:text-accent"
+                            target="_blank"
+                            to={project.githubUrl}
                         >
                             <FontAwesomeIcon icon={faGithub} />
-                        </a>
-                        <a
-                            href={project.documentationUrl}
-                            target="_blank"
+                        </Link>
+                        <Link
+                            className="transition-colors duration-200 hover:text-accent"
                             rel="noopener noreferrer"
-                            className="hover:text-accent"
+                            target="_blank"
+                            to={project.documentationUrl}
                         >
                             <FontAwesomeIcon icon={faBookOpen} />
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
                 {/* Date Range */}
-                <div className="text-base italic text-gray-500">
+                <div
+                    className="italic text-gray-500"
+                    style={{ fontSize: 'clamp(0.65rem, 1.125vw, 4rem)' }}
+                >
                     {project.startDate} - {project.endDate}
                 </div>
             </div>
 
             {/* Description */}
-            <div className="mt-3 min-h-20 max-w-2xl pb-3">
-                <p className="font-body text-lg leading-relaxed text-gray-600">
+            <div className="container mt-3 min-h-20 pb-3">
+                <p
+                    className="font-body leading-relaxed text-gray-600"
+                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
+                >
                     {project.description}
                 </p>
             </div>
 
             {/* Tech Stack Tags */}
-            <div className="flex flex-wrap gap-2">
+            <div className="container flex flex-wrap gap-3">
                 {project.technologiesUsed.map((tech, index) => (
                     <div
-                        className="flex items-center rounded-xl bg-accent px-3 py-1 font-body text-base text-white"
+                        className="flex items-center rounded-xl bg-accent font-body text-white xs:px-3 xs:py-1 5xl:px-6 5xl:py-2"
                         key={index}
+                        style={{ fontSize: 'clamp(0.6rem, 0.84vw, 4rem)' }}
                     >
                         {tech}
                     </div>
@@ -69,12 +82,16 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* CTA */}
             <div className="mt-4">
-                <a
-                    href={project.projectPageUrl}
-                    className="font-body text-lg font-semibold text-accent hover:text-accent"
+                <Link
+                    className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
+                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
+                    to={project.projectPageUrl}
                 >
-                    Read More →
-                </a>
+                    Read More{' '}
+                    <span style={{ fontSize: 'clamp(0.8rem, 1.55vw, 4rem)' }}>
+                        →
+                    </span>
+                </Link>
             </div>
         </div>
     );

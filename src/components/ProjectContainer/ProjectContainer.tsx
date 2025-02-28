@@ -9,13 +9,16 @@ function ProjectContainer() {
             <div className="px-6 sm:px-8 lg:px-12">
                 {/* Featured Projects Section */}
                 <div className="pb-6">
-                    <h2 className="text-center font-heading text-5xl font-semibold text-gray-800">
+                    <h2
+                        className="text-center font-heading font-semibold text-gray-800"
+                        style={{ fontSize: 'clamp(2rem, 2vw, 9rem)' }}
+                    >
                         Featured Projects
                     </h2>
                 </div>
 
                 <div
-                    className="mt-4 grid gap-6 lg:grid-cols-2"
+                    className="mt-4 grid gap-6 xl:grid-cols-2"
                     id="projects-container"
                 >
                     {projects.slice(0, 5).map((project) => (
@@ -28,13 +31,16 @@ function ProjectContainer() {
 
                 {/* Other Projects Section */}
                 <div className="pb-6">
-                    <h2 className="text-center font-heading text-5xl font-semibold text-gray-800">
+                    <h2
+                        className="text-center font-heading font-semibold text-gray-800"
+                        style={{ fontSize: 'min(2rem, 2vw, 9rem)' }}
+                    >
                         Other Projects
                     </h2>
                 </div>
 
                 <div
-                    className="mt-4 grid gap-6 lg:grid-cols-2"
+                    className="mt-4 grid gap-6 xl:grid-cols-2"
                     id="projects-container"
                 >
                     {projects.slice(5).map((project) => (
