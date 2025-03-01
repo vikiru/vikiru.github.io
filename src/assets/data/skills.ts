@@ -1,61 +1,87 @@
-type SkillsData = {
-    database: string[];
-    devops: string[];
-    editor: string[];
-    frameworks: string[];
-    hosting: string[];
-    ide: string[];
-    languages: string[];
-    libraries: string[];
-    os: string[];
-    tools: string[];
+type SkillsCategory = {
+    title: string;
+    data: string[];
 };
 
+type SkillsData = {
+    database: SkillsCategory;
+    devops: SkillsCategory;
+    frameworks: SkillsCategory;
+    hosting: SkillsCategory;
+    languages: SkillsCategory;
+    libraries: SkillsCategory;
+    os: SkillsCategory;
+    tools: SkillsCategory;
+};
+
+
 const skillsData: SkillsData = {
-    database: ['MySQL', 'SQLite', 'MongoDB', 'Sequelize', 'Mongoose'],
-    devops: ['CircleCI', 'GitHub Actions', 'Snyk'],
-    editor: ['VS Code'],
-    frameworks: [
-        'Spring',
-        'JUnit',
-        'Mocha',
-        'Express.js',
-        'React',
-        'React Router',
-        'Django',
-        'Flask',
-    ],
-    hosting: [
-        'GitHub Pages',
-        'Heroku',
-        'Render',
-        'Vercel',
-        'Firebase',
-        'Fl0',
-        'Surge.sh',
-    ],
-    ide: ['IntelliJ', 'Eclipse'],
-    languages: ['Java', 'Python', 'HTML', 'CSS', 'JavaScript'],
-    libraries: [
-        'NumPy',
-        'SciPy',
-        'SimPy',
-        'Pandas',
-        'Sinon',
-        'Chai',
-        'DaisyUI',
-    ],
-    os: ['Windows', 'Ubuntu'],
-    tools: [
-        'Maven',
-        'Node.js',
-        'npm',
-        'pip',
-        'git',
-        'GitHub',
-        'GitHub Desktop',
-        'Postman',
-    ],
+    database: {
+        title: 'Database',
+        data: ['MySQL', 'SQLite', 'MongoDB', 'Sequelize', 'Mongoose'],
+    },
+    devops: {
+        title: 'DevOps',
+        data: ['CircleCI', 'GitHub Actions', 'Snyk'],
+    },
+    frameworks: {
+        title: 'Frameworks',
+        data: [
+            'Spring',
+            'JUnit',
+            'Mocha',
+            'Express.js',
+            'React Router',
+            'Django',
+            'Flask',
+        ],
+    },
+    hosting: {
+        title: 'Hosting',
+        data: [
+            'GitHub Pages',
+            'Heroku',
+            'Render',
+            'Vercel',
+            'Firebase',
+            'Fl0',
+            'Surge.sh',
+        ],
+    },
+    languages: {
+        title: 'Languages',
+        data: ['Java', 'Python', 'HTML', 'CSS', 'JavaScript', 'TypeScript'],
+    },
+    libraries: {
+        title: 'Libraries',
+        data: [
+            'React',
+            'NumPy',
+            'SciPy',
+            'SimPy',
+            'Pandas',
+            'Sinon',
+            'Chai',
+            'DaisyUI',
+        ],
+    },
+    os: {
+        title: 'Operating Systems',
+        data: ['Windows', 'Ubuntu'],
+    },
+    tools: {
+        title: 'Tools',
+        data: [
+            'Maven',
+            'Node.js',
+            'npm',
+            'pip',
+            'git',
+            'GitHub',
+            'GitHub Desktop',
+            'Postman',
+        ],
+    },
 };
 
 export default skillsData;

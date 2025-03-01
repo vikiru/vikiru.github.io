@@ -6,16 +6,19 @@ import SkillsContainer from '~components/SkillsContainer/SkillsContainer';
 
 function AboutPage() {
     return (
-        <div className="flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth bg-primary scrollbar-thin scrollbar-track-primary scrollbar-thumb-accent lg:scrollbar dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent">
+        <div className="">
             <NavBar />
-            <main>
+            <main className="bg-gray-50">
                 {/* About Section */}
                 <About />
+                <div className="my-8 border-t border-gray-300" />
+
                 {/* Education Section */}
                 <EducationContainer />
+                <div className="my-8 border-t border-gray-300" />
+
                 {/* Skills Section */}
                 <SkillsContainer />
-                {/* Footer Section */}
             </main>
             <Footer />
         </div>

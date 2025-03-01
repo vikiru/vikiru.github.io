@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import educationData from '~assets/data/education';
+import UniversityCard from '~components/UniversityCard/UniversityCard';
 
 function EducationContainer() {
     const certificates = educationData.certificates;
@@ -8,106 +9,87 @@ function EducationContainer() {
     );
 
     return (
-        <section
-            className="mx-auto w-screen bg-primary pb-6 pt-2 dark:bg-darkPrimary"
-            id="education"
-        >
-            <div className="px-4">
-                <h2 className="heading-text pt-2 text-center uppercase underline dark:text-primary">
+        <section className="min-h-[30vh] bg-gray-50">
+            <div>
+                <h2
+                    className="text-center font-heading font-semibold text-gray-800"
+                    style={{ fontSize: 'clamp(2rem, 2vw, 9rem)' }}
+                >
                     Education
                 </h2>
-            </div>
 
-            <section className="grid grid-cols-1">
-                {/* University Section*/}
-                <section className="px-4 pt-4" id="unversity-info">
-                    <div>
-                        <h3 className="subheading-text text-center uppercase dark:text-primary">
-                            {educationData.universityName}
-                        </h3>
-                    </div>
+                <UniversityCard />
 
-                    <div className="xxs:block">
-                        <div>
-                            <div>
-                                <p className="subheading-text text-center dark:text-primary">
-                                    {educationData.degree} -{' '}
-                                    {educationData.acronym}.,{' '}
-                                    {educationData.degreeProgram}
-                                </p>
-                            </div>
-
-                            <div>
-                                <h3 className="body-text text-center uppercase  tracking-wide dark:text-primary">
-                                    {educationData.enrollmentStart} -{' '}
-                                    {educationData.enrollmentEnd}
-                                </h3>
-                            </div>
-                        </div>
-
-                        <div className="2xl:w-[50%]dark:border-primary mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:h-auto xxs:w-full xl:h-[50%] xl:w-[53%] 2xl:w-[50%] dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-                            <Link
-                                id="Courses Link"
-                                title="View my courses"
-                                to="/education/courses"
-                            >
-                                <h2 className="body-text m-auto py-2 text-center font-body font-semibold uppercase text-secondary dark:text-primary">
-                                    View courses {'  '}
-                                </h2>
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Coursera Section */}
-                <section
-                    className="m-2 mx-auto xxs:block"
-                    id="coursera-certificate-info"
-                >
-                    <div className="px-4">
-                        <h2 className="subheading-text text-center uppercase dark:text-primary">
-                            Coursera
-                        </h2>
-                    </div>
-                    {courseraCertificates.map((certificate) => (
-                        <div
-                            className="px-4 pb-2 xxs:block"
-                            id={certificate.certificationName.toLowerCase()}
-                            key={certificate.certificationName}
+                <section className="mt-2">
+                    <div className="mx-4">
+                        <h3
+                            className="font-heading font-semibold text-gray-800"
+                            style={{
+                                fontSize: 'clamp(1rem, 1.5vw, 4rem)',
+                            }}
                         >
-                            <div>
-                                <div>
-                                    <h3 className="subheading-text text-center dark:text-primary">
-                                        {certificate.certificationName}
-                                    </h3>
-                                </div>
-                                <div>
-                                    <h4 className="body-text text-center uppercase tracking-wide dark:text-primary">
-                                        {certificate.startDate} -{' '}
-                                        {certificate.completionDate}
-                                    </h4>
-                                </div>
-                            </div>
-                            <div className="mx-auto rounded-lg border-b-4 border-secondary bg-accent drop-shadow-lg hover:cursor-pointer hover:bg-accent/80 xxs:w-full xl:h-[50%] 5xl:w-[40rem] dark:border-primary dark:bg-darkAccent dark:hover:bg-darkAccent/80">
-                                <a
-                                    href={certificate.certificateLink}
-                                    id={
-                                        certificate.certificationName.toLowerCase() +
-                                        'Link'
-                                    }
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    title="View my certificate"
+                            Coursera
+                        </h3>
+                        {courseraCertificates.map((certificate) => {
+                            return (
+                                <div
+                                    key={certificate.certificationName}
+                                    className="mt-2"
                                 >
-                                    <h2 className="body-text m-auto py-2 text-center font-body font-semibold uppercase text-secondary dark:text-primary">
-                                        View certificate{'  '}
-                                    </h2>
-                                </a>
-                            </div>
-                        </div>
-                    ))}
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                            <h3
+                                                className="font-subheading italic"
+                                                style={{
+                                                    fontSize:
+                                                        'clamp(0.65rem, 1.25vw, 4rem)',
+                                                }}
+                                            >
+                                                {certificate.certificationName}
+                                            </h3>
+                                        </div>
+                                        <div>
+                                            <p
+                                                className="font-body italic text-gray-500"
+                                                style={{
+                                                    fontSize:
+                                                        'clamp(0.65rem, 1.12vw, 4rem)',
+                                                }}
+                                            >
+                                                {certificate.startDate} -{' '}
+                                                {certificate.completionDate}
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="">
+                                        <Link
+                                            className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
+                                            style={{
+                                                fontSize:
+                                                    'clamp(0.8rem, 1.25vw, 4rem)',
+                                            }}
+                                            to={certificate.certificateLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            View Certificate{' '}
+                                            <span
+                                                style={{
+                                                    fontSize:
+                                                        'clamp(0.8rem, 1.55vw, 4rem)',
+                                                }}
+                                            >
+                                                →
+                                            </span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </section>
-            </section>
+            </div>
         </section>
     );
 }

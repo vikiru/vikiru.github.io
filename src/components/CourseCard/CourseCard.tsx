@@ -9,7 +9,7 @@ function CourseCard(props: CourseCardProps) {
 
     return (
         <section className="rounded-2xl bg-slate-100 p-6 shadow-md">
-            <div className="flex items-center justify-between">
+            <div className="flex min-h-20 items-center justify-between">
                 <div>
                     <h3
                         className="font-heading font-semibold text-gray-800"
@@ -29,7 +29,7 @@ function CourseCard(props: CourseCardProps) {
                 </div>
             </div>
 
-            <div className="mt-2 xs:min-h-36">
+            <div className="xs:min-h-36">
                 <p
                     className="font-body leading-relaxed text-gray-600"
                     style={{ fontSize: 'clamp(0.8rem, 1.2vw, 4rem)' }}
