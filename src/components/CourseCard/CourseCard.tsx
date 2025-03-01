@@ -8,25 +8,32 @@ function CourseCard(props: CourseCardProps) {
     const course = props.course;
 
     return (
-        <section
-            className="rounded-lg border-4 border-accent bg-primary bg-white pt-2 shadow-md lg:w-full lg:px-4 lg:pb-4 dark:border-darkAccent dark:bg-darkSecondary"
-            id={course.courseCode + ':' + course.name}
-            key={course.courseCode}
-        >
-            <div>
-                <h3 className="subheading-text px-2 dark:text-primary">
-                    {course.courseCode}
-                </h3>
+        <section className="rounded-2xl bg-slate-100 p-6 shadow-md">
+            <div className="flex items-center justify-between">
+                <div>
+                    <h3
+                        className="font-heading font-semibold text-gray-800"
+                        style={{ fontSize: 'clamp(1rem, 1.5vw, 4rem)' }}
+                    >
+                        {course.name}
+                    </h3>
+                </div>
 
-                {/* Course Name */}
-                <h4 className="subheading-text px-2 py-1 dark:text-primary">
-                    {course.name}
-                </h4>
+                <div className="mx-2">
+                    <p
+                        className="font-body italic text-gray-500"
+                        style={{ fontSize: 'clamp(0.65rem, 1.12vw, 4rem)' }}
+                    >
+                        {course.courseCode}
+                    </p>
+                </div>
             </div>
 
-            {/* Course Description */}
-            <div className="px-2 pb-4">
-                <p className="body-text dark:text-primary">
+            <div className="mt-2 xs:min-h-36">
+                <p
+                    className="font-body leading-relaxed text-gray-600"
+                    style={{ fontSize: 'clamp(0.8rem, 1.2vw, 4rem)' }}
+                >
                     {course.description}
                 </p>
             </div>
