@@ -49,11 +49,13 @@ function ProjectCard(props: ProjectCardProps) {
                 </div>
 
                 {/* Date Range */}
-                <div
-                    className="italic text-gray-500"
-                    style={{ fontSize: 'clamp(0.65rem, 1.125vw, 4rem)' }}
-                >
-                    {project.startDate} - {project.endDate}
+                <div>
+                    <p
+                        className="font-body italic text-gray-500"
+                        style={{ fontSize: 'clamp(0.65rem, 1.12vw, 4rem)' }}
+                    >
+                        {project.startDate} - {project.endDate}
+                    </p>
                 </div>
             </div>
 
