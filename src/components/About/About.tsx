@@ -20,8 +20,9 @@ function About() {
                         <br /> Following that, my university degree at Carleton
                         University provided me with a strong foundation of
                         knowledge and exposure to various languages, including
-                        Java, Python, HTML, CSS, JavaScript, C, Racket, and SQL.
-                        <br /> Since graduating, my goal has been to continue
+                        C, Racket, Java, Python, HTML, CSS, JavaScript, PHP, and
+                        SQL.
+                        <br /> After graduating, my goal has been to continue
                         learning and growing as a software developer. I actively
                         seek out new and meaningful projects to challenge
                         myself, working with both familiar and unfamiliar

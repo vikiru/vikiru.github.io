@@ -1,31 +1,25 @@
 type SkillsCategory = {
-    title: string;
     data: string[];
+    title: string;
 };
 
 type SkillsData = {
-    database: SkillsCategory;
-    devops: SkillsCategory;
-    frameworks: SkillsCategory;
-    hosting: SkillsCategory;
     languages: SkillsCategory;
+    frameworks: SkillsCategory;
     libraries: SkillsCategory;
-    os: SkillsCategory;
+    database: SkillsCategory;
     tools: SkillsCategory;
+    devops: SkillsCategory;
+    hosting: SkillsCategory;
+    os: SkillsCategory;
 };
 
-
 const skillsData: SkillsData = {
-    database: {
-        title: 'Database',
-        data: ['MySQL', 'SQLite', 'MongoDB', 'Sequelize', 'Mongoose'],
-    },
-    devops: {
-        title: 'DevOps',
-        data: ['CircleCI', 'GitHub Actions', 'Snyk'],
+    languages: {
+        data: ['Java', 'Python', 'HTML', 'CSS', 'JavaScript', 'TypeScript'],
+        title: 'Languages',
     },
     frameworks: {
-        title: 'Frameworks',
         data: [
             'Spring',
             'JUnit',
@@ -35,25 +29,9 @@ const skillsData: SkillsData = {
             'Django',
             'Flask',
         ],
-    },
-    hosting: {
-        title: 'Hosting',
-        data: [
-            'GitHub Pages',
-            'Heroku',
-            'Render',
-            'Vercel',
-            'Firebase',
-            'Fl0',
-            'Surge.sh',
-        ],
-    },
-    languages: {
-        title: 'Languages',
-        data: ['Java', 'Python', 'HTML', 'CSS', 'JavaScript', 'TypeScript'],
+        title: 'Frameworks',
     },
     libraries: {
-        title: 'Libraries',
         data: [
             'React',
             'NumPy',
@@ -64,13 +42,13 @@ const skillsData: SkillsData = {
             'Chai',
             'DaisyUI',
         ],
+        title: 'Libraries',
     },
-    os: {
-        title: 'Operating Systems',
-        data: ['Windows', 'Ubuntu'],
+    database: {
+        data: ['MySQL', 'SQLite', 'MongoDB', 'Sequelize', 'Mongoose'],
+        title: 'Database',
     },
     tools: {
-        title: 'Tools',
         data: [
             'Maven',
             'Node.js',
@@ -81,6 +59,27 @@ const skillsData: SkillsData = {
             'GitHub Desktop',
             'Postman',
         ],
+        title: 'Tools',
+    },
+    devops: {
+        data: ['CircleCI', 'GitHub Actions', 'Snyk'],
+        title: 'DevOps',
+    },
+    hosting: {
+        data: [
+            'GitHub Pages',
+            'Heroku',
+            'Render',
+            'Vercel',
+            'Firebase',
+            'Fl0',
+            'Surge.sh',
+        ],
+        title: 'Hosting',
+    },
+    os: {
+        data: ['Windows', 'Ubuntu'],
+        title: 'Operating Systems',
     },
 };
 

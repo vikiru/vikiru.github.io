@@ -33,7 +33,7 @@ function ProjectContainer() {
                 <div className="pb-6">
                     <h2
                         className="text-center font-heading font-semibold text-gray-800"
-                        style={{ fontSize: 'min(2rem, 2vw, 9rem)' }}
+                        style={{ fontSize: 'clamp(2rem, 2vw, 9rem)' }}
                     >
                         Other Projects
                     </h2>

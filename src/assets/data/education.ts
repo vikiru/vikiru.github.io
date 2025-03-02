@@ -12,8 +12,7 @@ const educationData = {
         {
             certificateLink:
                 'https://coursera.org/share/ff5dc718cd4f17208f60c5004f079928',
-            certificationName:
-                'IBM DevOps and Software Engineering',
+            certificationName: 'IBM DevOps and Software Engineering',
             completionDate: 'Dec 2023',
             provider: 'Coursera',
             startDate: 'Nov 2023',
