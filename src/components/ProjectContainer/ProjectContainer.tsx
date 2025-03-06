@@ -1,5 +1,5 @@
-import projectData from '~assets/data/projects';
-import ProjectCard from '~components/ProjectCard/ProjectCard';
+import { projectData } from '~assets/data/index';
+import { ProjectCard } from '~components/index';
 
 function ProjectContainer() {
     const projects = projectData.projects;

@@ -1,6 +1,4 @@
-import ContactForm from '~components/ContactForm/ContactForm';
-import Footer from '~components/Footer/Footer';
-import NavBar from '~components/NavBar/NavBar';
+import { ContactForm, Footer, NavBar } from '~components/index';
 
 function Contact() {
     return (

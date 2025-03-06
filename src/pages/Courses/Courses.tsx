@@ -1,6 +1,4 @@
-import CourseContainer from '~components/CourseContainer/CourseContainer';
-import Footer from '~components/Footer/Footer';
-import NavBar from '~components/NavBar/NavBar';
+import { CourseContainer, Footer, NavBar } from '~components/index';
 
 function CoursesPage() {
     return (
