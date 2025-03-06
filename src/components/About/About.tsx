@@ -11,7 +11,7 @@ function About() {
 
                 <div className="max-w-screen-[12rem] m-4">
                     <p
-                        className="font-body text-2xl leading-relaxed text-gray-600"
+                        className="font-body leading-relaxed text-gray-600"
                         style={{ fontSize: 'clamp(0.8rem, 1.25vw, 8rem)' }}
                     >
                         My journey into the world of software development began
