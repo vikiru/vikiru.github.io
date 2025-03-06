@@ -1,12 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
-import projectData from '~assets/data/projects';
-import About from '~pages/About/About';
-import Contact from '~pages/Contact/Contact';
-import Courses from '~pages/Courses/Courses';
-import Home from '~pages/Home/Home';
-import Projects from '~pages/Projects/Projects';
-import ProjectShowcase from '~pages/ProjectShowcase/ProjectShowcase';
-import Sitemap from '~pages/Sitemap/Sitemap';
+import { projectData } from '~assets/data/index';
+import {
+    About,
+    Contact,
+    Courses,
+    Home,
+    Projects,
+    ProjectShowcase,
+    Sitemap,
+} from '~pages/index';
 
 function Router() {
     const projects = projectData.projects;

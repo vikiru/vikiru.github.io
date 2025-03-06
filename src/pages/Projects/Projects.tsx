@@ -1,6 +1,4 @@
-import Footer from '~components/Footer/Footer';
-import NavBar from '~components/NavBar/NavBar';
-import ProjectContainer from '~components/ProjectContainer/ProjectContainer';
+import { Footer, NavBar, ProjectContainer } from '~components/index';
 
 function ProjectsPage() {
     return (

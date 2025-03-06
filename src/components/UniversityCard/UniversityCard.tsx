@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import educationData from '~assets/data/education';
+import { educationData } from '~assets/data/index';
 
 function UniversityCard() {
     return (

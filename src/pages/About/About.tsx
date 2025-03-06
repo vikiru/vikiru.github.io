@@ -1,8 +1,10 @@
-import About from '~components/About/About';
-import EducationContainer from '~components/EducationContainer/EducationContainer';
-import Footer from '~components/Footer/Footer';
-import NavBar from '~components/NavBar/NavBar';
-import SkillsContainer from '~components/SkillsContainer/SkillsContainer';
+import {
+    About,
+    EducationContainer,
+    Footer,
+    NavBar,
+    SkillsContainer,
+} from '~components/index';
 
 function AboutPage() {
     return (
