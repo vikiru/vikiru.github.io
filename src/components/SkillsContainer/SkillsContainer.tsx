@@ -13,7 +13,7 @@ function SkillsContainer() {
 
                 <div className="mx-4 grid gap-3 xs:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
                     {Object.values(skillsData).map((category) => (
-                        <div key={category.title} className="rounded-2xl p-2">
+                        <div className="rounded-2xl p-2" key={category.title}>
                             <h3
                                 className="font-heading font-semibold text-gray-800"
                                 style={{ fontSize: 'clamp(1rem, 1.5vw, 4rem)' }}

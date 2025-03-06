@@ -103,7 +103,8 @@ const projectData: ProjectData = {
                 'Verified external API functionality by developing tests using Mocha and Chai',
             ],
             contributors: 'Project completed individually',
-            description: 'A multi-purpose Discord bot with over 65 commands across 8 categories, aiming to enhance user experience and interactivity.',
+            description:
+                'A multi-purpose Discord bot with over 65 commands across 8 categories, aiming to enhance user experience and interactivity.',
             documentationUrl: 'https://vikiru.github.io/Urvo/',
             endDate: 'Nov 2023',
             githubUrl: 'https://github.com/vikiru/Urvo',
@@ -160,7 +161,8 @@ const projectData: ProjectData = {
                 'Utilized Figma to create mockups of components and pages',
             ],
             contributors: 'Project completed individually',
-            description: 'A personal portfolio website showcasing my skills and projects.',
+            description:
+                'A personal portfolio website showcasing my skills and projects.',
             documentationUrl: '',
             endDate: 'Jan 2024',
             githubUrl: 'https://github.com/vikiru/vikiru.github.io',
