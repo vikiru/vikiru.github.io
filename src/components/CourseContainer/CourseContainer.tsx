@@ -15,7 +15,7 @@ function CourseContainer() {
                     </h3>
                 </div>
 
-                <div className="mx-2">
+                <div className="mx-2 10xl:mx-10">
                     <div className="mx-2 flex items-center justify-between">
                         <div>
                             <h3
@@ -78,7 +78,7 @@ function CourseContainer() {
                                     </h3>
                                 </div>
 
-                                <div className="mx-2 grid gap-2 md:grid-cols-2">
+                                <div className="mx-2 grid gap-2 md:grid-cols-2 10xl:mx-10 10xl:gap-10">
                                     {year.courses.map((course) => (
                                         <CourseCard
                                             course={course}
