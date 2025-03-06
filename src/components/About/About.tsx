@@ -11,7 +11,7 @@ function About() {
 
                 <div className="max-w-screen-[12rem] m-4">
                     <p
-                        className="font-body text-2xl leading-relaxed text-gray-600"
+                        className="font-body leading-relaxed text-gray-600"
                         style={{ fontSize: 'clamp(0.8rem, 1.25vw, 8rem)' }}
                     >
                         My journey into the world of software development began
@@ -20,8 +20,9 @@ function About() {
                         <br /> Following that, my university degree at Carleton
                         University provided me with a strong foundation of
                         knowledge and exposure to various languages, including
-                        Java, Python, HTML, CSS, JavaScript, C, Racket, and SQL.
-                        <br /> Since graduating, my goal has been to continue
+                        C, Racket, Java, Python, HTML, CSS, JavaScript, PHP, and
+                        SQL.
+                        <br /> After graduating, my goal has been to continue
                         learning and growing as a software developer. I actively
                         seek out new and meaningful projects to challenge
                         myself, working with both familiar and unfamiliar

@@ -129,6 +129,8 @@ export default [
             'no-var': 'error',
             'object-curly-spacing': ['error', 'always'],
             'prefer-const': 'error',
+            'perfectionist/sort-objects': 'off',
+            'perfectionist/sort-object-types': 'off',
 
             'prettier/prettier': [
                 'off',

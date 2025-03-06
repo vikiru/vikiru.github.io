@@ -33,8 +33,8 @@ function EducationContainer() {
                         {courseraCertificates.map((certificate) => {
                             return (
                                 <div
-                                    key={certificate.certificationName}
                                     className="mt-2"
+                                    key={certificate.certificationName}
                                 >
                                     <div className="flex items-center justify-between">
                                         <div>
@@ -65,13 +65,13 @@ function EducationContainer() {
                                     <div className="">
                                         <Link
                                             className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
+                                            rel="noopener noreferrer"
                                             style={{
                                                 fontSize:
                                                     'clamp(0.8rem, 1.25vw, 4rem)',
                                             }}
-                                            to={certificate.certificateLink}
                                             target="_blank"
-                                            rel="noopener noreferrer"
+                                            to={certificate.certificateLink}
                                         >
                                             View Certificate{' '}
                                             <span
