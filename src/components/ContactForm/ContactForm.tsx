@@ -1,31 +1,8 @@
-import kwesforms from 'kwesforms';
 import { useEffect } from 'react';
+import useContact from '~hooks/useContact';
 
 function ContactForm() {
-    useEffect(() => {
-        kwesforms.init();
-    }, []);
-
-    function handleSubmit(event) {
-        event.preventDefault();
-
-        // Get the form and its fields
-        const form = document.forms['contact-form'];
-        const name = form['name']?.value;
-        const email = form['email']?.value;
-        const subject = form['subject']?.value;
-        const content = form['content']?.value;
-
-        console.log(form);
-        console.log(name);
-        console.log(email);
-        console.log(subject);
-        console.log(content);
-
-        if (name != '' && email != '' && subject != '' && content != '') {
-            // confirm('Are you sure you want to send this email?');
-        }
-    }
+    const { handleSubmit } = useContact();
 
     return (
         <section className="m-2 pb-6 lg:mx-auto lg:max-w-2xl" id="contact-form">

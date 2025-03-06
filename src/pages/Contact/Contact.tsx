@@ -28,7 +28,7 @@ function Contact() {
                                 work for any reason, please contact me directly
                                 via{' '}
                                 <a
-                                    className="font-semibold underline"
+                                    className="font-semibold text-accent underline"
                                     href="mailto:viskirubakaran@outlook.com"
                                 >
                                     email
