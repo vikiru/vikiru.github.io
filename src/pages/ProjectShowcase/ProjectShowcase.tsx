@@ -2,10 +2,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import Footer from '~components/Footer/Footer';
-import NavBar from '~components/NavBar/NavBar';
-import VideoPlayer from '~components/VideoPlayer/VideoPlayer';
-import { Project } from '~types/Project';
+import { Footer, NavBar, VideoPlayer } from '~components/index';
+import { Project } from '~types/index';
 
 type ProjectShowcaseProps = {
     project: Project;

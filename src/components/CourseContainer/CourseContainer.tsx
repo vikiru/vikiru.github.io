@@ -1,6 +1,5 @@
-import courseData from '~assets/data/courses';
-import educationData from '~assets/data/education';
-import CourseCard from '~components/CourseCard/CourseCard';
+import { courseData, educationData } from '~assets/data/index';
+import { CourseCard } from '~components/index';
 
 function CourseContainer() {
     return (

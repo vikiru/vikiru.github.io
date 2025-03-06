@@ -1,4 +1,4 @@
-import skillsData from '~assets/data/skills';
+import { skillsData } from '~assets/data/index';
 
 function SkillsContainer() {
     return (

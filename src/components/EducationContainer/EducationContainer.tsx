@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import educationData from '~assets/data/education';
-import UniversityCard from '~components/UniversityCard/UniversityCard';
+import { educationData } from '~assets/data/index';
+import { UniversityCard } from '~components/index';
 
 function EducationContainer() {
     const certificates = educationData.certificates;
