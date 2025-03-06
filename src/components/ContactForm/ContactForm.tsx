@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import useContact from '~hooks/useContact';
 
 function ContactForm() {
