@@ -6,8 +6,8 @@ import { navData } from '~assets/data/index';
 
 function Footer() {
     return (
-        <footer className="mt-auto w-full bg-gray-800 py-6 text-white">
-            <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
+        <footer className="mt-auto w-full bg-gray-800 py-6 text-white 10xl:py-10">
+            <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-4 md:grid-cols-3 lg:gap-8">
                 {/* Logo Section */}
                 <div className="text-center md:text-left">
                     <h2
@@ -30,12 +30,12 @@ function Footer() {
                         {navData.map((item) => (
                             <li key={item.navTitle}>
                                 <Link
-                                    to={item.navLink}
-                                    target="_blank"
                                     className="font-body text-white transition-colors duration-300 hover:text-accent hover:underline"
                                     style={{
-                                        fontSize: 'clamp(0.8rem, 1.25vw, 4rem)',
+                                        fontSize: 'clamp(1rem, 1.25vw, 4rem)',
                                     }}
+                                    target="_blank"
+                                    to={item.navLink}
                                 >
                                     {item.navTitle}
                                 </Link>
@@ -52,39 +52,39 @@ function Footer() {
                     >
                         Connect With Me
                     </h3>
-                    <div className="flex items-center justify-center space-x-4 md:justify-start">
+                    <div className="flex items-center justify-center space-x-4 md:justify-start 10xl:space-x-8">
                         <a
                             href="https://github.com/vikiru"
-                            target="_blank"
                             rel="noopener noreferrer"
+                            target="_blank"
                         >
                             <FontAwesomeIcon
-                                icon={faGithub}
                                 className="transition-colors duration-300 hover:text-accent"
+                                icon={faGithub}
                                 style={{
-                                    fontSize: 'clamp(0.8rem, 2vw, 4rem)',
+                                    fontSize: 'clamp(1rem, 2vw, 6rem)',
                                 }}
                             />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/viskirubakaran"
-                            target="_blank"
                             rel="noopener noreferrer"
+                            target="_blank"
                         >
                             <FontAwesomeIcon
+                                className="transition-colors duration-300 hover:text-accent"
                                 icon={faLinkedin}
-                                className="text-2xl transition-colors duration-300 hover:text-accent"
                                 style={{
-                                    fontSize: 'clamp(0.8rem, 2vw, 4rem)',
+                                    fontSize: 'clamp(1rem, 2vw, 6rem)',
                                 }}
                             />
                         </a>
-                        <Link to="/contact" target="_blank">
+                        <Link target="_blank" to="/contact">
                             <FontAwesomeIcon
+                                className="transition-colors duration-300 hover:text-accent"
                                 icon={faEnvelope}
-                                className="text-2xl transition-colors duration-300 hover:text-accent"
                                 style={{
-                                    fontSize: 'clamp(0.8rem, 2vw, 4rem)',
+                                    fontSize: 'clamp(1rem, 2vw, 6rem)',
                                 }}
                             />
                         </Link>
@@ -94,13 +94,16 @@ function Footer() {
 
             {/* Copyright Section */}
             <div className="mt-8 text-center">
-                <p className="text-sm text-gray-400">
+                <p
+                    className="text-gray-400"
+                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
+                >
                     &copy; {new Date().getFullYear()} Visakan Kirubakaran. All
                     rights reserved.
                     <span className="mx-2">|</span>
                     <Link
-                        to="/sitemap"
                         className="transition duration-300 hover:text-accent hover:underline"
+                        to="/sitemap"
                     >
                         Sitemap
                     </Link>
