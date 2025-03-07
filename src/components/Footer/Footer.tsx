@@ -47,7 +47,7 @@ function Footer() {
                 {/* Social Icons Section */}
                 <div className="text-center md:text-left">
                     <h3
-                        className="mb-3 font-heading font-semibold tracking-wide text-gray-400"
+                        className="mb-3 font-subheading font-semibold tracking-wide text-gray-400"
                         style={{ fontSize: 'clamp(1rem, 1.5vw, 9rem)' }}
                     >
                         Connect With Me
