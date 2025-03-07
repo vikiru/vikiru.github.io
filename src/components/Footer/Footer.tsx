@@ -6,145 +6,106 @@ import { navData } from '~assets/data/index';
 
 function Footer() {
     return (
-        <footer className="mt-auto w-full">
-            <div className="bg-secondary px-1 xxs:flex xxs:flex-col md:grid md:grid-cols-2 dark:bg-darkSecondary">
-                {/*  Logo */}
-                <section
-                    className="mx-auto py-2 md:col-span-2 lg:pt-4"
-                    id="logo"
-                >
-                    <Link
-                        className="text-center font-cinzel tracking-widest text-primary xxs:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl dark:text-primary"
-                        title="View my homepage"
-                        to="/"
+        <footer className="mt-auto w-full bg-gray-800 py-6 text-white">
+            <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
+                {/* Logo Section */}
+                <div className="text-center md:text-left">
+                    <h2
+                        className="text-center font-cinzel font-semibold tracking-widest text-primary"
+                        style={{ fontSize: 'clamp(2rem, 3vw, 9rem)' }}
                     >
-                        <span className="text-primary  dark:text-primary">
-                            Visa
-                        </span>
-                        <span className="text-accent dark:text-darkAccent">
-                            kan
-                        </span>
-                    </Link>
-                </section>
+                        Visa<span className="text-accent">kan</span>
+                    </h2>
+                </div>
 
-                {/* Footer Navigation */}
-                <div className="sm:grid sm:grid-cols-2 md:col-span-2">
-                    <section className="mx-auto" id="footer-navigation">
-                        <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
-                            Read more
-                        </h2>
-                        {navData.map((navItem) => (
-                            <div
-                                className="mx-auto flex justify-center p-2"
-                                key={navItem.navTitle}
-                            >
+                {/* Read More Section */}
+                <div className="text-center md:text-left">
+                    <h3
+                        className="mb-3 font-heading font-semibold tracking-wide text-gray-400"
+                        style={{ fontSize: 'clamp(1rem, 1.5vw, 9rem)' }}
+                    >
+                        Read More
+                    </h3>
+                    <ul className="space-y-2">
+                        {navData.map((item) => (
+                            <li key={item.navTitle}>
                                 <Link
-                                    className="
-                    subheading-text
-                    text-center
-                    uppercase
-                    text-primary
-                    decoration-accent
-                    hover:underline
-                    dark:text-primary
-                    dark:decoration-darkAccent"
-                                    id={navItem.navDesc}
-                                    title={navItem.navDesc}
-                                    to={navItem.navLink}
+                                    to={item.navLink}
+                                    target="_blank"
+                                    className="font-body text-white transition-colors duration-300 hover:text-accent hover:underline"
+                                    style={{
+                                        fontSize: 'clamp(0.8rem, 1.25vw, 4rem)',
+                                    }}
                                 >
-                                    {navItem.navTitle}
+                                    {item.navTitle}
                                 </Link>
-                            </div>
+                            </li>
                         ))}
-                    </section>
+                    </ul>
+                </div>
 
-                    {/* Footer Contact Section */}
-                    <section
-                        className="xxs:mx-auto lg:px-4 xl:mx-0"
-                        id="contact"
+                {/* Social Icons Section */}
+                <div className="text-center md:text-left">
+                    <h3
+                        className="mb-3 font-heading font-semibold tracking-wide text-gray-400"
+                        style={{ fontSize: 'clamp(1rem, 1.5vw, 9rem)' }}
                     >
-                        <h2 className="heading-text text-center uppercase tracking-wide text-primary dark:text-primary">
-                            Connect with me
-                        </h2>
-
-                        <div>
-                            <h2 className="subheading-text pt-2 text-center text-primary lg:py-2 dark:text-primary">
-                                Ottawa, ON
-                            </h2>
-
-                            <div
-                                className="flex justify-center space-x-2 pt-1 xl:space-x-4"
-                                id="social-icons"
-                            >
-                                <a
-                                    href="https://github.com/vikiru"
-                                    id="GitHub Profile Link - Footer"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    title="View my GitHub"
-                                >
-                                    <FontAwesomeIcon
-                                        className="social-icons"
-                                        icon={faGithub}
-                                    />
-                                </a>
-
-                                <a
-                                    href="https://www.linkedin.com/in/viskirubakaran/"
-                                    id="LinkedIn Link - Footer"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    title="View my LinkedIn"
-                                >
-                                    <FontAwesomeIcon
-                                        className="social-icons"
-                                        icon={faLinkedin}
-                                    />
-                                </a>
-
-                                <Link
-                                    id="Email Link - Footer"
-                                    rel="noopener noreferrer"
-                                    target="_top"
-                                    title="Send me an email"
-                                    to="/contact"
-                                >
-                                    <FontAwesomeIcon
-                                        className="social-icons"
-                                        icon={faEnvelope}
-                                    />
-                                </Link>
-                            </div>
-                        </div>
-                    </section>
+                        Connect With Me
+                    </h3>
+                    <div className="flex items-center justify-center space-x-4 md:justify-start">
+                        <a
+                            href="https://github.com/vikiru"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon
+                                icon={faGithub}
+                                className="transition-colors duration-300 hover:text-accent"
+                                style={{
+                                    fontSize: 'clamp(0.8rem, 2vw, 4rem)',
+                                }}
+                            />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/viskirubakaran"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon
+                                icon={faLinkedin}
+                                className="text-2xl transition-colors duration-300 hover:text-accent"
+                                style={{
+                                    fontSize: 'clamp(0.8rem, 2vw, 4rem)',
+                                }}
+                            />
+                        </a>
+                        <Link to="/contact" target="_blank">
+                            <FontAwesomeIcon
+                                icon={faEnvelope}
+                                className="text-2xl transition-colors duration-300 hover:text-accent"
+                                style={{
+                                    fontSize: 'clamp(0.8rem, 2vw, 4rem)',
+                                }}
+                            />
+                        </Link>
+                    </div>
                 </div>
             </div>
 
             {/* Copyright Section */}
-            <section
-                className="bg-secondary dark:bg-darkSecondary"
-                id="copyright"
-            >
-                <div className="mx-auto flex flex-col space-y-2 py-2">
-                    <p className="body-text text-center font-thin text-primary dark:text-primary">
-                        &copy; {new Date().getFullYear()} Visakan Kirubakaran.
-                        All rights reserved.
-                    </p>
-                </div>
-                <div>
+            <div className="mt-8 text-center">
+                <p className="text-sm text-gray-400">
+                    &copy; {new Date().getFullYear()} Visakan Kirubakaran. All
+                    rights reserved.
+                    <span className="mx-2">|</span>
                     <Link
-                        id="Sitemap"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        title="View the sitemap for this website"
                         to="/sitemap"
+                        className="transition duration-300 hover:text-accent hover:underline"
                     >
-                        <p className="body-text text-center text-primary decoration-accent hover:underline dark:text-primary dark:decoration-darkAccent">
-                            Sitemap
-                        </p>
+                        Sitemap
                     </Link>
-                </div>
-            </section>
+                </p>
+            </div>
         </footer>
     );
 }
