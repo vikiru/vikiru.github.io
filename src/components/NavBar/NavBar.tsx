@@ -1,4 +1,6 @@
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -11,105 +13,106 @@ function NavBar() {
     };
 
     return (
-        <nav>
-            <section className="flex justify-between py-2 lg:mx-10">
-                <div className="flex items-center justify-center px-4">
+        <nav className="bg-gray-800 text-white">
+            <section className="flex items-center justify-between px-6 py-4 md:px-10">
+                {/* Logo Section */}
+                <div className="flex items-center">
                     <Link
-                        className="font-cinzel font-semibold"
-                        style={{ fontSize: 'clamp(1.8rem, 2.5vw, 9rem)' }}
+                        className="font-cinzel text-2xl font-semibold md:text-4xl"
                         to="/"
                     >
-                        <span className="text-gray-800">V</span>
-                        <span className="text-blue-500">K</span>
+                        <span className="text-primary">V</span>
+                        <span className="text-accent">K</span>
                     </Link>
                 </div>
 
-                <div className="gap-4 px-2 py-4 text-black xs:hidden lg:flex lg:items-center lg:justify-center 2xl:gap-8">
-                    <Link
-                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
-                        to="/"
-                    >
-                        Home
-                    </Link>
-                    <Link
-                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
-                        to="/about"
-                    >
-                        About
-                    </Link>
-                    <Link
-                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
-                        to="/projects"
-                    >
-                        Projects
-                    </Link>
-                    <Link
-                        className="font-heading uppercase transition-colors duration-200 hover:text-blue-800 hover:underline"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
-                        to="/contact"
-                    >
-                        Contact
-                    </Link>
+                {/* Navbar Links (Desktop) - Visible on md and up */}
+                <div className="hidden gap-6 text-lg md:flex">
+                    {navData.map((item) => (
+                        <Link
+                            className="font-heading uppercase text-gray-300 transition-all duration-300 hover:text-accent hover:underline"
+                            key={item.navTitle}
+                            title={item.navDesc}
+                            to={item.navLink}
+                        >
+                            {item.navTitle}
+                        </Link>
+                    ))}
                 </div>
 
-                <div className="lg:hidden">
-                    <button onClick={handleClick}>
-                        {!isOpen ? (
-                            <FontAwesomeIcon
-                                className="px-3 py-2 text-black"
-                                icon={faBars}
-                                style={{
-                                    fontSize: 'clamp(1.5rem, 2.5vw, 4rem)',
-                                }}
-                            />
-                        ) : (
-                            <FontAwesomeIcon
-                                className="px-3 py-2 text-black"
-                                icon={faX}
-                                style={{
-                                    fontSize: 'clamp(1.5rem, 2.5vw, 4rem)',
-                                }}
-                            />
-                        )}
+                {/* Mobile Toggle Button */}
+                <div className="md:hidden">
+                    <button aria-label="Toggle menu" onClick={handleClick}>
+                        <FontAwesomeIcon
+                            className="text-2xl text-gray-300"
+                            icon={isOpen ? faX : faBars}
+                        />
                     </button>
                 </div>
             </section>
 
-            {isOpen && (
-                <section className="flex flex-col items-center justify-center lg:hidden">
-                    <Link
-                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
-                        to="/"
+            {/* Mobile Menu - Right to Left Slide, Visible on mobile only */}
+            <section
+                className={`fixed right-0 top-0 h-full w-3/4 bg-gray-800 text-white transition-all duration-500 ease-in-out md:hidden ${
+                    isOpen ? 'translate-x-0' : 'translate-x-full'
+                }`}
+            >
+                {/* Close Button */}
+                <div className="absolute right-6 top-4">
+                    <button aria-label="Close menu" onClick={handleClick}>
+                        <FontAwesomeIcon
+                            className="text-2xl text-gray-300"
+                            icon={faX}
+                        />
+                    </button>
+                </div>
+
+                {/* Mobile Menu Links */}
+                <div className="mt-8 flex flex-col items-center justify-center py-4">
+                    {navData.map((item) => (
+                        <Link
+                            className="w-full px-6 py-3 text-center font-heading text-lg uppercase text-gray-300 transition-colors duration-300 hover:text-accent"
+                            key={item.navTitle}
+                            title={item.navDesc}
+                            to={item.navLink}
+                        >
+                            {item.navTitle}
+                        </Link>
+                    ))}
+                </div>
+
+                {/* Divider */}
+                <div className="my-4 border-t border-gray-600"></div>
+
+                {/* Social Icons */}
+                <div className="flex justify-center space-x-6 py-4">
+                    <a
+                        className="text-2xl text-gray-300 transition-colors duration-300 hover:text-accent"
+                        href="https://github.com/vikiru"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        title="GitHub"
                     >
-                        Home
-                    </Link>
-                    <Link
-                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
-                        to="/about"
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a
+                        className="text-2xl text-gray-300 transition-colors duration-300 hover:text-accent"
+                        href="https://www.linkedin.com/in/viskirubakaran"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        title="LinkedIn"
                     >
-                        About
-                    </Link>
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
                     <Link
-                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
-                        to="/projects"
-                    >
-                        Projects
-                    </Link>
-                    <Link
-                        className="font-heading uppercase text-black transition-colors duration-200 hover:text-blue-500"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 6rem)' }}
+                        className="text-2xl text-gray-300 transition-colors duration-300 hover:text-accent"
+                        title="Contact"
                         to="/contact"
                     >
-                        Contact
+                        <FontAwesomeIcon icon={faEnvelope} />
                     </Link>
-                </section>
-            )}
+                </div>
+            </section>
         </nav>
     );
 }
