@@ -71,7 +71,7 @@ function NavBar() {
                 <div className="mt-8 flex flex-col items-center justify-center py-4">
                     {navData.map((item) => (
                         <Link
-                            className="w-full px-6 py-3 text-center font-heading text-lg uppercase text-gray-300 transition-colors duration-300 hover:text-accent"
+                            className="w-full px-6 py-3 text-center font-heading uppercase text-gray-300 transition-colors duration-300 hover:text-accent"
                             key={item.navTitle}
                             title={item.navDesc}
                             to={item.navLink}

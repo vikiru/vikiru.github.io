@@ -2,25 +2,17 @@ function About() {
     return (
         <section className="min-h-[30vh] bg-gray-50">
             <div className="pt-12">
-                <h2
-                    className="text-center font-heading font-semibold text-gray-800"
-                    style={{ fontSize: 'clamp(2rem, 2vw, 9rem)' }}
-                >
-                    About
-                </h2>
+                <h2 className="h2-text text-center">About</h2>
 
-                <div className="max-w-screen-[12rem] m-4">
-                    <p
-                        className="font-body leading-relaxed text-gray-600"
-                        style={{ fontSize: 'clamp(0.8rem, 1.25vw, 8rem)' }}
-                    >
+                <div className="m-4">
+                    <p className="body-text">
                         My journey into the world of software development began
                         with an introduction to computer science and
                         programming, utilizing languages such as C++ and Java.
-                        <br /> Following that, my university degree at Carleton
+                        Following that, my university degree at Carleton
                         University provided me with a strong foundation of
                         knowledge and exposure to various languages, including
-                        C, Racket, Java, Python, HTML, CSS, JavaScript, PHP, and
+                        Racket, C, Java, Python, HTML, CSS, JavaScript, PHP, and
                         SQL.
                         <br /> After graduating, my goal has been to continue
                         learning and growing as a software developer. I actively

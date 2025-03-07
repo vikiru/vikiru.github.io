@@ -3,17 +3,11 @@ import { Link } from 'react-router-dom';
 function Hero() {
     return (
         <div className="flex items-center justify-center xs:min-h-[90vh]">
-            <div className="m-2 xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl 5xl:max-w-[88rem] 7xl:max-w-[104rem] 9xl:max-w-[160rem]">
-                <h1
-                    className="font-heading font-bold xs:tracking-wide sm:tracking-tight"
-                    style={{ fontSize: 'clamp(1.25rem, 2.5vw, 9rem)' }}
-                >
+            <div className="m-2 xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl 5xl:max-w-[88rem] 7xl:max-w-[104rem] 9xl:max-w-[160rem] 10xl:max-w-[180rem] 11xl:max-w-[200rem]">
+                <h1 className="h1-text xs:tracking-wide sm:tracking-tight">
                     Hello, my name is Visakan Kirubakaran
                 </h1>
-                <p
-                    className="font-body leading-relaxed"
-                    style={{ fontSize: 'clamp(1rem, 1.5vw, 4.5rem)' }}
-                >
+                <p className="body-text">
                     I am a dedicated software developer with a passion for
                     software and web development. Utilizing my knowledge and
                     skills, I wish to challenge myself as I contribute to

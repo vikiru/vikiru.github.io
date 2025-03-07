@@ -11,25 +11,13 @@ function EducationContainer() {
     return (
         <section className="min-h-[30vh] bg-gray-50">
             <div>
-                <h2
-                    className="text-center font-heading font-semibold text-gray-800"
-                    style={{ fontSize: 'clamp(2rem, 2vw, 9rem)' }}
-                >
-                    Education
-                </h2>
+                <h2 className="h2-text text-center">Education</h2>
 
                 <UniversityCard />
 
                 <section className="mt-2">
                     <div className="mx-4">
-                        <h3
-                            className="font-heading font-semibold text-gray-800"
-                            style={{
-                                fontSize: 'clamp(1rem, 1.5vw, 4rem)',
-                            }}
-                        >
-                            Coursera
-                        </h3>
+                        <h4 className="h4-text">Coursera</h4>
                         {courseraCertificates.map((certificate) => {
                             return (
                                 <div
@@ -38,7 +26,7 @@ function EducationContainer() {
                                 >
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <h3
+                                            <h5
                                                 className="font-subheading italic"
                                                 style={{
                                                     fontSize:
@@ -46,16 +34,10 @@ function EducationContainer() {
                                                 }}
                                             >
                                                 {certificate.certificationName}
-                                            </h3>
+                                            </h5>
                                         </div>
                                         <div>
-                                            <p
-                                                className="font-body italic text-gray-500"
-                                                style={{
-                                                    fontSize:
-                                                        'clamp(0.65rem, 1.12vw, 4rem)',
-                                                }}
-                                            >
+                                            <p className="info-text">
                                                 {certificate.startDate} -{' '}
                                                 {certificate.completionDate}
                                             </p>
