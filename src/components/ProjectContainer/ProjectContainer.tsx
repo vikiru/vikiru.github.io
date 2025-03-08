@@ -5,7 +5,7 @@ function ProjectContainer() {
     const projects = projectData.projects;
 
     return (
-        <section className="mx-auto bg-gray-50 py-12" id="projects">
+        <section className="mx-auto bg-background-950 py-12" id="projects">
             <div className="px-6 sm:px-8 lg:px-12">
                 {/* Featured Projects Section */}
                 <div className="pb-6">

@@ -16,7 +16,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
         <div className="">
             <NavBar />
             <main>
-                <section className="min-h-screen overflow-hidden bg-gray-50">
+                <section className="min-h-screen overflow-hidden bg-background-950">
                     <div className="flex items-center justify-between pt-12">
                         <div className="mx-4 flex items-center space-x-2">
                             <div>
@@ -40,7 +40,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                                 >
                                     {project.githubUrl && (
                                         <Link
-                                            className="transition-colors duration-200 hover:text-accent"
+                                            className="hover:text-accent transition-colors duration-200"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                             to={project.githubUrl}
@@ -51,7 +51,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
 
                                     {project.documentationUrl && (
                                         <Link
-                                            className="transition-colors duration-200 hover:text-accent"
+                                            className="hover:text-accent transition-colors duration-200"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                             to={project.documentationUrl}

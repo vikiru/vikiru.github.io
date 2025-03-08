@@ -28,7 +28,7 @@ function Hero() {
 
                 <div className="flex gap-4 pt-4 xs:flex-col md:flex-row lg:justify-start">
                     <Link
-                        className="rounded-lg border-b-4 border-blue-500 bg-black px-6 py-3 text-center font-body font-medium text-white shadow-sm hover:bg-gray-800 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
+                        className="rounded-lg border-b-4 border-primary-700 bg-primary-600 px-6 py-3 text-center font-body font-medium text-white shadow-sm transition duration-200 ease-in-out hover:bg-primary-700 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
                         style={{
                             fontSize: 'clamp(1rem, 1.125vw, 3.75rem)',
                         }}
@@ -37,7 +37,7 @@ function Hero() {
                         Read more about me
                     </Link>
                     <Link
-                        className="rounded-lg border-b-4 border-blue-500 bg-black px-6 py-3 text-center font-body font-medium text-white shadow-sm hover:bg-gray-800 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
+                        className="rounded-lg border-b-4 border-primary-600 bg-primary-500 px-6 py-3 text-center font-body font-medium text-white shadow-md transition duration-200 ease-in-out hover:bg-primary-600 hover:shadow-lg 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
                         style={{
                             fontSize: 'clamp(1rem, 1.125vw, 3.75rem)',
                         }}
@@ -46,7 +46,7 @@ function Hero() {
                         View my work
                     </Link>
                     <Link
-                        className="rounded-lg border-b-4 border-blue-500 bg-black px-6 py-3 text-center font-body font-medium text-white shadow-sm hover:bg-gray-800 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
+                        className="rounded-lg border-b-4 border-accent-600 bg-accent-500 px-6 py-3 text-center font-body font-medium text-white shadow-sm transition duration-200 ease-in-out hover:bg-accent-600 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
                         style={{
                             fontSize: 'clamp(1rem, 1.125vw, 3.75rem)',
                         }}

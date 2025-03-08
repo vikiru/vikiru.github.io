@@ -2,7 +2,7 @@ import { skillsData } from '~assets/data/index';
 
 function SkillsContainer() {
     return (
-        <section className="min-h-[30vh] bg-gray-50 pb-8">
+        <section className="min-h-[30vh] bg-background-950 pb-8">
             <div>
                 <h2 className="h2-text text-center">Skills</h2>
 

@@ -12,7 +12,7 @@ function ProjectCard(props: ProjectCardProps) {
     const project: Project = props.project;
 
     return (
-        <div className="flex flex-col rounded-2xl bg-slate-100 p-6 shadow-md">
+        <div className="bg-primary-950 flex flex-col rounded-2xl p-6 shadow-md">
             {/* Header with Icons */}
             <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-1">
@@ -22,12 +22,12 @@ function ProjectCard(props: ProjectCardProps) {
                     {/* Icons */}
                     {(project.githubUrl || project.documentationUrl) && (
                         <div
-                            className="flex items-center space-x-2 pb-1 text-gray-800"
+                            className="text-accent-300 flex items-center space-x-2 pb-1"
                             style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                         >
                             {project.githubUrl && (
                                 <Link
-                                    className="transition-colors duration-200 hover:text-accent"
+                                    className="hover:text-accent-500 transition-colors duration-200"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     to={project.githubUrl}
@@ -38,7 +38,7 @@ function ProjectCard(props: ProjectCardProps) {
 
                             {project.documentationUrl && (
                                 <Link
-                                    className="transition-colors duration-200 hover:text-accent"
+                                    className="hover:text-accent-500 transition-colors duration-200"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     to={project.documentationUrl}
@@ -52,7 +52,7 @@ function ProjectCard(props: ProjectCardProps) {
 
                 {/* Date Range */}
                 <div>
-                    <p className="info-text">
+                    <p className="info-text text-secondary-500">
                         {project.startDate} - {project.endDate}
                     </p>
                 </div>
@@ -60,13 +60,13 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Description */}
             <div className="container mt-3 min-h-20 pb-3">
-                <p className="card-text text-gray-600">{project.description}</p>
+                <p className="card-text text-text-600">{project.description}</p>
             </div>
 
             {/* Tech Stack Tags */}
             <div className="container flex flex-wrap gap-2">
                 {project.technologiesUsed.map((tech, index) => (
-                    <div className="tech-tag" key={index}>
+                    <div className="tech-tag text-secondary-950" key={index}>
                         {tech}
                     </div>
                 ))}
@@ -75,7 +75,7 @@ function ProjectCard(props: ProjectCardProps) {
             {/* CTA */}
             <div className="mt-4">
                 <Link
-                    className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
+                    className="text-accent-300 hover:text-accent-500 font-body font-semibold transition-colors duration-200"
                     style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
                     to={project.projectPageUrl}
                 >

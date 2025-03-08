@@ -13,7 +13,7 @@ function NavBar() {
     };
 
     return (
-        <nav className="bg-gray-800 text-white">
+        <nav className="bg-background-600 text-white">
             <section className="flex items-center justify-between px-6 py-4 md:px-10">
                 {/* Logo Section */}
                 <div className="flex items-center">
@@ -22,7 +22,7 @@ function NavBar() {
                         to="/"
                     >
                         <span className="text-primary">V</span>
-                        <span className="text-accent">K</span>
+                        <span className="text-accent-400">K</span>
                     </Link>
                 </div>
 
@@ -30,7 +30,7 @@ function NavBar() {
                 <div className="hidden gap-6 text-lg md:flex">
                     {navData.map((item) => (
                         <Link
-                            className="font-heading uppercase text-gray-300 transition-all duration-300 hover:text-accent hover:underline"
+                            className="hover:text-accent font-heading uppercase text-gray-300 transition-all duration-300 hover:underline"
                             key={item.navTitle}
                             title={item.navDesc}
                             to={item.navLink}
@@ -71,7 +71,7 @@ function NavBar() {
                 <div className="mt-8 flex flex-col items-center justify-center py-4">
                     {navData.map((item) => (
                         <Link
-                            className="w-full px-6 py-3 text-center font-heading uppercase text-gray-300 transition-colors duration-300 hover:text-accent"
+                            className="hover:text-accent w-full px-6 py-3 text-center font-heading uppercase text-gray-300 transition-colors duration-300"
                             key={item.navTitle}
                             title={item.navDesc}
                             to={item.navLink}
@@ -87,7 +87,7 @@ function NavBar() {
                 {/* Social Icons */}
                 <div className="flex justify-center space-x-6 py-4">
                     <a
-                        className="text-2xl text-gray-300 transition-colors duration-300 hover:text-accent"
+                        className="hover:text-accent text-2xl text-gray-300 transition-colors duration-300"
                         href="https://github.com/vikiru"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -96,7 +96,7 @@ function NavBar() {
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                     <a
-                        className="text-2xl text-gray-300 transition-colors duration-300 hover:text-accent"
+                        className="hover:text-accent text-2xl text-gray-300 transition-colors duration-300"
                         href="https://www.linkedin.com/in/viskirubakaran"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -105,7 +105,7 @@ function NavBar() {
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                     <Link
-                        className="text-2xl text-gray-300 transition-colors duration-300 hover:text-accent"
+                        className="hover:text-accent text-2xl text-gray-300 transition-colors duration-300"
                         title="Contact"
                         to="/contact"
                     >

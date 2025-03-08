@@ -11,10 +11,10 @@ function Footer() {
                 {/* Logo Section */}
                 <div className="text-center md:text-left">
                     <h2
-                        className="text-center font-cinzel font-semibold tracking-widest text-primary"
+                        className="text-primary text-center font-cinzel font-semibold tracking-widest"
                         style={{ fontSize: 'clamp(2rem, 3vw, 9rem)' }}
                     >
-                        Visa<span className="text-accent">kan</span>
+                        Visa<span className="text-accent-400">kan</span>
                     </h2>
                 </div>
 
@@ -30,7 +30,7 @@ function Footer() {
                         {navData.map((item) => (
                             <li key={item.navTitle}>
                                 <Link
-                                    className="font-body text-white transition-colors duration-300 hover:text-accent hover:underline"
+                                    className="font-body text-white transition-colors duration-300 hover:text-accent-500 hover:underline"
                                     style={{
                                         fontSize: 'clamp(1rem, 1.25vw, 4rem)',
                                     }}
@@ -59,7 +59,7 @@ function Footer() {
                             target="_blank"
                         >
                             <FontAwesomeIcon
-                                className="transition-colors duration-300 hover:text-accent"
+                                className="transition-colors duration-300 hover:text-accent-500"
                                 icon={faGithub}
                                 style={{
                                     fontSize: 'clamp(1rem, 2vw, 6rem)',
@@ -72,7 +72,7 @@ function Footer() {
                             target="_blank"
                         >
                             <FontAwesomeIcon
-                                className="transition-colors duration-300 hover:text-accent"
+                                className="transition-colors duration-300 hover:text-accent-500"
                                 icon={faLinkedin}
                                 style={{
                                     fontSize: 'clamp(1rem, 2vw, 6rem)',
@@ -81,7 +81,7 @@ function Footer() {
                         </a>
                         <Link target="_blank" to="/contact">
                             <FontAwesomeIcon
-                                className="transition-colors duration-300 hover:text-accent"
+                                className="transition-colors duration-300 hover:text-accent-500"
                                 icon={faEnvelope}
                                 style={{
                                     fontSize: 'clamp(1rem, 2vw, 6rem)',
@@ -102,7 +102,7 @@ function Footer() {
                     rights reserved.
                     <span className="mx-2">|</span>
                     <Link
-                        className="transition duration-300 hover:text-accent hover:underline"
+                        className="hover:text-accent transition duration-300 hover:underline"
                         to="/sitemap"
                     >
                         Sitemap

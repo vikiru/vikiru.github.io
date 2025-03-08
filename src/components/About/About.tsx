@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section className="min-h-[30vh] bg-gray-50">
+        <section className="min-h-[30vh] bg-background-950">
             <div className="pt-12">
                 <h2 className="h2-text text-center">About</h2>
 

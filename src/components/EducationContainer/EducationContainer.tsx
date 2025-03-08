@@ -9,7 +9,7 @@ function EducationContainer() {
     );
 
     return (
-        <section className="min-h-[30vh] bg-gray-50">
+        <section className="min-h-[30vh] bg-background-950">
             <div>
                 <h2 className="h2-text text-center">Education</h2>
 
@@ -46,7 +46,7 @@ function EducationContainer() {
 
                                     <div className="">
                                         <Link
-                                            className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
+                                            className="text-accent hover:text-accent/50 font-body font-semibold transition-colors duration-200"
                                             rel="noopener noreferrer"
                                             style={{
                                                 fontSize:

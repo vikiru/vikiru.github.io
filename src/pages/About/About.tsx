@@ -10,7 +10,7 @@ function AboutPage() {
     return (
         <div className="">
             <NavBar />
-            <main className="bg-gray-50">
+            <main className="bg-background-950">
                 {/* About Section */}
                 <About />
                 <div className="my-8 border-t border-gray-300" />

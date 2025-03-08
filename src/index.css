@@ -32,11 +32,11 @@
     }
 
     .info-text {
-        @apply text-clamp-info italic font-hind text-gray-500
+        @apply text-clamp-info italic font-hind text-text-500
     }
 
     .tech-tag {
-        @apply text-clamp-tech flex items-center rounded-xl bg-accent font-inter text-white xs:px-3 xs:py-1 5xl:rounded-2xl 5xl:px-6 5xl:py-2;
+        @apply text-clamp-tech flex items-center rounded-xl bg-primary-600 font-inter text-white xs:px-3 xs:py-1 5xl:rounded-2xl 5xl:px-6 5xl:py-2;
     }
     
 
