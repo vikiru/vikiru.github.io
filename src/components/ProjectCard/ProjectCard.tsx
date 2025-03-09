@@ -63,7 +63,7 @@ function ProjectCard(props: ProjectCardProps) {
             </div>
 
             {/* Description */}
-            <div className="container flex min-h-20 flex-col pb-3 lg:mt-3">
+            <div className="container flex min-h-20 flex-col pb-3 xs:mt-2 lg:mt-3">
                 <p className="card-text text-text-600">{project.description}</p>
             </div>
 

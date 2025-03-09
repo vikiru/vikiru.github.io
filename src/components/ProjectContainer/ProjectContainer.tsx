@@ -1,9 +1,8 @@
-import { projectData } from '~assets/data/index';
+import { featuredProjects, otherProjects } from '~assets/data/index';
 import { ProjectCard } from '~components/index';
+import { Project } from '~types/Project';
 
 function ProjectContainer() {
-    const projects = projectData.projects;
-
     return (
         <section
             className="mx-auto bg-background-950 xs:pt-6 lg:py-12"
@@ -19,7 +18,7 @@ function ProjectContainer() {
                     className="mt-4 grid gap-6 xl:grid-cols-2"
                     id="projects-container"
                 >
-                    {projects.slice(0, 5).map((project) => (
+                    {featuredProjects.map((project: Project) => (
                         <ProjectCard key={project.name} project={project} />
                     ))}
                 </div>
@@ -36,7 +35,7 @@ function ProjectContainer() {
                     className="mt-4 grid gap-6 pb-6 xl:grid-cols-2"
                     id="projects-container"
                 >
-                    {projects.slice(5).map((project) => (
+                    {otherProjects.map((project: Project) => (
                         <ProjectCard key={project.name} project={project} />
                     ))}
                 </div>
