@@ -20,34 +20,38 @@ function ProjectCard(props: ProjectCardProps) {
                     <h4 className="h4-text">{project.name}</h4>
 
                     {/* Icons */}
-                    {(project.githubUrl || project.documentationUrl) && (
-                        <div
-                            className="flex items-center space-x-2 text-accent-300 3xl:space-x-4"
-                            style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
-                        >
-                            {project.githubUrl && (
-                                <Link
-                                    className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    to={project.githubUrl}
-                                >
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </Link>
-                            )}
+                    <div
+                        className="flex items-center space-x-2 text-accent-300 3xl:space-x-4"
+                        style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
+                    >
+                        {project.githubUrl ? (
+                            <Link
+                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                target="_blank"
+                                to={project.githubUrl}
+                            >
+                                <FontAwesomeIcon icon={faGithub} />
+                            </Link>
+                        ) : (
+                            <span className="invisible text-clamp-icons">
+                                <FontAwesomeIcon icon={faGithub} />
+                            </span>
+                        )}
 
-                            {project.documentationUrl && (
-                                <Link
-                                    className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    to={project.documentationUrl}
-                                >
-                                    <FontAwesomeIcon icon={faBookOpen} />
-                                </Link>
-                            )}
-                        </div>
-                    )}
+                        {project.documentationUrl ? (
+                            <Link
+                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                target="_blank"
+                                to={project.documentationUrl}
+                            >
+                                <FontAwesomeIcon icon={faBookOpen} />
+                            </Link>
+                        ) : (
+                            <span className="invisible text-clamp-icons">
+                                <FontAwesomeIcon icon={faBookOpen} />
+                            </span>
+                        )}
+                    </div>
                 </div>
 
                 {/* Date Range */}
@@ -59,7 +63,7 @@ function ProjectCard(props: ProjectCardProps) {
             </div>
 
             {/* Description */}
-            <div className="container min-h-20 pb-3 lg:mt-3">
+            <div className="container flex min-h-20 flex-col pb-3 lg:mt-3">
                 <p className="card-text text-text-600">{project.description}</p>
             </div>
 

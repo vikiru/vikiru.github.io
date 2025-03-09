@@ -9,11 +9,11 @@ function About() {
                         My journey into the world of software development began
                         with an introduction to computer science and
                         programming, utilizing languages such as C++ and Java.
-                        Following that, my university degree at Carleton
-                        University provided me with a strong foundation of
-                        knowledge and exposure to various languages, including
-                        Racket, C, Java, Python, HTML, CSS, JavaScript, PHP, and
-                        SQL.
+                        Following that, my software engineering degree a
+                        Carleton University provided me with a strong foundation
+                        of knowledge and exposure to various languages,
+                        including Racket, C, Java, Python, HTML, CSS,
+                        JavaScript, PHP, and SQL.
                         <br /> After graduating, my goal has been to continue
                         learning and growing as a software developer. I actively
                         seek out new and meaningful projects to challenge

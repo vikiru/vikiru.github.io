@@ -27,27 +27,27 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                                 project.documentationUrl) && (
                                 <div className="mt-1 flex items-center space-x-2 text-gray-800">
                                     {project.githubUrl && (
-                                        <Link
+                                        <a
                                             className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                            href={project.githubUrl}
                                             rel="noopener noreferrer"
                                             target="_blank"
-                                            to={project.githubUrl}
                                         >
                                             <FontAwesomeIcon icon={faGithub} />
-                                        </Link>
+                                        </a>
                                     )}
 
                                     {project.documentationUrl && (
-                                        <Link
+                                        <a
                                             className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                            href={project.documentationUrl}
                                             rel="noopener noreferrer"
                                             target="_blank"
-                                            to={project.documentationUrl}
                                         >
                                             <FontAwesomeIcon
                                                 icon={faBookOpen}
                                             />
-                                        </Link>
+                                        </a>
                                     )}
                                 </div>
                             )}

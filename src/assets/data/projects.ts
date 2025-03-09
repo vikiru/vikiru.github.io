@@ -201,7 +201,7 @@ const projectData: ProjectData = {
         {
             name: 'Mini-SurveyMonkey',
             description:
-                'A SurveyMonkey clone built as a Spring Boot CRUD Web Application.',
+                'A SurveyMonkey clone built as a Spring Boot CRUD Web Application, enabling survey creation, modification, and PDF export of results.',
             startDate: 'Mar 2022',
             endDate: 'Apr 2022',
             technologiesUsed: [

@@ -45,15 +45,15 @@ function EducationContainer() {
                                     </div>
 
                                     <div className="">
-                                        <Link
+                                        <a
                                             className="font-body font-semibold text-accent-500 transition-colors duration-200 hover:text-accent-500/50"
+                                            href={certificate.certificateLink}
                                             rel="noopener noreferrer"
                                             style={{
                                                 fontSize:
                                                     'clamp(0.8rem, 1.25vw, 4rem)',
                                             }}
                                             target="_blank"
-                                            to={certificate.certificateLink}
                                         >
                                             View Certificate{' '}
                                             <span
@@ -64,7 +64,7 @@ function EducationContainer() {
                                             >
                                                 →
                                             </span>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             );

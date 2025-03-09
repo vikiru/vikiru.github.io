@@ -8,7 +8,7 @@ function VideoPlayer({ project }: VideoPlayerProps) {
     return (
         <section className="pb-6 pt-2" id="project-demo">
             <h3 className="h3-text mb-2">Demo</h3>
-            <div className="container h-full w-full">
+            <div className="demo-ctr">
                 <video
                     className="h-full w-full"
                     controls

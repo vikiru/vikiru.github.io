@@ -8,6 +8,6 @@ export type Project = {
     githubUrl: string;
     documentationUrl: string;
     projectPageUrl: string;
-    accomplishments: string[];
     videoPath: any | string;
+    accomplishments: string[];
 };
