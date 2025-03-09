@@ -20,7 +20,7 @@ function CourseContainer() {
                             <p
                                 className="font-body text-gray-700"
                                 style={{
-                                    fontSize: 'clamp(0.65rem, 1.25vw, 4rem)',
+                                    fontSize: 'clamp(0.65rem, 1.25vw, 4.5rem)',
                                 }}
                             >
                                 {educationData.location}
@@ -33,7 +33,7 @@ function CourseContainer() {
                             <h5
                                 className="font-subheading italic"
                                 style={{
-                                    fontSize: 'clamp(0.65rem, 1.2vw, 4rem)',
+                                    fontSize: 'clamp(0.65rem, 1.2vw, 5rem)',
                                 }}
                             >
                                 {educationData.degree} - {educationData.acronym}

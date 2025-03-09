@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { educationData } from '~assets/data/index';
 import { UniversityCard } from '~components/index';
 
@@ -16,7 +15,7 @@ function EducationContainer() {
                 <UniversityCard />
 
                 <section className="mt-2">
-                    <div className="mx-4">
+                    <div className="mx-4 10xl:mx-10">
                         <h4 className="h4-text">Coursera</h4>
                         {courseraCertificates.map((certificate) => {
                             return (
@@ -30,7 +29,7 @@ function EducationContainer() {
                                                 className="font-subheading italic"
                                                 style={{
                                                     fontSize:
-                                                        'clamp(0.65rem, 1.25vw, 4rem)',
+                                                        'clamp(0.65rem, 1.25vw, 5rem)',
                                                 }}
                                             >
                                                 {certificate.certificationName}
@@ -46,24 +45,12 @@ function EducationContainer() {
 
                                     <div className="">
                                         <a
-                                            className="font-body font-semibold text-accent-500 transition-colors duration-200 hover:text-accent-500/50"
+                                            className="body-text font-semibold text-accent-500 transition-colors duration-200 hover:text-accent-500/50"
                                             href={certificate.certificateLink}
                                             rel="noopener noreferrer"
-                                            style={{
-                                                fontSize:
-                                                    'clamp(0.8rem, 1.25vw, 4rem)',
-                                            }}
                                             target="_blank"
                                         >
-                                            View Certificate{' '}
-                                            <span
-                                                style={{
-                                                    fontSize:
-                                                        'clamp(0.8rem, 1.55vw, 4rem)',
-                                                }}
-                                            >
-                                                →
-                                            </span>
+                                            View Certificate <span>→</span>
                                         </a>
                                     </div>
                                 </div>

@@ -6,7 +6,7 @@ import { navData } from '~assets/data/index';
 
 function Footer() {
     return (
-        <footer className="mt-auto w-full bg-gray-800 py-6 text-white 10xl:py-10">
+        <footer className="mt-auto w-full bg-background-600 py-6 text-white 10xl:py-10">
             <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-4 md:grid-cols-3 lg:gap-8">
                 {/* Logo Section */}
                 <div className="text-center md:text-left">
@@ -75,13 +75,13 @@ function Footer() {
             <div className="mt-8 text-center">
                 <p
                     className="text-gray-400"
-                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
+                    style={{ fontSize: 'clamp(0.9rem, 1.25vw, 4rem)' }}
                 >
                     &copy; {new Date().getFullYear()} Visakan Kirubakaran. All
                     rights reserved.
                     <span className="mx-2">|</span>
                     <Link
-                        className="hover:text-accent transition duration-300 hover:underline"
+                        className="transition duration-300 hover:text-accent-500 hover:underline"
                         to="/sitemap"
                     >
                         Sitemap

@@ -1,7 +1,6 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
 import { Footer, NavBar, VideoPlayer } from '~components/index';
 import { Project } from '~types/index';
 
@@ -18,7 +17,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
             <main>
                 <section className="min-h-screen overflow-hidden bg-background-950">
                     <div className="flex items-center justify-between pt-12">
-                        <div className="mx-4 flex items-center space-x-2">
+                        <div className="mx-4 flex items-center space-x-2 10xl:mx-10">
                             <div>
                                 <h2 className="h2-text">{project.name}</h2>
                             </div>
@@ -53,11 +52,11 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                             )}
                         </div>
 
-                        <div className="mx-4">
+                        <div className="mx-4 10xl:mx-10">
                             <p
                                 className="info-text"
                                 style={{
-                                    fontSize: 'clamp(0.8rem, 1.5vw, 4rem)',
+                                    fontSize: 'clamp(0.8rem, 1.5vw, 5rem)',
                                 }}
                             >
                                 {project.startDate} - {project.endDate}
@@ -65,11 +64,13 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                         </div>
                     </div>
 
-                    <div className="mx-4">
-                        <p className="body-text">{project.description}</p>
+                    <div className="mx-4 10xl:mx-10">
+                        <p className="body-text text-text-600">
+                            {project.description}
+                        </p>
                     </div>
 
-                    <div className="container mx-4 mt-2 flex flex-wrap gap-3 pb-4">
+                    <div className="container mx-4 mt-2 flex flex-wrap gap-3 pb-4 10xl:mx-10">
                         {project.technologiesUsed.map((tech, index) => (
                             <div className="tech-tag" key={index}>
                                 {tech}
@@ -79,16 +80,16 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
 
                     <div className="my-4 border-t border-gray-300" />
 
-                    <div className="mx-4">
+                    <div className="mx-4 10xl:mx-10">
                         <h3 className="h3-text">Co-Authors</h3>
-                        <p className="body-text pb-4">
+                        <p className="body-text pb-4 text-text-600">
                             {project.contributors}.
                         </p>
                     </div>
 
                     <div className="my-4 border-t border-gray-300" />
 
-                    <div className="mx-4">
+                    <div className="mx-4 10xl:mx-10">
                         <h3 className="h3-text">Accomplishments</h3>
 
                         <div className="mx-2 pb-4">
@@ -96,7 +97,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                                 {project.accomplishments.map(
                                     (accomplishment) => (
                                         <li
-                                            className="font-body text-clamp-accomplishment leading-relaxed text-gray-600"
+                                            className="text-clamp-accomplishment leading-relaxed text-text-600"
                                             key={accomplishment}
                                         >
                                             {accomplishment}
@@ -110,7 +111,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                     <div className="my-4 border-t border-gray-300" />
 
                     {project.videoPath !== '' && (
-                        <div className="mx-4">
+                        <div className="mx-4 10xl:mx-10">
                             <VideoPlayer project={project} />
                             <div className="my-4 pb-4" />
                         </div>

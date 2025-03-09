@@ -4,8 +4,8 @@ function About() {
             <div className="xs:pt-6 lg:pt-12">
                 <h2 className="h2-text text-center">About</h2>
 
-                <div className="mx-4">
-                    <p className="body-text">
+                <div className="mx-4 10xl:mx-10">
+                    <p className="body-text text-text-600">
                         My journey into the world of software development began
                         with an introduction to computer science and
                         programming, utilizing languages such as C++ and Java.

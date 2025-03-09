@@ -5,7 +5,7 @@ function ContactForm() {
 
     return (
         <section
-            className="m-2 pb-6 7xl:container lg:mx-auto lg:max-w-2xl 7xl:max-w-[104rem]"
+            className="m-2 pb-6 md:mx-auto md:max-w-[30rem] lg:max-w-2xl 2xl:max-w-[50rem] 3xl:max-w-[60rem] 6xl:max-w-[80rem] 7xl:max-w-[104rem]"
             id="contact-form"
         >
             <form
@@ -24,11 +24,11 @@ function ContactForm() {
                     </label>
                     <br />
                     <input
-                        className="body-text focus:border-accent focus:ring-accent w-full rounded-lg border-2 border-gray-300 px-4 py-2 transition duration-200 focus:outline-none focus:ring-2"
+                        className="body-text focus:border-accent focus:ring-accent w-full rounded-lg border-2 border-gray-300 px-4 py-2 text-text-600 transition duration-200 focus:outline-none focus:ring-2"
                         data-kw-rules="max:255"
                         id="name"
                         name="name"
-                        placeholder="Your full name"
+                        placeholder="Enter your full name"
                         required
                         title="Please enter your full name"
                         type="text"
@@ -45,7 +45,7 @@ function ContactForm() {
                     </label>
                     <br />
                     <input
-                        className="body-text focus:border-accent focus:ring-accent w-full rounded-lg border-2 border-gray-300 px-4 py-2 transition duration-200 focus:outline-none focus:ring-2"
+                        className="body-text focus:border-accent focus:ring-accent w-full rounded-lg border-2 border-gray-300 px-4 py-2 text-text-600 transition duration-200 focus:outline-none focus:ring-2"
                         data-kw-rules="required|email"
                         id="email"
                         name="email"
@@ -66,7 +66,7 @@ function ContactForm() {
                     </label>
                     <br />
                     <input
-                        className="body-text focus:border-accent focus:ring-accent w-full rounded-lg border-2 border-gray-300 px-4 py-2 transition duration-200 focus:outline-none focus:ring-2"
+                        className="body-text focus:border-accent focus:ring-accent w-full rounded-lg border-2 border-gray-300 px-4 py-2 text-text-600 transition duration-200 focus:outline-none focus:ring-2"
                         data-kw-rules="required"
                         id="subject"
                         name="subject"
@@ -87,7 +87,7 @@ function ContactForm() {
                     </label>
                     <br />
                     <textarea
-                        className="body-text focus:border-accent focus:ring-accent w-full resize-none rounded-lg border-2 border-gray-300 px-4 py-2 transition duration-200 focus:outline-none focus:ring-2"
+                        className="body-text focus:border-accent focus:ring-accent w-full resize-none rounded-lg border-2 border-gray-300 px-4 py-2 text-text-600 transition duration-200 focus:outline-none focus:ring-2"
                         cols={50}
                         id="content"
                         name="content"

@@ -8,8 +8,8 @@
 }
 
 @layer components {
-    .kw-alert-error {
-        @apply bg-blue-400
+    .logo {
+        
     }
 
     .h1-text {
@@ -30,6 +30,10 @@
 
     .h5-text {
         @apply font-heading font-semibold text-clamp-h5
+    }
+
+    .h6-text {
+        @apply font-heading font-semibold text-clamp-h6
     }
 
     .body-text {
