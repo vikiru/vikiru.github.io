@@ -21,7 +21,8 @@ const projectData: ProjectData = {
                 'DaisyUI',
                 'Tensorflow.js',
             ],
-            contributors: 'Project completed individually',
+            featured: true,
+            contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/kelbrum',
             documentationUrl: 'https://vikiru.github.io/kelbrum',
             projectPageUrl: '/projects/Kelbrum',
@@ -53,7 +54,8 @@ const projectData: ProjectData = {
                 'Mocha',
                 'Chai',
             ],
-            contributors: 'Project completed individually',
+            featured: true,
+            contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/parseum',
             documentationUrl: 'https://vikiru.github.io/parseum/',
             projectPageUrl: '/projects/Parseum',
@@ -83,7 +85,8 @@ const projectData: ProjectData = {
                 'Mocha',
                 'Chai',
             ],
-            contributors: 'Project completed individually',
+            featured: true,
+            contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/restasaurus',
             documentationUrl: 'https://vikiru.github.io/restasaurus/',
             projectPageUrl: '/projects/RESTasaurus',
@@ -113,7 +116,8 @@ const projectData: ProjectData = {
                 'Mocha',
                 'Chai',
             ],
-            contributors: 'Project completed individually',
+            featured: true,
+            contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/Urvo',
             documentationUrl: 'https://vikiru.github.io/Urvo/',
             projectPageUrl: '/projects/Urvo',
@@ -141,7 +145,9 @@ const projectData: ProjectData = {
                 'CSS',
                 'JavaScript',
             ],
-            contributors: 'Project completed as a group, with 3 co-authors',
+            featured: true,
+            contributors:
+                'This project was completed as a group, with 3 co-authors',
             githubUrl: 'https://github.com/vikiru/CodeSmell',
             documentationUrl: 'https://github.com/vikiru/CodeSmell/wiki',
             projectPageUrl: '/projects/CodeSmell',
@@ -168,7 +174,8 @@ const projectData: ProjectData = {
                 'React Router',
                 'TailwindCSS',
             ],
-            contributors: 'Project completed individually',
+            featured: false,
+            contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/vikiru.github.io',
             documentationUrl: '',
             projectPageUrl: '/projects/Portfolio',
@@ -187,7 +194,8 @@ const projectData: ProjectData = {
             startDate: 'Jan 2022',
             endDate: 'Apr 2022',
             technologiesUsed: ['Python', 'NumPy', 'SciPy', 'SimPy'],
-            contributors: 'Project completed individually',
+            featured: false,
+            contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/discrete-sim',
             documentationUrl: 'https://vikiru.github.io/discrete-sim/',
             projectPageUrl: '/projects/discrete-sim',
@@ -214,7 +222,9 @@ const projectData: ProjectData = {
                 'CSS',
                 'JavaScript',
             ],
-            contributors: 'Project completed as a group, with 2 co-authors',
+            featured: false,
+            contributors:
+                'This project was completed as a group, with 2 co-authors',
             githubUrl: 'https://github.com/vikiru/Mini-SurveyMonkey',
             documentationUrl:
                 'https://github.com/vikiru/Mini-SurveyMonkey/wiki',
@@ -235,7 +245,9 @@ const projectData: ProjectData = {
             startDate: 'Jan 2021',
             endDate: 'Apr 2021',
             technologiesUsed: ['Java', 'Maven', 'JUnit', 'UDP', 'Threads'],
-            contributors: 'Project completed as a group, with 3 co-authors',
+            featured: false,
+            contributors:
+                'This project was completed as a group, with 3 co-authors',
             githubUrl: '',
             documentationUrl: '',
             projectPageUrl: '/projects/Elevator-Simulator',
@@ -254,7 +266,9 @@ const projectData: ProjectData = {
             startDate: 'Oct 2020',
             endDate: 'Dec 2020',
             technologiesUsed: ['Java', 'Maven', 'JUnit', 'Swing'],
-            contributors: 'Project completed as a group, with 3 co-authors',
+            featured: false,
+            contributors:
+                'This project was completed as a group, with 3 co-authors',
             githubUrl: 'https://github.com/flavji/digitalRisk',
             documentationUrl: 'https://github.com/flavji/digitalRisk/wiki',
             projectPageUrl: '/projects/digitalRisk',
@@ -267,4 +281,12 @@ const projectData: ProjectData = {
     ],
 };
 
-export default projectData;
+const featuredProjects = projectData.projects.filter(
+    (project) => project.featured,
+);
+
+const otherProjects = projectData.projects.filter(
+    (project) => !project.featured,
+);
+
+export { featuredProjects, otherProjects, projectData };

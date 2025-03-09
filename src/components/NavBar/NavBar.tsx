@@ -17,10 +17,7 @@ function NavBar() {
             <section className="flex items-center justify-between px-6 md:px-10 9xl:py-4 10xl:py-8 11xl:py-12">
                 {/* Logo Section */}
                 <div className="flex items-center">
-                    <Link
-                        className="font-cinzel text-clamp-logo font-semibold"
-                        to="/"
-                    >
+                    <Link className="logo" to="/">
                         <span className="text-primary">V</span>
                         <span className="text-accent-400">K</span>
                     </Link>
@@ -85,7 +82,7 @@ function NavBar() {
                 <div className="my-4 border-t border-gray-600"></div>
 
                 {/* Social Icons */}
-                <div className="flex justify-center space-x-6 py-4">
+                <div className="flex justify-center space-x-6 xs:py-2 lg:py-4">
                     <a
                         className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
                         href="https://github.com/vikiru"
@@ -111,6 +108,23 @@ function NavBar() {
                     >
                         <FontAwesomeIcon icon={faEnvelope} />
                     </Link>
+                </div>
+
+                <div className="text-center">
+                    <p
+                        className="text-gray-400"
+                        style={{ fontSize: 'clamp(0.9rem, 1.25vw, 4rem)' }}
+                    >
+                        &copy; {new Date().getFullYear()} Visakan Kirubakaran.
+                        All rights reserved.
+                        <span className="mx-2">|</span>
+                        <Link
+                            className="transition duration-300 hover:text-accent-500 hover:underline"
+                            to="/sitemap"
+                        >
+                            Sitemap
+                        </Link>
+                    </p>
                 </div>
             </section>
         </nav>

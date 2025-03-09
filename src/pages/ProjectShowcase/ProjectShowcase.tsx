@@ -100,7 +100,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                                             className="text-clamp-accomplishment leading-relaxed text-text-600"
                                             key={accomplishment}
                                         >
-                                            {accomplishment}
+                                            {accomplishment}.
                                         </li>
                                     ),
                                 )}
