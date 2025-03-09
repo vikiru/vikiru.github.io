@@ -2,7 +2,7 @@ import { CourseContainer, Footer, NavBar } from '~components/index';
 
 function CoursesPage() {
     return (
-        <div className="">
+        <div className="scroller">
             <NavBar />
             <main>
                 <CourseContainer />

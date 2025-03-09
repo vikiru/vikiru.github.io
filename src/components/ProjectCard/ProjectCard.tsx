@@ -12,71 +12,65 @@ function ProjectCard(props: ProjectCardProps) {
     const project: Project = props.project;
 
     return (
-        <div className="flex flex-col rounded-2xl bg-slate-100 p-6 shadow-md">
+        <div className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20">
             {/* Header with Icons */}
-            <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-1">
+            <div className="items-center lg:flex lg:justify-between">
+                <div className="flex items-center space-x-2 3xl:space-x-4">
                     {/* Title */}
-                    <h3
-                        className="font-heading font-semibold text-gray-800"
-                        style={{ fontSize: 'clamp(1rem, 1.5vw, 4rem)' }}
-                    >
-                        {project.name}
-                    </h3>
+                    <h4 className="h4-text">{project.name}</h4>
 
                     {/* Icons */}
                     <div
-                        className="flex items-center space-x-2 pb-1 text-gray-800"
+                        className="flex items-center space-x-2 text-accent-300 3xl:space-x-4"
                         style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                     >
-                        <Link
-                            className="transition-colors duration-200 hover:text-accent"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            to={project.githubUrl}
-                        >
-                            <FontAwesomeIcon icon={faGithub} />
-                        </Link>
-                        <Link
-                            className="transition-colors duration-200 hover:text-accent"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            to={project.documentationUrl}
-                        >
-                            <FontAwesomeIcon icon={faBookOpen} />
-                        </Link>
+                        {project.githubUrl ? (
+                            <Link
+                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                target="_blank"
+                                to={project.githubUrl}
+                            >
+                                <FontAwesomeIcon icon={faGithub} />
+                            </Link>
+                        ) : (
+                            <span className="invisible text-clamp-icons">
+                                <FontAwesomeIcon icon={faGithub} />
+                            </span>
+                        )}
+
+                        {project.documentationUrl ? (
+                            <Link
+                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                target="_blank"
+                                to={project.documentationUrl}
+                            >
+                                <FontAwesomeIcon icon={faBookOpen} />
+                            </Link>
+                        ) : (
+                            <span className="invisible text-clamp-icons">
+                                <FontAwesomeIcon icon={faBookOpen} />
+                            </span>
+                        )}
                     </div>
                 </div>
 
                 {/* Date Range */}
                 <div>
-                    <p
-                        className="font-body italic text-gray-500"
-                        style={{ fontSize: 'clamp(0.65rem, 1.12vw, 4rem)' }}
-                    >
+                    <p className="info-text text-secondary-500">
                         {project.startDate} - {project.endDate}
                     </p>
                 </div>
             </div>
 
             {/* Description */}
-            <div className="container mt-3 min-h-20 pb-3">
-                <p
-                    className="font-body leading-relaxed text-gray-600"
-                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
-                >
-                    {project.description}
-                </p>
+            <div className="container flex min-h-20 flex-col pb-3 lg:mt-3">
+                <p className="card-text text-text-600">{project.description}</p>
             </div>
 
             {/* Tech Stack Tags */}
-            <div className="container flex flex-wrap gap-3">
+            <div className="flex min-h-20 flex-wrap gap-2">
                 {project.technologiesUsed.map((tech, index) => (
-                    <div
-                        className="flex items-center rounded-xl bg-accent font-body text-white xs:px-3 xs:py-1 5xl:px-6 5xl:py-2"
-                        key={index}
-                        style={{ fontSize: 'clamp(0.6rem, 0.84vw, 4rem)' }}
-                    >
+                    <div className="tech-tag text-secondary-950" key={index}>
                         {tech}
                     </div>
                 ))}
@@ -85,14 +79,10 @@ function ProjectCard(props: ProjectCardProps) {
             {/* CTA */}
             <div className="mt-4">
                 <Link
-                    className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
-                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
+                    className="body-text font-semibold text-accent-300 transition-colors duration-200 hover:text-accent-500"
                     to={project.projectPageUrl}
                 >
-                    Read More{' '}
-                    <span style={{ fontSize: 'clamp(0.8rem, 1.55vw, 4rem)' }}>
-                        →
-                    </span>
+                    Read More <span>→</span>
                 </Link>
             </div>
         </div>

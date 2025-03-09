@@ -2,7 +2,7 @@ import { Footer, NavBar, ProjectContainer } from '~components/index';
 
 function ProjectsPage() {
     return (
-        <div>
+        <div className="scroller">
             <NavBar />
             <main>
                 <ProjectContainer />

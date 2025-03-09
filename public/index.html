@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-MTR0NKXWJR"
@@ -12,12 +12,21 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-MTR0NKXWJR");
     </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <title>Visakan Kirubakaran | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website of Visakan Kirubakaran. Built using React, React Router, TailwindCSS and hosted via Vercel."
+    />
+    <meta name="author" content="Visakan Kirubakaran" />
+
+    <!-- Favicons (Light & Dark Mode) -->
     <link
       rel="icon"
       href="%PUBLIC_URL%/favicon-light.ico"
@@ -47,7 +56,6 @@
       href="%PUBLIC_URL%/favicon-32x32-light.png"
       media="(prefers-color-scheme: light)"
     />
-
     <link
       rel="icon"
       type="image/png"
@@ -60,7 +68,7 @@
       type="image/png"
       sizes="16x16"
       href="%PUBLIC_URL%/favicon-16x16-light.png"
-      media="(prefers-color-scheme: dark)"
+      media="(prefers-color-scheme: light)"
     />
     <link
       rel="icon"
@@ -69,32 +77,30 @@
       href="%PUBLIC_URL%/favicon-16x16-dark.png"
       media="(prefers-color-scheme: dark)"
     />
-    <link
-      rel="manifest"
-      href="%PUBLIC_URL%/manifest.json"
-      crossorigin="use-credentials"
-    />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" crossorigin="use-credentials" />
+
+    <!-- Preconnect for Performance Optimization -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts (Preload for Performance) -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Open+Sans&family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans&family=Hind&family=Inter&family=Lato&family=Manrope&family=Merriweather+Sans&family=Noto+Sans&family=Nunito+Sans&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&family=Work+Sans&display=swap"
       rel="preload"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&family=Open+Sans&family=Raleway&display=swap"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Visakan Kirubakaran | Portfolio</title>
-    <meta
-      name="description"
-      content="Personal portfolio website of Visakan Kirubakaran. Built using React, React Router, TailwindCSS and hosted via Vercel."
-    />
-    <meta name="author" content="Visakan Kirubakaran" />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans&family=Hind&family=Inter&family=Lato&family=Manrope&family=Merriweather+Sans&family=Noto+Sans&family=Nunito+Sans&family=Open+Sans&family=Poppins&family=Raleway&family=Ubuntu&family=Work+Sans&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

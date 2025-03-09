@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    
+}
+
+@layer components {
+    .logo {
+        
+    }
+
+    .h1-text {
+        @apply font-heading font-bold text-clamp-h1
+    }
+
+    .h2-text {
+        @apply font-heading font-semibold text-clamp-h2
+    }
+
+    .h3-text {
+        @apply font-heading font-semibold text-clamp-h3
+    }
+
+    .h4-text {
+        @apply font-heading font-semibold text-clamp-h4
+    }
+
+    .h5-text {
+        @apply font-heading font-semibold text-clamp-h5
+    }
+
+    .h6-text {
+        @apply font-heading font-semibold text-clamp-h6
+    }
+
+    .body-text {
+        @apply font-body leading-relaxed text-clamp-p
+    }
+
+    .card-text {
+        @apply font-body leading-relaxed text-clamp-card
+    }
+
+    .info-text {
+        @apply text-clamp-info font-hind text-text-500
+    }
+
+    .tech-tag {
+        @apply text-clamp-tech flex items-center rounded-xl bg-primary-600 font-inter text-white xs:px-3 xs:py-1 5xl:rounded-2xl 5xl:px-6 5xl:py-2 xs:h-6 md:h-10 7xl:h-16 8xl:h-20 9xl:h-24;
+    }
+
+    .scroller {
+        @apply h-screen w-screen snap-y flex flex-col overflow-x-hidden overflow-y-scroll scroll-smooth xs:scrollbar-thin lg:scrollbar scrollbar-track-primary-900 scrollbar-thumb-accent-500
+    }
+    
+    .demo-ctr {
+        @apply h-full xs:max-w-4xl 2xl:max-w-[100rem] 3xl:max-w-[110rem] 4xl:max-w-[120rem] 5xl:max-w-[130rem] 6xl:max-w-[140rem] 7xl:max-w-[150rem] 8xl:max-w-[160rem] 9xl:max-w-[170rem] 10xl:max-w-[180rem] 11xl:max-w-[190rem];
+    }
+}

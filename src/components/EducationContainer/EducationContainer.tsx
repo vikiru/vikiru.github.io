@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { educationData } from '~assets/data/index';
 import { UniversityCard } from '~components/index';
 
@@ -9,27 +8,15 @@ function EducationContainer() {
     );
 
     return (
-        <section className="min-h-[30vh] bg-gray-50">
+        <section className="min-h-[30vh] bg-background-950">
             <div>
-                <h2
-                    className="text-center font-heading font-semibold text-gray-800"
-                    style={{ fontSize: 'clamp(2rem, 2vw, 9rem)' }}
-                >
-                    Education
-                </h2>
+                <h2 className="h2-text text-center">Education</h2>
 
                 <UniversityCard />
 
                 <section className="mt-2">
-                    <div className="mx-4">
-                        <h3
-                            className="font-heading font-semibold text-gray-800"
-                            style={{
-                                fontSize: 'clamp(1rem, 1.5vw, 4rem)',
-                            }}
-                        >
-                            Coursera
-                        </h3>
+                    <div className="mx-4 10xl:mx-10">
+                        <h4 className="h4-text">Coursera</h4>
                         {courseraCertificates.map((certificate) => {
                             return (
                                 <div
@@ -38,24 +25,18 @@ function EducationContainer() {
                                 >
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <h3
+                                            <h5
                                                 className="font-subheading italic"
                                                 style={{
                                                     fontSize:
-                                                        'clamp(0.65rem, 1.25vw, 4rem)',
+                                                        'clamp(0.65rem, 1.25vw, 5rem)',
                                                 }}
                                             >
                                                 {certificate.certificationName}
-                                            </h3>
+                                            </h5>
                                         </div>
                                         <div>
-                                            <p
-                                                className="font-body italic text-gray-500"
-                                                style={{
-                                                    fontSize:
-                                                        'clamp(0.65rem, 1.12vw, 4rem)',
-                                                }}
-                                            >
+                                            <p className="info-text">
                                                 {certificate.startDate} -{' '}
                                                 {certificate.completionDate}
                                             </p>
@@ -63,26 +44,14 @@ function EducationContainer() {
                                     </div>
 
                                     <div className="">
-                                        <Link
-                                            className="font-body font-semibold text-accent transition-colors duration-200 hover:text-accent/50"
+                                        <a
+                                            className="body-text font-semibold text-accent-500 transition-colors duration-200 hover:text-accent-500/50"
+                                            href={certificate.certificateLink}
                                             rel="noopener noreferrer"
-                                            style={{
-                                                fontSize:
-                                                    'clamp(0.8rem, 1.25vw, 4rem)',
-                                            }}
                                             target="_blank"
-                                            to={certificate.certificateLink}
                                         >
-                                            View Certificate{' '}
-                                            <span
-                                                style={{
-                                                    fontSize:
-                                                        'clamp(0.8rem, 1.55vw, 4rem)',
-                                                }}
-                                            >
-                                                →
-                                            </span>
-                                        </Link>
+                                            View Certificate <span>→</span>
+                                        </a>
                                     </div>
                                 </div>
                             );
