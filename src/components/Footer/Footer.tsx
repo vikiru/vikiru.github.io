@@ -10,7 +10,7 @@ function Footer() {
             <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-4 md:grid-cols-3 lg:gap-8">
                 {/* Logo Section */}
                 <div className="text-center md:text-left">
-                    <h2 className="text-primary text-center font-cinzel text-clamp-logo font-semibold tracking-widest">
+                    <h2 className="logo text-center tracking-widest">
                         Visa<span className="text-accent-400">kan</span>
                     </h2>
                 </div>
