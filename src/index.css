@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
     
 }
 
 @layer components {
+    .kw-alert-error {
+        @apply bg-blue-400
+    }
+
     .h1-text {
         @apply font-heading font-bold text-clamp-h1
     }
@@ -23,6 +28,10 @@
         @apply font-heading font-semibold text-clamp-h4
     }
 
+    .h5-text {
+        @apply font-heading font-semibold text-clamp-h5
+    }
+
     .body-text {
         @apply font-body leading-relaxed text-clamp-p
     }
@@ -32,14 +41,17 @@
     }
 
     .info-text {
-        @apply text-clamp-info italic font-hind text-text-500
+        @apply text-clamp-info font-hind text-text-500
     }
 
     .tech-tag {
-        @apply text-clamp-tech flex items-center rounded-xl bg-primary-600 font-inter text-white xs:px-3 xs:py-1 5xl:rounded-2xl 5xl:px-6 5xl:py-2;
+        @apply text-clamp-tech flex items-center rounded-xl bg-primary-600 font-inter text-white xs:px-3 xs:py-1 5xl:rounded-2xl 5xl:px-6 5xl:py-2 max-h-10 7xl:max-h-16 8xl:max-h-20 9xl:max-h-24;
+    }
+
+    .scroller {
+        @apply h-screen w-screen snap-y flex flex-col overflow-x-hidden overflow-y-scroll scroll-smooth xs:scrollbar-thin lg:scrollbar scrollbar-track-primary-900 scrollbar-thumb-accent-500
     }
     
-
     .logo {}
 
     .demo-ctr {}

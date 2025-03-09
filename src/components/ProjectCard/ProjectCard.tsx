@@ -12,22 +12,22 @@ function ProjectCard(props: ProjectCardProps) {
     const project: Project = props.project;
 
     return (
-        <div className="bg-primary-950 flex flex-col rounded-2xl p-6 shadow-md">
+        <div className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20">
             {/* Header with Icons */}
-            <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-1">
+            <div className="items-center lg:flex lg:justify-between">
+                <div className="flex items-center space-x-2 3xl:space-x-4">
                     {/* Title */}
                     <h4 className="h4-text">{project.name}</h4>
 
                     {/* Icons */}
                     {(project.githubUrl || project.documentationUrl) && (
                         <div
-                            className="text-accent-300 flex items-center space-x-2 pb-1"
+                            className="flex items-center space-x-2 text-accent-300 3xl:space-x-4"
                             style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                         >
                             {project.githubUrl && (
                                 <Link
-                                    className="hover:text-accent-500 transition-colors duration-200"
+                                    className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     to={project.githubUrl}
@@ -38,7 +38,7 @@ function ProjectCard(props: ProjectCardProps) {
 
                             {project.documentationUrl && (
                                 <Link
-                                    className="hover:text-accent-500 transition-colors duration-200"
+                                    className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     to={project.documentationUrl}
@@ -59,12 +59,12 @@ function ProjectCard(props: ProjectCardProps) {
             </div>
 
             {/* Description */}
-            <div className="container mt-3 min-h-20 pb-3">
+            <div className="container min-h-20 pb-3 lg:mt-3">
                 <p className="card-text text-text-600">{project.description}</p>
             </div>
 
             {/* Tech Stack Tags */}
-            <div className="container flex flex-wrap gap-2">
+            <div className="flex min-h-20 flex-wrap gap-2">
                 {project.technologiesUsed.map((tech, index) => (
                     <div className="tech-tag text-secondary-950" key={index}>
                         {tech}
@@ -75,14 +75,10 @@ function ProjectCard(props: ProjectCardProps) {
             {/* CTA */}
             <div className="mt-4">
                 <Link
-                    className="text-accent-300 hover:text-accent-500 font-body font-semibold transition-colors duration-200"
-                    style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
+                    className="body-text font-semibold text-accent-300 transition-colors duration-200 hover:text-accent-500"
                     to={project.projectPageUrl}
                 >
-                    Read More{' '}
-                    <span style={{ fontSize: 'clamp(0.8rem, 1.55vw, 4rem)' }}>
-                        →
-                    </span>
+                    Read More <span>→</span>
                 </Link>
             </div>
         </div>

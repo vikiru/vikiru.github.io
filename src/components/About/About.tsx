@@ -1,10 +1,10 @@
 function About() {
     return (
         <section className="min-h-[30vh] bg-background-950">
-            <div className="pt-12">
+            <div className="xs:pt-6 lg:pt-12">
                 <h2 className="h2-text text-center">About</h2>
 
-                <div className="m-4">
+                <div className="mx-4">
                     <p className="body-text">
                         My journey into the world of software development began
                         with an introduction to computer science and

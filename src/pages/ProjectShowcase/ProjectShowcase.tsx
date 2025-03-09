@@ -13,34 +13,22 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
     const project = props.project;
 
     return (
-        <div className="">
+        <div className="scroller">
             <NavBar />
             <main>
                 <section className="min-h-screen overflow-hidden bg-background-950">
                     <div className="flex items-center justify-between pt-12">
                         <div className="mx-4 flex items-center space-x-2">
                             <div>
-                                <h2
-                                    className="font-heading font-semibold text-gray-800"
-                                    style={{
-                                        fontSize: 'clamp(2rem, 2vw, 9rem)',
-                                    }}
-                                >
-                                    {project.name}
-                                </h2>
+                                <h2 className="h2-text">{project.name}</h2>
                             </div>
 
                             {(project.githubUrl ||
                                 project.documentationUrl) && (
-                                <div
-                                    className="flex items-center space-x-2 pb-1 text-gray-800"
-                                    style={{
-                                        fontSize: 'clamp(1rem, 1.25vw, 4rem)',
-                                    }}
-                                >
+                                <div className="mt-1 flex items-center space-x-2 text-gray-800">
                                     {project.githubUrl && (
                                         <Link
-                                            className="hover:text-accent transition-colors duration-200"
+                                            className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                             to={project.githubUrl}
@@ -51,7 +39,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
 
                                     {project.documentationUrl && (
                                         <Link
-                                            className="hover:text-accent transition-colors duration-200"
+                                            className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                             rel="noopener noreferrer"
                                             target="_blank"
                                             to={project.documentationUrl}
@@ -66,7 +54,12 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                         </div>
 
                         <div className="mx-4">
-                            <p className="info-text">
+                            <p
+                                className="info-text"
+                                style={{
+                                    fontSize: 'clamp(0.8rem, 1.5vw, 4rem)',
+                                }}
+                            >
                                 {project.startDate} - {project.endDate}
                             </p>
                         </div>
@@ -76,7 +69,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                         <p className="body-text">{project.description}</p>
                     </div>
 
-                    <div className="container mx-4 mt-2 flex flex-wrap gap-3">
+                    <div className="container mx-4 mt-2 flex flex-wrap gap-3 pb-4">
                         {project.technologiesUsed.map((tech, index) => (
                             <div className="tech-tag" key={index}>
                                 {tech}
@@ -87,18 +80,8 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                     <div className="my-4 border-t border-gray-300" />
 
                     <div className="mx-4">
-                        <h3
-                            className="font-heading font-semibold text-gray-800"
-                            style={{ fontSize: 'clamp(2rem, 0.85vw, 4rem)' }}
-                        >
-                            Co-Authors
-                        </h3>
-                        <p
-                            className="font-body leading-relaxed text-gray-600"
-                            style={{
-                                fontSize: 'clamp(0.8rem, 1.25vw, 4rem)',
-                            }}
-                        >
+                        <h3 className="h3-text">Co-Authors</h3>
+                        <p className="body-text pb-4">
                             {project.contributors}.
                         </p>
                     </div>
@@ -106,24 +89,15 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                     <div className="my-4 border-t border-gray-300" />
 
                     <div className="mx-4">
-                        <h3
-                            className="font-heading font-semibold text-gray-800"
-                            style={{ fontSize: 'clamp(2rem, 0.85vw, 4rem)' }}
-                        >
-                            Accomplishments
-                        </h3>
+                        <h3 className="h3-text">Accomplishments</h3>
 
-                        <div className="mx-2">
+                        <div className="mx-2 pb-4">
                             <ul className="list-inside list-disc">
                                 {project.accomplishments.map(
                                     (accomplishment) => (
                                         <li
-                                            className="font-body leading-relaxed text-gray-600"
+                                            className="font-body text-clamp-accomplishment leading-relaxed text-gray-600"
                                             key={accomplishment}
-                                            style={{
-                                                fontSize:
-                                                    'clamp(0.8rem, 1.25vw, 4rem)',
-                                            }}
                                         >
                                             {accomplishment}
                                         </li>
@@ -138,7 +112,7 @@ function ProjectShowcasePage(props: ProjectShowcaseProps) {
                     {project.videoPath !== '' && (
                         <div className="mx-4">
                             <VideoPlayer project={project} />
-                            <div className="my-4" />
+                            <div className="my-4 pb-4" />
                         </div>
                     )}
                 </section>

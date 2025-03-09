@@ -5,11 +5,11 @@ import NavBar from '~components/NavBar/NavBar';
 
 function Sitemap() {
     return (
-        <div className="bg-primary scrollbar-track-primary scrollbar-thumb-accent dark:bg-darkPrimary dark:scrollbar-track-darkPrimary dark:scrollbar-thumb-darkAccent flex h-screen w-screen snap-y flex-col overflow-x-hidden overflow-y-scroll scroll-smooth scrollbar-thin lg:scrollbar">
+        <div className="scroller">
             <NavBar />
             <main>
                 <div className="pt-4">
-                    <h2 className="heading-text text-secondary dark:text-primary text-center uppercase underline">
+                    <h2 className="h2-text text-secondary dark:text-primary text-center uppercase underline">
                         Sitemap
                     </h2>
                 </div>

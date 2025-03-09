@@ -10,30 +10,21 @@ function Footer() {
             <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-4 md:grid-cols-3 lg:gap-8">
                 {/* Logo Section */}
                 <div className="text-center md:text-left">
-                    <h2
-                        className="text-primary text-center font-cinzel font-semibold tracking-widest"
-                        style={{ fontSize: 'clamp(2rem, 3vw, 9rem)' }}
-                    >
+                    <h2 className="text-primary text-center font-cinzel text-clamp-logo font-semibold tracking-widest">
                         Visa<span className="text-accent-400">kan</span>
                     </h2>
                 </div>
 
                 {/* Read More Section */}
                 <div className="text-center md:text-left">
-                    <h3
-                        className="mb-3 font-heading font-semibold tracking-wide text-gray-400"
-                        style={{ fontSize: 'clamp(1rem, 1.5vw, 9rem)' }}
-                    >
+                    <h4 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
                         Read More
-                    </h3>
+                    </h4>
                     <ul className="space-y-2">
                         {navData.map((item) => (
                             <li key={item.navTitle}>
                                 <Link
-                                    className="font-body text-white transition-colors duration-300 hover:text-accent-500 hover:underline"
-                                    style={{
-                                        fontSize: 'clamp(1rem, 1.25vw, 4rem)',
-                                    }}
+                                    className="font-body text-clamp-nav text-gray-300 transition-all duration-300 hover:text-accent-500 hover:underline"
                                     target="_blank"
                                     to={item.navLink}
                                 >
@@ -46,12 +37,9 @@ function Footer() {
 
                 {/* Social Icons Section */}
                 <div className="text-center md:text-left">
-                    <h3
-                        className="mb-3 font-subheading font-semibold tracking-wide text-gray-400"
-                        style={{ fontSize: 'clamp(1rem, 1.5vw, 9rem)' }}
-                    >
+                    <h4 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
                         Connect With Me
-                    </h3>
+                    </h4>
                     <div className="flex items-center justify-center space-x-4 md:justify-start 10xl:space-x-8">
                         <a
                             href="https://github.com/vikiru"
@@ -59,11 +47,8 @@ function Footer() {
                             target="_blank"
                         >
                             <FontAwesomeIcon
-                                className="transition-colors duration-300 hover:text-accent-500"
+                                className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
                                 icon={faGithub}
-                                style={{
-                                    fontSize: 'clamp(1rem, 2vw, 6rem)',
-                                }}
                             />
                         </a>
                         <a
@@ -72,20 +57,14 @@ function Footer() {
                             target="_blank"
                         >
                             <FontAwesomeIcon
-                                className="transition-colors duration-300 hover:text-accent-500"
+                                className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
                                 icon={faLinkedin}
-                                style={{
-                                    fontSize: 'clamp(1rem, 2vw, 6rem)',
-                                }}
                             />
                         </a>
                         <Link target="_blank" to="/contact">
                             <FontAwesomeIcon
-                                className="transition-colors duration-300 hover:text-accent-500"
+                                className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
                                 icon={faEnvelope}
-                                style={{
-                                    fontSize: 'clamp(1rem, 2vw, 6rem)',
-                                }}
                             />
                         </Link>
                     </div>

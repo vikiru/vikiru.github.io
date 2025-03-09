@@ -8,7 +8,7 @@ import {
 
 function AboutPage() {
     return (
-        <div className="">
+        <div className="scroller">
             <NavBar />
             <main className="bg-background-950">
                 {/* About Section */}

@@ -11,12 +11,7 @@ function SkillsContainer() {
                         <div className="rounded-2xl p-2" key={category.title}>
                             <h3 className="h3-text">{category.title}</h3>
 
-                            <p
-                                className="font-body leading-relaxed text-gray-600"
-                                style={{
-                                    fontSize: 'clamp(0.8rem, 1.25vw, 4rem)',
-                                }}
-                            >
+                            <p className="body-text text-gray-600">
                                 {category.data.join(', ')}
                             </p>
                         </div>

@@ -3,7 +3,7 @@ import { CourseCard } from '~components/index';
 
 function CourseContainer() {
     return (
-        <section className="bg-background-950 py-12">
+        <section className="bg-background-950 xs:py-6 lg:py-12">
             <section>
                 <div className="pb-2">
                     <h2 className="h2-text text-center">Education</h2>

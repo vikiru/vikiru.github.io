@@ -14,11 +14,11 @@ function NavBar() {
 
     return (
         <nav className="bg-background-600 text-white">
-            <section className="flex items-center justify-between px-6 py-4 md:px-10">
+            <section className="flex items-center justify-between px-6 md:px-10 9xl:py-4 10xl:py-8 11xl:py-12">
                 {/* Logo Section */}
                 <div className="flex items-center">
                     <Link
-                        className="font-cinzel text-2xl font-semibold md:text-4xl"
+                        className="font-cinzel text-clamp-logo font-semibold"
                         to="/"
                     >
                         <span className="text-primary">V</span>
@@ -27,10 +27,10 @@ function NavBar() {
                 </div>
 
                 {/* Navbar Links (Desktop) - Visible on md and up */}
-                <div className="hidden gap-6 text-lg md:flex">
+                <div className="hidden gap-6 text-clamp-nav md:flex 10xl:gap-10">
                     {navData.map((item) => (
                         <Link
-                            className="hover:text-accent font-heading uppercase text-gray-300 transition-all duration-300 hover:underline"
+                            className="font-heading uppercase text-gray-300 transition-all duration-300 hover:text-accent-500 hover:underline"
                             key={item.navTitle}
                             title={item.navDesc}
                             to={item.navLink}
@@ -87,7 +87,7 @@ function NavBar() {
                 {/* Social Icons */}
                 <div className="flex justify-center space-x-6 py-4">
                     <a
-                        className="hover:text-accent text-2xl text-gray-300 transition-colors duration-300"
+                        className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
                         href="https://github.com/vikiru"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -96,7 +96,7 @@ function NavBar() {
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                     <a
-                        className="hover:text-accent text-2xl text-gray-300 transition-colors duration-300"
+                        className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
                         href="https://www.linkedin.com/in/viskirubakaran"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -105,7 +105,7 @@ function NavBar() {
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                     <Link
-                        className="hover:text-accent text-2xl text-gray-300 transition-colors duration-300"
+                        className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
                         title="Contact"
                         to="/contact"
                     >

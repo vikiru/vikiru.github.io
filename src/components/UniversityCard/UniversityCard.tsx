@@ -41,7 +41,7 @@ function UniversityCard() {
 
             <div className="mx-4">
                 <Link
-                    className="text-accent hover:text-accent/50 font-body font-semibold transition-colors duration-200"
+                    className="font-body font-semibold text-accent-500 transition-colors duration-200 hover:text-accent-500/50"
                     style={{ fontSize: 'clamp(0.8rem, 1.25vw, 4rem)' }}
                     target="_blank"
                     to={'/education/courses'}
