@@ -3,7 +3,7 @@ import { educationData } from '~assets/data/index';
 
 function UniversityCard() {
     return (
-        <section>
+        <section id="university-info">
             <div className="mx-4 flex items-center justify-between 10xl:mx-10">
                 <div>
                     <h4 className="h4-text">{educationData.universityName}</h4>
@@ -43,6 +43,7 @@ function UniversityCard() {
                 <Link
                     className="body-text font-semibold text-accent-500 transition-colors duration-200 hover:text-accent-500/50"
                     target="_blank"
+                    title="View my university courses"
                     to={'/education/courses'}
                 >
                     View Courses <span>→</span>

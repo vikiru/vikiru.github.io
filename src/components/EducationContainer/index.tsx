@@ -49,6 +49,7 @@ function EducationContainer() {
                                             href={certificate.certificateLink}
                                             rel="noopener noreferrer"
                                             target="_blank"
+                                            title="View my certificate"
                                         >
                                             View Certificate <span>→</span>
                                         </a>

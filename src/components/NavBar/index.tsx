@@ -2,26 +2,22 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navData } from '~assets/data/index';
+import { NavLogo } from '~components/index';
+import { useNav } from '~hooks/index';
 
 function NavBar() {
-    const [isOpen, setIsOpen] = useState(false);
-    const handleClick = () => {
-        setIsOpen(!isOpen);
-    };
+    const { isOpen, handleClick } = useNav();
 
     return (
         <nav className="bg-background-600 text-white">
-            <section className="flex items-center justify-between px-6 md:px-10 9xl:py-4 10xl:py-8 11xl:py-12">
+            <section
+                className="flex items-center justify-between px-6 md:px-10 9xl:py-4 10xl:py-8 11xl:py-12"
+                id="main-nav"
+            >
                 {/* Logo Section */}
-                <div className="flex items-center">
-                    <Link className="logo" to="/">
-                        <span className="text-primary">V</span>
-                        <span className="text-accent-400">K</span>
-                    </Link>
-                </div>
+                <NavLogo />
 
                 {/* Navbar Links (Desktop) - Visible on md and up */}
                 <div className="hidden gap-6 text-clamp-nav md:flex 10xl:gap-10">
@@ -53,6 +49,7 @@ function NavBar() {
                 className={`fixed right-0 top-0 h-full w-3/4 bg-gray-800 text-white transition-all duration-500 ease-in-out md:hidden ${
                     isOpen ? 'translate-x-0' : 'translate-x-full'
                 }`}
+                id="mobile-nav"
             >
                 {/* Close Button */}
                 <div className="absolute right-6 top-4">

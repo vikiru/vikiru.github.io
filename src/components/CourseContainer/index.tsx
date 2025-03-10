@@ -3,8 +3,8 @@ import { CourseCard } from '~components/index';
 
 function CourseContainer() {
     return (
-        <section className="bg-background-950 xs:py-6 lg:py-12">
-            <section>
+        <section className="bg-background-950 xs:py-6 lg:py-12" id="courses">
+            <div>
                 <div className="pb-2">
                     <h2 className="h2-text text-center">Education</h2>
                 </div>
@@ -61,7 +61,10 @@ function CourseContainer() {
 
                     <div className="mt-3">
                         {courseData.years.map((year) => (
-                            <div key={year.title}>
+                            <section
+                                id={year.title.toLowerCase().replace(' ', '-')}
+                                key={year.title}
+                            >
                                 <div className="flex items-center justify-center pb-4">
                                     <h3 className="h3-text">{year.title}</h3>
                                 </div>
@@ -78,11 +81,11 @@ function CourseContainer() {
                                 <div
                                     className={`mb-4 mt-8 ${year.title !== 'Fourth Year' ? 'border-t border-gray-300' : ''}`}
                                 />
-                            </div>
+                            </section>
                         ))}
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
     );
 }

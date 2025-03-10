@@ -8,7 +8,10 @@ function CourseCard(props: CourseCardProps) {
     const course = props.course;
 
     return (
-        <section className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20">
+        <section
+            className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20"
+            id={course.courseCode.toLowerCase()}
+        >
             <div className="flex min-h-20 items-center justify-between">
                 <div>
                     <h4 className="h4-text">{course.name}</h4>
