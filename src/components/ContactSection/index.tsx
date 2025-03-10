@@ -4,6 +4,7 @@ function ContactSection() {
     return (
         <section className="bg-background-950 pb-8" id="contact-me">
             <div className="xs:py-6 lg:py-12">
+                {/* Contact Section */}
                 <h2 className="h2-text text-center">Contact Me</h2>
                 <div className="xs:mx-auto xs:max-w-sm md:max-w-[30rem] lg:max-w-2xl 2xl:max-w-[50rem] 3xl:max-w-[60rem] 6xl:max-w-[80rem] 7xl:max-w-[104rem]">
                     <p className="body-text text-text-600">

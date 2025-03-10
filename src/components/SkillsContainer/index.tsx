@@ -9,7 +9,7 @@ function SkillsContainer() {
                     {Object.values(skillsData).map((category) => (
                         <section
                             className="rounded-2xl p-2"
-                            id={category.title}
+                            id={category.title.toLowerCase()}
                             key={category.title}
                         >
                             <h4 className="h4-text">{category.title}</h4>

@@ -10,55 +10,64 @@ function CourseContainer() {
                 </div>
 
                 <div className="xs:mx-2 10xl:mx-10">
-                    <div className="mx-2 flex items-center justify-between">
-                        <div>
-                            <h3
-                                className="h3-text"
-                                style={{
-                                    fontSize: 'clamp(1.5rem, 2.125vw, 6.5rem)',
-                                }}
-                            >
-                                {educationData.universityName}
-                            </h3>
-                        </div>
-                        <div>
-                            <p
-                                className="font-body text-gray-700"
-                                style={{
-                                    fontSize: 'clamp(0.75rem, 1.45vw, 4.5rem)',
-                                }}
-                            >
-                                {educationData.location}
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="mx-2 flex items-center justify-between">
-                        <div>
-                            <h5
-                                className="font-subheading italic"
-                                style={{
-                                    fontSize: 'clamp(0.65rem, 1.45vw, 5rem)',
-                                }}
-                            >
-                                {educationData.degree} - {educationData.acronym}
-                                , {educationData.degreeProgram}
-                            </h5>
+                    {/* University Info */}
+                    <section id="university-info">
+                        <div className="mx-2 flex items-center justify-between">
+                            <div>
+                                <h3
+                                    className="h3-text"
+                                    style={{
+                                        fontSize:
+                                            'clamp(1.5rem, 2.125vw, 6.5rem)',
+                                    }}
+                                >
+                                    {educationData.universityName}
+                                </h3>
+                            </div>
+                            <div>
+                                <p
+                                    className="font-body text-gray-700"
+                                    style={{
+                                        fontSize:
+                                            'clamp(0.75rem, 1.45vw, 4.5rem)',
+                                    }}
+                                >
+                                    {educationData.location}
+                                </p>
+                            </div>
                         </div>
 
-                        <div>
-                            <p
-                                className="info-text"
-                                style={{
-                                    fontSize: 'clamp(0.65rem, 1.35vw, 5rem)',
-                                }}
-                            >
-                                {educationData.enrollmentStart} -{' '}
-                                {educationData.enrollmentEnd}
-                            </p>
-                        </div>
-                    </div>
+                        <div className="mx-2 flex items-center justify-between">
+                            <div>
+                                <h5
+                                    className="font-subheading italic"
+                                    style={{
+                                        fontSize:
+                                            'clamp(0.65rem, 1.45vw, 5rem)',
+                                    }}
+                                >
+                                    {educationData.degree} -{' '}
+                                    {educationData.acronym},{' '}
+                                    {educationData.degreeProgram}
+                                </h5>
+                            </div>
 
+                            <div>
+                                <p
+                                    className="info-text"
+                                    style={{
+                                        fontSize:
+                                            'clamp(0.65rem, 1.35vw, 5rem)',
+                                    }}
+                                >
+                                    {educationData.enrollmentStart} -{' '}
+                                    {educationData.enrollmentEnd}
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Course List */}
                     <div className="mt-3">
                         {courseData.years.map((year) => (
                             <section

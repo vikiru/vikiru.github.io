@@ -18,7 +18,7 @@ function constructItems(sitemapUrls: SitemapGroup[]) {
         })
         .flat();
 
-    const items = [];
+    const items: { loc: string; lastmod: string; priority: number }[] = [];
     for (const url of urls) {
         const isHome = url === `${HOST_NAME}/`;
         items.push({

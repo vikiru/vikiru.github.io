@@ -12,7 +12,11 @@ function CourseCard(props: CourseCardProps) {
             className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20"
             id={course.courseCode.toLowerCase()}
         >
-            <div className="flex min-h-20 items-center justify-between">
+            {/* Course Header */}
+            <section
+                className="flex min-h-20 items-center justify-between"
+                id="course-header"
+            >
                 <div>
                     <h4 className="h4-text">{course.name}</h4>
                 </div>
@@ -22,11 +26,15 @@ function CourseCard(props: CourseCardProps) {
                         {course.courseCode}
                     </p>
                 </div>
-            </div>
+            </section>
 
-            <div className="xs:min-h-36 10xl:min-h-72">
+            {/* Course Description */}
+            <section
+                className="xs:min-h-36 10xl:min-h-72"
+                id="course-description"
+            >
                 <p className="card-text text-text-600">{course.description}</p>
-            </div>
+            </section>
         </section>
     );
 }

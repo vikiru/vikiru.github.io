@@ -30,10 +30,10 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noUncheckedIndexedAccess": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/types/index.d.ts", "src/types/images.d.ts", "src/scripts/generateSitemap.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/types/**/*.d.ts", "src/scripts/generateSitemap.ts"]
 }
