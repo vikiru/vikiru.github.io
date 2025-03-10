@@ -15,7 +15,6 @@ function ContactSection() {
                         <a
                             className="font-semibold text-accent-500 underline"
                             href="mailto:viskirubakaran@outlook.com"
-                            title="Send me an email directly"
                         >
                             email
                         </a>

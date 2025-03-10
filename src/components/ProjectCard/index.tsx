@@ -35,7 +35,6 @@ function ProjectCard(props: ProjectCardProps) {
                             <Link
                                 className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                 target="_blank"
-                                title="View project on GitHub"
                                 to={project.githubUrl}
                             >
                                 <FontAwesomeIcon icon={faGithub} />
@@ -50,7 +49,6 @@ function ProjectCard(props: ProjectCardProps) {
                             <Link
                                 className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                 target="_blank"
-                                title="View project documentation"
                                 to={project.documentationUrl}
                             >
                                 <FontAwesomeIcon icon={faBookOpen} />
@@ -92,7 +90,6 @@ function ProjectCard(props: ProjectCardProps) {
             <section className="mt-4" id="project-cta">
                 <Link
                     className="body-text font-semibold text-accent-300 transition-colors duration-200 hover:text-accent-500"
-                    title={`Read more about ${project.name}`}
                     to={project.projectPageUrl}
                 >
                     Read More <span>→</span>

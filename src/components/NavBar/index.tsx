@@ -25,7 +25,6 @@ function NavBar() {
                         <Link
                             className="font-heading uppercase text-gray-300 transition-all duration-300 hover:text-accent-500 hover:underline"
                             key={item.navTitle}
-                            title={item.navDesc}
                             to={item.navLink}
                         >
                             {item.navTitle}
@@ -67,7 +66,6 @@ function NavBar() {
                         <Link
                             className="hover:text-accent w-full px-6 py-3 text-center font-heading uppercase text-gray-300 transition-colors duration-300"
                             key={item.navTitle}
-                            title={item.navDesc}
                             to={item.navLink}
                         >
                             {item.navTitle}
@@ -85,7 +83,6 @@ function NavBar() {
                         href="https://github.com/vikiru"
                         rel="noopener noreferrer"
                         target="_blank"
-                        title="GitHub"
                     >
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
@@ -94,13 +91,11 @@ function NavBar() {
                         href="https://www.linkedin.com/in/viskirubakaran"
                         rel="noopener noreferrer"
                         target="_blank"
-                        title="LinkedIn"
                     >
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                     <Link
                         className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
-                        title="Contact"
                         to="/contact"
                     >
                         <FontAwesomeIcon icon={faEnvelope} />

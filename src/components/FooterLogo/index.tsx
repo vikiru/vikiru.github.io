@@ -5,7 +5,6 @@ function FooterLogo() {
         <section className="text-center md:text-left" id="logo">
             <Link
                 className="font-body text-clamp-nav "
-                title="View my homepage"
                 to="/"
             >
                 <h2 className="logo group text-center tracking-widest">

@@ -43,7 +43,6 @@ function UniversityCard() {
                 <Link
                     className="body-text font-semibold text-accent-500 transition-colors duration-200 hover:text-accent-500/50"
                     target="_blank"
-                    title="View my university courses"
                     to={'/education/courses'}
                 >
                     View Courses <span>→</span>

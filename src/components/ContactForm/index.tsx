@@ -31,7 +31,6 @@ function ContactForm() {
                         name="name"
                         placeholder="Enter your full name"
                         required
-                        title="Please enter your full name"
                         type="text"
                     />
                     <br />
@@ -53,7 +52,6 @@ function ContactForm() {
                         name="email"
                         placeholder="Enter email address"
                         required
-                        title="Please enter your email address"
                         type="email"
                     />
                     <br />
@@ -75,7 +73,6 @@ function ContactForm() {
                         name="subject"
                         placeholder="Enter email subject"
                         required
-                        title="Please enter the reason for your email"
                         type="text"
                     />
                     <br />
@@ -105,7 +102,6 @@ function ContactForm() {
                 <button
                     className="rounded-lg border-b-4 border-accent-600 bg-accent-500 px-6 py-3 text-center font-body text-clamp-button font-medium text-white shadow-sm transition duration-200 ease-in-out hover:bg-accent-600 xs:w-full 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
                     id="email-kwesform"
-                    title="Send me an email through Kwes Forms"
                     type="submit"
                 >
                     Send Email

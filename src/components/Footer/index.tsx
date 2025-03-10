@@ -23,7 +23,6 @@ function Footer() {
                                 <Link
                                     className="font-body text-clamp-nav text-gray-300 transition-all duration-300 hover:text-accent-500 hover:underline"
                                     target="_blank"
-                                    title={item.navDesc}
                                     to={item.navLink}
                                 >
                                     {item.navTitle}
@@ -43,7 +42,6 @@ function Footer() {
                             href="https://github.com/vikiru"
                             rel="noopener noreferrer"
                             target="_blank"
-                            title="View my GitHub profile"
                         >
                             <FontAwesomeIcon
                                 className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
@@ -54,7 +52,6 @@ function Footer() {
                             href="https://www.linkedin.com/in/viskirubakaran"
                             rel="noopener noreferrer"
                             target="_blank"
-                            title="View my LinkedIn profile"
                         >
                             <FontAwesomeIcon
                                 className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
@@ -63,7 +60,6 @@ function Footer() {
                         </a>
                         <Link
                             target="_blank"
-                            title="Send me an email"
                             to="/contact"
                         >
                             <FontAwesomeIcon
@@ -86,7 +82,6 @@ function Footer() {
                     <span className="mx-2">|</span>
                     <Link
                         className="transition duration-300 hover:text-accent-500 hover:underline"
-                        title="View the sitemap"
                         to="/sitemap"
                     >
                         Sitemap
