@@ -17,7 +17,7 @@ function EducationContainer() {
                 {/* Coursera Certificates */}
                 <section className="mt-2" id="coursera-certificates">
                     <div className="mx-4 10xl:mx-10">
-                        <h4 className="h4-text">Coursera</h4>
+                        <h3 className="h4-text">Coursera</h3>
                         {courseraCertificates.map((certificate) => {
                             return (
                                 <div
@@ -26,7 +26,7 @@ function EducationContainer() {
                                 >
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <h5
+                                            <h4
                                                 className="font-subheading italic"
                                                 style={{
                                                     fontSize:
@@ -34,7 +34,7 @@ function EducationContainer() {
                                                 }}
                                             >
                                                 {certificate.certificationName}
-                                            </h5>
+                                            </h4>
                                         </div>
                                         <div>
                                             <p className="info-text">

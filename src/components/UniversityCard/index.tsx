@@ -6,7 +6,7 @@ function UniversityCard() {
         <section id="university-info">
             <div className="mx-4 flex items-center justify-between 10xl:mx-10">
                 <div>
-                    <h4 className="h4-text">{educationData.universityName}</h4>
+                    <h3 className="h4-text">{educationData.universityName}</h3>
                 </div>
 
                 <div>
@@ -21,7 +21,7 @@ function UniversityCard() {
                 </div>
             </div>
             <div className="mx-4 flex items-center justify-between 10xl:mx-10">
-                <h5
+                <h4
                     className="font-subheading italic"
                     style={{
                         fontSize: 'clamp(0.65rem, 1.25vw, 5rem)',
@@ -29,7 +29,7 @@ function UniversityCard() {
                 >
                     {educationData.degree} - {educationData.acronym},{' '}
                     {educationData.degreeProgram}
-                </h5>
+                </h4>
 
                 <div>
                     <p className="info-text">

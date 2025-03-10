@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 function FooterLogo() {
     return (
         <section className="text-center md:text-left" id="logo">
-            <Link
-                className="font-body text-clamp-nav "
-                to="/"
-            >
+            <Link className="font-body text-clamp-nav " to="/">
                 <h2 className="logo group text-center tracking-widest">
                     <span className="text-text-50 transition-colors duration-300 group-hover:text-accent-400">
                         Visa

@@ -23,7 +23,7 @@ function ProjectCard(props: ProjectCardProps) {
             >
                 <div className="flex items-center space-x-2 3xl:space-x-4">
                     {/* Title */}
-                    <h4 className="h4-text">{project.name}</h4>
+                    <h3 className="h4-text">{project.name}</h3>
 
                     {/* Icons */}
                     <section

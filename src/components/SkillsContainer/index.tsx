@@ -12,7 +12,7 @@ function SkillsContainer() {
                             id={category.title.toLowerCase()}
                             key={category.title}
                         >
-                            <h4 className="h4-text">{category.title}</h4>
+                            <h3 className="h4-text">{category.title}</h3>
                             <p className="body-text text-text-600">
                                 {category.data.join(', ')}
                             </p>

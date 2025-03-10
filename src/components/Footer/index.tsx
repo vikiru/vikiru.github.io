@@ -14,9 +14,9 @@ function Footer() {
 
                 {/* Read More Section */}
                 <section className="text-center md:text-left" id="read-more">
-                    <h4 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
+                    <h3 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
                         Read More
-                    </h4>
+                    </h3>
                     <ul className="space-y-2">
                         {navData.map((item) => (
                             <li key={item.navTitle}>
@@ -34,9 +34,9 @@ function Footer() {
 
                 {/* Social Icons Section */}
                 <section className="text-center md:text-left" id="social-icons">
-                    <h4 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
+                    <h3 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
                         Connect With Me
-                    </h4>
+                    </h3>
                     <div className="flex items-center justify-center space-x-4 md:justify-start 10xl:space-x-8">
                         <a
                             href="https://github.com/vikiru"
@@ -58,10 +58,7 @@ function Footer() {
                                 icon={faLinkedin}
                             />
                         </a>
-                        <Link
-                            target="_blank"
-                            to="/contact"
-                        >
+                        <Link target="_blank" to="/contact">
                             <FontAwesomeIcon
                                 className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
                                 icon={faEnvelope}
