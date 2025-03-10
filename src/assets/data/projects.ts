@@ -1,4 +1,4 @@
-import { Project } from '~types/Project';
+import { Project } from '~types/index';
 
 type ProjectData = {
     projects: Project[];
@@ -26,7 +26,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/vikiru/kelbrum',
             documentationUrl: 'https://vikiru.github.io/kelbrum',
             projectPageUrl: '/projects/Kelbrum',
-            videoPath: require('../images/Kelbrum/kelbrum-demo.mp4'),
+            videoPath: '../images/Kelbrum/kelbrum-demo.mp4',
             accomplishments: [
                 'Leveraged Tensorflow.js and additional npm packages to apply k-means clustering, utilizing a custom weighted distance function to group anime based on similarity and allowing for prioritization of anime properties based on weights',
                 'Designed the recommendation system to be adaptable and scalable, capable of expanding with input from k-means clustering and feature tensors. This approach allows for future handling of various content types',
@@ -59,7 +59,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/vikiru/parseum',
             documentationUrl: 'https://vikiru.github.io/parseum/',
             projectPageUrl: '/projects/Parseum',
-            videoPath: require('../images/Parseum/parseum-demo.mp4'),
+            videoPath: '../images/Parseum/parseum-demo.mp4',
             accomplishments: [
                 'Created a Markdown parser by using Peggy.js to generate a parser from a defined Parsing Expression Grammar (PEG) file, allowing for the potential to grow by defining further grammar rules',
                 'Created a simple and easy to use editor for users to write Markdown and view rendered HTML using React, TailwindCSS and DaisyUI',
@@ -90,7 +90,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/vikiru/restasaurus',
             documentationUrl: 'https://vikiru.github.io/restasaurus/',
             projectPageUrl: '/projects/RESTasaurus',
-            videoPath: require('../images/restasaurus/restasaurus-demo.mp4'),
+            videoPath: '../images/RESTasaurus/restasaurus-demo.mp4',
             accomplishments: [
                 'Developed a fully functional dinosaur REST API using Express, MongoDB, and Mongoose and hosted it via Render',
                 'Designed MongoDB schemas for Dinosaur, ClassificationInfo, DinosaurImage, and DinosaurSource info, and created a JavaScript class, MongooseData for use in data retrieval and processing prior to converting to schemas',
@@ -121,7 +121,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/vikiru/Urvo',
             documentationUrl: 'https://vikiru.github.io/Urvo/',
             projectPageUrl: '/projects/Urvo',
-            videoPath: require('../images/Urvo/Urvo-demo.mp4'),
+            videoPath: '../images/Urvo/Urvo-demo.mp4',
             accomplishments: [
                 'Developed a Discord bot that leveraged 25 external REST APIs to fetch and display JSON data in rich embeds, enhancing user engagement and interactivity',
                 'Utilized Sequelize with SQLite to design and manage a database for a Discord-based economy and game-like system',
@@ -151,7 +151,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/vikiru/CodeSmell',
             documentationUrl: 'https://github.com/vikiru/CodeSmell/wiki',
             projectPageUrl: '/projects/CodeSmell',
-            videoPath: require('../images/CodeSmell/CodeSmell-demo.mp4'),
+            videoPath: '../images/CodeSmell/CodeSmell-demo.mp4',
             accomplishments: [
                 'Integrated Maven and Joern, an existing external static analysis tool via Python',
                 'Optimized data retrieval from local Joern server instance by 80%, reducing time to 180s from 840s (or less depending on hardware and os)',
@@ -199,7 +199,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/vikiru/discrete-sim',
             documentationUrl: 'https://vikiru.github.io/discrete-sim/',
             projectPageUrl: '/projects/discrete-sim',
-            videoPath: require('../images/discrete-sim/discrete-sim-demo.mp4'),
+            videoPath: '../images/discrete-sim/discrete-sim-demo.mp4',
             accomplishments: [
                 'Used SimPy to model the facility and its operations based on a given problem statement',
                 'Used SciPy and NumPy to perform statistical analysis on the simulation output data and compare different operating policies',
@@ -229,7 +229,7 @@ const projectData: ProjectData = {
             documentationUrl:
                 'https://github.com/vikiru/Mini-SurveyMonkey/wiki',
             projectPageUrl: '/projects/Mini-SurveyMonkey',
-            videoPath: require('../images/Mini-SurveyMonkey/Mini-SurveyMonkey-demo.mp4'),
+            videoPath: '../images/Mini-SurveyMonkey/Mini-SurveyMonkey-demo.mp4',
             accomplishments: [
                 'Contributed to the development of a model for survey creation (questions, answers, survey and different users)',
                 'Created Thymeleaf pages for key endpoints such as creating and displaying surveys (including survey results)',
@@ -251,7 +251,8 @@ const projectData: ProjectData = {
             githubUrl: '',
             documentationUrl: '',
             projectPageUrl: '/projects/Elevator-Simulator',
-            videoPath: require('../images/Concurrent-Elevator/Concurrent-Elevator-demo.mp4'),
+            videoPath:
+                '../images/Concurrent-Elevator/Concurrent-Elevator-demo.mp4',
             accomplishments: [
                 'Developed UML Class diagrams representing the system design',
                 'Added the ability to inject and handle errors that can occur within an elevator such as doors not closing',
@@ -272,7 +273,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/flavji/digitalRisk',
             documentationUrl: 'https://github.com/flavji/digitalRisk/wiki',
             projectPageUrl: '/projects/digitalRisk',
-            videoPath: require('../images/digitalRisk/digitalRisk-demo.mp4'),
+            videoPath: '../images/digitalRisk/digitalRisk-demo.mp4',
             accomplishments: [
                 'Contributed to the development of a Swing GUI ',
                 'Contributed to the development of classes representing aspects of the model, view, and controller of a Risk game',

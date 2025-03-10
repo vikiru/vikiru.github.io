@@ -12,22 +12,30 @@ function ProjectCard(props: ProjectCardProps) {
     const project: Project = props.project;
 
     return (
-        <div className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20">
+        <section
+            className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20"
+            id={project.name}
+        >
             {/* Header with Icons */}
-            <div className="items-center lg:flex lg:justify-between">
+            <section
+                className="items-center lg:flex lg:justify-between"
+                id="project-info"
+            >
                 <div className="flex items-center space-x-2 3xl:space-x-4">
                     {/* Title */}
                     <h4 className="h4-text">{project.name}</h4>
 
                     {/* Icons */}
-                    <div
+                    <section
                         className="flex items-center space-x-2 text-accent-300 3xl:space-x-4"
+                        id="project-links"
                         style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                     >
                         {project.githubUrl ? (
                             <Link
                                 className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                 target="_blank"
+                                title="View project on GitHub"
                                 to={project.githubUrl}
                             >
                                 <FontAwesomeIcon icon={faGithub} />
@@ -42,6 +50,7 @@ function ProjectCard(props: ProjectCardProps) {
                             <Link
                                 className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
                                 target="_blank"
+                                title="View project documentation"
                                 to={project.documentationUrl}
                             >
                                 <FontAwesomeIcon icon={faBookOpen} />
@@ -51,7 +60,7 @@ function ProjectCard(props: ProjectCardProps) {
                                 <FontAwesomeIcon icon={faBookOpen} />
                             </span>
                         )}
-                    </div>
+                    </section>
                 </div>
 
                 {/* Date Range */}
@@ -60,32 +69,36 @@ function ProjectCard(props: ProjectCardProps) {
                         {project.startDate} - {project.endDate}
                     </p>
                 </div>
-            </div>
+            </section>
 
             {/* Description */}
-            <div className="container flex min-h-20 flex-col pb-3 xs:mt-2 lg:mt-3">
+            <section
+                className="container flex min-h-20 flex-col pb-3 xs:mt-2 lg:mt-3"
+                id="project-description"
+            >
                 <p className="card-text text-text-600">{project.description}</p>
-            </div>
+            </section>
 
             {/* Tech Stack Tags */}
-            <div className="flex min-h-20 flex-wrap gap-2">
+            <section className="flex min-h-20 flex-wrap gap-2" id="tech-stack">
                 {project.technologiesUsed.map((tech, index) => (
                     <div className="tech-tag text-secondary-950" key={index}>
                         {tech}
                     </div>
                 ))}
-            </div>
+            </section>
 
             {/* CTA */}
-            <div className="mt-4">
+            <section className="mt-4" id="project-cta">
                 <Link
                     className="body-text font-semibold text-accent-300 transition-colors duration-200 hover:text-accent-500"
+                    title={`Read more about ${project.name}`}
                     to={project.projectPageUrl}
                 >
                     Read More <span>→</span>
                 </Link>
-            </div>
-        </div>
+            </section>
+        </section>
     );
 }
 

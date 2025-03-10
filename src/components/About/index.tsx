@@ -1,15 +1,15 @@
 function About() {
     return (
-        <section className="min-h-[30vh] bg-background-950">
+        <section className="min-h-[30vh] bg-background-950" id="about">
             <div className="xs:pt-6 lg:pt-12">
+                {/* Hero Section */}
                 <h2 className="h2-text text-center">About</h2>
-
                 <div className="mx-4 10xl:mx-10">
                     <p className="body-text text-text-600">
                         My journey into the world of software development began
                         with an introduction to computer science and
                         programming, utilizing languages such as C++ and Java.
-                        Following that, my software engineering degree a
+                        Following that, my software engineering degree at
                         Carleton University provided me with a strong foundation
                         of knowledge and exposure to various languages,
                         including Racket, C, Java, Python, HTML, CSS,
