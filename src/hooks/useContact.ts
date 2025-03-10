@@ -6,14 +6,14 @@ function useContact() {
         kwesforms.init();
     }, []);
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        const form = document.forms['contact-form'];
-        const name = form['name']?.value;
-        const email = form['email']?.value;
-        const subject = form['subject']?.value;
-        const content = form['content']?.value;
+        const form = event.currentTarget;
+        const name = form['name'];
+        const email = form['email'];
+        const subject = form['subject'];
+        const content = form['content'];
 
         if (name !== '' && email !== '' && subject !== '' && content !== '') {
             // eslint-disable-next-line no-restricted-globals

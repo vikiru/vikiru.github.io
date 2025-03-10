@@ -15,6 +15,7 @@ function ContactForm() {
                 name="contact-form"
                 onSubmit={handleSubmit}
             >
+                {/* Name Section */}
                 <div className="py-2">
                     <label
                         className="h5-text font-subheading font-medium"
@@ -36,6 +37,7 @@ function ContactForm() {
                     <br />
                 </div>
 
+                {/* Email Section */}
                 <div className="py-2">
                     <label
                         className="h5-text font-subheading font-medium"
@@ -57,6 +59,7 @@ function ContactForm() {
                     <br />
                 </div>
 
+                {/* Subject Section */}
                 <div className="py-2">
                     <label
                         className="h5-text font-subheading font-medium"
@@ -78,6 +81,7 @@ function ContactForm() {
                     <br />
                 </div>
 
+                {/* Message Section */}
                 <div className="py-2">
                     <label
                         className="h5-text font-subheading font-medium"
@@ -97,6 +101,7 @@ function ContactForm() {
                     />
                 </div>
 
+                {/* Form Submit */}
                 <button
                     className="rounded-lg border-b-4 border-accent-600 bg-accent-500 px-6 py-3 text-center font-body text-clamp-button font-medium text-white shadow-sm transition duration-200 ease-in-out hover:bg-accent-600 xs:w-full 7xl:border-b-[10px] 8xl:border-b-[15px] 8xl:px-12 8xl:py-6 9xl:px-12"
                     id="email-kwesform"

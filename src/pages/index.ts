@@ -1,11 +1,11 @@
-import About from '~pages/About/About';
-import Contact from '~pages/Contact/Contact';
-import Courses from '~pages/Courses/Courses';
-import Home from '~pages/Home/Home';
-import Projects from '~pages/Projects/Projects';
-import ProjectShowcase from '~pages/ProjectShowcase/ProjectShowcase';
-import Router from '~pages/Router/Router';
-import Sitemap from '~pages/Sitemap/Sitemap';
+import About from '~pages/About';
+import Contact from '~pages/Contact';
+import Courses from '~pages/Courses';
+import Home from '~pages/Home';
+import Projects from '~pages/Projects';
+import ProjectShowcase from '~pages/ProjectShowcase';
+import Router from '~pages/Router';
+import Sitemap from '~pages/Sitemap';
 
 export {
     About,

@@ -1,5 +1,5 @@
-import { educationData } from '~assets/data/index';
 import { UniversityCard } from '~components/index';
+import { educationData } from '~data/index';
 
 function EducationContainer() {
     const certificates = educationData.certificates;
@@ -11,10 +11,11 @@ function EducationContainer() {
         <section className="min-h-[30vh] bg-background-950">
             <div>
                 <h2 className="h2-text text-center">Education</h2>
-
+                {/* University Info */}
                 <UniversityCard />
 
-                <section className="mt-2">
+                {/* Coursera Certificates */}
+                <section className="mt-2" id="coursera-certificates">
                     <div className="mx-4 10xl:mx-10">
                         <h4 className="h4-text">Coursera</h4>
                         {courseraCertificates.map((certificate) => {
@@ -49,6 +50,7 @@ function EducationContainer() {
                                             href={certificate.certificateLink}
                                             rel="noopener noreferrer"
                                             target="_blank"
+                                            title="View my certificate"
                                         >
                                             View Certificate <span>→</span>
                                         </a>
