@@ -3,8 +3,8 @@ import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { navData } from '~assets/data/index';
 import { NavLogo } from '~components/index';
+import { navData } from '~data/index';
 import { useNav } from '~hooks/index';
 
 function NavBar() {

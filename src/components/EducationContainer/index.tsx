@@ -1,5 +1,5 @@
-import { educationData } from '~assets/data/index';
 import { UniversityCard } from '~components/index';
+import { educationData } from '~data/index';
 
 function EducationContainer() {
     const certificates = educationData.certificates;

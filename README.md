@@ -244,6 +244,12 @@ npm run lint
 npm run prettier
 ```
 
+5. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts).
+
+```bash
+npm run generate-sitemap
+```
+
 ## ✨ Acknowledgments
 
 - [TailwindCSS Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
