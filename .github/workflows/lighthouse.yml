@@ -6,7 +6,6 @@ on:
       - Prettier Format Files
     types:
         - completed
-
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
@@ -24,6 +23,9 @@ jobs:
             https://vikiru.vercel.app/contact/
             https://vikiru.vercel.app/education/courses/
             https://vikiru.vercel.app/projects/
+            https://vikiru.vercel.app/projects/Kelbrum/
+            https://vikiru.vercel.app/projects/Parseum/
+            https://vikiru.vercel.app/projects/RESTasaurus/
             https://vikiru.vercel.app/projects/Portfolio/
             https://vikiru.vercel.app/projects/Urvo/
             https://vikiru.vercel.app/projects/CodeSmell/
