@@ -117,10 +117,8 @@
     "~components": "src/components",
     "~data": "src/assets/data",
     "~hooks": "src/hooks",
-    "~images": "src/assets/images",
     "~pages": "src/pages",
     "~scripts": "src/scripts",
-    "~utils": "src/utils",
     "~types": "src/types"
   },
   "overrides": {

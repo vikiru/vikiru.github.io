@@ -3,7 +3,7 @@ import { Project, SitemapGroup, SitemapItem } from '~types/index';
 
 const sitemap: SitemapGroup[] = [
     {
-        category: 'Main',
+        category: 'Main Content',
         items: [
             {
                 name: 'Home',
@@ -14,12 +14,12 @@ const sitemap: SitemapGroup[] = [
                 url: '/about',
             },
             {
-                name: 'Projects',
-                url: '/projects',
+                name: 'Courses',
+                url: '/education/courses',
             },
             {
-                name: 'Skills',
-                url: '/skills',
+                name: 'Projects',
+                url: '/projects',
             },
             {
                 name: 'Contact',
