@@ -9,7 +9,7 @@ function About() {
                 <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
                     About
                 </h2>
-                <div className="mx-4 10xl:mx-10">
+                <div className="mx-4 xs:mt-0 lg:mt-4 10xl:mx-10">
                     <p className="body-text text-light-text-600 dark:text-dark-text-700">
                         My journey into the world of software development began
                         with an introduction to computer science and

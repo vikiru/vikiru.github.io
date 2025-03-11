@@ -21,19 +21,19 @@
     }
 
     .h2-text {
-        @apply font-heading font-semibold text-clamp-h2;
+        @apply font-heading font-semibold xs:text-xl lg:text-clamp-h2;
     }
 
     .h3-text {
-        @apply font-heading font-semibold text-clamp-h3;
+        @apply font-heading font-semibold xs:text-lg lg:text-clamp-h3;
     }
 
     .h4-text {
-        @apply font-heading font-semibold text-clamp-h4;
+        @apply font-heading font-semibold xs:text-base lg:text-clamp-h4;
     }
 
     .h5-text {
-        @apply font-heading font-semibold text-clamp-h5;
+        @apply font-heading font-semibold xs:text-sm lg:text-clamp-h5;
     }
 
     .h6-text {
@@ -97,7 +97,7 @@
 /* Icon Components */
 @layer components {
     .social-icons {
-        @apply text-clamp-icons transition-colors duration-300 motion-reduce:transition-none text-light-accent-300 hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500;
+        @apply xs:text-xl lg:text-clamp-icons transition-colors duration-300 motion-reduce:transition-none text-light-accent-300 hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500;
     }
 }
 
@@ -108,7 +108,7 @@
     }
 
     .footer-link {
-        @apply dark:hover:text-dark-accent-500 font-heading text-clamp-nav text-light-text-300 transition-colors duration-300 hover:text-light-accent-500 hover:underline motion-reduce:transition-none dark:text-dark-text-700;
+        @apply dark:hover:text-dark-accent-500 font-heading xs:text-lg lg:text-clamp-nav text-light-text-300 transition-colors duration-300 hover:text-light-accent-500 hover:underline motion-reduce:transition-none dark:text-dark-text-700;
     }
 
     .sitemap-link {

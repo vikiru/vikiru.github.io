@@ -20,7 +20,7 @@ function NavBar() {
                 <NavLogo />
 
                 {/* Navbar Links (Desktop) - Visible on md and up */}
-                <div className="hidden gap-6 text-clamp-nav md:flex 10xl:gap-10">
+                <div className="hidden gap-6 xs:text-lg md:flex lg:text-clamp-nav 10xl:gap-10">
                     {navData.map((item) => (
                         <Link
                             className="nav-link"
