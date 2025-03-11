@@ -168,6 +168,6 @@ export default [
     {
         files: ['**/*.ts', '**/*.tsx'],
     },
-    { ignores: ['node_modules/', '.github/', '*.json', '*.mjs', '*.css', '*.xml', '*.html', 'dist/', '*.config.js', '*.js', 'src/types/index.d.ts', 'src/reportWebVitals.js', 'src/index.js', 'src/setupTests.js'
+    { ignores: ['node_modules/', '.github/', '*.json', '*.mjs', '*.css', '*.xml', '*.html', 'dist/', '*.config.js', '*.js', 'src/types/index.d.ts', 'src/reportWebVitals.js', 'src/index.js', 'src/setupTests.js', 'src/assets/images/'
     ] },
 ];
