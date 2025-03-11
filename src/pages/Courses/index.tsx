@@ -4,7 +4,7 @@ function CoursesPage() {
     return (
         <Layout
             description="Explore the university courses I took during my degree at Carleton University."
-            title="Courses"
+            title="Visakan Kirubakaran | Courses"
         >
             <CourseContainer />
         </Layout>
