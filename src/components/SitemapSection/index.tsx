@@ -20,7 +20,7 @@ function SitemapSection() {
                     <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                         {group.category}
                     </h3>
-                    <div className="9xl:my-18 border-t border-gray-300 xs:my-2 lg:my-4 3xl:my-6 4xl:my-8 5xl:my-10 6xl:my-12 7xl:my-14 8xl:my-16" />
+                    <div className="9xl:my-18 border-t border-gray-300 xs:my-2 lg:my-4 3xl:my-6 4xl:my-8 5xl:my-10 6xl:my-12 7xl:my-14 8xl:my-16 dark:border-dark-background-600" />
                     <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
                         {group.items.map((item) => (
                             <section

@@ -79,7 +79,7 @@ function NavBar() {
                 </section>
 
                 {/* Divider */}
-                <div className="my-4 border-t border-gray-600"></div>
+                <div className="my-4 border-t border-gray-600 dark:border-dark-background-600"></div>
 
                 {/* Social Icons */}
                 <section id="social-icons">

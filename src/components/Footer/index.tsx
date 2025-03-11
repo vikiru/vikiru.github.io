@@ -14,7 +14,7 @@ function Footer() {
 
                 {/* Read More Section */}
                 <section className="text-center md:text-left" id="read-more">
-                    <h3 className="h4-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
+                    <h3 className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
                         Read More
                     </h3>
                     <ul className="space-y-2">
@@ -30,7 +30,7 @@ function Footer() {
 
                 {/* Social Icons Section */}
                 <section className="text-center md:text-left" id="social-icons">
-                    <h3 className="h4-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
+                    <h3 className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
                         Connect With Me
                     </h3>
                     <div className="flex items-center justify-center space-x-4 md:justify-start 10xl:space-x-8">
@@ -65,7 +65,7 @@ function Footer() {
             </div>
 
             {/* Copyright Section */}
-            <section className="mt-8 text-center" id="copyright">
+            <section className="text-center xs:mt-4 lg:mt-6" id="copyright">
                 <p
                     className="text-light-text-400 dark:text-dark-text-500"
                     style={{ fontSize: 'clamp(0.9rem, 1.25vw, 4rem)' }}
