@@ -252,7 +252,7 @@ const projectData: ProjectData = {
             documentationUrl: '',
             projectPageUrl: '/projects/Elevator-Simulator',
             videoPath:
-                '/images/Conurrent-Elevator/Concurrent-Elevator-demo.mp4',
+                '/images/Concurrent-Elevator/Concurrent-Elevator-demo.mp4',
             accomplishments: [
                 'Developed UML Class diagrams representing the system design',
                 'Added the ability to inject and handle errors that can occur within an elevator such as doors not closing',
