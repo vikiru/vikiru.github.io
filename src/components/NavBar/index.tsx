@@ -45,7 +45,7 @@ function NavBar() {
 
             {/* Mobile Menu - Right to Left Slide, Visible on mobile only */}
             <section
-                className={`fixed right-0 top-0 h-full w-3/4 bg-light-background-600 text-white transition-all duration-500 ease-in-out motion-reduce:transition-none md:hidden dark:bg-dark-background-800  ${
+                className={`fixed right-0 top-0 h-full w-3/4 bg-light-background-600 text-white transition-all duration-500 ease-in-out motion-reduce:transition-none md:hidden dark:bg-dark-background-800 ${
                     isOpen
                         ? 'translate-x-0 motion-reduce:transition-none'
                         : 'translate-x-full motion-reduce:transition-none'

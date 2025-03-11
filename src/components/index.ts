@@ -7,12 +7,14 @@ import CTA from '~components/CTA';
 import EducationContainer from '~components/EducationContainer';
 import Footer from '~components/Footer';
 import FooterLogo from '~components/FooterLogo';
+import HelmetMeta from '~components/HelmetMeta';
 import Hero from '~components/Hero';
 import Layout from '~components/Layout';
 import NavBar from '~components/NavBar';
 import NavLogo from '~components/NavLogo';
 import ProjectCard from '~components/ProjectCard';
 import ProjectContainer from '~components/ProjectContainer';
+import Router from '~components/Router';
 import ShowcaseSection from '~components/ShowcaseSection';
 import SitemapSection from '~components/SitemapSection';
 import SkillsContainer from '~components/SkillsContainer';
@@ -29,12 +31,14 @@ export {
     EducationContainer,
     Footer,
     FooterLogo,
+    HelmetMeta,
     Hero,
     Layout,
     NavBar,
     NavLogo,
     ProjectCard,
     ProjectContainer,
+    Router,
     ShowcaseSection,
     SitemapSection,
     SkillsContainer,

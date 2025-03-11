@@ -7,7 +7,10 @@ import {
 
 function AboutPage() {
     return (
-        <Layout>
+        <Layout
+            description="Learn more about me, my education, and skills."
+            title="Visakan Kirubakaran | About"
+        >
             {/* About Section */}
             <About />
             <div className="my-8 border-t border-gray-300" />
