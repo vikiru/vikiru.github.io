@@ -60,7 +60,7 @@
     }
 
     .hero-ctr {
-        @apply m-2 xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl 5xl:max-w-[88rem] 7xl:max-w-[104rem] 9xl:max-w-[160rem] 10xl:max-w-[180rem] 11xl:max-w-[200rem];
+        @apply m-2 xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl 4xl:max-w-[90rem] 5xl:max-w-[100rem] 7xl:max-w-[115rem] 9xl:max-w-[160rem] 10xl:max-w-[180rem] 11xl:max-w-[200rem];
     }
 
     .form-ctr {
@@ -69,6 +69,10 @@
 
     .demo-ctr {
         @apply h-full xs:max-w-4xl 2xl:max-w-[100rem] 3xl:max-w-[110rem] 4xl:max-w-[120rem] 5xl:max-w-[130rem] 6xl:max-w-[140rem] 7xl:max-w-[150rem] 8xl:max-w-[160rem] 9xl:max-w-[170rem] 10xl:max-w-[180rem] 11xl:max-w-[190rem];
+    }
+
+    .section-ctr {
+        @apply 9xl:my-6 10xl:my-8 11xl:my-12
     }
 }
 

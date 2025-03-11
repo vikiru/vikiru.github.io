@@ -4,7 +4,7 @@ import { courseData, educationData } from '~data/index';
 function CourseContainer() {
     return (
         <section className="bg-background-950 xs:py-6 lg:py-12" id="courses">
-            <div className="pb-2">
+            <div className="pb-2 7xl:py-12 11xl:py-16">
                 <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
                     Education
                 </h2>
@@ -13,12 +13,13 @@ function CourseContainer() {
             <div className="xs:mx-2 10xl:mx-10">
                 {/* University Info */}
                 <section id="university-info">
-                    <div className="mx-2 flex items-center justify-between">
+                    <div className="mx-4 flex items-center justify-between 10xl:mx-10">
                         <div>
-                            <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+                            <h3 className="h4-text text-light-text-900 dark:text-dark-text-800">
                                 {educationData.universityName}
                             </h3>
                         </div>
+
                         <div>
                             <p
                                 className="font-body text-light-text-600 dark:text-dark-text-700"
@@ -30,21 +31,18 @@ function CourseContainer() {
                             </p>
                         </div>
                     </div>
+                    <div className="mx-4 flex items-center justify-between 10xl:mx-10">
+                        <h4
+                            className="font-subheading italic text-light-text-600 dark:text-dark-text-700"
+                            style={{
+                                fontSize: 'clamp(0.65rem, 1.25vw, 5rem)',
+                            }}
+                        >
+                            {educationData.degree} - {educationData.acronym},{' '}
+                            {educationData.degreeProgram}
+                        </h4>
 
-                    <div className="mx-2 flex items-center justify-between">
                         <div>
-                            <h4
-                                className="info-text font-subheading italic text-light-text-600 dark:text-dark-text-700"
-                                style={{
-                                    fontSize: 'clamp(0.65rem, 1.25vw, 5rem)',
-                                }}
-                            >
-                                {educationData.degree} - {educationData.acronym}
-                                , {educationData.degreeProgram}
-                            </h4>
-                        </div>
-
-                        <div className="flex items-center justify-center">
                             <p className="info-text">
                                 {educationData.enrollmentStart} -{' '}
                                 {educationData.enrollmentEnd}
@@ -60,7 +58,7 @@ function CourseContainer() {
                             id={year.title.toLowerCase().replace(' ', '-')}
                             key={year.title}
                         >
-                            <div className="flex items-center justify-center pb-4">
+                            <div className="flex items-center justify-center pb-4 7xl:py-12 11xl:py-16">
                                 <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                                     {year.title}
                                 </h3>

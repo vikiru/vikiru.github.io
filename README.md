@@ -152,11 +152,11 @@
 
 - [🌐 Portfolio Overview](#-portfolio-overview)
   - [📄 About](#-about)
-  - [🎓 Education](#-education)
-  - [💡 Skills](#-skills)
+    - [🎓 Education](#-education)
+    - [💡 Skills](#-skills)
   - [📚 Projects](#-projects)
-    - [⭐Featured Projects](#-featured-projects)
-    - [🛠️ Other Projects](#-other-projects)
+    - [⭐ Featured Projects](#-featured-projects)
+    - [🛠️ Other Projects](#️-other-projects)
   - [📧 Contact](#-contact)
 - [📖 Table of Contents](#-table-of-contents)
 - [🛠️ Tech Stack](#️-tech-stack)
@@ -248,7 +248,7 @@ npm run prettier
 5. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts) and [`generateSitemap.ts`](./src/scripts/generateSitemap.ts).
 
 ```bash
-npm run generate-sitemap
+npm run generate-sitemap>
 ```
 
 ## ✨ Acknowledgments
@@ -258,6 +258,7 @@ npm run generate-sitemap
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
 - [GitHub Actions](https://github.com/features/actions)
 - [Shields Badges](https://github.com/badges/shields)
+- [Realtime Colors](https://github.com/juxtopposed/realtimecolors)
 - [Favicon Generator](https://favicon.io/favicon-generator/)
 
 ## ©️ License

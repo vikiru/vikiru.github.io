@@ -11,7 +11,7 @@ function ProjectContainer() {
             <div className="px-6 sm:px-8 lg:px-12">
                 {/* Featured Projects Section */}
                 <section id="featured-projects">
-                    <div className="lg:pb-6">
+                    <div className="lg:pb-6 7xl:py-12 11xl:py-16">
                         <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
                             Featured Projects
                         </h2>
@@ -32,7 +32,7 @@ function ProjectContainer() {
 
                 {/* Other Projects Section */}
                 <section id="other-projects">
-                    <div className="lg:pb-6">
+                    <div className="lg:pb-6 7xl:py-12 11xl:py-16">
                         <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
                             Other Projects
                         </h2>
