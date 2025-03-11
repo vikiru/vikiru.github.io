@@ -18,7 +18,7 @@ function ProjectCard(props: ProjectCardProps) {
         >
             {/* Header with Icons */}
             <section
-                className="items-center lg:flex lg:justify-between"
+                className="flex xs:flex-col sm:flex-row sm:items-center sm:justify-between"
                 id="project-info"
             >
                 <div className="flex items-center space-x-2 3xl:space-x-4">
@@ -99,7 +99,7 @@ function ProjectCard(props: ProjectCardProps) {
             {/* CTA */}
             <section className="mt-4" id="project-cta">
                 <Link
-                    className="body-text font-semibold text-light-accent-300 transition-colors duration-200 hover:text-light-accent-500 dark:text-dark-accent-200 dark:hover:text-dark-accent-400"
+                    className="body-text font-semibold text-light-accent-300 transition-colors duration-200 hover:text-light-accent-500 motion-reduce:transition-none dark:text-dark-accent-200 dark:hover:text-dark-accent-400"
                     to={project.projectPageUrl}
                 >
                     Read More <span>→</span>

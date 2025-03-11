@@ -78,7 +78,7 @@ function Footer() {
                     rights reserved.
                     <span className="mx-2">|</span>
                     <Link
-                        className="transition-colors duration-300 hover:text-light-accent-500 hover:underline dark:hover:text-dark-accent-500"
+                        className="transition-colors duration-300 hover:text-light-accent-500 hover:underline motion-reduce:transition-none dark:hover:text-dark-accent-500"
                         to="/sitemap"
                     >
                         Sitemap

@@ -176,7 +176,7 @@ module.exports = {
                 'clamp-nav': 'clamp(1.25rem, 1.5vw, 5rem)',
                 'clamp-card': 'clamp(0.9rem, 1.25vw, 4.5rem)',
                 'clamp-tech': 'clamp(0.75rem, 1vw, 3.5rem)',
-                'clamp-info': 'clamp(0.65rem, 1.25vw, 4.5rem)',
+                'clamp-info': 'clamp(0.65rem, 1.5vw, 4.5rem)',
                 'clamp-accomplishment': 'clamp(1rem, 1.45vw, 4.5rem)',
                 'clamp-button': 'clamp(0.85rem, 1.25vw, 4.5rem)',
                 'clamp-icons': 'clamp(1.5rem, 2vw, 6rem)',

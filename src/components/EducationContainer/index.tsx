@@ -50,7 +50,7 @@ function EducationContainer() {
 
                                     <div>
                                         <a
-                                            className="text-clamp-button font-semibold text-light-accent-500 transition-colors duration-200 hover:text-light-accent-500/50 dark:text-dark-accent-500 dark:hover:text-dark-accent-500/50"
+                                            className="text-clamp-button font-semibold text-light-accent-500 transition-colors duration-200 hover:text-light-accent-500/50 motion-reduce:transition-none dark:text-dark-accent-500 dark:hover:text-dark-accent-500/50"
                                             href={certificate.certificateLink}
                                             rel="noopener noreferrer"
                                             target="_blank"

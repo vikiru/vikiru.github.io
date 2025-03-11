@@ -12,17 +12,26 @@ type ShowcaseSectionProps = {
 function ShowcaseSection({ project }: ShowcaseSectionProps) {
     return (
         <section
-            className="bg-background-950 min-h-screen overflow-hidden"
+            className="min-h-screen overflow-hidden bg-background-950"
             id={project.name + '-showcase'}
         >
             {/* Project Info Section */}
             <section
-                className="flex items-center justify-between pt-12"
+                className="flex pt-12 xs:flex-col sm:flex-row sm:items-center sm:justify-between"
                 id="project-info"
             >
                 <div className="mx-4 flex items-center space-x-2 10xl:mx-10">
                     <div>
                         <h2 className="h2-text text-light-text-900 dark:text-dark-text-800">
+                            <span>
+                                <Link
+                                    className="text-light-accent-300 hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500 underline"
+                                    to="/projects"
+                                >
+                                    projects
+                                </Link>
+                                {'/'}
+                            </span>
                             {project.name}
                         </h2>
                     </div>
@@ -62,7 +71,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                     <p
                         className="info-text"
                         style={{
-                            fontSize: 'clamp(0.8rem, 1.5vw, 5rem)',
+                            fontSize: 'clamp(0.8rem, 1.75vw, 5rem)',
                         }}
                     >
                         {project.startDate} - {project.endDate}
@@ -79,7 +88,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
 
             {/* Technologies Used Section */}
             <section
-                className="container mx-4 mt-2 flex flex-wrap gap-3 pb-4 10xl:mx-10"
+                className="container mx-4 mt-2 flex flex-wrap pb-4 xs:gap-3 10xl:mx-10"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (
@@ -96,7 +105,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                     Co-Authors
                 </h3>
-                <p className="body-text mt-2 pb-4 text-light-text-600 dark:text-dark-text-700">
+                <p className="body-text text-light-text-600 dark:text-dark-text-700 mt-2 pb-4">
                     {project.contributors}.
                 </p>
             </section>
@@ -113,7 +122,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                     <ul className="list-inside list-disc">
                         {project.accomplishments.map((accomplishment) => (
                             <li
-                                className="text-clamp-accomplishment leading-relaxed text-light-text-600 dark:text-dark-text-700"
+                                className="text-light-text-600 dark:text-dark-text-700 text-clamp-accomplishment leading-relaxed"
                                 key={accomplishment}
                             >
                                 {accomplishment}.
