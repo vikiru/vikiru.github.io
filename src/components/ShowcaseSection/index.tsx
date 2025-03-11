@@ -135,7 +135,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
             </section>
 
             <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
-                          
+
             {/* Project Demo Video Section */}
             {project.videoPath !== '' && (
                 <section className="mx-4 10xl:mx-10" id="project-demo">
