@@ -251,7 +251,8 @@ const projectData: ProjectData = {
             githubUrl: '',
             documentationUrl: '',
             projectPageUrl: '/projects/Elevator-Simulator',
-            videoPath: '/images/Elevator-Simulator/Elevator-Simulator-demo.mp4',
+            videoPath:
+                '/images/Concurrent-Elevator/Concurrent-Elevator-demo.mp4',
             accomplishments: [
                 'Developed UML Class diagrams representing the system design',
                 'Added the ability to inject and handle errors that can occur within an elevator such as doors not closing',
@@ -272,7 +273,7 @@ const projectData: ProjectData = {
             githubUrl: 'https://github.com/flavji/digitalRisk',
             documentationUrl: 'https://github.com/flavji/digitalRisk/wiki',
             projectPageUrl: '/projects/digitalRisk',
-            videoPath: '/images/Digital-Risk/Digital-Risk-demo.mp4',
+            videoPath: '/images/digitalRisk/digitalRisk-demo.mp4',
             accomplishments: [
                 'Contributed to the development of a Swing GUI ',
                 'Contributed to the development of classes representing aspects of the model, view, and controller of a Risk game',

@@ -20,8 +20,8 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 className="flex pt-12 xs:flex-col sm:flex-row sm:items-center sm:justify-between"
                 id="project-info"
             >
-                <div className="mx-4 flex items-center space-x-2 10xl:mx-10">
-                    <div>
+                <div className="mx-4 flex items-center gap-2 7xl:gap-8 10xl:mx-10 10xl:gap-10">
+                    <div className="7xl:py-12 11xl:py-16">
                         <h2 className="h2-text text-light-text-900 dark:text-dark-text-800">
                             <span>
                                 <Link
@@ -36,7 +36,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                         </h2>
                     </div>
 
-                    <div className="mt-1 flex items-center space-x-2 text-gray-800">
+                    <div className="mt-1 flex items-center gap-2 text-gray-800 7xl:gap-8 10xl:gap-10">
                         {project.githubUrl ? (
                             <a
                                 className="social-icons"
@@ -82,7 +82,10 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
             </section>
 
             {/* Project Description Section */}
-            <section className="mx-4 10xl:mx-10" id="project-description">
+            <section
+                className="mx-4 lg:my-2 2xl:mt-2 3xl:mt-4 6xl:-mt-2 10xl:mx-10"
+                id="project-description"
+            >
                 <p className="body-text text-light-text-600 dark:text-dark-text-700">
                     {project.description}
                 </p>
@@ -103,25 +106,33 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
             <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
 
             {/* Project Authors Section */}
-            <section className="mx-4 10xl:mx-10" id="project-authors">
+            <section
+                className="mx-4 7xl:py-12 10xl:mx-10 11xl:py-16"
+                id="project-authors"
+            >
                 <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                     Co-Authors
                 </h3>
-                <p className="body-text mt-2 pb-4 text-light-text-600 dark:text-dark-text-700">
-                    {project.contributors}.
-                </p>
+                <div className="7xl:mt-10">
+                    <p className="body-text mt-2 pb-4 text-light-text-600 dark:text-dark-text-700">
+                        {project.contributors}.
+                    </p>
+                </div>
             </section>
 
             <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
 
             {/* Accomplishments Section */}
-            <section className="mx-4 10xl:mx-10" id="project-accomplishments">
+            <section
+                className="mx-4 7xl:py-12 10xl:mx-10 11xl:py-16"
+                id="project-accomplishments"
+            >
                 <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                     Accomplishments
                 </h3>
 
                 <div className="mx-2 pb-4">
-                    <ul className="list-inside list-disc">
+                    <ul className="list-inside list-disc 7xl:mt-10 8xl:mt-16">
                         {project.accomplishments.map((accomplishment) => (
                             <li
                                 className="text-clamp-accomplishment leading-relaxed text-light-text-600 dark:text-dark-text-700"
@@ -134,7 +145,9 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 </div>
             </section>
 
-            <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
+            {project.videoPath !== '' && (
+                <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
+            )}
 
             {/* Project Demo Video Section */}
             {project.videoPath !== '' && (

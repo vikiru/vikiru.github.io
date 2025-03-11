@@ -14,26 +14,34 @@ function Footer() {
 
                 {/* Read More Section */}
                 <section className="text-center md:text-left" id="read-more">
-                    <h3 className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
+                    <h3
+                        className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 7xl:py-12 11xl:py-16 dark:text-dark-text-600"
+                        style={{ fontSize: 'clamp(1.25rem, 1.65vw, 6.5rem)' }}
+                    >
                         Read More
                     </h3>
-                    <ul className="space-y-2">
+                    <div className="flex flex-col gap-2 7xl:gap-8 8xl:gap-10 9xl:gap-12 10xl:gap-20">
                         {navData.map((item) => (
-                            <li key={item.navTitle}>
-                                <Link className="footer-link" to={item.navLink}>
-                                    {item.navTitle}
-                                </Link>
-                            </li>
+                            <Link
+                                className="footer-link"
+                                key={item.navTitle}
+                                to={item.navLink}
+                            >
+                                {item.navTitle}
+                            </Link>
                         ))}
-                    </ul>
+                    </div>
                 </section>
 
                 {/* Social Icons Section */}
                 <section className="text-center md:text-left" id="social-icons">
-                    <h3 className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
+                    <h3
+                        className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 7xl:py-12 11xl:py-16 dark:text-dark-text-600"
+                        style={{ fontSize: 'clamp(1.25rem, 1.65vw, 6.5rem)' }}
+                    >
                         Connect With Me
                     </h3>
-                    <div className="flex items-center justify-center space-x-4 md:justify-start 10xl:space-x-8">
+                    <div className="flex items-center justify-center gap-4 md:justify-start 7xl:gap-8 10xl:gap-10">
                         <a
                             href="https://github.com/vikiru"
                             rel="noopener noreferrer"
@@ -65,7 +73,10 @@ function Footer() {
             </div>
 
             {/* Copyright Section */}
-            <section className="text-center xs:mt-4 lg:mt-6" id="copyright">
+            <section
+                className="text-center xs:mt-4 lg:mt-6 7xl:mt-10"
+                id="copyright"
+            >
                 <p
                     className="text-light-text-400 dark:text-dark-text-500"
                     style={{ fontSize: 'clamp(0.9rem, 1.25vw, 4rem)' }}
