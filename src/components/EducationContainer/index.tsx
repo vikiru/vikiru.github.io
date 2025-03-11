@@ -18,14 +18,14 @@ function EducationContainer() {
 
                 {/* Coursera Certificates */}
                 <section className="mt-2" id="coursera-certificates">
-                    <div className="mx-4 xs:pt-2 7xl:pt-4 10xl:mx-10 11xl:pt-12">
+                    <div className="mx-4 xs:pt-2 6xl:pt-4 10xl:mx-10 11xl:pt-12">
                         <div className="xl:pb-1 2xl:pb-2 3xl:pb-4">
                             <h3 className="h4-text text-light-text-900 dark:text-dark-text-800">
                                 Coursera
                             </h3>
                         </div>
 
-                        <div className="xl:mt-2 5xl:mt-10 10xl:mt-6">
+                        <div className="xl:mt-2">
                             {courseraCertificates.map((certificate) => {
                                 return (
                                     <div
