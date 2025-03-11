@@ -2,7 +2,7 @@ import 'module-alias/register';
 import fs from 'fs';
 import moment from 'moment';
 import path from 'path';
-import sitemap from '~data/sitemap';
+import { sitemap } from '~data/index';
 import { SitemapGroup } from '~types/index';
 
 const HOST_NAME = 'https://vikiru.vercel.app';

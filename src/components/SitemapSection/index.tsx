@@ -3,7 +3,7 @@ import { sitemap } from '~data/index';
 
 function SitemapSection() {
     return (
-        <section className="min-h-[80vh] xs:pt-6 lg:py-12 " id="sitemap">
+        <section className="min-h-[80vh] xs:pt-6 lg:py-12" id="sitemap">
             <div className="xs:mx-4 10xl:mx-10">
                 <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
                     Sitemap

@@ -1,7 +1,5 @@
-import { featuredProjects, otherProjects } from '~data/projects';
-import { Project } from '~types/Project';
-import { SitemapGroup } from '~types/SitemapGroup';
-import { SitemapItem } from '~types/SitemapItem';
+import { featuredProjects, otherProjects } from '~data/index';
+import { Project, SitemapGroup, SitemapItem } from '~types/index';
 
 const sitemap: SitemapGroup[] = [
     {
