@@ -73,7 +73,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                     <p
                         className="info-text"
                         style={{
-                            fontSize: 'clamp(0.8rem, 1.75vw, 5rem)',
+                            fontSize: 'clamp(1rem, 1.95vw, 5rem)',
                         }}
                     >
                         {project.startDate} - {project.endDate}
@@ -100,7 +100,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 ))}
             </section>
 
-            <div className="my-4 border-t border-gray-300" />
+            <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
 
             {/* Project Authors Section */}
             <section className="mx-4 10xl:mx-10" id="project-authors">
@@ -112,7 +112,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 </p>
             </section>
 
-            <div className="my-4 border-t border-gray-300" />
+            <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
 
             {/* Accomplishments Section */}
             <section className="mx-4 10xl:mx-10" id="project-accomplishments">
@@ -134,8 +134,8 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 </div>
             </section>
 
-            <div className="my-4 border-t border-gray-300" />
-
+            <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
+                          
             {/* Project Demo Video Section */}
             {project.videoPath !== '' && (
                 <section className="mx-4 10xl:mx-10" id="project-demo">

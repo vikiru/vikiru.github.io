@@ -27,7 +27,7 @@ function ProjectContainer() {
                     </div>
 
                     {/* Divider */}
-                    <div className="my-8 border-t border-gray-300" />
+                    <div className="my-8 border-t border-gray-300 dark:border-dark-background-600" />
                 </section>
 
                 {/* Other Projects Section */}

@@ -8,10 +8,10 @@ function Hero() {
         >
             {/** Hero */}
             <div className="hero-ctr">
-                <h1 className="h1-text xs:tracking-wide sm:tracking-tight">
+                <h1 className="h1-text text-light-text-900 xs:tracking-wide sm:tracking-tight dark:text-dark-text-50">
                     Hello, my name is Visakan Kirubakaran
                 </h1>
-                <p className="body-text text-light-text-700 dark:text-dark-text-100">
+                <p className="body-text font-medium text-light-text-700 dark:text-dark-text-100">
                     I am a dedicated software developer with a passion for
                     software and web development. Utilizing my knowledge and
                     skills, I wish to challenge myself as I contribute to

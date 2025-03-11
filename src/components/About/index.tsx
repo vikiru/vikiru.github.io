@@ -13,7 +13,8 @@ function About() {
                     <p className="body-text text-light-text-600 dark:text-dark-text-700">
                         My journey into the world of software development began
                         with an introduction to computer science and
-                        programming, utilizing languages such as C++ and Java.
+                        programming, utilizing languages such as C++ and Java.{' '}
+                        <br className="xs:block sm:hidden" />
                         Following that, my software engineering degree at
                         Carleton University provided me with a strong foundation
                         of knowledge and exposure to various languages,

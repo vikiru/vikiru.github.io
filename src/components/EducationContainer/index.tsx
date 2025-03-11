@@ -25,16 +25,16 @@ function EducationContainer() {
                         {courseraCertificates.map((certificate) => {
                             return (
                                 <div
-                                    className="mt-2"
+                                    className="xs:mt-0 lg:mt-2 9xl:mt-8"
                                     key={certificate.certificationName}
                                 >
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex items-center justify-between 9xl:my-4">
                                         <div>
                                             <h4
-                                                className="font-subheading italic text-light-text-900 dark:text-dark-text-800"
+                                                className="info-text font-subheading italic text-light-text-900 dark:text-dark-text-800"
                                                 style={{
                                                     fontSize:
-                                                        'clamp(0.8rem, 1.25vw, 5rem)',
+                                                        'clamp(0.66rem, 1.25vw, 5rem)',
                                                 }}
                                             >
                                                 {certificate.certificationName}
@@ -48,7 +48,7 @@ function EducationContainer() {
                                         </div>
                                     </div>
 
-                                    <div>
+                                    <div className="xs:my-0 lg:my-2 9xl:my-8">
                                         <a
                                             className="text-clamp-button font-semibold text-light-accent-500 transition-colors duration-200 hover:text-light-accent-500/50 motion-reduce:transition-none dark:text-dark-accent-500 dark:hover:text-dark-accent-500/50"
                                             href={certificate.certificateLink}

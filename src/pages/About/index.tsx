@@ -13,11 +13,11 @@ function AboutPage() {
         >
             {/* About Section */}
             <About />
-            <div className="my-8 border-t border-gray-300" />
+            <div className="my-8 border-t border-gray-300 dark:border-dark-background-600" />
 
             {/* Education Section */}
             <EducationContainer />
-            <div className="my-8 border-t border-gray-300" />
+            <div className="my-8 border-t border-gray-300 dark:border-dark-background-600" />
 
             {/* Skills Section */}
             <SkillsContainer />

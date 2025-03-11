@@ -39,9 +39,9 @@ function CourseContainer() {
                     <div className="mx-2 flex items-center justify-between">
                         <div>
                             <h4
-                                className="font-subheading italic text-light-text-600 dark:text-dark-text-700"
+                                className="info-text font-subheading italic text-light-text-600 dark:text-dark-text-700"
                                 style={{
-                                    fontSize: 'clamp(0.66rem, 1.45vw, 5rem)',
+                                    fontSize: 'clamp(0.65rem, 1.25vw, 5rem)',
                                 }}
                             >
                                 {educationData.degree} - {educationData.acronym}
@@ -49,7 +49,7 @@ function CourseContainer() {
                             </h4>
                         </div>
 
-                        <div>
+                        <div className="flex items-center justify-center">
                             <p className="info-text">
                                 {educationData.enrollmentStart} -{' '}
                                 {educationData.enrollmentEnd}
@@ -71,7 +71,7 @@ function CourseContainer() {
                                 </h3>
                             </div>
 
-                            <div className="mx-2 grid gap-2 lg:grid-cols-2 3xl:pb-8 4xl:pb-10 5xl:pb-12 6xl:pb-14 7xl:pb-16 10xl:mx-10 10xl:gap-10">
+                            <div className="mx-2 grid xs:gap-2 lg:grid-cols-2 lg:gap-4 3xl:pb-8 4xl:pb-10 5xl:pb-12 6xl:pb-14 7xl:pb-16 10xl:mx-10 10xl:gap-10">
                                 {year.courses.map((course) => (
                                     <CourseCard
                                         course={course}
@@ -81,7 +81,7 @@ function CourseContainer() {
                             </div>
 
                             <div
-                                className={`mb-4 mt-8 ${year.title !== 'Fourth Year' ? 'border-t border-gray-300' : ''}`}
+                                className={`mb-4 mt-8 ${year.title !== 'Fourth Year' ? 'border-t border-gray-300 dark:border-dark-background-600' : ''}`}
                             />
                         </section>
                     ))}
