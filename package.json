@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "lint": "eslint ./src/**/* --fix-dry-run",
+    "lint": "eslint ./src/**/*{js,jsx,ts,tsx} --fix-dry-run",
     "prettier": "eslint --fix . && prettier --write .",
     "generate-sitemap": "ts-node -r module-alias/register src/scripts/generateSitemap.ts"
   },
