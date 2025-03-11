@@ -12,7 +12,7 @@ type ShowcaseSectionProps = {
 function ShowcaseSection({ project }: ShowcaseSectionProps) {
     return (
         <section
-            className="min-h-screen overflow-hidden bg-background-950"
+            className="bg-background-950 min-h-screen overflow-hidden"
             id={project.name + '-showcase'}
         >
             {/* Project Info Section */}
@@ -25,12 +25,12 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                         <h2 className="h2-text text-light-text-900 dark:text-dark-text-800">
                             <span>
                                 <Link
-                                    className="text-light-accent-300 hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500 underline"
+                                    className="text-light-accent-300 underline hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500"
                                     to="/projects"
                                 >
                                     projects
                                 </Link>
-                                {'/'}
+                                {' / '}
                             </span>
                             {project.name}
                         </h2>
@@ -38,13 +38,14 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
 
                     <div className="mt-1 flex items-center space-x-2 text-gray-800">
                         {project.githubUrl ? (
-                            <Link
+                            <a
                                 className="social-icons"
+                                href={project.githubUrl}
+                                rel="noopener noreferrer"
                                 target="_blank"
-                                to={project.githubUrl}
                             >
                                 <FontAwesomeIcon icon={faGithub} />
-                            </Link>
+                            </a>
                         ) : (
                             <span className="invisible text-clamp-icons">
                                 <FontAwesomeIcon icon={faGithub} />
@@ -52,13 +53,14 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                         )}
 
                         {project.documentationUrl ? (
-                            <Link
+                            <a
                                 className="social-icons"
+                                href={project.documentationUrl}
+                                rel="noopener noreferrer"
                                 target="_blank"
-                                to={project.documentationUrl}
                             >
                                 <FontAwesomeIcon icon={faBookOpen} />
-                            </Link>
+                            </a>
                         ) : (
                             <span className="invisible text-clamp-icons">
                                 <FontAwesomeIcon icon={faBookOpen} />
@@ -105,7 +107,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                     Co-Authors
                 </h3>
-                <p className="body-text text-light-text-600 dark:text-dark-text-700 mt-2 pb-4">
+                <p className="body-text mt-2 pb-4 text-light-text-600 dark:text-dark-text-700">
                     {project.contributors}.
                 </p>
             </section>
@@ -122,7 +124,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                     <ul className="list-inside list-disc">
                         {project.accomplishments.map((accomplishment) => (
                             <li
-                                className="text-light-text-600 dark:text-dark-text-700 text-clamp-accomplishment leading-relaxed"
+                                className="text-clamp-accomplishment leading-relaxed text-light-text-600 dark:text-dark-text-700"
                                 key={accomplishment}
                             >
                                 {accomplishment}.

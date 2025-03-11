@@ -20,11 +20,7 @@ function Footer() {
                     <ul className="space-y-2">
                         {navData.map((item) => (
                             <li key={item.navTitle}>
-                                <Link
-                                    className="footer-link"
-                                    target="_blank"
-                                    to={item.navLink}
-                                >
+                                <Link className="footer-link" to={item.navLink}>
                                     {item.navTitle}
                                 </Link>
                             </li>

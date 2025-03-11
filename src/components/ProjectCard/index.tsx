@@ -34,13 +34,14 @@ function ProjectCard(props: ProjectCardProps) {
                         style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                     >
                         {project.githubUrl ? (
-                            <Link
+                            <a
                                 className="social-icons"
+                                href={project.githubUrl}
+                                rel="noreferrer"
                                 target="_blank"
-                                to={project.githubUrl}
                             >
                                 <FontAwesomeIcon icon={faGithub} />
-                            </Link>
+                            </a>
                         ) : (
                             <span className="invisible text-clamp-icons">
                                 <FontAwesomeIcon icon={faGithub} />
@@ -48,13 +49,14 @@ function ProjectCard(props: ProjectCardProps) {
                         )}
 
                         {project.documentationUrl ? (
-                            <Link
+                            <a
                                 className="social-icons"
+                                href={project.documentationUrl}
+                                rel="noreferrer"
                                 target="_blank"
-                                to={project.documentationUrl}
                             >
                                 <FontAwesomeIcon icon={faBookOpen} />
-                            </Link>
+                            </a>
                         ) : (
                             <span className="invisible text-clamp-icons">
                                 <FontAwesomeIcon icon={faBookOpen} />
