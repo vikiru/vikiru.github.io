@@ -5,7 +5,9 @@ function SitemapSection() {
     return (
         <section className="min-h-[80vh] xs:pt-6 lg:py-12 " id="sitemap">
             <div className="xs:mx-4 10xl:mx-10">
-                <h2 className="h2-text text-center">Sitemap</h2>
+                <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+                    Sitemap
+                </h2>
             </div>
 
             {/* Sitemap Content*/}
@@ -15,12 +17,14 @@ function SitemapSection() {
                     id={group.category.toLowerCase()}
                     key={group.category}
                 >
-                    <h3 className="h3-text">{group.category}</h3>
+                    <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+                        {group.category}
+                    </h3>
                     <div className="9xl:my-18 border-t border-gray-300 xs:my-2 lg:my-4 3xl:my-6 4xl:my-8 5xl:my-10 6xl:my-12 7xl:my-14 8xl:my-16" />
                     <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
                         {group.items.map((item) => (
                             <section
-                                className="body-text text-text-600 transition-colors duration-300 hover:text-accent-500 hover:underline"
+                                className="sitemap-link"
                                 id={item.name.toLowerCase()}
                                 key={item.name}
                             >

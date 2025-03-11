@@ -9,7 +9,7 @@ function CourseCard(props: CourseCardProps) {
 
     return (
         <section
-            className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20"
+            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md 9xl:p-20 dark:bg-dark-primary-500"
             id={course.courseCode.toLowerCase()}
         >
             {/* Course Header */}
@@ -18,13 +18,13 @@ function CourseCard(props: CourseCardProps) {
                 id="course-header"
             >
                 <div>
-                    <h4 className="h4-text">{course.name}</h4>
+                    <h4 className="h4-text text-light-text-900 dark:text-dark-text-800">
+                        {course.name}
+                    </h4>
                 </div>
 
                 <div className="mx-2">
-                    <p className="info-text text-secondary-500">
-                        {course.courseCode}
-                    </p>
+                    <p className="info-text">{course.courseCode}</p>
                 </div>
             </section>
 
@@ -33,7 +33,9 @@ function CourseCard(props: CourseCardProps) {
                 className="xs:min-h-36 10xl:min-h-72"
                 id="course-description"
             >
-                <p className="card-text text-text-600">{course.description}</p>
+                <p className="card-text text-light-text-600 dark:text-dark-text-700">
+                    {course.description}
+                </p>
             </section>
         </section>
     );

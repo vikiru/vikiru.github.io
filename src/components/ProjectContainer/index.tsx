@@ -5,14 +5,14 @@ import { Project } from '~types/index';
 function ProjectContainer() {
     return (
         <section
-            className="mx-auto bg-background-950 xs:pt-6 lg:py-12"
+            className="bg-background-950 mx-auto xs:pt-6 lg:py-12"
             id="projects"
         >
             <div className="px-6 sm:px-8 lg:px-12">
                 {/* Featured Projects Section */}
                 <section id="featured-projects">
                     <div className="lg:pb-6">
-                        <h2 className="h2-text text-center">
+                        <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
                             Featured Projects
                         </h2>
                     </div>
@@ -33,7 +33,9 @@ function ProjectContainer() {
                 {/* Other Projects Section */}
                 <section id="other-projects">
                     <div className="lg:pb-6">
-                        <h2 className="h2-text text-center">Other Projects</h2>
+                        <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+                            Other Projects
+                        </h2>
                     </div>
 
                     <div

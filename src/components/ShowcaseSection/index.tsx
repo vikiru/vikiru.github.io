@@ -12,29 +12,40 @@ type ShowcaseSectionProps = {
 function ShowcaseSection({ project }: ShowcaseSectionProps) {
     return (
         <section
-            className="min-h-screen overflow-hidden bg-background-950"
+            className="bg-background-950 min-h-screen overflow-hidden"
             id={project.name + '-showcase'}
         >
             {/* Project Info Section */}
             <section
-                className="flex items-center justify-between pt-12"
+                className="flex pt-12 xs:flex-col sm:flex-row sm:items-center sm:justify-between"
                 id="project-info"
             >
                 <div className="mx-4 flex items-center space-x-2 10xl:mx-10">
                     <div>
-                        <h2 className="h2-text">{project.name}</h2>
+                        <h2 className="h2-text text-light-text-900 dark:text-dark-text-800">
+                            <span>
+                                <Link
+                                    className="text-light-accent-300 underline hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500"
+                                    to="/projects"
+                                >
+                                    projects
+                                </Link>
+                                {' / '}
+                            </span>
+                            {project.name}
+                        </h2>
                     </div>
 
                     <div className="mt-1 flex items-center space-x-2 text-gray-800">
                         {project.githubUrl ? (
-                            <Link
-                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                            <a
+                                className="social-icons"
+                                href={project.githubUrl}
+                                rel="noopener noreferrer"
                                 target="_blank"
-                                title="View project on GitHub"
-                                to={project.githubUrl}
                             >
                                 <FontAwesomeIcon icon={faGithub} />
-                            </Link>
+                            </a>
                         ) : (
                             <span className="invisible text-clamp-icons">
                                 <FontAwesomeIcon icon={faGithub} />
@@ -42,14 +53,14 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                         )}
 
                         {project.documentationUrl ? (
-                            <Link
-                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                            <a
+                                className="social-icons"
+                                href={project.documentationUrl}
+                                rel="noopener noreferrer"
                                 target="_blank"
-                                title="View project documentation"
-                                to={project.documentationUrl}
                             >
                                 <FontAwesomeIcon icon={faBookOpen} />
-                            </Link>
+                            </a>
                         ) : (
                             <span className="invisible text-clamp-icons">
                                 <FontAwesomeIcon icon={faBookOpen} />
@@ -62,7 +73,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                     <p
                         className="info-text"
                         style={{
-                            fontSize: 'clamp(0.8rem, 1.5vw, 5rem)',
+                            fontSize: 'clamp(0.8rem, 1.75vw, 5rem)',
                         }}
                     >
                         {project.startDate} - {project.endDate}
@@ -72,12 +83,14 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
 
             {/* Project Description Section */}
             <section className="mx-4 10xl:mx-10" id="project-description">
-                <p className="body-text text-text-600">{project.description}</p>
+                <p className="body-text text-light-text-600 dark:text-dark-text-700">
+                    {project.description}
+                </p>
             </section>
 
             {/* Technologies Used Section */}
             <section
-                className="container mx-4 mt-2 flex flex-wrap gap-3 pb-4 10xl:mx-10"
+                className="container mx-4 mt-2 flex flex-wrap pb-4 xs:gap-3 10xl:mx-10"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (
@@ -91,8 +104,10 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
 
             {/* Project Authors Section */}
             <section className="mx-4 10xl:mx-10" id="project-authors">
-                <h3 className="h3-text">Co-Authors</h3>
-                <p className="body-text pb-4 text-text-600">
+                <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+                    Co-Authors
+                </h3>
+                <p className="body-text mt-2 pb-4 text-light-text-600 dark:text-dark-text-700">
                     {project.contributors}.
                 </p>
             </section>
@@ -101,13 +116,15 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
 
             {/* Accomplishments Section */}
             <section className="mx-4 10xl:mx-10" id="project-accomplishments">
-                <h3 className="h3-text">Accomplishments</h3>
+                <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+                    Accomplishments
+                </h3>
 
                 <div className="mx-2 pb-4">
                     <ul className="list-inside list-disc">
                         {project.accomplishments.map((accomplishment) => (
                             <li
-                                className="text-clamp-accomplishment leading-relaxed text-text-600"
+                                className="text-clamp-accomplishment leading-relaxed text-light-text-600 dark:text-dark-text-700"
                                 key={accomplishment}
                             >
                                 {accomplishment}.

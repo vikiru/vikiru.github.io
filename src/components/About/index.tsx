@@ -1,11 +1,16 @@
 function About() {
     return (
-        <section className="min-h-[30vh] bg-background-950" id="about">
+        <section
+            className="min-h-[30vh] bg-light-background-950 dark:bg-dark-background-700"
+            id="about"
+        >
             <div className="xs:pt-6 lg:pt-12">
                 {/* Hero Section */}
-                <h2 className="h2-text text-center">About</h2>
+                <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+                    About
+                </h2>
                 <div className="mx-4 10xl:mx-10">
-                    <p className="body-text text-text-600">
+                    <p className="body-text text-light-text-600 dark:text-dark-text-700">
                         My journey into the world of software development began
                         with an introduction to computer science and
                         programming, utilizing languages such as C++ and Java.
