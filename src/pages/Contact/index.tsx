@@ -4,7 +4,7 @@ function Contact() {
     return (
         <Layout
             description="Contact me directly via email or by using the contact form."
-            title="Contact"
+            title="Visakan Kirubakaran | Contact"
         >
             <ContactSection />
         </Layout>
