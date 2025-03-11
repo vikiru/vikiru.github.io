@@ -71,7 +71,7 @@ function CourseContainer() {
                                 </h3>
                             </div>
 
-                            <div className="mx-2 grid gap-2 md:grid-cols-2 3xl:pb-8 4xl:pb-10 5xl:pb-12 6xl:pb-14 7xl:pb-16 10xl:mx-10 10xl:gap-10">
+                            <div className="mx-2 grid gap-2 lg:grid-cols-2 3xl:pb-8 4xl:pb-10 5xl:pb-12 6xl:pb-14 7xl:pb-16 10xl:mx-10 10xl:gap-10">
                                 {year.courses.map((course) => (
                                     <CourseCard
                                         course={course}
