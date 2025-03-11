@@ -1,37 +1,42 @@
 <h1 align="center">Visakan Kirubakaran <br> Portfolio</h1>
 
-<p align="center">
-	<a href="https://github.com/vikiru/vikiru.github.io/blob/main/LICENSE">
-		<img src="https://img.shields.io/badge/license-MIT-aqua" alt="MIT License Badge"/>
-	</a>
-	<a href="https://github.com/prettier/prettier">
-		<img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Code Style - Prettier"/>
-	</a>
-	<a href="https://wakatime.com/@vikiru/projects/fqvyqubpbg">
-		<img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
-		alt="Wakatime Coding Stats for Portfolio Website"/>
-	</a>
-	<br>
-	<a href="https://github.com/vikiru/vikiru.github.io/releases">
-		<img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release"/>
-	</a>
-	<a href="https://github.com/vikiru/vikiru.github.io/issues?q=is%3Aissue+is%3Aclosed">
-		<img src="https://img.shields.io/github/issues-closed/vikiru/vikiru.github.io" alt="Closed Issues"/>
-	</a>
-	<a href="https://github.com/vikiru/vikiru.github.io/pulls?q=is%3Apr+is%3Aclosed">
-		<img src="https://img.shields.io/github/issues-pr-closed/vikiru/vikiru.github.io?label=closed%20prs" alt="Closed PRs">
-	</a>
-	<br>
-	<a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
-		<img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status"/>
-	</a>
+<p align="left">
+  <a href="https://github.com/vikiru/vikiru.github.io/releases">
+    <img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release" />
+  </a>
+  <a href="https://github.com/vikiru/vikiru.github.io/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-aqua" alt="MIT License Badge" />
+  </a>
+  <a href="https://wakatime.com/@vikiru/projects/fqvyqubpbg">
+    <img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
+         alt="Wakatime Coding Stats for Portfolio Website" />
+  </a>
+  <a href="https://github.com/vikiru/vikiru.github.io/issues?q=is%3Aissue+is%3Aclosed">
+    <img src="https://img.shields.io/github/issues-closed/vikiru/vikiru.github.io" alt="Closed Issues" />
+  </a>
+  <a href="https://github.com/vikiru/vikiru.github.io/pulls?q=is%3Apr+is%3Aclosed">
+    <img src="https://img.shields.io/github/issues-pr-closed/vikiru/vikiru.github.io?label=closed%20prs" alt="Closed PRs" />
+  </a>
+  <a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
+    <img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status" />
+  </a>
+  <a href="https://github.com/prettier/prettier">
+    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Code Style - Prettier" />
+  </a>
 </p>
+
 
 ## 🌐 Portfolio Overview
 
-<p align="justify">My portfolio website serves as a comprehensive showcase of my expertise, abilities, and the breadth of my project experience. It’s crafted using the dynamic capabilities of React coupled with the aesthetic flexibility of TailwindCSS.</p>
+<p>
+  My personal portfolio website serves as a comprehensive showcase of my expertise, skills, and the wide range of projects I’ve worked on. It's built using <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a> and <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a>, 
+  and is currently hosted on <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>.
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>
+  This project was bootstrapped with <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>.
+</p>
+
 
 <details closed>
 
@@ -39,44 +44,37 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### 📄 About
 
-**Name**: Visakan Kirubakaran
+#### 🎓 Education
 
-**Title**: Software Developer
+- **Bachelor of Engineering - BEng, Software Engineering**  
+  Carleton University (Sept 2018 - Apr 2023)
 
-### 🎓 Education
+- **IBM Full Stack Software Developer Certificate**  
+  [Coursera](https://coursera.org/share/2c288e462af814df334a75f4e59cbfe6) (Oct 2023 - Nov 2023)
 
-**Bachelor of Engineering - BEng., Software Engineering** - Carleton University (Sept 2018 - Apr 2023)
+- **IBM DevOps and Software Engineering Certificate**  
+  [Coursera](https://coursera.org/share/ff5dc718cd4f17208f60c5004f079928) (Nov 2023 - Dec 2023)
 
-**IBM Full Stack Software Developer Certificate** - [Coursera](https://coursera.org/share/2c288e462af814df334a75f4e59cbfe6) (Oct 2023 - Nov 2023)
 
-**IBM DevOps and Software Engineering Certificate** - [Coursera](https://coursera.org/share/ff5dc718cd4f17208f60c5004f079928) (Nov 2023 - Dec 2023)
+#### 💡 Skills
 
-### 💡 Skills
+- **Languages**: Java, Python, HTML, CSS, JavaScript, TypeScript
+- **Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Django, Flask
+- **Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
+- **Tools**: Maven, Node.js, npm, pip, git, GitHub, GitHub Desktop, Postman
+- **Database**: MySQL, SQLite, MongoDB, Sequelize, Mongoose
+- **DevOps**: CircleCI, GitHub Actions, Snyk
+- **Editor/IDE**: VSCode, IntelliJ, Eclipse
+- **Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase, Fl0, Surge.sh
+- **OS**: Windows, Ubuntu
 
-**Languages**: Java, Python, HTML, CSS, JavaScript
-
-**Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Django, Flask
-
-**Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
-
-**Tools**: Maven, npm, pip, git, GitHub, GitHub Desktop, Postman
-
-**Database**: MySQL, SQLite, MongoDB, Sequelize, Mongoose
-
-**DevOps**: CircleCI, GitHub Actions, Snyk
-
-**Editor/IDE**: VSCode, IntelliJ, Eclipse
-
-**Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase, Fl0, Surge.sh
-
-**Runtime**: Node.js
-
-**OS**: Windows, Ubuntu
 
 ### 📚 Projects
 
-<details>
-<summary><h3> View all projects </h3></summary>
+#### ⭐ Featured Projects
+
+<details closed>
+<summary>View</summary>
 
 - **Kelbrum | Anime Recommendation System**
   - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
@@ -93,11 +91,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [GitHub Repo](https://github.com/vikiru/restasaurus)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/RESTasaurus)
 
-- **Portfolio Website**
-  - Technologies Used: `React`, `React Router`, `TailwindCSS`
-  - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/Portfolio)
-
 - **Urvo | Multi-purpose Discord Bot**
   - Technologies Used: `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
   - [GitHub Repo](https://github.com/vikiru/Urvo)
@@ -107,6 +100,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
   - [GitHub Repo](https://github.com/vikiru/CodeSmell)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/CodeSmell)
+
+</details>
+
+#### 🛠️ Other Projects
+
+<details closed>
+<summary>View</summary>
+
+- **Portfolio Website**
+  - Technologies Used: `React`, `React Router`, `TailwindCSS`
+  - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
+  - [Project Showcase Page](https://vikiru.vercel.app/projects/Portfolio)
 
 - **discrete-sim | Manufacturing Facility Simulation**
   - Technologies Used: `Python`, `NumPy`, `SciPy`, `SimPy`
@@ -123,7 +128,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - GitHub Repo: `private`
   - [Project Showcase Page](https://vikiru.vercel.app/projects/Elevator-Simulator)
 
-- **digitalRisk | MVC Swing Game**
+- **Digital Risk | MVC Swing Game**
   - Technologies Used: `Java`, `Maven`, `JUnit`, `Swing`
   - [GitHub Repo](https://github.com/flavji/digitalRisk)
   - [Project Showcase Page](https://vikiru.vercel.app/projects/digitalRisk)
@@ -150,6 +155,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [🎓 Education](#-education)
   - [💡 Skills](#-skills)
   - [📚 Projects](#-projects)
+    - [⭐Featured Projects](#-featured-projects)
+    - [🛠️ Other Projects](#-other-projects)
   - [📧 Contact](#-contact)
 - [📖 Table of Contents](#-table-of-contents)
 - [🛠️ Tech Stack](#️-tech-stack)
@@ -162,27 +169,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## 🛠️ Tech Stack
 
-**Frontend**:
-
-- [React](https://react.dev/)
-- [React Router](https://reactrouter.com/en/main)
-- [TailwindCSS](https://tailwindcss.com/)
+**Frontend**: [React](https://react.dev/), [React Router](https://reactrouter.com/en/main), [TailwindCSS](https://tailwindcss.com/)
 
 **Hosting**: [Vercel](https://vercel.com/)
 
-**CI**:
-
-- [GitHub Actions](https://github.com/features/actions)
-- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
+**CI**: [GitHub Actions](https://github.com/features/actions), [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
 
 **Dev Tools**:
 
-- **Linting**: [ESLint](https://eslint.org/)
-- **Formatting**: [Prettier](https://prettier.io/)
-- **Code Time Tracking**: [WakaTime](https://wakatime.com/)
-- **Design**: [Figma](https://www.figma.com/) - initial design mockup files can be seen [here](https://www.figma.com/file/eFWKPcabJAf7FLOdOXd5d6/Portfolio-Website?type=design&t=HThRE3vIBx3VTIwe-6)
-- **Analytics**: [Google Analytics](https://marketingplatform.google.com/about/analytics/)
-- **Contact Form Backend**: [Kwes Forms](https://kwesforms.com/)
+- **Linting**: [ESLint](https://eslint.org/).
+- **Formatting**: [Prettier](https://prettier.io/).
+- **Code Time Tracking**: [WakaTime](https://wakatime.com/).
+- **Design**: [Figma](https://www.figma.com/) - initial design mockup files can be seen [here](https://www.figma.com/file/eFWKPcabJAf7FLOdOXd5d6/Portfolio-Website?type=design&t=HThRE3vIBx3VTIwe-6).
+- **Analytics**: [Google Analytics](https://marketingplatform.google.com/about/analytics/).
+- **Contact Form Backend**: [Kwes Forms](https://kwesforms.com/).
 
 ## 📝 Prerequisites
 
@@ -212,6 +212,7 @@ The portfolio website can be started locally via the following command:
 ```bash
 npm run start
 ```
+
 Once started, you can access the website locally via:
 
 ```bash
@@ -244,7 +245,7 @@ npm run lint
 npm run prettier
 ```
 
-5. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts).
+5. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts) and [`generateSitemap.ts`](./src/scripts/generateSitemap.ts).
 
 ```bash
 npm run generate-sitemap
