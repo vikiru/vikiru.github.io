@@ -176,9 +176,9 @@ const projectData: ProjectData = {
             description:
                 'A personal portfolio website showcasing my skills and projects.',
             startDate: 'Nov 2023',
-            endDate: 'Jan 2024',
+            endDate: 'Mar 2025',
             technologiesUsed: [
-                'JavaScript',
+                'TypeScript',
                 'React',
                 'React Router',
                 'TailwindCSS',
