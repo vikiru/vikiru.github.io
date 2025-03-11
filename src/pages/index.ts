@@ -4,16 +4,6 @@ import Courses from '~pages/Courses';
 import Home from '~pages/Home';
 import Projects from '~pages/Projects';
 import ProjectShowcase from '~pages/ProjectShowcase';
-import Router from '~pages/Router';
 import Sitemap from '~pages/Sitemap';
 
-export {
-    About,
-    Contact,
-    Courses,
-    Home,
-    Projects,
-    ProjectShowcase,
-    Router,
-    Sitemap,
-};
+export { About, Contact, Courses, Home, Projects, ProjectShowcase, Sitemap };
