@@ -5,12 +5,8 @@ function FooterLogo() {
         <section className="text-center md:text-left" id="logo">
             <Link className="font-body text-clamp-nav " to="/">
                 <h2 className="logo group text-center tracking-widest">
-                    <span className="text-text-50 transition-colors duration-300 group-hover:text-accent-400">
-                        Visa
-                    </span>
-                    <span className="text-accent-400 transition-colors duration-300 group-hover:text-text-50">
-                        kan
-                    </span>
+                    <span className="logo-text">Visa</span>
+                    <span className="logo-accent">kan</span>
                 </h2>
             </Link>
         </section>

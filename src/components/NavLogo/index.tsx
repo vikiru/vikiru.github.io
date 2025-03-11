@@ -4,12 +4,10 @@ function NavLogo() {
     return (
         <section className="flex items-center" id="logo">
             <Link className="logo group" to="/">
-                <span className="text-text-50 transition-colors duration-300 group-hover:text-accent-400">
-                    V
-                </span>
-                <span className="text-accent-500 transition-colors duration-300 group-hover:text-text-50">
-                    K
-                </span>
+                <h2>
+                    <span className="logo-text">V</span>
+                    <span className="logo-accent">K</span>
+                </h2>
             </Link>
         </section>
     );

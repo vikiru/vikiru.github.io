@@ -3,15 +3,15 @@ import { CTA } from '~components/index';
 function Hero() {
     return (
         <section
-            className="flex items-center justify-center bg-gradient-to-tr from-blue-700 via-blue-100 to-blue-500 xs:min-h-[90vh] xs:pt-6 lg:pt-0"
+            className="flex items-center justify-center bg-gradient-to-tr from-blue-700 via-blue-100 to-blue-500 xs:min-h-[90vh] xs:pt-6 lg:pt-0 dark:from-blue-600 dark:via-blue-200 dark:to-blue-900"
             id="hero"
         >
             {/** Hero */}
-            <div className="m-2 xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl 5xl:max-w-[88rem] 7xl:max-w-[104rem] 9xl:max-w-[160rem] 10xl:max-w-[180rem] 11xl:max-w-[200rem]">
+            <div className="hero-ctr">
                 <h1 className="h1-text xs:tracking-wide sm:tracking-tight">
                     Hello, my name is Visakan Kirubakaran
                 </h1>
-                <p className="body-text text-text-700">
+                <p className="body-text text-light-text-700 dark:text-dark-text-100">
                     I am a dedicated software developer with a passion for
                     software and web development. Utilizing my knowledge and
                     skills, I wish to challenge myself as I contribute to

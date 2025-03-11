@@ -5,7 +5,9 @@ function CourseContainer() {
     return (
         <section className="bg-background-950 xs:py-6 lg:py-12" id="courses">
             <div className="pb-2">
-                <h2 className="h2-text text-center">Education</h2>
+                <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+                    Education
+                </h2>
             </div>
 
             <div className="xs:mx-2 10xl:mx-10">
@@ -14,7 +16,7 @@ function CourseContainer() {
                     <div className="mx-2 flex items-center justify-between">
                         <div>
                             <h3
-                                className="h3-text"
+                                className="h3-text text-light-text-900 dark:text-dark-text-800"
                                 style={{
                                     fontSize: 'clamp(1.5rem, 2.125vw, 6.5rem)',
                                 }}
@@ -24,7 +26,7 @@ function CourseContainer() {
                         </div>
                         <div>
                             <p
-                                className="font-body text-gray-700"
+                                className="font-body text-light-text-600 dark:text-dark-text-700"
                                 style={{
                                     fontSize: 'clamp(0.75rem, 1.45vw, 4.5rem)',
                                 }}
@@ -37,9 +39,9 @@ function CourseContainer() {
                     <div className="mx-2 flex items-center justify-between">
                         <div>
                             <h4
-                                className="font-subheading italic"
+                                className="font-subheading italic text-light-text-600 dark:text-dark-text-700"
                                 style={{
-                                    fontSize: 'clamp(0.65rem, 1.45vw, 5rem)',
+                                    fontSize: 'clamp(0.66rem, 1.45vw, 5rem)',
                                 }}
                             >
                                 {educationData.degree} - {educationData.acronym}
@@ -48,12 +50,7 @@ function CourseContainer() {
                         </div>
 
                         <div>
-                            <p
-                                className="info-text"
-                                style={{
-                                    fontSize: 'clamp(0.65rem, 1.35vw, 5rem)',
-                                }}
-                            >
+                            <p className="info-text">
                                 {educationData.enrollmentStart} -{' '}
                                 {educationData.enrollmentEnd}
                             </p>
@@ -69,7 +66,9 @@ function CourseContainer() {
                             key={year.title}
                         >
                             <div className="flex items-center justify-center pb-4">
-                                <h3 className="h3-text">{year.title}</h3>
+                                <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+                                    {year.title}
+                                </h3>
                             </div>
 
                             <div className="mx-2 grid gap-2 md:grid-cols-2 3xl:pb-8 4xl:pb-10 5xl:pb-12 6xl:pb-14 7xl:pb-16 10xl:mx-10 10xl:gap-10">

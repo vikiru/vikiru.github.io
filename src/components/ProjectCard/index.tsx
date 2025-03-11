@@ -13,7 +13,7 @@ function ProjectCard(props: ProjectCardProps) {
 
     return (
         <section
-            className="flex flex-col rounded-2xl bg-primary-900 p-6 shadow-md 9xl:p-20"
+            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md 9xl:p-20 dark:bg-dark-primary-500"
             id={project.name}
         >
             {/* Header with Icons */}
@@ -23,17 +23,19 @@ function ProjectCard(props: ProjectCardProps) {
             >
                 <div className="flex items-center space-x-2 3xl:space-x-4">
                     {/* Title */}
-                    <h3 className="h4-text">{project.name}</h3>
+                    <h3 className="h4-text text-light-text-900 dark:text-dark-text-800">
+                        {project.name}
+                    </h3>
 
                     {/* Icons */}
                     <section
-                        className="flex items-center space-x-2 text-accent-300 3xl:space-x-4"
+                        className="flex items-center space-x-2 3xl:space-x-4"
                         id="project-links"
                         style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                     >
                         {project.githubUrl ? (
                             <Link
-                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                className="social-icons"
                                 target="_blank"
                                 to={project.githubUrl}
                             >
@@ -47,7 +49,7 @@ function ProjectCard(props: ProjectCardProps) {
 
                         {project.documentationUrl ? (
                             <Link
-                                className="text-clamp-icons transition-colors duration-200 hover:text-accent-500"
+                                className="social-icons"
                                 target="_blank"
                                 to={project.documentationUrl}
                             >
@@ -63,7 +65,7 @@ function ProjectCard(props: ProjectCardProps) {
 
                 {/* Date Range */}
                 <div>
-                    <p className="info-text text-secondary-500">
+                    <p className="info-text">
                         {project.startDate} - {project.endDate}
                     </p>
                 </div>
@@ -74,13 +76,21 @@ function ProjectCard(props: ProjectCardProps) {
                 className="container flex min-h-20 flex-col pb-3 xs:mt-2 lg:mt-3"
                 id="project-description"
             >
-                <p className="card-text text-text-600">{project.description}</p>
+                <p className="card-text text-light-text-600 dark:text-dark-text-700">
+                    {project.description}
+                </p>
             </section>
 
             {/* Tech Stack Tags */}
-            <section className="flex min-h-20 flex-wrap gap-2" id="tech-stack">
+            <section
+                className="flex flex-wrap gap-2 lg:min-h-20"
+                id="tech-stack"
+            >
                 {project.technologiesUsed.map((tech, index) => (
-                    <div className="tech-tag text-secondary-950" key={index}>
+                    <div
+                        className="tech-tag text-light-secondary-950 dark:text-dark-secondary-50"
+                        key={index}
+                    >
                         {tech}
                     </div>
                 ))}
@@ -89,7 +99,7 @@ function ProjectCard(props: ProjectCardProps) {
             {/* CTA */}
             <section className="mt-4" id="project-cta">
                 <Link
-                    className="body-text font-semibold text-accent-300 transition-colors duration-200 hover:text-accent-500"
+                    className="body-text font-semibold text-light-accent-300 transition-colors duration-200 hover:text-light-accent-500 dark:text-dark-accent-200 dark:hover:text-dark-accent-400"
                     to={project.projectPageUrl}
                 >
                     Read More <span>→</span>
