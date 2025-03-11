@@ -145,7 +145,9 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 </div>
             </section>
 
-            <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
+            {project.videoPath !== '' && (
+                <div className="my-4 border-t border-gray-300 dark:border-dark-background-600" />
+            )}
 
             {/* Project Demo Video Section */}
             {project.videoPath !== '' && (
