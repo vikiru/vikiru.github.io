@@ -1,7 +1,7 @@
 function About() {
     return (
         <section
-            className="min-h-[30vh] bg-light-background-950 py-8 7xl:py-12 11xl:py-16 dark:bg-dark-background-700"
+            className="bg-light-background-950 xs:py-6 lg:py-12 5xl:mt-10 dark:bg-dark-background-700"
             id="about"
         >
             <div className="section-ctr">
