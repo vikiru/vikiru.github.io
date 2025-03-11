@@ -9,11 +9,11 @@
     }
 
     .logo-text {
-        @apply text-light-text-50 dark:text-dark-text-900 transition-colors duration-300 group-hover:text-light-accent-400 motion-reduce:transition-none dark:group-hover:text-dark-accent-500
+        @apply text-light-text-50 dark:text-dark-text-900
     }
 
     .logo-accent {
-        @apply text-light-accent-400 transition-colors dark:text-dark-accent-500 duration-300 group-hover:text-light-text-50 motion-reduce:transition-none dark:group-hover:text-dark-text-900
+        @apply text-light-accent-400 dark:text-dark-accent-500
     }
 
     .h1-text {
