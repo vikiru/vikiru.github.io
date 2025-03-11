@@ -7,25 +7,20 @@ import { FooterLogo } from '~components/index';
 
 function Footer() {
     return (
-        <footer className="mt-auto w-full bg-background-600 py-6 text-white 10xl:py-10">
+        <footer className="mt-auto w-full bg-light-background-600 py-6 10xl:py-10 dark:bg-dark-background-800">
             <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-4 md:grid-cols-3 lg:gap-8">
                 {/* Logo Section */}
                 <FooterLogo />
 
                 {/* Read More Section */}
                 <section className="text-center md:text-left" id="read-more">
-                    <h4 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
+                    <h3 className="h4-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
                         Read More
-                    </h4>
+                    </h3>
                     <ul className="space-y-2">
                         {navData.map((item) => (
                             <li key={item.navTitle}>
-                                <Link
-                                    className="font-body text-clamp-nav text-gray-300 transition-all duration-300 hover:text-accent-500 hover:underline"
-                                    target="_blank"
-                                    title={item.navDesc}
-                                    to={item.navLink}
-                                >
+                                <Link className="footer-link" to={item.navLink}>
                                     {item.navTitle}
                                 </Link>
                             </li>
@@ -35,18 +30,17 @@ function Footer() {
 
                 {/* Social Icons Section */}
                 <section className="text-center md:text-left" id="social-icons">
-                    <h4 className="h4-text mb-3 font-heading font-semibold tracking-wide text-gray-400">
+                    <h3 className="h4-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 dark:text-dark-text-600">
                         Connect With Me
-                    </h4>
+                    </h3>
                     <div className="flex items-center justify-center space-x-4 md:justify-start 10xl:space-x-8">
                         <a
                             href="https://github.com/vikiru"
                             rel="noopener noreferrer"
                             target="_blank"
-                            title="View my GitHub profile"
                         >
                             <FontAwesomeIcon
-                                className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
+                                className="social-icons"
                                 icon={faGithub}
                             />
                         </a>
@@ -54,20 +48,15 @@ function Footer() {
                             href="https://www.linkedin.com/in/viskirubakaran"
                             rel="noopener noreferrer"
                             target="_blank"
-                            title="View my LinkedIn profile"
                         >
                             <FontAwesomeIcon
-                                className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
+                                className="social-icons"
                                 icon={faLinkedin}
                             />
                         </a>
-                        <Link
-                            target="_blank"
-                            title="Send me an email"
-                            to="/contact"
-                        >
+                        <Link target="_blank" to="/contact">
                             <FontAwesomeIcon
-                                className="text-clamp-icons transition-colors duration-300 hover:text-accent-500"
+                                className="social-icons"
                                 icon={faEnvelope}
                             />
                         </Link>
@@ -78,15 +67,14 @@ function Footer() {
             {/* Copyright Section */}
             <section className="mt-8 text-center" id="copyright">
                 <p
-                    className="text-gray-400"
+                    className="text-light-text-400 dark:text-dark-text-500"
                     style={{ fontSize: 'clamp(0.9rem, 1.25vw, 4rem)' }}
                 >
                     &copy; {new Date().getFullYear()} Visakan Kirubakaran. All
                     rights reserved.
                     <span className="mx-2">|</span>
                     <Link
-                        className="transition duration-300 hover:text-accent-500 hover:underline"
-                        title="View the sitemap"
+                        className="transition-colors duration-300 hover:text-light-accent-500 hover:underline motion-reduce:transition-none dark:hover:text-dark-accent-500"
                         to="/sitemap"
                     >
                         Sitemap

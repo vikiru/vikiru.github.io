@@ -11,9 +11,9 @@ function NavBar() {
     const { isOpen, handleClick } = useNav();
 
     return (
-        <nav className="bg-background-600 text-white">
+        <nav className="bg-light-background-600 dark:bg-dark-background-800">
             <section
-                className="flex items-center justify-between px-6 md:px-10 9xl:py-4 10xl:py-8 11xl:py-12"
+                className="flex items-center justify-between px-6 xs:py-2 md:px-10 9xl:py-4 10xl:py-8 11xl:py-12"
                 id="main-nav"
             >
                 {/* Logo Section */}
@@ -23,9 +23,8 @@ function NavBar() {
                 <div className="hidden gap-6 text-clamp-nav md:flex 10xl:gap-10">
                     {navData.map((item) => (
                         <Link
-                            className="font-heading uppercase text-gray-300 transition-all duration-300 hover:text-accent-500 hover:underline"
+                            className="nav-link"
                             key={item.navTitle}
-                            title={item.navDesc}
                             to={item.navLink}
                         >
                             {item.navTitle}
@@ -37,7 +36,7 @@ function NavBar() {
                 <div className="md:hidden">
                     <button aria-label="Toggle menu" onClick={handleClick}>
                         <FontAwesomeIcon
-                            className="text-2xl text-gray-300"
+                            className="text-2xl text-light-text-300 dark:text-dark-text-600"
                             icon={isOpen ? faX : faBars}
                         />
                     </button>
@@ -46,8 +45,10 @@ function NavBar() {
 
             {/* Mobile Menu - Right to Left Slide, Visible on mobile only */}
             <section
-                className={`fixed right-0 top-0 h-full w-3/4 bg-gray-800 text-white transition-all duration-500 ease-in-out md:hidden ${
-                    isOpen ? 'translate-x-0' : 'translate-x-full'
+                className={`fixed right-0 top-0 h-full w-3/4 bg-light-background-600 text-white transition-all duration-500 ease-in-out motion-reduce:transition-none md:hidden dark:bg-dark-background-800  ${
+                    isOpen
+                        ? 'translate-x-0 motion-reduce:transition-none'
+                        : 'translate-x-full motion-reduce:transition-none'
                 }`}
                 id="mobile-nav"
             >
@@ -55,74 +56,77 @@ function NavBar() {
                 <div className="absolute right-6 top-4">
                     <button aria-label="Close menu" onClick={handleClick}>
                         <FontAwesomeIcon
-                            className="text-2xl text-gray-300"
+                            className="text-2xl text-light-text-300 dark:text-dark-text-600"
                             icon={faX}
                         />
                     </button>
                 </div>
 
                 {/* Mobile Menu Links */}
-                <div className="mt-8 flex flex-col items-center justify-center py-4">
+                <section
+                    className="mt-8 flex flex-col items-center justify-center pt-4"
+                    id="mobile-nav-links"
+                >
                     {navData.map((item) => (
                         <Link
-                            className="hover:text-accent w-full px-6 py-3 text-center font-heading uppercase text-gray-300 transition-colors duration-300"
+                            className="nav-link w-full px-6 py-3 text-center"
                             key={item.navTitle}
-                            title={item.navDesc}
                             to={item.navLink}
                         >
                             {item.navTitle}
                         </Link>
                     ))}
-                </div>
+                </section>
 
                 {/* Divider */}
                 <div className="my-4 border-t border-gray-600"></div>
 
                 {/* Social Icons */}
-                <div className="flex justify-center space-x-6 xs:py-2 lg:py-4">
-                    <a
-                        className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
-                        href="https://github.com/vikiru"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        title="GitHub"
-                    >
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                    <a
-                        className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
-                        href="https://www.linkedin.com/in/viskirubakaran"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        title="LinkedIn"
-                    >
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
-                    <Link
-                        className="hover:text-accent text-clamp-icons text-gray-300 transition-colors duration-300"
-                        title="Contact"
-                        to="/contact"
-                    >
-                        <FontAwesomeIcon icon={faEnvelope} />
-                    </Link>
-                </div>
+                <section id="social-icons">
+                    <h3 className="h4-text text-center uppercase text-light-text-400 dark:text-dark-text-500">
+                        Connect with me
+                    </h3>
 
-                <div className="text-center">
+                    <div className="flex justify-center space-x-6 xs:py-2 lg:py-4">
+                        <a
+                            className="social-icons"
+                            href="https://github.com/vikiru"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a
+                            className="social-icons"
+                            href="https://www.linkedin.com/in/viskirubakaran"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                        <Link className="social-icons" to="/contact">
+                            <FontAwesomeIcon icon={faEnvelope} />
+                        </Link>
+                    </div>
+                </section>
+
+                {/* Copyright */}
+                <section className="text-center" id="copyright">
                     <p
-                        className="text-gray-400"
+                        className="text-light-text-400 dark:text-dark-text-500"
                         style={{ fontSize: 'clamp(0.9rem, 1.25vw, 4rem)' }}
                     >
                         &copy; {new Date().getFullYear()} Visakan Kirubakaran.
                         All rights reserved.
                         <span className="mx-2">|</span>
                         <Link
-                            className="transition duration-300 hover:text-accent-500 hover:underline"
+                            className="transition-colors duration-300 hover:text-light-accent-500 hover:underline motion-reduce:transition-none dark:hover:text-dark-accent-500"
                             to="/sitemap"
                         >
                             Sitemap
                         </Link>
                     </p>
-                </div>
+                </section>
             </section>
         </nav>
     );
