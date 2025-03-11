@@ -10,7 +10,6 @@
       "~components/*": ["./components/*"],
       "~data/*": ["./assets/data/*"],
       "~hooks/*": ["./hooks/*"],
-      "~images/*": ["./assets/images/*"],
       "~pages/*": ["./pages/*"],
       "~scripts/*": ["./scripts/*"],
       "~utils/*": ["./utils/*"],
