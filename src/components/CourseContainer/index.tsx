@@ -15,12 +15,7 @@ function CourseContainer() {
                 <section id="university-info">
                     <div className="mx-2 flex items-center justify-between">
                         <div>
-                            <h3
-                                className="h3-text text-light-text-900 dark:text-dark-text-800"
-                                style={{
-                                    fontSize: 'clamp(1.5rem, 2.125vw, 6.5rem)',
-                                }}
-                            >
+                            <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                                 {educationData.universityName}
                             </h3>
                         </div>
