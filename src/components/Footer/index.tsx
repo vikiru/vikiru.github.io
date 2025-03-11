@@ -62,7 +62,7 @@ function Footer() {
                                 icon={faLinkedin}
                             />
                         </a>
-                        <Link target="_blank" to="/contact">
+                        <Link to="/contact">
                             <FontAwesomeIcon
                                 className="social-icons"
                                 icon={faEnvelope}
