@@ -15,15 +15,15 @@ function Footer() {
                 {/* Read More Section */}
                 <section className="text-center md:text-left" id="read-more">
                     <h3
-                        className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 7xl:py-12 11xl:py-16 dark:text-dark-text-600"
+                        className="h3-text font-heading font-semibold tracking-wide text-light-text-300 xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 dark:text-dark-text-600"
                         style={{ fontSize: 'clamp(1.25rem, 1.65vw, 6.5rem)' }}
                     >
                         Read More
                     </h3>
-                    <div className="flex flex-col gap-2 7xl:gap-8 8xl:gap-10 9xl:gap-12 10xl:gap-20">
+                    <div className="flex flex-col gap-2 xs:items-center md:items-start 7xl:gap-8 8xl:gap-10 9xl:gap-12 10xl:gap-20">
                         {navData.map((item) => (
                             <Link
-                                className="footer-link"
+                                className="footer-link w-fit"
                                 key={item.navTitle}
                                 to={item.navLink}
                             >
@@ -36,7 +36,7 @@ function Footer() {
                 {/* Social Icons Section */}
                 <section className="text-center md:text-left" id="social-icons">
                     <h3
-                        className="h3-text mb-3 font-heading font-semibold tracking-wide text-light-text-300 7xl:py-12 11xl:py-16 dark:text-dark-text-600"
+                        className="h3-text font-heading font-semibold tracking-wide text-light-text-300 xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 dark:text-dark-text-600"
                         style={{ fontSize: 'clamp(1.25rem, 1.65vw, 6.5rem)' }}
                     >
                         Connect With Me
@@ -74,7 +74,7 @@ function Footer() {
 
             {/* Copyright Section */}
             <section
-                className="text-center xs:mt-4 lg:mt-6 7xl:mt-10"
+                className="text-center xs:mt-4 lg:mt-6 7xl:mt-10 8xl:mt-12"
                 id="copyright"
             >
                 <p

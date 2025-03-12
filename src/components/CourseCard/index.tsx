@@ -14,7 +14,7 @@ function CourseCard(props: CourseCardProps) {
         >
             {/* Course Header */}
             <section
-                className="flex min-h-20 items-center justify-between"
+                className="mb-auto flex min-h-20 items-center justify-between"
                 id="course-header"
             >
                 <div>
@@ -23,14 +23,14 @@ function CourseCard(props: CourseCardProps) {
                     </h4>
                 </div>
 
-                <div className="mx-2">
+                <div className="mx-2 my-auto flex items-center">
                     <p className="info-text">{course.courseCode}</p>
                 </div>
             </section>
 
             {/* Course Description */}
             <section
-                className="xs:min-h-36 10xl:min-h-72"
+                className="mb-auto flex grow xs:min-h-36 10xl:min-h-72"
                 id="course-description"
             >
                 <p className="card-text text-light-text-600 dark:text-dark-text-700">
