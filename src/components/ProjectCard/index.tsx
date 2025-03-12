@@ -13,7 +13,7 @@ function ProjectCard(props: ProjectCardProps) {
 
     return (
         <section
-            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md 9xl:p-20 dark:bg-dark-primary-500"
+            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md dark:bg-dark-primary-500"
             id={project.name}
         >
             {/* Header with Icons */}
@@ -21,7 +21,7 @@ function ProjectCard(props: ProjectCardProps) {
                 className="flex xs:flex-col sm:flex-row sm:items-center sm:justify-between"
                 id="project-info"
             >
-                <div className="flex items-center space-x-2 3xl:space-x-4">
+                <div className="mt-auto flex grow items-center gap-2 3xl:gap-4 8xl:gap-8 10xl:gap-10">
                     {/* Title */}
                     <h3 className="h4-text text-light-text-900 dark:text-dark-text-800">
                         {project.name}
@@ -29,7 +29,7 @@ function ProjectCard(props: ProjectCardProps) {
 
                     {/* Icons */}
                     <section
-                        className="flex items-center space-x-2 3xl:space-x-4"
+                        className="flex min-h-10 shrink-0 items-center gap-2 3xl:gap-4 8xl:gap-8 10xl:gap-10"
                         id="project-links"
                         style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                     >
@@ -43,7 +43,7 @@ function ProjectCard(props: ProjectCardProps) {
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                         ) : (
-                            <span className="invisible text-clamp-icons">
+                            <span className="invisible -mt-4 text-clamp-icons">
                                 <FontAwesomeIcon icon={faGithub} />
                             </span>
                         )}
@@ -58,7 +58,7 @@ function ProjectCard(props: ProjectCardProps) {
                                 <FontAwesomeIcon icon={faBookOpen} />
                             </a>
                         ) : (
-                            <span className="invisible text-clamp-icons">
+                            <span className="invisible -mt-4 text-clamp-icons">
                                 <FontAwesomeIcon icon={faBookOpen} />
                             </span>
                         )}
@@ -75,7 +75,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Description */}
             <section
-                className="container flex min-h-20 flex-col pb-3 xs:mt-2 lg:mt-3"
+                className="container my-auto flex grow flex-col py-2 xs:py-0"
                 id="project-description"
             >
                 <p className="card-text text-light-text-600 dark:text-dark-text-700">
@@ -85,7 +85,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Tech Stack Tags */}
             <section
-                className="flex flex-wrap gap-2 lg:min-h-20"
+                className="container flex min-h-20 grow flex-wrap gap-2 py-2 xs:min-h-5 xs:gap-1 xs:py-1"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (
@@ -99,7 +99,7 @@ function ProjectCard(props: ProjectCardProps) {
             </section>
 
             {/* CTA */}
-            <section className="mt-4" id="project-cta">
+            <section className="mt-auto" id="project-cta">
                 <Link
                     className="body-text font-semibold text-light-accent-300 transition-colors duration-200 hover:text-light-accent-500 motion-reduce:transition-none dark:text-dark-accent-200 dark:hover:text-dark-accent-400"
                     to={project.projectPageUrl}

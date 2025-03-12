@@ -18,7 +18,7 @@ function ProjectContainer() {
                     </div>
 
                     <div
-                        className="mt-4 grid gap-6 xl:grid-cols-2"
+                        className="mt-4 grid gap-6 xl:grid-cols-2 5xl:gap-8 10xl:gap-10"
                         id="projects-container"
                     >
                         {featuredProjects.map((project: Project) => (
