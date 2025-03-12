@@ -85,7 +85,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Tech Stack Tags */}
             <section
-                className="container flex min-h-20 grow flex-wrap gap-2 py-2 xs:min-h-5 xs:gap-1 xs:py-1"
+                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 xl:mt-2 xl:min-h-20 8xl:gap-6"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (

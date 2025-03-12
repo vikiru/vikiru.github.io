@@ -20,7 +20,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 className="flex pt-12 xs:flex-col sm:flex-row sm:items-center sm:justify-between"
                 id="project-info"
             >
-                <div className="mx-4 flex items-center gap-2 7xl:gap-8 10xl:mx-10 10xl:gap-10">
+                <div className="mx-4 flex items-center gap-2 xl:gap-3 7xl:gap-8 10xl:mx-10 10xl:gap-10">
                     <div className="7xl:py-12 11xl:py-16">
                         <h2 className="h2-text text-light-text-900 dark:text-dark-text-800">
                             <span>
@@ -36,7 +36,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                         </h2>
                     </div>
 
-                    <div className="mt-1 flex items-center gap-2 text-gray-800 7xl:gap-8 10xl:gap-10">
+                    <div className="mt-1 flex items-center gap-2 text-gray-800 xl:gap-3 7xl:gap-8 10xl:gap-10">
                         {project.githubUrl ? (
                             <a
                                 className="social-icons"
@@ -93,7 +93,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
 
             {/* Technologies Used Section */}
             <section
-                className="container mx-4 mt-2 flex flex-wrap pb-4 xs:gap-2 10xl:mx-10"
+                className="container mx-4 mt-2 flex flex-wrap pb-4 xs:gap-1 md:gap-3 8xl:gap-6 10xl:mx-10"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (
