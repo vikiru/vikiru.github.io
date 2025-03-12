@@ -8,7 +8,7 @@ function ProjectContainer() {
             className="bg-background-950 mx-auto xs:pt-6 lg:py-12"
             id="projects"
         >
-            <div className="px-6 sm:px-8 lg:px-12">
+            <div className="xs:mx-3 lg:mx-6 5xl:mx-10 10xl:mx-20">
                 {/* Featured Projects Section */}
                 <section id="featured-projects">
                     <div className="lg:pb-6 7xl:py-12 11xl:py-16">
@@ -17,14 +17,14 @@ function ProjectContainer() {
                         </h2>
                     </div>
 
-                    <div
-                        className="mt-4 grid gap-6 xl:grid-cols-2 5xl:gap-8 10xl:gap-10"
-                        id="projects-container"
+                    <section
+                        className="mt-4 grid gap-4 xl:grid-cols-2 2xl:gap-6 5xl:gap-8 10xl:gap-10 11xl:gap-11"
+                        id="featured-projects-container"
                     >
                         {featuredProjects.map((project: Project) => (
                             <ProjectCard key={project.name} project={project} />
                         ))}
-                    </div>
+                    </section>
 
                     {/* Divider */}
                     <div className="my-8 border-t border-gray-300 dark:border-dark-background-600" />
@@ -38,14 +38,14 @@ function ProjectContainer() {
                         </h2>
                     </div>
 
-                    <div
-                        className="mt-4 grid gap-6 pb-6 xl:grid-cols-2"
-                        id="projects-container"
+                    <section
+                        className="mt-4 grid gap-4 pb-6 xl:grid-cols-2 2xl:gap-6 5xl:gap-8 10xl:gap-10 11xl:gap-11"
+                        id="other-projects-container"
                     >
                         {otherProjects.map((project: Project) => (
                             <ProjectCard key={project.name} project={project} />
                         ))}
-                    </div>
+                    </section>
                 </section>
             </div>
         </section>
