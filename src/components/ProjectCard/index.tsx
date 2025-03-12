@@ -76,7 +76,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Tech Stack Tags */}
             <section
-                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 lg:min-h-10 xl:mt-2 xl:min-h-20 2xl:min-h-10 5xl:min-h-36 8xl:min-h-48 8xl:gap-6 9xl:min-h-56"
+                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 lg:min-h-10 xl:mt-2 xl:min-h-20 2xl:min-h-10 5xl:min-h-36 8xl:gap-6"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (
