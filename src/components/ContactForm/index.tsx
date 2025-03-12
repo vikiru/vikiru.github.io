@@ -13,7 +13,7 @@ function ContactForm() {
                 onSubmit={handleSubmit}
             >
                 {/* Name Section */}
-                <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-">
+                <div className="11xl:py- xs:py-0 lg:py-2 4xl:py-4 8xl:py-6">
                     <label className="form-label" htmlFor="name">
                         Full Name
                     </label>
