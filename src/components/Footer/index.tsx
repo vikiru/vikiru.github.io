@@ -8,7 +8,7 @@ import { navData } from '~data/index';
 function Footer() {
     return (
         <footer className="mt-auto w-full bg-light-background-600 py-6 10xl:py-10 dark:bg-dark-background-800">
-            <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-4 md:grid-cols-3 lg:gap-8">
+            <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-2 md:grid-cols-3 lg:gap-4 xl:gap-6 2xl:gap-8">
                 {/* Logo Section */}
                 <FooterLogo />
 

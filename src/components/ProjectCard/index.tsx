@@ -13,15 +13,15 @@ function ProjectCard(props: ProjectCardProps) {
 
     return (
         <section
-            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md dark:bg-dark-primary-500"
+            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md 7xl:p-10 9xl:p-20 dark:bg-dark-primary-500"
             id={project.name}
         >
             {/* Header with Icons */}
             <section
-                className="flex xs:flex-col sm:flex-row sm:items-center sm:justify-between"
+                className="flex xs:flex-col sm:flex-row sm:items-start sm:justify-between lg:min-h-8 4xl:min-h-10 5xl:min-h-12 6xl:min-h-20 6xl:py-4 10xl:min-h-24"
                 id="project-info"
             >
-                <div className="mt-auto flex grow items-center gap-2 3xl:gap-4 8xl:gap-8 10xl:gap-10">
+                <div className="flex xs:gap-2 3xl:gap-4 8xl:gap-6 10xl:gap-8">
                     {/* Title */}
                     <h3 className="h4-text text-light-text-900 dark:text-dark-text-800">
                         {project.name}
@@ -29,11 +29,10 @@ function ProjectCard(props: ProjectCardProps) {
 
                     {/* Icons */}
                     <section
-                        className="flex min-h-10 shrink-0 items-center gap-2 3xl:gap-4 8xl:gap-8 10xl:gap-10"
+                        className="flex items-start xs:-mt-1 xs:gap-2 3xl:-mt-2 3xl:gap-4 5xl:-mt-3 7xl:-mt-4 8xl:-mt-5 8xl:gap-6 9xl:-mt-6 10xl:-mt-7 10xl:gap-8 11xl:-mt-8 11xl:min-h-24"
                         id="project-links"
-                        style={{ fontSize: 'clamp(1rem, 1.25vw, 4rem)' }}
                     >
-                        {project.githubUrl ? (
+                        {project.githubUrl && (
                             <a
                                 className="social-icons"
                                 href={project.githubUrl}
@@ -42,13 +41,9 @@ function ProjectCard(props: ProjectCardProps) {
                             >
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                        ) : (
-                            <span className="invisible -mt-4 text-clamp-icons">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </span>
                         )}
 
-                        {project.documentationUrl ? (
+                        {project.documentationUrl && (
                             <a
                                 className="social-icons"
                                 href={project.documentationUrl}
@@ -57,16 +52,12 @@ function ProjectCard(props: ProjectCardProps) {
                             >
                                 <FontAwesomeIcon icon={faBookOpen} />
                             </a>
-                        ) : (
-                            <span className="invisible -mt-4 text-clamp-icons">
-                                <FontAwesomeIcon icon={faBookOpen} />
-                            </span>
                         )}
                     </section>
                 </div>
 
                 {/* Date Range */}
-                <div>
+                <div className="flex items-center xs:mt-1 lg:mt-3 xl:mt-1.5 4xl:mt-2">
                     <p className="info-text">
                         {project.startDate} - {project.endDate}
                     </p>
@@ -75,7 +66,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Description */}
             <section
-                className="container my-auto flex grow flex-col py-2 xs:py-0"
+                className="container flex grow flex-col xs:py-2 lg:min-h-6 4xl:min-h-[6rem] 5xl:min-h-[7rem] 6xl:min-h-[7.5rem] 7xl:min-h-[8rem] 8xl:min-h-[8.5rem] 9xl:min-h-[9rem] 10xl:min-h-[10rem] 11xl:min-h-[10.5rem] 11xl:py-4"
                 id="project-description"
             >
                 <p className="card-text text-light-text-600 dark:text-dark-text-700">
@@ -85,7 +76,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Tech Stack Tags */}
             <section
-                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 xl:mt-2 xl:min-h-20 8xl:gap-6"
+                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 lg:min-h-10 xl:mt-2 xl:min-h-20 2xl:min-h-10 5xl:min-h-36 8xl:min-h-48 8xl:gap-6 9xl:min-h-56"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (
@@ -99,7 +90,10 @@ function ProjectCard(props: ProjectCardProps) {
             </section>
 
             {/* CTA */}
-            <section className="mt-auto" id="project-cta">
+            <section
+                className="flex items-start text-left xs:mt-2 xs:min-h-5 lg:min-h-10"
+                id="project-cta"
+            >
                 <Link
                     className="body-text font-semibold text-light-accent-300 transition-colors duration-200 hover:text-light-accent-500 motion-reduce:transition-none dark:text-dark-accent-200 dark:hover:text-dark-accent-400"
                     to={project.projectPageUrl}

@@ -10,7 +10,7 @@ function CourseContainer() {
                 </h2>
             </div>
 
-            <div className="xs:mx-2 10xl:mx-10">
+            <div className="xs:mx-0 lg:mx-4 7xl:mx-6 10xl:mx-10">
                 {/* University Info */}
                 <section id="university-info">
                     <div className="mx-4 flex items-center justify-between 10xl:mx-10">
@@ -58,13 +58,13 @@ function CourseContainer() {
                             id={year.title.toLowerCase().replace(' ', '-')}
                             key={year.title}
                         >
-                            <div className="flex items-center justify-center pb-4 7xl:py-12 11xl:py-16">
+                            <div className="flex items-center justify-center pb-4 2xl:py-5 3xl:py-6 4xl:py-8 5xl:py-10 7xl:py-12 11xl:py-16">
                                 <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
                                     {year.title}
                                 </h3>
                             </div>
 
-                            <div className="mx-2 grid xs:gap-2 lg:grid-cols-2 lg:gap-4 3xl:pb-8 4xl:pb-10 5xl:pb-12 6xl:pb-14 7xl:pb-16 10xl:mx-10 10xl:gap-10">
+                            <div className="mx-2 grid xs:gap-2 lg:grid-cols-2 lg:gap-4 2xl:gap-6 3xl:pb-8 4xl:pb-10 5xl:pb-12 6xl:pb-14 7xl:pb-16 10xl:mx-10 10xl:gap-10">
                                 {year.courses.map((course) => (
                                     <CourseCard
                                         course={course}
