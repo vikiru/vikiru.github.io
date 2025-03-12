@@ -13,7 +13,7 @@ function ContactForm() {
                 onSubmit={handleSubmit}
             >
                 {/* Name Section */}
-                <div className="py-2">
+                <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-">
                     <label className="form-label" htmlFor="name">
                         Full Name
                     </label>
@@ -31,7 +31,7 @@ function ContactForm() {
                 </div>
 
                 {/* Email Section */}
-                <div className="py-2">
+                <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-8">
                     <label className="form-label" htmlFor="email">
                         Email Address
                     </label>
@@ -49,7 +49,7 @@ function ContactForm() {
                 </div>
 
                 {/* Subject Section */}
-                <div className="py-2">
+                <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-8">
                     <label className="form-label" htmlFor="subject">
                         Subject
                     </label>
@@ -67,11 +67,11 @@ function ContactForm() {
                 </div>
 
                 {/* Message Section */}
-                <div className="py-2">
+                <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-8">
                     <label className="form-label" htmlFor="content">
                         Message
                     </label>
-                    <br />
+                    <br className="mb-20" />
                     <textarea
                         className="form-input"
                         cols={50}
