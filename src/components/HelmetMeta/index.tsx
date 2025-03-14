@@ -17,6 +17,10 @@ function HelmetMeta({ title, description }: HelmetMetaProps) {
             <meta content={description} property="og:description" />
             <meta content={window.location.href} property="og:url" />
             <meta content="website" property="og:type" />
+
+            {/* Twitter */}
+            <meta content={title} property="twitter:title" />
+            <meta content={description} property="twitter:description" />
         </Helmet>
     );
 }

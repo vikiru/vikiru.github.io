@@ -13,12 +13,12 @@ function ProjectCard(props: ProjectCardProps) {
 
     return (
         <section
-            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md 7xl:p-10 9xl:p-20 dark:bg-dark-primary-500"
+            className="flex flex-col rounded-2xl bg-light-primary-900 p-6 shadow-md 3xl:p-8 7xl:p-10 9xl:p-20 dark:bg-dark-primary-500"
             id={project.name}
         >
             {/* Header with Icons */}
             <section
-                className="flex xs:flex-col sm:flex-row sm:items-start sm:justify-between lg:min-h-8 4xl:min-h-10 5xl:min-h-12 6xl:min-h-20 6xl:py-4 10xl:min-h-24"
+                className="flex xs:flex-col sm:flex-row sm:items-start sm:justify-between lg:min-h-8 4xl:min-h-10 5xl:min-h-12 6xl:min-h-20 6xl:py-4 10xl:min-h-24 11xl:min-h-32"
                 id="project-info"
             >
                 <div className="flex xs:gap-2 3xl:gap-4 8xl:gap-6 10xl:gap-8">
@@ -66,7 +66,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Description */}
             <section
-                className="container flex grow flex-col xs:py-2 lg:min-h-6 4xl:min-h-[6rem] 5xl:min-h-[7rem] 6xl:min-h-[7.5rem] 7xl:min-h-[8rem] 8xl:min-h-[8.5rem] 9xl:min-h-[9rem] 10xl:min-h-[10rem] 11xl:min-h-[10.5rem] 11xl:py-4"
+                className="container flex grow flex-col xs:py-2 lg:min-h-6 4xl:min-h-[6rem] 5xl:min-h-[7rem] 6xl:min-h-[7.5rem] 7xl:min-h-[8rem] 8xl:min-h-[8.5rem] 9xl:min-h-[9rem] 10xl:min-h-[10rem] 11xl:min-h-[12rem] 11xl:py-4"
                 id="project-description"
             >
                 <p className="card-text text-light-text-600 dark:text-dark-text-700">
@@ -76,7 +76,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Tech Stack Tags */}
             <section
-                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 lg:min-h-10 xl:mt-2 xl:min-h-20 2xl:min-h-10 5xl:min-h-36 8xl:gap-6"
+                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 lg:min-h-10 xl:mt-2 xl:min-h-20 2xl:min-h-10 3xl:min-h-12 4xl:min-h-14 5xl:min-h-36 8xl:gap-6 10xl:min-h-64 11xl:min-h-72"
                 id="tech-stack"
             >
                 {project.technologiesUsed.map((tech, index) => (

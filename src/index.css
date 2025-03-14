@@ -107,14 +107,14 @@ div .kw-alert, kw-alert-error {
 /* Button & Tag Components */
 @layer components {
     .tech-tag {
-        @apply text-clamp-tech flex items-center rounded-xl bg-light-primary-600 font-inter text-white dark:bg-dark-primary-600 xs:px-3 xs:py-1 5xl:rounded-2xl 5xl:px-6 5xl:py-2 xs:h-6 lg:h-8 3xl:h-10 4xl:h-12 5xl:h-14 7xl:h-16 8xl:h-20 9xl:h-24;
+        @apply text-clamp-tech flex items-center rounded-xl bg-light-primary-600 font-inter text-white dark:bg-dark-primary-600 xs:px-3 xs:py-1 5xl:rounded-2xl 5xl:px-6 5xl:py-2 xs:h-6 lg:h-8 3xl:h-10 4xl:h-12 5xl:h-14 7xl:h-16 8xl:h-20 9xl:h-24 10xl:h-28 11xl:h-32 11xl:px-12 11xl:py-6;
     }
 }
 
 /* Icon Components */
 @layer components {
     .social-icons {
-        @apply xs:text-xl lg:text-clamp-icons transition-colors duration-300 motion-reduce:transition-none text-light-accent-300 hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500;
+        @apply xs:text-xl lg:text-clamp-icons transition-colors duration-300 motion-reduce:transition-none text-light-accent-300 hover:text-light-accent-500 dark:text-dark-accent-400 hover:dark:text-dark-accent-500;
     }
 }
 

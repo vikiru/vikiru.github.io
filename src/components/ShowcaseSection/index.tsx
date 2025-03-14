@@ -25,7 +25,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                         <h2 className="h2-text text-light-text-900 dark:text-dark-text-800">
                             <span>
                                 <Link
-                                    className="text-light-accent-300 underline hover:text-light-accent-500 dark:text-dark-accent-300 hover:dark:text-dark-accent-500"
+                                    className="text-light-accent-300 underline hover:text-light-accent-500 dark:text-dark-accent-400 hover:dark:text-dark-accent-500"
                                     to="/projects"
                                 >
                                     projects
@@ -36,7 +36,10 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                         </h2>
                     </div>
 
-                    <div className="mt-1 flex items-center gap-2 text-gray-800 xl:gap-3 7xl:gap-8 10xl:gap-10">
+                    <section
+                        className="mt-1 flex items-center gap-2 text-gray-800 xl:gap-3 7xl:gap-8 10xl:gap-10"
+                        id="project-links"
+                    >
                         {project.githubUrl ? (
                             <a
                                 className="social-icons"
@@ -66,7 +69,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                                 <FontAwesomeIcon icon={faBookOpen} />
                             </span>
                         )}
-                    </div>
+                    </section>
                 </div>
 
                 <div className="mx-4 10xl:mx-10">
