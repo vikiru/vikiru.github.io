@@ -3,7 +3,6 @@
 .prettierignore
 *.css
 *.json
-*.mjs
 *.xml
 dist/
 LICENSE

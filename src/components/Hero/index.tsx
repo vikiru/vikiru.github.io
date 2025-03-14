@@ -13,14 +13,14 @@ function Hero() {
                 </h1>
                 <p className="body-text font-medium text-light-text-700 dark:text-dark-text-100">
                     I am a dedicated software developer with a passion for
-                    software and web development. Utilizing my knowledge and
-                    skills, I wish to challenge myself as I contribute to
+                    software and web development. By utilizing my knowledge and
+                    skills, I aim to challenge myself while contributing to
                     meaningful projects.
                     <br />
-                    Whether it is by developing new applications for desktop,
-                    mobile or the web, integrating and designing APIs,
+                    Whether it&apos;s developing new applications for desktop,
+                    mobile, or the web, integrating and designing APIs,
                     implementing extensive testing to ensure code quality and
-                    maintainability, writing user-friendly documentation, and
+                    maintainability, writing user-friendly documentation, or
                     anything in between, I am eager to learn and grow as a
                     developer.
                     <br />

@@ -1,7 +1,7 @@
 function About() {
     return (
         <section
-            className="bg-light-background-950 xs:py-6 xl:mt-6 4xl:mt-8 5xl:mt-10 dark:bg-dark-background-700"
+            className="bg-light-background-950 xs:pb-3 xs:pt-6 xl:mt-6 4xl:mt-8 5xl:mt-10 dark:bg-dark-background-700"
             id="about"
         >
             <div className="section-ctr">
@@ -25,7 +25,7 @@ function About() {
                         seek out new and meaningful projects to challenge
                         myself, working with both familiar and unfamiliar
                         technologies. My journey into web development has been
-                        particularly rewarding, where I’ve enjoyed working with
+                        particularly rewarding, and I’ve enjoyed working with
                         technologies such as React, TailwindCSS, and Express.
                         <br /> I love creating software, no matter the platform.
                         The process of refining a rough idea into something

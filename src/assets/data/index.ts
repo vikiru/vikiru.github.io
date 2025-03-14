@@ -1,4 +1,3 @@
-import aboutData from '~data/about';
 import courseData from '~data/courses';
 import educationData from '~data/education';
 import navData from '~data/nav';
@@ -7,7 +6,6 @@ import sitemap from '~data/sitemap';
 import skillsData from '~data/skills';
 
 export {
-    aboutData,
     courseData,
     educationData,
     featuredProjects,
