@@ -1,12 +1,11 @@
 .github/
 .gitignore
 .prettierignore
-*.css
-*.json
-*.xml
 dist/
 LICENSE
 node_modules/
 public/
 README.md
-src/assets/images/
+.env
+.env.*
+package-lock.json
