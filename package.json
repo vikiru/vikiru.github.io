@@ -1,129 +1,154 @@
 {
-  "name": "portfolio-website",
-  "version": "2.0.0",
-  "description": "Personal portfolio website showcasing my projects and skills. Built using React, React Router and TailwindCSS.",
-  "private": true,
-  "author": "Visakan Kirubakaran",
-  "license": "MIT",
-  "homepage": "https://vikiru.vercel.app",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vikiru/vikiru.github.io"
-  },
-  "keywords": [
-    "Visakan",
-    "Kirubakaran",
-    "portfolio",
-    "website",
-    "react",
-    "react router",
-    "tailwindcss",
-    "software",
-    "developer"
-  ],
-  "bugs": {
-    "url": "https://github.com/vikiru/vikiru.github.io/issues"
-  },
-  "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "lint": "eslint ./src/**/*{js,jsx,ts,tsx} --fix-dry-run",
-    "prettier": "eslint --fix . && prettier --write .",
-    "generate-sitemap": "ts-node -r module-alias/register src/scripts/generateSitemap.ts"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      "defaults",
-      ">0.01%",
-      "not dead",
-      "not op_mini all",
-      "last 2 chrome version",
-      "last 2 firefox version",
-      "last 2 safari version"
+    "name": "portfolio-website",
+    "version": "2.0.0",
+    "description": "Personal portfolio website showcasing my projects and skills. Built using React, React Router and TailwindCSS.",
+    "private": true,
+    "author": "Visakan Kirubakaran",
+    "license": "MIT",
+    "homepage": "https://vikiru.vercel.app",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vikiru/vikiru.github.io"
+    },
+    "keywords": [
+        "Visakan",
+        "Kirubakaran",
+        "portfolio",
+        "website",
+        "react",
+        "react router",
+        "tailwindcss",
+        "software",
+        "developer"
     ],
-    "development": [
-      "defaults",
-      ">0.01%",
-      "not dead",
-      "not op_mini all",
-      "last 2 chrome version",
-      "last 2 firefox version",
-      "last 2 safari version"
-    ]
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@testing-library/jest-dom": "^6.3.0",
-    "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.2",
-    "customize-cra": "^1.0.0",
-    "kwesforms": "^2.2.6",
-    "react": "^18.2.0",
-    "react-app-rewired": "^2.2.1",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.22.3",
-    "web-vitals": "^3.5.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.23.7",
-    "@babel/parser": "^7.23.6",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-transform-private-property-in-object": "^7.23.4",
-    "@eslint/js": "^9.20.0",
-    "@tailwindcss/typography": "^0.5.12",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "@types/react-router-dom": "^5.3.3",
-    "@typescript-eslint/parser": "^5.62.0",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jest": "^27.6.3",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-perfectionist": "^4.8.0",
-    "eslint-plugin-prettier": "^5.2.3",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-tailwindcss": "^3.18.0",
-    "gh-pages": "^6.1.1",
-    "globals": "^15.14.0",
-    "module-alias": "^2.2.3",
-    "moment": "^2.30.1",
-    "postcss": "^8.4.31",
-    "postcss-import": "^16.0.0",
-    "prettier": "^3.5.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwind-scrollbar": "^3.0.5",
-    "tailwindcss": "^3.4.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^4.9.5",
-    "typescript-eslint": "^8.24.0"
-  },
-  "engines": {
-    "node": ">=16.9"
-  },
-  "_moduleAliases": {
-    "~assets": "src/assets",
-    "~components": "src/components",
-    "~data": "src/assets/data",
-    "~hooks": "src/hooks",
-    "~pages": "src/pages",
-    "~scripts": "src/scripts",
-    "~types": "src/types"
-  },
-  "overrides": {
-    "serialize-javascript": "^6.0.2",
-    "nth-check": "^2.1.1",
-    "postcss": "^8.4.31"
-  }
+    "bugs": {
+        "url": "https://github.com/vikiru/vikiru.github.io/issues"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "lint": "eslint ./src/**/*{js,jsx,ts,tsx} --fix-dry-run",
+        "prettier": "eslint --fix . && prettier --write .",
+        "generate-sitemap": "ts-node -r module-alias/register src/scripts/generateSitemap.ts",
+        "prepare": "husky"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            "defaults",
+            ">0.01%",
+            "not dead",
+            "not op_mini all",
+            "last 2 chrome version",
+            "last 2 firefox version",
+            "last 2 safari version"
+        ],
+        "development": [
+            "defaults",
+            ">0.01%",
+            "not dead",
+            "not op_mini all",
+            "last 2 chrome version",
+            "last 2 firefox version",
+            "last 2 safari version"
+        ]
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.5.1",
+        "@fortawesome/free-brands-svg-icons": "^6.5.1",
+        "@fortawesome/free-solid-svg-icons": "^6.5.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@testing-library/jest-dom": "^6.3.0",
+        "@testing-library/react": "^14.1.2",
+        "@testing-library/user-event": "^14.5.2",
+        "customize-cra": "^1.0.0",
+        "kwesforms": "^2.2.6",
+        "react": "^18.2.0",
+        "react-app-rewired": "^2.2.1",
+        "react-dom": "^18.2.0",
+        "react-helmet": "^6.1.0",
+        "react-router-dom": "^6.22.3",
+        "web-vitals": "^3.5.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.23.7",
+        "@babel/parser": "^7.23.6",
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@babel/plugin-transform-private-property-in-object": "^7.23.4",
+        "@commitlint/cli": "^19.8.0",
+        "@commitlint/config-conventional": "^19.8.0",
+        "@eslint/js": "^9.20.0",
+        "@semantic-release/git": "^10.0.1",
+        "@tailwindcss/typography": "^0.5.12",
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3",
+        "@types/react-router-dom": "^5.3.3",
+        "@typescript-eslint/parser": "^5.62.0",
+        "autoprefixer": "^10.4.17",
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-jest": "^27.6.3",
+        "eslint-plugin-jsx-a11y": "^6.8.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-perfectionist": "^4.8.0",
+        "eslint-plugin-prettier": "^5.2.3",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-tailwindcss": "^3.18.0",
+        "gh-pages": "^6.1.1",
+        "globals": "^15.14.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.5.0",
+        "module-alias": "^2.2.3",
+        "moment": "^2.30.1",
+        "postcss": "^8.4.31",
+        "postcss-import": "^16.0.0",
+        "prettier": "^3.5.3",
+        "prettier-plugin-tailwindcss": "^0.6.11",
+        "semantic-release": "^24.2.3",
+        "tailwind-scrollbar": "^3.0.5",
+        "tailwindcss": "^3.4.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^4.9.5",
+        "typescript-eslint": "^8.24.0"
+    },
+    "_moduleAliases": {
+        "~assets": "src/assets",
+        "~components": "src/components",
+        "~data": "src/assets/data",
+        "~hooks": "src/hooks",
+        "~pages": "src/pages",
+        "~scripts": "src/scripts",
+        "~types": "src/types"
+    },
+    "overrides": {
+        "serialize-javascript": "^6.0.2",
+        "nth-check": "^2.1.1",
+        "postcss": "^8.4.31"
+    },
+    "lint-staged": {
+        "*.{js,mjs,cjs,ts,jsx,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ]
+    },
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator",
+            "@semantic-release/npm",
+            "@semantic-release/git",
+            "@semantic-release/github"
+        ]
+    },
+    "engines": {
+        "node": ">=16.9"
+    }
 }

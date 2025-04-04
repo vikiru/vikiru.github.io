@@ -10,6 +10,11 @@ export default {
     arrowParens: 'always',
     endOfLine: 'auto',
     singleAttributePerLine: false,
-    parser: 'typescript',
     plugins: ['prettier-plugin-tailwindcss'],
+    overrides: [
+        {
+            files: ['*.ts', '*.tsx'],
+            parser: 'typescript',
+        },
+    ],
 };
