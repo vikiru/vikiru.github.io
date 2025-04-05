@@ -86,6 +86,7 @@ export default [
             // Code Quality & Errors
             'handle-callback-err': 'off',
             'no-console': 'off',
+            'no-restricted-globals': 'off',
             'no-empty-function': 'error',
             'no-floating-decimal': 'error',
             'no-inline-comments': 'error',

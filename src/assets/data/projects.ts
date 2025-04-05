@@ -7,6 +7,41 @@ type ProjectData = {
 const projectData: ProjectData = {
     projects: [
         {
+            name: 'Grocadex',
+            description:
+                'A React Native mobile app designed to help users track their grocery expenses and monitor expiry dates',
+            startDate: 'Jul 2024',
+            endDate: 'Apr 2025',
+            technologiesUsed: [
+                'TypeScript',
+                'React Native',
+                'Expo',
+                'Gluestack UI',
+                'NativeWind',
+                'Zustand',
+                'Tanstack Query',
+                'Express',
+                'Passport',
+                'Prisma',
+                'PostgresSQL',
+            ],
+            featured: true,
+            contributors: 'This project was completed individually',
+            githubUrl: 'https://github.com/vikiru/grocadex',
+            documentationUrl: '',
+            projectPageUrl: '/projects/Grocadex',
+            videoPath: '/images/Grocadex/Grocadex-demo.mp4',
+            accomplishments: [
+                'Designed a responsive UI using GluestackUI and Nativewind',
+                'Managed local and server state with Zustand and TanStack Query for optimized data fetching and caching',
+                'Built forms for creating and managing groceries, receipts, user registration, and login using Formik with Yup for validation',
+                'Implemented backend API with Express and integrated authentication using Passport.js, supporting both local and JWT strategies for secure user sign-in',
+                'Designed database models with Prisma for PostgreSQL and created seed scripts for local testing and development',
+                'Automated CI pipeline with GitHub Actions to enforce linting and formatting with Prettier, as well as automate releases using Semantic Release',
+                'Developed an expense overview graph for the current year using Gifted Charts, enabling an interactive visualization of spending trends',
+            ],
+        },
+        {
             name: 'Kelbrum',
             description:
                 'An anime recommendation system designed to recommend anime that is similar to user-selected anime.',
