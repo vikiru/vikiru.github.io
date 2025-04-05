@@ -16,6 +16,7 @@ function useContact() {
         const content = form['content'];
 
         if (name !== '' && email !== '' && subject !== '' && content !== '') {
+            // eslint-disable-next-line no-restricted-globals
             confirm('Are you sure you want to send this email?');
         }
     };
