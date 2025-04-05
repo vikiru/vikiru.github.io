@@ -1,6 +1,6 @@
 {
     "name": "portfolio-website",
-    "version": "2.0.0",
+    "version": "3.1.0",
     "description": "Personal portfolio website showcasing my projects and skills. Built using React, React Router and TailwindCSS.",
     "private": true,
     "author": "Visakan Kirubakaran",
