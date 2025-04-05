@@ -97,7 +97,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-perfectionist": "^4.8.0",
         "eslint-plugin-prettier": "^5.2.3",
-        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react": "^7.37.5",
         "eslint-plugin-tailwindcss": "^3.18.0",
         "gh-pages": "^6.1.1",
         "globals": "^15.14.0",
