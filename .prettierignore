@@ -5,7 +5,6 @@ dist/
 LICENSE
 node_modules/
 public/
-README.md
 .env
 .env.*
 package-lock.json

@@ -36,7 +36,7 @@ const projectData: ProjectData = {
                 'Managed local and server state with Zustand and TanStack Query for optimized data fetching and caching',
                 'Built forms for creating and managing groceries, receipts, user registration, and login using Formik with Yup for validation',
                 'Implemented backend API with Express and integrated authentication using Passport.js, supporting both local and JWT strategies for secure user sign-in',
-                'Designed database models with Prisma for PostgreSQL and created seed scripts for local testing and development',
+                'Designed database models with Prisma for PostgreSQL and created a seed script for local testing and development',
                 'Automated CI pipeline with GitHub Actions to enforce linting and formatting with Prettier, as well as automate releases using Semantic Release',
                 'Developed an expense overview graph for the current year using Gifted Charts, enabling an interactive visualization of spending trends',
             ],
