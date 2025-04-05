@@ -9,7 +9,7 @@ const projectData: ProjectData = {
         {
             name: 'Grocadex',
             description:
-                'A React Native mobile app designed to help users track their grocery expenses and monitor expiry dates',
+                'A React Native mobile app designed to help users track their grocery expenses and monitor expiry dates.',
             startDate: 'Jul 2024',
             endDate: 'Apr 2025',
             technologiesUsed: [
