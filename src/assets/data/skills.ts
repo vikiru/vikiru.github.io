@@ -45,7 +45,7 @@ const skillsData: SkillsData = {
         title: 'Libraries',
     },
     database: {
-        data: ['MySQL', 'SQLite', 'MongoDB', 'Sequelize', 'Mongoose'],
+        data: ['MySQL', 'SQLite', 'MongoDB', 'Prisma', 'Sequelize', 'Mongoose'],
         title: 'Database',
     },
     tools: {
