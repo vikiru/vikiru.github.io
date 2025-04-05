@@ -25,18 +25,16 @@
   </a>
 </p>
 
-
 ## 🌐 Portfolio Overview
 
 <p>
-  My personal portfolio website serves as a comprehensive showcase of my expertise, skills, and the wide range of projects I’ve worked on. It's built using <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a> and <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a>, 
+  My personal portfolio website serves as a comprehensive showcase of my expertise, skills, and the wide range of projects I’ve worked on. It's built using <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a> and <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a>,
   and is currently hosted on <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>.
 </p>
 
 <p>
   This project was bootstrapped with <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>.
 </p>
-
 
 <details closed>
 
@@ -46,15 +44,14 @@
 
 #### 🎓 Education
 
-- **Bachelor of Engineering - BEng, Software Engineering**  
+- **Bachelor of Engineering - BEng, Software Engineering**
   Carleton University (Sept 2018 - Apr 2023)
 
-- **IBM Full Stack Software Developer Certificate**  
+- **IBM Full Stack Software Developer Certificate**
   [Coursera](https://coursera.org/share/2c288e462af814df334a75f4e59cbfe6) (Oct 2023 - Nov 2023)
 
-- **IBM DevOps and Software Engineering Certificate**  
+- **IBM DevOps and Software Engineering Certificate**
   [Coursera](https://coursera.org/share/ff5dc718cd4f17208f60c5004f079928) (Nov 2023 - Dec 2023)
-
 
 #### 💡 Skills
 
@@ -62,12 +59,11 @@
 - **Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Django, Flask
 - **Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
 - **Tools**: Maven, Node.js, npm, pip, git, GitHub, GitHub Desktop, Postman
-- **Database**: MySQL, SQLite, MongoDB, Sequelize, Mongoose
+- **Database**: MySQL, SQLite, MongoDB, Prisma, Sequelize, Mongoose
 - **DevOps**: CircleCI, GitHub Actions, Snyk
 - **Editor/IDE**: VSCode, IntelliJ, Eclipse
 - **Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase, Fl0, Surge.sh
 - **OS**: Windows, Ubuntu
-
 
 ### 📚 Projects
 
@@ -76,30 +72,40 @@
 <details closed>
 <summary>View</summary>
 
+- **Grocadex | Grocery Expenses and Expiry Tracker**
+
+    - Technologies Used: `TypeScript`, `React Native`, `Expo`, `Gluestack UI`, `NativeWind`, `Zustand`, `Tanstack Query`, `Express`, `Passport`, `Prisma`, `PostgreSQL`
+    - [GitHub Repo](https://github.com/vikiru/grocadex)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Grocadex)
+
 - **Kelbrum | Anime Recommendation System**
-  - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
-  - [GitHub Repo](https://github.com/vikiru/kelbrum)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/Kelbrum)
+
+    - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
+    - [GitHub Repo](https://github.com/vikiru/kelbrum)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Kelbrum)
 
 - **Parseum | Markdown Editor and Parser**
-  - Technologies Used: `Node.js`, `Peggy.js`, `React`, `TailwindCSS`, `DaisyUI`
-  - [GitHub Repo](https://github.com/vikiru/parseum)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/Parseum)
+
+    - Technologies Used: `Node.js`, `Peggy.js`, `React`, `TailwindCSS`, `DaisyUI`
+    - [GitHub Repo](https://github.com/vikiru/parseum)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Parseum)
 
 - **RESTasaurus | Dinosaur REST API**
-  - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
-  - [GitHub Repo](https://github.com/vikiru/restasaurus)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/RESTasaurus)
+
+    - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
+    - [GitHub Repo](https://github.com/vikiru/restasaurus)
+    - [Project Showcase](https://vikiru.vercel.app/projects/RESTasaurus)
 
 - **Urvo | Multi-purpose Discord Bot**
-  - Technologies Used: `Node.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
-  - [GitHub Repo](https://github.com/vikiru/Urvo)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/Urvo)
+
+    - Technologies Used: `Node.js`, `discord.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
+    - [GitHub Repo](https://github.com/vikiru/Urvo)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Urvo)
 
 - **CodeSmell | Static Analysis Tool**
-  - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
-  - [GitHub Repo](https://github.com/vikiru/CodeSmell)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/CodeSmell)
+    - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
+    - [GitHub Repo](https://github.com/vikiru/CodeSmell)
+    - [Project Showcase](https://vikiru.vercel.app/projects/CodeSmell)
 
 </details>
 
@@ -109,29 +115,33 @@
 <summary>View</summary>
 
 - **Portfolio Website**
-  - Technologies Used: `React`, `React Router`, `TailwindCSS`
-  - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/Portfolio)
+
+    - Technologies Used: `React`, `React Router`, `TailwindCSS`
+    - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Portfolio)
 
 - **discrete-sim | Manufacturing Facility Simulation**
-  - Technologies Used: `Python`, `NumPy`, `SciPy`, `SimPy`
-  - [GitHub Repo](https://github.com/vikiru/discrete-sim)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/discrete-sim)
+
+    - Technologies Used: `Python`, `NumPy`, `SciPy`, `SimPy`
+    - [GitHub Repo](https://github.com/vikiru/discrete-sim)
+    - [Project Showcase](https://vikiru.vercel.app/projects/discrete-sim)
 
 - **Mini-SurveyMonkey | Spring Boot CRUD Web App**
-  - Technologies Used: `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`, `JavaScript`
-  - [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/Mini-SurveyMonkey)
+
+    - Technologies Used: `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`, `JavaScript`
+    - [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Mini-SurveyMonkey)
 
 - **Elevator Simulator | Threads and UDP**
-  - Technologies Used: `Java`, `Maven`, `JUnit`
-  - GitHub Repo: `private`
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/Elevator-Simulator)
+
+    - Technologies Used: `Java`, `Maven`, `JUnit`
+    - GitHub Repo: `private`
+    - [Project Showcase](https://vikiru.vercel.app/projects/Elevator-Simulator)
 
 - **Digital Risk | MVC Swing Game**
-  - Technologies Used: `Java`, `Maven`, `JUnit`, `Swing`
-  - [GitHub Repo](https://github.com/flavji/digitalRisk)
-  - [Project Showcase Page](https://vikiru.vercel.app/projects/digitalRisk)
+    - Technologies Used: `Java`, `Maven`, `JUnit`, `Swing`
+    - [GitHub Repo](https://github.com/flavji/digitalRisk)
+    - [Project Showcase](https://vikiru.vercel.app/projects/digitalRisk)
 
 </details>
 
