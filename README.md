@@ -258,7 +258,7 @@ npm run prettier
 5. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts) and [`generateSitemap.ts`](./src/scripts/generateSitemap.ts).
 
 ```bash
-npm run generate-sitemap>
+npm run generate-sitemap
 ```
 
 ## ✨ Acknowledgments
