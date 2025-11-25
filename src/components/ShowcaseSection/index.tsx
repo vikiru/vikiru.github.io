@@ -96,11 +96,11 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
 
             {/* Technologies Used Section */}
             <section
-                className="container mx-4 mt-2 flex flex-wrap pb-4 xs:gap-2 md:gap-3 8xl:gap-6 10xl:mx-10"
+                className="mx-4 mt-2 flex flex-wrap pb-4 xs:gap-2 md:gap-3 8xl:gap-6 10xl:mx-10"
                 id="tech-stack"
             >
-                {project.technologiesUsed.map((tech, index) => (
-                    <div className="tech-tag" key={index}>
+                {project.technologiesUsed.map((tech) => (
+                    <div className="tech-tag" key={tech}>
                         {tech}
                     </div>
                 ))}

@@ -66,7 +66,7 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Description */}
             <section
-                className="container flex grow flex-col xs:py-2 lg:min-h-6 4xl:min-h-[6rem] 5xl:min-h-[7rem] 6xl:min-h-[7.5rem] 7xl:min-h-[8rem] 8xl:min-h-[8.5rem] 9xl:min-h-[9rem] 10xl:min-h-[10rem] 11xl:min-h-[12rem] 11xl:py-4"
+                className="flex grow flex-col xs:py-2 lg:min-h-6 4xl:min-h-[6rem] 5xl:min-h-[7rem] 6xl:min-h-[7.5rem] 7xl:min-h-[8rem] 8xl:min-h-[8.5rem] 9xl:min-h-[9rem] 10xl:min-h-[10rem] 11xl:min-h-[12rem] 11xl:py-4"
                 id="project-description"
             >
                 <p className="card-text text-light-text-600 dark:text-dark-text-700">
@@ -76,13 +76,13 @@ function ProjectCard(props: ProjectCardProps) {
 
             {/* Tech Stack Tags */}
             <section
-                className="container flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 lg:min-h-10 xl:mt-2 xl:min-h-20 2xl:min-h-10 3xl:min-h-12 4xl:min-h-14 5xl:min-h-36 8xl:gap-6 10xl:min-h-64 11xl:min-h-72"
+                className="flex grow flex-wrap py-2 xs:mt-0 xs:min-h-5 xs:gap-1 xs:py-1 md:gap-2 lg:min-h-10 xl:mt-2 xl:min-h-20 2xl:min-h-10 3xl:min-h-12 4xl:min-h-14 5xl:min-h-36 8xl:gap-6 10xl:min-h-64 11xl:min-h-72"
                 id="tech-stack"
             >
-                {project.technologiesUsed.map((tech, index) => (
+                {project.technologiesUsed.map((tech) => (
                     <div
                         className="tech-tag text-light-secondary-950 dark:text-dark-secondary-50"
-                        key={index}
+                        key={tech}
                     >
                         {tech}
                     </div>

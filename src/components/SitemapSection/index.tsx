@@ -27,11 +27,12 @@ function SitemapSection() {
                     <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
                         {group.items.map((item) => (
                             <section
-                                className="sitemap-link"
                                 id={item.name.toLowerCase()}
                                 key={item.name}
                             >
-                                <Link to={item.url}>{item.name}</Link>
+                                <Link className="sitemap-link" to={item.url}>
+                                    {item.name}
+                                </Link>
                             </section>
                         ))}
                     </div>
