@@ -1,15 +1,14 @@
 <h1 align="center">Visakan Kirubakaran <br> Portfolio</h1>
 
-<p align="left">
-  <a href="https://github.com/vikiru/vikiru.github.io/releases">
-    <img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release" />
-  </a>
+<div align="center" id="badges">
   <a href="https://github.com/vikiru/vikiru.github.io/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-aqua" alt="MIT License Badge" />
   </a>
-  <a href="https://wakatime.com/@vikiru/projects/fqvyqubpbg">
-    <img src="https://wakatime.com/badge/user/5e62f99d-3a1e-4fd2-8f37-77919d626a67/project/018bcb76-aa73-40c9-acb6-f83f325c3cd4.svg"
-         alt="Wakatime Coding Stats for Portfolio Website" />
+  <a href="https://biomejs.dev">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome">
+  </a>
+  <a href="https://github.com/vikiru/vikiru.github.io/releases">
+    <img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release" />
   </a>
   <a href="https://github.com/vikiru/vikiru.github.io/issues?q=is%3Aissue+is%3Aclosed">
     <img src="https://img.shields.io/github/issues-closed/vikiru/vikiru.github.io" alt="Closed Issues" />
@@ -17,13 +16,7 @@
   <a href="https://github.com/vikiru/vikiru.github.io/pulls?q=is%3Apr+is%3Aclosed">
     <img src="https://img.shields.io/github/issues-pr-closed/vikiru/vikiru.github.io?label=closed%20prs" alt="Closed PRs" />
   </a>
-  <a href="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml">
-    <img src="https://github.com/vikiru/vikiru.github.io/actions/workflows/lint.yml/badge.svg" alt="GitHub Lint Action Workflow Status" />
-  </a>
-  <a href="https://github.com/prettier/prettier">
-    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Code Style - Prettier" />
-  </a>
-</p>
+</div>
 
 ## 🌐 Portfolio Overview
 
@@ -56,11 +49,11 @@
 #### 💡 Skills
 
 - **Languages**: Java, Python, HTML, CSS, JavaScript, TypeScript
-- **Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Django, Flask
+- **Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Next.js, Django, Flask
 - **Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
 - **Tools**: Maven, Node.js, npm, pip, git, GitHub, GitHub Desktop, Postman
-- **Database**: MySQL, SQLite, MongoDB, Prisma, Sequelize, Mongoose
-- **DevOps**: CircleCI, GitHub Actions, Snyk
+- **Database**: PostgreSQL, MySQL, SQLite, MongoDB, Prisma, Drizzle, Sequelize, Mongoose
+- **DevOps**: CircleCI, GitHub Actions
 - **Editor/IDE**: VSCode, IntelliJ, Eclipse
 - **Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase, Fl0, Surge.sh
 - **OS**: Windows, Ubuntu
@@ -71,6 +64,11 @@
 
 <details closed>
 <summary>View</summary>
+
+- **Noterra | AI-Powered Learning Tool**
+    - Technologies Used: `TypeScript`, `Next.js`, `React`, `TailwindCSS`, `shadcn/ui`, `PostgreSQL`, `Drizzle`, `Zod`, `Clerk`, `Gemini AI`
+    - [GitHub Repo](https://github.com/vikiru/noterra)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Noterra)
 
 - **Grocadex | Grocery Expenses and Expiry Tracker**
 
@@ -96,12 +94,6 @@
     - [GitHub Repo](https://github.com/vikiru/restasaurus)
     - [Project Showcase](https://vikiru.vercel.app/projects/RESTasaurus)
 
-- **Urvo | Multi-purpose Discord Bot**
-
-    - Technologies Used: `Node.js`, `discord.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
-    - [GitHub Repo](https://github.com/vikiru/Urvo)
-    - [Project Showcase](https://vikiru.vercel.app/projects/Urvo)
-
 - **CodeSmell | Static Analysis Tool**
     - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
     - [GitHub Repo](https://github.com/vikiru/CodeSmell)
@@ -113,6 +105,12 @@
 
 <details closed>
 <summary>View</summary>
+
+- **Urvo | Multi-purpose Discord Bot**
+
+    - Technologies Used: `Node.js`, `discord.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
+    - [GitHub Repo](https://github.com/vikiru/Urvo)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Urvo)
 
 - **Portfolio Website**
 

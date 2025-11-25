@@ -14,7 +14,7 @@ const projectData: ProjectData = {
       endDate: 'Nov 2025',
       technologiesUsed: [
         'TypeScript',
-        'NextJS',
+        'Next.js',
         'React',
         'Tailwind CSS',
         'shadcn/ui',
