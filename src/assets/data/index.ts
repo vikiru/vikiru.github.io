@@ -6,12 +6,12 @@ import sitemap from '~data/sitemap';
 import skillsData from '~data/skills';
 
 export {
-    courseData,
-    educationData,
-    featuredProjects,
-    navData,
-    otherProjects,
-    projectData,
-    sitemap,
-    skillsData,
+  courseData,
+  educationData,
+  featuredProjects,
+  navData,
+  otherProjects,
+  projectData,
+  sitemap,
+  skillsData,
 };

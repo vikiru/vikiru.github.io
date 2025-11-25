@@ -1,4 +1,4 @@
 export type SitemapItem = {
-    name: string;
-    url: string;
+  name: string;
+  url: string;
 };
