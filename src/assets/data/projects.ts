@@ -8,10 +8,22 @@ const projectData: ProjectData = {
     projects: [
         {
             name: 'Noterra',
-            description: 'AI-powered learning tool to generate comprehensives notes and flashcards from given user prompts, powered by Gemini AI.',
+            description:
+                'AI-powered learning tool to generate comprehensives notes and flashcards from given user prompts, powered by Gemini AI.',
             startDate: 'Apr 2025',
             endDate: 'Nov 2025',
-            technologiesUsed: ['TypeScript', 'NextJS', 'React', 'Tailwind CSS', 'shadcn/ui', 'PostgreSQL', 'Drizzle', 'Zod', 'Clerk', 'Gemini AI'],
+            technologiesUsed: [
+                'TypeScript',
+                'NextJS',
+                'React',
+                'Tailwind CSS',
+                'shadcn/ui',
+                'PostgreSQL',
+                'Drizzle',
+                'Zod',
+                'Clerk',
+                'Gemini AI',
+            ],
             featured: true,
             contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/noterra',
@@ -174,7 +186,7 @@ const projectData: ProjectData = {
                 'Mocha',
                 'Chai',
             ],
-            featured: true,
+            featured: false,
             contributors: 'This project was completed individually',
             githubUrl: 'https://github.com/vikiru/Urvo',
             documentationUrl: 'https://vikiru.github.io/Urvo/',
