@@ -1,43 +1,43 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "jsx": "react-jsx",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
-        "baseUrl": "src",
-        "paths": {
-            "~assets/*": ["./assets/*"],
-            "~components/*": ["./components/*"],
-            "~data/*": ["./assets/data/*"],
-            "~hooks/*": ["./hooks/*"],
-            "~pages/*": ["./pages/*"],
-            "~scripts/*": ["./scripts/*"],
-            "~utils/*": ["./utils/*"],
-            "~types/*": ["./types/*"]
-        },
-        "typeRoots": [
-            "./node_modules/@types",
-            "./types",
-            "./types/images.d.ts",
-            "./types/index.d.ts"
-        ],
-        "resolveJsonModule": true,
-        "allowJs": true,
-        "checkJs": true,
-        "sourceMap": true,
-        "outDir": "./dist",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "noImplicitAny": false,
-        "noUncheckedIndexedAccess": true,
-        "skipDefaultLibCheck": true,
-        "skipLibCheck": true
-    },
-    "include": [
-        "src/**/*.ts",
-        "src/**/*.tsx",
-        "src/types/**/*.d.ts",
-        "src/scripts/generateSitemap.ts"
-    ]
+	"compilerOptions": {
+		"target": "ESNext",
+		"jsx": "react-jsx",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"baseUrl": "src",
+		"paths": {
+			"~assets/*": ["./assets/*"],
+			"~components/*": ["./components/*"],
+			"~data/*": ["./assets/data/*"],
+			"~hooks/*": ["./hooks/*"],
+			"~pages/*": ["./pages/*"],
+			"~scripts/*": ["./scripts/*"],
+			"~utils/*": ["./utils/*"],
+			"~types/*": ["./types/*"]
+		},
+		"typeRoots": [
+			"./node_modules/@types",
+			"./types",
+			"./types/images.d.ts",
+			"./types/index.d.ts"
+		],
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"checkJs": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"noUncheckedIndexedAccess": true,
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/types/**/*.d.ts",
+		"src/scripts/generateSitemap.ts"
+	]
 }
