@@ -1,5 +1,5 @@
 import { Layout, ShowcaseSection } from '~components/index';
-import type { Project } from '~types/index';
+import type { Project } from '~types/Project';
 
 type ProjectShowcaseProps = {
   project: Project;

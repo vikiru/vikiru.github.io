@@ -1,4 +1,4 @@
-import type { Course } from '~types/index';
+import type { Course } from '~types/Course';
 
 type CourseCardProps = {
   course: Course;
