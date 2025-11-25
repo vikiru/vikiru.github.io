@@ -26,6 +26,7 @@ const skillsData: SkillsData = {
       'Mocha',
       'Express.js',
       'React Router',
+      'Next.js',
       'Django',
       'Flask',
     ],
@@ -45,7 +46,7 @@ const skillsData: SkillsData = {
     title: 'Libraries',
   },
   database: {
-    data: ['MySQL', 'SQLite', 'MongoDB', 'Prisma', 'Sequelize', 'Mongoose'],
+    data: ['PostgreSQL','MySQL', 'SQLite', 'MongoDB', 'Prisma', 'Drizzle', 'Sequelize', 'Mongoose'],
     title: 'Database',
   },
   tools: {
@@ -62,7 +63,7 @@ const skillsData: SkillsData = {
     title: 'Tools',
   },
   devops: {
-    data: ['CircleCI', 'GitHub Actions', 'Snyk'],
+    data: ['CircleCI', 'GitHub Actions'],
     title: 'DevOps',
   },
   hosting: {
