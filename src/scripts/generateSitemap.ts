@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import moment from 'moment';
 import { sitemap } from '~data/index';
-import type { SitemapGroup } from '~types/index';
+import type { SitemapGroup } from '~types/SitemapGroup';
 
 const HOST_NAME = 'https://vikiru.vercel.app';
 const currentDate = Date.now();

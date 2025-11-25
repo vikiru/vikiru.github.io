@@ -2,7 +2,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import type { Project } from '~types/index';
+import type { Project } from '~types/Project';
 
 type ProjectCardProps = {
   project: Project;
