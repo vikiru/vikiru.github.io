@@ -185,8 +185,7 @@
 
 **Dev Tools**:
 
-- **Linting**: [ESLint](https://eslint.org/).
-- **Formatting**: [Prettier](https://prettier.io/).
+- **Linting/Formatting**: [Biome.js](https://biomejs.dev/)
 - **Code Time Tracking**: [WakaTime](https://wakatime.com/).
 - **Design**: [Figma](https://www.figma.com/) - initial design mockup files can be seen [here](https://www.figma.com/file/eFWKPcabJAf7FLOdOXd5d6/Portfolio-Website?type=design&t=HThRE3vIBx3VTIwe-6).
 - **Analytics**: [Google Analytics](https://marketingplatform.google.com/about/analytics/).
