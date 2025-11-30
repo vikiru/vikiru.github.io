@@ -2,77 +2,87 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
                 <loc>https://vikiru.vercel.app/</loc>
-                <lastmod>2025-03-11</lastmod>
+                <lastmod>2025-11-29</lastmod>
                 <priority>1</priority>
             </url>
             <url>
                 <loc>https://vikiru.vercel.app/about</loc>
-                <lastmod>2025-03-11</lastmod>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
                 <loc>https://vikiru.vercel.app/education/courses</loc>
-                <lastmod>2025-03-11</lastmod>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
                 <loc>https://vikiru.vercel.app/projects</loc>
-                <lastmod>2025-03-11</lastmod>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
                 <loc>https://vikiru.vercel.app/contact</loc>
-                <lastmod>2025-03-11</lastmod>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/Kelbrum</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/noterra</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/Parseum</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/grocadex</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/RESTasaurus</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/kelbrum</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/Urvo</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/parseum</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/CodeSmell</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/restasaurus</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/Portfolio</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/codesmell</loc>
+                <lastmod>2025-11-29</lastmod>
+                <priority>0.5</priority>
+            </url>
+            <url>
+                <loc>https://vikiru.vercel.app/projects/urvo</loc>
+                <lastmod>2025-11-29</lastmod>
+                <priority>0.5</priority>
+            </url>
+            <url>
+                <loc>https://vikiru.vercel.app/projects/portfolio</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
                 <loc>https://vikiru.vercel.app/projects/discrete-sim</loc>
-                <lastmod>2025-03-11</lastmod>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/Mini-SurveyMonkey</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/mini-surveymonkey</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/Elevator-Simulator</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/elevator-simulator</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
             <url>
-                <loc>https://vikiru.vercel.app/projects/digitalRisk</loc>
-                <lastmod>2025-03-11</lastmod>
+                <loc>https://vikiru.vercel.app/projects/digitalrisk</loc>
+                <lastmod>2025-11-29</lastmod>
                 <priority>0.5</priority>
             </url>
 	</urlset>
