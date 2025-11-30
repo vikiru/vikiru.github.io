@@ -210,7 +210,7 @@ cd vikiru.github.io
 2. Download and install all dependencies.
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## 🚀 Run
@@ -218,7 +218,7 @@ npm install
 The portfolio website can be started locally via the following command:
 
 ```bash
-npm run start
+pnpm start
 ```
 
 Once started, you can access the website locally via:
@@ -232,31 +232,31 @@ http://localhost:3000/
 1. Start the app in the development environment.
 
 ```bash
-npm run start
+pnpm start
 ```
 
 2. Build the project files and optimize for production.
 
 ```bash
-npm run build
+pnpm build
 ```
 
-3. Lint all files and check if there are any issues, with [ESLint](https://eslint.org/).
+3. Lint files using [Biome](https://biomejs.dev).
 
 ```bash
-npm run lint
+pnpm lint
 ```
 
-4. Fix all ESLint issues then format the files with [Prettier](https://prettier.io/).
+4. Format files using [Biome](https://biomejs.dev).
 
 ```bash
-npm run prettier
+pnpm format
 ```
 
 5. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts) and [`generateSitemap.ts`](./src/scripts/generateSitemap.ts).
 
 ```bash
-npm run generate-sitemap
+pnpm generate-sitemap
 ```
 
 ## ✨ Acknowledgments
