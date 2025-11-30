@@ -9,7 +9,7 @@ const projectData: ProjectData = {
     {
       name: 'Noterra',
       description:
-        'AI-powered learning tool to generate comprehensives notes and flashcards from given user prompts, powered by Gemini AI.',
+        'AI-powered learning tool to generate comprehensive notes and flashcards from given user prompts, powered by Gemini AI.',
       startDate: 'Apr 2025',
       endDate: 'Nov 2025',
       technologiesUsed: [
