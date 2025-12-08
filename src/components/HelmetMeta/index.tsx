@@ -1,28 +1,15 @@
-import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
-type HelmetMetaProps = {
-  title: string;
-  description: string;
-};
-
-function HelmetMeta({ title, description }: HelmetMetaProps) {
-  return (
-    <Helmet>
-      {/* Title and Description */}
-      <title>{title}</title>
-      <meta content={description} name="description" />
-
-      {/* Open Graph */}
-      <meta content={title} property="og:title" />
-      <meta content={description} property="og:description" />
-      <meta content={window.location.href} property="og:url" />
-      <meta content="website" property="og:type" />
-
-      {/* Twitter */}
-      <meta content={title} property="twitter:title" />
-      <meta content={description} property="twitter:description" />
-    </Helmet>
-  );
+export function useMeta(title: string, description: string) {
+  useEffect(() => {
+    document.title = title;
+    
+    const metaDescription = document.querySelector('meta[name="description"]') || 
+                          document.createElement('meta');
+    metaDescription.setAttribute('name', 'description');
+    metaDescription.setAttribute('content', description);
+    if (!metaDescription.parentNode) {
+      document.head.appendChild(metaDescription);
+    }
+  }, [title, description]);
 }
-
-export default HelmetMeta;

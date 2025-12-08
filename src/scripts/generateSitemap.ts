@@ -1,9 +1,8 @@
-import 'module-alias/register';
 import fs from 'node:fs';
 import path from 'node:path';
 import moment from 'moment';
-import { sitemap } from '~data/index';
-import type { SitemapGroup } from '~types/SitemapGroup';
+import { sitemap } from '~assets/data';
+import type { SitemapGroup } from '~types/index';
 
 const HOST_NAME = 'https://vikiru.vercel.app';
 const currentDate = Date.now();

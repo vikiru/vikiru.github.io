@@ -3,7 +3,7 @@ import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { VideoPlayer } from '~components/index';
-import type { Project } from '~types/Project';
+import type { Project } from '~types/index';
 
 type ShowcaseSectionProps = {
   project: Project;
