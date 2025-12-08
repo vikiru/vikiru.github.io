@@ -7,7 +7,7 @@ function ContactForm() {
     <section className="form-ctr pb-6" id="contact-form">
       <form
         action="https://kwesforms.com/api/f/OcdSwYrzmf5Uw6fLcCC1"
-        className="kwes-form"
+        className="kf-form"
         method="POST"
         name="contact-form"
         onSubmit={handleSubmit}
