@@ -1,13 +1,15 @@
+import { memo } from 'react';
 import Layout from '~components/Layout';
 import ShowcaseSection from '~components/ShowcaseSection';
-import { memo } from 'react';
 import type { Project } from '~types/Project';
 
 type ProjectShowcaseProps = {
   project: Project;
 };
 
-const ProjectShowcasePage = memo(function ProjectShowcasePage({ project }: ProjectShowcaseProps) {
+const ProjectShowcasePage = memo(function ProjectShowcasePage({
+  project,
+}: ProjectShowcaseProps) {
   return (
     <Layout
       description={`Learn about ${project.name}, explore its goals, my accomplishments, and check out the project demo.`}
