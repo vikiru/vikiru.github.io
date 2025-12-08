@@ -1,11 +1,4 @@
-import kwesforms from 'kwesforms';
-import { useEffect } from 'react';
-
 function useContact() {
-  useEffect(() => {
-    kwesforms.init();
-  }, []);
-
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
