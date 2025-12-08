@@ -1,4 +1,5 @@
-import { Hero, Layout } from '~components/index';
+import Hero from '~components/Hero';
+import Layout from '~components/Layout';
 
 function HomePage() {
   return (

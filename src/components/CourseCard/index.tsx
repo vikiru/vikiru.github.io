@@ -1,10 +1,11 @@
-import type { Course } from '~types/index';
+import { memo } from 'react';
+import type { Course } from '~types/Course';
 
 type CourseCardProps = {
   course: Course;
 };
 
-function CourseCard(props: CourseCardProps) {
+const CourseCard = memo(function CourseCard(props: CourseCardProps) {
   const course = props.course;
 
   return (
@@ -41,6 +42,6 @@ function CourseCard(props: CourseCardProps) {
       </section>
     </section>
   );
-}
+});
 
 export default CourseCard;

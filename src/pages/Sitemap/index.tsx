@@ -1,4 +1,5 @@
-import { Layout, SitemapSection } from '~components/index';
+import Layout from '~components/Layout';
+import SitemapSection from '~components/SitemapSection';
 
 function Sitemap() {
   return (
