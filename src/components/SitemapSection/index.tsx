@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { sitemap } from '~data/index';
+import sitemap from '~data/sitemap';
 
 function SitemapSection() {
   return (

@@ -2,8 +2,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { FooterLogo } from '~components/index';
-import { navData } from '~data/index';
+import FooterLogo from '~components/FooterLogo';
+import navData from '~data/nav';
 
 function Footer() {
   return (

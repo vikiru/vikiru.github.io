@@ -3,12 +3,14 @@ import { useEffect } from 'react';
 export function useMetaData(
   title: string,
   description: string,
-  url: string = window.location.href
+  url: string = window.location.href,
 ) {
   useEffect(() => {
     document.title = title;
 
-    let descriptionTag = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    let descriptionTag = document.querySelector<HTMLMetaElement>(
+      'meta[name="description"]',
+    );
     if (!descriptionTag) {
       descriptionTag = document.createElement('meta');
       descriptionTag.setAttribute('name', 'description');
@@ -23,8 +25,10 @@ export function useMetaData(
       { property: 'og:type', content: 'website' },
     ];
 
-    ogTags.forEach(tag => {
-      let element = document.querySelector<HTMLMetaElement>(`meta[property="${tag.property}"]`);
+    ogTags.forEach((tag) => {
+      let element = document.querySelector<HTMLMetaElement>(
+        `meta[property="${tag.property}"]`,
+      );
       if (!element) {
         element = document.createElement('meta');
         element.setAttribute('property', tag.property);
@@ -38,8 +42,10 @@ export function useMetaData(
       { property: 'twitter:description', content: description },
     ];
 
-    twitterTags.forEach(tag => {
-      let element = document.querySelector<HTMLMetaElement>(`meta[property="${tag.property}"]`);
+    twitterTags.forEach((tag) => {
+      let element = document.querySelector<HTMLMetaElement>(
+        `meta[property="${tag.property}"]`,
+      );
       if (!element) {
         element = document.createElement('meta');
         element.setAttribute('property', tag.property);

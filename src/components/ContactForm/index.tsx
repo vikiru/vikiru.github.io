@@ -1,4 +1,4 @@
-import { useContact } from '~hooks/index';
+import useContact from '~hooks/useContact';
 
 function ContactForm() {
   const { handleSubmit } = useContact();

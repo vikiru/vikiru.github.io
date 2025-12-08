@@ -1,4 +1,5 @@
-import { CourseContainer, Layout } from '~components/index';
+import CourseContainer from '~components/CourseContainer';
+import Layout from '~components/Layout';
 
 function CoursesPage() {
   return (

@@ -1,11 +1,13 @@
-import { Layout, ShowcaseSection } from '~components/index';
-import type { Project } from '~types/index';
+import Layout from '~components/Layout';
+import ShowcaseSection from '~components/ShowcaseSection';
+import { memo } from 'react';
+import type { Project } from '~types/Project';
 
 type ProjectShowcaseProps = {
   project: Project;
 };
 
-function ProjectShowcasePage({ project }: ProjectShowcaseProps) {
+const ProjectShowcasePage = memo(function ProjectShowcasePage({ project }: ProjectShowcaseProps) {
   return (
     <Layout
       description={`Learn about ${project.name}, explore its goals, my accomplishments, and check out the project demo.`}
@@ -14,6 +16,6 @@ function ProjectShowcasePage({ project }: ProjectShowcaseProps) {
       <ShowcaseSection project={project} />
     </Layout>
   );
-}
+});
 
 export default ProjectShowcasePage;

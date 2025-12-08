@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"allowJs": true,
-		"baseUrl": "src",
+		"baseUrl": ".",
 		"checkJs": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
@@ -21,28 +21,28 @@
 		"outDir": "./dist",
 		"paths": {
 			"~assets/*": [
-				"./assets/*"
+				"./src/assets/*"
 			],
 			"~components/*": [
-				"./components/*"
+				"./src/components/*"
 			],
 			"~data/*": [
-				"./assets/data/*"
+				"./src/assets/data/*"
 			],
 			"~hooks/*": [
-				"./hooks/*"
+				"./src/hooks/*"
 			],
 			"~pages/*": [
-				"./pages/*"
+				"./src/pages/*"
 			],
 			"~scripts/*": [
-				"./scripts/*"
+				"./src/scripts/*"
 			],
 			"~types/*": [
-				"./types/*"
+				"./src/types/*"
 			],
 			"~utils/*": [
-				"./utils/*"
+				"./src/utils/*"
 			]
 		},
 		"resolveJsonModule": true,
@@ -62,6 +62,7 @@
 		"src/**/*.ts",
 		"src/**/*.tsx",
 		"src/types/**/*.d.ts",
-		"src/scripts/generateSitemap.ts"
+		"src/scripts/generateSitemap.ts",
+		"*.config.*"
 	]
 }
