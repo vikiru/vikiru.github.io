@@ -20,14 +20,9 @@
 
 ## 🌐 Portfolio Overview
 
-<p>
-  My personal portfolio website serves as a comprehensive showcase of my expertise, skills, and the wide range of projects I’ve worked on. It's built using <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a> and <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TailwindCSS</a>,
-  and is currently hosted on <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>.
-</p>
+My personal portfolio website serves as a comprehensive showcase of my expertise, skills, and the wide range of projects I've worked on. It's built using [React](https://react.dev/) and [TailwindCSS](https://tailwindcss.com/), and is currently hosted on [Vercel](https://vercel.com/).
 
-<p>
-  This project was bootstrapped with <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>.
-</p>
+This project was bootstrapped with [Vite]](https://vite.dev/).
 
 <details closed>
 
