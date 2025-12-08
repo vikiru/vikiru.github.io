@@ -22,7 +22,7 @@
 
 My personal portfolio website serves as a comprehensive showcase of my expertise, skills, and the wide range of projects I've worked on. It's built using [React](https://react.dev/) and [TailwindCSS](https://tailwindcss.com/), and is currently hosted on [Vercel](https://vercel.com/).
 
-This project was bootstrapped with [Vite]](https://vite.dev/).
+This project was bootstrapped with [Vite](https://vite.dev/).
 
 <details closed>
 
