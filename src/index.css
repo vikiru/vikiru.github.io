@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Kwesforms Styling */
+/* Hide KwesForms default errors */
 #field-error-name,
 #field-error-email,
 #field-error-subject,
-#field-error-content {
-    @apply h5-text py-2 xs:mx-1 lg:py-3 4xl:py-4 8xl:py-6 11xl:py-8;
-}
-
-div .kw-alert,
-kw-alert-error {
-    @apply h5-text my-2 lg:py-2 2xl:py-4 3xl:py-6 4xl:py-8 5xl:py-10 11xl:my-6 11xl:py-16;
+#field-error-content,
+.kw-alert,
+.kw-alert-error {
+    display: none !important;
 }
 
 /* Typography Components */

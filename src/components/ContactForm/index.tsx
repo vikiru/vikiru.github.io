@@ -1,7 +1,7 @@
 import useContact from '~hooks/useContact';
 
 function ContactForm() {
-  const { handleSubmit } = useContact();
+  const { formData, errors, handleSubmit, handleInputChange } = useContact();
 
   return (
     <section className="form-ctr pb-6" id="contact-form">
@@ -23,10 +23,15 @@ function ContactForm() {
             data-kw-rules="max:255"
             id="name"
             name="name"
+            onChange={handleInputChange}
             placeholder="Enter your full name"
             required
             type="text"
+            value={formData.name}
           />
+          {errors.name && (
+            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+          )}
           <br />
         </div>
 
@@ -41,10 +46,15 @@ function ContactForm() {
             data-kw-rules="required|email"
             id="email"
             name="email"
+            onChange={handleInputChange}
             placeholder="Enter email address"
             required
             type="email"
+            value={formData.email}
           />
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
           <br />
         </div>
 
@@ -59,10 +69,15 @@ function ContactForm() {
             data-kw-rules="required"
             id="subject"
             name="subject"
+            onChange={handleInputChange}
             placeholder="Enter email subject"
             required
             type="text"
+            value={formData.subject}
           />
+          {errors.subject && (
+            <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
+          )}
           <br />
         </div>
 
@@ -75,12 +90,19 @@ function ContactForm() {
           <textarea
             className="form-input"
             cols={50}
+            data-kw-rules="required"
             id="content"
             name="content"
-            placeholder="Enter message here"
+            onChange={handleInputChange}
+            placeholder="Enter your message here"
             required
             rows={5}
+            value={formData.content}
           />
+          {errors.content && (
+            <p className="text-red-500 text-sm mt-1">{errors.content}</p>
+          )}
+          <br />
         </div>
 
         {/* Form Submit */}
