@@ -7,7 +7,6 @@ import CTA from '~components/CTA';
 import EducationContainer from '~components/EducationContainer';
 import Footer from '~components/Footer';
 import FooterLogo from '~components/FooterLogo';
-import HelmetMeta from '~components/HelmetMeta';
 import Hero from '~components/Hero';
 import Layout from '~components/Layout';
 import NavBar from '~components/NavBar';
@@ -31,7 +30,6 @@ export {
   EducationContainer,
   Footer,
   FooterLogo,
-  HelmetMeta,
   Hero,
   Layout,
   NavBar,

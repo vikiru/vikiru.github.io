@@ -1,4 +1,5 @@
-import { Footer, HelmetMeta, NavBar } from '~components/index';
+import { Footer, NavBar } from '~components/index';
+import { useMetaData } from '~hooks/index';
 
 type LayoutProps = {
   title: string;
@@ -7,9 +8,10 @@ type LayoutProps = {
 };
 
 function Layout({ title, description, children }: LayoutProps) {
+  useMetaData(title, description);
+
   return (
     <>
-      <HelmetMeta description={description} title={title} />
       <div className="scroller bg-light-background-950 dark:bg-dark-background-700">
         <NavBar />
         <main>{children}</main>
