@@ -70,6 +70,11 @@
     - [GitHub Repo](https://github.com/vikiru/noterra)
     - [Project Showcase](https://vikiru.vercel.app/projects/Noterra)
 
+- **Paleodra | Dinosaur Discovery Web App**
+    - Technologies Used: `TypeScript`, `Next.js`, `React`, `Zustand`, `Zod`, `TailwindCSS`, `shadcn/ui`, `MongoDB`, `Mongoose`, `Express.js`
+    - [GitHub Repo](https://github.com/vikiru/paleodra)
+    - [Project Showcase](https://vikiru.vercel.app/projects/Paleodra)
+
 - **Grocadex | Grocery Expenses and Expiry Tracker**
 
     - Technologies Used: `TypeScript`, `React Native`, `Expo`, `Gluestack UI`, `NativeWind`, `Zustand`, `Tanstack Query`, `Express`, `Passport`, `Prisma`, `PostgreSQL`
@@ -88,12 +93,6 @@
     - [GitHub Repo](https://github.com/vikiru/parseum)
     - [Project Showcase](https://vikiru.vercel.app/projects/Parseum)
 
-- **RESTasaurus | Dinosaur REST API**
-
-    - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
-    - [GitHub Repo](https://github.com/vikiru/restasaurus)
-    - [Project Showcase](https://vikiru.vercel.app/projects/RESTasaurus)
-
 - **CodeSmell | Static Analysis Tool**
     - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
     - [GitHub Repo](https://github.com/vikiru/CodeSmell)
@@ -105,6 +104,12 @@
 
 <details closed>
 <summary>View</summary>
+
+- **RESTasaurus | Dinosaur REST API**
+
+    - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
+    - [GitHub Repo](https://github.com/vikiru/restasaurus)
+    - [Project Showcase](https://vikiru.vercel.app/projects/RESTasaurus)
 
 - **Urvo | Multi-purpose Discord Bot**
 

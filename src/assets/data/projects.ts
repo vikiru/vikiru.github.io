@@ -1,4 +1,4 @@
-import type { Project } from '~types/Project';
+import type { Project } from '~types/index';
 
 type ProjectData = {
   projects: Project[];
@@ -37,6 +37,37 @@ const projectData: ProjectData = {
         'Implemented form validation with Zod and React Hook Form for robust input handling',
         'Implemented note export (txt, md, pdf) functionality leveraging native browser APIs',
         'Designed PostgreSQL data models using Drizzle, implementing proper relationships and indexing to optimize query performance for user, note, and flashcard data',
+        'Automated CI pipeline with GitHub Actions to enforce linting and formatting with Biome, as well as automate releases using Semantic Release',
+        'Designed a responsive UI using TailwindCSS, shadcn/ui and Lucide React Icons',
+      ],
+    },
+    {
+      name: 'Paleodra',
+      description:
+        'A dinosaur discovery web application that allows users to explore, learn about, and track dinosaur species.',
+      startDate: 'Apr 2025',
+      endDate: 'Nov 2025',
+      technologiesUsed: [
+        'TypeScript',
+        'Next.js',
+        'React',
+        'Zustand',
+        'Zod',
+        'Tailwind CSS',
+        'shadcn/ui',
+        'MongoDB',
+        'Mongoose',
+        'Express.js',
+      ],
+      featured: true,
+      contributors: 'This project was completed individually',
+      githubUrl: 'https://github.com/vikiru/paleodra',
+      documentationUrl: '',
+      projectPageUrl: '/projects/Paleodra',
+      videoPath: '/videos/Paleodra/Paleodra-demo.mp4',
+      accomplishments: [
+        'Implemented a secure, documented and tested Express.js REST API with over 200+ tests and 100% coverage, used by at least four people',
+        'Integrated FlexSearch for fast, client-side search functionality and Zustand to track user dinosaur discovery across the website',
         'Automated CI pipeline with GitHub Actions to enforce linting and formatting with Biome, as well as automate releases using Semantic Release',
         'Designed a responsive UI using TailwindCSS, shadcn/ui and Lucide React Icons',
       ],
@@ -155,7 +186,7 @@ const projectData: ProjectData = {
         'Mocha',
         'Chai',
       ],
-      featured: true,
+      featured: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/restasaurus',
       documentationUrl: 'https://vikiru.github.io/restasaurus/',
@@ -167,7 +198,7 @@ const projectData: ProjectData = {
         'Achieved 100% test coverage with over 200 tests using Sinon, Mocha, Chai and Istanbul, and showcased this with badges in the README',
         'Built a comprehensive and user-friendly documentation website with Docusaurus, hosted via GitHub pages',
         'Utilized Swagger Editor to create OpenAPI specification for all routes and MongoDB schemas',
-        'Utilized GitHub Actions to create a CI pipeline for running tests, linting files and prettier formatting them',
+        'Automated CI pipeline with GitHub Actions to enforce linting and formatting with Biome, as well as automate releases using Semantic Release',
         'Developed scripts to retrieve and process data from Wikipedia articles via its API, and save the data to the MongoDB database',
       ],
     },
