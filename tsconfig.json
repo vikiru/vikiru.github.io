@@ -38,6 +38,9 @@
 			"~scripts/*": [
 				"./src/scripts/*"
 			],
+			"~schema/*": [
+				"./src/schema/*"
+			],
 			"~types/*": [
 				"./src/types/*"
 			],
