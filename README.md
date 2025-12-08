@@ -177,7 +177,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 ## 🛠️ Tech Stack
 
-**Frontend**: [React](https://react.dev/), [React Router](https://reactrouter.com/en/main), [TailwindCSS](https://tailwindcss.com/)
+**Frontend**: [React](https://react.dev/), [React Router](https://reactrouter.com/en/main), [Zod](https://zod.dev/), [TailwindCSS](https://tailwindcss.com/)
 
 **Hosting**: [Vercel](https://vercel.com/)
 
@@ -228,34 +228,52 @@ http://localhost:3000/
 
 ## 📜 Available Scripts
 
-1. Start the app in the development environment.
+1. Start the app in the development environment using [Vite](https://vite.dev/).
 
 ```bash
-pnpm start
+pnpm dev
 ```
 
-2. Build the project files and optimize for production.
+2. Build the project files and optimize for production using [Vite](https://vite.dev/).
 
 ```bash
 pnpm build
 ```
 
-3. Lint files using [Biome](https://biomejs.dev).
+3. Preview the built project locally using [Vite](https://vite.dev/).
+
+```bash
+pnpm preview
+```
+
+4. Prepare Git hooks using [Husky](https://typicode.github.io/husky/)
+
+```bash
+pnpm prepare
+```
+
+5. Lint files using [Biome](https://biomejs.dev).
 
 ```bash
 pnpm lint
 ```
 
-4. Format files using [Biome](https://biomejs.dev).
+6. Format files using [Biome](https://biomejs.dev).
 
 ```bash
 pnpm format
 ```
 
-5. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts) and [`generateSitemap.ts`](./src/scripts/generateSitemap.ts).
+7. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts) and [`generateSitemap.ts`](./src/scripts/generateSitemap.ts).
 
 ```bash
 pnpm generate-sitemap
+```
+
+8. Run TypeScript type checks without emitting files.
+
+```bash
+pnpm typecheck
 ```
 
 ## ✨ Acknowledgments
