@@ -1,71 +1,49 @@
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"baseUrl": ".",
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"incremental": true,
-		"isolatedModules": true,
-		"jsx": "preserve",
-		"lib": [
-			"dom",
-			"dom.iterable",
-			"esnext"
-		],
-		"module": "nodenext",
-		"moduleResolution": "nodenext",
-		"noEmit": true,
-		"noImplicitAny": false,
-		"noUncheckedIndexedAccess": true,
-		"outDir": "./dist",
-		"paths": {
-			"~assets/*": [
-				"./src/assets/*"
-			],
-			"~components/*": [
-				"./src/components/*"
-			],
-			"~data/*": [
-				"./src/assets/data/*"
-			],
-			"~hooks/*": [
-				"./src/hooks/*"
-			],
-			"~pages/*": [
-				"./src/pages/*"
-			],
-			"~scripts/*": [
-				"./src/scripts/*"
-			],
-			"~schema/*": [
-				"./src/schema/*"
-			],
-			"~types/*": [
-				"./src/types/*"
-			],
-			"~utils/*": [
-				"./src/utils/*"
-			]
-		},
-		"resolveJsonModule": true,
-		"skipDefaultLibCheck": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strict": true,
-		"target": "ESNext",
-		"typeRoots": [
-			"./node_modules/@types",
-			"./types",
-			"./types/images.d.ts",
-			"./types/index.d.ts"
-		]
-	},
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.tsx",
-		"src/types/**/*.d.ts",
-		"src/scripts/generateSitemap.ts",
-		"*.config.*"
-	]
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "~assets/*": ["./src/assets/*"],
+      "~components/*": ["./src/components/*"],
+      "~data/*": ["./src/assets/data/*"],
+      "~hooks/*": ["./src/hooks/*"],
+      "~pages/*": ["./src/pages/*"],
+      "~scripts/*": ["./src/scripts/*"],
+      "~schema/*": ["./src/schema/*"],
+      "~types/*": ["./src/types/*"],
+      "~utils/*": ["./src/utils/*"]
+    },
+    "incremental": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "*.config.ts"],
+  "exclude": [
+    "node_modules",
+    "**.*/",
+    ".git",
+    ".github",
+    "public",
+    "dist",
+    "build",
+    "out",
+    ".vscode",
+    "*.json",
+    "*.md",
+    "*.mdx",
+    "*.lock",
+    "*.yaml",
+    "*.yml"
+  ]
 }
