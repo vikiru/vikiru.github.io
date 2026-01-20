@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.7/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -70,9 +70,14 @@
   },
   "linter": {
     "domains": {
-      "next": "recommended",
+      "next": "none",
       "project": "none",
-      "react": "recommended"
+      "qwik": "none",
+      "react": "recommended",
+      "solid": "none",
+      "test": "none",
+      "turborepo": "none",
+      "vue": "none"
     },
     "enabled": true,
     "rules": {
