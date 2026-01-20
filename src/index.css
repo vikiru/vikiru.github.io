@@ -1,11 +1,8 @@
 
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Hide KwesForms default errors */
 #field-error-name,
