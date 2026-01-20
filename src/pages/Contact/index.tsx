@@ -1,5 +1,5 @@
-import ContactSection from '~components/ContactSection';
-import Layout from '~components/Layout';
+import ContactSection from '@/components/ContactSection';
+import Layout from '@/components/Layout';
 
 function Contact() {
   return (

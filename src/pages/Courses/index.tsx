@@ -1,5 +1,5 @@
-import CourseContainer from '~components/CourseContainer';
-import Layout from '~components/Layout';
+import CourseContainer from '@/components/CourseContainer';
+import Layout from '@/components/Layout';
 
 function CoursesPage() {
   return (

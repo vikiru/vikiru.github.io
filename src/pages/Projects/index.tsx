@@ -1,5 +1,5 @@
-import Layout from '~components/Layout';
-import ProjectContainer from '~components/ProjectContainer';
+import Layout from '@/components/Layout';
+import ProjectContainer from '@/components/ProjectContainer';
 
 function ProjectsPage() {
   return (

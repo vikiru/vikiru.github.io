@@ -1,7 +1,7 @@
 import { memo } from 'react';
-import Layout from '~components/Layout';
-import ShowcaseSection from '~components/ShowcaseSection';
-import type { Project } from '~types/Project';
+import Layout from '@/components/Layout';
+import ShowcaseSection from '@/components/ShowcaseSection';
+import type { Project } from '@/types/Project';
 
 type ProjectShowcaseProps = {
   project: Project;

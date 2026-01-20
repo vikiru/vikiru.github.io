@@ -16,15 +16,7 @@
     "jsxImportSource": "react",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "~assets/*": ["./src/assets/*"],
-      "~components/*": ["./src/components/*"],
-      "~data/*": ["./src/assets/data/*"],
-      "~hooks/*": ["./src/hooks/*"],
-      "~pages/*": ["./src/pages/*"],
-      "~scripts/*": ["./src/scripts/*"],
-      "~schema/*": ["./src/schema/*"],
-      "~types/*": ["./src/types/*"],
-      "~utils/*": ["./src/utils/*"]
+      "@/*": ["./src/*"]
     },
     "incremental": true
   },

@@ -1,4 +1,4 @@
-import type { Project } from '~types/Project';
+import type { Project } from '@/types/Project';
 
 type VideoPlayerProps = {
   project: Project;
