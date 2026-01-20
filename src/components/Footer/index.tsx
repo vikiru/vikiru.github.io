@@ -3,7 +3,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import FooterLogo from '@/components/FooterLogo';
-import navData from '@/data/nav';
+import navData from '@/data/assets/nav';
 
 function Footer() {
   return (
