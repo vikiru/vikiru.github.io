@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { projectData } from '@/data/projects';
+import { projectData } from '@/data/assets/projects';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
 import Courses from '@/pages/Courses';
