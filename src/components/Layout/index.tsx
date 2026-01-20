@@ -1,6 +1,6 @@
-import Footer from '~components/Footer';
-import NavBar from '~components/NavBar';
-import { useMetaData } from '~hooks/useMetaData';
+import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
+import { useMetaData } from '@/hooks/useMetaData';
 
 type LayoutProps = {
   title: string;

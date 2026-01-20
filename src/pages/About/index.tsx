@@ -1,7 +1,7 @@
-import About from '~components/About';
-import EducationContainer from '~components/EducationContainer';
-import Layout from '~components/Layout';
-import SkillsContainer from '~components/SkillsContainer';
+import About from '@/components/About';
+import EducationContainer from '@/components/EducationContainer';
+import Layout from '@/components/Layout';
+import SkillsContainer from '@/components/SkillsContainer';
 
 function AboutPage() {
   return (

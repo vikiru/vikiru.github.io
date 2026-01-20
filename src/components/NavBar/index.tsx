@@ -2,9 +2,9 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faEnvelope, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import NavLogo from '~components/NavLogo';
-import navData from '~data/nav';
-import useNav from '~hooks/useNav';
+import NavLogo from '@/components/NavLogo';
+import navData from '@/data/nav';
+import useNav from '@/hooks/useNav';
 
 function NavBar() {
   const { isOpen, handleClick } = useNav();

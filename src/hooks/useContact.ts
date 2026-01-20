@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { contactFormSchema } from '~schema/contactFormSchema';
+import { contactFormSchema } from '@/schema/contactFormSchema';
 
 type FormField = 'name' | 'email' | 'subject' | 'content';
 

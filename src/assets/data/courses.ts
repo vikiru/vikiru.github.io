@@ -1,4 +1,4 @@
-import type { UniversityYear } from '~types/UniversityYear';
+import type { UniversityYear } from '@/types/UniversityYear';
 
 type CourseData = {
   years: UniversityYear[];

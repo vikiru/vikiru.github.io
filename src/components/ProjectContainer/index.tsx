@@ -1,6 +1,6 @@
-import ProjectCard from '~components/ProjectCard';
-import { featuredProjects, otherProjects } from '~data/projects';
-import type { Project } from '~types/Project';
+import ProjectCard from '@/components/ProjectCard';
+import { featuredProjects, otherProjects } from '@/data/projects';
+import type { Project } from '@/types/Project';
 
 function ProjectContainer() {
   return (

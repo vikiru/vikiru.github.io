@@ -1,4 +1,4 @@
-import type { SitemapItem } from '~types/SitemapItem';
+import type { SitemapItem } from '@/types/SitemapItem';
 
 export type SitemapGroup = {
   category: string;
