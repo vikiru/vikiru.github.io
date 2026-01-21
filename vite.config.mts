@@ -11,7 +11,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   plugins: [
     tsConfigPaths(),
-    tanstackStart(),
+    tanstackStart({
+      prerender: {
+        enabled: false,
+      },
+      sitemap: {
+        enabled: true,
+        host: 'https://vikiru.vercel.app',
+      },
+    }),
     tailwindcss(),
     react({
       babel: {
