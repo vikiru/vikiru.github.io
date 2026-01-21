@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
-import CourseContainer from '@/components/CourseContainer';
-import Layout from '@/components/Layout';
+import Layout from '@/components/layout/Layout';
+import CourseContainer from '@/components/sections/CourseContainer';
 
 export const Route = createFileRoute('/education/courses')({
   component: CoursesPage,
