@@ -16,7 +16,8 @@
     "jsxImportSource": "react",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/lib/*": ["./src/lib/*"]
     },
     "incremental": true
   },
