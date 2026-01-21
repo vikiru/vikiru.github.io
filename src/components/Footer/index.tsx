@@ -5,17 +5,12 @@ import navData from '@/data/nav';
 
 function Footer() {
   return (
-    <footer className="mt-auto w-full bg-light-background-600 py-6 10xl:py-10 dark:bg-dark-background-800">
+    <footer className="mt-auto w-full bg-secondary py-6 10xl:py-10 dark:bg-secondary/20">
       <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-2 md:grid-cols-3 lg:gap-4 xl:gap-6 2xl:gap-8">
-        {/* Logo Section */}
         <FooterLogo />
 
-        {/* Read More Section */}
         <section className="text-center md:text-left" id="read-more">
-          <h3
-            className="h3-text font-heading font-semibold tracking-wide text-light-text-300 xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 dark:text-dark-text-600"
-            style={{ fontSize: 'clamp(1.25rem, 1.65vw, 6.5rem)' }}
-          >
+          <h3 className="mb-2 text-xl font-heading font-semibold tracking-wide text-muted-foreground xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 3xl:text-2xl 8xl:text-4xl">
             Read More
           </h3>
           <div className="flex flex-col gap-2 xs:items-center md:items-start 7xl:gap-8 8xl:gap-10 9xl:gap-12 10xl:gap-20">
@@ -31,12 +26,8 @@ function Footer() {
           </div>
         </section>
 
-        {/* Social Icons Section */}
         <section className="text-center md:text-left" id="social-icons">
-          <h3
-            className="h3-text font-heading font-semibold tracking-wide text-light-text-300 xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 dark:text-dark-text-600"
-            style={{ fontSize: 'clamp(1.25rem, 1.65vw, 6.5rem)' }}
-          >
+          <h3 className="mb-2 text-xl font-heading font-semibold tracking-wide text-muted-foreground xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 3xl:text-2xl 8xl:text-4xl">
             Connect With Me
           </h3>
           <div className="flex items-center justify-center gap-4 md:justify-start 7xl:gap-8 10xl:gap-10">
@@ -61,20 +52,16 @@ function Footer() {
         </section>
       </div>
 
-      {/* Copyright Section */}
       <section
         className="text-center xs:mt-4 lg:mt-6 7xl:mt-10 8xl:mt-12"
         id="copyright"
       >
-        <p
-          className="text-light-text-400 dark:text-dark-text-500"
-          style={{ fontSize: 'clamp(0.9rem, 1.25vw, 4rem)' }}
-        >
+        <p className="text-muted-foreground 3xl:text-lg 8xl:text-2xl">
           &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
           reserved.
           <span className="mx-2">|</span>
           <Link
-            className="transition-colors duration-300 hover:text-light-accent-500 hover:underline motion-reduce:transition-none dark:hover:text-dark-accent-500"
+            className="transition-colors duration-300 hover:text-accent hover:underline motion-reduce:transition-none"
             to="/sitemap"
           >
             Sitemap
