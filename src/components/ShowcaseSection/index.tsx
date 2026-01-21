@@ -20,10 +20,10 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
       >
         <div className="mx-4 flex items-center gap-2 xl:gap-3 7xl:gap-8 10xl:mx-10 10xl:gap-10">
           <div className="7xl:py-12 11xl:py-16">
-            <h2 className="h2-text text-light-text-900 dark:text-dark-text-800">
+            <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
               <span>
                 <Link
-                  className="text-light-accent-300 underline hover:text-light-accent-500 dark:text-dark-accent-400 hover:dark:text-dark-accent-500"
+                  className="text-muted-foreground underline transition-colors hover:text-accent"
                   to="/projects"
                 >
                   projects
@@ -35,12 +35,12 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
           </div>
 
           <section
-            className="mt-1 flex items-center gap-2 text-gray-800 xl:gap-3 7xl:gap-8 10xl:gap-10"
+            className="mt-1 flex items-center gap-2 text-muted-foreground xl:gap-3 7xl:gap-8 10xl:gap-10"
             id="project-links"
           >
             {project.githubUrl ? (
               <a
-                className="social-icons"
+                className="transition-colors hover:text-accent"
                 href={project.githubUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -48,14 +48,14 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 <FaGithub />
               </a>
             ) : (
-              <span className="invisible text-clamp-icons">
+              <span className="invisible text-muted-foreground">
                 <FaGithub />
               </span>
             )}
 
             {project.documentationUrl ? (
               <a
-                className="social-icons"
+                className="transition-colors hover:text-accent"
                 href={project.documentationUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -63,7 +63,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 <FaBook />
               </a>
             ) : (
-              <span className="invisible text-clamp-icons">
+              <span className="invisible text-muted-foreground">
                 <FaBook />
               </span>
             )}
@@ -71,12 +71,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
         </div>
 
         <div className="mx-4 10xl:mx-10">
-          <p
-            className="info-text"
-            style={{
-              fontSize: 'clamp(1rem, 1.95vw, 5rem)',
-            }}
-          >
+          <p className="text-muted-foreground 3xl:text-lg 8xl:text-2xl">
             {project.startDate} - {project.endDate}
           </p>
         </div>
@@ -87,9 +82,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
         className="mx-4 lg:my-2 2xl:mt-2 3xl:mt-4 6xl:-mt-2 10xl:mx-10"
         id="project-description"
       >
-        <p className="body-text text-light-text-600 dark:text-dark-text-700">
-          {project.description}
-        </p>
+        <p className="body-text text-muted-foreground">{project.description}</p>
       </section>
 
       {/* Technologies Used Section */}
@@ -98,7 +91,10 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
         id="tech-stack"
       >
         {project.technologiesUsed.map((tech) => (
-          <div className="tech-tag" key={tech}>
+          <div
+            className="mt-2 rounded-lg bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground"
+            key={tech}
+          >
             {tech}
           </div>
         ))}
@@ -111,11 +107,11 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
         className="mx-4 7xl:py-12 10xl:mx-10 11xl:py-16"
         id="project-authors"
       >
-        <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+        <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
           Co-Authors
         </h3>
         <div className="7xl:mt-10">
-          <p className="body-text mt-2 pb-4 text-light-text-600 dark:text-dark-text-700">
+          <p className="body-text mt-2 pb-4 text-muted-foreground">
             {project.contributors}.
           </p>
         </div>
@@ -128,7 +124,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
         className="mx-4 7xl:py-12 10xl:mx-10 11xl:py-16"
         id="project-accomplishments"
       >
-        <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+        <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
           Accomplishments
         </h3>
 
@@ -136,7 +132,7 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
           <ul className="list-inside list-disc 7xl:mt-10 8xl:mt-16">
             {project.accomplishments.map((accomplishment) => (
               <li
-                className="text-clamp-accomplishment leading-relaxed text-light-text-600 dark:text-dark-text-700"
+                className="text-muted-foreground leading-relaxed 3xl:text-lg 8xl:text-2xl"
                 key={accomplishment}
               >
                 {accomplishment}.

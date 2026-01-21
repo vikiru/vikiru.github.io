@@ -6,52 +6,40 @@ function CourseContainer() {
   return (
     <section className="bg-background-950 xs:py-6 lg:py-12" id="courses">
       <div className="pb-2 7xl:py-12 11xl:py-16">
-        <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+        <h2 className="text-2xl font-bold tracking-tight text-center text-foreground sm:text-3xl lg:text-4xl">
           Education
         </h2>
       </div>
 
       <div className="xs:mx-0 lg:mx-4 7xl:mx-6 10xl:mx-10">
-        {/* University Info */}
         <section id="university-info">
           <div className="mx-4 flex items-center justify-between 10xl:mx-10">
             <div>
-              <h3 className="h4-text text-light-text-900 dark:text-dark-text-800">
+              <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
                 {educationData.universityName}
               </h3>
             </div>
 
             <div>
-              <p
-                className="font-body text-light-text-600 dark:text-dark-text-700"
-                style={{
-                  fontSize: 'clamp(0.75rem, 1.45vw, 4.5rem)',
-                }}
-              >
+              <p className="text-muted-foreground 3xl:text-lg 8xl:text-2xl">
                 {educationData.location}
               </p>
             </div>
           </div>
           <div className="mx-4 flex items-center justify-between 10xl:mx-10">
-            <h4
-              className="font-subheading italic text-light-text-600 dark:text-dark-text-700"
-              style={{
-                fontSize: 'clamp(0.65rem, 1.25vw, 5rem)',
-              }}
-            >
+            <h4 className="italic text-muted-foreground 3xl:text-lg 8xl:text-2xl">
               {educationData.degree} - {educationData.acronym},{' '}
               {educationData.degreeProgram}
             </h4>
 
             <div>
-              <p className="info-text">
+              <p className="text-muted-foreground 3xl:text-lg 8xl:text-2xl">
                 {educationData.enrollmentStart} - {educationData.enrollmentEnd}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Course List */}
         <div className="mt-3">
           {courseData.years.map((year) => (
             <section
@@ -59,7 +47,7 @@ function CourseContainer() {
               key={year.title}
             >
               <div className="flex items-center justify-center pb-4 2xl:py-5 3xl:py-6 4xl:py-8 5xl:py-10 7xl:py-12 11xl:py-16">
-                <h3 className="h3-text text-light-text-900 dark:text-dark-text-800">
+                <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
                   {year.title}
                 </h3>
               </div>

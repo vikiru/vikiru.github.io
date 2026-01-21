@@ -1,54 +1,42 @@
 import { Link } from '@tanstack/react-router';
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import educationData from '@/data/education';
 
 function UniversityCard() {
   return (
-    <section id="university-info">
-      <div className="mx-4 flex items-center justify-between 10xl:mx-10">
-        <div>
-          <h3 className="h4-text text-light-text-900 dark:text-dark-text-800">
-            {educationData.universityName}
-          </h3>
-        </div>
-
-        <div>
-          <p
-            className="font-body text-light-text-600 dark:text-dark-text-700"
-            style={{
-              fontSize: 'clamp(0.75rem, 1.45vw, 4.5rem)',
-            }}
-          >
-            {educationData.location}
-          </p>
-        </div>
-      </div>
-      <div className="mx-4 flex items-center justify-between 10xl:mx-10">
-        <h4
-          className="font-subheading italic text-light-text-600 dark:text-dark-text-700"
-          style={{
-            fontSize: 'clamp(0.65rem, 1.25vw, 5rem)',
-          }}
-        >
+    <Card className="mx-4 bg-primary 10xl:mx-10 dark:bg-primary/50">
+      <CardHeader className="flex flex-row items-center justify-between p-4">
+        <CardTitle className="text-2xl font-bold text-foreground 3xl:text-3xl 8xl:text-5xl">
+          {educationData.universityName}
+        </CardTitle>
+        <p className="text-base text-muted-foreground 3xl:text-xl 8xl:text-3xl">
+          {educationData.location}
+        </p>
+      </CardHeader>
+      <CardContent className="px-4 pb-2">
+        <p className="text-lg italic text-muted-foreground 3xl:text-2xl 8xl:text-4xl">
           {educationData.degree} - {educationData.acronym},{' '}
           {educationData.degreeProgram}
-        </h4>
-
-        <div>
-          <p className="info-text">
-            {educationData.enrollmentStart} - {educationData.enrollmentEnd}
-          </p>
-        </div>
-      </div>
-
-      <div className="mx-4 10xl:mx-10">
+        </p>
+        <p className="mt-1 text-base text-muted-foreground 3xl:text-xl 8xl:text-3xl">
+          {educationData.enrollmentStart} - {educationData.enrollmentEnd}
+        </p>
+      </CardContent>
+      <CardFooter className="px-4 pb-4">
         <Link
-          className="text-clamp-button font-semibold text-light-accent-500 transition-colors duration-200 hover:text-light-accent-500/50 motion-reduce:transition-none dark:text-dark-accent-500 dark:hover:text-dark-accent-500/50"
-          to={'/education/courses'}
+          className="body-text font-semibold text-accent transition-colors duration-200 hover:text-accent/80"
+          to="/education/courses"
         >
           View Courses <span>→</span>
         </Link>
-      </div>
-    </section>
+      </CardFooter>
+    </Card>
   );
 }
 

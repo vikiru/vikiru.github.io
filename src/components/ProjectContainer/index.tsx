@@ -4,15 +4,11 @@ import type { Project } from '@/types/Project';
 
 function ProjectContainer() {
   return (
-    <section
-      className="bg-background-950 mx-auto xs:pt-6 lg:py-12"
-      id="projects"
-    >
+    <section className="bg-secondary/50 mx-auto xs:pt-6 lg:py-12" id="projects">
       <div className="xs:mx-3 lg:mx-6 5xl:mx-10 10xl:mx-20">
-        {/* Featured Projects Section */}
         <section id="featured-projects">
           <div className="lg:pb-6 7xl:py-12 11xl:py-16">
-            <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+            <h2 className="text-2xl font-bold tracking-tight text-center text-foreground sm:text-3xl lg:text-4xl">
               Featured Projects
             </h2>
           </div>
@@ -26,14 +22,12 @@ function ProjectContainer() {
             ))}
           </section>
 
-          {/* Divider */}
-          <div className="my-8 border-t border-gray-300 dark:border-dark-background-600" />
+          <div className="my-8 border-t border-border" />
         </section>
 
-        {/* Other Projects Section */}
         <section id="other-projects">
           <div className="lg:pb-6 7xl:py-12 11xl:py-16">
-            <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+            <h2 className="text-2xl font-bold tracking-tight text-center text-foreground sm:text-3xl lg:text-4xl">
               Other Projects
             </h2>
           </div>
