@@ -1,7 +1,11 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faEnvelope, faX } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link } from '@tanstack/react-router';
+import {
+  FaBars,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaXmark,
+} from 'react-icons/fa6';
 import NavLogo from '@/components/NavLogo';
 import navData from '@/data/nav';
 import useNav from '@/hooks/useNav';
@@ -30,10 +34,7 @@ function NavBar() {
         {/* Mobile Toggle Button */}
         <div className="md:hidden">
           <button aria-label="Toggle menu" onClick={handleClick} type="button">
-            <FontAwesomeIcon
-              className="text-2xl text-light-text-300 dark:text-dark-text-600"
-              icon={isOpen ? faX : faBars}
-            />
+            {isOpen ? <FaXmark /> : <FaBars />}
           </button>
         </div>
       </section>
@@ -50,10 +51,7 @@ function NavBar() {
         {/* Close Button */}
         <div className="absolute right-6 top-4">
           <button aria-label="Close menu" onClick={handleClick} type="button">
-            <FontAwesomeIcon
-              className="text-2xl text-light-text-300 dark:text-dark-text-600"
-              icon={faX}
-            />
+            <FaXmark />
           </button>
         </div>
 
@@ -89,7 +87,7 @@ function NavBar() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <FaGithub />
             </a>
             <a
               className="social-icons"
@@ -97,10 +95,10 @@ function NavBar() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FaLinkedin />
             </a>
             <Link className="social-icons" to="/contact">
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FaEnvelope />
             </Link>
           </div>
         </section>

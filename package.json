@@ -72,6 +72,7 @@
     "@tanstack/react-router": "^1.153.2",
     "@tanstack/react-router-devtools": "^1.153.2",
     "@tanstack/react-start": "^1.154.0",
+    "babel-plugin-react-compiler": "^1.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",

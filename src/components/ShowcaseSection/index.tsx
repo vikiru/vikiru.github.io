@@ -1,7 +1,5 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link } from '@tanstack/react-router';
+import { FaBook, FaGithub } from 'react-icons/fa6';
 import VideoPlayer from '@/components/VideoPlayer';
 import type { Project } from '@/types/Project';
 
@@ -47,11 +45,11 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FaGithub />
               </a>
             ) : (
               <span className="invisible text-clamp-icons">
-                <FontAwesomeIcon icon={faGithub} />
+                <FaGithub />
               </span>
             )}
 
@@ -62,11 +60,11 @@ function ShowcaseSection({ project }: ShowcaseSectionProps) {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faBookOpen} />
+                <FaBook />
               </a>
             ) : (
               <span className="invisible text-clamp-icons">
-                <FontAwesomeIcon icon={faBookOpen} />
+                <FaBook />
               </span>
             )}
           </section>
