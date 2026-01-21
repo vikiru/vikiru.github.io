@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import educationData from '@/data/assets/education';
+import { Link } from '@tanstack/react-router';
+import educationData from '@/data/education';
 
 function UniversityCard() {
   return (

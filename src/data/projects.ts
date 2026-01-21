@@ -7,6 +7,7 @@ type ProjectData = {
 const projectData: ProjectData = {
   projects: [
     {
+      slug: 'Noterra',
       name: 'Noterra',
       description:
         'AI-powered learning tool to generate comprehensive notes and flashcards from given user prompts, powered by Gemini AI.',
@@ -42,6 +43,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Paleodra',
       name: 'Paleodra',
       description:
         'A dinosaur discovery web application that allows users to explore, learn about, and track dinosaur species.',
@@ -73,6 +75,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Grocadex',
       name: 'Grocadex',
       description:
         'A React Native mobile app designed to help users track their grocery expenses and monitor expiry dates.',
@@ -108,6 +111,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Kelbrum',
       name: 'Kelbrum',
       description:
         'An anime recommendation system designed to recommend anime that is similar to user-selected anime.',
@@ -140,6 +144,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Parseum',
       name: 'Parseum',
       description:
         'A markdown to HTML parser and editor built using Peggy.js, React, TailwindCSS and DaisyUI.',
@@ -171,6 +176,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'RESTasaurus',
       name: 'RESTasaurus',
       description:
         'A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.',
@@ -203,6 +209,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Urvo',
       name: 'Urvo',
       description:
         'A multi-purpose Discord bot with over 65 commands across 8 categories, aiming to enhance user experience and interactivity.',
@@ -231,6 +238,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'CodeSmell',
       name: 'CodeSmell',
       description:
         'A tool for detection and visualization of code smells for object-oriented languages.',
@@ -263,6 +271,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Portfolio',
       name: 'Portfolio Website',
       description:
         'A personal portfolio website showcasing my skills and projects.',
@@ -284,6 +293,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'discrete-sim',
       name: 'discrete-sim',
       description: 'Manufacturing facility simulation.',
       startDate: 'Jan 2022',
@@ -302,6 +312,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Mini-SurveyMonkey',
       name: 'Mini-SurveyMonkey',
       description:
         'A SurveyMonkey clone built as a Spring Boot CRUD Web Application, enabling survey creation, modification, and PDF export of results.',
@@ -332,6 +343,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'Elevator-Simulator',
       name: 'Elevator Simulator',
       description:
         'A simulation of an elevator transporting passengers among floors, with the capability to introduce and handle errors that may arise during operation. ',
@@ -352,6 +364,7 @@ const projectData: ProjectData = {
       ],
     },
     {
+      slug: 'digitalRisk',
       name: 'Digital Risk',
       description:
         'Digital Risk is a re-creation of the board game Risk: Global Domination using Java Swing and following the MVC design pattern.',
