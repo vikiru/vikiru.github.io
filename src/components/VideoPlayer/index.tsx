@@ -7,11 +7,16 @@ type VideoPlayerProps = {
 function VideoPlayer({ project }: VideoPlayerProps) {
   return (
     <section className="pb-6 pt-2 7xl:py-12 11xl:py-16" id="project-video">
-      <h3 className="h3-text mb-2 text-light-text-900 dark:text-dark-text-800">
+      <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl mb-2">
         Demo
       </h3>
-      <div className="demo-ctr mt-4 7xl:mt-16">
-        <video className="h-full w-full" controls muted preload="auto">
+      <div className="mt-4">
+        <video
+          className="h-full w-full rounded-lg"
+          controls
+          muted
+          preload="auto"
+        >
           <source src={project.videoPath} type="video/mp4" />
         </video>
       </div>

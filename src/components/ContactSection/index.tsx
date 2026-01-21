@@ -3,22 +3,21 @@ import ContactForm from '@/components/ContactForm';
 function ContactSection() {
   return (
     <section
-      className="bg-light-background-950 pb-8 7xl:py-12 11xl:py-16 dark:bg-dark-background-700"
+      className="bg-secondary/50 pb-8 7xl:py-12 11xl:py-16"
       id="contact-me"
     >
       <div className="xs:py-6 lg:py-12">
-        {/* Contact Section */}
-        <h2 className="h2-text text-center text-light-text-900 dark:text-dark-text-800">
+        <h2 className="text-2xl font-bold tracking-tight text-center text-foreground sm:text-3xl lg:text-4xl">
           Contact Me
         </h2>
 
-        <div className="form-ctr xs:mt-0 lg:mt-2 2xl:mt-4 7xl:mt-6 11xl:mt-8">
-          <p className="body-text text-light-text-600 dark:text-dark-text-700">
+        <div className="mx-auto max-w-2xl xs:mt-0 lg:mt-2 2xl:mt-4 7xl:mt-6 11xl:mt-8">
+          <p className="text-muted-foreground">
             Feel free to send me an email using the contact form below, I will
             try to respond to you as soon as possible. In case, the form below
             does not work for any reason, please contact me directly via{' '}
             <a
-              className="font-semibold text-light-accent-500 underline dark:text-dark-accent-500"
+              className="font-semibold text-accent underline"
               href="mailto:viskirubakaran@outlook.com"
             >
               email

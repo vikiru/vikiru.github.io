@@ -3,10 +3,10 @@ import { Link } from '@tanstack/react-router';
 function NavLogo() {
   return (
     <section className="flex items-center justify-center 11xl:mx-10" id="logo">
-      <Link className="logo" to="/">
+      <Link className="text-foreground" to="/">
         <h2>
-          <span className="logo-text">V</span>
-          <span className="logo-accent">K</span>
+          <span className="text-foreground">V</span>
+          <span className="text-accent">K</span>
         </h2>
       </Link>
     </section>

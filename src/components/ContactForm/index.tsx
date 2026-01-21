@@ -1,3 +1,12 @@
+import { Button } from '@/components/ui/button';
+import {
+  Field,
+  FieldDescription,
+  FieldError,
+  FieldLabel,
+} from '@/components/ui/field';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import useContact from '@/hooks/useContact';
 
 function ContactForm() {
@@ -12,38 +21,22 @@ function ContactForm() {
         name="contact-form"
         onSubmit={handleSubmit}
       >
-        {/* Name Section */}
-        <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-8">
-          <label className="form-label" htmlFor="name">
-            Full Name
-          </label>
-          <br />
-          <input
-            className="body-text form-input"
-            data-kw-rules="max:255"
+        <Field>
+          <FieldLabel htmlFor="name">Full Name</FieldLabel>
+          <Input
             id="name"
             name="name"
             onChange={handleInputChange}
             placeholder="Enter your full name"
             required
-            type="text"
             value={formData.name}
           />
-          {errors.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-          )}
-          <br />
-        </div>
+          <FieldError errors={[{ message: errors.name }]} />
+        </Field>
 
-        {/* Email Section */}
-        <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-8">
-          <label className="form-label" htmlFor="email">
-            Email Address
-          </label>
-          <br />
-          <input
-            className="body-text form-input"
-            data-kw-rules="required|email"
+        <Field>
+          <FieldLabel htmlFor="email">Email Address</FieldLabel>
+          <Input
             id="email"
             name="email"
             onChange={handleInputChange}
@@ -52,45 +45,25 @@ function ContactForm() {
             type="email"
             value={formData.email}
           />
-          {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-          )}
-          <br />
-        </div>
+          <FieldError errors={[{ message: errors.email }]} />
+        </Field>
 
-        {/* Subject Section */}
-        <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-8">
-          <label className="form-label" htmlFor="subject">
-            Subject
-          </label>
-          <br />
-          <input
-            className="body-text form-input"
-            data-kw-rules="required"
+        <Field>
+          <FieldLabel htmlFor="subject">Subject</FieldLabel>
+          <Input
             id="subject"
             name="subject"
             onChange={handleInputChange}
             placeholder="Enter email subject"
             required
-            type="text"
             value={formData.subject}
           />
-          {errors.subject && (
-            <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
-          )}
-          <br />
-        </div>
+          <FieldError errors={[{ message: errors.subject }]} />
+        </Field>
 
-        {/* Message Section */}
-        <div className="xs:py-0 lg:py-2 4xl:py-4 8xl:py-6 11xl:py-8">
-          <label className="form-label" htmlFor="content">
-            Message
-          </label>
-          <br className="mb-20" />
-          <textarea
-            className="form-input"
-            cols={50}
-            data-kw-rules="required"
+        <Field>
+          <FieldLabel htmlFor="content">Message</FieldLabel>
+          <Textarea
             id="content"
             name="content"
             onChange={handleInputChange}
@@ -99,16 +72,12 @@ function ContactForm() {
             rows={5}
             value={formData.content}
           />
-          {errors.content && (
-            <p className="text-red-500 text-sm mt-1">{errors.content}</p>
-          )}
-          <br />
-        </div>
+          <FieldError errors={[{ message: errors.content }]} />
+        </Field>
 
-        {/* Form Submit */}
-        <button className="form-submit" id="email-kwesform" type="submit">
+        <Button className="form-submit" id="email-kwesform" type="submit">
           Send Email
-        </button>
+        </Button>
       </form>
     </section>
   );
