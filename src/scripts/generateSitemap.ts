@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import moment from 'moment';
-import { sitemap } from '@/assets/data';
+import sitemap from '@/data/sitemap';
 import type { SitemapGroup } from '@/types/SitemapGroup';
 
 const HOST_NAME = 'https://vikiru.vercel.app';

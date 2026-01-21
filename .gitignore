@@ -131,3 +131,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.agent
+.gemini
+.kilocode
+.opencode
+.qwen
+.windsurf
+AGENTS.md
+QWEN.md
+openspec

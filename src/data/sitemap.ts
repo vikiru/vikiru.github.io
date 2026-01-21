@@ -1,4 +1,4 @@
-import { featuredProjects, otherProjects } from '@/data/assets/projects';
+import { featuredProjects, otherProjects } from '@/data/projects';
 import type { Project } from '@/types/Project';
 import type { SitemapGroup } from '@/types/SitemapGroup';
 import type { SitemapItem } from '@/types/SitemapItem';

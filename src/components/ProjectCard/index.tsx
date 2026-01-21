@@ -1,8 +1,6 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from '@tanstack/react-router';
 import { memo } from 'react';
-import { Link } from 'react-router-dom';
+import { FaBook, FaGithub } from 'react-icons/fa6';
 import type { Project } from '@/types/Project';
 
 type ProjectCardProps = {
@@ -40,7 +38,7 @@ const ProjectCard = memo(function ProjectCard(props: ProjectCardProps) {
                 rel="noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FaGithub />
               </a>
             )}
 
@@ -51,7 +49,7 @@ const ProjectCard = memo(function ProjectCard(props: ProjectCardProps) {
                 rel="noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faBookOpen} />
+                <FaBook />
               </a>
             )}
           </section>

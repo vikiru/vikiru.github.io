@@ -1,9 +1,7 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link } from '@tanstack/react-router';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import FooterLogo from '@/components/FooterLogo';
-import navData from '@/data/assets/nav';
+import navData from '@/data/nav';
 
 function Footer() {
   return (
@@ -47,17 +45,17 @@ function Footer() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon className="social-icons" icon={faGithub} />
+              <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/viskirubakaran"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon className="social-icons" icon={faLinkedin} />
+              <FaLinkedin />
             </a>
             <Link to="/contact">
-              <FontAwesomeIcon className="social-icons" icon={faEnvelope} />
+              <FaEnvelope />
             </Link>
           </div>
         </section>
