@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
-import Layout from '@/components/Layout';
-import ProjectContainer from '@/components/ProjectContainer';
+import Layout from '@/components/layout/Layout';
+import ProjectContainer from '@/components/sections/ProjectContainer';
 
 export const Route = createFileRoute('/projects/')({
   component: ProjectsPage,

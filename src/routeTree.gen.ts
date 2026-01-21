@@ -14,7 +14,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsIndexRouteImport } from './routes/projects/index'
-import { Route as ProjectsProjectIdRouteImport } from './routes/projects/$projectId'
+import { Route as ProjectsSlugRouteImport } from './routes/projects/$slug'
 import { Route as EducationCoursesRouteImport } from './routes/education/courses'
 
 const SitemapRoute = SitemapRouteImport.update({
@@ -42,9 +42,9 @@ const ProjectsIndexRoute = ProjectsIndexRouteImport.update({
   path: '/projects/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProjectsProjectIdRoute = ProjectsProjectIdRouteImport.update({
-  id: '/projects/$projectId',
-  path: '/projects/$projectId',
+const ProjectsSlugRoute = ProjectsSlugRouteImport.update({
+  id: '/projects/$slug',
+  path: '/projects/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EducationCoursesRoute = EducationCoursesRouteImport.update({
@@ -59,7 +59,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/sitemap': typeof SitemapRoute
   '/education/courses': typeof EducationCoursesRoute
-  '/projects/$projectId': typeof ProjectsProjectIdRoute
+  '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/': typeof ProjectsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -68,7 +68,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/sitemap': typeof SitemapRoute
   '/education/courses': typeof EducationCoursesRoute
-  '/projects/$projectId': typeof ProjectsProjectIdRoute
+  '/projects/$slug': typeof ProjectsSlugRoute
   '/projects': typeof ProjectsIndexRoute
 }
 export interface FileRoutesById {
@@ -78,7 +78,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/sitemap': typeof SitemapRoute
   '/education/courses': typeof EducationCoursesRoute
-  '/projects/$projectId': typeof ProjectsProjectIdRoute
+  '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/': typeof ProjectsIndexRoute
 }
 export interface FileRouteTypes {
@@ -89,7 +89,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/sitemap'
     | '/education/courses'
-    | '/projects/$projectId'
+    | '/projects/$slug'
     | '/projects/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -98,7 +98,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/sitemap'
     | '/education/courses'
-    | '/projects/$projectId'
+    | '/projects/$slug'
     | '/projects'
   id:
     | '__root__'
@@ -107,7 +107,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/sitemap'
     | '/education/courses'
-    | '/projects/$projectId'
+    | '/projects/$slug'
     | '/projects/'
   fileRoutesById: FileRoutesById
 }
@@ -117,7 +117,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   SitemapRoute: typeof SitemapRoute
   EducationCoursesRoute: typeof EducationCoursesRoute
-  ProjectsProjectIdRoute: typeof ProjectsProjectIdRoute
+  ProjectsSlugRoute: typeof ProjectsSlugRoute
   ProjectsIndexRoute: typeof ProjectsIndexRoute
 }
 
@@ -158,11 +158,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/projects/$projectId': {
-      id: '/projects/$projectId'
-      path: '/projects/$projectId'
-      fullPath: '/projects/$projectId'
-      preLoaderRoute: typeof ProjectsProjectIdRouteImport
+    '/projects/$slug': {
+      id: '/projects/$slug'
+      path: '/projects/$slug'
+      fullPath: '/projects/$slug'
+      preLoaderRoute: typeof ProjectsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/education/courses': {
@@ -181,7 +181,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   SitemapRoute: SitemapRoute,
   EducationCoursesRoute: EducationCoursesRoute,
-  ProjectsProjectIdRoute: ProjectsProjectIdRoute,
+  ProjectsSlugRoute: ProjectsSlugRoute,
   ProjectsIndexRoute: ProjectsIndexRoute,
 }
 export const routeTree = rootRouteImport

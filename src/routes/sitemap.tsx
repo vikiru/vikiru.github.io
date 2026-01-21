@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
-import Layout from '@/components/Layout';
-import SitemapSection from '@/components/SitemapSection';
+import Layout from '@/components/layout/Layout';
+import SitemapSection from '@/components/sections/SitemapSection';
 
 export const Route = createFileRoute('/sitemap')({
   component: SitemapPage,
