@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
-import ContactSection from '@/components/ContactSection';
-import Layout from '@/components/Layout';
+import Layout from '@/components/layout/Layout';
+import ContactSection from '@/components/sections/ContactSection';
 
 export const Route = createFileRoute('/contact')({
   component: ContactPage,

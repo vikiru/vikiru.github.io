@@ -8,6 +8,14 @@ import {
 import indexCss from '../index.css?url';
 
 export const Route = createRootRoute({
+  notFoundComponent: () => (
+    <div className="container-custom py-12 text-center">
+      <h1 className="heading-1">404 - Not Found</h1>
+      <p className="body-base mt-4 text-muted-foreground">
+        The page you're looking for doesn't exist.
+      </p>
+    </div>
+  ),
   head: () => ({
     meta: [
       { charSet: 'utf-8' },
@@ -25,7 +33,7 @@ function RootComponent() {
       <head>
         <HeadContent />
       </head>
-      <body className="bg-light-background-950 dark:bg-dark-background-700">
+      <body className="bg-background text-foreground antialiased">
         <Outlet />
         <Scripts />
       </body>

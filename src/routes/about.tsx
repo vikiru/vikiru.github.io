@@ -1,8 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router';
-import About from '@/components/About';
-import EducationContainer from '@/components/EducationContainer';
-import Layout from '@/components/Layout';
-import SkillsContainer from '@/components/SkillsContainer';
+import Layout from '@/components/layout/Layout';
+import About from '@/components/sections/About';
+import EducationContainer from '@/components/sections/EducationContainer';
+import SkillsContainer from '@/components/sections/SkillsContainer';
 
 export const Route = createFileRoute('/about')({
   component: AboutPage,
