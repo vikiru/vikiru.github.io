@@ -1,10 +1,6 @@
 import { useEffect } from 'react';
 
-export function useMetaData(
-  title: string,
-  description: string,
-  url: string = window.location.href,
-) {
+export function useMetaData(title: string, description: string, url?: string) {
   useEffect(() => {
     document.title = title;
 
@@ -21,7 +17,7 @@ export function useMetaData(
     const ogTags = [
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
-      { property: 'og:url', content: url },
+      { property: 'og:url', content: url ?? '' },
       { property: 'og:type', content: 'website' },
     ];
 
