@@ -57,11 +57,19 @@ function useContact() {
     return false;
   };
 
+  const handleBlur = (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    validateField(name as FormField, value);
+  };
+
   return {
     formData,
     errors,
     handleSubmit,
     handleInputChange,
+    handleBlur,
   };
 }
 

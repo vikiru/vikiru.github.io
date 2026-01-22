@@ -2,14 +2,17 @@ import { Link } from '@tanstack/react-router';
 
 function FooterLogo() {
   return (
-    <section className="mx-auto w-fit" id="logo">
-      <Link className="h-fit w-fit font-body text-xl text-foreground" to="/">
-        <h2 className="logo group text-center tracking-widest">
+    <div
+      className="flex items-center justify-center md:justify-start"
+      id="logo"
+    >
+      <Link className="text-foreground" to="/">
+        <h2 className="font-logo text-3xl tracking-widest uppercase">
           <span className="text-foreground">Visa</span>
-          <span className="text-accent">kan</span>
+          <span className="text-primary">kan</span>
         </h2>
       </Link>
-    </section>
+    </div>
   );
 }
 
