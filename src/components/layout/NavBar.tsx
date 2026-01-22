@@ -6,8 +6,8 @@ import {
   FaLinkedin,
   FaXmark,
 } from 'react-icons/fa6';
-import { ThemeToggle } from '@/components/ThemeToggle';
-import NavLogo from '@/components/ui/NavLogo';
+import { ThemeToggle } from '@/components/layout/ThemeToggle';
+import { Logo } from '@/components/ui/Logo';
 import navData from '@/data/nav';
 import useNav from '@/hooks/useNav';
 
@@ -66,7 +66,7 @@ function NavBar() {
         className="flex items-center justify-between px-6 py-3 md:px-10"
         id="main-nav"
       >
-        <NavLogo />
+        <Logo />
 
         <div className="hidden gap-6 text-sm md:flex lg:text-base items-center">
           {navData.map((item) => (
@@ -135,7 +135,8 @@ function NavBar() {
             <Link
               aria-label="Email"
               className="p-2 rounded-full text-muted-foreground transition-colors hover:text-primary hover:bg-muted motion-reduce:transition-none"
-              to="/contact"
+              hash="contact"
+              to="/"
             >
               <FaEnvelope className="h-5 w-5" />
             </Link>

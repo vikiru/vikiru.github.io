@@ -1,4 +1,3 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { LuArrowRight } from 'react-icons/lu';
 import { Button } from '@/lib/components/ui/button';
 import { cn } from '@/lib/utils';
