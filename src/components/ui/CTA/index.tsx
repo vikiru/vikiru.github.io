@@ -8,13 +8,19 @@ function CTA() {
       id="cta"
     >
       <Button asChild size="lg" variant="default">
-        <Link to="/about">Read more about me</Link>
+        <Link hash="about" to="/">
+          Read more about me
+        </Link>
       </Button>
       <Button asChild size="lg" variant="secondary">
-        <Link to="/projects">View my work</Link>
+        <Link hash="projects" to="/">
+          View my work
+        </Link>
       </Button>
       <Button asChild size="lg" variant="accent">
-        <Link to="/contact">Contact me</Link>
+        <Link hash="contact" to="/">
+          Contact me
+        </Link>
       </Button>
     </section>
   );

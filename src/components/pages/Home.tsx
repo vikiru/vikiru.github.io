@@ -1,11 +1,11 @@
+import { About } from '@/components/home/About';
+import { Contact } from '@/components/home/Contact';
+import { Education } from '@/components/home/Education';
+import { FeaturedProjects } from '@/components/home/FeaturedProjects';
+import { Hero } from '@/components/home/Hero';
+import { OtherProjects } from '@/components/home/OtherProjects';
+import { Skills } from '@/components/home/Skills';
 import Layout from '@/components/layout/Layout';
-import { About } from './About';
-import { Contact } from './Contact';
-import { Education } from './Education';
-import { FeaturedProjects } from './FeaturedProjects';
-import { Hero } from './Hero';
-import { OtherProjects } from './OtherProjects';
-import { Skills } from './Skills';
 
 export default function HomePage() {
   return (

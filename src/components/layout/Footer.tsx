@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
-import FooterLogo from '@/components/ui/FooterLogo';
+import { Logo } from '@/components/ui/Logo';
 import navData from '@/data/nav';
 
 function FooterLink({ item }: { item: (typeof navData)[0] }) {
@@ -31,7 +31,7 @@ function Footer() {
     <footer className="mt-auto w-full bg-secondary/50 border-t border-border py-8">
       <div className="container mx-auto grid grid-cols-1 px-6 md:grid-cols-3 gap-8">
         <div className="flex justify-center md:justify-start">
-          <FooterLogo />
+          <Logo variant="full" />
         </div>
 
         <section className="text-center md:text-left" id="read-more">
@@ -71,7 +71,8 @@ function Footer() {
             <Link
               aria-label="Email"
               className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
-              to="/contact"
+              hash="contact"
+              to="/"
             >
               <FaEnvelope className="h-5 w-5" />
             </Link>
