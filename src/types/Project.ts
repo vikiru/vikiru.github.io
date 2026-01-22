@@ -6,6 +6,7 @@ export type Project = {
   endDate: string;
   technologiesUsed: string[];
   featured: boolean;
+  hidden: boolean;
   contributors: string;
   githubUrl: string;
   documentationUrl: string;

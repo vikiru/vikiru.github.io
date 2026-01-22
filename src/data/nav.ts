@@ -5,9 +5,16 @@ const navData = [
     navTitle: 'Home',
   },
   {
-    navDesc: 'Read more about me',
-    navLink: '/about',
-    navTitle: 'About',
+    navDesc: 'View my skills',
+    navLink: '/',
+    navHash: 'skills',
+    navTitle: 'Skills',
+  },
+  {
+    navDesc: 'View my education',
+    navLink: '/',
+    navHash: 'education',
+    navTitle: 'Education',
   },
   {
     navDesc: 'View my courses',
@@ -16,8 +23,15 @@ const navData = [
   },
   {
     navDesc: 'View my work',
-    navLink: '/projects',
+    navLink: '/',
+    navHash: 'projects',
     navTitle: 'Projects',
+  },
+  {
+    navDesc: 'Contact me',
+    navLink: '/',
+    navHash: 'contact',
+    navTitle: 'Contact',
   },
 ];
 

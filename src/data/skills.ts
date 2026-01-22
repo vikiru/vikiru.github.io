@@ -16,7 +16,7 @@ type SkillsData = {
 
 const skillsData: SkillsData = {
   languages: {
-    data: ['Java', 'Python', 'HTML', 'CSS', 'JavaScript', 'TypeScript'],
+    data: ['TypeScript', 'JavaScript', 'Java', 'Python', 'HTML', 'CSS'],
     title: 'Languages',
   },
   frameworks: {

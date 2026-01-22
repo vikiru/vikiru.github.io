@@ -3,70 +3,96 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import FooterLogo from '@/components/ui/FooterLogo';
 import navData from '@/data/nav';
 
+function FooterLink({ item }: { item: (typeof navData)[0] }) {
+  if (item.navHash) {
+    return (
+      <Link
+        className="text-sm text-muted-foreground hover:text-primary transition-colors motion-reduce:transition-none"
+        hash={item.navHash}
+        to={item.navLink}
+      >
+        {item.navTitle}
+      </Link>
+    );
+  }
+
+  return (
+    <Link
+      className="text-sm text-muted-foreground hover:text-primary transition-colors motion-reduce:transition-none"
+      to={item.navLink}
+    >
+      {item.navTitle}
+    </Link>
+  );
+}
+
 function Footer() {
   return (
-    <footer className="mt-auto w-full bg-secondary py-6 10xl:py-10 dark:bg-secondary/20">
-      <div className="container mx-auto grid grid-cols-1 px-4 xs:gap-2 md:grid-cols-3 lg:gap-4 xl:gap-6 2xl:gap-8">
-        <FooterLogo />
+    <footer className="mt-auto w-full bg-secondary/50 border-t border-border py-8">
+      <div className="container mx-auto grid grid-cols-1 px-6 md:grid-cols-3 gap-8">
+        <div className="flex justify-center md:justify-start">
+          <FooterLogo />
+        </div>
 
         <section className="text-center md:text-left" id="read-more">
-          <h3 className="mb-2 text-xl font-heading font-semibold tracking-wide text-muted-foreground xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 3xl:text-2xl 8xl:text-4xl">
+          <h3 className="text-sm font-heading font-semibold text-muted-foreground mb-4">
             Read More
           </h3>
-          <div className="flex flex-col gap-2 xs:items-center md:items-start 7xl:gap-8 8xl:gap-10 9xl:gap-12 10xl:gap-20">
+          <div className="flex flex-col gap-2 md:items-start items-center">
             {navData.map((item) => (
-              <Link
-                className="footer-link w-fit"
-                key={item.navTitle}
-                to={item.navLink}
-              >
-                {item.navTitle}
-              </Link>
+              <FooterLink item={item} key={item.navTitle} />
             ))}
           </div>
         </section>
 
         <section className="text-center md:text-left" id="social-icons">
-          <h3 className="mb-2 text-xl font-heading font-semibold tracking-wide text-muted-foreground xl:mb-3 7xl:py-6 9xl:py-12 11xl:py-16 3xl:text-2xl 8xl:text-4xl">
+          <h3 className="text-sm font-heading font-semibold text-muted-foreground mb-4">
             Connect With Me
           </h3>
-          <div className="flex items-center justify-center gap-4 md:justify-start 7xl:gap-8 10xl:gap-10">
+          <div className="flex items-center justify-center gap-3 md:justify-start">
             <a
+              aria-label="GitHub"
+              className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
               href="https://github.com/vikiru"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaGithub />
+              <FaGithub className="h-5 w-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/viskirubakaran"
+              aria-label="LinkedIn"
+              className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
+              href="https://linkedin.com/in/viskirubakaran"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaLinkedin />
+              <FaLinkedin className="h-5 w-5" />
             </a>
-            <Link to="/contact">
-              <FaEnvelope />
+            <Link
+              aria-label="Email"
+              className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
+              to="/contact"
+            >
+              <FaEnvelope className="h-5 w-5" />
             </Link>
           </div>
         </section>
       </div>
 
       <section
-        className="text-center xs:mt-4 lg:mt-6 7xl:mt-10 8xl:mt-12"
+        className="text-center mt-8 pt-6 border-t border-border/50"
         id="copyright"
       >
-        <p className="text-muted-foreground 3xl:text-lg 8xl:text-2xl">
+        <p className="text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
           reserved.
-          <span className="mx-2">|</span>
-          <Link
-            className="transition-colors duration-300 hover:text-accent hover:underline motion-reduce:transition-none"
-            to="/sitemap"
-          >
-            Sitemap
-          </Link>
         </p>
+        <Link
+          className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block mt-1 motion-reduce:transition-none"
+          to="/sitemap"
+        >
+          Sitemap
+        </Link>
       </section>
     </footer>
   );
