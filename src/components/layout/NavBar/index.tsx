@@ -10,110 +10,148 @@ import NavLogo from '@/components/ui/NavLogo';
 import navData from '@/data/nav';
 import useNav from '@/hooks/useNav';
 
+function NavLink({ item }: { item: (typeof navData)[0] }) {
+  if (item.navHash) {
+    return (
+      <Link
+        className="font-heading text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none"
+        hash={item.navHash}
+        to={item.navLink}
+      >
+        {item.navTitle}
+      </Link>
+    );
+  }
+
+  return (
+    <Link
+      className="font-heading text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none"
+      to={item.navLink}
+    >
+      {item.navTitle}
+    </Link>
+  );
+}
+
+function MobileNavLink({ item }: { item: (typeof navData)[0] }) {
+  if (item.navHash) {
+    return (
+      <Link
+        className="w-full px-6 py-3 text-center font-heading text-muted-foreground transition-colors hover:text-primary hover:bg-muted/50 motion-reduce:transition-none"
+        hash={item.navHash}
+        to={item.navLink}
+      >
+        {item.navTitle}
+      </Link>
+    );
+  }
+
+  return (
+    <Link
+      className="w-full px-6 py-3 text-center font-heading text-muted-foreground transition-colors hover:text-primary hover:bg-muted/50 motion-reduce:transition-none"
+      to={item.navLink}
+    >
+      {item.navTitle}
+    </Link>
+  );
+}
+
 function NavBar() {
   const { isOpen, handleClick } = useNav();
 
   return (
-    <nav className="bg-secondary dark:bg-secondary/20">
+    <nav className="bg-background sticky top-0 z-50 border-b border-border">
       <section
-        className="flex items-center justify-between px-6 xs:py-2 md:px-10 9xl:py-4 10xl:py-8 11xl:py-12"
+        className="flex items-center justify-between px-6 py-3 md:px-10"
         id="main-nav"
       >
         <NavLogo />
 
-        <div className="hidden gap-6 text-lg md:flex lg:text-xl 10xl:gap-10">
+        <div className="hidden gap-6 text-sm md:flex lg:text-base">
           {navData.map((item) => (
-            <Link
-              className="font-heading uppercase text-muted-foreground transition-colors hover:text-accent"
-              key={item.navTitle}
-              to={item.navLink}
-            >
-              {item.navTitle}
-            </Link>
+            <NavLink item={item} key={item.navTitle} />
           ))}
         </div>
 
         <div className="md:hidden">
           <button aria-label="Toggle menu" onClick={handleClick} type="button">
-            {isOpen ? <FaXmark /> : <FaBars />}
+            {isOpen ? (
+              <FaXmark className="h-5 w-5" />
+            ) : (
+              <FaBars className="h-5 w-5" />
+            )}
           </button>
         </div>
       </section>
 
       <section
-        className={`fixed right-0 top-0 h-full w-3/4 bg-secondary text-white transition-all duration-500 ease-in-out motion-reduce:transition-none md:hidden dark:bg-secondary/20 ${
-          isOpen
-            ? 'translate-x-0 motion-reduce:transition-none'
-            : 'translate-x-full motion-reduce:transition-none'
+        className={`fixed right-0 top-0 h-full w-3/4 bg-background/95 backdrop-blur-sm border-l border-border transition-all duration-300 md:hidden z-50 ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         id="mobile-nav"
       >
-        <div className="absolute right-6 top-4">
+        <div className="absolute right-4 top-4">
           <button aria-label="Close menu" onClick={handleClick} type="button">
-            <FaXmark />
+            <FaXmark className="h-6 w-6" />
           </button>
         </div>
 
         <section
-          className="mt-8 flex flex-col items-center justify-center pt-4"
+          className="mt-16 flex flex-col items-center justify-center"
           id="mobile-nav-links"
         >
           {navData.map((item) => (
-            <Link
-              className="w-full px-6 py-3 text-center font-heading uppercase text-muted-foreground transition-colors hover:text-accent"
-              key={item.navTitle}
-              to={item.navLink}
-            >
-              {item.navTitle}
-            </Link>
+            <MobileNavLink item={item} key={item.navTitle} />
           ))}
         </section>
 
-        <div className="my-4 border-t border-border dark:border-border/10"></div>
-
-        <section id="social-icons">
-          <h3 className="text-center font-heading uppercase text-muted-foreground">
+        <section className="mt-8" id="social-icons">
+          <h3 className="text-center font-heading text-sm text-muted-foreground mb-4">
             Connect with me
           </h3>
 
-          <div className="flex justify-center gap-6 xs:py-2 lg:py-4">
+          <div className="flex justify-center gap-4">
             <a
-              className="text-muted-foreground transition-colors hover:text-accent"
+              aria-label="GitHub"
+              className="p-2 rounded-full text-muted-foreground transition-colors hover:text-primary hover:bg-muted motion-reduce:transition-none"
               href="https://github.com/vikiru"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaGithub />
+              <FaGithub className="h-5 w-5" />
             </a>
             <a
-              className="text-muted-foreground transition-colors hover:text-accent"
-              href="https://www.linkedin.com/in/viskirubakaran"
+              aria-label="LinkedIn"
+              className="p-2 rounded-full text-muted-foreground transition-colors hover:text-primary hover:bg-muted motion-reduce:transition-none"
+              href="https://linkedin.com/in/viskirubakaran"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaLinkedin />
+              <FaLinkedin className="h-5 w-5" />
             </a>
             <Link
-              className="text-muted-foreground transition-colors hover:text-accent"
+              aria-label="Email"
+              className="p-2 rounded-full text-muted-foreground transition-colors hover:text-primary hover:bg-muted motion-reduce:transition-none"
               to="/contact"
             >
-              <FaEnvelope />
+              <FaEnvelope className="h-5 w-5" />
             </Link>
           </div>
         </section>
 
-        <section className="text-center" id="copyright">
-          <p className="text-muted-foreground 3xl:text-lg 8xl:text-2xl">
-            &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
-            reserved.
-            <span className="mx-2">|</span>
-            <Link
-              className="transition-colors duration-300 hover:text-accent hover:underline motion-reduce:transition-none"
-              to="/sitemap"
-            >
-              Sitemap
-            </Link>
+        <section
+          className="absolute bottom-6 left-0 right-0 text-center px-4"
+          id="copyright"
+        >
+          <p className="text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} Visakan Kirubakaran
           </p>
+          <Link
+            className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block mt-1 motion-reduce:transition-none"
+            to="/sitemap"
+          >
+            Sitemap
+          </Link>
         </section>
       </section>
     </nav>

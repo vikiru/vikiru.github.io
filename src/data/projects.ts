@@ -26,6 +26,7 @@ const projectData: ProjectData = {
         'Gemini AI',
       ],
       featured: true,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/noterra',
       documentationUrl: '',
@@ -62,6 +63,7 @@ const projectData: ProjectData = {
         'Express.js',
       ],
       featured: true,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/paleodra',
       documentationUrl: '',
@@ -95,6 +97,7 @@ const projectData: ProjectData = {
         'PostgresSQL',
       ],
       featured: true,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/grocadex',
       documentationUrl: '',
@@ -127,6 +130,7 @@ const projectData: ProjectData = {
         'Tensorflow.js',
       ],
       featured: true,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/kelbrum',
       documentationUrl: 'https://vikiru.github.io/kelbrum',
@@ -161,6 +165,7 @@ const projectData: ProjectData = {
         'Chai',
       ],
       featured: true,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/parseum',
       documentationUrl: 'https://vikiru.github.io/parseum/',
@@ -193,6 +198,7 @@ const projectData: ProjectData = {
         'Chai',
       ],
       featured: false,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/restasaurus',
       documentationUrl: 'https://vikiru.github.io/restasaurus/',
@@ -225,6 +231,7 @@ const projectData: ProjectData = {
         'Chai',
       ],
       featured: false,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/Urvo',
       documentationUrl: 'https://vikiru.github.io/Urvo/',
@@ -255,6 +262,7 @@ const projectData: ProjectData = {
         'JavaScript',
       ],
       featured: true,
+      hidden: false,
       contributors: 'This project was completed as a group, with 3 co-authors',
       githubUrl: 'https://github.com/vikiru/CodeSmell',
       documentationUrl: 'https://github.com/vikiru/CodeSmell/wiki',
@@ -279,6 +287,7 @@ const projectData: ProjectData = {
       endDate: 'Mar 2025',
       technologiesUsed: ['TypeScript', 'React', 'React Router', 'TailwindCSS'],
       featured: false,
+      hidden: true,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/vikiru.github.io',
       documentationUrl: '',
@@ -300,6 +309,7 @@ const projectData: ProjectData = {
       endDate: 'Apr 2022',
       technologiesUsed: ['Python', 'NumPy', 'SciPy', 'SimPy'],
       featured: false,
+      hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/discrete-sim',
       documentationUrl: 'https://vikiru.github.io/discrete-sim/',
@@ -329,6 +339,7 @@ const projectData: ProjectData = {
         'JavaScript',
       ],
       featured: false,
+      hidden: false,
       contributors: 'This project was completed as a group, with 2 co-authors',
       githubUrl: 'https://github.com/vikiru/Mini-SurveyMonkey',
       documentationUrl: 'https://github.com/vikiru/Mini-SurveyMonkey/wiki',
@@ -351,6 +362,7 @@ const projectData: ProjectData = {
       endDate: 'Apr 2021',
       technologiesUsed: ['Java', 'Maven', 'JUnit', 'UDP', 'Threads'],
       featured: false,
+      hidden: false,
       contributors: 'This project was completed as a group, with 3 co-authors',
       githubUrl: '',
       documentationUrl: '',
@@ -372,6 +384,7 @@ const projectData: ProjectData = {
       endDate: 'Dec 2020',
       technologiesUsed: ['Java', 'Maven', 'JUnit', 'Swing'],
       featured: false,
+      hidden: false,
       contributors: 'This project was completed as a group, with 3 co-authors',
       githubUrl: 'https://github.com/flavji/digitalRisk',
       documentationUrl: 'https://github.com/flavji/digitalRisk/wiki',
@@ -386,11 +399,11 @@ const projectData: ProjectData = {
 };
 
 const featuredProjects = projectData.projects.filter(
-  (project) => project.featured,
+  (project) => project.featured && !project.hidden,
 );
 
 const otherProjects = projectData.projects.filter(
-  (project) => !project.featured,
+  (project) => !project.featured && !project.hidden,
 );
 
 export { featuredProjects, otherProjects, projectData };
