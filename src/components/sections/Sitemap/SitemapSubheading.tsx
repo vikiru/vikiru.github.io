@@ -1,4 +1,3 @@
-import { createElement } from 'react';
 import { cn } from '@/lib/utils';
 
 interface SitemapSubheadingProps {
