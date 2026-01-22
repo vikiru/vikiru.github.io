@@ -6,6 +6,7 @@ import { projectData } from '@/data/projects';
 import type { Project } from '@/types/Project';
 
 export const Route = createFileRoute('/projects/$slug')({
+  ssr: false,
   component: ProjectShowcasePage,
 });
 

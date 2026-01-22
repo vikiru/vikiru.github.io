@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaXmark,
 } from 'react-icons/fa6';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import NavLogo from '@/components/ui/NavLogo';
 import navData from '@/data/nav';
 import useNav from '@/hooks/useNav';
@@ -67,13 +68,15 @@ function NavBar() {
       >
         <NavLogo />
 
-        <div className="hidden gap-6 text-sm md:flex lg:text-base">
+        <div className="hidden gap-6 text-sm md:flex lg:text-base items-center">
           {navData.map((item) => (
             <NavLink item={item} key={item.navTitle} />
           ))}
+          <ThemeToggle />
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
           <button aria-label="Toggle menu" onClick={handleClick} type="button">
             {isOpen ? (
               <FaXmark className="h-5 w-5" />
