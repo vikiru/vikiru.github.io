@@ -7,6 +7,8 @@ type CourseData = {
 const courseData: CourseData = {
   years: [
     {
+      title: 'First Year',
+      numericYear: 1,
       courses: [
         {
           name: 'Introductory Mechanics and Thermodynamics',
@@ -69,15 +71,16 @@ const courseData: CourseData = {
             'The imperative programming paradigm: assignment and state, types and variables, static and dynamic typing. Memory management and object lifetimes: static allocation, automatic allocation in activation frames, dynamic allocation. Function argument passing. Recursion. Data structures: dynamic arrays, linked lists. Encapsulation and information hiding.',
         },
       ],
-      title: 'First Year',
     },
     {
+      title: 'Second Year',
+      numericYear: 2,
       courses: [
         {
           name: 'Multivariable Calculus for Engineering or Physics',
           courseCode: 'MATH2004',
           description:
-            'Curves and surfaces. Polar, cylindrical and spherical coordinates. Partial derivatives, gradients, extrema and Lagrange multipliers. Exact differentials. Multiple integrals over rectangular and general regions. Integrals over surfaces. Line integrals. Vector differential operators. Green’s Theorem, Stokes’ theorem, Divergence Theorem. Applications.',
+            "Curves and surfaces. Polar, cylindrical and spherical coordinates. Partial derivatives, gradients, extrema and Lagrange multipliers. Exact differentials. Multiple integrals over rectangular and general regions. Integrals over surfaces. Line integrals. Vector differential operators. Green's Theorem, Stokes' theorem, Divergence Theorem. Applications.",
         },
         {
           name: 'Circuits and Signals',
@@ -140,9 +143,10 @@ const courseData: CourseData = {
             'An intensive writing course focusing on the formulation and construction of a literary essay.',
         },
       ],
-      title: 'Second Year',
     },
     {
+      title: 'Third Year',
+      numericYear: 3,
       courses: [
         {
           name: 'Design and Analysis of Engineering Experiments',
@@ -205,9 +209,10 @@ const courseData: CourseData = {
             'WWW architecture, web servers and browsers, core protocols. Web pages, their structure, interpretation and internal representation. Client-side and server-side programming. Data representation. Interfacing with databases and other server-side services. Cookies, state management, and privacy issues. Security. Web services.',
         },
       ],
-      title: 'Third Year',
     },
     {
+      title: 'Fourth Year',
+      numericYear: 4,
       courses: [
         {
           name: 'Electronic Materials, Devices and Transmission Media',
@@ -276,7 +281,6 @@ const courseData: CourseData = {
             'Layered network architectures, TCP/IP suite, circuit switching, packet switching. Physical media, data transmission, multiplexing. Data link controls, MAC protocols, random access, polling, IEEE 802 standards. Bridges, switched Ethernet, VLANs. Routing algorithms, Internet routing protocols, datagram networks, virtual circuit networks. Transport protocols.',
         },
       ],
-      title: 'Fourth Year',
     },
   ],
 };
