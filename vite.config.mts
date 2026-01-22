@@ -13,9 +13,7 @@ export default defineConfig({
     tsConfigPaths(),
     tanstackStart({
       prerender: {
-        enabled: true,
-        autoStaticPathsDiscovery: true,
-        crawlLinks: true,
+        enabled: false,
       },
       sitemap: {
         enabled: true,
