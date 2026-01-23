@@ -1,28 +1,37 @@
-/// <reference types="vite/client" />
 import {
   createRootRoute,
   HeadContent,
   Outlet,
   Scripts,
 } from '@tanstack/react-router';
+import { NotFound } from '@/components/ui/404';
+import { siteConfig } from '@/config/site';
 import indexCss from '../index.css?url';
 
+const {
+  site: { title: siteTitle, description: siteDescription, url: siteUrl },
+  author: { name: authorName },
+  assets: { ogImage },
+} = siteConfig;
+
 export const Route = createRootRoute({
-  notFoundComponent: () => (
-    <div className="container-custom py-12 text-center">
-      <h1 className="heading-1">404 - Not Found</h1>
-      <p className="body-base mt-4 text-muted-foreground">
-        The page you're looking for doesn't exist.
-      </p>
-    </div>
-  ),
+  notFoundComponent: NotFound,
   head: () => ({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'Visakan Kirubakaran' },
+      { title: siteTitle },
+      { name: 'description', content: siteDescription },
+      { name: 'author', content: authorName },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: authorName },
+      { property: 'og:image', content: `${siteUrl}${ogImage}` },
+      { name: 'twitter:image', content: `${siteUrl}${ogImage}` },
     ],
-    links: [{ rel: 'stylesheet', href: indexCss }],
+    links: [
+      { rel: 'stylesheet', href: indexCss },
+      { rel: 'icon', href: '/favicon.ico' },
+    ],
   }),
   component: RootComponent,
 });
@@ -33,7 +42,7 @@ function RootComponent() {
       <head>
         <HeadContent />
       </head>
-      <body className="bg-background text-foreground antialiased">
+      <body className="bg-background text-foreground antialiased min-h-screen flex flex-col">
         <Outlet />
         <Scripts />
       </body>

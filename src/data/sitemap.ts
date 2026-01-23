@@ -12,20 +12,12 @@ const sitemap: SitemapGroup[] = [
         url: '/',
       },
       {
-        name: 'About',
-        url: '/about',
-      },
-      {
         name: 'Courses',
         url: '/education/courses',
       },
       {
-        name: 'Projects',
-        url: '/projects',
-      },
-      {
-        name: 'Contact',
-        url: '/contact',
+        name: 'Sitemap',
+        url: '/sitemap',
       },
     ],
   },
