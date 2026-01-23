@@ -16,7 +16,7 @@ import { SitemapSubheading } from './SitemapSubheading';
 
 const sitemapData = {
   core: [
-    { title: 'Home', path: '/', icon: LuHouse },
+    { title: 'Home', path: '/', hash: 'hero', icon: LuHouse },
     { title: 'About Me', path: '/', hash: 'about', icon: LuUser },
     { title: 'Skills', path: '/', hash: 'skills', icon: LuZap },
     { title: 'Education', path: '/', hash: 'education', icon: LuGraduationCap },
@@ -42,8 +42,8 @@ const sitemapData = {
 export default function SitemapPage() {
   return (
     <Layout>
-      <div className="flex flex-1 justify-center py-10 px-4 md:px-10 lg:px-12 xl:px-40">
-        <div className="layout-content-container xl:max-w-none flex flex-col w-full flex-1 gap-8">
+      <div className="flex flex-1 py-10 px-4 overflow-x-hidden">
+        <div className="layout-content-container flex flex-col w-full flex-1 gap-8">
           <header className="flex flex-col gap-3 pb-4">
             <h1 className="heading-1 text-foreground">Sitemap</h1>
             <p className="text-sm text-muted-foreground">
@@ -57,10 +57,11 @@ export default function SitemapPage() {
               <SitemapGrid cols={4}>
                 {sitemapData.core.map((item) => (
                   <SitemapCard
+                    hash={item.hash}
                     href={item.path}
                     icon={createElement(item.icon, { className: 'size-5' })}
-                    key={item.path}
-                    path={item.path}
+                    key={item.hash}
+                    path={item.hash === '' ? '/' : `/#${item.hash}`}
                     title={item.title}
                   />
                 ))}
