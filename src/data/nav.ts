@@ -27,12 +27,6 @@ const navData = [
     navHash: 'projects',
     navTitle: 'Projects',
   },
-  {
-    navDesc: 'Contact me',
-    navLink: '/',
-    navHash: 'contact',
-    navTitle: 'Contact',
-  },
 ];
 
 export default navData;
