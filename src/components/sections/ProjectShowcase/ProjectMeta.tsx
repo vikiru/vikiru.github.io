@@ -1,3 +1,4 @@
+import { LuCalendar, LuCode, LuUser } from 'react-icons/lu';
 import type { Project } from '@/types/Project';
 
 interface ProjectMetaProps {
@@ -15,23 +16,11 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 aria-hidden="true"
                 className="flex shrink-0 items-center justify-center size-8 rounded-lg bg-primary/10 text-primary"
               >
-                <svg
-                  className="size-[18px]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <LuCode aria-hidden="true" className="size-[18px]" />
               </div>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-foreground">
+              <h2 className="text-sm font-bold uppercase tracking-wider text-foreground">
                 Technologies Used
-              </h3>
+              </h2>
             </div>
             <div className="flex flex-wrap gap-2">
               {project.technologiesUsed.map((tech) => (
@@ -50,19 +39,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 aria-hidden="true"
                 className="flex shrink-0 items-center justify-center size-10 rounded-lg bg-primary/10 text-primary"
               >
-                <svg
-                  className="size-[20px]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <LuCalendar aria-hidden="true" className="size-[20px]" />
               </div>
               <div className="flex flex-col items-start text-left">
                 <span className="text-sm font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
@@ -78,19 +55,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 aria-hidden="true"
                 className="flex shrink-0 items-center justify-center size-10 rounded-lg bg-primary/10 text-primary"
               >
-                <svg
-                  className="size-[20px]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <LuUser aria-hidden="true" className="size-[20px]" />
               </div>
               <div className="flex flex-col items-start text-left">
                 <span className="text-sm font-bold uppercase text-muted-foreground tracking-wider mb-0.5">

@@ -19,7 +19,7 @@ function ContactForm({ className }: { className?: string }) {
       name="contact-form"
       onSubmit={handleSubmit}
     >
-      <Field>
+      <Field data-invalid={!!errors.name}>
         <FieldLabel
           className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="name"
@@ -27,6 +27,8 @@ function ContactForm({ className }: { className?: string }) {
           Name
         </FieldLabel>
         <Input
+          aria-describedby={errors.name ? 'name-error' : undefined}
+          aria-invalid={!!errors.name}
           className="bg-background/50 border-white/10"
           id="name"
           name="name"
@@ -35,10 +37,10 @@ function ContactForm({ className }: { className?: string }) {
           placeholder="Enter your full name"
           value={formData.name}
         />
-        <FieldError errors={[{ message: errors.name }]} />
+        <FieldError id="name-error" errors={[{ message: errors.name }]} />
       </Field>
 
-      <Field>
+      <Field data-invalid={!!errors.email}>
         <FieldLabel
           className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="email"
@@ -46,6 +48,8 @@ function ContactForm({ className }: { className?: string }) {
           Email
         </FieldLabel>
         <Input
+          aria-describedby={errors.email ? 'email-error' : undefined}
+          aria-invalid={!!errors.email}
           className="bg-background/50 border-white/10"
           id="email"
           name="email"
@@ -55,10 +59,10 @@ function ContactForm({ className }: { className?: string }) {
           type="email"
           value={formData.email}
         />
-        <FieldError errors={[{ message: errors.email }]} />
+        <FieldError id="email-error" errors={[{ message: errors.email }]} />
       </Field>
 
-      <Field>
+      <Field data-invalid={!!errors.subject}>
         <FieldLabel
           className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="subject"
@@ -66,6 +70,8 @@ function ContactForm({ className }: { className?: string }) {
           Subject
         </FieldLabel>
         <Input
+          aria-describedby={errors.subject ? 'subject-error' : undefined}
+          aria-invalid={!!errors.subject}
           className="bg-background/50 border-white/10"
           id="subject"
           name="subject"
@@ -74,10 +80,10 @@ function ContactForm({ className }: { className?: string }) {
           placeholder="Enter email subject"
           value={formData.subject}
         />
-        <FieldError errors={[{ message: errors.subject }]} />
+        <FieldError id="subject-error" errors={[{ message: errors.subject }]} />
       </Field>
 
-      <Field>
+      <Field data-invalid={!!errors.content}>
         <FieldLabel
           className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="content"
@@ -85,6 +91,8 @@ function ContactForm({ className }: { className?: string }) {
           Message
         </FieldLabel>
         <Textarea
+          aria-describedby={errors.content ? 'content-error' : undefined}
+          aria-invalid={!!errors.content}
           className="bg-background/50 border-white/10 resize-none"
           id="content"
           name="content"
@@ -94,7 +102,7 @@ function ContactForm({ className }: { className?: string }) {
           rows={4}
           value={formData.content}
         />
-        <FieldError errors={[{ message: errors.content }]} />
+        <FieldError id="content-error" errors={[{ message: errors.content }]} />
       </Field>
 
       <Button className="w-full" type="submit">

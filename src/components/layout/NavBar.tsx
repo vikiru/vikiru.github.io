@@ -77,7 +77,11 @@ function NavBar() {
 
         <div className="md:hidden flex items-center gap-2">
           <ThemeToggle />
-          <button aria-label="Toggle menu" onClick={handleClick} type="button">
+          <button
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            onClick={handleClick}
+            type="button"
+          >
             {isOpen ? (
               <FaXmark className="h-5 w-5" />
             ) : (
