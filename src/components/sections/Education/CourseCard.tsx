@@ -32,7 +32,7 @@ export function CourseCard({
     >
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-4">
-          <CardTitle className="text-lg leading-tight text-card-foreground">
+          <CardTitle className="text-lg font-heading leading-tight text-card-foreground md:min-h-[3.5rem]">
             {name}
           </CardTitle>
         </div>
@@ -41,7 +41,7 @@ export function CourseCard({
         </Badge>
       </CardHeader>
       <CardContent className="pt-0 flex-1">
-        <p className="body-base text-muted-foreground leading-relaxed">
+        <p className="text-sm text-muted-foreground leading-relaxed">
           {description}
         </p>
       </CardContent>

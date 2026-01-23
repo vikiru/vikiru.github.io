@@ -22,7 +22,7 @@ const educationData = {
   degreeProgram: 'Software Engineering',
   enrollmentEnd: 'Apr 2023',
   enrollmentStart: 'Sept 2018',
-  location: 'Ottawa, Canada',
+  location: 'Ottawa, Ontario',
   universityName: 'Carleton University',
 };
 

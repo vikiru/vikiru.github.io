@@ -27,7 +27,7 @@ export function EducationHeader({ className }: EducationHeaderProps) {
             <h2 className="heading-3 italic text-foreground">
               {degree} - {acronym}, {degreeProgram}
             </h2>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 body-small text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 body-small text-muted-foreground md:justify-start justify-between">
               <span className="flex items-center gap-2 text-primary font-medium">
                 <FaGraduationCap className="text-xl" />
                 {universityName}
@@ -41,7 +41,10 @@ export function EducationHeader({ className }: EducationHeaderProps) {
               <span className="hidden sm:block text-muted-foreground/30">
                 •
               </span>
-              <span>{location}</span>
+              <span className="hidden md:block">{location}</span>
+            </div>
+            <div className="md:hidden text-muted-foreground body-small">
+              {location}
             </div>
           </div>
         </div>
