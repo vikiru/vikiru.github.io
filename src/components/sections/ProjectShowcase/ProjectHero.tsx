@@ -14,7 +14,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
           <h1 className="text-h1 font-bold tracking-tight font-heading text-foreground text-balance">
             {project.name}
           </h1>
-          <p className="text-p text-muted-foreground leading-relaxed max-w-[45rem] mx-auto">
+          <p className="body-large text-muted-foreground leading-relaxed max-w-[45rem] mx-auto">
             {project.description}
           </p>
         </div>

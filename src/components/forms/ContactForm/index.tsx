@@ -37,7 +37,7 @@ function ContactForm({ className }: { className?: string }) {
           placeholder="Enter your full name"
           value={formData.name}
         />
-        <FieldError id="name-error" errors={[{ message: errors.name }]} />
+        <FieldError errors={[{ message: errors.name }]} id="name-error" />
       </Field>
 
       <Field data-invalid={!!errors.email}>
@@ -59,7 +59,7 @@ function ContactForm({ className }: { className?: string }) {
           type="email"
           value={formData.email}
         />
-        <FieldError id="email-error" errors={[{ message: errors.email }]} />
+        <FieldError errors={[{ message: errors.email }]} id="email-error" />
       </Field>
 
       <Field data-invalid={!!errors.subject}>
@@ -80,7 +80,7 @@ function ContactForm({ className }: { className?: string }) {
           placeholder="Enter email subject"
           value={formData.subject}
         />
-        <FieldError id="subject-error" errors={[{ message: errors.subject }]} />
+        <FieldError errors={[{ message: errors.subject }]} id="subject-error" />
       </Field>
 
       <Field data-invalid={!!errors.content}>
@@ -102,7 +102,7 @@ function ContactForm({ className }: { className?: string }) {
           rows={4}
           value={formData.content}
         />
-        <FieldError id="content-error" errors={[{ message: errors.content }]} />
+        <FieldError errors={[{ message: errors.content }]} id="content-error" />
       </Field>
 
       <Button className="w-full" type="submit">

@@ -41,7 +41,7 @@ export function CourseCard({
         </Badge>
       </CardHeader>
       <CardContent className="pt-0 flex-1">
-        <p className="text-sm text-muted-foreground leading-relaxed">
+        <p className="body-base text-muted-foreground leading-relaxed">
           {description}
         </p>
       </CardContent>
