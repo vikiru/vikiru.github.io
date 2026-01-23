@@ -14,8 +14,10 @@ export default function HomePage() {
       <About />
       <Skills />
       <Education />
-      <FeaturedProjects />
-      <OtherProjects />
+      <section id="projects">
+        <FeaturedProjects />
+        <OtherProjects />
+      </section>
       <Contact />
     </Layout>
   );

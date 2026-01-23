@@ -2,6 +2,7 @@ const navData = [
   {
     navDesc: 'View my homepage',
     navLink: '/',
+    navHash: 'hero',
     navTitle: 'Home',
   },
   {

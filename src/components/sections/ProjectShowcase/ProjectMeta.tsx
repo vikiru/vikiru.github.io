@@ -18,7 +18,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
               >
                 <LuCode aria-hidden="true" className="size-[18px]" />
               </div>
-              <h2 className="text-sm font-bold uppercase tracking-wider text-foreground">
+              <h2 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
                 Technologies Used
               </h2>
             </div>
