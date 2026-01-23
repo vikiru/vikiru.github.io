@@ -8,7 +8,10 @@ interface HeroProps {
 
 export function Hero({ className }: HeroProps) {
   return (
-    <section className={cn('relative pt-32 pb-20 px-6 text-center', className)}>
+    <section
+      className={cn('relative pt-32 pb-20 px-6 text-center', className)}
+      id="hero"
+    >
       <div className="flex flex-col items-center gap-8">
         <h1 className="text-h2 md:text-h1 md:whitespace-nowrap font-bold tracking-tight text-foreground font-heading">
           Hello, my name is{' '}

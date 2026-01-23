@@ -22,9 +22,17 @@ export function SitemapCard({
 }: SitemapCardProps) {
   const isExternal = href.startsWith('http');
 
-  const linkProps = isExternal
-    ? { href, rel: 'noopener noreferrer', target: '_blank' }
-    : { to: path, hash };
+  // Handle paths that already include hash (e.g., "/#about")
+  let finalPath = path;
+  let finalHash = hash;
+
+  if (path.includes('#')) {
+    const [basePath, hashPart] = path.split('#');
+    finalPath = basePath || '/';
+    finalHash = hashPart;
+  }
+
+  const hasHash = finalHash && finalHash.length > 0;
 
   const commonClassName = cn(
     'group relative flex items-start gap-3 rounded-lg border border-border bg-card px-4 py-3',
@@ -35,15 +43,31 @@ export function SitemapCard({
     className,
   );
 
+  const linkProps = isExternal
+    ? { href, rel: 'noopener noreferrer', target: '_blank' }
+    : { to: finalPath, ...(hasHash && { hash: finalHash }) };
+
+  // For display, show the full path with hash for internal links
+  const displayPath = isExternal
+    ? href
+    : hasHash
+      ? `${finalPath}#${finalHash}`
+      : finalPath;
+
   return isExternal ? (
-    <a className={commonClassName} {...linkProps}>
+    <a
+      className={commonClassName}
+      href={href}
+      rel={'noopener noreferrer'}
+      target="_blank"
+    >
       <span className="flex-shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110">
         {icon}
       </span>
       <div className="flex-1 min-w-0">
         <p className="font-medium text-foreground truncate text-sm">{title}</p>
         <p className="font-mono text-xs text-muted-foreground truncate mt-0.5">
-          {label || path}
+          {label || displayPath}
         </p>
       </div>
     </a>
@@ -55,7 +79,7 @@ export function SitemapCard({
       <div className="flex-1 min-w-0">
         <p className="font-medium text-foreground truncate text-sm">{title}</p>
         <p className="font-mono text-xs text-muted-foreground truncate mt-0.5">
-          {label || path}
+          {label || displayPath}
         </p>
       </div>
     </Link>
