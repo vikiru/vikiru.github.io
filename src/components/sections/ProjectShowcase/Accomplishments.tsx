@@ -18,7 +18,7 @@ export function Accomplishments({ project }: AccomplishmentsProps) {
         <ul className="list-disc list-inside marker:text-primary space-y-3">
           {project.accomplishments.map((accomplishment, index) => (
             <li key={`${project.slug}-accomplishment-${index}`}>
-              <span className="text-p text-muted-foreground leading-relaxed">
+              <span className="body-large text-muted-foreground leading-relaxed">
                 {accomplishment}
               </span>
             </li>

@@ -25,7 +25,7 @@ export function About() {
           <span className="w-8 h-1 bg-primary rounded-full" />
         </h2>
         <Card className="max-w-7xl mx-auto">
-          <CardContent className="p-8 space-y-6 text-p text-foreground leading-relaxed text-left">
+          <CardContent className="p-8 space-y-6 body-large text-foreground leading-relaxed text-left">
             {aboutParagraphs.map((paragraph) => (
               <p key={paragraph.text.substring(0, 20)}>{paragraph.text}</p>
             ))}

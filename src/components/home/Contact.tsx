@@ -19,7 +19,7 @@ export function Contact({ className }: ContactProps) {
         <Card className="max-w-5xl mx-auto">
           <CardContent className="p-8 flex flex-col md:flex-row gap-12 items-start">
             <div className="flex-1">
-              <p className="text-p text-muted-foreground mb-6 leading-relaxed">
+              <p className="body-large text-muted-foreground mb-6 leading-relaxed">
                 Feel free to send me an email using the contact form, I will try
                 to respond to you as soon as possible. In case, the form does
                 not work for any reason, please{' '}

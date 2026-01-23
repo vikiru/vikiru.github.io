@@ -39,10 +39,8 @@ export default function SitemapPage() {
       <div className="flex flex-1 justify-center py-10 px-4 md:px-10 lg:px-12 xl:px-40">
         <div className="layout-content-container flex flex-col w-full flex-1 gap-8">
           <header className="flex flex-col gap-3 pb-4 border-b border-border">
-            <h1 className="text-foreground text-4xl font-black leading-tight tracking-[-0.033em]">
-              Sitemap
-            </h1>
-            <p className="text-muted-foreground text-base font-normal leading-normal">
+            <h1 className="heading-1 text-foreground">Sitemap</h1>
+            <p className="body-base text-muted-foreground">
               Visual overview of my portfolio website structure and all
               available links within the site and any relevant external links.
             </p>
