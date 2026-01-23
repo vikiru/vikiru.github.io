@@ -1,100 +1,81 @@
 import { Link } from '@tanstack/react-router';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { Logo } from '@/components/ui/Logo';
-import navData from '@/data/nav';
-
-function FooterLink({ item }: { item: (typeof navData)[0] }) {
-  if (item.navHash) {
-    return (
-      <Link
-        className="text-sm text-muted-foreground hover:text-primary transition-colors motion-reduce:transition-none"
-        hash={item.navHash}
-        to={item.navLink}
-      >
-        {item.navTitle}
-      </Link>
-    );
-  }
-
-  return (
-    <Link
-      className="text-sm text-muted-foreground hover:text-primary transition-colors motion-reduce:transition-none"
-      to={item.navLink}
-    >
-      {item.navTitle}
-    </Link>
-  );
-}
 
 function Footer() {
   return (
-    <footer className="mt-auto w-full bg-secondary/50 border-t border-border py-8">
-      <div className="container mx-auto grid grid-cols-1 px-6 md:grid-cols-3 gap-8">
-        <div className="flex justify-center md:justify-start">
-          <Logo variant="full" />
+    <footer className="mt-auto w-full bg-background border-t border-border">
+      <div className="relative container mx-auto px-6 py-8 lg:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <div className="flex flex-col items-center lg:items-start text-left">
+            <Logo
+              className="mb-4 hover:scale-105 transition-transform duration-300"
+              variant="full"
+            />
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Software developer with a passion for web technologies, committed
+              to learning and contributing to meaningful projects.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-start lg:items-end">
+            <section aria-labelledby="connect-heading">
+              <h3
+                className="text-sm font-heading font-bold text-foreground mb-4 uppercase tracking-wider"
+                id="connect-heading"
+              >
+                Connect
+              </h3>
+              <div className="flex gap-4">
+                <a
+                  aria-label="Visit GitHub profile"
+                  className="p-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  href="https://github.com/vikiru"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FaGithub className="h-4 w-4" />
+                </a>
+                <a
+                  aria-label="Visit LinkedIn profile"
+                  className="p-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  href="https://linkedin.com/in/viskirubakaran"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FaLinkedin className="h-4 w-4" />
+                </a>
+                <Link
+                  aria-label="Send an email"
+                  className="p-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  hash="contact"
+                  to="/"
+                >
+                  <FaEnvelope className="h-4 w-4" />
+                </Link>
+              </div>
+            </section>
+          </div>
         </div>
 
-        <section className="text-center md:text-left" id="read-more">
-          <h3 className="text-sm font-heading font-semibold text-muted-foreground mb-4">
-            Read More
-          </h3>
-          <div className="flex flex-col gap-2 md:items-start items-center">
-            {navData.map((item) => (
-              <FooterLink item={item} key={item.navTitle} />
-            ))}
+        <div className="mt-8 pt-6 border-t border-border/30">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-muted-foreground">
+              &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
+              reserved.
+            </p>
+            <nav>
+              <Link
+                aria-label="View site sitemap"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                to="/sitemap"
+              >
+                Sitemap
+              </Link>
+            </nav>
           </div>
-        </section>
-
-        <section className="text-center md:text-left" id="social-icons">
-          <h3 className="text-sm font-heading font-semibold text-muted-foreground mb-4">
-            Connect With Me
-          </h3>
-          <div className="flex items-center justify-center gap-3 md:justify-start">
-            <a
-              aria-label="GitHub"
-              className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
-              href="https://github.com/vikiru"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaGithub className="h-5 w-5" />
-            </a>
-            <a
-              aria-label="LinkedIn"
-              className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
-              href="https://linkedin.com/in/viskirubakaran"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaLinkedin className="h-5 w-5" />
-            </a>
-            <Link
-              aria-label="Email"
-              className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
-              hash="contact"
-              to="/"
-            >
-              <FaEnvelope className="h-5 w-5" />
-            </Link>
-          </div>
-        </section>
+        </div>
       </div>
-
-      <section
-        className="text-center mt-8 pt-6 border-t border-border/50"
-        id="copyright"
-      >
-        <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
-          reserved.
-        </p>
-        <Link
-          className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block mt-1 motion-reduce:transition-none"
-          to="/sitemap"
-        >
-          Sitemap
-        </Link>
-      </section>
     </footer>
   );
 }
