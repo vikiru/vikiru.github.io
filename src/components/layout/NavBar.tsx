@@ -38,7 +38,7 @@ function MobileNavLink({ item }: { item: (typeof navData)[0] }) {
   if (item.navHash) {
     return (
       <Link
-        className="w-full px-6 py-3 text-center font-heading text-muted-foreground transition-colors hover:text-primary hover:bg-muted/50 motion-reduce:transition-none"
+        className="w-full px-6 py-3 text-center body-base text-muted-foreground transition-colors hover:text-primary hover:bg-muted/50 motion-reduce:transition-none"
         hash={item.navHash}
         to={item.navLink}
       >
@@ -49,7 +49,7 @@ function MobileNavLink({ item }: { item: (typeof navData)[0] }) {
 
   return (
     <Link
-      className="w-full px-6 py-3 text-center font-heading text-muted-foreground transition-colors hover:text-primary hover:bg-muted/50 motion-reduce:transition-none"
+      className="w-full px-6 py-3 text-center body-base text-muted-foreground transition-colors hover:text-primary hover:bg-muted/50 motion-reduce:transition-none"
       to={item.navLink}
     >
       {item.navTitle}
@@ -92,7 +92,7 @@ function NavBar() {
       </section>
 
       <section
-        className={`fixed right-0 top-0 h-full w-3/4 bg-background/95 backdrop-blur-sm border-l border-border transition-all duration-300 md:hidden z-50 ${
+        className={`fixed right-0 top-0 h-full w-3/4 bg-background/95 backdrop-blur-sm border-l border-border transition-transform duration-300 md:hidden z-50 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         id="mobile-nav"

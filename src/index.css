@@ -13,6 +13,7 @@
   --text-xs: clamp(0.75rem, 0.875rem + 0.3vw, 0.875rem);
   --text-sm: clamp(0.875rem, 0.9375rem + 0.3vw, 1rem);
   --text-base: clamp(1rem, 1.0625rem + 0.4vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.1875rem + 0.4vw, 1.25rem);
   --text-p: clamp(1.125rem, 1.1875rem + 0.4vw, 1.25rem);
   --text-h6: clamp(1rem, 1.0625rem + 0.4vw, 1.125rem);
   --text-h5: clamp(1.125rem, 1.25rem + 0.5vw, 1.375rem);
