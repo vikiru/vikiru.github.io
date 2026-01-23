@@ -8,7 +8,7 @@ import { YearSection } from './YearSection';
 export default function EducationCoursesPage() {
   return (
     <Layout>
-      <div className="flex flex-1 justify-center py-10 px-4 md:px-10 lg:px-12 xl:px-40">
+      <div className="flex flex-1 py-10 px-4">
         <div className="layout-content-container flex flex-col w-full flex-1 gap-12">
           <EducationHeader />
 
