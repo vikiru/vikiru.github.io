@@ -1,53 +1,59 @@
-import { createFileRoute, useParams } from '@tanstack/react-router';
-import { useEffect, useState } from 'react';
+import { createFileRoute, notFound } from '@tanstack/react-router';
 import Layout from '@/components/layout/Layout';
 import { ProjectShowcase } from '@/components/sections/ProjectShowcase';
+import { siteConfig } from '@/config/site';
 import { projectData } from '@/data/projects';
+import { createProjectSchema } from '@/lib/seo/ld';
 import type { Project } from '@/types/Project';
+
+const {
+  site: { url: siteUrl },
+} = siteConfig;
 
 export const Route = createFileRoute('/projects/$slug')({
   ssr: false,
+  loader: ({ params: { slug } }) => {
+    const project = projectData.projects.find(
+      (p: Project) => p.slug.toLowerCase() === slug.toLowerCase(),
+    );
+    if (!project) throw notFound();
+    return { project };
+  },
+  head: ({ loaderData }) => {
+    const project = loaderData?.project;
+    if (!project) return {};
+
+    const description = `Learn about ${project.name}, explore its goals, my accomplishments, and check out the project demo.`;
+    const title = `Visakan Kirubakaran | ${project.name}`;
+    const canonical = `${siteUrl}/projects/${project.slug}`;
+    const projectGraphSchema = createProjectSchema(project);
+
+    return {
+      meta: [
+        { title },
+        { name: 'description', content: description },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: description },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:url', content: canonical },
+      ],
+      links: [{ rel: 'canonical', href: canonical }],
+      scripts: [
+        {
+          type: 'application/ld+json',
+          children: JSON.stringify(projectGraphSchema),
+        },
+      ],
+    };
+  },
   component: ProjectShowcasePage,
 });
 
 function ProjectShowcasePage() {
-  const { slug } = useParams({ from: '/projects/$slug' });
-  const [project, setProject] = useState<Project | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const found = projectData.projects.find(
-      (p: Project) => p.slug.toLowerCase() === slug.toLowerCase(),
-    );
-    setProject(found || null);
-    setLoading(false);
-  }, [slug]);
-
-  if (loading) {
-    return (
-      <Layout description="Loading project..." title="Loading...">
-        <div className="container-custom py-20 text-center">
-          <p className="text-muted-foreground">Loading project...</p>
-        </div>
-      </Layout>
-    );
-  }
-
-  if (!project) {
-    return (
-      <Layout description="Project not found" title="Not Found">
-        <div className="container-custom py-20 text-center">
-          <p className="text-muted-foreground">Project not found</p>
-        </div>
-      </Layout>
-    );
-  }
+  const { project } = Route.useLoaderData();
 
   return (
-    <Layout
-      description={`Learn about ${project.name}, explore its goals, my accomplishments, and check out the project demo.`}
-      title={`Visakan Kirubakaran | ${project.name}`}
-    >
+    <Layout>
       <ProjectShowcase project={project} />
     </Layout>
   );

@@ -9,10 +9,7 @@ import Layout from '@/components/layout/Layout';
 
 export default function HomePage() {
   return (
-    <Layout
-      description="Portfolio of Visakan Kirubakaran - Software Developer"
-      title="Visakan Kirubakaran | Portfolio"
-    >
+    <Layout>
       <Hero />
       <About />
       <Skills />

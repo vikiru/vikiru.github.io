@@ -32,10 +32,7 @@ const sitemapData = {
 
 export default function SitemapPage() {
   return (
-    <Layout
-      description="Visual overview of the portfolio structure"
-      title="Visakan Kirubakaran | Sitemap"
-    >
+    <Layout>
       <div className="flex flex-1 justify-center py-10 px-4 md:px-10 lg:px-12 xl:px-40">
         <div className="layout-content-container flex flex-col w-full flex-1 gap-8">
           <header className="flex flex-col gap-3 pb-4 border-b border-border">
