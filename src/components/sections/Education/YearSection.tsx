@@ -1,11 +1,11 @@
-import * as React from 'react';
+import type { ReactNode } from 'react';
 import { Separator } from '@/lib/components/ui/separator';
 import { cn } from '@/lib/utils';
 
 interface YearSectionProps {
   year: number;
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
 }
 
