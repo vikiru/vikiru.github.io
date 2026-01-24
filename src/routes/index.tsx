@@ -4,17 +4,26 @@ import { homepageGraphSchema } from '@/config/schema';
 import { siteConfig } from '@/config/site';
 
 const {
-  site: { url: siteUrl },
+  site: { title: siteTitle, description: siteDescription, url: siteUrl },
+  assets: { ogImage },
 } = siteConfig;
 
 export const Route = createFileRoute('/')({
   ssr: false,
   head: () => ({
     meta: [
+      { title: siteTitle },
+      { name: 'description', content: siteDescription },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: siteTitle },
+      { property: 'og:description', content: siteDescription },
       {
         property: 'og:url',
         content: `${siteUrl}/`,
       },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:title', content: siteTitle },
+      { name: 'twitter:description', content: siteDescription },
     ],
     links: [{ rel: 'canonical', href: `${siteUrl}/` }],
     scripts: [
