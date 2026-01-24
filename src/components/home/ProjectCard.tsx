@@ -81,24 +81,6 @@ const ProjectCard = memo(function ProjectCard({
                   <LuBookOpen className="h-5 w-5" />
                 </button>
               )}
-              {project.documentationUrl && (
-                <button
-                  aria-label="View documentation"
-                  className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    window.open(
-                      project.documentationUrl,
-                      '_blank',
-                      'noopener,noreferrer',
-                    );
-                  }}
-                  type="button"
-                >
-                  <LuBookOpen className="h-5 w-5" />
-                </button>
-              )}
             </div>
           </div>
         </section>
