@@ -1,6 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "3.3.0",
+  "type": "module",
   "private": true,
   "description": "Personal portfolio website showcasing my projects and skills. Built using React, React Router and TailwindCSS.",
   "keywords": [
@@ -25,8 +26,8 @@
     "url": "https://github.com/vikiru/vikiru.github.io/issues"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite dev",
+    "build": "vite build",
     "generate-sitemap": "tsx src/scripts/generateSitemap.ts",
     "lint": "biome lint",
     "format": "biome check --write",
@@ -70,9 +71,9 @@
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-form": "^1.27.7",
-    "@tanstack/react-router": "^1.156.0",
-    "@tanstack/react-router-devtools": "^1.156.0",
-    "@tanstack/react-start": "^1.156.0",
+    "@tanstack/react-router": "^1.157.4",
+    "@tanstack/react-router-devtools": "^1.157.4",
+    "@tanstack/react-start": "^1.157.4",
     "babel-plugin-react-compiler": "^1.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
