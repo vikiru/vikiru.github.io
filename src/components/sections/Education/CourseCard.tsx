@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Badge } from '@/lib/components/ui/badge';
 import {
   Card,

@@ -1,8 +1,8 @@
-import * as React from 'react';
+import type { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
 interface SitemapGridProps {
-  children: React.ReactNode;
+  children: ReactNode;
   cols?: 1 | 2 | 3 | 4;
   className?: string;
 }
