@@ -1,8 +1,8 @@
+import { Accomplishments } from '@/components/sections/ProjectShowcase/Accomplishments';
+import { ProjectHero } from '@/components/sections/ProjectShowcase/ProjectHero';
+import { ProjectMedia } from '@/components/sections/ProjectShowcase/ProjectMedia';
+import { ProjectMeta } from '@/components/sections/ProjectShowcase/ProjectMeta';
 import type { Project } from '@/types/Project';
-import { Accomplishments } from './Accomplishments';
-import { ProjectHero } from './ProjectHero';
-import { ProjectMedia } from './ProjectMedia';
-import { ProjectMeta } from './ProjectMeta';
 
 interface ProjectShowcaseProps {
   project: Project;

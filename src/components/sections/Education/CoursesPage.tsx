@@ -1,9 +1,9 @@
 import Layout from '@/components/layout/Layout';
+import { CourseCard } from '@/components/sections/Education/CourseCard';
+import { CourseGrid } from '@/components/sections/Education/CourseGrid';
+import { EducationHeader } from '@/components/sections/Education/EducationHeader';
+import { YearSection } from '@/components/sections/Education/YearSection';
 import courseData from '@/data/courses';
-import { CourseCard } from './CourseCard';
-import { CourseGrid } from './CourseGrid';
-import { EducationHeader } from './EducationHeader';
-import { YearSection } from './YearSection';
 
 export default function EducationCoursesPage() {
   return (
