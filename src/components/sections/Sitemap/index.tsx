@@ -8,11 +8,11 @@ import {
   LuZap,
 } from 'react-icons/lu';
 import Layout from '@/components/layout/Layout';
+import { SitemapCard } from '@/components/sections/Sitemap/SitemapCard';
+import { SitemapGrid } from '@/components/sections/Sitemap/SitemapGrid';
+import { SitemapSection } from '@/components/sections/Sitemap/SitemapSection';
+import { SitemapSubheading } from '@/components/sections/Sitemap/SitemapSubheading';
 import { featuredProjects, otherProjects } from '@/data/projects';
-import { SitemapCard } from './SitemapCard';
-import { SitemapGrid } from './SitemapGrid';
-import { SitemapSection } from './SitemapSection';
-import { SitemapSubheading } from './SitemapSubheading';
 
 const sitemapData = {
   core: [

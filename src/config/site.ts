@@ -19,7 +19,7 @@ export const siteConfig = {
     linkedinProfile: 'https://linkedin.com/in/viskirubakaran',
     universityName: 'Carleton University',
     universityUrl: 'https://carleton.ca/',
-    universityLogo: 'https://carleton.ca/favicon.ico', // Common location for Carleton favicon
+    universityLogo: 'https://carleton.ca/favicon.ico',
   },
   project: {
     name: 'Portfolio Website',
@@ -38,7 +38,7 @@ export const siteConfig = {
     ],
   },
   assets: {
-    ogImage: '/og-image.png', // Planned OG image location
+    ogImage: '/og-image.png',
     themeColor: '#1e1e24',
   },
 };

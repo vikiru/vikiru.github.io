@@ -1,6 +1,6 @@
+import ProjectCard from '@/components/home/ProjectCard';
 import { otherProjects } from '@/data/projects';
 import { cn } from '@/lib/utils';
-import ProjectCard from './ProjectCard';
 
 interface OtherProjectsProps {
   className?: string;
