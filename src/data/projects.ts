@@ -406,4 +406,9 @@ const otherProjects = projectData.projects.filter(
   (project) => !project.featured && !project.hidden,
 );
 
-export { featuredProjects, otherProjects, projectData };
+const displayedProjects = projectData.projects.filter(
+  (project) => !project.hidden,
+);
+const routes = displayedProjects.map((project) => project.slug);
+
+export { featuredProjects, otherProjects, projectData, routes };
