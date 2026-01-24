@@ -1,10 +1,10 @@
-import * as React from 'react';
+import type { ReactNode } from 'react';
 import { Separator } from '@/lib/components/ui/separator';
 import { cn } from '@/lib/utils';
 
 interface SitemapSectionProps {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
 }
 
