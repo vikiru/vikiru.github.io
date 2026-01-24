@@ -6,6 +6,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "strict": true,
+    "strictNullChecks": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -17,13 +18,10 @@
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/lib/*": ["./src/lib/*"],
-      "@/data/*": ["./src/data/*"],
-      "@/components/*": ["./src/components/*"]
     },
     "incremental": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "*.config.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "*.config.ts", "*.config.mts"],
   "exclude": [
     "node_modules",
     "**.*/",

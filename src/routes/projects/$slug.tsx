@@ -23,7 +23,7 @@ export const Route = createFileRoute('/projects/$slug')({
     const project = loaderData?.project;
     if (!project) return {};
 
-    const description = `Learn about ${project.name}, explore its goals, my accomplishments, and check out the project demo.`;
+    const description = `Learn about ${project.name}, a brief overview, technologies used, a demo and my personal accomplishments.`;
     const title = `Visakan Kirubakaran | ${project.name}`;
     const canonical = `${siteUrl}/projects/${project.slug}`;
     const projectGraphSchema = createProjectSchema(project);

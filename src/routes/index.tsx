@@ -5,11 +5,9 @@ import { siteConfig } from '@/config/site';
 
 const {
   site: { title: siteTitle, description: siteDescription, url: siteUrl },
-  assets: { ogImage },
 } = siteConfig;
 
 export const Route = createFileRoute('/')({
-  ssr: false,
   head: () => ({
     meta: [
       { title: siteTitle },
