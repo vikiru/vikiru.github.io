@@ -1,4 +1,4 @@
-import { FaGraduationCap } from 'react-icons/fa6';
+import { FaGraduationCap, FaLocationDot } from 'react-icons/fa6';
 import { educationData } from '@/data/education';
 import { cn } from '@/lib/utils';
 
@@ -23,17 +23,17 @@ export function EducationHeader({ className }: EducationHeaderProps) {
         <div className="space-y-6">
           <h1 className="heading-1 text-foreground">Education</h1>
           <div className="space-y-3">
-            <h2 className="heading-4 italic text-foreground">
+            <h2 className="heading-5 italic text-foreground">
               {degree} - {acronym}, {degreeProgram}
             </h2>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 body-base text-muted-foreground lg:justify-start justify-between">
-              <span className="flex items-center gap-2 text-primary font-medium font-mono">
+              <div className="flex items-center gap-2 text-primary font-medium font-mono">
                 <FaGraduationCap
                   aria-hidden="true"
                   className="size-icon-base"
                 />
                 {universityName}
-              </span>
+              </div>
               <span className="hidden lg:block text-muted-foreground/30">
                 •
               </span>
@@ -45,7 +45,8 @@ export function EducationHeader({ className }: EducationHeaderProps) {
               </span>
               <span className="hidden lg:block font-mono">{location}</span>
             </div>
-            <div className="lg:hidden text-muted-foreground font-mono">
+            <div className="flex items-center gap-2 font-medium font-mono">
+              <FaLocationDot aria-hidden="true" className="size-icon-base" />
               {location}
             </div>
           </div>

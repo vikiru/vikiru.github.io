@@ -26,9 +26,9 @@ const categories = [
 function SkillCategory({ title, skills }: SkillCategoryProps) {
   return (
     <div>
-      <h4 className="body-small text-muted-foreground uppercase tracking-wider font-semibold mb-4 border-b border-border pb-2">
+      <h3 className="heading-5 text-muted-foreground uppercase tracking-wider font-semibold mb-4 border-b border-border pb-2">
         {title}
-      </h4>
+      </h3>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
           <Badge
