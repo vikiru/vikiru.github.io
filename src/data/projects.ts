@@ -304,7 +304,8 @@ const projectData: ProjectData = {
     {
       slug: 'discrete-sim',
       name: 'discrete-sim',
-      description: 'Manufacturing facility simulation.',
+      description:
+        'A simulation of a manufacturing facility, with the intent of optimizing product production through statistical analysis and simulation modeling.',
       startDate: 'Jan 2022',
       endDate: 'Apr 2022',
       technologiesUsed: ['Python', 'NumPy', 'SciPy', 'SimPy'],
