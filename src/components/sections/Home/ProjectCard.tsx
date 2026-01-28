@@ -42,7 +42,7 @@ export const ProjectCard = memo(function ProjectCard({
       />
       <CardContent className="p-6 flex flex-col h-full">
         <div className="flex items-center justify-between gap-4 shrink-0">
-          <h3 className="text-h4 font-bold text-foreground hover:text-primary transition-colors motion-reduce:transition-none truncate">
+          <h3 className="course-title font-bold text-foreground hover:text-primary transition-colors motion-reduce:transition-none truncate">
             {project.name}
           </h3>
           <div className="flex items-center gap-1 shrink-0">

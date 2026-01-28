@@ -28,7 +28,7 @@ export function CourseCard({
     >
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-4">
-          <CardTitle className="course-title text-card-foreground">
+          <CardTitle className="course-title text-card-foreground font-base">
             {name}
           </CardTitle>
         </div>

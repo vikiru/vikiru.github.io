@@ -10,13 +10,13 @@ export function SitemapSubheading({
   className,
 }: SitemapSubheadingProps) {
   return (
-    <h3
+    <h4
       className={cn(
-        'font-medium body-small text-muted-foreground uppercase tracking-wider',
+        'font-medium heading-6 text-muted-foreground uppercase tracking-wider',
         className,
       )}
     >
       {title}
-    </h3>
+    </h4>
   );
 }

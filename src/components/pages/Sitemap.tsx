@@ -54,7 +54,7 @@ export function SitemapPage() {
         <div className="layout-content-container flex flex-col w-full flex-1 gap-8">
           <header className="flex flex-col gap-3 pb-4">
             <h1 className="heading-1 text-foreground">Sitemap</h1>
-            <p className="body-small text-muted-foreground">
+            <p className="body-large text-muted-foreground">
               Visual overview of my portfolio website structure and all
               available links within the site and any relevant external links.
             </p>
@@ -69,7 +69,7 @@ export function SitemapPage() {
                     href={item.path}
                     icon={createElement(item.icon, { className: 'size-5' })}
                     key={item.hash}
-                    path={item.path !== '/' ? `${item.path}` : `/#${item.hash}`}
+                    path={item.path !== '/' ? `${item.path}` : item.path}
                     title={item.title}
                   />
                 ))}
@@ -108,7 +108,7 @@ export function SitemapPage() {
               </div>
             </SitemapSection>
 
-            <SitemapSection title="CONNECT WITH ME">
+            <SitemapSection title="CONNECT">
               <SitemapGrid cols={3}>
                 {sitemapData.socials.map((item) => (
                   <SitemapCard

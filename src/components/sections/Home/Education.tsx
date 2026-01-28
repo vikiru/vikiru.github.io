@@ -72,7 +72,7 @@ export function Education({ className }: EducationProps) {
               <h3 className="xs:text-h4 sm:text-h3 font-bold text-foreground mb-2">
                 Certificates
               </h3>
-              <h4 className="text-h5 mb-6 text-muted-foreground">Coursera</h4>
+              <h4 className="heading-5 mb-6 text-muted-foreground">Coursera</h4>
               <ul className="space-y-4 text-muted-foreground">
                 {certificates.map((cert) => (
                   <li
@@ -80,12 +80,15 @@ export function Education({ className }: EducationProps) {
                     key={cert.certificationName}
                   >
                     <a
+                      aria-label={`View certificate for ${cert.certificationName}`}
                       className="flex items-center gap-3 pb-4 border-b border-border last:border-0 last:pb-0 hover:text-accent transition-colors motion-reduce:transition-none"
                       href={cert.certificateLink}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span>{cert.certificationName}</span>
+                      <span className="xs:body-base lg:body-large">
+                        {cert.certificationName}
+                      </span>
                       <span className="ml-auto text-muted-foreground group-hover:text-accent transition-colors p-3 xs:p-4 lg:p-5 rounded-full motion-reduce:transition-none">
                         <LuLink
                           aria-hidden="true"
