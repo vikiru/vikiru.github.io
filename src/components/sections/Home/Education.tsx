@@ -47,7 +47,7 @@ export function Education({ className }: EducationProps) {
               </p>
               <div className="mt-auto pt-6 border-t border-border">
                 <Link
-                  className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors group/link xs:body-small md:body-base font-medium motion-reduce:transition-none"
+                  className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors group/link body-large font-medium motion-reduce:transition-none"
                   to="/education/courses"
                 >
                   View Courses
@@ -72,7 +72,7 @@ export function Education({ className }: EducationProps) {
               <h3 className="xs:text-h4 sm:text-h3 font-bold text-foreground mb-2">
                 Certificates
               </h3>
-              <h4 className="heading-5 mb-6 text-muted-foreground">Coursera</h4>
+              <p className="heading-5 mb-6 text-muted-foreground">Coursera</p>
               <ul className="space-y-4 text-muted-foreground">
                 {certificates.map((cert) => (
                   <li
@@ -86,7 +86,7 @@ export function Education({ className }: EducationProps) {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span className="xs:body-base lg:body-large">
+                      <span className="body-large">
                         {cert.certificationName}
                       </span>
                       <span className="ml-auto text-muted-foreground group-hover:text-accent transition-colors p-3 xs:p-4 lg:p-5 rounded-full motion-reduce:transition-none">

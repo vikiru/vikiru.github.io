@@ -94,7 +94,7 @@ export const ProjectCard = memo(function ProjectCard({
 
         <div className="mt-4 pt-4 border-t border-border shrink-0">
           <Link
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors heading-5 font-medium motion-reduce:transition-none"
+            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors body-large font-medium motion-reduce:transition-none"
             params={{ slug: project.slug }}
             to="/projects/$slug"
           >
