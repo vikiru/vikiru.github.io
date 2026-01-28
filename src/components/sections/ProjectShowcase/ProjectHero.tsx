@@ -1,4 +1,5 @@
-import { LuExternalLink, LuGithub } from 'react-icons/lu';
+import { FaBook, FaGithub } from 'react-icons/fa6';
+import { LuExternalLink } from 'react-icons/lu';
 import { Button } from '@/lib/components/ui/button';
 import type { Project } from '@/types/Project';
 
@@ -8,13 +9,13 @@ interface ProjectHeroProps {
 
 export function ProjectHero({ project }: ProjectHeroProps) {
   return (
-    <section className="px-4 md:px-40 flex flex-1 justify-center py-16 md:py-24 relative overflow-hidden">
-      <div className="layout-content-container flex flex-col max-w-[60rem] flex-1 items-center text-center gap-8">
+    <section className="xs:-mt-14 lg:-mt-24 px-4 md:px-40 flex flex-1 justify-center py-16 md:py-24 relative overflow-hidden">
+      <div className="layout-content-container flex flex-col max-w-240 flex-1 items-center text-center gap-8">
         <div className="flex flex-col gap-6">
           <h1 className="text-h1 font-bold tracking-tight font-heading text-foreground text-balance">
             {project.name}
           </h1>
-          <p className="body-large text-muted-foreground leading-relaxed max-w-[45rem] mx-auto">
+          <p className="body-large text-muted-foreground leading-relaxed max-w-180 mx-auto">
             {project.description}
           </p>
         </div>
@@ -22,27 +23,31 @@ export function ProjectHero({ project }: ProjectHeroProps) {
           {project.githubUrl && (
             <Button asChild size="xl">
               <a
-                className="inline-flex items-center gap-2"
+                className="inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 href={project.githubUrl}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <LuGithub className="h-5 w-5" />
-                Source Code
-                <LuExternalLink className="h-4 w-4 opacity-70" />
+                <FaGithub aria-hidden="true" className="size-icon-base" />
+                GitHub
+                <LuExternalLink
+                  aria-hidden="true"
+                  className="size-icon-sm opacity-70"
+                />
               </a>
             </Button>
           )}
           {project.documentationUrl && (
             <Button asChild size="xl" variant="outline">
               <a
-                className="inline-flex items-center gap-2"
+                className="inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 href={project.documentationUrl}
                 rel="noopener noreferrer"
                 target="_blank"
               >
+                <FaBook aria-hidden="true" className="size-icon-base" />
                 Documentation
-                <LuExternalLink className="h-4 w-4" />
+                <LuExternalLink aria-hidden="true" className="size-icon-sm" />
               </a>
             </Button>
           )}

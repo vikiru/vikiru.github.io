@@ -6,7 +6,6 @@ export function NotFound() {
   const description = 'The page you are looking for does not exist.';
   const canonicalUrl =
     typeof window !== 'undefined' ? window.location.href : '';
-  const className = '';
 
   const graphLd = {
     '@context': 'https://schema.org',
@@ -46,7 +45,7 @@ export function NotFound() {
             variant="secondary"
           >
             <a href="/">
-              <IoHome className="mr-2 h-4 w-4" />
+              <IoHome aria-hidden="true" className="mr-2 size-icon-sm" />
               Go Home
             </a>
           </Button>

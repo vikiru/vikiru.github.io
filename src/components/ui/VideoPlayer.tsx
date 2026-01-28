@@ -4,7 +4,7 @@ type VideoPlayerProps = {
   project: Project;
 };
 
-function VideoPlayer({ project }: VideoPlayerProps) {
+export function VideoPlayer({ project }: VideoPlayerProps) {
   return (
     <section className="pb-6 pt-2 7xl:py-12 11xl:py-16" id="project-video">
       <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl mb-2">
@@ -23,5 +23,3 @@ function VideoPlayer({ project }: VideoPlayerProps) {
     </section>
   );
 }
-
-export default VideoPlayer;

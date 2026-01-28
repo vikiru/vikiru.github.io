@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import HomePage from '@/components/pages/Home';
+import { HomePage } from '@/components/pages/Home';
 import { homepageGraphSchema } from '@/config/schema';
 import { siteConfig } from '@/config/site';
 

@@ -22,21 +22,9 @@ export function SitemapCard({
 }: SitemapCardProps) {
   const isExternal = href.startsWith('http');
 
-  // Handle paths that already include hash (e.g., "/#about")
-  let finalPath = path;
-  let finalHash = hash;
-
-  if (path.includes('#')) {
-    const [basePath, hashPart] = path.split('#');
-    finalPath = basePath || '/';
-    finalHash = hashPart;
-  }
-
-  const hasHash = finalHash && finalHash.length > 0;
-
   const commonClassName = cn(
     'group relative flex items-start gap-3 rounded-lg border border-border bg-card px-4 py-3',
-    'text-muted-foreground transition-all duration-200',
+    'text-muted-foreground transition-all duration-200 motion-reduce:transition-none',
     'hover:border-primary hover:bg-accent/50 hover:text-primary',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background',
     'active:scale-[0.98]',
@@ -45,23 +33,19 @@ export function SitemapCard({
 
   const linkProps = isExternal
     ? { href, rel: 'noopener noreferrer', target: '_blank' }
-    : { to: finalPath, ...(hasHash && { hash: finalHash }) };
+    : { to: path, ...(hash && { hash }) };
 
-  // For display, show the full path with hash for internal links
-  const displayPath = isExternal
-    ? href
-    : hasHash
-      ? `${finalPath}#${finalHash}`
-      : finalPath;
+  const displayPath = isExternal ? href : hash ? `${path}#${hash}` : path;
 
   return isExternal ? (
     <a
+      aria-label={`Visit ${title}`}
       className={commonClassName}
       href={href}
       rel={'noopener noreferrer'}
       target="_blank"
     >
-      <span className="flex-shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110">
+      <span className="shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
         {icon}
       </span>
       <div className="flex-1 min-w-0">
@@ -72,8 +56,8 @@ export function SitemapCard({
       </div>
     </a>
   ) : (
-    <Link className={commonClassName} {...linkProps}>
-      <span className="flex-shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110">
+    <Link aria-label={title} className={commonClassName} {...linkProps}>
+      <span className="shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
         {icon}
       </span>
       <div className="flex-1 min-w-0">

@@ -1,11 +1,9 @@
-'use client';
-
 import { LuMoon, LuSun } from 'react-icons/lu';
 import { Button } from '@/lib/components/ui/button';
 import { useTheme } from '@/lib/hooks/useTheme';
 
 export function ThemeToggle() {
-  const { toggleTheme, isDark } = useTheme();
+  const { isDark, toggleTheme } = useTheme();
 
   return (
     <Button
@@ -16,8 +14,14 @@ export function ThemeToggle() {
       type="button"
       variant="ghost"
     >
-      <LuSun className="h-5 w-5 rotate-0 scale-100 transition-all motion-reduce:transition-none dark:-rotate-90 dark:scale-0" />
-      <LuMoon className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-5 w-5 rotate-90 scale-0 transition-all motion-reduce:transition-none dark:rotate-0 dark:scale-100" />
+      <LuSun
+        aria-hidden="true"
+        className="size-icon-base rotate-0 scale-100 transition-all motion-reduce:transition-none dark:-rotate-90 dark:scale-0"
+      />
+      <LuMoon
+        aria-hidden="true"
+        className="absolute top-1/2 left-1/2 size-icon-base -translate-x-1/2 -translate-y-1/2 rotate-90 scale-0 transition-all motion-reduce:transition-none dark:rotate-0 dark:scale-100"
+      />
     </Button>
   );
 }

@@ -93,4 +93,4 @@ const skillsData: SkillsData = {
   },
 };
 
-export default skillsData;
+export { skillsData };

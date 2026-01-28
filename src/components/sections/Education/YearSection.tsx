@@ -16,7 +16,7 @@ export function YearSection({
   className,
 }: YearSectionProps) {
   return (
-    <section className={cn('space-y-6', className)}>
+    <section className={cn('space-y-6', className)} id={`year-${year}`}>
       <div className="flex items-center gap-4">
         <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/20 text-primary font-bold border border-primary/20">
           {year}

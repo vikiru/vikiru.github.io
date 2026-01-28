@@ -1,17 +1,19 @@
-import Layout from '@/components/layout/Layout';
+import { Layout } from '@/components/layout/Layout';
 import { CourseCard } from '@/components/sections/Education/CourseCard';
 import { CourseGrid } from '@/components/sections/Education/CourseGrid';
 import { EducationHeader } from '@/components/sections/Education/EducationHeader';
 import { YearSection } from '@/components/sections/Education/YearSection';
-import courseData from '@/data/courses';
+import { courseData } from '@/data/courses';
 
-export default function EducationCoursesPage() {
+export function CoursesPage() {
   return (
     <Layout>
-      <div className="flex flex-1 py-10 px-4">
+      <section
+        className="layout-content-container flex flex-col gap-1 py-10 px-4"
+        id="education"
+      >
         <div className="layout-content-container flex flex-col w-full flex-1 gap-12">
           <EducationHeader />
-
           <div className="flex flex-col gap-12">
             {courseData.years.map((yearData) => (
               <YearSection
@@ -33,7 +35,7 @@ export default function EducationCoursesPage() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }
