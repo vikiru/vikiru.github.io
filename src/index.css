@@ -36,10 +36,10 @@
   --spacing-3xl: 4rem;
   --spacing-4xl: 6rem;
 
-  --container-8xl: 88rem;
-  --container-9xl: 95rem;
-  --container-10xl: 102rem;
-  --container-11xl: 109rem;
+  --container-8xl: 84rem;
+  --container-9xl: 91rem;
+  --container-10xl: 98rem;
+  --container-11xl: 105rem;
 
   --size-icon-xs: clamp(0.75rem, 0.875rem, 0.875rem);
   --size-icon-sm: clamp(1rem, 1.125rem, 1.125rem);
