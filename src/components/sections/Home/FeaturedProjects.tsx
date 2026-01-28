@@ -14,7 +14,7 @@ export function FeaturedProjects({ className }: FeaturedProjectsProps) {
           <span className="w-8 h-1 bg-primary rounded-full" />
           Featured Projects
         </h2>
-        <div className="grid gap-8 lg:grid-cols-2 3xl:grid-cols-3">
+        <div className="grid gap-8 lg:grid-cols-2">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
