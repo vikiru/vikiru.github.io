@@ -45,13 +45,13 @@ export function SitemapCard({
       rel={'noopener noreferrer'}
       target="_blank"
     >
-      <span className="shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
+      <span className="shrink-0 mt-2 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
         {icon}
       </span>
       <div className="flex-1 min-w-0">
-        <p className="font-medium text-foreground truncate body-small">
+        <h5 className="heading-5 font-medium text-foreground truncate">
           {title}
-        </p>
+        </h5>
         <p className="font-mono body-small text-muted-foreground truncate mt-0.5">
           {label || displayPath}
         </p>
@@ -59,13 +59,13 @@ export function SitemapCard({
     </a>
   ) : (
     <Link aria-label={title} className={commonClassName} {...linkProps}>
-      <span className="shrink-0 mt-0.5 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
+      <span className="shrink-0 mt-2 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
         {icon}
       </span>
       <div className="flex-1 min-w-0">
-        <p className="font-medium text-foreground truncate body-small">
+        <h5 className="heading-5 font-medium text-foreground truncate">
           {title}
-        </p>
+        </h5>
         <p className="font-mono body-small text-muted-foreground truncate mt-0.5">
           {label || displayPath}
         </p>
