@@ -5,9 +5,9 @@ import { Logo } from '@/components/ui/Logo';
 export function Footer() {
   return (
     <footer className="mt-auto w-full bg-background border-t border-border">
-      <div className="relative container mx-auto px-6 py-8 lg:py-12">
+      <div className="px-6 py-8 lg:py-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-2 4xl:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
-          <div className="flex flex-col items-center lg:items-start text-left">
+          <div className="flex flex-col items-start text-left">
             <Logo
               className="mb-4 hover:text-primary transition-colors duration-200"
               variant="full"
