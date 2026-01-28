@@ -11,7 +11,7 @@ export function Accomplishments({ project }: AccomplishmentsProps) {
 
   return (
     <section className="px-4 md:px-10 flex justify-center">
-      <div className="max-w-[68.75rem] w-full">
+      <div className="max-w-275 w-full">
         <h2 className="text-h4 font-bold tracking-tight font-heading text-foreground mb-6">
           Key Accomplishments
         </h2>
@@ -19,7 +19,7 @@ export function Accomplishments({ project }: AccomplishmentsProps) {
           {project.accomplishments.map((accomplishment, index) => (
             <li key={`${project.slug}-accomplishment-${index}`}>
               <span className="body-large text-muted-foreground leading-relaxed">
-                {accomplishment}
+                {accomplishment}.
               </span>
             </li>
           ))}

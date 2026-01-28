@@ -41,4 +41,4 @@ const sitemap: SitemapGroup[] = [
   },
 ];
 
-export default sitemap;
+export { sitemap };

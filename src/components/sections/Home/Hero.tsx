@@ -13,7 +13,7 @@ export function Hero({ className }: HeroProps) {
       id="hero"
     >
       <div className="flex flex-col items-center gap-8">
-        <h1 className="text-h2 md:text-h1 md:whitespace-nowrap font-bold tracking-tight text-foreground font-heading">
+        <h1 className="xs:text-h3 sm:text-h2 text-balance lg:text-h1 xl:whitespace-nowrap font-bold tracking-tight text-foreground font-heading">
           Hello, my name is{' '}
           <span className="text-primary">Visakan Kirubakaran</span>
         </h1>
@@ -22,26 +22,26 @@ export function Hero({ className }: HeroProps) {
             I am a dedicated software developer with a passion for software and
             web development. By utilizing my knowledge and skills, I aim to
             challenge myself while contributing to meaningful projects.
-            <br />
-            <br />
-            Whether it's developing new applications for desktop, mobile, or the
+          </p>
+          <p className="body-large text-foreground text-left leading-relaxed">
+            Whether it's developing new applications for desktop, mobile, or
             web, integrating and designing APIs, implementing extensive testing
             to ensure code quality and maintainability, writing user-friendly
             documentation, or anything in between, I am eager to learn and grow
             as a developer.
-            <br />
-            <br />
+          </p>
+          <p className="body-large text-foreground text-left leading-relaxed">
             Feel free to read more about who I am, view my work, or contact me!
           </p>
         </div>
         <div className="flex flex-wrap gap-4 pt-4 justify-center">
-          <Button size="xl">
+          <Button asChild size="xl">
             <a className="inline-flex items-center gap-2" href="#projects">
               View Work
-              <LuArrowRight className="h-4 w-4" />
+              <LuArrowRight aria-hidden="true" className="size-icon-sm" />
             </a>
           </Button>
-          <Button size="xl" variant="outline">
+          <Button asChild size="xl" variant="outline">
             <a href="#contact">Contact Me</a>
           </Button>
         </div>

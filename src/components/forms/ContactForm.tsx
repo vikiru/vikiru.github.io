@@ -1,4 +1,4 @@
-import useContact from '@/hooks/useContact';
+import { useContact } from '@/hooks/useContact';
 import { Button } from '@/lib/components/ui/button';
 import { Field, FieldError, FieldLabel } from '@/lib/components/ui/field';
 import { Input } from '@/lib/components/ui/input';
@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 
 type FormField = 'name' | 'email' | 'subject' | 'content';
 
-function ContactForm({ className }: { className?: string }) {
+export function ContactForm({ className }: { className?: string }) {
   const { formData, errors, handleSubmit, handleInputChange, handleBlur } =
     useContact();
 
@@ -21,7 +21,7 @@ function ContactForm({ className }: { className?: string }) {
     >
       <Field data-invalid={!!errors.name}>
         <FieldLabel
-          className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="name"
         >
           Name
@@ -42,7 +42,7 @@ function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.email}>
         <FieldLabel
-          className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="email"
         >
           Email
@@ -64,7 +64,7 @@ function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.subject}>
         <FieldLabel
-          className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="subject"
         >
           Subject
@@ -85,7 +85,7 @@ function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.content}>
         <FieldLabel
-          className="text-xs font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="content"
         >
           Message
@@ -93,13 +93,14 @@ function ContactForm({ className }: { className?: string }) {
         <Textarea
           aria-describedby={errors.content ? 'content-error' : undefined}
           aria-invalid={!!errors.content}
-          className="bg-background/50 border-white/10 resize-none"
+          className="bg-background/50 border-white/10 resize-none h-33"
+          cols={50}
           id="content"
           name="content"
           onBlur={handleBlur}
           onChange={handleInputChange}
           placeholder="Enter your message here"
-          rows={4}
+          rows={5}
           value={formData.content}
         />
         <FieldError errors={[{ message: errors.content }]} id="content-error" />
@@ -111,5 +112,3 @@ function ContactForm({ className }: { className?: string }) {
     </form>
   );
 }
-
-export default ContactForm;

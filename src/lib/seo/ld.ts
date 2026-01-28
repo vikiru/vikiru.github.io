@@ -6,23 +6,13 @@ import type {
 } from 'schema-dts';
 import { homepageId, personId, personLd } from '@/config/schema';
 import { siteConfig } from '@/config/site';
+import type { Project } from '@/types/Project';
 
 const {
   site: { url: siteUrl },
 } = siteConfig;
 
-/**
- * Creates a JSON-LD TechArticle and SoftwareSourceCode schema for a specific project.
- */
-export function createProjectSchema(project: {
-  name: string;
-  description: string;
-  slug: string;
-  githubUrl?: string;
-  documentationUrl?: string;
-  technologiesUsed: string[];
-  datePublished?: string;
-}) {
+export function createProjectSchema(project: Project) {
   const projectUrl = `${siteUrl}/projects/${project.slug}`;
   const articleId = `${projectUrl}/#article`;
 
@@ -33,11 +23,8 @@ export function createProjectSchema(project: {
     description: project.description,
     url: projectUrl,
     author: { '@id': personId },
-    datePublished: project.datePublished,
-    about: project.technologiesUsed.map((tech) => ({
-      '@type': 'Thing',
-      name: tech,
-    })),
+    datePublished: new Date().toISOString(),
+    about: { '@id': '' },
     isPartOf: { '@id': homepageId },
     mainEntityOfPage: projectUrl,
   };
@@ -66,15 +53,13 @@ export function createProjectSchema(project: {
   }
 
   if (project.documentationUrl) {
-    const projectDocs: SoftwareSourceCode = {
-      '@type': 'SoftwareSourceCode',
-      '@id': `${project.documentationUrl}/#documentation`,
+    const projectDocs: WebSite = {
+      '@type': 'WebSite',
+      '@id': `${project.documentationUrl}/#homepage`,
       name: `${project.name} Documentation`,
       description: `Documentation for ${project.name}`,
       url: project.documentationUrl,
       author: { '@id': personId },
-      programmingLanguage: project.technologiesUsed,
-      codeRepository: project.documentationUrl,
     };
     graph.push(projectDocs);
   }
