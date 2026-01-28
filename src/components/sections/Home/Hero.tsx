@@ -17,7 +17,7 @@ export function Hero({ className }: HeroProps) {
           Hello, my name is{' '}
           <span className="text-primary">Visakan Kirubakaran</span>
         </h1>
-        <div className="space-y-3 max-w-7xl">
+        <div className="space-y-3 max-w-9xl">
           <p className="body-large text-foreground text-left leading-relaxed">
             I am a dedicated software developer with a passion for software and
             web development. By utilizing my knowledge and skills, I aim to
@@ -36,13 +36,21 @@ export function Hero({ className }: HeroProps) {
         </div>
         <div className="flex flex-wrap gap-4 pt-4 justify-center">
           <Button asChild size="xl">
-            <a className="inline-flex items-center gap-2" href="#projects">
+            <a
+              className="inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              href="#projects"
+            >
               View Work
               <LuArrowRight aria-hidden="true" className="size-icon-sm" />
             </a>
           </Button>
           <Button asChild size="xl" variant="outline">
-            <a href="#contact">Contact Me</a>
+            <a
+              className="focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              href="#contact"
+            >
+              Contact Me
+            </a>
           </Button>
         </div>
       </div>

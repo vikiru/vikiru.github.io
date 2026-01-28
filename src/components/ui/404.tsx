@@ -27,14 +27,14 @@ export function NotFound() {
       <main aria-labelledby="not-found-heading" className="w-full">
         <div className="text-center py-8 sm:py-12 md:py-16 lg:py-20">
           <h1
-            className="heading-1 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6"
+            className="heading-1 text-h1 font-bold mb-4 md:mb-6"
             id="not-found-heading"
           >
             404
           </h1>
           <p
             aria-describedby="not-found-description"
-            className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 md:mb-8 mx-auto px-4"
+            className="text-h5 text-muted-foreground mb-6 md:mb-8 mx-auto px-4"
           >
             {description}
           </p>

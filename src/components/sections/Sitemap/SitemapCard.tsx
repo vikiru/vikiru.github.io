@@ -49,8 +49,10 @@ export function SitemapCard({
         {icon}
       </span>
       <div className="flex-1 min-w-0">
-        <p className="font-medium text-foreground truncate text-sm">{title}</p>
-        <p className="font-mono text-xs text-muted-foreground truncate mt-0.5">
+        <p className="font-medium text-foreground truncate body-small">
+          {title}
+        </p>
+        <p className="font-mono body-small text-muted-foreground truncate mt-0.5">
           {label || displayPath}
         </p>
       </div>
@@ -61,8 +63,10 @@ export function SitemapCard({
         {icon}
       </span>
       <div className="flex-1 min-w-0">
-        <p className="font-medium text-foreground truncate text-sm">{title}</p>
-        <p className="font-mono text-xs text-muted-foreground truncate mt-0.5">
+        <p className="font-medium text-foreground truncate body-small">
+          {title}
+        </p>
+        <p className="font-mono body-small text-muted-foreground truncate mt-0.5">
           {label || displayPath}
         </p>
       </div>

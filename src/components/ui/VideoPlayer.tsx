@@ -7,7 +7,7 @@ type VideoPlayerProps = {
 export function VideoPlayer({ project }: VideoPlayerProps) {
   return (
     <section className="pb-6 pt-2 7xl:py-12 11xl:py-16" id="project-video">
-      <h3 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl mb-2">
+      <h3 className="text-h4 font-bold tracking-tight text-foreground mb-2">
         Demo
       </h3>
       <div className="mt-4">

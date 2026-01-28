@@ -43,7 +43,7 @@ export const ProjectCard = memo(function ProjectCard({
       <CardContent className="p-6 flex flex-col h-full">
         <section id="project-header">
           <div className="flex items-center justify-between gap-4 mb-3">
-            <h3 className="text-xl font-bold text-foreground hover:text-primary transition-colors motion-reduce:transition-none">
+            <h3 className="text-h4 font-bold text-foreground hover:text-primary transition-colors motion-reduce:transition-none">
               {project.name}
             </h3>
             <div className="flex items-center gap-1" id="project-links">
@@ -74,7 +74,7 @@ export const ProjectCard = memo(function ProjectCard({
         </section>
 
         <section className="grow" id="project-description">
-          <p className="text-muted-foreground leading-relaxed text-sm line-clamp-3">
+          <p className="text-muted-foreground leading-relaxed body-small line-clamp-3">
             {project.description}
           </p>
         </section>
@@ -83,7 +83,7 @@ export const ProjectCard = memo(function ProjectCard({
           <div className="flex flex-wrap gap-1.5">
             {project.technologiesUsed.slice(0, 6).map((tech) => (
               <Badge
-                className="text-xs font-normal"
+                className="body-small font-normal"
                 key={tech}
                 variant="secondary"
               >
@@ -91,7 +91,7 @@ export const ProjectCard = memo(function ProjectCard({
               </Badge>
             ))}
             {project.technologiesUsed.length > 6 && (
-              <Badge className="text-xs font-normal" variant="outline">
+              <Badge className="body-small font-normal" variant="outline">
                 +{project.technologiesUsed.length - 6}
               </Badge>
             )}
@@ -99,7 +99,7 @@ export const ProjectCard = memo(function ProjectCard({
         </section>
         <div className="mt-auto pt-6 border-t border-border">
           <Link
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors text-sm font-medium motion-reduce:transition-none"
+            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors body-small font-medium motion-reduce:transition-none"
             params={{ slug: project.slug }}
             to="/projects/$slug"
           >
