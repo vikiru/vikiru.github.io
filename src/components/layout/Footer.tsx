@@ -2,26 +2,27 @@ import { Link } from '@tanstack/react-router';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { Logo } from '@/components/ui/Logo';
 
-function Footer() {
+export function Footer() {
   return (
     <footer className="mt-auto w-full bg-background border-t border-border">
       <div className="relative container mx-auto px-6 py-8 lg:py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-2 4xl:grid-cols-3 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
           <div className="flex flex-col items-center lg:items-start text-left">
             <Logo
-              className="mb-4 hover:scale-105 transition-transform duration-300"
+              className="mb-4 hover:text-primary transition-colors duration-200"
               variant="full"
             />
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Software developer with a passion for web technologies, committed
-              to learning and contributing to meaningful projects.
+            <p className="text-muted-foreground body-base leading-relaxed">
+              Software developer with a passion for software and web
+              development, committed to learning and contributing to meaningful
+              projects.
             </p>
           </div>
 
           <div className="flex flex-col items-start lg:items-end">
             <section aria-labelledby="connect-heading">
               <h3
-                className="text-sm font-heading font-bold text-foreground mb-4 uppercase tracking-wider"
+                className="text-h5 font-heading font-semibold text-foreground mb-4 uppercase tracking-wider"
                 id="connect-heading"
               >
                 Connect
@@ -29,36 +30,36 @@ function Footer() {
               <div className="flex gap-4">
                 <a
                   aria-label="Visit GitHub profile"
-                  className="p-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
                   href="https://github.com/vikiru"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <FaGithub className="h-4 w-4" />
+                  <FaGithub className="size-icon-sm" />
                 </a>
                 <a
                   aria-label="Visit LinkedIn profile"
-                  className="p-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
                   href="https://linkedin.com/in/viskirubakaran"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <FaLinkedin className="h-4 w-4" />
+                  <FaLinkedin className="size-icon-sm" />
                 </a>
                 <Link
                   aria-label="Send an email"
-                  className="p-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
                   hash="contact"
                   to="/"
                 >
-                  <FaEnvelope className="h-4 w-4" />
+                  <FaEnvelope className="size-icon-sm" />
                 </Link>
               </div>
             </section>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-border/30">
+        <div className="mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
@@ -67,7 +68,7 @@ function Footer() {
             <nav>
               <Link
                 aria-label="View site sitemap"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                className="text-sm text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                 to="/sitemap"
               >
                 Sitemap
@@ -79,5 +80,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

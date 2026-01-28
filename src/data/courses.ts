@@ -285,4 +285,4 @@ const courseData: CourseData = {
   ],
 };
 
-export default courseData;
+export { courseData };

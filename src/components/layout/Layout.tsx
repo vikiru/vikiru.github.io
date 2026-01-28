@@ -1,18 +1,21 @@
-import Footer from '@/components/layout/Footer';
-import NavBar from '@/components/layout/NavBar';
+import { Footer } from '@/components/layout/Footer';
+import { NavBar } from '@/components/layout/NavBar';
 
 type LayoutProps = {
   children: React.ReactNode;
 };
 
-function Layout({ children }: LayoutProps) {
+export function Layout({ children }: LayoutProps) {
   return (
-    <div className="scroller bg-light-background-950 dark:bg-dark-background-700">
+    <>
       <NavBar />
-      <main>{children}</main>
+      <main
+        className="xs:px-4 md:px-6 3xl:px-8 4xl:px-10 5xl:px-12"
+        id="main-content"
+      >
+        {children}
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
-
-export default Layout;

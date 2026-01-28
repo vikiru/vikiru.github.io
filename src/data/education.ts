@@ -26,4 +26,4 @@ const educationData = {
   universityName: 'Carleton University',
 };
 
-export default educationData;
+export { educationData };

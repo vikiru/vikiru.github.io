@@ -19,7 +19,7 @@ export function About() {
   return (
     <section className="py-20 w-full" id="about">
       <div className="w-full px-6 lg:px-8">
-        <h2 className="text-h2 font-bold mb-8 flex items-center gap-3 justify-center font-heading">
+        <h2 className="xs:text-h3 sm:text-h2 font-bold mb-8 flex items-center gap-3 justify-center font-heading">
           <span className="w-8 h-1 bg-primary rounded-full" />
           About Me
           <span className="w-8 h-1 bg-primary rounded-full" />

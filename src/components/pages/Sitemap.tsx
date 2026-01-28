@@ -1,13 +1,14 @@
 import { createElement } from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import {
+  LuBook,
   LuFolder,
   LuGraduationCap,
   LuHouse,
   LuUser,
   LuZap,
 } from 'react-icons/lu';
-import Layout from '@/components/layout/Layout';
+import { Layout } from '@/components/layout/Layout';
 import { SitemapCard } from '@/components/sections/Sitemap/SitemapCard';
 import { SitemapGrid } from '@/components/sections/Sitemap/SitemapGrid';
 import { SitemapSection } from '@/components/sections/Sitemap/SitemapSection';
@@ -20,6 +21,7 @@ const sitemapData = {
     { title: 'About Me', path: '/', hash: 'about', icon: LuUser },
     { title: 'Skills', path: '/', hash: 'skills', icon: LuZap },
     { title: 'Education', path: '/', hash: 'education', icon: LuGraduationCap },
+    { title: 'Courses', path: '/education/courses', hash: '', icon: LuBook },
     { title: 'Projects', path: '/', hash: 'projects', icon: LuFolder },
     { title: 'Contact', path: '/', hash: 'contact', icon: FaEnvelope },
   ],
@@ -36,10 +38,16 @@ const sitemapData = {
       icon: FaLinkedin,
       label: 'in/viskirubakaran',
     },
+    {
+      title: 'Email',
+      path: '/',
+      hash: 'contact',
+      icon: FaEnvelope,
+    },
   ],
 };
 
-export default function SitemapPage() {
+export function SitemapPage() {
   return (
     <Layout>
       <div className="flex flex-1 py-10 px-4 overflow-x-hidden">
@@ -61,7 +69,7 @@ export default function SitemapPage() {
                     href={item.path}
                     icon={createElement(item.icon, { className: 'size-5' })}
                     key={item.hash}
-                    path={item.hash === '' ? '/' : `/#${item.hash}`}
+                    path={item.path !== '/' ? `${item.path}` : `/#${item.hash}`}
                     title={item.title}
                   />
                 ))}
@@ -100,7 +108,7 @@ export default function SitemapPage() {
               </div>
             </SitemapSection>
 
-            <SitemapSection title="SOCIALS & META">
+            <SitemapSection title="CONNECT WITH ME">
               <SitemapGrid cols={3}>
                 {sitemapData.socials.map((item) => (
                   <SitemapCard
@@ -108,7 +116,7 @@ export default function SitemapPage() {
                     icon={createElement(item.icon, { className: 'size-5' })}
                     key={item.title}
                     label={item.label}
-                    path={item.path}
+                    path={item.path !== '/' ? `${item.path}` : `/#${item.hash}`}
                     title={item.title}
                   />
                 ))}

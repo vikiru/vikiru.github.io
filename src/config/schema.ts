@@ -1,7 +1,7 @@
 import type { Person, SoftwareSourceCode, WebSite } from 'schema-dts';
 import { siteConfig } from './site';
 
-const {
+export const {
   site: { title, description, url: siteUrl, lastModified },
   author: {
     name,

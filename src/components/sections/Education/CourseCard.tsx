@@ -22,16 +22,18 @@ export function CourseCard({
 }: CourseCardProps) {
   return (
     <Card
+      aria-label={name}
       className={cn(
-        'bg-card border-border transition-all duration-200',
+        'bg-card border-border transition-all duration-200 motion-reduce:transition-none',
         'hover:border-primary hover:shadow-md',
         'flex flex-col h-full',
         className,
       )}
+      role="article"
     >
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-4">
-          <CardTitle className="text-lg font-heading leading-tight text-card-foreground md:min-h-[3.5rem]">
+          <CardTitle className="text-lg font-heading leading-tight text-card-foreground md:min-h-14">
             {name}
           </CardTitle>
         </div>

@@ -1,4 +1,6 @@
-const navData = [
+import type { NavigationItem } from '@/types/NavigationItem';
+
+const navData: NavigationItem[] = [
   {
     navDesc: 'View my homepage',
     navLink: '/',
@@ -20,6 +22,7 @@ const navData = [
   {
     navDesc: 'View my courses',
     navLink: '/education/courses',
+    navHash: '',
     navTitle: 'Courses',
   },
   {
@@ -30,4 +33,4 @@ const navData = [
   },
 ];
 
-export default navData;
+export { navData };

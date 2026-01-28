@@ -138,6 +138,9 @@ dist
 .kilocode
 .opencode
 .qwen
+.crush
+.claude
+.cursor
 .windsurf
 AGENTS.md
 QWEN.md

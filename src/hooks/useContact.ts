@@ -3,7 +3,7 @@ import { contactFormSchema } from '@/schema/contactFormSchema';
 
 type FormField = 'name' | 'email' | 'subject' | 'content';
 
-function useContact() {
+export function useContact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -72,5 +72,3 @@ function useContact() {
     handleBlur,
   };
 }
-
-export default useContact;

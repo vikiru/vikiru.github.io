@@ -8,7 +8,7 @@ interface ProjectMetaProps {
 export function ProjectMeta({ project }: ProjectMetaProps) {
   return (
     <section className="px-4 md:px-10 flex justify-center">
-      <div className="max-w-[68.75rem] w-full">
+      <div className="max-w-275 w-full">
         <div className="rounded-2xl border border-border bg-muted/30 overflow-hidden">
           <div className="p-6 md:p-8 border-b border-border">
             <div className="flex items-center gap-3 mb-5">
@@ -16,7 +16,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 aria-hidden="true"
                 className="flex shrink-0 items-center justify-center size-8 rounded-lg bg-primary/10 text-primary"
               >
-                <LuCode aria-hidden="true" className="size-[18px]" />
+                <LuCode aria-hidden="true" className="size-4.5" />
               </div>
               <h2 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
                 Technologies Used
@@ -25,7 +25,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
             <div className="flex flex-wrap gap-2">
               {project.technologiesUsed.map((tech) => (
                 <span
-                  className="px-3 py-1.5 rounded-lg text-sm font-medium bg-background border border-border text-foreground"
+                  className="px-3 py-1.5 rounded-lg text-sm font-medium bg-background border border-border text-foreground capitalize"
                   key={tech}
                 >
                   {tech}
@@ -39,13 +39,13 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 aria-hidden="true"
                 className="flex shrink-0 items-center justify-center size-10 rounded-lg bg-primary/10 text-primary"
               >
-                <LuCalendar aria-hidden="true" className="size-[20px]" />
+                <LuCalendar aria-hidden="true" className="size-5" />
               </div>
               <div className="flex flex-col items-start text-left">
                 <span className="text-sm font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
                   Timeline
                 </span>
-                <span className="text-sm text-foreground leading-tight">
+                <span className="text-sm text-foreground leading-tight uppercase">
                   {project.startDate} - {project.endDate}
                 </span>
               </div>
@@ -55,11 +55,11 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 aria-hidden="true"
                 className="flex shrink-0 items-center justify-center size-10 rounded-lg bg-primary/10 text-primary"
               >
-                <LuUser aria-hidden="true" className="size-[20px]" />
+                <LuUser aria-hidden="true" className="size-5" />
               </div>
               <div className="flex flex-col items-start text-left">
                 <span className="text-sm font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
-                  Role
+                  Co-Authors
                 </span>
                 <span className="text-sm text-foreground leading-tight">
                   {project.contributors}

@@ -1,6 +1,6 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
-import Layout from '@/components/layout/Layout';
-import { ProjectShowcase } from '@/components/sections/ProjectShowcase';
+import { Layout } from '@/components/layout/Layout';
+import { ProjectShowcase } from '@/components/sections/ProjectShowcase/ProjectShowcase';
 import { siteConfig } from '@/config/site';
 import { projectData } from '@/data/projects';
 import { createProjectSchema } from '@/lib/seo/ld';

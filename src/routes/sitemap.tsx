@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import SitemapPage from '@/components/sections/Sitemap';
+import { SitemapPage } from '@/components/pages/Sitemap';
 import { siteConfig } from '@/config/site';
 
 const {
