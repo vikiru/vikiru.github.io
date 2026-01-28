@@ -17,7 +17,7 @@ export function Hero({ className }: HeroProps) {
           Hello, my name is{' '}
           <span className="text-primary">Visakan Kirubakaran</span>
         </h1>
-        <div className="space-y-3 max-w-9xl">
+        <div className="space-y-3 max-w-8xl">
           <p className="body-large text-foreground text-left leading-relaxed">
             I am a dedicated software developer with a passion for software and
             web development. By utilizing my knowledge and skills, I aim to
