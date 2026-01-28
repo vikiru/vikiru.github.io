@@ -11,7 +11,7 @@ export function CourseGrid({ children, className }: CourseGridProps) {
     <section
       className={cn(
         'grid gap-4',
-        'grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3',
+        'grid-cols-1 lg:grid-cols-2 4xl:grid-cols-3',
         className,
       )}
     >
