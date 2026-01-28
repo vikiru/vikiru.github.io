@@ -9,7 +9,10 @@ interface HeroProps {
 export function Hero({ className }: HeroProps) {
   return (
     <section
-      className={cn('relative pt-32 pb-20 px-6 text-center', className)}
+      className={cn(
+        'relative xs:pt-16 2xl:pt-32 pb-20 px-6 text-center',
+        className,
+      )}
       id="hero"
     >
       <div className="flex flex-col items-center gap-8">
