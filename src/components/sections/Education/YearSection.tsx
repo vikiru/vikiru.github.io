@@ -21,7 +21,7 @@ export function YearSection({
         <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/20 text-primary font-bold border border-primary/20">
           {year}
         </div>
-        <h2 className="text-xl font-bold text-foreground">{title}</h2>
+        <h2 className="text-h4 font-bold text-foreground">{title}</h2>
         <Separator className="flex-1" />
       </div>
       {children}

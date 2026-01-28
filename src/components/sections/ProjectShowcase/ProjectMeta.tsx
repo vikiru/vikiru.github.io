@@ -18,14 +18,14 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
               >
                 <LuCode aria-hidden="true" className="size-4.5" />
               </div>
-              <h2 className="text-sm font-bold uppercase tracking-wider text-muted-foreground">
+              <h2 className="body-small font-bold uppercase tracking-wider text-muted-foreground">
                 Technologies Used
               </h2>
             </div>
             <div className="flex flex-wrap gap-2">
               {project.technologiesUsed.map((tech) => (
                 <span
-                  className="px-3 py-1.5 rounded-lg text-sm font-medium bg-background border border-border text-foreground capitalize"
+                  className="px-3 py-1.5 rounded-lg body-small font-medium bg-background border border-border text-foreground capitalize"
                   key={tech}
                 >
                   {tech}
@@ -42,10 +42,10 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 <LuCalendar aria-hidden="true" className="size-5" />
               </div>
               <div className="flex flex-col items-start text-left">
-                <span className="text-sm font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
+                <span className="body-small font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
                   Timeline
                 </span>
-                <span className="text-sm text-foreground leading-tight uppercase">
+                <span className="body-small text-foreground leading-tight uppercase">
                   {project.startDate} - {project.endDate}
                 </span>
               </div>
@@ -58,10 +58,10 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 <LuUser aria-hidden="true" className="size-5" />
               </div>
               <div className="flex flex-col items-start text-left">
-                <span className="text-sm font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
+                <span className="body-small font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
                   Co-Authors
                 </span>
-                <span className="text-sm text-foreground leading-tight">
+                <span className="body-small text-foreground leading-tight">
                   {project.contributors}
                 </span>
               </div>

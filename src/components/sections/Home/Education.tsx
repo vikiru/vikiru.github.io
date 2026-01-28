@@ -21,7 +21,7 @@ export function Education({ className }: EducationProps) {
 
   return (
     <section className={cn('py-20', className)} id="education">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="px-6">
         <div className="mb-12">
           <h2 className="xs:text-h3 sm:text-h2 font-bold mb-4 flex items-center gap-3 font-heading">
             <span className="w-8 h-1 bg-primary rounded-full" />
@@ -35,7 +35,7 @@ export function Education({ className }: EducationProps) {
                 <div className="bg-primary/20 p-3 rounded-lg text-primary">
                   <LuSchool aria-hidden="true" className="text-h3" />
                 </div>
-                <span className="text-sm font-mono text-muted-foreground border border-border px-3 py-1 rounded-full">
+                <span className="body-small font-mono text-muted-foreground border border-border px-3 py-1 rounded-full">
                   {enrollmentStart} - {enrollmentEnd}
                 </span>
               </div>
@@ -65,7 +65,7 @@ export function Education({ className }: EducationProps) {
                 <div className="bg-primary/10 p-3 rounded-lg text-primary">
                   <LuAward aria-hidden="true" className="text-h3" />
                 </div>
-                <span className="text-sm font-mono text-muted-foreground border border-border px-3 py-1 rounded-full">
+                <span className="body-small font-mono text-muted-foreground border border-border px-3 py-1 rounded-full">
                   2023
                 </span>
               </div>
@@ -87,7 +87,10 @@ export function Education({ className }: EducationProps) {
                     >
                       <span>{cert.certificationName}</span>
                       <span className="ml-auto text-muted-foreground group-hover:text-accent transition-colors p-3 xs:p-4 lg:p-5 rounded-full motion-reduce:transition-none">
-                        <LuLink aria-hidden="true" className="text-lg block" />
+                        <LuLink
+                          aria-hidden="true"
+                          className="size-icon-base block"
+                        />
                       </span>
                     </a>
                   </li>
