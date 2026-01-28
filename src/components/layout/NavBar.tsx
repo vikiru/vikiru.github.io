@@ -101,7 +101,7 @@ export function NavBar() {
           </div>
 
           <div className="text-center mt-4">
-            <h3 className="body-small text-muted-foreground uppercase tracking-wider font-semibold mb-4 border-b border-border pb-2">
+            <h3 className="body-base text-muted-foreground uppercase tracking-wider font-semibold mb-4 border-b border-border pb-2">
               Connect with me
             </h3>
             <div className="flex justify-center gap-4">
@@ -138,11 +138,11 @@ export function NavBar() {
             className="absolute bottom-6 left-0 right-0 text-center px-4"
             id="copyright"
           >
-            <p className="body-small text-muted-foreground">
+            <p className="body-base text-muted-foreground">
               &copy; {new Date().getFullYear()} Visakan Kirubakaran
             </p>
             <Link
-              className="body-small text-muted-foreground hover:text-primary transition-colors inline-block mt-1 motion-reduce:transition-none"
+              className="body-base text-muted-foreground hover:text-primary transition-colors inline-block mt-1 motion-reduce:transition-none"
               to="/sitemap"
             >
               Sitemap

@@ -25,7 +25,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
             <div className="flex flex-wrap gap-2">
               {project.technologiesUsed.map((tech) => (
                 <span
-                  className="px-3 py-1.5 rounded-lg body-small font-medium bg-background border border-border text-foreground capitalize"
+                  className="px-3 py-1.5 rounded-lg body-base font-medium bg-background border border-border text-foreground capitalize"
                   key={tech}
                 >
                   {tech}
@@ -61,7 +61,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 <span className="body-small font-bold uppercase text-muted-foreground tracking-wider mb-0.5">
                   Co-Authors
                 </span>
-                <span className="body-small text-foreground leading-tight">
+                <span className="body-base text-foreground leading-tight">
                   {project.contributors}
                 </span>
               </div>
