@@ -61,14 +61,14 @@ export function Footer() {
 
         <div className="mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
+            <p className="body-small text-muted-foreground">
               &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
               reserved.
             </p>
             <nav>
               <Link
                 aria-label="View site sitemap"
-                className="text-sm text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                className="body-small text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                 to="/sitemap"
               >
                 Sitemap

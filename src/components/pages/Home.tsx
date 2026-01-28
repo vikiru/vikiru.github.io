@@ -9,7 +9,7 @@ import { Skills } from '@/components/sections/Home/Skills';
 export function HomePage() {
   return (
     <Layout>
-      <div className="container-custom flex flex-col w-full mx-auto">
+      <div className="flex flex-col w-full">
         <Hero />
         <About />
         <Skills />

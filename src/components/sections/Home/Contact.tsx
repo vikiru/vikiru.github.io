@@ -10,13 +10,13 @@ interface ContactProps {
 export function Contact({ className }: ContactProps) {
   return (
     <section className={cn('py-20', className)} id="contact">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 2xl:max-w-full">
         <h2 className="xs:text-h3 sm:text-h2 font-bold mb-12 flex items-center justify-center gap-3 font-heading">
           <span className="w-8 h-1 bg-primary rounded-full" />
           Contact Me
           <span className="w-8 h-1 bg-primary rounded-full" />
         </h2>
-        <Card className="max-w-5xl mx-auto">
+        <Card className="w-full mx-auto">
           <CardContent className="p-8 flex flex-col lg:flex-row gap-12 items-start">
             <div className="flex-1">
               <p className="body-large text-muted-foreground mb-6 leading-relaxed">

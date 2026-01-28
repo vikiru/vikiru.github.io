@@ -36,6 +36,11 @@
   --spacing-3xl: 4rem;
   --spacing-4xl: 6rem;
 
+  --container-8xl: 88rem;
+  --container-9xl: 95rem;
+  --container-10xl: 102rem;
+  --container-11xl: 109rem;
+
   --size-icon-xs: clamp(0.75rem, 0.875rem, 0.875rem);
   --size-icon-sm: clamp(1rem, 1.125rem, 1.125rem);
   --size-icon-base: clamp(1.125rem, 1.25rem, 1.25rem);
@@ -177,6 +182,22 @@ body {
 
 .section {
   padding-block: var(--spacing-3xl);
+}
+
+.max-w-8xl {
+  max-width: var(--container-8xl);
+}
+
+.max-w-9xl {
+  max-width: var(--container-9xl);
+}
+
+.max-w-10xl {
+  max-width: var(--container-10xl);
+}
+
+.max-w-11xl {
+  max-width: var(--container-11xl);
 }
 
 .container-custom {

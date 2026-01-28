@@ -20,7 +20,9 @@ export function ProjectMedia({ project }: ProjectMediaProps) {
           />
         ) : (
           <div className="w-full aspect-video flex items-center justify-center rounded-2xl border border-border bg-muted">
-            <p className="text-sm text-muted-foreground">No video available</p>
+            <p className="body-small text-muted-foreground">
+              No video available
+            </p>
           </div>
         )}
       </div>

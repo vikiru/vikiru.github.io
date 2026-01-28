@@ -33,16 +33,16 @@ export function CourseCard({
     >
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-4">
-          <CardTitle className="text-lg font-heading leading-tight text-card-foreground md:min-h-14">
+          <CardTitle className="text-h4 font-heading leading-tight text-card-foreground md:min-h-14">
             {name}
           </CardTitle>
         </div>
-        <Badge className="mt-2 font-mono text-xs w-fit" variant="secondary">
+        <Badge className="mt-2 font-mono body-small w-fit" variant="secondary">
           {courseCode}
         </Badge>
       </CardHeader>
       <CardContent className="pt-0 flex-1">
-        <p className="text-sm text-muted-foreground leading-relaxed">
+        <p className="body-small text-muted-foreground leading-relaxed">
           {description}
         </p>
       </CardContent>
