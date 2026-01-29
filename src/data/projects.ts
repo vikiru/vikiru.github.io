@@ -35,7 +35,7 @@ const projectData: ProjectData = {
       accomplishments: [
         'Integrated Gemini AI with a comprehensive system prompt to generate detailed notes and a set of flashcards for any given topic',
         'Integrated TipTap editor for rich text editing and Mermaid.js to render diagrams within notes',
-        'Integrated Clerk for user authentication, leveraged NextJS route grouping to separate public and protected routes',
+        'Integrated Clerk for user authentication, leveraged Next.js route grouping to separate public and protected routes',
         'Implemented form validation with Zod and React Hook Form for robust input handling',
         'Implemented note export (txt, md, pdf) functionality leveraging native browser APIs',
         'Designed PostgreSQL data models using Drizzle, implementing proper relationships and indexing to optimize query performance for user, note, and flashcard data',
