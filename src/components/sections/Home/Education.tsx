@@ -20,7 +20,7 @@ export function Education({ className }: EducationProps) {
   } = educationData;
 
   return (
-    <section className={cn('py-20', className)} id="education">
+    <section className={cn('py-20 scroll-mt-20', className)} id="education">
       <div className="px-6">
         <div className="mb-12">
           <h2 className="xs:text-h3 sm:text-h2 font-bold mb-4 flex items-center gap-3 font-heading">

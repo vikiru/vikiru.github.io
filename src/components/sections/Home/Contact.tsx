@@ -9,7 +9,7 @@ interface ContactProps {
 
 export function Contact({ className }: ContactProps) {
   return (
-    <section className={cn('py-20', className)} id="contact">
+    <section className={cn('py-20 scroll-mt-20', className)} id="contact">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 2xl:max-w-full">
         <h2 className="xs:text-h3 sm:text-h2 font-bold mb-12 flex items-center justify-center gap-3 font-heading">
           <span className="w-8 h-1 bg-primary rounded-full" />
