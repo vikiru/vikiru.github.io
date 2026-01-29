@@ -10,7 +10,7 @@ export function Hero({ className }: HeroProps) {
   return (
     <section
       className={cn(
-        'relative xs:pt-16 2xl:pt-32 pb-20 px-6 text-center',
+        'relative xs:pt-16 2xl:pt-32 pb-20 px-6 text-center scroll-mt-20',
         className,
       )}
       id="hero"

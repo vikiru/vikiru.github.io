@@ -43,9 +43,12 @@ export function EducationHeader({ className }: EducationHeaderProps) {
               <span className="hidden lg:block text-muted-foreground/30">
                 •
               </span>
-              <span className="hidden lg:block font-mono">{location}</span>
+              <div className="flex items-center gap-2 font-medium font-mono">
+                <FaLocationDot aria-hidden="true" className="size-icon-base" />
+                <span className="hidden lg:block font-mono">{location}</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2 font-medium font-mono">
+            <div className="flex items-center gap-2 font-medium font-mono lg:hidden">
               <FaLocationDot aria-hidden="true" className="size-icon-base" />
               {location}
             </div>

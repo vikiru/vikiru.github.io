@@ -46,7 +46,7 @@ function SkillCategory({ title, skills }: SkillCategoryProps) {
 
 export function Skills({ className }: SkillsProps) {
   return (
-    <section className={cn('py-20 relative', className)} id="skills">
+    <section className={cn('py-20 relative scroll-mt-20', className)} id="skills">
       <div className="px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="xs:text-h3 sm:text-h2  font-bold mb-4 flex items-center justify-center gap-3 font-heading">
