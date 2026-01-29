@@ -38,18 +38,18 @@ export function Hero({ className }: HeroProps) {
           </p>
         </div>
         <div className="flex flex-wrap gap-4 pt-4 justify-center">
-          <Button asChild size="xl">
+          <Button asChild size="2xl">
             <a
-              className="inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              className="inline-flex body-large items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               href="#projects"
             >
               View Work
               <LuArrowRight aria-hidden="true" className="size-icon-sm" />
             </a>
           </Button>
-          <Button asChild size="xl" variant="outline">
+          <Button asChild size="2xl" variant="outline">
             <a
-              className="focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              className="focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 body-large"
               href="#contact"
             >
               Contact Me
