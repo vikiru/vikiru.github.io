@@ -6,6 +6,8 @@ import {
   Outlet,
   Scripts,
 } from '@tanstack/react-router';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import type { ReactNode } from 'react';
 import indexCss from '../index.css?url';
 
@@ -106,6 +108,8 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       </head>
       <body>
         {children}
+        <SpeedInsights />
+        <Analytics />
         <Scripts />
       </body>
     </html>

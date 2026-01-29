@@ -1,6 +1,7 @@
 import tailwindcss from '@tailwindcss/vite';
 import { tanstackStart } from '@tanstack/react-start/plugin/vite';
 import viteReact from '@vitejs/plugin-react';
+import { nitro } from 'nitro/vite';
 import { defineConfig } from 'vite';
 import tsConfigPaths from 'vite-tsconfig-paths';
 import { routes } from './src/data/projects';
@@ -13,7 +14,7 @@ export default defineConfig({
     tsConfigPaths(),
     tanstackStart({
       prerender: {
-        enabled: false,
+        enabled: true,
         autoStaticPathsDiscovery: true,
         autoSubfolderIndex: true,
         crawlLinks: true,
@@ -27,6 +28,7 @@ export default defineConfig({
         host: 'https://vikiru.vercel.app',
       },
     }),
+    nitro(),
     viteReact(),
     tailwindcss(),
   ],
