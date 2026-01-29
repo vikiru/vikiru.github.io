@@ -10,9 +10,9 @@ interface ProjectHeroProps {
 export function ProjectHero({ project }: ProjectHeroProps) {
   return (
     <section className="xs:-mt-14 lg:-mt-24 px-4 md:px-40 flex flex-1 justify-center py-16 md:py-24 relative overflow-hidden">
-      <div className="layout-content-container flex flex-col max-w-240 flex-1 items-center text-center gap-8">
+      <div className="flex flex-col w-full flex-1 items-center text-center gap-8">
         <div className="flex flex-col gap-6">
-          <h1 className="text-h1 font-bold tracking-tight font-heading text-foreground text-balance">
+          <h1 className="heading-1 font-bold tracking-tight font-heading text-foreground text-balance">
             {project.name}
           </h1>
           <p className="body-large text-muted-foreground leading-relaxed max-w-180 mx-auto">
@@ -21,7 +21,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
         </div>
         <div className="flex flex-wrap gap-4 justify-center mt-6">
           {project.githubUrl && (
-            <Button asChild size="xl">
+            <Button asChild size="2xl">
               <a
                 className="inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 href={project.githubUrl}
@@ -38,7 +38,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
             </Button>
           )}
           {project.documentationUrl && (
-            <Button asChild size="xl" variant="outline">
+            <Button asChild size="2xl" variant="outline">
               <a
                 className="inline-flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 href={project.documentationUrl}

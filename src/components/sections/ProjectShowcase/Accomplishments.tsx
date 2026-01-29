@@ -11,10 +11,10 @@ export function Accomplishments({ project }: AccomplishmentsProps) {
 
   return (
     <section className="px-4 md:px-10 flex justify-center">
-      <div className="max-w-275 w-full">
-        <h2 className="text-h4 font-bold tracking-tight font-heading text-foreground mb-6">
+      <div className="w-full">
+        <h3 className="heading-3 font-bold tracking-tight font-heading text-foreground mb-6">
           Key Accomplishments
-        </h2>
+        </h3>
         <ul className="list-disc list-inside marker:text-primary space-y-3">
           {project.accomplishments.map((accomplishment, index) => (
             <li key={`${project.slug}-accomplishment-${index}`}>
