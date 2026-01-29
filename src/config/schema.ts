@@ -1,5 +1,5 @@
 import type { Person, SoftwareSourceCode, WebSite } from 'schema-dts';
-import { siteConfig } from './site';
+import { siteConfig } from '@/config/site';
 
 export const {
   site: { title, description, url: siteUrl, lastModified },
