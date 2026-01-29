@@ -7,7 +7,7 @@ interface ProjectMediaProps {
 export function ProjectMedia({ project }: ProjectMediaProps) {
   return (
     <section className="px-4 md:px-10 flex justify-center pb-16">
-      <div className="max-w-275 w-full">
+      <div className="w-full max-w-7xl">
         {project.videoPath ? (
           <video
             aria-label={`Demo video for ${project.name}`}
