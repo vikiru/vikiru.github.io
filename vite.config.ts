@@ -28,9 +28,7 @@ export default defineConfig({
         host: 'https://vikiru.vercel.app',
       },
     }),
-    nitro({
-      preset: 'vercel',
-    }),
+    nitro(),
     viteReact(),
     tailwindcss(),
   ],
