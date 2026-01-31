@@ -10,14 +10,11 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  build: {
-    outDir: 'dist',
-  },
   plugins: [
     tsConfigPaths(),
     tanstackStart({
       prerender: {
-        enabled: true,
+        enabled: process.env.NODE_ENV === 'production',
         autoStaticPathsDiscovery: true,
         autoSubfolderIndex: true,
         crawlLinks: false,
@@ -32,9 +29,7 @@ export default defineConfig({
       },
     }),
     nitro({
-      output: {
-        dir: 'dist',
-      },
+      preset: 'vercel',
     }),
     viteReact(),
     tailwindcss(),
