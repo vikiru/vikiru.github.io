@@ -12,12 +12,16 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    target: 'esnext',
   },
   plugins: [
     tsConfigPaths(),
     tanstackStart({
-      prerender: {
+      spa: {
         enabled: true,
+      },
+      prerender: {
+        enabled: false,
         autoStaticPathsDiscovery: true,
         autoSubfolderIndex: true,
         crawlLinks: false,
@@ -31,11 +35,12 @@ export default defineConfig({
         host: 'https://vikiru.vercel.app',
       },
     }),
-    nitro({
-      output: {
-        dir: 'dist',
-      },
-    }),
+    // nitro({
+    //   output: {
+    //     dir: 'dist',
+    //   },
+    //   preset: 'vercel',
+    // }),
     viteReact(),
     tailwindcss(),
   ],
