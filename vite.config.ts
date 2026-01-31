@@ -31,12 +31,12 @@ export default defineConfig({
         host: 'https://vikiru.vercel.app',
       },
     }),
-    // nitro({
-    //   output: {
-    //     dir: 'dist',
-    //   },
-    //   preset: 'vercel',
-    // }),
+    nitro({
+      output: {
+        dir: 'dist',
+      },
+      preset: 'vercel',
+    }),
     viteReact(),
     tailwindcss(),
   ],
