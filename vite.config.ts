@@ -20,7 +20,7 @@ export default defineConfig({
         enabled: true,
         autoStaticPathsDiscovery: true,
         autoSubfolderIndex: true,
-        crawlLinks: true,
+        crawlLinks: false,
       },
       pages: routes.map((route: string) => ({
         path: route,
@@ -31,12 +31,12 @@ export default defineConfig({
         host: 'https://vikiru.vercel.app',
       },
     }),
-    nitro({
-      output: {
-        dir: 'dist',
-      },
-      preset: 'vercel',
-    }),
+    // nitro({
+    //   output: {
+    //     dir: 'dist',
+    //   },
+    //   preset: 'vercel',
+    // }),
     viteReact(),
     tailwindcss(),
   ],
