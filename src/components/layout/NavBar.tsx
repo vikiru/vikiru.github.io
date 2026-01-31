@@ -107,7 +107,7 @@ export function NavBar() {
             <div className="flex justify-center gap-4">
               <a
                 aria-label="GitHub"
-                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors motion-reduce:transition-none"
+                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
                 href="https://github.com/vikiru"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -116,7 +116,7 @@ export function NavBar() {
               </a>
               <a
                 aria-label="LinkedIn"
-                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors motion-reduce:transition-none"
+                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
                 href="https://linkedin.com/in/viskirubakaran"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -125,7 +125,7 @@ export function NavBar() {
               </a>
               <Link
                 aria-label="Email"
-                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors motion-reduce:transition-none"
+                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
                 hash="contact"
                 to="/"
               >

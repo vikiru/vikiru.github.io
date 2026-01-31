@@ -15,16 +15,17 @@
   --breakpoint-4xl: 140rem;
   --breakpoint-5xl: 160rem;
 
-  --text-xs: clamp(0.75rem, 0.8vw + 0.6rem, 0.875rem);
-  --text-sm: clamp(0.875rem, 0.8vw + 0.7rem, 1rem);
-  --text-base: clamp(1rem, 0.8vw + 0.8rem, 1.125rem);
-  --text-lg: clamp(1.125rem, 0.8vw + 0.9rem, 1.25rem);
-  --text-h6: clamp(1.25rem, 1.5vw + 0.9rem, 1.5rem);
-  --text-h5: clamp(1.5rem, 2vw + 1rem, 2rem);
-  --text-h4: clamp(1.875rem, 2.5vw + 1.2rem, 2.5rem);
-  --text-h3: clamp(2.25rem, 3vw + 1.5rem, 3rem);
-  --text-h2: clamp(3rem, 4vw + 2rem, 4rem);
-  --text-h1: clamp(3.5rem, 5vw + 2.5rem, 5rem);
+  --text-xs: clamp(0.75rem, 0.875rem + 0.3vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.9375rem + 0.3vw, 1rem);
+  --text-base: clamp(1rem, 1.0625rem + 0.4vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.1875rem + 0.4vw, 1.25rem);
+  --text-p: clamp(1.125rem, 1.1875rem + 0.4vw, 1.25rem);
+  --text-h6: clamp(1rem, 1.0625rem + 0.4vw, 1.125rem);
+  --text-h5: clamp(1.125rem, 1.25rem + 0.5vw, 1.375rem);
+  --text-h4: clamp(1.375rem, 1.5rem + 0.6vw, 1.75rem);
+  --text-h3: clamp(1.75rem, 1.875rem + 0.8vw, 2.25rem);
+  --text-h2: clamp(2.25rem, 2.375rem + 1vw, 2.75rem);
+  --text-h1: clamp(2.75rem, 3rem + 1.2vw, 3.5rem);
 
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
