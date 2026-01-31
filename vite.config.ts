@@ -11,36 +11,30 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    outDir: 'dist',
-    target: 'esnext',
+    // target: 'esnext',
   },
   plugins: [
     tsConfigPaths(),
     tanstackStart({
       spa: {
-        enabled: true,
+        enabled: false,
       },
       prerender: {
-        enabled: false,
+        enabled: true,
         autoStaticPathsDiscovery: true,
         autoSubfolderIndex: true,
         crawlLinks: false,
       },
       pages: routes.map((route: string) => ({
         path: route,
-        prerender: { enabled: true, outputPath: `/projects/${route}.html` },
+        prerender: { enabled: true, outputPath: `${route}.html` },
       })),
       sitemap: {
         enabled: true,
         host: 'https://vikiru.vercel.app',
       },
     }),
-    // nitro({
-    //   output: {
-    //     dir: 'dist',
-    //   },
-    //   preset: 'vercel',
-    // }),
+    nitro(),
     viteReact(),
     tailwindcss(),
   ],
