@@ -28,7 +28,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "NODE_ENV=production vite build",
-    "preview": "vite preview --outDir .vercel/output",
+    "preview": "vite preview",
     "generate-sitemap": "tsx src/scripts/generateSitemap.ts",
     "lint": "biome lint",
     "format": "biome check --write",
