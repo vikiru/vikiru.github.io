@@ -27,13 +27,13 @@
   },
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "NODE_ENV=production vite build",
+    "preview": "vite preview",
     "generate-sitemap": "tsx src/scripts/generateSitemap.ts",
     "lint": "biome lint",
     "format": "biome check --write",
     "typecheck": "tsgo --noEmit",
     "unused": "knip",
-    "preview": "vite preview",
     "postinstall": "lefthook install"
   },
   "browserslist": {
