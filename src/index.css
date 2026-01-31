@@ -15,17 +15,16 @@
   --breakpoint-4xl: 140rem;
   --breakpoint-5xl: 160rem;
 
-  --text-xs: clamp(0.75rem, 0.8rem, 0.8rem);
-  --text-sm: clamp(0.875rem, 1rem, 1rem);
-  --text-base: clamp(1rem, 1rem, 1.25rem);
-  --text-lg: clamp(1.125rem, 1.25rem, 1.25rem);
-  --text-p: clamp(1.125rem, 1.25rem, 1.25rem);
-  --text-h6: clamp(1rem, 1rem, 1.25rem);
-  --text-h5: clamp(1.25rem, 1.5625rem, 1.5625rem);
-  --text-h4: clamp(1.5rem, 1.953rem, 1.953rem);
-  --text-h3: clamp(1.875rem, 2.44rem, 2.44rem);
-  --text-h2: clamp(2.25rem, 3.05rem, 3.05rem);
-  --text-h1: clamp(2.75rem, 3.81rem, 3.81rem);
+  --text-xs: clamp(0.75rem, 0.8vw + 0.6rem, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8vw + 0.7rem, 1rem);
+  --text-base: clamp(1rem, 0.8vw + 0.8rem, 1.125rem);
+  --text-lg: clamp(1.125rem, 0.8vw + 0.9rem, 1.25rem);
+  --text-h6: clamp(1.25rem, 1.5vw + 0.9rem, 1.5rem);
+  --text-h5: clamp(1.5rem, 2vw + 1rem, 2rem);
+  --text-h4: clamp(1.875rem, 2.5vw + 1.2rem, 2.5rem);
+  --text-h3: clamp(2.25rem, 3vw + 1.5rem, 3rem);
+  --text-h2: clamp(3rem, 4vw + 2rem, 4rem);
+  --text-h1: clamp(3.5rem, 5vw + 2.5rem, 5rem);
 
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -41,16 +40,16 @@
   --container-10xl: 98rem;
   --container-11xl: 105rem;
 
-  --size-icon-xs: clamp(0.75rem, 0.875rem, 0.875rem);
-  --size-icon-sm: clamp(1rem, 1.125rem, 1.125rem);
-  --size-icon-base: clamp(1.125rem, 1.25rem, 1.25rem);
-  --size-icon-lg: clamp(1.25rem, 1.5rem, 1.5rem);
-  --size-icon-xl: clamp(1.5rem, 1.75rem, 2rem);
+  --size-icon-xs: clamp(0.75rem, 1vw + 0.5rem, 0.875rem);
+  --size-icon-sm: clamp(0.875rem, 1vw + 0.6rem, 1.125rem);
+  --size-icon-base: clamp(1.125rem, 1vw + 0.7rem, 1.25rem);
+  --size-icon-lg: clamp(1.25rem, 1.2vw + 0.8rem, 1.5rem);
+  --size-icon-xl: clamp(1.5rem, 1.5vw + 0.9rem, 2rem);
 
-  --text-logo-sm: clamp(1.5rem, 1.875rem, 1.875rem);
-  --text-logo-base: clamp(1.75rem, 2.25rem, 2.25rem);
-  --text-logo-lg: clamp(2rem, 2.625rem, 2.625rem);
-  --text-logo-xl: clamp(2.5rem, 3.125rem, 3.125rem);
+  --text-logo-sm: clamp(1.5rem, 2vw + 1rem, 2rem);
+  --text-logo-base: clamp(1.75rem, 2.5vw + 1rem, 2.5rem);
+  --text-logo-lg: clamp(2rem, 3vw + 1rem, 3rem);
+  --text-logo-xl: clamp(2.5rem, 3.5vw + 1rem, 3.5rem);
 
   --text-nav-sm: clamp(1rem, 1.25rem, 1.25rem);
   --text-nav-base: clamp(1.125rem, 1.4rem, 1.4rem);
@@ -77,14 +76,14 @@
 
   --background: oklch(0.96 0.002 265);
   --foreground: oklch(0.2 0.01 265);
-  --primary: oklch(0.52 0.15 240);
+  --primary: oklch(0.55 0.18 250);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.9 0.005 265);
   --secondary-foreground: oklch(0.3 0.01 265);
   --muted: oklch(0.94 0.005 265);
-  --muted-foreground: oklch(0.5 0 0);
-  --accent: oklch(0.6 0.12 230);
-  --accent-foreground: oklch(0.2 0.01 265);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.65 0.15 75);
+  --accent-foreground: oklch(0.15 0 0);
   --destructive: oklch(0.55 0.22 25);
   --border: oklch(0.85 0.005 265);
   --input: oklch(0.85 0.005 265);
@@ -94,14 +93,14 @@
 .dark {
   --background: oklch(0.15 0.008 265);
   --foreground: oklch(0.94 0.005 265);
-  --primary: oklch(0.52 0.15 240);
-  --primary-foreground: oklch(0.99 0 0);
+  --primary: oklch(0.65 0.18 250);
+  --primary-foreground: oklch(0.15 0 0);
   --secondary: oklch(0.25 0.008 265);
   --secondary-foreground: oklch(0.9 0.005 265);
   --muted: oklch(0.22 0.008 265);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.55 0.12 230);
-  --accent-foreground: oklch(0.94 0.005 265);
+  --muted-foreground: oklch(0.6 0 0);
+  --accent: oklch(0.7 0.15 75);
+  --accent-foreground: oklch(0.15 0 0);
   --destructive: oklch(0.6 0.22 25);
   --border: oklch(0.3 0.008 265);
   --input: oklch(0.3 0.008 265);
