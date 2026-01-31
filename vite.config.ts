@@ -35,7 +35,6 @@ export default defineConfig({
       output: {
         dir: 'dist',
       },
-      preset: 'vercel',
     }),
     viteReact(),
     tailwindcss(),
