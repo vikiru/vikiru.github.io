@@ -2,8 +2,8 @@
 
 import { createFileRoute } from '@tanstack/react-router';
 import { SitemapPage } from '@/components/pages/Sitemap';
-import { sitemapLd } from '@/lib/seo/sitemapSchema';
 import { siteConfig } from '@/config/site';
+import { sitemapLd } from '@/lib/seo/sitemapSchema';
 
 const {
   site: { url: siteUrl },

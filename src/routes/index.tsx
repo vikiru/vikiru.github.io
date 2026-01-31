@@ -8,6 +8,7 @@ const {
 } = siteConfig;
 
 export const Route = createFileRoute('/')({
+  ssr: false,
   head: () => ({
     meta: [
       { title: siteTitle },
