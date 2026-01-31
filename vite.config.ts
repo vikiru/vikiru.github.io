@@ -14,7 +14,7 @@ export default defineConfig({
     tsConfigPaths(),
     tanstackStart({
       prerender: {
-        enabled: process.env.NODE_ENV === 'production',
+        enabled: true,
         autoStaticPathsDiscovery: true,
         autoSubfolderIndex: true,
         crawlLinks: false,
@@ -29,7 +29,6 @@ export default defineConfig({
       },
     }),
     viteReact(),
-    nitro(),
     tailwindcss(),
   ],
 });
