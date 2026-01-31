@@ -410,6 +410,6 @@ const otherProjects = projectData.projects.filter(
 const displayedProjects = projectData.projects.filter(
   (project) => !project.hidden,
 );
-const routes = displayedProjects.map((project) => project.slug);
+const routes = displayedProjects.map((project) => `/projects/${project.slug}`);
 
 export { featuredProjects, otherProjects, projectData, routes };
