@@ -33,7 +33,7 @@
     "format": "biome check --write",
     "typecheck": "tsgo --noEmit",
     "unused": "knip",
-    "preview": "node dist/server/index.mjs",
+    "preview": "vite preview",
     "postinstall": "lefthook install"
   },
   "browserslist": {
