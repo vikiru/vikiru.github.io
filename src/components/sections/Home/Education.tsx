@@ -47,7 +47,7 @@ export function Education({ className }: EducationProps) {
               </p>
               <div className="mt-auto pt-6 border-t border-border">
                 <Link
-                  className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors group/link body-large font-medium motion-reduce:transition-none"
+                  className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors group/link body-large font-medium motion-reduce:transition-none"
                   to="/education/courses"
                 >
                   View Courses
@@ -81,7 +81,7 @@ export function Education({ className }: EducationProps) {
                   >
                     <a
                       aria-label={`View certificate for ${cert.certificationName}`}
-                      className="flex items-center gap-3 pb-4 border-b border-border last:border-0 last:pb-0 hover:text-accent transition-colors motion-reduce:transition-none"
+                      className="flex items-center gap-3 pb-4 border-b border-border last:border-0 last:pb-0 hover:text-primary transition-colors motion-reduce:transition-none"
                       href={cert.certificateLink}
                       rel="noopener noreferrer"
                       target="_blank"
@@ -89,7 +89,7 @@ export function Education({ className }: EducationProps) {
                       <span className="body-large">
                         {cert.certificationName}
                       </span>
-                      <span className="ml-auto text-muted-foreground group-hover:text-accent transition-colors p-3 xs:p-4 lg:p-5 rounded-full motion-reduce:transition-none">
+                      <span className="ml-auto text-muted-foreground group-hover:text-primary transition-colors p-3 xs:p-4 lg:p-5 rounded-full motion-reduce:transition-none">
                         <LuLink
                           aria-hidden="true"
                           className="size-icon-base block"

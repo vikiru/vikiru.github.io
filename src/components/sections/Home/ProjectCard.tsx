@@ -49,7 +49,7 @@ export const ProjectCard = memo(function ProjectCard({
             {project.githubUrl && (
               <a
                 aria-label="View source code"
-                className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none z-20 relative"
+                className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none z-20 relative"
                 href={project.githubUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -60,7 +60,7 @@ export const ProjectCard = memo(function ProjectCard({
             {project.documentationUrl && (
               <a
                 aria-label="View documentation"
-                className="p-2 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none z-20 relative"
+                className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none z-20 relative"
                 href={project.documentationUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -95,7 +95,7 @@ export const ProjectCard = memo(function ProjectCard({
         <div className="mt-4 pt-4 border-t border-border shrink-0">
           <Link
             aria-label={`Read more about ${project.name}`}
-            className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors body-large font-medium motion-reduce:transition-none z-20 relative"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors body-large font-medium motion-reduce:transition-none z-20 relative"
             params={{ slug: project.slug }}
             to="/projects/$slug"
           >

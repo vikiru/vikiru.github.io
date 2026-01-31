@@ -24,7 +24,7 @@ export function Contact({ className }: ContactProps) {
                 to respond to you as soon as possible. In case, the form does
                 not work for any reason, please{' '}
                 <a
-                  className="hover:text-accent transition-colors font-medium underline motion-reduce:transition-none"
+                  className="hover:text-primary transition-colors font-medium underline motion-reduce:transition-none"
                   href="mailto:viskirubakaran@outlook.com"
                 >
                   email me
@@ -34,7 +34,7 @@ export function Contact({ className }: ContactProps) {
               <div className="flex gap-4">
                 <a
                   aria-label="GitHub"
-                  className="p-3 xs:p-4 lg:p-5 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
+                  className="p-3 xs:p-4 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
                   href="https://github.com/vikiru"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -43,7 +43,7 @@ export function Contact({ className }: ContactProps) {
                 </a>
                 <a
                   aria-label="LinkedIn"
-                  className="p-3 xs:p-4 lg:p-5 text-muted-foreground hover:text-accent transition-colors rounded-md motion-reduce:transition-none"
+                  className="p-3 xs:p-4 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
                   href="https://linkedin.com/in/viskirubakaran"
                   rel="noopener noreferrer"
                   target="_blank"

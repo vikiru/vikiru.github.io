@@ -30,7 +30,7 @@ export function Footer() {
               <div className="flex gap-4">
                 <a
                   aria-label="Visit GitHub profile"
-                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                   href="https://github.com/vikiru"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -39,7 +39,7 @@ export function Footer() {
                 </a>
                 <a
                   aria-label="Visit LinkedIn profile"
-                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                   href="https://linkedin.com/in/viskirubakaran"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -48,7 +48,7 @@ export function Footer() {
                 </a>
                 <Link
                   aria-label="Send an email"
-                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-accent hover:border-accent/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2"
+                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                   hash="contact"
                   to="/"
                 >
