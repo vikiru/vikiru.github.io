@@ -27,7 +27,9 @@ export const Route = createFileRoute('/projects/$slug')({
     const description = `Learn about ${project.name}, a brief overview, technologies used, a demo and my personal accomplishments.`;
     const title = `Visakan Kirubakaran | ${project.name}`;
     const canonical = `${siteUrl}/projects/${project.slug}`;
-    const projectGraphSchema: Graph | undefined = projectSchemaMap.get(project.slug.toLowerCase());
+    const projectGraphSchema: Graph | undefined = projectSchemaMap.get(
+      project.slug.toLowerCase(),
+    );
 
     return {
       meta: [
