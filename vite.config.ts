@@ -28,8 +28,8 @@ export default defineConfig({
         host: 'https://vikiru.vercel.app',
       },
     }),
-    nitro(),
     viteReact(),
+    nitro(),
     tailwindcss(),
   ],
 });
