@@ -34,7 +34,9 @@ export default defineConfig({
         host: 'https://vikiru.vercel.app',
       },
     }),
-    nitro(),
+    nitro({
+      preset: 'node-server',
+    }),
     viteReact(),
     tailwindcss(),
   ],
