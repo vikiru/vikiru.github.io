@@ -97,7 +97,9 @@ export const Route = createRootRoute({
       { rel: 'manifest', href: '/manifest.json' },
     ],
   }),
+  shellComponent: RootDocument,
   component: RootComponent,
+  ssr: false,
 });
 
 function RootComponent() {
