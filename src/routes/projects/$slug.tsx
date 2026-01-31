@@ -3,7 +3,8 @@ import { Layout } from '@/components/layout/Layout';
 import { ProjectShowcase } from '@/components/sections/ProjectShowcase/ProjectShowcase';
 import { siteConfig } from '@/config/site';
 import { projectData } from '@/data/projects';
-import { createProjectSchema } from '@/lib/seo/ld';
+import { projectSchemaMap } from '@/lib/seo/projects/projectMap';
+import type { Graph } from 'schema-dts';
 import type { Project } from '@/types/Project';
 
 const {
@@ -26,7 +27,7 @@ export const Route = createFileRoute('/projects/$slug')({
     const description = `Learn about ${project.name}, a brief overview, technologies used, a demo and my personal accomplishments.`;
     const title = `Visakan Kirubakaran | ${project.name}`;
     const canonical = `${siteUrl}/projects/${project.slug}`;
-    const projectGraphSchema = createProjectSchema(project);
+    const projectGraphSchema: Graph | undefined = projectSchemaMap.get(project.slug.toLowerCase());
 
     return {
       meta: [
@@ -36,14 +37,19 @@ export const Route = createFileRoute('/projects/$slug')({
         { property: 'og:description', content: description },
         { property: 'og:type', content: 'article' },
         { property: 'og:url', content: canonical },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:description', content: description },
       ],
       links: [{ rel: 'canonical', href: canonical }],
-      scripts: [
-        {
-          type: 'application/ld+json',
-          children: JSON.stringify(projectGraphSchema),
-        },
-      ],
+      scripts: projectGraphSchema
+        ? [
+            {
+              type: 'application/ld+json',
+              children: JSON.stringify(projectGraphSchema),
+            },
+          ]
+        : [],
     };
   },
   component: ProjectShowcasePage,
