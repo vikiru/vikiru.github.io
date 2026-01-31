@@ -28,6 +28,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "NODE_ENV=production vite build",
+    "start": "NODE_ENV=production node .output/server/index.mjs",
     "preview": "vite preview",
     "generate-sitemap": "tsx src/scripts/generateSitemap.ts",
     "lint": "biome lint",

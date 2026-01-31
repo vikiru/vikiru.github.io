@@ -10,6 +10,9 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  build: {
+    outDir: 'dist',
+  },
   plugins: [
     tsConfigPaths(),
     tanstackStart({
@@ -26,6 +29,11 @@ export default defineConfig({
       sitemap: {
         enabled: true,
         host: 'https://vikiru.vercel.app',
+      },
+    }),
+    nitro({
+      output: {
+        dir: 'dist',
       },
     }),
     viteReact(),
