@@ -18,6 +18,8 @@ const metadata = {
     'Personal portfolio of Visakan Kirubakaran, a software developer with a passion for software and web development, based in Ottawa, ON.',
 };
 
+// TODO: Add meta tags and json ld for all routes (Home, Projects, Courses, Sitemap)
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -32,6 +34,12 @@ export const Route = createRootRoute({
       { property: 'og:description', content: metadata.description },
       { property: 'og:url', content: 'https://vikiru.vercel.app' },
       { name: 'twitter:card', content: 'summary' },
+    ],
+    scripts: [
+      {
+        src: 'https://kwesforms.com/v2/kf-script.js',
+        defer: true,
+      },
     ],
     links: [
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -109,7 +117,11 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <body>
         {children}
         <SpeedInsights />
-        <Analytics />
+        <Analytics
+          mode={
+            process.env.NODE_ENV === 'production' ? 'production' : 'development'
+          }
+        />
         <Scripts />
       </body>
     </html>
