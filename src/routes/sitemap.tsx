@@ -1,5 +1,8 @@
+// TODO: Review and update this file later
+
 import { createFileRoute } from '@tanstack/react-router';
 import { SitemapPage } from '@/components/pages/Sitemap';
+import { sitemapLd } from '@/lib/seo/sitemapSchema';
 import { siteConfig } from '@/config/site';
 
 const {
@@ -8,7 +11,8 @@ const {
 
 const metadata = {
   title: 'Visakan Kirubakaran | Sitemap',
-  description: 'View an overview of all the key pages on my portfolio webiste.',
+  description:
+    'Explore a comprehensive list of all pages on this portfolio website.',
   url: '/sitemap',
 };
 
@@ -30,6 +34,12 @@ export const Route = createFileRoute('/sitemap')({
       { name: 'twitter:description', content: metadata.description },
     ],
     links: [{ rel: 'canonical', href: `${siteUrl}${metadata.url}` }],
+    scripts: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify(sitemapLd),
+      },
+    ],
   }),
   component: SitemapPage,
 });
