@@ -1,5 +1,5 @@
-import type { Person, SoftwareSourceCode, WebSite } from 'schema-dts';
-import { personLd } from '@/config/schema';
+import type { SoftwareSourceCode, WebSite } from 'schema-dts';
+import { personId } from '@/config/schema';
 
 const softwareEntity: SoftwareSourceCode = {
   '@type': 'SoftwareSourceCode',
@@ -8,8 +8,8 @@ const softwareEntity: SoftwareSourceCode = {
   description:
     'An anime recommendation system designed to recommend anime similar to user-selected anime.',
   url: 'https://github.com/vikiru/kelbrum',
-  author: { '@id': 'https://vikiru.vercel.app/#person' },
-  maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
+  author: { '@id': personId },
+  maintainer: { '@id': personId },
   keywords: [
     'anime',
     'recommendation',
@@ -22,7 +22,7 @@ const softwareEntity: SoftwareSourceCode = {
     'tensorflow',
   ],
   version: '1.0.0',
-  programmingLanguage: 'JavaScript',
+  programmingLanguage: ['JavaScript', 'React'],
   license: 'https://opensource.org/licenses/MIT',
   dateCreated: '2024-02-01T00:00:00.000Z',
   dateModified: '2024-03-08T00:00:00.000Z',
@@ -54,5 +54,5 @@ export const kelbrumData = [softwareEntity, websiteEntity];
 
 export const kelbrumGraph = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, ...kelbrumData],
+  '@graph': [{ '@id': personId }, ...kelbrumData],
 };

@@ -1,5 +1,5 @@
-import type { Person, SoftwareSourceCode, WebSite } from 'schema-dts';
-import { personLd } from '@/config/schema';
+import type { SoftwareSourceCode, WebSite } from 'schema-dts';
+import { personId } from '@/config/schema';
 
 const softwareEntity: SoftwareSourceCode = {
   '@type': 'SoftwareSourceCode',
@@ -8,8 +8,8 @@ const softwareEntity: SoftwareSourceCode = {
   description:
     'A multi-purpose discord bot with over 65 commands spanning across 8 categories!',
   url: 'https://github.com/vikiru/Urvo',
-  author: { '@id': 'https://vikiru.vercel.app/#person' },
-  maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
+  author: { '@id': personId },
+  maintainer: { '@id': personId },
   keywords: ['Urvo', 'discord', 'bot', 'discord.js', 'sqlite', 'sequelize'],
   version: '2.0.0',
   programmingLanguage: 'JavaScript',
@@ -17,7 +17,7 @@ const softwareEntity: SoftwareSourceCode = {
   dateCreated: '2021-01-07T00:00:00.000Z',
   dateModified: '2023-02-01T00:00:00.000Z',
   codeRepository: 'https://github.com/vikiru/Urvo',
-  runtimePlatform: 'Node.js',
+  runtimePlatform: ['Node.js', 'Web'],
 };
 
 const websiteEntity: WebSite = {
@@ -26,9 +26,9 @@ const websiteEntity: WebSite = {
   name: 'Urvo Documentation',
   alternateName: 'Urvo',
   description:
-    'Documentation for Urvo - A multi-purpose discord bot with over 65 commands spanning across 8 categories!',
+    'Documentation for Urvo - A multi-purpose discord bot with over 65 commands spanning across 8 categories.',
   url: 'https://vikiru.github.io/Urvo/',
-  creator: { '@id': 'https://vikiru.vercel.app/#person' },
+  creator: { '@id': personId },
   license: 'https://opensource.org/licenses/MIT',
   inLanguage: 'en',
   dateModified: '2026-01-15T01:27:54.111Z',
@@ -43,5 +43,5 @@ export const urvoData = [softwareEntity, websiteEntity];
 
 export const urvoGraph = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, ...urvoData],
+  '@graph': [{ '@id': personId }, ...urvoData],
 };

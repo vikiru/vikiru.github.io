@@ -1,5 +1,5 @@
-import type { Person, SoftwareSourceCode, WebSite } from 'schema-dts';
-import { personLd } from '@/config/schema';
+import type { SoftwareSourceCode, WebSite } from 'schema-dts';
+import { personId } from '@/config/schema';
 
 const softwareEntity: SoftwareSourceCode = {
   '@type': 'SoftwareSourceCode',
@@ -8,8 +8,8 @@ const softwareEntity: SoftwareSourceCode = {
   description:
     'AI-powered learning tool to generate comprehensive notes and flashcards | TypeScript, Next.js, Gemini, PostgreSQL, Drizzle',
   url: 'https://github.com/vikiru/noterra',
-  author: { '@id': 'https://vikiru.vercel.app/#person' },
-  maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
+  author: { '@id': personId },
+  maintainer: { '@id': personId },
   keywords: [
     'nextjs',
     'gemini',
@@ -21,7 +21,7 @@ const softwareEntity: SoftwareSourceCode = {
     'mermaid',
   ],
   version: '1.0.0',
-  programmingLanguage: 'TypeScript',
+  programmingLanguage: ['TypeScript', 'React', 'Next.js', 'Node.js'],
   license: 'https://opensource.org/licenses/MIT',
   dateCreated: '2025-01-01T00:00:00.000Z',
   dateModified: '2026-01-28T00:00:00.000Z',
@@ -36,7 +36,7 @@ const websiteEntity: WebSite = {
   description:
     'Documentation for Noterra - AI-powered learning tool to generate comprehensive notes and flashcards using Gemini AI, Next.js, and PostgreSQL.',
   url: 'https://vikiru.github.io/noterra/',
-  creator: { '@id': 'https://vikiru.vercel.app/#person' },
+  creator: { '@id': personId },
   license: 'https://opensource.org/licenses/MIT',
   inLanguage: 'en',
   dateModified: '2026-01-28T00:00:00.000Z',
@@ -50,5 +50,5 @@ export const noterraData = [softwareEntity, websiteEntity];
 
 export const noterraGraph = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, ...noterraData],
+  '@graph': [{ '@id': personId }, ...noterraData],
 };

@@ -1,10 +1,5 @@
-import type {
-  Person,
-  SoftwareSourceCode,
-  WebApplication,
-  WebSite,
-} from 'schema-dts';
-import { personLd } from '@/config/schema';
+import type { SoftwareSourceCode, WebApplication, WebSite } from 'schema-dts';
+import { personId } from '@/config/schema';
 
 const softwareEntity: SoftwareSourceCode = {
   '@type': 'SoftwareSourceCode',
@@ -13,8 +8,8 @@ const softwareEntity: SoftwareSourceCode = {
   description:
     'A markdown to HTML parser and editor built using Peggy.js, React, TailwindCSS and DaisyUI.',
   url: 'https://github.com/vikiru/parseum',
-  author: { '@id': 'https://vikiru.vercel.app/#person' },
-  maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
+  author: { '@id': personId },
+  maintainer: { '@id': personId },
   keywords: [
     'markdown',
     'html',
@@ -26,7 +21,7 @@ const softwareEntity: SoftwareSourceCode = {
     'daisyui',
   ],
   version: '1.0.0',
-  programmingLanguage: 'JavaScript',
+  programmingLanguage: ['JavaScript', 'React'],
   license: 'https://opensource.org/licenses/MIT',
   dateCreated: '2024-02-01T00:00:00.000Z',
   dateModified: '2024-03-31T00:00:00.000Z',
@@ -46,7 +41,7 @@ const webAppEntity: WebApplication = {
   operatingSystem: 'Web',
   browserRequirements: 'Requires JavaScript and a modern web browser',
   softwareVersion: '1.0.0',
-  copyrightHolder: { '@id': 'https://vikiru.vercel.app/#person' },
+  copyrightHolder: { '@id': personId },
   copyrightNotice: 'Copyright 2024 Visakan Kirubakaran. All rights reserved.',
   copyrightYear: 2024,
   mainEntity: { '@id': 'https://github.com/vikiru/parseum/#software' },
@@ -61,7 +56,7 @@ const websiteEntity: WebSite = {
   description:
     'Documentation for Parseum - A markdown to HTML parser and editor built using Peggy.js, React, TailwindCSS and DaisyUI.',
   url: 'https://vikiru.github.io/parseum/',
-  creator: { '@id': 'https://vikiru.vercel.app/#person' },
+  creator: { '@id': personId },
   license: 'https://opensource.org/licenses/MIT',
   inLanguage: 'en',
   dateModified: '2026-01-12T07:02:47.085Z',
@@ -76,5 +71,5 @@ export const parseumData = [softwareEntity, webAppEntity, websiteEntity];
 
 export const parseumGraph = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, ...parseumData],
+  '@graph': [{ '@id': personId }, ...parseumData],
 };
