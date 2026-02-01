@@ -1,10 +1,5 @@
-import type {
-  APIReference,
-  Person,
-  SoftwareSourceCode,
-  WebSite,
-} from 'schema-dts';
-import { personLd } from '@/config/schema';
+import type { SoftwareSourceCode, WebSite } from 'schema-dts';
+import { personId } from '@/config/schema';
 import { restasaurusData } from '@/lib/seo/projects/restasaurusSchema';
 
 const paleodraSoftwareEntity: SoftwareSourceCode = {
@@ -14,8 +9,8 @@ const paleodraSoftwareEntity: SoftwareSourceCode = {
   description:
     'A dinosaur discovery web application that allows users to explore, learn, and track dinosaur species.',
   url: 'https://github.com/vikiru/paleodra',
-  author: { '@id': 'https://vikiru.vercel.app/#person' },
-  maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
+  author: { '@id': personId },
+  maintainer: { '@id': personId },
   keywords: [
     'paleodra',
     'nextjs',
@@ -25,7 +20,7 @@ const paleodraSoftwareEntity: SoftwareSourceCode = {
     'discovery',
   ],
   version: '1.0.0',
-  programmingLanguage: 'TypeScript',
+  programmingLanguage: ['TypeScript', 'React', 'Next.js'],
   license: 'https://opensource.org/licenses/MIT',
   codeRepository: 'https://github.com/vikiru/paleodra',
   runtimePlatform: ['Node.js', 'Web', 'Browser'],
@@ -37,13 +32,9 @@ const paleodraWebsiteEntity: WebSite = {
   '@id': 'https://vikiru.github.io/paleodra/#homepage',
   name: 'Paleodra Documentation',
   description:
-    'Documentation for Paleodra - A dinosaur discovery web app powered by RESTasaurus API (1200+ species)',
+    'Documentation for Paleodra - A dinosaur discovery web app powered by RESTasaurus API (comprehensive info on almost 1,200 dinosaur species).',
   url: 'https://vikiru.github.io/paleodra/',
-  creator: { '@id': 'https://vikiru.vercel.app/#person' },
-  hasPart: [
-    { '@id': 'https://github.com/vikiru/paleodra/#software' },
-    { '@id': 'https://github.com/vikiru/restasaurus/#software' },
-  ],
+  creator: { '@id': personId },
   license: 'https://opensource.org/licenses/MIT',
   inLanguage: 'en',
   about: { '@id': 'https://github.com/vikiru/paleodra/#software' },
@@ -59,5 +50,5 @@ export const paleodraData = [
 
 export const paleodraGraph = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, ...paleodraData],
+  '@graph': [{ '@id': personId }, ...paleodraData],
 };

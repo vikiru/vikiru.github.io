@@ -21,6 +21,7 @@ const metadata = {
 // Meta tags are handled in individual route files (index, sitemap, projects/$slug, education/courses)
 
 export const Route = createRootRoute({
+  ssr: false,
   head: () => ({
     meta: [
       { charSet: 'utf-8' },
@@ -32,7 +33,6 @@ export const Route = createRootRoute({
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: metadata.title },
       { property: 'og:description', content: metadata.description },
-      { property: 'og:url', content: 'https://vikiru.vercel.app' },
       { name: 'twitter:card', content: 'summary' },
     ],
     scripts: [
@@ -98,7 +98,6 @@ export const Route = createRootRoute({
   }),
   shellComponent: RootDocument,
   component: RootComponent,
-  ssr: false,
 });
 
 function RootComponent() {

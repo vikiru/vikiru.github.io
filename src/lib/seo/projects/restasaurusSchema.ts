@@ -1,10 +1,9 @@
 import type {
   APIReference,
-  Person,
   SoftwareSourceCode,
   WebSite,
 } from 'schema-dts';
-import { personLd } from '@/config/schema';
+import { personId } from '@/config/schema';
 
 const softwareEntity: SoftwareSourceCode = {
   '@type': 'SoftwareSourceCode',
@@ -13,8 +12,8 @@ const softwareEntity: SoftwareSourceCode = {
   description:
     'A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.',
   url: 'https://github.com/vikiru/restasaurus',
-  author: { '@id': 'https://vikiru.vercel.app/#person' },
-  maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
+  author: { '@id': personId },
+  maintainer: { '@id': personId },
   keywords: [
     'restasaurus',
     'rest',
@@ -25,12 +24,12 @@ const softwareEntity: SoftwareSourceCode = {
     'dinosaurs',
   ],
   version: '1.0.1',
-  programmingLanguage: 'JavaScript',
+  programmingLanguage: ['JavaScript', 'Node.js'],
   license: 'https://opensource.org/licenses/MIT',
   dateCreated: '2024-01-07T00:00:00.000Z',
   dateModified: '2024-02-01T00:00:00.000Z',
   codeRepository: 'https://github.com/vikiru/restasaurus',
-  runtimePlatform: 'Node.js',
+  runtimePlatform: ['Node.js', 'Web'],
 };
 
 const apiEntity: APIReference = {
@@ -41,7 +40,7 @@ const apiEntity: APIReference = {
     'A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.',
   url: 'https://restasaurus.onrender.com/api/v1',
   audience: 'Developers building dinosaur-related applications',
-  provider: { '@id': 'https://vikiru.vercel.app/#person' },
+  provider: { '@id': personId },
 };
 
 const websiteEntity: WebSite = {
@@ -52,7 +51,7 @@ const websiteEntity: WebSite = {
   description:
     'Documentation for RESTasaurus - A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.',
   url: 'https://vikiru.github.io/restasaurus/',
-  creator: { '@id': 'https://vikiru.vercel.app/#person' },
+  creator: { '@id': personId },
   license: 'https://opensource.org/licenses/MIT',
   inLanguage: 'en',
   dateModified: '2026-01-13T19:57:04.787Z',
@@ -70,5 +69,5 @@ export const restasaurusData = [softwareEntity, apiEntity, websiteEntity];
 
 export const restasaurusGraph = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, ...restasaurusData],
+  '@graph': [{ '@id': personId }, ...restasaurusData],
 };

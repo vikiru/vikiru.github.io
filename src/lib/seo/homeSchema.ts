@@ -1,9 +1,9 @@
-import type { WebSite } from 'schema-dts';
-import { homepageLd, softwareLd } from '@/config/schema';
+import type { Graph } from 'schema-dts';
+import { personLd, homepageLd, softwareLd } from '@/config/schema';
 
 export const homeData = [softwareLd, homepageLd];
 
-export const homeGraphSchema = {
+export const homeGraphSchema: Graph = {
   '@context': 'https://schema.org',
-  '@graph': [...homeData],
+  '@graph': [personLd, ...homeData],
 };
