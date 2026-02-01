@@ -1,10 +1,10 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
+import type { Graph } from 'schema-dts';
 import { Layout } from '@/components/layout/Layout';
 import { ProjectShowcase } from '@/components/sections/ProjectShowcase/ProjectShowcase';
 import { siteConfig } from '@/config/site';
 import { projectData } from '@/data/projects';
 import { projectSchemaMap } from '@/lib/seo/projects/projectMap';
-import type { Graph } from 'schema-dts';
 import type { Project } from '@/types/Project';
 
 const {

@@ -159,10 +159,14 @@ const collectionPageLd: CollectionPage = {
   },
 };
 
+export const sitemapData = [softwareLd, homepageLd, collectionPageLd];
+
 export const sitemapLd: {
   '@context': string;
   '@graph': (Person | SoftwareSourceCode | WebSite | CollectionPage)[];
 } = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, softwareLd, homepageLd, collectionPageLd],
+  '@graph': [personLd, ...sitemapData],
 };
+
+export const sitemapGraph = sitemapLd;

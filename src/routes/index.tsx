@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { HomePage } from '@/components/pages/Home';
-import { homepageGraphSchema } from '@/config/schema';
 import { siteConfig } from '@/config/site';
+import { homeGraphSchema } from '@/lib/seo/homeSchema';
 
 const {
   site: { title: siteTitle, description: siteDescription, url: siteUrl },
@@ -16,10 +16,7 @@ export const Route = createFileRoute('/')({
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: siteTitle },
       { property: 'og:description', content: siteDescription },
-      {
-        property: 'og:url',
-        content: `${siteUrl}/`,
-      },
+      { property: 'og:url', content: `${siteUrl}/` },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:title', content: siteTitle },
       { name: 'twitter:description', content: siteDescription },
@@ -28,7 +25,7 @@ export const Route = createFileRoute('/')({
     scripts: [
       {
         type: 'application/ld+json',
-        children: JSON.stringify(homepageGraphSchema),
+        children: JSON.stringify(homeGraphSchema),
       },
     ],
   }),

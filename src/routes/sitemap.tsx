@@ -3,7 +3,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { SitemapPage } from '@/components/pages/Sitemap';
 import { siteConfig } from '@/config/site';
-import { sitemapLd } from '@/lib/seo/sitemapSchema';
+import { sitemapGraph } from '@/lib/seo/sitemapSchema';
 
 const {
   site: { url: siteUrl },
@@ -25,10 +25,7 @@ export const Route = createFileRoute('/sitemap')({
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: metadata.title },
       { property: 'og:description', content: metadata.description },
-      {
-        property: 'og:url',
-        content: `${siteUrl}${metadata.url}`,
-      },
+      { property: 'og:url', content: `${siteUrl}${metadata.url}` },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:title', content: metadata.title },
       { name: 'twitter:description', content: metadata.description },
@@ -37,7 +34,7 @@ export const Route = createFileRoute('/sitemap')({
     scripts: [
       {
         type: 'application/ld+json',
-        children: JSON.stringify(sitemapLd),
+        children: JSON.stringify(sitemapGraph),
       },
     ],
   }),

@@ -1,56 +1,36 @@
-import { IoHome } from 'react-icons/io5';
-import { Button } from '@/lib/components/ui/button';
+import { siteConfig } from '@/config/site';
+import { notFoundGraph } from '@/lib/seo/404Schema';
 
-export function NotFound() {
-  const title = 'Visakan Kirubakaran | 404 Not Found';
+const {
+  site: { url: siteUrl },
+} = siteConfig;
+
+export const NotFound = () => {
+  const canonicalUrl = `${siteUrl}/404`;
+  const title = '404 | Page Not Found';
   const description = 'The page you are looking for does not exist.';
-  const canonicalUrl =
-    typeof window !== 'undefined' ? window.location.href : '';
 
-  const graphLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebPage',
-        '@id': `${canonicalUrl}#404`,
-        url: canonicalUrl,
-        name: title,
-        description,
-      },
-    ],
-  };
+  const graphLd = notFoundGraph;
 
   return (
     <>
-      <script type="application/ld+json">{JSON.stringify(graphLd)}</script>
-
-      <main aria-labelledby="not-found-heading" className="w-full">
-        <div className="text-center py-8 sm:py-12 md:py-16 lg:py-20">
-          <h1
-            className="heading-1 text-h1 font-bold mb-4 md:mb-6"
-            id="not-found-heading"
-          >
-            404
-          </h1>
-          <p
-            aria-describedby="not-found-description"
-            className="text-h5 text-muted-foreground mb-6 md:mb-8 mx-auto px-4"
-          >
-            {description}
-          </p>
-          <Button
-            aria-label="Go to the home page"
-            asChild
-            className="mx-auto"
-            variant="secondary"
-          >
-            <a href="/">
-              <IoHome aria-hidden="true" className="mr-2 size-icon-sm" />
-              Go Home
-            </a>
-          </Button>
-        </div>
-      </main>
+      <script
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(graphLd) }}
+        type="application/ld+json"
+      />
+      <div className="flex h-[calc(100vh-var(--header-height))] flex-col items-center justify-center bg-background text-foreground">
+        <h1 className="text-9xl font-bold text-primary">404</h1>
+        <h2 className="mt-4 text-3xl font-semibold">Page Not Found</h2>
+        <p className="mt-2 text-muted-foreground">
+          The page you are looking for does not exist.
+        </p>
+        <a
+          className="mt-8 rounded-lg bg-primary px-6 py-3 text-primary-foreground transition-colors hover:bg-primary/90"
+          href="/"
+        >
+          Go Home
+        </a>
+      </div>
     </>
   );
-}
+};

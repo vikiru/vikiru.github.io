@@ -1,125 +1,63 @@
-export const paleodraLd = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Person',
-      '@id': 'https://vikiru.vercel.app/#person',
-      name: 'Visakan Kirubakaran',
-      alternateName: 'Vis Kirubakaran',
-      givenName: 'Visakan',
-      familyName: 'Kirubakaran',
-      jobTitle: 'Software Developer',
-      url: 'https://vikiru.vercel.app',
-      sameAs: [
-        'https://github.com/vikiru',
-        'https://linkedin.com/in/viskirubakaran',
-      ],
-      alumniOf: {
-        '@type': 'EducationalOrganization',
-        name: 'Carleton University',
-        url: 'https://carleton.ca/',
-        logo: 'https://carleton.ca/favicon.ico',
-      },
-    },
-    {
-      '@type': 'SoftwareSourceCode',
-      '@id': 'https://github.com/vikiru/paleodra/#software',
-      name: 'paleodra',
-      description:
-        'A dinosaur discovery web application that allows users to explore, learn, and track dinosaur species.',
-      url: 'https://github.com/vikiru/paleodra',
-      author: { '@id': 'https://vikiru.vercel.app/#person' },
-      maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
-      keywords: [
-        'paleodra',
-        'nextjs',
-        'react',
-        'typescript',
-        'dinosaur',
-        'discovery',
-      ],
-      version: '1.0.0',
-      programmingLanguage: 'TypeScript',
-      license: 'https://opensource.org/licenses/MIT',
-      codeRepository: 'https://github.com/vikiru/paleodra',
-      runtimePlatform: ['Node.js', 'Web', 'Browser'],
-      hasPart: { '@id': 'https://github.com/vikiru/restasaurus/#software' },
-    },
-    {
-      '@type': 'SoftwareSourceCode',
-      '@id': 'https://github.com/vikiru/restasaurus/#software',
-      name: 'restasaurus',
-      description:
-        'A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.',
-      url: 'https://github.com/vikiru/restasaurus',
-      author: { '@id': 'https://vikiru.vercel.app/#person' },
-      maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
-      keywords: [
-        'restasaurus',
-        'api',
-        'mongodb',
-        'mongoose',
-        'express',
-        'dinosaurs',
-      ],
-      version: '1.0.1',
-      programmingLanguage: 'JavaScript',
-      license: 'https://opensource.org/licenses/MIT',
-      dateCreated: '2024-01-07T00:00:00.000Z',
-      dateModified: '2024-02-01T00:00:00.000Z',
-      codeRepository: 'https://github.com/vikiru/restasaurus',
-      runtimePlatform: 'Node.js',
-      isPartOf: { '@id': 'https://github.com/vikiru/paleodra/#software' },
-    },
-    {
-      '@type': 'WebAPI',
-      '@id': 'https://restasaurus.onrender.com/api/v1/#api',
-      name: 'RESTasaurus API',
-      description:
-        'A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.',
-      url: 'https://restasaurus.onrender.com/api/v1',
-      documentation: 'https://vikiru.github.io/restasaurus',
-      provider: { '@id': 'https://vikiru.vercel.app/#person' },
-      termsOfService: 'https://vikiru.github.io/restasaurus/terms',
-    },
-    {
-      '@type': 'WebSite',
-      '@id': 'https://vikiru.github.io/restasaurus/#homepage',
-      name: 'RESTasaurus Documentation',
-      alternateName: 'RESTasaurus',
-      description:
-        'Documentation for RESTasaurus - A dinosaur REST API built using Express, MongoDB and Mongoose with comprehensive data for almost 1200 dinosaurs.',
-      url: 'https://vikiru.github.io/restasaurus/',
-      creator: { '@id': 'https://vikiru.vercel.app/#person' },
-      license: 'https://opensource.org/licenses/MIT',
-      inLanguage: 'en',
-      dateModified: '2026-01-13T19:57:04.787Z',
-      image: 'https://vikiru.github.io/restasaurus/logo.png',
-      about: { '@id': 'https://github.com/vikiru/restasaurus/#software' },
-      sameAs: [
-        'https://github.com/vikiru/restasaurus',
-        'https://restasaurus.onrender.com/api/v1',
-      ],
-      mainEntity: { '@id': 'https://github.com/vikiru/restasaurus/#software' },
-      mainEntityOfPage: 'https://vikiru.github.io/restasaurus/',
-    },
-    {
-      '@type': 'WebSite',
-      '@id': 'https://vikiru.github.io/paleodra/#homepage',
-      name: 'Paleodra Documentation',
-      description:
-        'Documentation for Paleodra - A dinosaur discovery web app powered by RESTasaurus API (1200+ species)',
-      url: 'https://vikiru.github.io/paleodra/',
-      creator: { '@id': 'https://vikiru.vercel.app/#person' },
-      hasPart: [
-        { '@id': 'https://github.com/vikiru/paleodra/#software' },
-        { '@id': 'https://github.com/vikiru/restasaurus/#software' },
-      ],
-      license: 'https://opensource.org/licenses/MIT',
-      inLanguage: 'en',
-      about: { '@id': 'https://github.com/vikiru/paleodra/#software' },
-      mainEntity: { '@id': 'https://github.com/vikiru/paleodra/#software' },
-      mainEntityOfPage: 'https://vikiru.github.io/paleodra/',
-    },
+import type {
+  APIReference,
+  Person,
+  SoftwareSourceCode,
+  WebSite,
+} from 'schema-dts';
+import { personLd } from '@/config/schema';
+import { restasaurusData } from '@/lib/seo/projects/restasaurusSchema';
+
+const paleodraSoftwareEntity: SoftwareSourceCode = {
+  '@type': 'SoftwareSourceCode',
+  '@id': 'https://github.com/vikiru/paleodra/#software',
+  name: 'paleodra',
+  description:
+    'A dinosaur discovery web application that allows users to explore, learn, and track dinosaur species.',
+  url: 'https://github.com/vikiru/paleodra',
+  author: { '@id': 'https://vikiru.vercel.app/#person' },
+  maintainer: { '@id': 'https://vikiru.vercel.app/#person' },
+  keywords: [
+    'paleodra',
+    'nextjs',
+    'react',
+    'typescript',
+    'dinosaur',
+    'discovery',
   ],
+  version: '1.0.0',
+  programmingLanguage: 'TypeScript',
+  license: 'https://opensource.org/licenses/MIT',
+  codeRepository: 'https://github.com/vikiru/paleodra',
+  runtimePlatform: ['Node.js', 'Web', 'Browser'],
+  hasPart: { '@id': 'https://github.com/vikiru/restasaurus/#software' },
+};
+
+const paleodraWebsiteEntity: WebSite = {
+  '@type': 'WebSite',
+  '@id': 'https://vikiru.github.io/paleodra/#homepage',
+  name: 'Paleodra Documentation',
+  description:
+    'Documentation for Paleodra - A dinosaur discovery web app powered by RESTasaurus API (1200+ species)',
+  url: 'https://vikiru.github.io/paleodra/',
+  creator: { '@id': 'https://vikiru.vercel.app/#person' },
+  hasPart: [
+    { '@id': 'https://github.com/vikiru/paleodra/#software' },
+    { '@id': 'https://github.com/vikiru/restasaurus/#software' },
+  ],
+  license: 'https://opensource.org/licenses/MIT',
+  inLanguage: 'en',
+  about: { '@id': 'https://github.com/vikiru/paleodra/#software' },
+  mainEntity: { '@id': 'https://github.com/vikiru/paleodra/#software' },
+  mainEntityOfPage: 'https://vikiru.github.io/paleodra/',
+};
+
+export const paleodraData = [
+  paleodraSoftwareEntity,
+  paleodraWebsiteEntity,
+  ...restasaurusData,
+];
+
+export const paleodraGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [personLd, ...paleodraData],
 };
