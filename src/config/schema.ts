@@ -67,7 +67,6 @@ export const homepageLd: WebSite = {
   license: license,
   inLanguage: 'en',
   dateModified: lastModified.toISOString(),
-  image: `${siteUrl}${ogImage}`,
   about: { '@id': softwareId },
   mainEntity: { '@id': personId },
 };
