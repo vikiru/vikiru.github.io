@@ -4,6 +4,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { CoursesPage } from '@/components/pages/CoursesPage';
 import { siteConfig } from '@/config/site';
 import { educationData } from '@/data/education';
+import { coursesGraphSchema } from '@/lib/seo/coursesSchema';
 
 const {
   site: { url: siteUrl },
@@ -25,21 +26,17 @@ export const Route = createFileRoute('/education/courses')({
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: metadata.title },
       { property: 'og:description', content: metadata.description },
-      {
-        property: 'og:url',
-        content: `${siteUrl}${metadata.url}`,
-      },
+      { property: 'og:url', content: `${siteUrl}${metadata.url}` },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:title', content: metadata.title },
       { name: 'twitter:description', content: metadata.description },
     ],
     links: [{ rel: 'canonical', href: `${siteUrl}${metadata.url}` }],
     scripts: [
-      // TODO: Add JSON-LD schema once coursesGraphSchema is defined in lib/seo/coursesSchema
-      // {
-      //   type: 'application/ld+json',
-      //   children: JSON.stringify(coursesGraphSchema),
-      // },
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify(coursesGraphSchema),
+      },
     ],
   }),
   component: CoursesPage,

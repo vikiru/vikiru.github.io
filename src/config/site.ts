@@ -38,7 +38,6 @@ export const siteConfig = {
     ],
   },
   assets: {
-    ogImage: '/og-image.png',
     themeColor: '#1e1e24',
   },
 };
