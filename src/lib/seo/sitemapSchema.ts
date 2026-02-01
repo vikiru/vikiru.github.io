@@ -1,22 +1,11 @@
-// TODO: Need to review this and other schemas before finalizing
-
-import type {
-  CollectionPage,
-  ItemList,
-  ListItem,
-  Person,
-  SoftwareSourceCode,
-  WebPage,
-  WebSite,
-} from 'schema-dts';
-import { homepageLd, personLd, softwareLd } from '@/config/schema';
+import type { CollectionPage } from 'schema-dts';
 
 const collectionPageLd: CollectionPage = {
   '@type': 'CollectionPage',
   '@id': 'https://vikiru.vercel.app/sitemap',
-  name: 'Site Map - Visual Navigation Guide',
+  name: 'Visual sitemap of my portfolio website',
   description:
-    'Visual sitemap for browsing all pages on vikiru.github.io. Use the XML sitemap for search engine crawlers.',
+    'Visual sitemap of all of the pages on vikiru.vercel.app. Use the XML sitemap for search engine crawlers.',
   url: 'https://vikiru.vercel.app/sitemap',
   mainEntity: {
     '@type': 'ItemList',
@@ -31,7 +20,7 @@ const collectionPageLd: CollectionPage = {
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Site Map',
+        name: 'Visual Sitemap',
         item: {
           '@type': 'WebPage',
           '@id': 'https://vikiru.vercel.app/sitemap',
@@ -46,7 +35,7 @@ const collectionPageLd: CollectionPage = {
           '@id': 'https://vikiru.vercel.app/education/courses',
         },
       },
-      // Individual projects (12 total - Portfolio Website removed)
+      // Personal and Academic Projects
       {
         '@type': 'ListItem',
         position: 4,
@@ -159,14 +148,9 @@ const collectionPageLd: CollectionPage = {
   },
 };
 
-export const sitemapData = [softwareLd, homepageLd, collectionPageLd];
+export const sitemapData = [collectionPageLd];
 
-export const sitemapLd: {
-  '@context': string;
-  '@graph': (Person | SoftwareSourceCode | WebSite | CollectionPage)[];
-} = {
+export const sitemapGraph = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, ...sitemapData],
+  '@graph': sitemapData,
 };
-
-export const sitemapGraph = sitemapLd;
