@@ -1,8 +1,4 @@
-import type {
-  APIReference,
-  SoftwareSourceCode,
-  WebSite,
-} from 'schema-dts';
+import type { APIReference, SoftwareSourceCode, WebSite } from 'schema-dts';
 import { personId } from '@/config/schema';
 
 const softwareEntity: SoftwareSourceCode = {
