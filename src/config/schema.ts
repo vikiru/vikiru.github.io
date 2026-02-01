@@ -73,7 +73,9 @@ export const homepageLd: WebSite = {
   mainEntity: { '@id': personId },
 };
 
+export const homeData = [softwareLd, homepageLd];
+
 export const homepageGraphSchema = {
   '@context': 'https://schema.org',
-  '@graph': [personLd, softwareLd, homepageLd],
+  '@graph': [personLd, ...homeData],
 };

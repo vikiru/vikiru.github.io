@@ -18,7 +18,7 @@ const metadata = {
     'Personal portfolio of Visakan Kirubakaran, a software developer with a passion for software and web development, based in Ottawa, ON.',
 };
 
-// TODO: Add meta tags and json ld for all routes (Home, Projects, Courses, Sitemap)
+// Meta tags are handled in individual route files (index, sitemap, projects/$slug, education/courses)
 
 export const Route = createRootRoute({
   head: () => ({
@@ -45,7 +45,6 @@ export const Route = createRootRoute({
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: '' },
       { rel: 'stylesheet', href: indexCss },
-      { rel: 'canonical', href: 'https://vikiru.vercel.app' },
       {
         rel: 'icon',
         href: '/favicon-light.ico',
