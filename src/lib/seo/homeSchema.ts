@@ -1,5 +1,5 @@
 import type { Graph } from 'schema-dts';
-import { personLd, homepageLd, softwareLd } from '@/config/schema';
+import { homepageLd, personLd, softwareLd } from '@/config/schema';
 
 export const homeData = [softwareLd, homepageLd];
 
