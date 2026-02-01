@@ -17,7 +17,6 @@ export const {
     universityLogo,
   },
   project: { githubRepo, version, programmingLanguage, license, keywords },
-  assets: { ogImage },
 } = siteConfig;
 
 export const personId = `${portfolioWebsite}/#person`;
