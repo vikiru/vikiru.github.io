@@ -100,7 +100,7 @@
     "@types/node": "^24.10.9",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
-    "@typescript/native-preview": "7.0.0-dev.20260119.1",
+    "@typescript/native-preview": "7.0.0-dev.20260201.1",
     "@vitejs/plugin-react": "^5.1.2",
     "globals": "^16.5.0",
     "knip": "^5.82.1",
