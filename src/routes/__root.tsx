@@ -93,7 +93,6 @@ export const Route = createRootRoute({
         href: '/apple-touch-icon-dark.png',
         media: '(prefers-color-scheme: dark)',
       },
-      { rel: 'manifest', href: '/manifest.json' },
     ],
   }),
   shellComponent: RootDocument,
