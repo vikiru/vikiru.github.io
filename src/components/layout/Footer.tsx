@@ -30,7 +30,7 @@ export function Footer() {
               <div className="flex gap-4">
                 <a
                   aria-label="Visit GitHub profile"
-                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                  className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                   href="https://github.com/vikiru"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -39,7 +39,7 @@ export function Footer() {
                 </a>
                 <a
                   aria-label="Visit LinkedIn profile"
-                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                  className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                   href="https://linkedin.com/in/viskirubakaran"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -48,7 +48,7 @@ export function Footer() {
                 </a>
                 <Link
                   aria-label="Send an email"
-                  className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                  className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
                   hash="contact"
                   to="/"
                 >
@@ -59,22 +59,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-4 pt-6">
+          <div className="flex flex-col md:flex-row items-center gap-4 w-full lg:items-end lg:justify-end">
             <p className="body-base text-muted-foreground">
               &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
               reserved.
             </p>
-            <nav>
-              <Link
-                aria-label="View site sitemap"
-                className="body-base text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
-                to="/sitemap"
-              >
-                Sitemap
-              </Link>
-            </nav>
           </div>
+          <nav className="flex justify-start items-start w-full lg:justify-end lg:items-end my-4">
+            <Link
+              aria-label="View site sitemap"
+              className="text-left body-base text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+              to="/sitemap"
+            >
+              Sitemap
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>

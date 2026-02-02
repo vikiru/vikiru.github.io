@@ -1,4 +1,4 @@
-import { LuArrowRight } from 'react-icons/lu';
+import { LuArrowRight, LuMail } from 'react-icons/lu';
 import { Button } from '@/lib/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -10,13 +10,13 @@ export function Hero({ className }: HeroProps) {
   return (
     <section
       className={cn(
-        'relative xs:pt-16 2xl:pt-32 pb-20 px-6 text-center scroll-mt-20',
+        'relative pt-16 2xl:pt-32 pb-20 px-6 text-center scroll-mt-20',
         className,
       )}
       id="hero"
     >
       <div className="flex flex-col items-center gap-8">
-        <h1 className="xs:text-h3 sm:text-h2 text-balance lg:text-h1 xl:whitespace-nowrap font-bold tracking-tight text-foreground font-heading">
+        <h1 className="text-h3 sm:text-h2 text-balance lg:text-h1 xl:whitespace-nowrap font-bold tracking-tight text-foreground font-heading">
           Hello, my name is{' '}
           <span className="text-primary">Visakan Kirubakaran</span>
         </h1>
@@ -49,10 +49,11 @@ export function Hero({ className }: HeroProps) {
           </Button>
           <Button asChild size="2xl" variant="outline">
             <a
-              className="focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 body-large"
+              className="inline-flex body-large items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               href="#contact"
             >
               Contact Me
+              <LuMail aria-hidden="true" className="size-icon-sm" />
             </a>
           </Button>
         </div>

@@ -53,14 +53,14 @@ export function NavBar() {
       >
         <Logo />
 
-        <div className="xs:hidden md:flex gap-6 items-center">
+        <div className="hidden lg:flex gap-6 items-center">
           {navData.map((item) => (
             <NavLink item={item} key={item.navTitle} />
           ))}
           <ThemeToggle />
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <button
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
@@ -77,7 +77,7 @@ export function NavBar() {
       </section>
 
       <section
-        className={`fixed right-0 top-0 h-full xs:w-[65%] sm:w-1/2 bg-background/95 backdrop-blur-sm border-l border-border transition-all duration-500 ease-in-out motion-reduce:transition-none md:hidden z-50 ${
+        className={`fixed right-0 top-0 h-full w-[65%] sm:w-1/2 bg-background/95 backdrop-blur-sm border-l border-border transition-all duration-500 ease-in-out motion-reduce:transition-none lg:hidden z-50 ${
           isOpen
             ? 'translate-x-0 motion-reduce:transition-none'
             : 'translate-x-full motion-reduce:transition-none'
@@ -107,7 +107,7 @@ export function NavBar() {
             <div className="flex justify-center gap-4">
               <a
                 aria-label="GitHub"
-                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
+                className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
                 href="https://github.com/vikiru"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -116,7 +116,7 @@ export function NavBar() {
               </a>
               <a
                 aria-label="LinkedIn"
-                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
+                className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
                 href="https://linkedin.com/in/viskirubakaran"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -125,7 +125,7 @@ export function NavBar() {
               </a>
               <Link
                 aria-label="Email"
-                className="p-3 xs:p-4 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
+                className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
                 hash="contact"
                 to="/"
               >
@@ -138,11 +138,15 @@ export function NavBar() {
             className="absolute bottom-6 left-0 right-0 text-center px-4"
             id="copyright"
           >
-            <p className="body-base text-muted-foreground">
-              &copy; {new Date().getFullYear()} Visakan Kirubakaran
-            </p>
+            <div className="my-4">
+              <p className="body-base text-muted-foreground">
+                &copy; {new Date().getFullYear()} Visakan Kirubakaran. All
+                rights reserved.
+              </p>
+            </div>
+
             <Link
-              className="body-base text-muted-foreground hover:text-primary transition-colors inline-block mt-1 motion-reduce:transition-none"
+              className="text-left body-base text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
               to="/sitemap"
             >
               Sitemap
