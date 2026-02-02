@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "type": "module",
   "private": true,
   "description": "Personal portfolio website showcasing my projects and skills. Built using React, React Router and TailwindCSS.",
