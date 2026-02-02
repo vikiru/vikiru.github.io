@@ -33,6 +33,7 @@ export const Route = createFileRoute('/education/courses')({
       {
         type: 'application/ld+json',
         children: JSON.stringify(coursesGraphSchema),
+        suppressHydrationWarning: true,
       },
     ],
   }),

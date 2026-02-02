@@ -8,13 +8,13 @@ import { restasaurusGraph } from '@/lib/seo/projects/restasaurusSchema';
 import { urvoGraph } from '@/lib/seo/projects/urvoSchema';
 
 const projectSchemaMap = new Map<string, Graph>([
-  ['noterra', noterraGraph as unknown as Graph],
-  ['paleodra', paleodraGraph as unknown as Graph],
-  ['grocadex', grocadexGraph as unknown as Graph],
-  ['kelbrum', kelbrumGraph as unknown as Graph],
-  ['parseum', parseumGraph as unknown as Graph],
-  ['restasaurus', restasaurusGraph as unknown as Graph],
-  ['urvo', urvoGraph as unknown as Graph],
+  ['noterra', noterraGraph as Graph],
+  ['paleodra', paleodraGraph as Graph],
+  ['grocadex', grocadexGraph as Graph],
+  ['kelbrum', kelbrumGraph as Graph],
+  ['parseum', parseumGraph as Graph],
+  ['restasaurus', restasaurusGraph as Graph],
+  ['urvo', urvoGraph as Graph],
 ]);
 
 export { projectSchemaMap };

@@ -39,6 +39,7 @@ export const Route = createRootRoute({
       {
         src: 'https://kwesforms.com/v2/kf-script.js',
         defer: true,
+        suppressHydrationWarning: true,
       },
     ],
     links: [
@@ -100,16 +101,12 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
-  return (
-    <RootDocument>
-      <Outlet />
-    </RootDocument>
-  );
+  return <Outlet />;
 }
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
