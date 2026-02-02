@@ -21,7 +21,7 @@ export function ContactForm({ className }: { className?: string }) {
     >
       <Field data-invalid={!!errors.name}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="name"
         >
           Name
@@ -35,6 +35,7 @@ export function ContactForm({ className }: { className?: string }) {
           onBlur={handleBlur}
           onChange={handleInputChange}
           placeholder="Enter your full name"
+          required
           value={formData.name}
         />
         <FieldError errors={[{ message: errors.name }]} id="name-error" />
@@ -42,7 +43,7 @@ export function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.email}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="email"
         >
           Email
@@ -56,6 +57,7 @@ export function ContactForm({ className }: { className?: string }) {
           onBlur={handleBlur}
           onChange={handleInputChange}
           placeholder="Enter email address"
+          required
           type="email"
           value={formData.email}
         />
@@ -64,7 +66,7 @@ export function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.subject}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="subject"
         >
           Subject
@@ -78,6 +80,7 @@ export function ContactForm({ className }: { className?: string }) {
           onBlur={handleBlur}
           onChange={handleInputChange}
           placeholder="Enter email subject"
+          required
           value={formData.subject}
         />
         <FieldError errors={[{ message: errors.subject }]} id="subject-error" />
@@ -85,7 +88,7 @@ export function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.content}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="body-base font-semibold text-muted-foreground uppercase tracking-wider"
           htmlFor="content"
         >
           Message
@@ -100,6 +103,7 @@ export function ContactForm({ className }: { className?: string }) {
           onBlur={handleBlur}
           onChange={handleInputChange}
           placeholder="Enter your message here"
+          required
           rows={5}
           value={formData.content}
         />
