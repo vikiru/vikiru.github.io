@@ -102,7 +102,7 @@
     "@types/react-dom": "^19.2.3",
     "@typescript/native-preview": "7.0.0-dev.20260119.1",
     "@vitejs/plugin-react": "^5.1.2",
-    "globals": "^16.5.0",
+    "globals": "^17.3.0",
     "knip": "^5.82.1",
     "lefthook": "^2.0.16",
     "moment": "^2.30.1",
