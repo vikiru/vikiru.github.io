@@ -25,9 +25,9 @@ export function SitemapCard({
   const commonClassName = cn(
     'group relative flex items-start gap-3 rounded-lg border border-border bg-card px-4 py-3',
     'text-muted-foreground transition-all duration-200 motion-reduce:transition-none',
-    'hover:border-primary hover:bg-accent/50 hover:text-primary',
+    'hover:border-primary/30 hover:bg-primary/5 hover:shadow-lg',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background',
-    'active:scale-[0.98]',
+
     className,
   );
 
