@@ -18,18 +18,19 @@ export const Route = createFileRoute('/projects/$slug')({
       (p: Project) => p.slug.toLowerCase() === slug.toLowerCase(),
     );
     if (!project) throw notFound();
-    return { project };
+    const projectGraphSchema: Graph | undefined = projectSchemaMap.get(
+      project.slug.toLowerCase(),
+    );
+    return { project, projectGraphSchema };
   },
   head: ({ loaderData }) => {
     const project = loaderData?.project;
+    const projectGraphSchema = loaderData?.projectGraphSchema;
     if (!project) return {};
 
     const description = `Learn about ${project.name}, a brief overview, technologies used, a demo and my personal accomplishments.`;
     const title = `Visakan Kirubakaran | ${project.name}`;
     const canonical = `${siteUrl}/projects/${project.slug}`;
-    const projectGraphSchema: Graph | undefined = projectSchemaMap.get(
-      project.slug.toLowerCase(),
-    );
 
     return {
       meta: [
@@ -49,6 +50,7 @@ export const Route = createFileRoute('/projects/$slug')({
             {
               type: 'application/ld+json',
               children: JSON.stringify(projectGraphSchema),
+              suppressHydrationWarning: true,
             },
           ]
         : [],

@@ -6,14 +6,12 @@ export type AppTheme = Exclude<UserTheme, 'system'>;
 const THEME_KEY = 'ui-theme';
 
 function getSystemTheme(): AppTheme {
-  if (typeof window === 'undefined') return 'light';
   return window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light';
 }
 
 function getStoredTheme(): UserTheme {
-  if (typeof window === 'undefined') return 'system';
   const stored = localStorage.getItem(THEME_KEY) as UserTheme | null;
   return stored && ['light', 'dark', 'system'].includes(stored)
     ? stored
@@ -21,9 +19,15 @@ function getStoredTheme(): UserTheme {
 }
 
 export function useTheme() {
-  const [userTheme, setUserTheme] = useState<UserTheme>(getStoredTheme);
+  const [userTheme, setUserTheme] = useState<UserTheme>('system');
 
-  // Apply theme immediately when it changes
+  useEffect(() => {
+    const stored = getStoredTheme();
+    if (stored !== 'system') {
+      setUserTheme(stored);
+    }
+  }, []);
+
   useEffect(() => {
     const theme = userTheme === 'system' ? getSystemTheme() : userTheme;
     const root = document.documentElement;
@@ -32,7 +36,6 @@ export function useTheme() {
     localStorage.setItem(THEME_KEY, userTheme);
   }, [userTheme]);
 
-  // Update system theme when user prefers 'system'
   useEffect(() => {
     if (userTheme !== 'system') return;
 

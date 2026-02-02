@@ -33,6 +33,7 @@ export const Route = createFileRoute('/sitemap')({
       {
         type: 'application/ld+json',
         children: JSON.stringify(sitemapGraph),
+        suppressHydrationWarning: true,
       },
     ],
   }),
