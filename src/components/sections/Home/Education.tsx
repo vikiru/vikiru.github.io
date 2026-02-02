@@ -23,7 +23,7 @@ export function Education({ className }: EducationProps) {
     <section className={cn('py-20 scroll-mt-20', className)} id="education">
       <div className="px-6">
         <div className="mb-12">
-          <h2 className="xs:text-h3 sm:text-h2 font-bold mb-4 flex items-center gap-3 font-heading">
+          <h2 className="text-h3 sm:text-h2 font-bold mb-4 flex items-center gap-3 font-heading">
             <span className="w-8 h-1 bg-primary rounded-full" />
             Education
           </h2>
@@ -39,7 +39,7 @@ export function Education({ className }: EducationProps) {
                   {enrollmentStart} - {enrollmentEnd}
                 </span>
               </div>
-              <h3 className="xs:text-h4 sm:text-h3 font-bold text-foreground mb-2">
+              <h3 className="text-h4 sm:text-h3 font-bold text-foreground mb-2">
                 {universityName}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8 grow italic body-large">
@@ -69,7 +69,7 @@ export function Education({ className }: EducationProps) {
                   2023
                 </span>
               </div>
-              <h3 className="xs:text-h4 sm:text-h3 font-bold text-foreground mb-2">
+              <h3 className="text-h4 sm:text-h3 font-bold text-foreground mb-2">
                 Certificates
               </h3>
               <p className="heading-5 mb-6 text-muted-foreground">Coursera</p>
@@ -89,7 +89,7 @@ export function Education({ className }: EducationProps) {
                       <span className="body-large">
                         {cert.certificationName}
                       </span>
-                      <span className="ml-auto text-muted-foreground group-hover:text-primary transition-colors p-3 xs:p-4 lg:p-5 rounded-full motion-reduce:transition-none">
+                      <span className="ml-auto text-muted-foreground group-hover:text-primary transition-colors p-3 lg:p-5 rounded-full motion-reduce:transition-none">
                         <LuLink
                           aria-hidden="true"
                           className="size-icon-base block"

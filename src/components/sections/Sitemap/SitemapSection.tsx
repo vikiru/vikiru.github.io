@@ -15,14 +15,14 @@ export function SitemapSection({
 }: SitemapSectionProps) {
   return (
     <section className={cn('space-y-4', className)}>
-      <div className="flex items-center gap-3 xs:gap-4">
+      <div className="flex items-center gap-3 md:gap-4">
         <h2 className="heading-2 font-semibold text-nav-base tracking-tight whitespace-nowrap">
           {title}
         </h2>
-        <Separator className="hidden xs:block" />
-        <Separator className="xs:hidden" />
+        <Separator className="hidden sm:block" />
+        <Separator className="sm:hidden" />
       </div>
-      <div className="grid gap-3 xs:gap-4">{children}</div>
+      <div className="grid gap-3 md:gap-4">{children}</div>
     </section>
   );
 }

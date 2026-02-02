@@ -52,7 +52,7 @@ export function Skills({ className }: SkillsProps) {
     >
       <div className="px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="xs:text-h3 sm:text-h2  font-bold mb-4 flex items-center justify-center gap-3 font-heading">
+          <h2 className="text-h3 sm:text-h2  font-bold mb-4 flex items-center justify-center gap-3 font-heading">
             <span className="w-8 h-1 bg-primary rounded-full" />
             Skills
             <span className="w-8 h-1 bg-primary rounded-full" />

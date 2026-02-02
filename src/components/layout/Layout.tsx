@@ -10,7 +10,7 @@ export function Layout({ children }: LayoutProps) {
     <>
       <NavBar />
       <main
-        className="xs:px-4 md:px-6 3xl:px-8 4xl:px-10 5xl:px-12"
+        className="px-4 md:px-6 3xl:px-8 4xl:px-10 5xl:px-12"
         id="main-content"
       >
         {children}

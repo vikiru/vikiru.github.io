@@ -9,7 +9,7 @@ interface ProjectHeroProps {
 
 export function ProjectHero({ project }: ProjectHeroProps) {
   return (
-    <section className="xs:-mt-14 lg:-mt-24 px-4 md:px-40 flex flex-1 justify-center py-16 md:py-24 relative overflow-hidden">
+    <section className="-mt-14 lg:-mt-24 px-4 md:px-40 flex flex-1 justify-center py-16 md:py-24 relative overflow-hidden">
       <div className="flex flex-col w-full flex-1 items-center text-center gap-8">
         <div className="flex flex-col gap-6">
           <h1 className="heading-1 font-bold tracking-tight font-heading text-foreground text-balance">

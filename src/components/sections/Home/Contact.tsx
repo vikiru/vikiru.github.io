@@ -11,7 +11,7 @@ export function Contact({ className }: ContactProps) {
   return (
     <section className={cn('py-20 scroll-mt-20', className)} id="contact">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 2xl:max-w-full">
-        <h2 className="xs:text-h3 sm:text-h2 font-bold mb-12 flex items-center justify-center gap-3 font-heading">
+        <h2 className="text-h3 sm:text-h2 font-bold mb-12 flex items-center justify-center gap-3 font-heading">
           <span className="w-8 h-1 bg-primary rounded-full" />
           Contact Me
           <span className="w-8 h-1 bg-primary rounded-full" />
@@ -34,7 +34,7 @@ export function Contact({ className }: ContactProps) {
               <div className="flex gap-4">
                 <a
                   aria-label="GitHub"
-                  className="p-3 xs:p-4 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
+                  className="p-3 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
                   href="https://github.com/vikiru"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -43,7 +43,7 @@ export function Contact({ className }: ContactProps) {
                 </a>
                 <a
                   aria-label="LinkedIn"
-                  className="p-3 xs:p-4 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
+                  className="p-3 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
                   href="https://linkedin.com/in/viskirubakaran"
                   rel="noopener noreferrer"
                   target="_blank"

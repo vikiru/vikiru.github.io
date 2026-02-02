@@ -13,7 +13,7 @@ export function OtherProjects({ className }: OtherProjectsProps) {
       id="other-projects"
     >
       <div className="px-6 lg:px-8">
-        <h2 className="xs:text-h3 text-balance whitespace-nowrap sm:text-h2 font-bold mb-12 flex items-center gap-3 font-heading">
+        <h2 className="text-h3 text-balance whitespace-nowrap sm:text-h2 font-bold mb-12 flex items-center gap-3 font-heading">
           <span className="w-8 h-1 bg-primary rounded-full" />
           Other Projects
         </h2>
