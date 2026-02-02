@@ -8,97 +8,97 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapRouteImport } from './routes/sitemap'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as ProjectsSlugRouteImport } from './routes/projects/$slug'
-import { Route as EducationCoursesRouteImport } from './routes/education/courses'
+import { Route as rootRouteImport } from './routes/__root';
+import { Route as EducationCoursesRouteImport } from './routes/education/courses';
+import { Route as IndexRouteImport } from './routes/index';
+import { Route as ProjectsSlugRouteImport } from './routes/projects/$slug';
+import { Route as SitemapRouteImport } from './routes/sitemap';
 
 const SitemapRoute = SitemapRouteImport.update({
   id: '/sitemap',
   path: '/sitemap',
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const ProjectsSlugRoute = ProjectsSlugRouteImport.update({
   id: '/projects/$slug',
   path: '/projects/$slug',
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 const EducationCoursesRoute = EducationCoursesRouteImport.update({
   id: '/education/courses',
   path: '/education/courses',
   getParentRoute: () => rootRouteImport,
-} as any)
+} as any);
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/sitemap': typeof SitemapRoute
-  '/education/courses': typeof EducationCoursesRoute
-  '/projects/$slug': typeof ProjectsSlugRoute
+  '/': typeof IndexRoute;
+  '/sitemap': typeof SitemapRoute;
+  '/education/courses': typeof EducationCoursesRoute;
+  '/projects/$slug': typeof ProjectsSlugRoute;
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/sitemap': typeof SitemapRoute
-  '/education/courses': typeof EducationCoursesRoute
-  '/projects/$slug': typeof ProjectsSlugRoute
+  '/': typeof IndexRoute;
+  '/sitemap': typeof SitemapRoute;
+  '/education/courses': typeof EducationCoursesRoute;
+  '/projects/$slug': typeof ProjectsSlugRoute;
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/sitemap': typeof SitemapRoute
-  '/education/courses': typeof EducationCoursesRoute
-  '/projects/$slug': typeof ProjectsSlugRoute
+  __root__: typeof rootRouteImport;
+  '/': typeof IndexRoute;
+  '/sitemap': typeof SitemapRoute;
+  '/education/courses': typeof EducationCoursesRoute;
+  '/projects/$slug': typeof ProjectsSlugRoute;
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/sitemap' | '/education/courses' | '/projects/$slug'
-  fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/sitemap' | '/education/courses' | '/projects/$slug'
-  id: '__root__' | '/' | '/sitemap' | '/education/courses' | '/projects/$slug'
-  fileRoutesById: FileRoutesById
+  fileRoutesByFullPath: FileRoutesByFullPath;
+  fullPaths: '/' | '/sitemap' | '/education/courses' | '/projects/$slug';
+  fileRoutesByTo: FileRoutesByTo;
+  to: '/' | '/sitemap' | '/education/courses' | '/projects/$slug';
+  id: '__root__' | '/' | '/sitemap' | '/education/courses' | '/projects/$slug';
+  fileRoutesById: FileRoutesById;
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  SitemapRoute: typeof SitemapRoute
-  EducationCoursesRoute: typeof EducationCoursesRoute
-  ProjectsSlugRoute: typeof ProjectsSlugRoute
+  IndexRoute: typeof IndexRoute;
+  SitemapRoute: typeof SitemapRoute;
+  EducationCoursesRoute: typeof EducationCoursesRoute;
+  ProjectsSlugRoute: typeof ProjectsSlugRoute;
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
     '/sitemap': {
-      id: '/sitemap'
-      path: '/sitemap'
-      fullPath: '/sitemap'
-      preLoaderRoute: typeof SitemapRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+      id: '/sitemap';
+      path: '/sitemap';
+      fullPath: '/sitemap';
+      preLoaderRoute: typeof SitemapRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
     '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+      id: '/';
+      path: '/';
+      fullPath: '/';
+      preLoaderRoute: typeof IndexRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
     '/projects/$slug': {
-      id: '/projects/$slug'
-      path: '/projects/$slug'
-      fullPath: '/projects/$slug'
-      preLoaderRoute: typeof ProjectsSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+      id: '/projects/$slug';
+      path: '/projects/$slug';
+      fullPath: '/projects/$slug';
+      preLoaderRoute: typeof ProjectsSlugRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
     '/education/courses': {
-      id: '/education/courses'
-      path: '/education/courses'
-      fullPath: '/education/courses'
-      preLoaderRoute: typeof EducationCoursesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+      id: '/education/courses';
+      path: '/education/courses';
+      fullPath: '/education/courses';
+      preLoaderRoute: typeof EducationCoursesRouteImport;
+      parentRoute: typeof rootRouteImport;
+    };
   }
 }
 
@@ -107,17 +107,18 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapRoute: SitemapRoute,
   EducationCoursesRoute: EducationCoursesRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
-}
+};
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>()
+  ._addFileTypes<FileRouteTypes>();
 
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
+import type { getRouter } from './router.tsx';
+import type { startInstance } from './start.ts';
+
 declare module '@tanstack/react-start' {
   interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+    ssr: true;
+    router: Awaited<ReturnType<typeof getRouter>>;
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>;
   }
 }
