@@ -1,5 +1,3 @@
-// TODO: Review and update this file later
-
 import { createFileRoute } from '@tanstack/react-router';
 import { SitemapPage } from '@/components/pages/Sitemap';
 import { siteConfig } from '@/config/site';

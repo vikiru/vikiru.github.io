@@ -1,9 +1,6 @@
-// TODO: Review and update this file later
-
 import { createFileRoute } from '@tanstack/react-router';
 import { CoursesPage } from '@/components/pages/CoursesPage';
 import { siteConfig } from '@/config/site';
-import { educationData } from '@/data/education';
 import { coursesGraphSchema } from '@/lib/seo/coursesSchema';
 
 const {
