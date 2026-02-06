@@ -48,7 +48,7 @@ export const ProjectCard = memo(function ProjectCard({
           <div className="flex items-center gap-1 shrink-0">
             {project.githubUrl && (
               <a
-                aria-label="View source code"
+                aria-label={`View source code for ${project.name}`}
                 className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none z-20 relative"
                 href={project.githubUrl}
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export const ProjectCard = memo(function ProjectCard({
             )}
             {project.documentationUrl && (
               <a
-                aria-label="View documentation"
+                aria-label={`View documentation for ${project.name}`}
                 className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none z-20 relative"
                 href={project.documentationUrl}
                 rel="noopener noreferrer"
