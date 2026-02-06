@@ -5,10 +5,14 @@ import {
   HeadContent,
   Outlet,
   Scripts,
+  useLocation,
 } from '@tanstack/react-router';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import type { ReactNode } from 'react';
+import type { Graph } from 'schema-dts';
+import { projectData } from '@/data/projects';
+import { projectSchemaMap } from '@/lib/seo/projects/projectMap';
 import indexCss from '../index.css?url';
 
 const metadata = {
@@ -21,7 +25,6 @@ const metadata = {
 // Meta tags are handled in individual route files (index, sitemap, projects/$slug, education/courses)
 
 export const Route = createRootRoute({
-  ssr: false,
   head: () => ({
     meta: [
       { charSet: 'utf-8' },
@@ -105,10 +108,33 @@ function RootComponent() {
 }
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
+  const location = useLocation();
+  const pathname = location.pathname;
+  const isProjectPage = pathname.startsWith('/projects/');
+  const slug = isProjectPage ? pathname.split('/')[2] : null;
+  let projectGraphSchema: Graph | undefined;
+
+  if (isProjectPage && slug) {
+    const project = projectData.projects.find(
+      (p) => p.slug.toLowerCase() === slug.toLowerCase(),
+    );
+    if (project) {
+      projectGraphSchema = projectSchemaMap.get(project.slug.toLowerCase());
+    }
+  }
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
+        {projectGraphSchema && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(projectGraphSchema),
+            }}
+            type="application/ld+json"
+          />
+        )}
       </head>
       <body>
         {children}

@@ -12,7 +12,7 @@ const {
 } = siteConfig;
 
 export const Route = createFileRoute('/projects/$slug')({
-  ssr: false,
+  ssr: true,
   loader: ({ params: { slug } }) => {
     const project = projectData.projects.find(
       (p: Project) => p.slug.toLowerCase() === slug.toLowerCase(),

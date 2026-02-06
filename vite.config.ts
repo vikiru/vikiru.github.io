@@ -25,10 +25,101 @@ export default defineConfig({
         autoSubfolderIndex: true,
         crawlLinks: false,
       },
-      pages: routes.map((route: string) => ({
-        path: route,
-        prerender: { enabled: true, outputPath: `${route}.html` },
-      })),
+      pages: [
+        { path: '/', prerender: { enabled: true, outputPath: 'index.html' } },
+        {
+          path: '/sitemap',
+          prerender: { enabled: true, outputPath: 'sitemap/index.html' },
+        },
+        {
+          path: '/education/courses',
+          prerender: {
+            enabled: true,
+            outputPath: 'education/courses/index.html',
+          },
+        },
+        {
+          path: '/projects/Noterra',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/Noterra/index.html',
+          },
+        },
+        {
+          path: '/projects/Paleodra',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/Paleodra/index.html',
+          },
+        },
+        {
+          path: '/projects/Grocadex',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/Grocadex/index.html',
+          },
+        },
+        {
+          path: '/projects/Kelbrum',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/Kelbrum/index.html',
+          },
+        },
+        {
+          path: '/projects/Parseum',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/Parseum/index.html',
+          },
+        },
+        {
+          path: '/projects/RESTasaurus',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/RESTasaurus/index.html',
+          },
+        },
+        {
+          path: '/projects/Urvo',
+          prerender: { enabled: true, outputPath: 'projects/Urvo/index.html' },
+        },
+        {
+          path: '/projects/CodeSmell',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/CodeSmell/index.html',
+          },
+        },
+        {
+          path: '/projects/discrete-sim',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/discrete-sim/index.html',
+          },
+        },
+        {
+          path: '/projects/Mini-SurveyMonkey',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/Mini-SurveyMonkey/index.html',
+          },
+        },
+        {
+          path: '/projects/Elevator-Simulator',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/Elevator-Simulator/index.html',
+          },
+        },
+        {
+          path: '/projects/digitalRisk',
+          prerender: {
+            enabled: true,
+            outputPath: 'projects/digitalRisk/index.html',
+          },
+        },
+      ],
       sitemap: {
         enabled: true,
         host: 'https://vikiru.vercel.app',
