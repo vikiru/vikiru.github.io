@@ -4,7 +4,6 @@ import viteReact from '@vitejs/plugin-react';
 import { nitro } from 'nitro/vite';
 import { defineConfig } from 'vite';
 import tsConfigPaths from 'vite-tsconfig-paths';
-import { routes } from './src/data/projects';
 
 export default defineConfig({
   server: {
