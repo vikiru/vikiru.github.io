@@ -12,7 +12,11 @@ export const Route = createFileRoute('/')({
   head: () => ({
     meta: [
       { title: siteTitle },
-      { name: 'description', content: siteDescription },
+      {
+        name: 'description',
+        content:
+          'Personal portfolio of Visakan Kirubakaran, a software developer with a passion for software and web development, based in Ottawa, ON.',
+      },
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: siteTitle },
       { property: 'og:description', content: siteDescription },

@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { property: 'og:title', content: metadata.title },
       { property: 'og:description', content: metadata.description },
       { name: 'twitter:card', content: 'summary' },
+      {
+        name: 'google-site-verification',
+        content: 'IUtO6lgG_1nRbIW_MH3yuRA2zNja2RObwx6Bb7fSG3c',
+      },
     ],
     scripts: [
       {
