@@ -42,13 +42,7 @@ export const Route = createRootRoute({
         content: 'IUtO6lgG_1nRbIW_MH3yuRA2zNja2RObwx6Bb7fSG3c',
       },
     ],
-    scripts: [
-      {
-        src: 'https://kwesforms.com/v2/kf-script.js',
-        defer: true,
-        suppressHydrationWarning: true,
-      },
-    ],
+    scripts: [],
     links: [
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: '' },
@@ -56,10 +50,13 @@ export const Route = createRootRoute({
         rel: 'preload',
         as: 'style',
         href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;600;700;900&display=swap',
+        onload: "this.onload=null;this.rel='stylesheet'",
       },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;600;700;900&display=swap',
+        media: 'print',
+        onload: "this.media='all'",
       },
       { rel: 'stylesheet', href: indexCss },
       {
