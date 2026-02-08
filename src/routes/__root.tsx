@@ -22,8 +22,6 @@ const metadata = {
     'Personal portfolio of Visakan Kirubakaran, a software developer with a passion for software and web development, based in Ottawa, ON.',
 };
 
-// Meta tags are handled in individual route files (index, sitemap, projects/$slug, education/courses)
-
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -44,21 +42,35 @@ export const Route = createRootRoute({
     ],
     scripts: [],
     links: [
-      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: '' },
+      { rel: 'stylesheet', href: indexCss },
       {
         rel: 'preload',
-        as: 'style',
-        href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;600;700;900&display=swap',
-        onload: "this.onload=null;this.rel='stylesheet'",
+        as: 'font',
+        type: 'font/woff2',
+        href: '/Raleway-VariableFont_wght.woff2',
+        crossOrigin: '',
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;600;700;900&display=swap',
-        media: 'print',
-        onload: "this.media='all'",
+        rel: 'preload',
+        as: 'font',
+        type: 'font/woff2',
+        href: '/Lato-Regular.woff2',
+        crossOrigin: '',
       },
-      { rel: 'stylesheet', href: indexCss },
+      {
+        rel: 'preload',
+        as: 'font',
+        type: 'font/woff2',
+        href: '/Lato-Bold.woff2',
+        crossOrigin: '',
+      },
+      {
+        rel: 'preload',
+        as: 'font',
+        type: 'font/woff2',
+        href: '/Cinzel-VariableFont_wght.woff2',
+        crossOrigin: '',
+      },
       {
         rel: 'icon',
         href: '/favicon-light.ico',
