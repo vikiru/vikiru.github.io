@@ -3,6 +3,16 @@ import { ContactForm } from '@/components/forms/ContactForm';
 import { Card, CardContent } from '@/lib/components/ui/card';
 import { cn } from '@/lib/utils';
 
+function KwesScripts() {
+  return (
+    <script
+      defer
+      src="https://kwesforms.com/v2/kf-script.js"
+      suppressHydrationWarning
+    />
+  );
+}
+
 interface ContactProps {
   className?: string;
 }
@@ -58,6 +68,7 @@ export function Contact({ className }: ContactProps) {
           </CardContent>
         </Card>
       </div>
+      <KwesScripts />
     </section>
   );
 }
