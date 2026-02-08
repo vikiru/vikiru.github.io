@@ -9,9 +9,38 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  build: {
-    // target: 'esnext',
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      '@tanstack/react-start',
+      '@tanstack/react-router',
+      '@radix-ui/react-alert-dialog',
+      '@radix-ui/react-aspect-ratio',
+      '@radix-ui/react-dialog',
+      '@radix-ui/react-hover-card',
+      '@radix-ui/react-label',
+      '@radix-ui/react-progress',
+      '@radix-ui/react-scroll-area',
+      '@radix-ui/react-select',
+      '@radix-ui/react-separator',
+      '@radix-ui/react-slot',
+      '@radix-ui/react-tabs',
+      '@radix-ui/react-tooltip',
+      'class-variance-authority',
+      'clsx',
+      'tailwind-merge',
+      'sonner',
+      'zod',
+      'schema-dts',
+      'react-icons',
+      'lucide-react',
+      '@vercel/analytics',
+      '@vercel/speed-insights',
+      'web-vitals',
+    ],
   },
+  build: {},
   plugins: [
     tsConfigPaths(),
     tanstackStart({
@@ -25,7 +54,10 @@ export default defineConfig({
         crawlLinks: false,
       },
       pages: [
-        { path: '/', prerender: { enabled: true, outputPath: 'index.html' } },
+        {
+          path: '/',
+          prerender: { enabled: true, outputPath: 'index.html' },
+        },
         {
           path: '/sitemap',
           prerender: { enabled: true, outputPath: 'sitemap/index.html' },
