@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url('/Raleway-VariableFont_wght.woff2') format('woff2-variations'),
+  src: url('/Raleway-VariableFont_wght.woff2') format('woff2'),
        url('/Raleway-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('/Cinzel-VariableFont_wght.woff2') format('woff2-variations'),
+  src: url('/Cinzel-VariableFont_wght.woff2') format('woff2'),
        url('/Cinzel-VariableFont_wght.ttf') format('truetype');
   font-weight: 400 700;
   font-style: normal;
