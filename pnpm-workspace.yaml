@@ -1,15 +1,15 @@
 packages:
   - .
-
+allowBuilds:
+  esbuild: true
+  lefthook: true
+minimumReleaseAgeExclude:
+  - srvx@0.11.13
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - core-js
   - core-js-pure
   - esbuild
   - lefthook
-
 overrides:
-  node-forge@<1.3.2: '>=1.3.2'
-  nth-check@<2.0.1: '>=2.0.1'
-  postcss@<8.4.31: '>=8.4.31'
-  webpack-dev-server@<=5.2.0: '>=5.2.1'
+  srvx@<0.11.13: ^0.11.13
