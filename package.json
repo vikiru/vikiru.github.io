@@ -31,6 +31,7 @@
     "start": "vite start",
     "preview": "vite preview",
     "generate-sitemap": "tsx src/scripts/generateSitemap.ts",
+    "test:seo": "tsx --test src/lib/seo/schema.test.ts",
     "lint": "biome lint",
     "format": "biome check --write",
     "typecheck": "tsgo --noEmit",
