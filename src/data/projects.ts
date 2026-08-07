@@ -12,7 +12,7 @@ const projectData: ProjectData = {
       description:
         'AI-powered learning tool to generate comprehensive notes and flashcards from given user prompts, powered by Gemini AI.',
       startDate: 'Apr 2025',
-      endDate: 'Nov 2025',
+      endDate: 'Dec 2025',
       technologiesUsed: [
         'TypeScript',
         'Next.js',
@@ -49,7 +49,7 @@ const projectData: ProjectData = {
       description:
         'A dinosaur discovery web application that allows users to explore, learn about, and track dinosaur species.',
       startDate: 'Apr 2025',
-      endDate: 'Nov 2025',
+      endDate: 'Dec 2025',
       technologiesUsed: [
         'TypeScript',
         'Next.js',
