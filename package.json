@@ -76,7 +76,7 @@
     "react-dom": "^19.2.8",
     "react-icons": "^5.7.0",
     "sonner": "^2.0.7",
-    "srvx": "^0.10.1",
+    "srvx": "^0.11.22",
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.3",
     "web-vitals": "^3.5.2",
