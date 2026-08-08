@@ -159,7 +159,7 @@
   --color-ring: var(--ring);
 }
 
-::root {
+:root {
   --radius: 0.5rem;
 
   --background: oklch(0.96 0.002 265);
