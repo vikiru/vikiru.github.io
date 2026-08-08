@@ -21,37 +21,9 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url('/Lato-Regular.woff2') format('woff2'),
-       url('/Lato-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/Lato-Bold.woff2') format('woff2'),
-       url('/Lato-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/Lato-Italic.woff2') format('woff2'),
-       url('/Lato-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/Lato-BoldItalic.woff2') format('woff2'),
-       url('/Lato-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
+  src: url('/Lato-VariableFont_wght.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal italic;
   font-display: swap;
 }
 
@@ -71,16 +43,28 @@
   --text-xs: clamp(0.75rem, 0.875rem + 0.3vw, 0.875rem);
   --text-sm: clamp(0.875rem, 0.9375rem + 0.3vw, 1rem);
   --text-base: clamp(1rem, 1.0625rem + 0.4vw, 1.125rem);
+  --text-base--line-height: 1.7;
   --text-lg: clamp(1.125rem, 1.1875rem + 0.4vw, 1.25rem);
+  --text-lg--line-height: 1.7;
   --text-p: clamp(1.125rem, 1.1875rem + 0.4vw, 1.25rem);
-  --text-h6: clamp(1rem, 1.0625rem + 0.4vw, 1.125rem);
-  --text-h5: clamp(1.125rem, 1.25rem + 0.5vw, 1.375rem);
-  --text-h4: clamp(1.375rem, 1.5rem + 0.6vw, 1.75rem);
-  --text-h3: clamp(1.75rem, 1.875rem + 0.8vw, 2.25rem);
-  --text-h2: clamp(2.25rem, 2.375rem + 1vw, 2.75rem);
+  --text-p--line-height: 1.7;
   --text-h1: clamp(2.75rem, 3rem + 1.2vw, 3.5rem);
+  --text-h1--line-height: 1.1;
+  --text-h1--letter-spacing: -0.02em;
+  --text-h2: clamp(2.25rem, 2.375rem + 1vw, 2.75rem);
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: -0.01em;
+  --text-h3: clamp(1.75rem, 1.875rem + 0.8vw, 2.25rem);
+  --text-h3--line-height: 1.3;
+  --text-h4: clamp(1.375rem, 1.5rem + 0.6vw, 1.75rem);
+  --text-h4--line-height: 1.4;
+  --text-h5: clamp(1.125rem, 1.25rem + 0.5vw, 1.375rem);
+  --text-h5--line-height: 1.5;
+  --text-h6: clamp(1rem, 1.0625rem + 0.4vw, 1.125rem);
+  --text-h6--line-height: 1.4;
 
-  --spacing-xs: 0.25rem;
+  --text-wrap: pretty;
+  --text-wrap-balance: balance;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
@@ -95,19 +79,37 @@
   --container-11xl: 105rem;
 
   --size-icon-xs: clamp(0.75rem, 1vw + 0.5rem, 0.875rem);
-  --size-icon-sm: clamp(0.875rem, 1vw + 0.6rem, 1.125rem);
-  --size-icon-base: clamp(1.125rem, 1vw + 0.7rem, 1.25rem);
-  --size-icon-lg: clamp(1.25rem, 1.2vw + 0.8rem, 1.5rem);
-  --size-icon-xl: clamp(1.5rem, 1.5vw + 0.9rem, 2rem);
+  --size-icon-sm: clamp(1rem, 1vw + 0.5rem, 1.25rem);
+  --size-icon-base: clamp(1.25rem, 1vw + 0.5rem, 1.5rem);
+  --size-icon-lg: clamp(1.5rem, 1vw + 0.5rem, 1.75rem);
+  --size-icon-xl: clamp(2rem, 1vw + 0.5rem, 2.25rem);
+  --size-icon-2xl: clamp(2.5rem, 1vw + 0.5rem, 3rem);
+
+  --icon-stroke-width: 2px;
+  --icon-stroke-width-lg: 2.5px;
+
+  --icon-color: var(--color-foreground);
+  --icon-color-muted: var(--color-muted-foreground);
+  --icon-color-primary: var(--color-primary);
+  --icon-color-inverse: var(--color-primary-foreground);
+
+  --icon-focus-ring: 2px;
+  --icon-focus-offset: 2px;
 
   --text-logo-sm: clamp(1.5rem, 2vw + 1rem, 2rem);
   --text-logo-base: clamp(1.75rem, 2.5vw + 1rem, 2.5rem);
   --text-logo-lg: clamp(2rem, 3vw + 1rem, 3rem);
   --text-logo-xl: clamp(2.5rem, 3.5vw + 1rem, 3.5rem);
-
+  --container-measure: 65ch;
   --text-nav-sm: clamp(1rem, 1.25rem, 1.25rem);
+  --text-nav-sm--line-height: 1.5;
+  --text-nav-sm--letter-spacing: 0.02em;
   --text-nav-base: clamp(1.125rem, 1.4rem, 1.4rem);
+  --text-nav-base--line-height: 1.5;
+  --text-nav-base--letter-spacing: 0.015em;
   --text-nav-lg: clamp(1.25rem, 1.5625rem, 1.5625rem);
+  --text-nav-lg--line-height: 1.5;
+  --text-nav-lg--letter-spacing: 0.01em;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -125,12 +127,12 @@
   --color-ring: var(--ring);
 }
 
-:root {
+::root {
   --radius: 0.5rem;
 
   --background: oklch(0.96 0.002 265);
   --foreground: oklch(0.2 0.01 265);
-  --primary: oklch(0.55 0.18 250);
+  --primary: oklch(0.45 0.18 250);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.9 0.005 265);
   --secondary-foreground: oklch(0.3 0.01 265);
@@ -139,8 +141,8 @@
   --accent: oklch(0.65 0.15 75);
   --accent-foreground: oklch(0.15 0 0);
   --destructive: oklch(0.55 0.22 25);
-  --border: oklch(0.85 0.005 265);
-  --input: oklch(0.85 0.005 265);
+  --border: oklch(0.55 0.01 265);
+  --input: oklch(0.55 0.01 265);
   --ring: oklch(0.52 0.15 240);
 }
 
@@ -156,10 +158,11 @@
   --accent: oklch(0.7 0.15 75);
   --accent-foreground: oklch(0.15 0 0);
   --destructive: oklch(0.6 0.22 25);
-  --border: oklch(0.3 0.008 265);
-  --input: oklch(0.3 0.008 265);
+  --border: oklch(0.4 0.01 265);
+  --input: oklch(0.4 0.01 265);
   --ring: oklch(0.52 0.15 240);
 }
+
 
 * {
   border-color: var(--color-border);
@@ -171,6 +174,8 @@ body {
   color: var(--color-foreground);
   font-family: var(--font-body);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -179,54 +184,6 @@ body {
   }
 }
 
-.heading-1 {
-  font-family: var(--font-heading);
-  font-size: var(--text-h1);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-
-.heading-2 {
-  font-family: var(--font-heading);
-  font-size: var(--text-h2);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-}
-
-.heading-3 {
-  font-family: var(--font-heading);
-  font-size: var(--text-h3);
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.heading-4 {
-  font-family: var(--font-heading);
-  font-size: var(--text-h4);
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.heading-5 {
-  font-family: var(--font-heading);
-  font-size: var(--text-h5);
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.heading-6 {
-  font-family: var(--font-heading);
-  font-size: var(--text-h6);
-  font-weight: 600;
-  line-height: 1.6;
-}
-
-.course-title {
-  font-size: clamp(1.375rem, 1.75rem, 1.75rem);
-  line-height: 1.35;
-}
 
 .body-large {
   font-family: var(--font-body);
@@ -250,14 +207,6 @@ body {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   color: var(--color-muted-foreground);
-}
-
-.section {
-  padding-block: var(--spacing-3xl);
-}
-
-.max-w-8xl {
-  max-width: var(--container-8xl);
 }
 
 .max-w-9xl {
@@ -284,33 +233,7 @@ body {
   max-width: 42rem;
 }
 
-.form-submit {
-  border-radius: var(--radius);
-  border-bottom-width: 4px;
-  border-color: var(--color-accent);
-  background-color: var(--color-accent);
-  padding: 0.75rem 1.5rem;
-  text-align: center;
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  font-weight: 500;
-  color: white;
-  transition: all 200ms ease;
-  cursor: pointer;
-}
 
-.form-submit:hover {
-  background-color: color-mix(in oklch, var(--color-accent), black 10%);
-}
-
-#field-error-name,
-#field-error-email,
-#field-error-subject,
-#field-error-content,
-.kw-alert,
-.kw-alert-error {
-  display: none !important;
-}
 
 #content textarea {
     resize: none;
