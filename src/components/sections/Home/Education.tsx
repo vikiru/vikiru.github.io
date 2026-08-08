@@ -72,7 +72,9 @@ export function Education({ className }: EducationProps) {
               <h3 className="text-h4 sm:text-h3 font-bold text-foreground mb-2">
                 Certificates
               </h3>
-              <p className="heading-5 mb-6 text-muted-foreground">Coursera</p>
+              <p className="text-h5 font-medium text-muted-foreground mb-6">
+                Coursera
+              </p>
               <ul className="space-y-4 text-muted-foreground">
                 {certificates.map((cert) => (
                   <li

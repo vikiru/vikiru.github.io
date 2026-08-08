@@ -16,7 +16,7 @@ export function SitemapSection({
   return (
     <section className={cn('space-y-4', className)}>
       <div className="flex items-center gap-3 md:gap-4">
-        <h2 className="heading-2 font-semibold text-nav-base tracking-tight whitespace-nowrap">
+        <h2 className="text-h2 font-semibold font-heading text-nav-base tracking-tight whitespace-nowrap">
           {title}
         </h2>
         <Separator className="hidden sm:block" />

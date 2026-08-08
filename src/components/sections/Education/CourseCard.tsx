@@ -26,18 +26,20 @@ export function CourseCard({
       className={cn('bg-card border-border flex flex-col h-full', className)}
       role="article"
     >
-      <CardHeader className="pb-3">
+      <CardHeader className="pb-4">
         <div className="flex items-start justify-between gap-4">
-          <CardTitle className="course-title text-card-foreground">
+          <CardTitle className="text-h4 font-bold font-heading text-card-foreground leading-tight">
             {name}
           </CardTitle>
         </div>
-        <Badge className="mt-2 font-mono body-base w-fit" variant="secondary">
-          {courseCode}
-        </Badge>
+        <div className="mt-3 flex items-center gap-2">
+          <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-mono font-medium border border-primary/20">
+            {courseCode}
+          </span>
+        </div>
       </CardHeader>
       <CardContent className="pt-0 flex-1">
-        <p className="body-base text-muted-foreground leading-relaxed">
+        <p className="body-large text-card-foreground/80 leading-relaxed">
           {description}
         </p>
       </CardContent>

@@ -24,7 +24,12 @@ export function About() {
         <Card className="w-full">
           <CardContent className="p-8 space-y-6 body-large text-foreground leading-relaxed text-left">
             {aboutParagraphs.map((paragraph) => (
-              <p key={paragraph.text.substring(0, 20)}>{paragraph.text}</p>
+              <p
+                className="max-w-[--container-measure]"
+                key={paragraph.text.substring(0, 20)}
+              >
+                {paragraph.text}
+              </p>
             ))}
           </CardContent>
         </Card>

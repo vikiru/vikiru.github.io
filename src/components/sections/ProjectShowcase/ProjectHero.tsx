@@ -9,13 +9,13 @@ interface ProjectHeroProps {
 
 export function ProjectHero({ project }: ProjectHeroProps) {
   return (
-    <section className="-mt-14 lg:-mt-24 px-4 md:px-40 flex flex-1 justify-center py-16 md:py-24 relative overflow-hidden">
+    <section className="-mt-14 lg:-mt-24 px-4 md:px-40 flex flex-1 justify-center py-20 relative overflow-hidden">
       <div className="flex flex-col w-full flex-1 items-center text-center gap-8">
         <div className="flex flex-col gap-6">
-          <h1 className="heading-1 font-bold tracking-tight font-heading text-foreground text-balance">
+          <h1 className="text-h1 font-bold tracking-tight font-heading text-foreground text-balance">
             {project.name}
           </h1>
-          <p className="body-large text-muted-foreground leading-relaxed max-w-180 mx-auto">
+          <p className="body-large text-muted-foreground leading-relaxed max-w-[--container-measure] mx-auto">
             {project.description}
           </p>
         </div>
@@ -47,7 +47,10 @@ export function ProjectHero({ project }: ProjectHeroProps) {
               >
                 <FaBook aria-hidden="true" className="size-icon-base" />
                 Documentation
-                <LuExternalLink aria-hidden="true" className="size-icon-sm" />
+                <LuExternalLink
+                  aria-hidden="true"
+                  className="size-icon-sm opacity-70"
+                />
               </a>
             </Button>
           )}
