@@ -53,21 +53,48 @@ function constructSitemap(
 
 function constructLlmsIndex() {
   const projects = projectData.projects.filter((project) => !project.hidden);
+  const personalProjectSlugs = [
+    'Noterra',
+    'Paleodra',
+    'Grocadex',
+    'Kelbrum',
+    'Parseum',
+    'RESTasaurus',
+    'Urvo',
+  ];
+  const personalProjects = projects.filter((project) =>
+    personalProjectSlugs.includes(project.slug),
+  );
+  const academicProjects = projects.filter(
+    (project) => !personalProjectSlugs.includes(project.slug),
+  );
   const lines = [
     '# Visakan Kirubakaran',
     '',
-    `> ${siteConfig.site.description}`,
+    '> Personal portfolio of Visakan Kirubakaran, a software developer with a passion for software and web development, based in Ottawa, ON, Canada.',
     '',
     '## Pages',
     '',
-    `- [Home](${HOST_NAME}/): ${siteConfig.site.description}`,
-    `- [Courses](${HOST_NAME}/education/courses): University courses taken during a Bachelor of Software Engineering at Carleton University.`,
-    `- [Sitemap](${HOST_NAME}/sitemap): Visual index of all pages on the site.`,
+    '- [Home](https://vikiru.vercel.app/): Homepage of Visakan Kirubakaran, showcasing his skills, education, academic and personal projects, and finally, contact information.',
+    '- [Courses](https://vikiru.vercel.app/education/courses): University courses taken during his Bachelor of Software Engineering degree at Carleton University.',
+    '- [Sitemap](https://vikiru.vercel.app/sitemap): Visual index of all pages on the site.',
     '',
     '## Projects',
     '',
+    '### Personal Projects',
+    '',
   ];
-  for (const project of projects) {
+  for (const project of personalProjects) {
+    lines.push(
+      `- [${project.name}](${HOST_NAME}${project.projectPageUrl}): ${project.description}`,
+    );
+  }
+  lines.push(
+    '',
+    '### Academic Projects',
+    '',
+  );
+  for (const project of academicProjects) {
     lines.push(
       `- [${project.name}](${HOST_NAME}${project.projectPageUrl}): ${project.description}`,
     );
@@ -77,8 +104,7 @@ function constructLlmsIndex() {
 
 const items = constructItems(sitemap);
 const sitemapContent = constructSitemap(items);
-//  const llmsContent = constructLlmsIndex();
-
+const llmsContent = constructLlmsIndex();
 fs.writeFile(targetPath, sitemapContent, (err) => {
   if (err) {
     console.error('Error generating sitemap:', err);
