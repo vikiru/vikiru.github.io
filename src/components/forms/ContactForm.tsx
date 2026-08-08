@@ -27,34 +27,42 @@ export function ContactForm({ className }: { className?: string }) {
       onSubmit={handleSubmit}
     >
       <Field data-invalid={!!errors.name}>
-        <FieldLabel htmlFor="name">
+        <FieldLabel
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          htmlFor="name"
+        >
           Name
         </FieldLabel>
         <Input
           aria-describedby={errors.name ? 'name-error' : undefined}
           aria-invalid={!!errors.name}
+          className="bg-background/50 border-white/10"
           id="name"
           name="name"
           onBlur={handleBlur}
           onChange={handleInputChange}
-          placeholder="Your name"
+          placeholder="Enter your full name"
           value={formData.name}
         />
         <FieldError errors={[{ message: errors.name }]} id="name-error" />
       </Field>
 
       <Field data-invalid={!!errors.email}>
-        <FieldLabel htmlFor="email">
+        <FieldLabel
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          htmlFor="email"
+        >
           Email
         </FieldLabel>
         <Input
           aria-describedby={errors.email ? 'email-error' : undefined}
           aria-invalid={!!errors.email}
+          className="bg-background/50 border-white/10"
           id="email"
           name="email"
           onBlur={handleBlur}
           onChange={handleInputChange}
-          placeholder="your@email.com"
+          placeholder="Enter email address"
           type="email"
           value={formData.email}
         />
@@ -62,34 +70,43 @@ export function ContactForm({ className }: { className?: string }) {
       </Field>
 
       <Field data-invalid={!!errors.subject}>
-        <FieldLabel htmlFor="subject">
+        <FieldLabel
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          htmlFor="subject"
+        >
           Subject
         </FieldLabel>
         <Input
           aria-describedby={errors.subject ? 'subject-error' : undefined}
           aria-invalid={!!errors.subject}
+          className="bg-background/50 border-white/10"
           id="subject"
           name="subject"
           onBlur={handleBlur}
           onChange={handleInputChange}
-          placeholder="What is this about?"
+          placeholder="Enter email subject"
           value={formData.subject}
         />
         <FieldError errors={[{ message: errors.subject }]} id="subject-error" />
       </Field>
 
       <Field data-invalid={!!errors.content}>
-        <FieldLabel htmlFor="content">
+        <FieldLabel
+          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          htmlFor="content"
+        >
           Message
         </FieldLabel>
         <Textarea
           aria-describedby={errors.content ? 'content-error' : undefined}
           aria-invalid={!!errors.content}
+          className="bg-background/50 border-white/10 resize-none h-33"
+          cols={50}
           id="content"
           name="content"
           onBlur={handleBlur}
           onChange={handleInputChange}
-          placeholder="Your message…"
+          placeholder="Enter your message here"
           rows={5}
           value={formData.content}
         />
