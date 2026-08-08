@@ -7,6 +7,7 @@ export const siteConfig = {
     base: '',
     locale: 'en',
     lastModified: new Date(),
+    contentLastModified: '2026-01-22',
   },
   author: {
     name: 'Visakan Kirubakaran',
@@ -43,5 +44,6 @@ export const siteConfig = {
   },
   assets: {
     themeColor: '#1e1e24',
+    lightThemeColor: '#f8fafc',
   },
 };

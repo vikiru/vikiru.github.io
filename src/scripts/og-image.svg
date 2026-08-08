@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630">
+
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'Lato Bold';
+        src: url('../public/Lato-Bold.ttf');
+      }
+
+      @font-face {
+        font-family: 'Lato Regular';
+        src: url('../public/Lato-Regular.ttf');
+      }
+
+      .title {
+        font: 76px "Lato Bold";
+        fill: #f7f9fb;
+      }
+
+      .subtitle {
+        font: 30px "Lato Regular";
+        letter-spacing: 7px;
+        fill: #8b96a6;
+      }
+
+      .meta {
+        font: 22px "Lato Regular";
+        fill: #a6adb8;
+      }
+    </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f15" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10"
+        flood-color="#000"
+        flood-opacity=".45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Accent -->
+  <rect
+    x="560"
+    y="175"
+    width="80"
+    height="8"
+    rx="4"
+    fill="#0EA5FF" />
+
+  <!-- Name -->
+  <text
+    x="600"
+    y="310"
+    text-anchor="middle"
+    class="title"
+    filter="url(#shadow)">
+    Visakan Kirubakaran
+  </text>
+
+  <!-- Role -->
+  <text
+    x="600"
+    y="372"
+    text-anchor="middle"
+    class="subtitle">
+    SOFTWARE DEVELOPER
+  </text>
+
+  <!-- Contact row -->
+
+  <!-- GitHub -->
+  <g transform="translate(255 495)">
+    <!-- GitHub mark -->
+    <path fill="#A6ADB8"
+      d="M12 .5A12 12 0 0 0 .2 12.6c0 5.4 3.5 10 8.4 11.6.6.1.8-.3.8-.6v-2.2c-3.4.8-4.1-1.6-4.1-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.2-.8.1-.8.1-.8 1.3.1 2 .9 2 1 .9 1.6 2.4 1.2 3 .9.1-.7.4-1.2.7-1.5-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.4 11.4 0 0 1 6.2 0C17.4 4 18.4 4.3 18.4 4.3c.7 1.6.3 2.9.2 3.2.8.9 1.2 2 1.2 3.3 0 4.7-2.8 5.7-5.6 6 .4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6a12 12 0 0 0 8.2-11.6A12 12 0 0 0 12 .5z"
+      transform="scale(1.1)" />
+    <text x="36" y="18" class="meta">@vikiru</text>
+  </g>
+
+  <!-- Website -->
+  <g transform="translate(525 495)">
+    <!-- Globe -->
+    <circle cx="12" cy="12" r="10"
+      stroke="#A6ADB8"
+      stroke-width="2"
+      fill="none" />
+    <ellipse cx="12" cy="12" rx="5" ry="10"
+      stroke="#A6ADB8"
+      stroke-width="2"
+      fill="none" />
+    <path d="M2 12h20M4 6h16M4 18h16"
+      stroke="#A6ADB8"
+      stroke-width="2"
+      fill="none" />
+
+    <text x="36" y="18" class="meta">
+      vikiru.vercel.app
+    </text>
+  </g>
+
+  <!-- Location -->
+  <g transform="translate(870 495)">
+    <!-- Map pin -->
+    <path
+      d="M12 1
+         C7 1 3 5 3 10
+         C3 17 12 24 12 24
+         C12 24 21 17 21 10
+         C21 5 17 1 12 1Z"
+      fill="none"
+      stroke="#A6ADB8"
+      stroke-width="2" />
+    <circle cx="12" cy="10" r="3"
+      fill="#A6ADB8" />
+
+    <text x="36" y="18" class="meta">
+      Ottawa, ON
+    </text>
+  </g>
+
+</svg>

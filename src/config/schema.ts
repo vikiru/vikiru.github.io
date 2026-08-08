@@ -2,7 +2,7 @@ import type { Person, SoftwareSourceCode, WebSite } from 'schema-dts';
 import { siteConfig } from '@/config/site';
 
 export const {
-  site: { title, description, url: siteUrl, lastModified },
+  site: { title, description, url: siteUrl, contentLastModified },
   author: {
     name,
     alternateName,
@@ -66,7 +66,7 @@ export const homepageLd: WebSite = {
   creator: { '@id': personId },
   license: license,
   inLanguage: 'en',
-  dateModified: lastModified.toISOString(),
+  dateModified: new Date(contentLastModified).toISOString(),
   about: { '@id': personId },
   mainEntity: { '@id': personId },
 };
