@@ -4,6 +4,25 @@ import viteReact from '@vitejs/plugin-react';
 import { nitro } from 'nitro/vite';
 import { defineConfig } from 'vite';
 import tsConfigPaths from 'vite-tsconfig-paths';
+import { lastmodFor } from './src/lib/seo/lastmod';
+
+const pageRoutes = [
+  '/',
+  '/sitemap',
+  '/education/courses',
+  '/projects/Noterra',
+  '/projects/Paleodra',
+  '/projects/Grocadex',
+  '/projects/Kelbrum',
+  '/projects/Parseum',
+  '/projects/RESTasaurus',
+  '/projects/Urvo',
+  '/projects/CodeSmell',
+  '/projects/discrete-sim',
+  '/projects/Mini-SurveyMonkey',
+  '/projects/Elevator-Simulator',
+  '/projects/digitalRisk',
+];
 
 export default defineConfig({
   server: {
@@ -44,104 +63,15 @@ export default defineConfig({
         autoSubfolderIndex: true,
         crawlLinks: false,
       },
-      pages: [
-        {
-          path: '/',
-          prerender: { enabled: true, outputPath: 'index.html' },
+      pages: pageRoutes.map((pagePath) => ({
+        path: pagePath,
+        prerender: {
+          enabled: true,
+          outputPath:
+            pagePath === '/' ? 'index.html' : `${pagePath.slice(1)}/index.html`,
         },
-        {
-          path: '/sitemap',
-          prerender: { enabled: true, outputPath: 'sitemap/index.html' },
-        },
-        {
-          path: '/education/courses',
-          prerender: {
-            enabled: true,
-            outputPath: 'education/courses/index.html',
-          },
-        },
-        {
-          path: '/projects/Noterra',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/Noterra/index.html',
-          },
-        },
-        {
-          path: '/projects/Paleodra',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/Paleodra/index.html',
-          },
-        },
-        {
-          path: '/projects/Grocadex',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/Grocadex/index.html',
-          },
-        },
-        {
-          path: '/projects/Kelbrum',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/Kelbrum/index.html',
-          },
-        },
-        {
-          path: '/projects/Parseum',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/Parseum/index.html',
-          },
-        },
-        {
-          path: '/projects/RESTasaurus',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/RESTasaurus/index.html',
-          },
-        },
-        {
-          path: '/projects/Urvo',
-          prerender: { enabled: true, outputPath: 'projects/Urvo/index.html' },
-        },
-        {
-          path: '/projects/CodeSmell',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/CodeSmell/index.html',
-          },
-        },
-        {
-          path: '/projects/discrete-sim',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/discrete-sim/index.html',
-          },
-        },
-        {
-          path: '/projects/Mini-SurveyMonkey',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/Mini-SurveyMonkey/index.html',
-          },
-        },
-        {
-          path: '/projects/Elevator-Simulator',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/Elevator-Simulator/index.html',
-          },
-        },
-        {
-          path: '/projects/digitalRisk',
-          prerender: {
-            enabled: true,
-            outputPath: 'projects/digitalRisk/index.html',
-          },
-        },
-      ],
+        sitemap: { lastmod: lastmodFor(pagePath) },
+      })),
       sitemap: {
         enabled: true,
         host: 'https://vikiru.vercel.app',
