@@ -60,13 +60,16 @@ export function Footer() {
         </div>
 
         <div className="mt-4 pt-6">
-          <div className="flex flex-col md:flex-row items-center gap-4 w-full lg:items-end lg:justify-end">
+          <div className="flex flex-col md:flex-row items-start gap-4 w-full lg:items-end lg:justify-end">
             <p className="body-base text-muted-foreground">
               &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
               reserved.
             </p>
           </div>
-          <nav className="flex justify-start items-start w-full lg:justify-end lg:items-end my-4">
+          <nav
+            aria-label="Footer"
+            className="flex justify-start items-start w-full lg:justify-end lg:items-end my-4"
+          >
             <Link
               aria-label="View site sitemap"
               className="text-left body-base text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
