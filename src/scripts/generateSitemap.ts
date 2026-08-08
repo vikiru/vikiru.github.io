@@ -89,11 +89,7 @@ function constructLlmsIndex() {
       `- [${project.name}](${HOST_NAME}${project.projectPageUrl}): ${project.description}`,
     );
   }
-  lines.push(
-    '',
-    '### Academic Projects',
-    '',
-  );
+  lines.push('', '### Academic Projects', '');
   for (const project of academicProjects) {
     lines.push(
       `- [${project.name}](${HOST_NAME}${project.projectPageUrl}): ${project.description}`,

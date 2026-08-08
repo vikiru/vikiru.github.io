@@ -1,8 +1,8 @@
-import { siteConfig } from '@/config/site';
-import { notFoundGraph } from '@/lib/seo/404Schema';
 import { Link } from '@tanstack/react-router';
 import { Layout } from '@/components/layout/Layout';
+import { siteConfig } from '@/config/site';
 import { Button } from '@/lib/components/ui/button';
+import { notFoundGraph } from '@/lib/seo/404Schema';
 
 const {
   site: { url: siteUrl },
@@ -46,8 +46,8 @@ export const NotFound = () => {
             </p>
 
             <Link
-              to="/"
               className="mt-8 inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-primary-foreground font-medium transition-colors hover:bg-primary/90 focus-visible:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              to="/"
             >
               Go Home
             </Link>
@@ -57,4 +57,3 @@ export const NotFound = () => {
     </Layout>
   );
 };
-
