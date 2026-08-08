@@ -12,7 +12,7 @@ type FlatNode = {
 };
 
 function flatNodes(graph: Graph): FlatNode[] {
-  return (graph['@graph'] as unknown as FlatNode[]);
+  return graph['@graph'] as unknown as FlatNode[];
 }
 
 function nodeTypes(graph: Graph): string[] {
