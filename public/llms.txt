@@ -22,8 +22,8 @@
 
 ### Academic Projects
 
-- [CodeSmell](https://vikiru.vercel.app/projects/CodeSmell): A tool for detection and visualization of code smells for object-oriented languages, a final year university capstone project completed with 3 co-authors.
+- [CodeSmell](https://vikiru.vercel.app/projects/CodeSmell): A tool for detection and visualization of code smells for object-oriented languages.
 - [discrete-sim](https://vikiru.vercel.app/projects/discrete-sim): A simulation of a manufacturing facility, with the intent of optimizing product production through statistical analysis and simulation modeling.
-- [Mini-SurveyMonkey](https://vikiru.vercel.app/projects/Mini-SurveyMonkey): A SurveyMonkey clone built as a Spring Boot CRUD Web Application, enabling survey creation, modification, and PDF export of results, completed with 2 co-authors.
-- [Elevator Simulator](https://vikiru.vercel.app/projects/Elevator-Simulator): A simulation of an elevator transporting passengers among floors, with the capability to introduce and handle errors that may arise during operation, completed with 3 co-authors. 
-- [Digital Risk](https://vikiru.vercel.app/projects/digitalRisk): Digital Risk is a re-creation of the board game Risk: Global Domination using Java Swing and following the MVC design pattern, completed with 3 co-authors.
+- [Mini-SurveyMonkey](https://vikiru.vercel.app/projects/Mini-SurveyMonkey): A SurveyMonkey clone built as a Spring Boot CRUD Web Application, enabling survey creation, modification, and PDF export of results.
+- [Elevator Simulator](https://vikiru.vercel.app/projects/Elevator-Simulator): A simulation of an elevator transporting passengers among floors, with the capability to introduce and handle errors that may arise during operation. 
+- [Digital Risk](https://vikiru.vercel.app/projects/digitalRisk): Digital Risk is a re-creation of the board game Risk: Global Domination using Java Swing and following the MVC design pattern.
