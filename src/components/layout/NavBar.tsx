@@ -1,11 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import {
-  FaBars,
-  FaEnvelope,
-  FaGithub,
-  FaLinkedin,
-  FaXmark,
-} from 'react-icons/fa6';
+import { FaBars, FaXmark } from 'react-icons/fa6';
 import { ThemeToggle } from '@/components/layout/ThemeToggle';
 import { Logo } from '@/components/ui/Logo';
 import { navData } from '@/data/nav';
@@ -98,59 +92,6 @@ export function NavBar() {
             {navData.map((item) => (
               <MobileNavLink item={item} key={item.navTitle} />
             ))}
-          </div>
-
-          <div className="text-center mt-4">
-            <h3 className="body-base text-muted-foreground uppercase tracking-wider font-semibold mb-4 border-b border-border pb-2">
-              Connect with me
-            </h3>
-            <div className="flex justify-center gap-4">
-              <a
-                aria-label="GitHub"
-                className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
-                href="https://github.com/vikiru"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaGithub className="size-icon-base" />
-              </a>
-              <a
-                aria-label="LinkedIn"
-                className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
-                href="https://linkedin.com/in/viskirubakaran"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaLinkedin className="size-icon-base" />
-              </a>
-              <Link
-                aria-label="Email"
-                className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors motion-reduce:transition-none"
-                hash="contact"
-                to="/"
-              >
-                <FaEnvelope className="size-icon-base" />
-              </Link>
-            </div>
-          </div>
-
-          <div
-            className="absolute bottom-6 left-0 right-0 text-center px-4"
-            id="copyright"
-          >
-            <div className="my-4">
-              <p className="body-base text-muted-foreground">
-                &copy; {new Date().getFullYear()} Visakan Kirubakaran. All
-                rights reserved.
-              </p>
-            </div>
-
-            <Link
-              className="text-left body-base text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
-              to="/sitemap"
-            >
-              Sitemap
-            </Link>
           </div>
         </div>
       </section>
