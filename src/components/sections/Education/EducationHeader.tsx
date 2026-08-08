@@ -18,42 +18,52 @@ export function EducationHeader({ className }: EducationHeaderProps) {
   } = educationData;
 
   return (
-    <header className={cn('space-y-6 pb-8', className)}>
-      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6">
-        <div className="space-y-6">
-          <h1 className="heading-1 text-foreground">Education</h1>
-          <div className="space-y-3">
-            <h2 className="heading-5 italic text-foreground">
-              {degree} - {acronym}, {degreeProgram}
-            </h2>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 body-base text-muted-foreground lg:justify-start justify-between">
-              <div className="flex items-center gap-2 text-primary font-medium font-mono">
-                <FaGraduationCap
-                  aria-hidden="true"
-                  className="size-icon-base"
-                />
-                {universityName}
+    <header className={cn('space-y-8 pb-10', className)}>
+      <div className="space-y-6">
+        <h1 className="text-h1 font-bold font-heading text-foreground tracking-tight">
+          Education
+        </h1>
+
+        <div className="space-y-5">
+          <h2 className="text-h3 font-bold font-heading text-foreground tracking-tight">
+            {degree} - {acronym}, {degreeProgram}
+          </h2>
+
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-3">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <FaGraduationCap
+                    aria-hidden="true"
+                    className="size-6 text-primary"
+                  />
+                </div>
+                <div>
+                  <p className="text-h5 font-semibold font-heading text-foreground">
+                    {universityName}
+                  </p>
+                  <p className="body-base text-muted-foreground font-mono">
+                    {enrollmentStart} - {enrollmentEnd}
+                  </p>
+                </div>
               </div>
-              <span className="hidden lg:block text-muted-foreground/30">
-                •
-              </span>
-              <span className="font-mono">
-                {enrollmentStart} - {enrollmentEnd}
-              </span>
-              <span className="hidden lg:block text-muted-foreground/30">
-                •
-              </span>
-              <div className="flex items-center gap-2 font-medium font-mono">
-                <FaLocationDot
-                  aria-hidden="true"
-                  className="size-icon-base hidden lg:block"
-                />
-                <span className="hidden lg:block font-mono">{location}</span>
+
+              <div className="flex items-center gap-3 pt-2 border-t border-border/50 lg:border-t-0 lg:border-l lg:pl-6">
+                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-muted/50 flex items-center justify-center">
+                  <FaLocationDot
+                    aria-hidden="true"
+                    className="size-5 text-muted-foreground"
+                  />
+                </div>
+                <div>
+                  <p className="body-small text-muted-foreground/60 uppercase tracking-wider font-medium">
+                    Location
+                  </p>
+                  <p className="body-base font-medium font-mono text-foreground">
+                    {location}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-2 font-medium font-mono lg:hidden">
-              <FaLocationDot aria-hidden="true" className="size-icon-base" />
-              {location}
             </div>
           </div>
         </div>

@@ -9,12 +9,13 @@ export function CoursesPage() {
   return (
     <Layout>
       <section
-        className="layout-content-container flex flex-col gap-1 py-10 px-4"
+        className="layout-content-container flex flex-col gap-0 py-16 px-4"
         id="education"
       >
-        <div className="layout-content-container flex flex-col w-full flex-1 gap-12">
+        <div className="layout-content-container flex flex-col w-full gap-14">
           <EducationHeader />
-          <div className="flex flex-col gap-12">
+
+          <div className="flex flex-col gap-14">
             {courseData.years.map((yearData) => (
               <YearSection
                 key={yearData.title}

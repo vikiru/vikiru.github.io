@@ -10,14 +10,17 @@ export function Accomplishments({ project }: AccomplishmentsProps) {
   }
 
   return (
-    <section className="px-4 md:px-10 flex justify-center">
-      <div className="w-full">
-        <h3 className="heading-3 font-bold tracking-tight font-heading text-foreground mb-6">
-          Key Accomplishments
-        </h3>
-        <ul className="list-disc list-inside marker:text-primary space-y-3">
-          {project.accomplishments.map((accomplishment, index) => (
-            <li key={`${project.slug}-accomplishment-${index}`}>
+    <section className="px-4 md:px-10 flex justify-center py-20">
+      <div className="w-full max-w-8xl">
+        <header className="text-center mb-10">
+          <h3 className="text-h3 font-bold tracking-tight font-heading text-foreground mb-3">
+            Key Accomplishments
+          </h3>
+          <div className="w-16 h-1 bg-primary/30 mx-auto rounded-full" />
+        </header>
+        <ul className="list-disc list-inside marker:text-primary space-y-4 pl-4">
+          {project.accomplishments.map((accomplishment) => (
+            <li key={`${project.slug}-accomplishment-${accomplishment}`}>
               <span className="body-large text-muted-foreground leading-relaxed">
                 {accomplishment}.
               </span>

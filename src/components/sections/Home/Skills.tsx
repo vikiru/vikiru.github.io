@@ -26,7 +26,7 @@ const categories = [
 function SkillCategory({ title, skills }: SkillCategoryProps) {
   return (
     <div>
-      <h3 className="heading-5 text-muted-foreground uppercase tracking-wider font-semibold mb-4 border-b border-border pb-2">
+      <h3 className="text-h5 font-semibold font-heading text-muted-foreground uppercase tracking-wider mb-4 border-b border-border pb-2">
         {title}
       </h3>
       <div className="flex flex-wrap gap-2">

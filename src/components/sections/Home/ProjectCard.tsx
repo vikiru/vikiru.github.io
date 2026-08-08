@@ -1,7 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { memo } from 'react';
 import { FaBook, FaGithub } from 'react-icons/fa6';
-import { LuArrowRight } from 'react-icons/lu';
 import { Badge } from '@/lib/components/ui/badge';
 import { Card, CardContent } from '@/lib/components/ui/card';
 import { cn } from '@/lib/utils';
@@ -42,7 +41,7 @@ export const ProjectCard = memo(function ProjectCard({
       />
       <CardContent className="p-6 flex flex-col h-full">
         <div className="flex items-center justify-between gap-4 shrink-0">
-          <h3 className="course-title font-bold text-foreground hover:text-primary transition-colors motion-reduce:transition-none truncate">
+          <h3 className="text-h5 font-bold text-foreground hover:text-primary transition-colors motion-reduce:transition-none truncate">
             {project.name}
           </h3>
           <div className="flex items-center gap-1 shrink-0">
@@ -71,7 +70,7 @@ export const ProjectCard = memo(function ProjectCard({
           </div>
         </div>
 
-        <p className="text-muted-foreground leading-relaxed body-base mt-4 flex-1">
+        <p className="text-muted-foreground leading-relaxed body-base mt-4 flex-1 max-w-[--container-measure] text-wrap-pretty">
           {project.description}
         </p>
 
@@ -90,21 +89,6 @@ export const ProjectCard = memo(function ProjectCard({
               +{project.technologiesUsed.length - 6}
             </Badge>
           )}
-        </div>
-
-        <div className="mt-4 pt-4 border-t border-border shrink-0">
-          <Link
-            aria-label={`Read more about ${project.name}`}
-            className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors body-large font-medium motion-reduce:transition-none z-20 relative"
-            params={{ slug: project.slug }}
-            to="/projects/$slug"
-          >
-            Read More
-            <LuArrowRight
-              aria-hidden="true"
-              className="size-icon-sm hover:translate-x-1 transition-transform motion-reduce:transition-none motion-reduce:hover:translate-x-0"
-            />
-          </Link>
         </div>
       </CardContent>
     </Card>

@@ -12,7 +12,7 @@ export function SitemapSubheading({
   return (
     <h4
       className={cn(
-        'font-medium heading-6 text-muted-foreground uppercase tracking-wider',
+        'font-medium text-h6 font-heading text-muted-foreground uppercase tracking-wider',
         className,
       )}
     >

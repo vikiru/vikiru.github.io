@@ -49,7 +49,7 @@ export function SitemapCard({
         {icon}
       </span>
       <div className="flex-1 min-w-0">
-        <h5 className="heading-5 font-medium text-foreground truncate">
+        <h5 className="text-h5 font-medium font-heading text-foreground truncate">
           {title}
         </h5>
         <p className="font-mono body-small text-muted-foreground truncate mt-0.5">
@@ -63,7 +63,7 @@ export function SitemapCard({
         {icon}
       </span>
       <div className="flex-1 min-w-0">
-        <h5 className="heading-5 font-medium text-foreground truncate">
+        <h5 className="text-h5 font-medium font-heading text-foreground truncate">
           {title}
         </h5>
         <p className="font-mono body-small text-muted-foreground truncate mt-0.5">
