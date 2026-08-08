@@ -10,6 +10,7 @@ import {
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import type { ReactNode } from 'react';
+import { useEffect } from 'react';
 import type { Graph } from 'schema-dts';
 import { projectData } from '@/data/projects';
 import { projectSchemaMap } from '@/lib/seo/projects/projectMap';
@@ -54,14 +55,7 @@ export const Route = createRootRoute({
         rel: 'preload',
         as: 'font',
         type: 'font/woff2',
-        href: '/Lato-Regular.woff2',
-        crossOrigin: 'anonymous',
-      },
-      {
-        rel: 'preload',
-        as: 'font',
-        type: 'font/woff2',
-        href: '/Lato-Bold.woff2',
+        href: '/Lato-VariableFont_wght.woff2',
         crossOrigin: 'anonymous',
       },
       {
@@ -144,6 +138,26 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       projectGraphSchema = projectSchemaMap.get(project.slug.toLowerCase());
     }
   }
+
+  // Sync theme-color meta with active theme
+  useEffect(() => {
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    const updateThemeColor = () => {
+      if (themeColorMeta) {
+        const isDark = document.documentElement.classList.contains('dark');
+        themeColorMeta.setAttribute('content', isDark ? '#1e1e24' : '#f8fafc');
+      }
+    };
+
+    updateThemeColor();
+    const observer = new MutationObserver(updateThemeColor);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <html lang="en" suppressHydrationWarning>

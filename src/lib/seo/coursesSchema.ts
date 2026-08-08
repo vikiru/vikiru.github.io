@@ -1,5 +1,6 @@
 import type { CollectionPage } from 'schema-dts';
 import { personId } from '@/config/schema';
+import { breadcrumbs } from '@/lib/seo/breadcrumbs';
 
 const coursesPageEntity: CollectionPage = {
   '@type': 'CollectionPage',
@@ -17,5 +18,13 @@ export const coursesData = [coursesPageEntity];
 
 export const coursesGraphSchema = {
   '@context': 'https://schema.org',
-  '@graph': [{ '@id': personId }, ...coursesData],
+  '@graph': [
+    { '@id': personId },
+    coursesPageEntity,
+    breadcrumbs([
+      { name: 'Home', url: '/' },
+      { name: 'Education', url: '/#education' },
+      { name: 'Courses', url: '/education/courses' },
+    ]),
+  ],
 };
