@@ -2,7 +2,6 @@ import { useCallback, useRef, useState } from 'react';
 import { contactFormSchema } from '@/schema/contactFormSchema';
 
 type FormField = 'name' | 'email' | 'subject' | 'content';
-type FormStatus = 'idle' | 'pending' | 'success' | 'error';
 
 export function useContact() {
   const [formData, setFormData] = useState({
@@ -17,9 +16,6 @@ export function useContact() {
     subject: '',
     content: '',
   });
-  const [status, setStatus] = useState<FormStatus>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
-  const submittedRef = useRef(false);
   const firstInvalidRef = useRef<HTMLInputElement | HTMLTextAreaElement | null>(
     null,
   );
@@ -72,7 +68,7 @@ export function useContact() {
       const { name, value } = e.target;
       setFormData((prev) => ({ ...prev, [name]: value }));
 
-      if (submittedRef.current || errors[name as FormField]) {
+      if (errors[name as FormField]) {
         validateField(name as FormField, value);
       }
     },
@@ -80,44 +76,13 @@ export function useContact() {
   );
 
   const handleSubmit = useCallback(
-    async (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-
+    (event: React.FormEvent<HTMLFormElement>) => {
       if (!validateAll()) {
+        event.preventDefault();
         firstInvalidRef.current?.focus();
-        return;
       }
-
-      setStatus('pending');
-      setErrorMessage('');
-
-      const form = event.currentTarget;
-      const action = form.action;
-
-      try {
-        const formData = new FormData(form);
-        const response = await fetch(action, {
-          method: 'POST',
-          body: formData,
-        });
-
-        if (response.ok) {
-          setStatus('success');
-          setFormData({ name: '', email: '', subject: '', content: '' });
-        } else {
-          const text = await response.text();
-          throw new Error(text || 'Submission failed');
-        }
-      } catch {
-        setStatus('error');
-        setErrorMessage(
-          'Failed to send message. Please try again or email directly.',
-        );
-      }
-
-      submittedRef.current = true;
     },
-    [formData, validateAll, validateField],
+    [validateAll],
   );
 
   const handleBlur = useCallback(
@@ -128,22 +93,11 @@ export function useContact() {
     [validateField],
   );
 
-  const resetForm = useCallback(() => {
-    setFormData({ name: '', email: '', subject: '', content: '' });
-    setErrors({ name: '', email: '', subject: '', content: '' });
-    setStatus('idle');
-    setErrorMessage('');
-    submittedRef.current = false;
-  }, []);
-
   return {
     formData,
     errors,
-    status,
-    errorMessage,
     handleSubmit,
     handleInputChange,
     handleBlur,
-    resetForm,
   };
 }

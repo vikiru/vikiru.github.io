@@ -8,15 +8,8 @@ import { cn } from '@/lib/utils';
 type FormField = 'name' | 'email' | 'subject' | 'content';
 
 export function ContactForm({ className }: { className?: string }) {
-  const {
-    formData,
-    errors,
-    status,
-    errorMessage,
-    handleSubmit,
-    handleInputChange,
-    handleBlur,
-  } = useContact();
+  const { formData, errors, handleSubmit, handleInputChange, handleBlur } =
+    useContact();
 
   return (
     <form
@@ -113,8 +106,8 @@ export function ContactForm({ className }: { className?: string }) {
         <FieldError errors={[{ message: errors.content }]} id="content-error" />
       </Field>
 
-      <Button className="w-full" disabled={status === 'pending'} type="submit">
-        {status === 'pending' ? 'Sending…' : 'Send Message'}
+      <Button className="w-full" type="submit">
+        Send Message
       </Button>
     </form>
   );
