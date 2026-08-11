@@ -6,12 +6,14 @@ export type AppTheme = Exclude<UserTheme, 'system'>;
 const THEME_KEY = 'ui-theme';
 
 function getSystemTheme(): AppTheme {
+  if (typeof window === 'undefined') return 'light';
   return window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light';
 }
 
 function getStoredTheme(): UserTheme {
+  if (typeof window === 'undefined') return 'system';
   const stored = localStorage.getItem(THEME_KEY) as UserTheme | null;
   return stored && ['light', 'dark', 'system'].includes(stored)
     ? stored
@@ -20,16 +22,15 @@ function getStoredTheme(): UserTheme {
 
 export function useTheme() {
   const [userTheme, setUserTheme] = useState<UserTheme>('system');
+  const [resolvedTheme, setResolvedTheme] = useState<AppTheme>('light');
 
   useEffect(() => {
-    const stored = getStoredTheme();
-    if (stored !== 'system') {
-      setUserTheme(stored);
-    }
+    setUserTheme(getStoredTheme());
   }, []);
 
   useEffect(() => {
     const theme = userTheme === 'system' ? getSystemTheme() : userTheme;
+    setResolvedTheme(theme);
     const root = document.documentElement;
     root.classList.remove('light', 'dark');
     root.classList.add(theme);
@@ -41,12 +42,11 @@ export function useTheme() {
 
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handler = () => {
-      if (userTheme === 'system') {
-        const newTheme = mediaQuery.matches ? 'dark' : 'light';
-        const root = document.documentElement;
-        root.classList.remove('light', 'dark');
-        root.classList.add(newTheme);
-      }
+      const theme = mediaQuery.matches ? 'dark' : 'light';
+      setResolvedTheme(theme);
+      const root = document.documentElement;
+      root.classList.remove('light', 'dark');
+      root.classList.add(theme);
     };
 
     mediaQuery.addEventListener('change', handler);
@@ -62,12 +62,10 @@ export function useTheme() {
     });
   }, []);
 
-  const theme = userTheme === 'system' ? getSystemTheme() : userTheme;
-
   return {
     userTheme,
     setUserTheme,
     toggleTheme,
-    isDark: theme === 'dark',
+    isDark: resolvedTheme === 'dark',
   };
 }

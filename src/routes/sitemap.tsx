@@ -15,7 +15,6 @@ const metadata = {
 };
 
 export const Route = createFileRoute('/sitemap')({
-  ssr: false,
   head: () => ({
     meta: [
       { title: metadata.title },
