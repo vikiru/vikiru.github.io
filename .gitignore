@@ -3,6 +3,7 @@ todos.md
 .vercel
 .output
 build/
+*.md
 
 # Logs
 logs

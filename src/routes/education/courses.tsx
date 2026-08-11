@@ -15,7 +15,6 @@ const metadata = {
 };
 
 export const Route = createFileRoute('/education/courses')({
-  ssr: false,
   head: () => ({
     meta: [
       { title: metadata.title },

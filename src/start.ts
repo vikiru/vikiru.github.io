@@ -1,5 +1,5 @@
 export const startInstance = {
   getOptions: async () => ({
-    defaultSsr: false,
+    defaultSsr: true,
   }),
 };
