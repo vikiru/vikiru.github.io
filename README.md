@@ -44,7 +44,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 #### 💡 Skills
 
 - **Languages**: Java, Python, HTML, CSS, JavaScript, TypeScript
-- **Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Next.js, Django, Flask
+* **Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Next.js, Django, Flask
 - **Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
 - **Tools**: Maven, Node.js, npm, pip, git, GitHub, GitHub Desktop, Postman
 - **Database**: PostgreSQL, MySQL, SQLite, MongoDB, Prisma, Drizzle, Sequelize, Mongoose
@@ -78,7 +78,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 - **Kelbrum | Anime Recommendation System**
 
-    - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
+- **Technologies Used**: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
     - [GitHub Repo](https://github.com/vikiru/kelbrum)
     - [Project Showcase](https://vikiru.vercel.app/projects/Kelbrum)
 
@@ -183,7 +183,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 ## 🛠️ Tech Stack
 
-**Frontend**: [React](https://react.dev/), [React Router](https://reactrouter.com/en/main), [Zod](https://zod.dev/), [TailwindCSS](https://tailwindcss.com/)
+**Frontend**: [React](https://react.dev/), [TanStack Start](https://tanstack.com/start/latest), [Zod](https://zod.dev/), [TailwindCSS](https://tailwindcss.com/)
 
 **Hosting**: [Vercel](https://vercel.com/)
 
@@ -192,9 +192,6 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 **Dev Tools**:
 
 - **Linting/Formatting**: [Biome.js](https://biomejs.dev/)
-- **Code Time Tracking**: [WakaTime](https://wakatime.com/).
-- **Design**: [Figma](https://www.figma.com/) - initial design mockup files can be seen [here](https://www.figma.com/file/eFWKPcabJAf7FLOdOXd5d6/Portfolio-Website?type=design&t=HThRE3vIBx3VTIwe-6).
-- **Analytics**: [Google Analytics](https://marketingplatform.google.com/about/analytics/).
 - **Contact Form Backend**: [Kwes Forms](https://kwesforms.com/).
 
 ## 📝 Prerequisites
