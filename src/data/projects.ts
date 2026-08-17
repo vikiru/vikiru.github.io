@@ -7,6 +7,44 @@ type ProjectData = {
 const projectData: ProjectData = {
   projects: [
     {
+      slug: 'wordapp',
+      name: 'Wordapp',
+      description:
+        'An AI-powered word of the day web app, powered by Gemini AI.',
+      startDate: 'Aug 2026',
+      endDate: 'Aug 2026',
+      technologiesUsed: [
+        'TypeScript',
+        'Python',
+        'Astro',
+        'Tailwind CSS',
+        'Starwind UI',
+        'Gemini AI',
+        'MongoDB',
+        'FlexSearch',
+        'Zod',
+        'Pydantic',
+        'Polars',
+        'GitHub Actions',
+      ],
+      featured: false,
+      hidden: false,
+      contributors: 'This project was completed individually',
+      githubUrl: 'https://github.com/vikiru/wordapp',
+      documentationUrl: '',
+      projectPageUrl: '/projects/Wordapp',
+      videoPath: '',
+      accomplishments: [
+        'Developed a Python-based word curation pipeline that reduced an initial corpus of over 235,000 words to roughly 500 high-quality vocabulary candidates using lexical, semantic, and frequency-based filtering',
+        'Optimized the curation pipeline from roughly 200-240 seconds to around 3 seconds by caching expensive lemmatization, frequency, and Open English WordNet lookups',
+        'Developed a Gemini-powered generation pipeline to produce structured vocabulary metadata with schema validation and reusable generation workflows',
+        'Automated daily word generation and MongoDB persistence with GitHub Actions, including scheduled generation and support for generating words for any provided date',
+        'Integrated FlexSearch with a pre-build indexing step to provide fast client-side search across generated vocabulary data',
+        'Built the frontend with Astro, Tailwind CSS, and Starwind UI, including daily word, archive, glossary, word detail pages, text-to-speech pronounciation of words, RSS feeds, and SEO functionality',
+        'Leveraged spec-driven development with OpenSpec to define feature requirements, acceptance criteria, and implementation tasks before development, providing traceability from specification through implementation',
+      ],
+    },
+    {
       slug: 'Noterra',
       name: 'Noterra',
       description:

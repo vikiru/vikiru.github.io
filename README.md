@@ -100,6 +100,12 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 <details closed>
 <summary>View</summary>
 
+- **Wordapp | AI-Powered Word of the Day Web App**
+    - Technologies Used: `TypeScript`, `Python`, `Astro`, `Tailwind CSS`, `Starwind UI`, `Gemini AI`, `MongoDB`, `FlexSearch`, `Zod`, `Pydantic`, `Polars`, `GitHub Actions`
+    - [GitHub Repo](https://github.com/vikiru/wordapp)
+    - [Project Showcase](https://vikiru.vercel.app/projects/wordapp)
+
+
 - **RESTasaurus | Dinosaur REST API**
 
     - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
