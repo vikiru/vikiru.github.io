@@ -1,35 +1,32 @@
-import { useContact } from '@/hooks/useContact';
-import { Button } from '@/lib/components/ui/button';
-import { Field, FieldError, FieldLabel } from '@/lib/components/ui/field';
-import { Input } from '@/lib/components/ui/input';
-import { Textarea } from '@/lib/components/ui/textarea';
-import { cn } from '@/lib/utils';
-
-type FormField = 'name' | 'email' | 'subject' | 'content';
+import { useContact } from "@/hooks/useContact";
+import { Button } from "@/lib/components/ui/button";
+import { Field, FieldError, FieldLabel } from "@/lib/components/ui/field";
+import { Input } from "@/lib/components/ui/input";
+import { Textarea } from "@/lib/components/ui/textarea";
+import { cn } from "@/lib/utils";
 
 export function ContactForm({ className }: { className?: string }) {
-  const { formData, errors, handleSubmit, handleInputChange, handleBlur } =
-    useContact();
+  const { formData, errors, handleSubmit, handleInputChange, handleBlur } = useContact();
 
   return (
     <form
       action="https://kwesforms.com/api/f/OcdSwYrzmf5Uw6fLcCC1"
-      className={cn('space-y-5', className)}
+      className={cn("space-y-5", className)}
       method="POST"
       name="contact-form"
       onSubmit={handleSubmit}
     >
       <Field data-invalid={!!errors.name}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold tracking-wider text-muted-foreground uppercase"
           htmlFor="name"
         >
           Name
         </FieldLabel>
         <Input
-          aria-describedby={errors.name ? 'name-error' : undefined}
+          aria-describedby={errors.name ? "name-error" : undefined}
           aria-invalid={!!errors.name}
-          className="bg-background/50 border-white/10"
+          className="border-white/10 bg-background/50"
           id="name"
           name="name"
           onBlur={handleBlur}
@@ -42,15 +39,15 @@ export function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.email}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold tracking-wider text-muted-foreground uppercase"
           htmlFor="email"
         >
           Email
         </FieldLabel>
         <Input
-          aria-describedby={errors.email ? 'email-error' : undefined}
+          aria-describedby={errors.email ? "email-error" : undefined}
           aria-invalid={!!errors.email}
-          className="bg-background/50 border-white/10"
+          className="border-white/10 bg-background/50"
           id="email"
           name="email"
           onBlur={handleBlur}
@@ -64,15 +61,15 @@ export function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.subject}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold tracking-wider text-muted-foreground uppercase"
           htmlFor="subject"
         >
           Subject
         </FieldLabel>
         <Input
-          aria-describedby={errors.subject ? 'subject-error' : undefined}
+          aria-describedby={errors.subject ? "subject-error" : undefined}
           aria-invalid={!!errors.subject}
-          className="bg-background/50 border-white/10"
+          className="border-white/10 bg-background/50"
           id="subject"
           name="subject"
           onBlur={handleBlur}
@@ -85,15 +82,15 @@ export function ContactForm({ className }: { className?: string }) {
 
       <Field data-invalid={!!errors.content}>
         <FieldLabel
-          className="xs:body-small body-base font-semibold text-muted-foreground uppercase tracking-wider"
+          className="xs:body-small body-base font-semibold tracking-wider text-muted-foreground uppercase"
           htmlFor="content"
         >
           Message
         </FieldLabel>
         <Textarea
-          aria-describedby={errors.content ? 'content-error' : undefined}
+          aria-describedby={errors.content ? "content-error" : undefined}
           aria-invalid={!!errors.content}
-          className="bg-background/50 border-white/10 resize-none h-33"
+          className="h-33 resize-none border-white/10 bg-background/50"
           cols={50}
           id="content"
           name="content"

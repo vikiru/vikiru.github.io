@@ -1,7 +1,7 @@
-import { skillsData } from '@/data/skills';
-import { Badge } from '@/lib/components/ui/badge';
-import { Card, CardContent } from '@/lib/components/ui/card';
-import { cn } from '@/lib/utils';
+import { skillsData } from "@/data/skills";
+import { Badge } from "@/lib/components/ui/badge";
+import { Card, CardContent } from "@/lib/components/ui/card";
+import { cn } from "@/lib/utils";
 
 interface SkillsProps {
   className?: string;
@@ -13,29 +13,25 @@ interface SkillCategoryProps {
 }
 
 const categories = [
-  { title: 'Languages', data: skillsData.languages.data },
-  { title: 'Frameworks', data: skillsData.frameworks.data },
-  { title: 'Libraries', data: skillsData.libraries.data },
-  { title: 'Database', data: skillsData.database.data },
-  { title: 'Tools', data: skillsData.tools.data },
-  { title: 'DevOps', data: skillsData.devops.data },
-  { title: 'Hosting', data: skillsData.hosting.data },
-  { title: 'Operating Systems', data: skillsData.os.data },
+  { title: "Languages", data: skillsData.languages.data },
+  { title: "Frameworks", data: skillsData.frameworks.data },
+  { title: "Libraries", data: skillsData.libraries.data },
+  { title: "Database", data: skillsData.database.data },
+  { title: "Tools", data: skillsData.tools.data },
+  { title: "DevOps", data: skillsData.devops.data },
+  { title: "Hosting", data: skillsData.hosting.data },
+  { title: "Operating Systems", data: skillsData.os.data },
 ];
 
 function SkillCategory({ title, skills }: SkillCategoryProps) {
   return (
     <div>
-      <h3 className="text-h5 font-semibold font-heading text-muted-foreground uppercase tracking-wider mb-4 border-b border-border pb-2">
+      <h3 className="mb-4 border-b border-border pb-2 font-heading text-h5 font-semibold tracking-wider text-muted-foreground uppercase">
         {title}
       </h3>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
-          <Badge
-            className="body-base font-normal cursor-default"
-            key={skill}
-            variant="secondary"
-          >
+          <Badge className="body-base cursor-default font-normal" key={skill} variant="secondary">
             {skill}
           </Badge>
         ))}
@@ -46,27 +42,20 @@ function SkillCategory({ title, skills }: SkillCategoryProps) {
 
 export function Skills({ className }: SkillsProps) {
   return (
-    <section
-      className={cn('py-20 relative scroll-mt-20', className)}
-      id="skills"
-    >
+    <section className={cn("relative scroll-mt-20 py-20", className)} id="skills">
       <div className="px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-h3 sm:text-h2  font-bold mb-4 flex items-center justify-center gap-3 font-heading">
-            <span className="w-8 h-1 bg-primary rounded-full" />
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 flex  items-center justify-center gap-3 font-heading text-h3 font-bold sm:text-h2">
+            <span className="h-1 w-8 rounded-full bg-primary" />
             Skills
-            <span className="w-8 h-1 bg-primary rounded-full" />
+            <span className="h-1 w-8 rounded-full bg-primary" />
           </h2>
         </div>
         <Card>
           <CardContent className="p-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
               {categories.map((category) => (
-                <SkillCategory
-                  key={category.title}
-                  skills={category.data}
-                  title={category.title}
-                />
+                <SkillCategory key={category.title} skills={category.data} title={category.title} />
               ))}
             </div>
           </CardContent>

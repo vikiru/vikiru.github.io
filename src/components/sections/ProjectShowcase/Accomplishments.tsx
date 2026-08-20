@@ -1,4 +1,4 @@
-import type { Project } from '@/types/Project';
+import type { Project } from "@/types/Project";
 
 interface AccomplishmentsProps {
   project: Project;
@@ -10,18 +10,18 @@ export function Accomplishments({ project }: AccomplishmentsProps) {
   }
 
   return (
-    <section className="px-4 md:px-10 flex justify-center py-20">
+    <section className="flex justify-center px-4 py-20 md:px-10">
       <div className="w-full max-w-8xl">
-        <header className="text-center mb-10">
-          <h3 className="text-h3 font-bold tracking-tight font-heading text-foreground mb-3">
+        <header className="mb-10 text-center">
+          <h3 className="mb-3 font-heading text-h3 font-bold tracking-tight text-foreground">
             Key Accomplishments
           </h3>
-          <div className="w-16 h-1 bg-primary/30 mx-auto rounded-full" />
+          <div className="mx-auto h-1 w-16 rounded-full bg-primary/30" />
         </header>
-        <ul className="list-disc list-inside marker:text-primary space-y-4 pl-4">
+        <ul className="list-inside list-disc space-y-4 pl-4 marker:text-primary">
           {project.accomplishments.map((accomplishment) => (
             <li key={`${project.slug}-accomplishment-${accomplishment}`}>
-              <span className="body-large text-muted-foreground leading-relaxed">
+              <span className="body-large leading-relaxed text-muted-foreground">
                 {accomplishment}.
               </span>
             </li>

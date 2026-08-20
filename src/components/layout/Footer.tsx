@@ -1,28 +1,27 @@
-import { Link } from '@tanstack/react-router';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
-import { Logo } from '@/components/ui/Logo';
+import { Link } from "@tanstack/react-router";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
   return (
-    <footer className="mt-auto w-full bg-background border-t border-border">
-      <div className="px-6 py-8 lg:py-12 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 3xl:gap-10 4xl:gap-12">
+    <footer className="mt-auto w-full border-t border-border bg-background">
+      <div className="w-full px-6 py-8 lg:py-12">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8 3xl:gap-10 4xl:gap-12">
           <div className="flex flex-col items-start text-left">
             <Logo
-              className="mb-4 hover:text-primary transition-colors duration-200"
+              className="mb-4 transition-colors duration-200 hover:text-primary"
               variant="full"
             />
-            <p className="text-muted-foreground body-base leading-relaxed">
-              Software developer with a passion for software and web
-              development, committed to learning and contributing to meaningful
-              projects.
+            <p className="body-base leading-relaxed text-muted-foreground">
+              Software developer with a passion for software and web development, committed to
+              learning and contributing to meaningful projects.
             </p>
           </div>
 
           <div className="flex flex-col items-start lg:items-end">
             <section aria-labelledby="connect-heading">
               <h3
-                className="text-h5 font-heading font-semibold text-foreground mb-4 uppercase tracking-wider"
+                className="mb-4 font-heading text-h5 font-semibold tracking-wider text-foreground uppercase"
                 id="connect-heading"
               >
                 Connect
@@ -30,7 +29,7 @@ export function Footer() {
               <div className="flex gap-4">
                 <a
                   aria-label="Visit GitHub profile"
-                  className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                  className="bg-card/50 rounded-xl border border-border/50 p-3 text-muted-foreground backdrop-blur-sm transition-colors duration-200 hover:border-primary/50 hover:text-primary focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:outline-none motion-reduce:transition-none lg:p-5"
                   href="https://github.com/vikiru"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -39,7 +38,7 @@ export function Footer() {
                 </a>
                 <a
                   aria-label="Visit LinkedIn profile"
-                  className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                  className="bg-card/50 rounded-xl border border-border/50 p-3 text-muted-foreground backdrop-blur-sm transition-colors duration-200 hover:border-primary/50 hover:text-primary focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:outline-none motion-reduce:transition-none lg:p-5"
                   href="https://linkedin.com/in/viskirubakaran"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -48,7 +47,7 @@ export function Footer() {
                 </a>
                 <Link
                   aria-label="Send an email"
-                  className="p-3 lg:p-5 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+                  className="bg-card/50 rounded-xl border border-border/50 p-3 text-muted-foreground backdrop-blur-sm transition-colors duration-200 hover:border-primary/50 hover:text-primary focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:outline-none motion-reduce:transition-none lg:p-5"
                   hash="contact"
                   to="/"
                 >
@@ -60,19 +59,18 @@ export function Footer() {
         </div>
 
         <div className="mt-4 pt-6">
-          <div className="flex flex-col md:flex-row items-start gap-4 w-full lg:items-end lg:justify-end">
+          <div className="flex w-full flex-col items-start gap-4 md:flex-row lg:items-end lg:justify-end">
             <p className="body-base text-muted-foreground">
-              &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights reserved.
             </p>
           </div>
           <nav
             aria-label="Footer"
-            className="flex justify-start items-start w-full lg:justify-end lg:items-end my-4"
+            className="my-4 flex w-full items-start justify-start lg:items-end lg:justify-end"
           >
             <Link
               aria-label="View site sitemap"
-              className="text-left body-base text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 motion-reduce:transition-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
+              className="body-base text-left text-muted-foreground transition-colors duration-200 hover:text-primary hover:underline focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:outline-none motion-reduce:transition-none"
               to="/sitemap"
             >
               Sitemap

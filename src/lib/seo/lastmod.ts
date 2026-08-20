@@ -1,5 +1,5 @@
-import { siteConfig } from '../../config/site';
-import { projectData } from '../../data/projects';
+import { siteConfig } from "../../config/site";
+import { projectData } from "../../data/projects";
 
 const monthNumbers: Record<string, number> = {
   jan: 1,
@@ -22,9 +22,7 @@ function lastDayOfMonth(value: string): string | undefined {
   if (!match) return undefined;
   const month = monthNumbers[match[1].toLowerCase()];
   if (!month) return undefined;
-  return new Date(Date.UTC(Number(match[2]), month, 0))
-    .toISOString()
-    .slice(0, 10);
+  return new Date(Date.UTC(Number(match[2]), month, 0)).toISOString().slice(0, 10);
 }
 
 export function lastmodFor(path: string): string {
@@ -32,9 +30,7 @@ export function lastmodFor(path: string): string {
     return item.projectPageUrl === path || `/projects/${item.slug}` === path;
   });
   if (project) {
-    return (
-      lastDayOfMonth(project.endDate) ?? siteConfig.site.contentLastModified
-    );
+    return lastDayOfMonth(project.endDate) ?? siteConfig.site.contentLastModified;
   }
   return siteConfig.site.contentLastModified;
 }

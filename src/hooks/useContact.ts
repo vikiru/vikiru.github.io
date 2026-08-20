@@ -1,24 +1,22 @@
-import { useCallback, useRef, useState } from 'react';
-import { contactFormSchema } from '@/schema/contactFormSchema';
+import { useCallback, useRef, useState } from "react";
+import { contactFormSchema } from "@/schema/contactFormSchema";
 
-type FormField = 'name' | 'email' | 'subject' | 'content';
+type FormField = "name" | "email" | "subject" | "content";
 
 export function useContact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    content: '',
+    name: "",
+    email: "",
+    subject: "",
+    content: "",
   });
   const [errors, setErrors] = useState<Record<FormField, string>>({
-    name: '',
-    email: '',
-    subject: '',
-    content: '',
+    name: "",
+    email: "",
+    subject: "",
+    content: "",
   });
-  const firstInvalidRef = useRef<HTMLInputElement | HTMLTextAreaElement | null>(
-    null,
-  );
+  const firstInvalidRef = useRef<HTMLInputElement | HTMLTextAreaElement | null>(null);
 
   const validateField = useCallback((name: FormField, value: string) => {
     try {
@@ -26,12 +24,12 @@ export function useContact() {
         [name]: true,
       } as Record<FormField, true>);
       fieldSchema.parse({ [name]: value });
-      setErrors((prev) => ({ ...prev, [name]: '' }));
+      setErrors((prev) => ({ ...prev, [name]: "" }));
       return true;
     } catch (e: unknown) {
-      if (e && typeof e === 'object' && 'issues' in e) {
+      if (e && typeof e === "object" && "issues" in e) {
         const zodError = e as { issues: Array<{ message: string }> };
-        const error = zodError.issues[0]?.message || 'Invalid value';
+        const error = zodError.issues[0]?.message || "Invalid value";
         setErrors((prev) => ({ ...prev, [name]: error }));
       }
       return false;
@@ -44,10 +42,7 @@ export function useContact() {
 
     (Object.keys(formData) as FormField[]).forEach((field) => {
       const value = formData[field];
-      const input = document.getElementById(field) as
-        | HTMLInputElement
-        | HTMLTextAreaElement
-        | null;
+      const input = document.getElementById(field) as HTMLInputElement | HTMLTextAreaElement | null;
       if (!validateField(field, value)) {
         allValid = false;
         if (!firstInvalid && input) {

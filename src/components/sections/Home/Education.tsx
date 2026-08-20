@@ -1,8 +1,8 @@
-import { Link } from '@tanstack/react-router';
-import { LuArrowRight, LuAward, LuLink, LuSchool } from 'react-icons/lu';
-import { educationData } from '@/data/education';
-import { Card, CardContent } from '@/lib/components/ui/card';
-import { cn } from '@/lib/utils';
+import { Link } from "@tanstack/react-router";
+import { LuArrowRight, LuAward, LuLink, LuSchool } from "react-icons/lu";
+import { educationData } from "@/data/education";
+import { Card, CardContent } from "@/lib/components/ui/card";
+import { cn } from "@/lib/utils";
 
 interface EducationProps {
   className?: string;
@@ -20,82 +20,70 @@ export function Education({ className }: EducationProps) {
   } = educationData;
 
   return (
-    <section className={cn('py-20 scroll-mt-20', className)} id="education">
+    <section className={cn("scroll-mt-20 py-20", className)} id="education">
       <div className="px-6">
         <div className="mb-12">
-          <h2 className="text-h3 sm:text-h2 font-bold mb-4 flex items-center gap-3 font-heading">
-            <span className="w-8 h-1 bg-primary rounded-full" />
+          <h2 className="mb-4 flex items-center gap-3 font-heading text-h3 font-bold sm:text-h2">
+            <span className="h-1 w-8 rounded-full bg-primary" />
             Education
           </h2>
         </div>
-        <div className="grid lg:grid-cols-2 gap-10">
-          <Card className="hover:border-primary/30 transition-all duration-300 motion-reduce:transition-none">
-            <CardContent className="p-6 flex flex-col h-full">
-              <div className="flex items-start justify-between mb-4">
-                <div className="bg-primary/20 p-3 rounded-lg text-primary">
+        <div className="grid gap-10 lg:grid-cols-2">
+          <Card className="transition-all duration-300 hover:border-primary/30 motion-reduce:transition-none">
+            <CardContent className="flex h-full flex-col p-6">
+              <div className="mb-4 flex items-start justify-between">
+                <div className="rounded-lg bg-primary/20 p-3 text-primary">
                   <LuSchool aria-hidden="true" className="text-h3" />
                 </div>
-                <span className="body-small font-mono text-muted-foreground border border-border px-3 py-1 rounded-full">
+                <span className="body-small rounded-full border border-border px-3 py-1 font-mono text-muted-foreground">
                   {enrollmentStart} - {enrollmentEnd}
                 </span>
               </div>
-              <h3 className="text-h4 sm:text-h3 font-bold text-foreground mb-2">
+              <h3 className="mb-2 text-h4 font-bold text-foreground sm:text-h3">
                 {universityName}
               </h3>
-              <p className="text-muted-foreground leading-relaxed mb-8 grow italic body-large">
+              <p className="body-large mb-8 grow leading-relaxed text-muted-foreground italic">
                 {degree} - {acronym}, {degreeProgram}
               </p>
-              <div className="mt-auto pt-6 border-t border-border">
+              <div className="mt-auto border-t border-border pt-6">
                 <Link
-                  className="inline-flex items-center gap-2 text-primary hover:text-primary transition-colors group/link body-large font-medium motion-reduce:transition-none"
+                  className="group/link body-large inline-flex items-center gap-2 font-medium text-primary transition-colors hover:text-primary motion-reduce:transition-none"
                   to="/education/courses"
                 >
                   View Courses
                   <LuArrowRight
                     aria-hidden="true"
-                    className="text-sm group-hover/link:translate-x-1 transition-transform motion-reduce:transition-none motion-reduce:group-hover/link:translate-x-0"
+                    className="text-sm transition-transform group-hover/link:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover/link:translate-x-0"
                   />
                 </Link>
               </div>
             </CardContent>
           </Card>
-          <Card className="hover:border-primary/30 transition-all duration-300 motion-reduce:transition-none">
+          <Card className="transition-all duration-300 hover:border-primary/30 motion-reduce:transition-none">
             <CardContent className="p-6">
-              <div className="flex items-start justify-between mb-4">
-                <div className="bg-primary/10 p-3 rounded-lg text-primary">
+              <div className="mb-4 flex items-start justify-between">
+                <div className="rounded-lg bg-primary/10 p-3 text-primary">
                   <LuAward aria-hidden="true" className="text-h3" />
                 </div>
-                <span className="body-small font-mono text-muted-foreground border border-border px-3 py-1 rounded-full">
+                <span className="body-small rounded-full border border-border px-3 py-1 font-mono text-muted-foreground">
                   2023
                 </span>
               </div>
-              <h3 className="text-h4 sm:text-h3 font-bold text-foreground mb-2">
-                Certificates
-              </h3>
-              <p className="text-h5 font-medium text-muted-foreground mb-6">
-                Coursera
-              </p>
+              <h3 className="mb-2 text-h4 font-bold text-foreground sm:text-h3">Certificates</h3>
+              <p className="mb-6 text-h5 font-medium text-muted-foreground">Coursera</p>
               <ul className="space-y-4 text-muted-foreground">
                 {certificates.map((cert) => (
-                  <li
-                    className="group cursor-pointer"
-                    key={cert.certificationName}
-                  >
+                  <li className="group cursor-pointer" key={cert.certificationName}>
                     <a
                       aria-label={`View certificate for ${cert.certificationName}`}
-                      className="flex items-center gap-3 pb-4 border-b border-border last:border-0 last:pb-0 hover:text-primary transition-colors motion-reduce:transition-none"
+                      className="flex items-center gap-3 border-b border-border pb-4 transition-colors last:border-0 last:pb-0 hover:text-primary motion-reduce:transition-none"
                       href={cert.certificateLink}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span className="body-large">
-                        {cert.certificationName}
-                      </span>
-                      <span className="ml-auto text-muted-foreground group-hover:text-primary transition-colors p-3 lg:p-5 rounded-full motion-reduce:transition-none">
-                        <LuLink
-                          aria-hidden="true"
-                          className="size-icon-base block"
-                        />
+                      <span className="body-large">{cert.certificationName}</span>
+                      <span className="ml-auto rounded-full p-3 text-muted-foreground transition-colors group-hover:text-primary motion-reduce:transition-none lg:p-5">
+                        <LuLink aria-hidden="true" className="block size-icon-base" />
                       </span>
                     </a>
                   </li>

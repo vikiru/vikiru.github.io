@@ -1,9 +1,9 @@
-import { Link } from '@tanstack/react-router';
-import { memo } from 'react';
-import { FaBook, FaGithub } from 'react-icons/fa6';
-import { Badge } from '@/lib/components/ui/badge';
-import { Card, CardContent } from '@/lib/components/ui/card';
-import { cn } from '@/lib/utils';
+import { Link } from "@tanstack/react-router";
+import { memo } from "react";
+import { FaBook, FaGithub } from "react-icons/fa6";
+import { Badge } from "@/lib/components/ui/badge";
+import { Card, CardContent } from "@/lib/components/ui/card";
+import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
   project: {
@@ -20,16 +20,13 @@ interface ProjectCardProps {
   className?: string;
 }
 
-export const ProjectCard = memo(function ProjectCard({
-  project,
-  className,
-}: ProjectCardProps) {
+export const ProjectCard = memo(function ProjectCard({ project, className }: ProjectCardProps) {
   return (
     <Card
       className={cn(
-        'group hover:bg-primary/5 relative flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:translate-y-0 cursor-pointer',
-        'hover:-translate-y-1',
-        'hover:border-primary/30',
+        "group relative flex h-full cursor-pointer flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:bg-primary/5 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0",
+        "hover:-translate-y-1",
+        "hover:border-primary/30",
         className,
       )}
       id={project.name}
@@ -39,16 +36,16 @@ export const ProjectCard = memo(function ProjectCard({
         className="absolute inset-0 z-10"
         to={project.projectPageUrl}
       />
-      <CardContent className="p-6 flex flex-col h-full">
-        <div className="flex items-center justify-between gap-4 shrink-0">
-          <h3 className="text-h5 font-bold text-foreground hover:text-primary transition-colors motion-reduce:transition-none truncate">
+      <CardContent className="flex h-full flex-col p-6">
+        <div className="flex shrink-0 items-center justify-between gap-4">
+          <h3 className="truncate text-h5 font-bold text-foreground transition-colors hover:text-primary motion-reduce:transition-none">
             {project.name}
           </h3>
-          <div className="flex items-center gap-1 shrink-0">
+          <div className="flex shrink-0 items-center gap-1">
             {project.githubUrl && (
               <a
                 aria-label={`View source code for ${project.name}`}
-                className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none z-20 relative"
+                className="relative z-20 rounded-md p-2 text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none"
                 href={project.githubUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -59,7 +56,7 @@ export const ProjectCard = memo(function ProjectCard({
             {project.documentationUrl && (
               <a
                 aria-label={`View documentation for ${project.name}`}
-                className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none z-20 relative"
+                className="relative z-20 rounded-md p-2 text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none"
                 href={project.documentationUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -70,17 +67,13 @@ export const ProjectCard = memo(function ProjectCard({
           </div>
         </div>
 
-        <p className="text-muted-foreground leading-relaxed body-base mt-4 flex-1 max-w-[--container-measure] text-wrap-pretty">
+        <p className="body-base text-wrap-pretty mt-4 max-w-[--container-measure] flex-1 leading-relaxed text-muted-foreground">
           {project.description}
         </p>
 
-        <div className="flex flex-wrap gap-1.5 mt-6 shrink-0">
+        <div className="mt-6 flex shrink-0 flex-wrap gap-1.5">
           {project.technologiesUsed.slice(0, 6).map((tech) => (
-            <Badge
-              className="body-base font-normal"
-              key={tech}
-              variant="secondary"
-            >
+            <Badge className="body-base font-normal" key={tech} variant="secondary">
               {tech}
             </Badge>
           ))}

@@ -1,4 +1,4 @@
-import type { Project } from '@/types/Project';
+import type { Project } from "@/types/Project";
 
 interface ProjectMediaProps {
   project: Project;
@@ -6,7 +6,7 @@ interface ProjectMediaProps {
 
 export function ProjectMedia({ project }: ProjectMediaProps) {
   return (
-    <section className="px-4 md:px-10 flex justify-center py-20">
+    <section className="flex justify-center px-4 py-20 md:px-10">
       <div className="w-full max-w-8xl">
         {project.videoPath ? (
           <video
@@ -19,10 +19,8 @@ export function ProjectMedia({ project }: ProjectMediaProps) {
             src={project.videoPath}
           />
         ) : (
-          <div className="w-full aspect-video flex items-center justify-center rounded-2xl border border-border bg-muted">
-            <p className="body-small text-muted-foreground">
-              No video available
-            </p>
+          <div className="flex aspect-video w-full items-center justify-center rounded-2xl border border-border bg-muted">
+            <p className="body-small text-muted-foreground">No video available</p>
           </div>
         )}
       </div>

@@ -1,47 +1,40 @@
-import { createElement } from 'react';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
-import {
-  LuBook,
-  LuFolder,
-  LuGraduationCap,
-  LuHouse,
-  LuUser,
-  LuZap,
-} from 'react-icons/lu';
-import { Layout } from '@/components/layout/Layout';
-import { SitemapCard } from '@/components/sections/Sitemap/SitemapCard';
-import { SitemapGrid } from '@/components/sections/Sitemap/SitemapGrid';
-import { SitemapSection } from '@/components/sections/Sitemap/SitemapSection';
-import { SitemapSubheading } from '@/components/sections/Sitemap/SitemapSubheading';
-import { featuredProjects, otherProjects } from '@/data/projects';
+import { createElement } from "react";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { LuBook, LuFolder, LuGraduationCap, LuHouse, LuUser, LuZap } from "react-icons/lu";
+import { Layout } from "@/components/layout/Layout";
+import { SitemapCard } from "@/components/sections/Sitemap/SitemapCard";
+import { SitemapGrid } from "@/components/sections/Sitemap/SitemapGrid";
+import { SitemapSection } from "@/components/sections/Sitemap/SitemapSection";
+import { SitemapSubheading } from "@/components/sections/Sitemap/SitemapSubheading";
+import { featuredProjects, otherProjects } from "@/data/projects";
 
 const sitemapData = {
   core: [
-    { title: 'Home', path: '/', hash: 'hero', icon: LuHouse },
-    { title: 'About Me', path: '/', hash: 'about', icon: LuUser },
-    { title: 'Skills', path: '/', hash: 'skills', icon: LuZap },
-    { title: 'Education', path: '/', hash: 'education', icon: LuGraduationCap },
-    { title: 'Courses', path: '/education/courses', hash: '', icon: LuBook },
-    { title: 'Projects', path: '/', hash: 'projects', icon: LuFolder },
-    { title: 'Contact', path: '/', hash: 'contact', icon: FaEnvelope },
+    { title: "Home", path: "/", hash: "hero", icon: LuHouse },
+    { title: "About Me", path: "/", hash: "about", icon: LuUser },
+    { title: "Skills", path: "/", hash: "skills", icon: LuZap },
+    { title: "Education", path: "/", hash: "education", icon: LuGraduationCap },
+    { title: "Courses", path: "/education/courses", hash: "", icon: LuBook },
+    { title: "Projects", path: "/", hash: "projects", icon: LuFolder },
+    { title: "Contact", path: "/", hash: "contact", icon: FaEnvelope },
   ],
   socials: [
     {
-      title: 'GitHub',
-      path: 'https://github.com/vikiru',
+      title: "GitHub",
+      path: "https://github.com/vikiru",
       icon: FaGithub,
-      label: '@vikiru',
+      label: "@vikiru",
     },
     {
-      title: 'LinkedIn',
-      path: 'https://linkedin.com/in/viskirubakaran',
+      title: "LinkedIn",
+      path: "https://linkedin.com/in/viskirubakaran",
       icon: FaLinkedin,
-      label: 'in/viskirubakaran',
+      label: "in/viskirubakaran",
     },
     {
-      title: 'Email',
-      path: '/',
-      hash: 'contact',
+      title: "Email",
+      path: "/",
+      hash: "contact",
       icon: FaEnvelope,
     },
   ],
@@ -50,15 +43,13 @@ const sitemapData = {
 export function SitemapPage() {
   return (
     <Layout>
-      <div className="flex flex-1 py-10 px-4 overflow-x-hidden">
-        <div className="layout-content-container flex flex-col w-full flex-1 gap-8">
+      <div className="flex flex-1 overflow-x-hidden px-4 py-10">
+        <div className="layout-content-container flex w-full flex-1 flex-col gap-8">
           <header className="flex flex-col gap-3 pb-4">
-            <h1 className="text-h1 font-bold font-heading text-foreground">
-              Sitemap
-            </h1>
+            <h1 className="font-heading text-h1 font-bold text-foreground">Sitemap</h1>
             <p className="body-large text-muted-foreground">
-              Visual overview of my portfolio website structure and all
-              available links within the site and any relevant external links.
+              Visual overview of my portfolio website structure and all available links within the
+              site and any relevant external links.
             </p>
           </header>
 
@@ -69,9 +60,9 @@ export function SitemapPage() {
                   <SitemapCard
                     hash={item.hash}
                     href={item.path}
-                    icon={createElement(item.icon, { className: 'size-5' })}
+                    icon={createElement(item.icon, { className: "size-5" })}
                     key={item.hash}
-                    path={item.path !== '/' ? `${item.path}` : item.path}
+                    path={item.path !== "/" ? `${item.path}` : item.path}
                     title={item.title}
                   />
                 ))}
@@ -85,7 +76,7 @@ export function SitemapPage() {
                   {featuredProjects.map((project) => (
                     <SitemapCard
                       href={project.projectPageUrl}
-                      icon={createElement(LuZap, { className: 'size-5' })}
+                      icon={createElement(LuZap, { className: "size-5" })}
                       key={project.slug}
                       path={`/projects/${project.slug}`}
                       title={project.name}
@@ -100,7 +91,7 @@ export function SitemapPage() {
                   {otherProjects.map((project) => (
                     <SitemapCard
                       href={project.projectPageUrl}
-                      icon={createElement(LuFolder, { className: 'size-5' })}
+                      icon={createElement(LuFolder, { className: "size-5" })}
                       key={project.slug}
                       path={`/projects/${project.slug}`}
                       title={project.name}
@@ -115,10 +106,10 @@ export function SitemapPage() {
                 {sitemapData.socials.map((item) => (
                   <SitemapCard
                     href={item.path}
-                    icon={createElement(item.icon, { className: 'size-5' })}
+                    icon={createElement(item.icon, { className: "size-5" })}
                     key={item.title}
                     label={item.label}
-                    path={item.path !== '/' ? `${item.path}` : `/#${item.hash}`}
+                    path={item.path !== "/" ? `${item.path}` : `/#${item.hash}`}
                     title={item.title}
                   />
                 ))}

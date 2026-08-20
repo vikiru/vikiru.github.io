@@ -1,6 +1,6 @@
-import type { ReactNode } from 'react';
-import { Separator } from '@/lib/components/ui/separator';
-import { cn } from '@/lib/utils';
+import type { ReactNode } from "react";
+import { Separator } from "@/lib/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 interface SitemapSectionProps {
   title: string;
@@ -8,15 +8,11 @@ interface SitemapSectionProps {
   className?: string;
 }
 
-export function SitemapSection({
-  title,
-  children,
-  className,
-}: SitemapSectionProps) {
+export function SitemapSection({ title, children, className }: SitemapSectionProps) {
   return (
-    <section className={cn('space-y-4', className)}>
+    <section className={cn("space-y-4", className)}>
       <div className="flex items-center gap-3 md:gap-4">
-        <h2 className="text-h2 font-semibold font-heading text-nav-base tracking-tight whitespace-nowrap">
+        <h2 className="font-heading text-nav-base font-semibold tracking-tight whitespace-nowrap">
           {title}
         </h2>
         <Separator className="hidden sm:block" />

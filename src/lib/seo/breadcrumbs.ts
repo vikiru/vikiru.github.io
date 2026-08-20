@@ -1,5 +1,5 @@
-import type { BreadcrumbList } from 'schema-dts';
-import { siteConfig } from '@/config/site';
+import type { BreadcrumbList } from "schema-dts";
+import { siteConfig } from "@/config/site";
 
 const {
   site: { url: siteUrl },
@@ -12,10 +12,10 @@ export type Breadcrumb = {
 
 export function breadcrumbs(items: Breadcrumb[]): BreadcrumbList {
   return {
-    '@type': 'BreadcrumbList',
+    "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => {
       return {
-        '@type': 'ListItem',
+        "@type": "ListItem",
         position: index + 1,
         name: item.name,
         ...(item.url ? { item: `${siteUrl}${item.url}` } : {}),

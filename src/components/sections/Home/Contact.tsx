@@ -1,16 +1,10 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa6';
-import { ContactForm } from '@/components/forms/ContactForm';
-import { Card, CardContent } from '@/lib/components/ui/card';
-import { cn } from '@/lib/utils';
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { ContactForm } from "@/components/forms/ContactForm";
+import { Card, CardContent } from "@/lib/components/ui/card";
+import { cn } from "@/lib/utils";
 
 function KwesScripts() {
-  return (
-    <script
-      defer
-      src="https://kwesforms.com/v2/kf-script.js"
-      suppressHydrationWarning
-    />
-  );
+  return <script defer src="https://kwesforms.com/v2/kf-script.js" suppressHydrationWarning />;
 }
 
 interface ContactProps {
@@ -19,32 +13,31 @@ interface ContactProps {
 
 export function Contact({ className }: ContactProps) {
   return (
-    <section className={cn('py-20 scroll-mt-20', className)} id="contact">
-      <div className="max-w-8xl mx-auto px-6 lg:px-8 2xl:max-w-full">
-        <h2 className="text-h3 sm:text-h2 font-bold mb-12 flex items-center justify-center gap-3 font-heading">
-          <span className="w-8 h-1 bg-primary rounded-full" />
+    <section className={cn("scroll-mt-20 py-20", className)} id="contact">
+      <div className="mx-auto max-w-8xl px-6 lg:px-8 2xl:max-w-full">
+        <h2 className="mb-12 flex items-center justify-center gap-3 font-heading text-h3 font-bold sm:text-h2">
+          <span className="h-1 w-8 rounded-full bg-primary" />
           Contact Me
-          <span className="w-8 h-1 bg-primary rounded-full" />
+          <span className="h-1 w-8 rounded-full bg-primary" />
         </h2>
-        <Card className="w-full mx-auto">
-          <CardContent className="p-8 flex flex-col lg:flex-row gap-12 items-start">
+        <Card className="mx-auto w-full">
+          <CardContent className="flex flex-col items-start gap-12 p-8 lg:flex-row">
             <div className="flex-1">
-              <p className="body-large text-muted-foreground mb-6 leading-relaxed">
-                Feel free to send me an email using the contact form, I will try
-                to respond to you as soon as possible. In case, the form does
-                not work for any reason, please{' '}
+              <p className="body-large mb-6 leading-relaxed text-muted-foreground">
+                Feel free to send me an email using the contact form, I will try to respond to you
+                as soon as possible. In case, the form does not work for any reason, please{" "}
                 <a
-                  className="hover:text-primary transition-colors font-medium underline motion-reduce:transition-none"
+                  className="font-medium underline transition-colors hover:text-primary motion-reduce:transition-none"
                   href="mailto:viskirubakaran@outlook.com"
                 >
                   email me
-                </a>{' '}
+                </a>{" "}
                 directly.
               </p>
               <div className="flex gap-4">
                 <a
                   aria-label="GitHub"
-                  className="p-3 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
+                  className="rounded-md p-3 text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none lg:p-5"
                   href="https://github.com/vikiru"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -53,7 +46,7 @@ export function Contact({ className }: ContactProps) {
                 </a>
                 <a
                   aria-label="LinkedIn"
-                  className="p-3 lg:p-5 text-muted-foreground hover:text-primary transition-colors rounded-md motion-reduce:transition-none"
+                  className="rounded-md p-3 text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none lg:p-5"
                   href="https://linkedin.com/in/viskirubakaran"
                   rel="noopener noreferrer"
                   target="_blank"
