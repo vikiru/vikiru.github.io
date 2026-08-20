@@ -58,93 +58,134 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 #### ⭐ Featured Projects
 
 <details closed>
+
 <summary>View</summary>
 
+- **JobApp | AI-Powered Job Application Tracker**
+
+    - Technologies Used: `TypeScript`, `React`, `TanStack Start`, `TanStack Router`, `TanStack Query`, `TanStack Table`, `PostgreSQL`, `Drizzle`, `Zod`, `Clerk`, `Gemini AI`, `TailwindCSS`, `shadcn/ui`, `Base UI`, `dnd-kit`, `FlexSearch`, `Recharts`
+
+    - [GitHub Repo](https://github.com/vikiru/job-search-tool)
+
+    - [Project Showcase](https://vikiru.vercel.app/projects/JobApp)
+
 - **Noterra | AI-Powered Learning Tool**
+
     - Technologies Used: `TypeScript`, `Next.js`, `React`, `TailwindCSS`, `shadcn/ui`, `PostgreSQL`, `Drizzle`, `Zod`, `Clerk`, `Gemini AI`
+
     - [GitHub Repo](https://github.com/vikiru/noterra)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Noterra)
 
 - **Paleodra | Dinosaur Discovery Web App**
+
     - Technologies Used: `TypeScript`, `Next.js`, `React`, `Zustand`, `Zod`, `TailwindCSS`, `shadcn/ui`, `MongoDB`, `Mongoose`, `Express.js`
+
     - [GitHub Repo](https://github.com/vikiru/paleodra)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Paleodra)
 
 - **Grocadex | Grocery Expenses and Expiry Tracker**
 
-    - Technologies Used: `TypeScript`, `React Native`, `Expo`, `Gluestack UI`, `NativeWind`, `Zustand`, `Tanstack Query`, `Express`, `Passport`, `Prisma`, `PostgreSQL`
+    - Technologies Used: `TypeScript`, `React Native`, `Expo`, `Gluestack UI`, `NativeWind`, `Zustand`, `TanStack Query`, `Express`, `Passport`, `Prisma`, `PostgreSQL`
+
     - [GitHub Repo](https://github.com/vikiru/grocadex)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Grocadex)
 
 - **Kelbrum | Anime Recommendation System**
 
-- **Technologies Used**: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `Tensorflow.js`
+    - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `TensorFlow.js`
+
     - [GitHub Repo](https://github.com/vikiru/kelbrum)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Kelbrum)
 
-- **Parseum | Markdown Editor and Parser**
-
-    - Technologies Used: `Node.js`, `Peggy.js`, `React`, `TailwindCSS`, `DaisyUI`
-    - [GitHub Repo](https://github.com/vikiru/parseum)
-    - [Project Showcase](https://vikiru.vercel.app/projects/Parseum)
-
 - **CodeSmell | Static Analysis Tool**
+
     - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
+
     - [GitHub Repo](https://github.com/vikiru/CodeSmell)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/CodeSmell)
 
 </details>
 
 #### 🛠️ Other Projects
-
 <details closed>
+
 <summary>View</summary>
 
 - **Wordapp | AI-Powered Word of the Day Web App**
-    - Technologies Used: `TypeScript`, `Python`, `Astro`, `Tailwind CSS`, `Starwind UI`, `Gemini AI`, `MongoDB`, `FlexSearch`, `Zod`, `Pydantic`, `Polars`, `GitHub Actions`
-    - [GitHub Repo](https://github.com/vikiru/wordapp)
-    - [Project Showcase](https://vikiru.vercel.app/projects/wordapp)
 
+    - Technologies Used: `TypeScript`, `Python`, `Astro`, `Tailwind CSS`, `Starwind UI`, `Gemini AI`, `MongoDB`, `FlexSearch`, `Zod`, `Pydantic`, `Polars`, `GitHub Actions`
+
+    - [GitHub Repo](https://github.com/vikiru/wordapp)
+
+    - [Project Showcase](https://vikiru.vercel.app/projects/wordapp)
 
 - **RESTasaurus | Dinosaur REST API**
 
     - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
+
     - [GitHub Repo](https://github.com/vikiru/restasaurus)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/RESTasaurus)
 
-- **Urvo | Multi-purpose Discord Bot**
+- **Parseum | Markdown Editor and Parser**
+
+    - Technologies Used: `Node.js`, `Peggy.js`, `React`, `Tailwind CSS`, `DaisyUI`
+
+    - [GitHub Repo](https://github.com/vikiru/parseum)
+
+    - [Project Showcase](https://vikiru.vercel.app/projects/Parseum)
+
+- **Urvo | Multi-Purpose Discord Bot**
 
     - Technologies Used: `Node.js`, `discord.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
+
     - [GitHub Repo](https://github.com/vikiru/Urvo)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Urvo)
 
 - **Portfolio Website**
 
-    - Technologies Used: `React`, `React Router`, `TailwindCSS`
+    - Technologies Used: `React`, `React Router`, `Tailwind CSS`
+
     - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Portfolio)
 
 - **discrete-sim | Manufacturing Facility Simulation**
 
     - Technologies Used: `Python`, `NumPy`, `SciPy`, `SimPy`
+
     - [GitHub Repo](https://github.com/vikiru/discrete-sim)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/discrete-sim)
 
 - **Mini-SurveyMonkey | Spring Boot CRUD Web App**
 
     - Technologies Used: `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`, `JavaScript`
+
     - [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Mini-SurveyMonkey)
 
 - **Elevator Simulator | Threads and UDP**
 
     - Technologies Used: `Java`, `Maven`, `JUnit`
-    - GitHub Repo: `private`
+
+    - GitHub Repo: `Private`
+
     - [Project Showcase](https://vikiru.vercel.app/projects/Elevator-Simulator)
 
 - **Digital Risk | MVC Swing Game**
+
     - Technologies Used: `Java`, `Maven`, `JUnit`, `Swing`
+
     - [GitHub Repo](https://github.com/flavji/digitalRisk)
+
     - [Project Showcase](https://vikiru.vercel.app/projects/digitalRisk)
 
 </details>
@@ -165,13 +206,13 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 ## 📖 Table of Contents
 
 - [🌐 Portfolio Overview](#-portfolio-overview)
-    - [📄 About](#-about)
-        - [🎓 Education](#-education)
-        - [💡 Skills](#-skills)
-    - [📚 Projects](#-projects)
-        - [⭐ Featured Projects](#-featured-projects)
-        - [🛠️ Other Projects](#️-other-projects)
-    - [📧 Contact](#-contact)
+  - [📄 About](#-about)
+    - [🎓 Education](#-education)
+    - [💡 Skills](#-skills)
+  - [📚 Projects](#-projects)
+    - [⭐ Featured Projects](#-featured-projects)
+    - [🛠️ Other Projects](#️-other-projects)
+  - [📧 Contact](#-contact)
 - [📖 Table of Contents](#-table-of-contents)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📝 Prerequisites](#-prerequisites)
