@@ -8,11 +8,11 @@ pre-commit:
   jobs:
     - name: Format staged files with oxfmt
       glob: '*.{js,mjs,cjs,ts,jsx,tsx,json,css}'
-      run: pnpm format {staged_files}
+      run: pnpm exec oxfmt --write --no-error-on-unmatched-pattern {staged_files}
       stage_fixed: true
     - name: Lint staged files with oxlint
       glob: '*.{js,mjs,cjs,ts,jsx,tsx}'
-      run: pnpm lint {staged_files}
+      run: pnpm exec oxlint --no-error-on-unmatched-pattern {staged_files}
 
 pre-push:
   jobs:
