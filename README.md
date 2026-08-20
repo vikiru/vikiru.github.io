@@ -43,13 +43,13 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 #### 💡 Skills
 
-- **Languages**: Java, Python, HTML, CSS, JavaScript, TypeScript
-* **Frameworks**: Spring, JUnit5, Mocha, Express.js, React, React Router, Next.js, Django, Flask
-- **Libraries**: NumPy, SciPy, SimPy, Pandas, Sinon, Chai, DaisyUI
-- **Tools**: Maven, Node.js, npm, pip, git, GitHub, GitHub Desktop, Postman
+- **Languages**: TypeScript/JavaScript, Java, Python, HTML, CSS
+- **Frameworks**: TanStack Start, Next.js, Astro, React Native, React Router, TanStack Router, Express.js, Spring, Django, Flask
+- **Libraries**: React, TanStack Query, Zustand, Zod, NumPy, SciPy, SimPy, Pandas, Polars
+- **Tools**: pnpm, Node.js, npm, pip, uv, Maven, git, GitHub, GitHub Desktop, Postman
 - **Database**: PostgreSQL, MySQL, SQLite, MongoDB, Prisma, Drizzle, Sequelize, Mongoose
 - **DevOps**: CircleCI, GitHub Actions
-- **Editor/IDE**: VSCode, IntelliJ, Eclipse
+- **Editor/IDE**: NeoVim, Zed, Antigravity IDE, VSCode, IntelliJ, Eclipse
 - **Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase, Fl0, Surge.sh
 - **OS**: Windows, Ubuntu
 
@@ -230,9 +230,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 **CI**: [GitHub Actions](https://github.com/features/actions), [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
 
-**Dev Tools**:
-
-- **Linting/Formatting**: [Biome.js](https://biomejs.dev/)
+**Dev Tools**: [pnpm](https://pnpm.io/), [Oxlint](https://oxc.rs/docs/guide/usage/linter), [Oxfmt](https://oxc.rs/docs/guide/usage/formatter), [Knip](https://knip.dev/), [Lefthook](https://lefthook.dev/), [commitlint](https://commitlint.js.org/), [semantic-release](https://semantic-release.gitbook.io/semantic-release)
 - **Contact Form Backend**: [Kwes Forms](https://kwesforms.com/).
 
 ## 📝 Prerequisites
@@ -284,40 +282,58 @@ pnpm dev
 pnpm build
 ```
 
-3. Preview the built project locally using [Vite](https://vite.dev/).
+3. Start the production preview locally using [Vite](https://vite.dev/).
 
 ```bash
 pnpm preview
 ```
 
-4. Prepare Git hooks using [Husky](https://typicode.github.io/husky/)
-
-```bash
-pnpm prepare
-```
-
-5. Lint files using [Biome](https://biomejs.dev).
-
-```bash
-pnpm lint
-```
-
-6. Format files using [Biome](https://biomejs.dev).
-
-```bash
-pnpm format
-```
-
-7. Generate a sitemap.xml file for search engine optimization, utilizing the provided urls within [`sitemap.ts`](./src/assets/data/sitemap.ts) and [`generateSitemap.ts`](./src/scripts/generateSitemap.ts).
+4. Generate a sitemap.xml file for search engine optimization using the project's configured routes.
 
 ```bash
 pnpm generate-sitemap
 ```
 
-8. Run TypeScript type checks without emitting files.
+5. Lint files using [Oxlint](https://oxc.rs/docs/guide/usage/linter).
+
+```bash
+pnpm lint
+```
+
+6. Format files using [Oxfmt](https://oxc.rs/docs/guide/usage/formatter).
+
+```bash
+pnpm format
+```
+
+7. Check whether files are formatted correctly using [Oxfmt](https://oxc.rs/docs/guide/usage/formatter).
+
+```bash
+pnpm format:check
+```
+
+8. Run TypeScript type checks using [TypeScript](https://www.typescriptlang.org/).
 
 ```bash
 pnpm typecheck
+```
+
+9. Run the complete formatting, linting, and type-checking verification.
+
+```bash
+pnpm check
+```
+
+10. Run the SEO schema tests using the Node.js test runner.
+
+```bash
+pnpm test:seo
+```
+
+11. Check for unused files, dependencies, and exports using [Knip](https://knip.dev/).
+
+```bash
+pnpm unused
 ```
 
 ## ✨ Acknowledgments
