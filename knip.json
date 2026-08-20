@@ -2,6 +2,17 @@
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "project": ["tsconfig.json"],
   "entry": ["src/**/*.{js,mjs,cjs,ts,jsx,tsx,css}", "*.{js,mjs,cjs,ts,jsx,tsx}"],
+  "ignore": ["src/setupTests.js"],
+  "ignoreDependencies": [
+    "@radix-ui/react-dialog",
+    "lucide-react",
+    "sonner",
+    "srvx",
+    "globals",
+    "moment",
+    "oxlint-tailwindcss",
+    "react-scan"
+  ],
   "ignoreExportsUsedInFile": {
     "interface": true,
     "type": true
