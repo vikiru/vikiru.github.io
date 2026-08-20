@@ -3,30 +3,34 @@ run-name: Conduct tests on deployed site using Lighthouse CI
 on:
   workflow_run:
     workflows:
-      - Prettier Format Files
+      - Format Files
     types:
-        - completed
+      - completed
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
 
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
             https://vikiru.vercel.app/
-            https://vikiru.vercel.app/about/
-            https://vikiru.vercel.app/contact/
+            https://vikiru.vercel.app/sitemap/
             https://vikiru.vercel.app/education/courses/
-            https://vikiru.vercel.app/projects/
+            https://vikiru.vercel.app/projects/Noterra/
+            https://vikiru.vercel.app/projects/Paleodra/
+            https://vikiru.vercel.app/projects/Grocadex/
+            https://vikiru.vercel.app/projects/JobApp/
+            https://vikiru.vercel.app/projects/Wordapp/
             https://vikiru.vercel.app/projects/Kelbrum/
             https://vikiru.vercel.app/projects/Parseum/
             https://vikiru.vercel.app/projects/RESTasaurus/
-            https://vikiru.vercel.app/projects/Portfolio/
             https://vikiru.vercel.app/projects/Urvo/
             https://vikiru.vercel.app/projects/CodeSmell/
             https://vikiru.vercel.app/projects/discrete-sim/
