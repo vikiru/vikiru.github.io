@@ -29,17 +29,17 @@
     "dev": "vite dev",
     "build": "NODE_ENV=production vite build",
     "start": "vite preview",
-    "preview": "vite preview",
-    "generate-sitemap": "tsx src/scripts/generateSitemap.ts",
-    "test:seo": "tsx --test src/lib/seo/schema.test.ts",
     "typecheck": "tsc --noEmit",
     "typecheck:legacy": "node node_modules/typescript/bin/tsc --noEmit",
     "lint": "oxlint",
     "lint:typecheck": "oxlint --type-aware --type-check",
     "format": "oxfmt --write",
     "format:check": "oxfmt --check",
-    "check": "oxfmt --check && oxlint && tsc --noEmit",
     "unused": "knip",
+    "check": "oxfmt --check && oxlint && tsc --noEmit",
+    "generate-sitemap": "tsx src/scripts/generateSitemap.ts",
+    "test:seo": "tsx --test src/lib/seo/schema.test.ts",
+    "preview": "vite preview",
     "postinstall": "lefthook install"
   },
   "dependencies": {
@@ -114,5 +114,6 @@
       "last 2 firefox version",
       "last 2 safari version"
     ]
-  }
+  },
+  "packageManager": "pnpm@11.22.0"
 }
