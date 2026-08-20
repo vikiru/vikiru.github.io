@@ -1,26 +1,20 @@
-import { Link } from "@tanstack/react-router";
-import { LuArrowRight, LuAward, LuLink, LuSchool } from "react-icons/lu";
-import { educationData } from "@/data/education";
-import { Card, CardContent } from "@/lib/components/ui/card";
-import { cn } from "@/lib/utils";
+import { Link } from '@tanstack/react-router';
+import { LuArrowRight, LuAward, LuLink, LuSchool } from 'react-icons/lu';
+
+import { educationData } from '@/data/education';
+import { Card, CardContent } from '@/lib/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface EducationProps {
   className?: string;
 }
 
 export function Education({ className }: EducationProps) {
-  const {
-    degree,
-    acronym,
-    degreeProgram,
-    universityName,
-    enrollmentStart,
-    enrollmentEnd,
-    certificates,
-  } = educationData;
+  const { degree, acronym, degreeProgram, universityName, enrollmentStart, enrollmentEnd, certificates } =
+    educationData;
 
   return (
-    <section className={cn("scroll-mt-20 py-20", className)} id="education">
+    <section className={cn('scroll-mt-20 py-20', className)} id="education">
       <div className="px-6">
         <div className="mb-12">
           <h2 className="mb-4 flex items-center gap-3 font-heading text-h3 font-bold sm:text-h2">
@@ -39,9 +33,7 @@ export function Education({ className }: EducationProps) {
                   {enrollmentStart} - {enrollmentEnd}
                 </span>
               </div>
-              <h3 className="mb-2 text-h4 font-bold text-foreground sm:text-h3">
-                {universityName}
-              </h3>
+              <h3 className="mb-2 text-h4 font-bold text-foreground sm:text-h3">{universityName}</h3>
               <p className="body-large mb-8 grow leading-relaxed text-muted-foreground italic">
                 {degree} - {acronym}, {degreeProgram}
               </p>

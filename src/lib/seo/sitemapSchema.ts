@@ -1,147 +1,147 @@
-import type { CollectionPage } from "schema-dts";
+import type { CollectionPage } from 'schema-dts';
 
 const collectionPageLd: CollectionPage = {
-  "@type": "CollectionPage",
-  "@id": "https://vikiru.vercel.app/sitemap",
-  name: "Visual sitemap of my portfolio website",
+  '@type': 'CollectionPage',
+  '@id': 'https://vikiru.vercel.app/sitemap',
+  name: 'Visual sitemap of my portfolio website',
   description:
-    "Visual sitemap of all of the pages on vikiru.vercel.app. Use the XML sitemap for search engine crawlers.",
-  url: "https://vikiru.vercel.app/sitemap",
+    'Visual sitemap of all of the pages on vikiru.vercel.app. Use the XML sitemap for search engine crawlers.',
+  url: 'https://vikiru.vercel.app/sitemap',
   mainEntity: {
-    "@type": "ItemList",
+    '@type': 'ItemList',
     itemListElement: [
       // Static pages
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 1,
-        name: "Home",
-        item: { "@type": "WebPage", "@id": "https://vikiru.vercel.app/" },
+        name: 'Home',
+        item: { '@type': 'WebPage', '@id': 'https://vikiru.vercel.app/' },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 2,
-        name: "Visual Sitemap",
+        name: 'Visual Sitemap',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/sitemap",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/sitemap',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 3,
-        name: "Education & Courses",
+        name: 'Education & Courses',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/education/courses",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/education/courses',
         },
       },
       // Personal and Academic Projects
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 4,
-        name: "Noterra",
+        name: 'Noterra',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Noterra",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Noterra',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 5,
-        name: "Paleodra",
+        name: 'Paleodra',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Paleodra",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Paleodra',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 6,
-        name: "Grocadex",
+        name: 'Grocadex',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Grocadex",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Grocadex',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 7,
-        name: "Kelbrum",
+        name: 'Kelbrum',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Kelbrum",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Kelbrum',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 8,
-        name: "Parseum",
+        name: 'Parseum',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Parseum",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Parseum',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 9,
-        name: "RESTasaurus",
+        name: 'RESTasaurus',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/RESTasaurus",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/RESTasaurus',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 10,
-        name: "Urvo",
+        name: 'Urvo',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Urvo",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Urvo',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 11,
-        name: "CodeSmell",
+        name: 'CodeSmell',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/CodeSmell",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/CodeSmell',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 12,
-        name: "discrete-sim",
+        name: 'discrete-sim',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/discrete-sim",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/discrete-sim',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 13,
-        name: "Mini-SurveyMonkey",
+        name: 'Mini-SurveyMonkey',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Mini-SurveyMonkey",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Mini-SurveyMonkey',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 14,
-        name: "Elevator Simulator",
+        name: 'Elevator Simulator',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/Elevator-Simulator",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/Elevator-Simulator',
         },
       },
       {
-        "@type": "ListItem",
+        '@type': 'ListItem',
         position: 15,
-        name: "Digital Risk",
+        name: 'Digital Risk',
         item: {
-          "@type": "WebPage",
-          "@id": "https://vikiru.vercel.app/projects/digitalRisk",
+          '@type': 'WebPage',
+          '@id': 'https://vikiru.vercel.app/projects/digitalRisk',
         },
       },
     ],
@@ -151,6 +151,6 @@ const collectionPageLd: CollectionPage = {
 export const sitemapData = [collectionPageLd];
 
 export const sitemapGraph = {
-  "@context": "https://schema.org",
-  "@graph": sitemapData,
+  '@context': 'https://schema.org',
+  '@graph': sitemapData,
 };

@@ -1,7 +1,9 @@
-import { FaBook, FaGithub } from "react-icons/fa6";
-import { LuExternalLink } from "react-icons/lu";
-import { Button } from "@/lib/components/ui/button";
-import type { Project } from "@/types/Project";
+import { FaBook, FaGithub } from 'react-icons/fa6';
+import { LuExternalLink } from 'react-icons/lu';
+
+import type { Project } from '@/types/Project';
+
+import { Button } from '@/lib/components/ui/button';
 
 interface ProjectHeroProps {
   project: Project;
@@ -12,9 +14,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
     <section className="relative -mt-14 flex flex-1 justify-center overflow-hidden px-4 py-20 md:px-40 lg:-mt-24">
       <div className="flex w-full flex-1 flex-col items-center gap-8 text-center">
         <div className="flex flex-col gap-6">
-          <h1 className="font-heading text-h1 font-bold tracking-tight text-balance text-foreground">
-            {project.name}
-          </h1>
+          <h1 className="font-heading text-h1 font-bold tracking-tight text-balance text-foreground">{project.name}</h1>
           <p className="body-large mx-auto max-w-[--container-measure] leading-relaxed text-muted-foreground">
             {project.description}
           </p>

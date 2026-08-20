@@ -1,24 +1,17 @@
-import { FaGraduationCap, FaLocationDot } from "react-icons/fa6";
-import { educationData } from "@/data/education";
-import { cn } from "@/lib/utils";
+import { FaGraduationCap, FaLocationDot } from 'react-icons/fa6';
+
+import { educationData } from '@/data/education';
+import { cn } from '@/lib/utils';
 
 interface EducationHeaderProps {
   className?: string;
 }
 
 export function EducationHeader({ className }: EducationHeaderProps) {
-  const {
-    degree,
-    acronym,
-    degreeProgram,
-    universityName,
-    location,
-    enrollmentStart,
-    enrollmentEnd,
-  } = educationData;
+  const { degree, acronym, degreeProgram, universityName, location, enrollmentStart, enrollmentEnd } = educationData;
 
   return (
-    <header className={cn("space-y-8 pb-10", className)}>
+    <header className={cn('space-y-8 pb-10', className)}>
       <div className="space-y-6">
         <h1 className="font-heading text-h1 font-bold tracking-tight text-foreground">Education</h1>
 
@@ -34,9 +27,7 @@ export function EducationHeader({ className }: EducationHeaderProps) {
                   <FaGraduationCap aria-hidden="true" className="size-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-heading text-h5 font-semibold text-foreground">
-                    {universityName}
-                  </p>
+                  <p className="font-heading text-h5 font-semibold text-foreground">{universityName}</p>
                   <p className="body-base font-mono text-muted-foreground">
                     {enrollmentStart} - {enrollmentEnd}
                   </p>
@@ -48,9 +39,7 @@ export function EducationHeader({ className }: EducationHeaderProps) {
                   <FaLocationDot aria-hidden="true" className="size-5 text-muted-foreground" />
                 </div>
                 <div>
-                  <p className="body-small font-medium tracking-wider text-muted-foreground/60 uppercase">
-                    Location
-                  </p>
+                  <p className="body-small font-medium tracking-wider text-muted-foreground/60 uppercase">Location</p>
                   <p className="body-base font-mono font-medium text-foreground">{location}</p>
                 </div>
               </div>

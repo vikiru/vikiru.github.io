@@ -1,10 +1,12 @@
-import { Link } from "@tanstack/react-router";
-import { FaBars, FaXmark } from "react-icons/fa6";
-import { ThemeToggle } from "@/components/layout/ThemeToggle";
-import { Logo } from "@/components/ui/Logo";
-import { navData } from "@/data/nav";
-import { useNav } from "@/hooks/useNav";
-import type { NavigationItem } from "@/types/NavigationItem";
+import { Link } from '@tanstack/react-router';
+import { FaBars, FaXmark } from 'react-icons/fa6';
+
+import type { NavigationItem } from '@/types/NavigationItem';
+
+import { ThemeToggle } from '@/components/layout/ThemeToggle';
+import { Logo } from '@/components/ui/Logo';
+import { navData } from '@/data/nav';
+import { useNav } from '@/hooks/useNav';
 
 function NavLink({ item }: { item: NavigationItem }) {
   return (
@@ -53,11 +55,7 @@ export function NavBar() {
 
         <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
-          <button
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-            onClick={handleClick}
-            type="button"
-          >
+          <button aria-label={isOpen ? 'Close menu' : 'Open menu'} onClick={handleClick} type="button">
             {isOpen ? (
               <FaXmark aria-hidden="true" className="size-icon-base" />
             ) : (
@@ -69,19 +67,12 @@ export function NavBar() {
 
       <section
         className={`fixed top-0 right-0 z-50 h-full w-[65%] border-l border-border bg-background/95 backdrop-blur-sm transition-all duration-500 ease-in-out motion-reduce:transition-none sm:w-1/2 lg:hidden ${
-          isOpen
-            ? "translate-x-0 motion-reduce:transition-none"
-            : "translate-x-full motion-reduce:transition-none"
+          isOpen ? 'translate-x-0 motion-reduce:transition-none' : 'translate-x-full motion-reduce:transition-none'
         }`}
         id="mobile-nav"
       >
         <div className="flex h-full flex-col items-center justify-center">
-          <button
-            aria-label="Close menu"
-            className="absolute top-4 right-5 p-3"
-            onClick={handleClick}
-            type="button"
-          >
+          <button aria-label="Close menu" className="absolute top-4 right-5 p-3" onClick={handleClick} type="button">
             <FaXmark aria-hidden="true" className="size-icon-base" />
           </button>
 

@@ -1,9 +1,10 @@
-import { Link } from "@tanstack/react-router";
-import { memo } from "react";
-import { FaBook, FaGithub } from "react-icons/fa6";
-import { Badge } from "@/lib/components/ui/badge";
-import { Card, CardContent } from "@/lib/components/ui/card";
-import { cn } from "@/lib/utils";
+import { Link } from '@tanstack/react-router';
+import { memo } from 'react';
+import { FaBook, FaGithub } from 'react-icons/fa6';
+
+import { Badge } from '@/lib/components/ui/badge';
+import { Card, CardContent } from '@/lib/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface ProjectCardProps {
   project: {
@@ -24,9 +25,9 @@ export const ProjectCard = memo(function ProjectCard({ project, className }: Pro
   return (
     <Card
       className={cn(
-        "group relative flex h-full cursor-pointer flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:bg-primary/5 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0",
-        "hover:-translate-y-1",
-        "hover:border-primary/30",
+        'group relative flex h-full cursor-pointer flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:bg-primary/5 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0',
+        'hover:-translate-y-1',
+        'hover:border-primary/30',
         className,
       )}
       id={project.name}

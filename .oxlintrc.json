@@ -1,17 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
-    "eslint",
-    "oxc",
-    "node",
-    "react",
-    "jsx-a11y",
-    "typescript",
-    "import",
-    "unicorn",
-    "promise",
-    "react-perf"
-  ],
+  "plugins": ["eslint", "oxc", "node", "react", "jsx-a11y", "typescript", "import", "unicorn", "promise", "react-perf"],
   "jsPlugins": ["oxlint-tailwindcss"],
   "settings": {
     "tailwindcss": {

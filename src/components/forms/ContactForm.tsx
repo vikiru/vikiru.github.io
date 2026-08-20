@@ -1,9 +1,9 @@
-import { useContact } from "@/hooks/useContact";
-import { Button } from "@/lib/components/ui/button";
-import { Field, FieldError, FieldLabel } from "@/lib/components/ui/field";
-import { Input } from "@/lib/components/ui/input";
-import { Textarea } from "@/lib/components/ui/textarea";
-import { cn } from "@/lib/utils";
+import { useContact } from '@/hooks/useContact';
+import { Button } from '@/lib/components/ui/button';
+import { Field, FieldError, FieldLabel } from '@/lib/components/ui/field';
+import { Input } from '@/lib/components/ui/input';
+import { Textarea } from '@/lib/components/ui/textarea';
+import { cn } from '@/lib/utils';
 
 export function ContactForm({ className }: { className?: string }) {
   const { formData, errors, handleSubmit, handleInputChange, handleBlur } = useContact();
@@ -11,7 +11,7 @@ export function ContactForm({ className }: { className?: string }) {
   return (
     <form
       action="https://kwesforms.com/api/f/OcdSwYrzmf5Uw6fLcCC1"
-      className={cn("space-y-5", className)}
+      className={cn('space-y-5', className)}
       method="POST"
       name="contact-form"
       onSubmit={handleSubmit}
@@ -24,7 +24,7 @@ export function ContactForm({ className }: { className?: string }) {
           Name
         </FieldLabel>
         <Input
-          aria-describedby={errors.name ? "name-error" : undefined}
+          aria-describedby={errors.name ? 'name-error' : undefined}
           aria-invalid={!!errors.name}
           className="border-white/10 bg-background/50"
           id="name"
@@ -45,7 +45,7 @@ export function ContactForm({ className }: { className?: string }) {
           Email
         </FieldLabel>
         <Input
-          aria-describedby={errors.email ? "email-error" : undefined}
+          aria-describedby={errors.email ? 'email-error' : undefined}
           aria-invalid={!!errors.email}
           className="border-white/10 bg-background/50"
           id="email"
@@ -67,7 +67,7 @@ export function ContactForm({ className }: { className?: string }) {
           Subject
         </FieldLabel>
         <Input
-          aria-describedby={errors.subject ? "subject-error" : undefined}
+          aria-describedby={errors.subject ? 'subject-error' : undefined}
           aria-invalid={!!errors.subject}
           className="border-white/10 bg-background/50"
           id="subject"
@@ -88,7 +88,7 @@ export function ContactForm({ className }: { className?: string }) {
           Message
         </FieldLabel>
         <Textarea
-          aria-describedby={errors.content ? "content-error" : undefined}
+          aria-describedby={errors.content ? 'content-error' : undefined}
           aria-invalid={!!errors.content}
           className="h-33 resize-none border-white/10 bg-background/50"
           cols={50}
