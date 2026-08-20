@@ -25,6 +25,7 @@
     "noUncheckedSideEffectImports": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
+    "types": ["node"],
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@/*": ["./src/*"]
