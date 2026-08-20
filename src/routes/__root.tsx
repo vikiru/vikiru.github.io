@@ -1,90 +1,93 @@
 /// <reference types="vite/client" />
 
-import { createRootRoute, HeadContent, Outlet, Scripts, useLocation } from "@tanstack/react-router";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import type { ReactNode } from "react";
-import { useEffect } from "react";
-import type { Graph } from "schema-dts";
-import { projectData } from "@/data/projects";
-import { projectSchemaMap } from "@/lib/seo/projects/projectMap";
-import indexCss from "../index.css?url";
+import type { ReactNode } from 'react';
+import type { Graph } from 'schema-dts';
+
+import { createRootRoute, HeadContent, Outlet, Scripts, useLocation } from '@tanstack/react-router';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { useEffect } from 'react';
+
+import { projectData } from '@/data/projects';
+import { projectSchemaMap } from '@/lib/seo/projects/projectMap';
+
+import indexCss from '../index.css?url';
 
 const metadata = {
-  name: "Visakan Kirubakaran",
-  title: "Visakan Kirubakaran | Portfolio",
+  name: 'Visakan Kirubakaran',
+  title: 'Visakan Kirubakaran | Portfolio',
   description:
-    "Personal portfolio of Visakan Kirubakaran, a software developer with a passion for software and web development, based in Ottawa, ON.",
+    'Personal portfolio of Visakan Kirubakaran, a software developer with a passion for software and web development, based in Ottawa, ON.',
 };
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: metadata.description },
-      { name: "author", content: metadata.name },
-      { name: "theme-color", content: "#f8fafc" },
-      { name: "robots", content: "index, follow" },
-      { property: "og:type", content: "website" },
-      { property: "og:title", content: metadata.title },
-      { property: "og:description", content: metadata.description },
-      { name: "twitter:card", content: "summary" },
+      { charSet: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: metadata.description },
+      { name: 'author', content: metadata.name },
+      { name: 'theme-color', content: '#f8fafc' },
+      { name: 'robots', content: 'index, follow' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: metadata.title },
+      { property: 'og:description', content: metadata.description },
+      { name: 'twitter:card', content: 'summary' },
       {
-        name: "google-site-verification",
-        content: "IUtO6lgG_1nRbIW_MH3yuRA2zNja2RObwx6Bb7fSG3c",
+        name: 'google-site-verification',
+        content: 'IUtO6lgG_1nRbIW_MH3yuRA2zNja2RObwx6Bb7fSG3c',
       },
     ],
     scripts: [],
     links: [
-      { rel: "stylesheet", href: indexCss },
+      { rel: 'stylesheet', href: indexCss },
       {
-        rel: "icon",
-        href: "/favicon-light.ico",
-        media: "(prefers-color-scheme: light)",
+        rel: 'icon',
+        href: '/favicon-light.ico',
+        media: '(prefers-color-scheme: light)',
       },
       {
-        rel: "icon",
-        href: "/favicon-dark.ico",
-        media: "(prefers-color-scheme: dark)",
+        rel: 'icon',
+        href: '/favicon-dark.ico',
+        media: '(prefers-color-scheme: dark)',
       },
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: "/favicon-32x32-light.png",
-        media: "(prefers-color-scheme: light)",
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32-light.png',
+        media: '(prefers-color-scheme: light)',
       },
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: "/favicon-32x32-dark.png",
-        media: "(prefers-color-scheme: dark)",
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32-dark.png',
+        media: '(prefers-color-scheme: dark)',
       },
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/favicon-16x16-light.png",
-        media: "(prefers-color-scheme: light)",
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16-light.png',
+        media: '(prefers-color-scheme: light)',
       },
       {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/favicon-16x16-dark.png",
-        media: "(prefers-color-scheme: dark)",
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16-dark.png',
+        media: '(prefers-color-scheme: dark)',
       },
       {
-        rel: "apple-touch-icon",
-        href: "/apple-touch-icon-light.png",
-        media: "(prefers-color-scheme: light)",
+        rel: 'apple-touch-icon',
+        href: '/apple-touch-icon-light.png',
+        media: '(prefers-color-scheme: light)',
       },
       {
-        rel: "apple-touch-icon",
-        href: "/apple-touch-icon-dark.png",
-        media: "(prefers-color-scheme: dark)",
+        rel: 'apple-touch-icon',
+        href: '/apple-touch-icon-dark.png',
+        media: '(prefers-color-scheme: dark)',
       },
     ],
   }),
@@ -99,8 +102,8 @@ function RootComponent() {
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   const location = useLocation();
   const pathname = location.pathname;
-  const isProjectPage = pathname.startsWith("/projects/");
-  const slug = isProjectPage ? pathname.split("/")[2] : null;
+  const isProjectPage = pathname.startsWith('/projects/');
+  const slug = isProjectPage ? pathname.split('/')[2] : null;
   let projectGraphSchema: Graph | undefined;
 
   if (isProjectPage && slug) {
@@ -115,8 +118,8 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
     const themeColorMeta = document.querySelector('meta[name="theme-color"]');
     const updateThemeColor = () => {
       if (themeColorMeta) {
-        const isDark = document.documentElement.classList.contains("dark");
-        themeColorMeta.setAttribute("content", isDark ? "#1e1e24" : "#f8fafc");
+        const isDark = document.documentElement.classList.contains('dark');
+        themeColorMeta.setAttribute('content', isDark ? '#1e1e24' : '#f8fafc');
       }
     };
 
@@ -124,7 +127,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
     const observer = new MutationObserver(updateThemeColor);
     observer.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ["class"],
+      attributeFilter: ['class'],
     });
 
     return () => observer.disconnect();
@@ -146,7 +149,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <body>
         {children}
         <SpeedInsights />
-        <Analytics mode={process.env.NODE_ENV === "production" ? "production" : "development"} />
+        <Analytics mode={process.env.NODE_ENV === 'production' ? 'production' : 'development'} />
         <Scripts />
       </body>
     </html>

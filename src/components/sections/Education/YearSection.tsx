@@ -1,5 +1,6 @@
-import type { ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import type { ReactNode } from 'react';
+
+import { cn } from '@/lib/utils';
 
 interface YearSectionProps {
   year: number;
@@ -10,7 +11,7 @@ interface YearSectionProps {
 
 export function YearSection({ year, title, children, className }: YearSectionProps) {
   return (
-    <section className={cn("space-y-8", className)} id={`year-${year}`}>
+    <section className={cn('space-y-8', className)} id={`year-${year}`}>
       <div className="flex items-center gap-5">
         <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-primary/30 bg-primary/15 font-bold text-primary shadow-sm">
           <span className="text-2xl font-bold tracking-tight">{year}</span>

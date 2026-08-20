@@ -3,7 +3,7 @@ run-name: Automate release using semantic-release
 on:
   workflow_run:
     workflows:
-      - "Format Files"
+      - 'Format Files'
     types:
       - completed
 permissions:

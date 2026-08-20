@@ -1,23 +1,21 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "@fontsource/raleway/400.css";
-@import "@fontsource/raleway/700.css";
-@import "@fontsource/cinzel/400.css";
-@import "@fontsource/cinzel/700.css";
-@import "@fontsource/lato/400.css";
-@import "@fontsource/lato/400-italic.css";
-@import "@fontsource/lato/700.css";
-@import "@fontsource/lato/700-italic.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource/raleway/400.css';
+@import '@fontsource/raleway/700.css';
+@import '@fontsource/cinzel/400.css';
+@import '@fontsource/cinzel/700.css';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/400-italic.css';
+@import '@fontsource/lato/700.css';
+@import '@fontsource/lato/700-italic.css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-heading: "Raleway", sans-serif;
-  --font-body: "Lato", sans-serif;
-  --font-mono:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    monospace;
-  --font-logo: "Cinzel", serif;
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Lato', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font-logo: 'Cinzel', serif;
 
   --breakpoint-xs: 30rem;
   --breakpoint-3xl: 120rem;

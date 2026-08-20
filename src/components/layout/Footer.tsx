@@ -1,6 +1,7 @@
-import { Link } from "@tanstack/react-router";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
-import { Logo } from "@/components/ui/Logo";
+import { Link } from '@tanstack/react-router';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
+
+import { Logo } from '@/components/ui/Logo';
 
 export function Footer() {
   return (
@@ -8,13 +9,10 @@ export function Footer() {
       <div className="w-full px-6 py-8 lg:py-12">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8 3xl:gap-10 4xl:gap-12">
           <div className="flex flex-col items-start text-left">
-            <Logo
-              className="mb-4 transition-colors duration-200 hover:text-primary"
-              variant="full"
-            />
+            <Logo className="mb-4 transition-colors duration-200 hover:text-primary" variant="full" />
             <p className="body-base leading-relaxed text-muted-foreground">
-              Software developer with a passion for software and web development, committed to
-              learning and contributing to meaningful projects.
+              Software developer with a passion for software and web development, committed to learning and contributing
+              to meaningful projects.
             </p>
           </div>
 
@@ -64,10 +62,7 @@ export function Footer() {
               &copy; {new Date().getFullYear()} Visakan Kirubakaran. All rights reserved.
             </p>
           </div>
-          <nav
-            aria-label="Footer"
-            className="my-4 flex w-full items-start justify-start lg:items-end lg:justify-end"
-          >
+          <nav aria-label="Footer" className="my-4 flex w-full items-start justify-start lg:items-end lg:justify-end">
             <Link
               aria-label="View site sitemap"
               className="body-base text-left text-muted-foreground transition-colors duration-200 hover:text-primary hover:underline focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:outline-none motion-reduce:transition-none"

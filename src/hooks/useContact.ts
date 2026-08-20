@@ -1,20 +1,21 @@
-import { useCallback, useRef, useState } from "react";
-import { contactFormSchema } from "@/schema/contactFormSchema";
+import { useCallback, useRef, useState } from 'react';
 
-type FormField = "name" | "email" | "subject" | "content";
+import { contactFormSchema } from '@/schema/contactFormSchema';
+
+type FormField = 'name' | 'email' | 'subject' | 'content';
 
 export function useContact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    content: "",
+    name: '',
+    email: '',
+    subject: '',
+    content: '',
   });
   const [errors, setErrors] = useState<Record<FormField, string>>({
-    name: "",
-    email: "",
-    subject: "",
-    content: "",
+    name: '',
+    email: '',
+    subject: '',
+    content: '',
   });
   const firstInvalidRef = useRef<HTMLInputElement | HTMLTextAreaElement | null>(null);
 
@@ -24,12 +25,12 @@ export function useContact() {
         [name]: true,
       } as Record<FormField, true>);
       fieldSchema.parse({ [name]: value });
-      setErrors((prev) => ({ ...prev, [name]: "" }));
+      setErrors((prev) => ({ ...prev, [name]: '' }));
       return true;
     } catch (e: unknown) {
-      if (e && typeof e === "object" && "issues" in e) {
+      if (e && typeof e === 'object' && 'issues' in e) {
         const zodError = e as { issues: Array<{ message: string }> };
-        const error = zodError.issues[0]?.message || "Invalid value";
+        const error = zodError.issues[0]?.message || 'Invalid value';
         setErrors((prev) => ({ ...prev, [name]: error }));
       }
       return false;

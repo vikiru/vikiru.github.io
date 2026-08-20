@@ -1,6 +1,6 @@
-import { ProjectCard } from "@/components/sections/Home/ProjectCard";
-import { featuredProjects } from "@/data/projects";
-import { cn } from "@/lib/utils";
+import { ProjectCard } from '@/components/sections/Home/ProjectCard';
+import { featuredProjects } from '@/data/projects';
+import { cn } from '@/lib/utils';
 
 interface FeaturedProjectsProps {
   className?: string;
@@ -8,7 +8,7 @@ interface FeaturedProjectsProps {
 
 export function FeaturedProjects({ className }: FeaturedProjectsProps) {
   return (
-    <section className={cn("scroll-mt-20 py-20", className)} id="featured-projects">
+    <section className={cn('scroll-mt-20 py-20', className)} id="featured-projects">
       <div className="px-6 lg:px-8">
         <h2 className="mb-12 flex items-center gap-3 font-heading text-h3 font-bold text-balance whitespace-nowrap sm:text-h2">
           <span className="h-1 w-8 rounded-full bg-primary" />

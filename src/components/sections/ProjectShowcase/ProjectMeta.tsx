@@ -1,5 +1,6 @@
-import { LuCalendar, LuCode, LuUser } from "react-icons/lu";
-import type { Project } from "@/types/Project";
+import { LuCalendar, LuCode, LuUser } from 'react-icons/lu';
+
+import type { Project } from '@/types/Project';
 
 interface ProjectMetaProps {
   project: Project;
@@ -61,9 +62,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 <h2 className="mb-1 font-heading text-h4 font-bold tracking-wider text-muted-foreground uppercase">
                   Co-Authors
                 </h2>
-                <span className="body-base leading-tight text-foreground">
-                  {project.contributors}
-                </span>
+                <span className="body-base leading-tight text-foreground">{project.contributors}</span>
               </div>
             </div>
           </div>

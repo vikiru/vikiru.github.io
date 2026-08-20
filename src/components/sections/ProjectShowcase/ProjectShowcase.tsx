@@ -1,11 +1,13 @@
-import { Link } from "@tanstack/react-router";
-import { LuArrowLeft } from "react-icons/lu";
-import { Accomplishments } from "@/components/sections/ProjectShowcase/Accomplishments";
-import { ProjectHero } from "@/components/sections/ProjectShowcase/ProjectHero";
-import { ProjectMedia } from "@/components/sections/ProjectShowcase/ProjectMedia";
-import { ProjectMeta } from "@/components/sections/ProjectShowcase/ProjectMeta";
-import { Button } from "@/lib/components/ui/button";
-import type { Project } from "@/types/Project";
+import { Link } from '@tanstack/react-router';
+import { LuArrowLeft } from 'react-icons/lu';
+
+import type { Project } from '@/types/Project';
+
+import { Accomplishments } from '@/components/sections/ProjectShowcase/Accomplishments';
+import { ProjectHero } from '@/components/sections/ProjectShowcase/ProjectHero';
+import { ProjectMedia } from '@/components/sections/ProjectShowcase/ProjectMedia';
+import { ProjectMeta } from '@/components/sections/ProjectShowcase/ProjectMeta';
+import { Button } from '@/lib/components/ui/button';
 
 interface ProjectShowcaseProps {
   project: Project;

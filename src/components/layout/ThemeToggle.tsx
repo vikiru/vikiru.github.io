@@ -1,13 +1,14 @@
-import { LuMoon, LuSun } from "react-icons/lu";
-import { Button } from "@/lib/components/ui/button";
-import { useTheme } from "@/lib/hooks/useTheme";
+import { LuMoon, LuSun } from 'react-icons/lu';
+
+import { Button } from '@/lib/components/ui/button';
+import { useTheme } from '@/lib/hooks/useTheme';
 
 export function ThemeToggle() {
   const { isDark, toggleTheme } = useTheme();
 
   return (
     <Button
-      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       className="relative cursor-pointer rounded-full text-muted-foreground transition-colors hover:bg-transparent hover:text-primary motion-reduce:transition-none dark:hover:bg-transparent"
       onClick={toggleTheme}
       size="icon"

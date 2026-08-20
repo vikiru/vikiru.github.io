@@ -1,7 +1,7 @@
-import { skillsData } from "@/data/skills";
-import { Badge } from "@/lib/components/ui/badge";
-import { Card, CardContent } from "@/lib/components/ui/card";
-import { cn } from "@/lib/utils";
+import { skillsData } from '@/data/skills';
+import { Badge } from '@/lib/components/ui/badge';
+import { Card, CardContent } from '@/lib/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface SkillsProps {
   className?: string;
@@ -13,14 +13,14 @@ interface SkillCategoryProps {
 }
 
 const categories = [
-  { title: "Languages", data: skillsData.languages.data },
-  { title: "Frameworks", data: skillsData.frameworks.data },
-  { title: "Libraries", data: skillsData.libraries.data },
-  { title: "Database", data: skillsData.database.data },
-  { title: "Tools", data: skillsData.tools.data },
-  { title: "DevOps", data: skillsData.devops.data },
-  { title: "Hosting", data: skillsData.hosting.data },
-  { title: "Operating Systems", data: skillsData.os.data },
+  { title: 'Languages', data: skillsData.languages.data },
+  { title: 'Frameworks', data: skillsData.frameworks.data },
+  { title: 'Libraries', data: skillsData.libraries.data },
+  { title: 'Database', data: skillsData.database.data },
+  { title: 'Tools', data: skillsData.tools.data },
+  { title: 'DevOps', data: skillsData.devops.data },
+  { title: 'Hosting', data: skillsData.hosting.data },
+  { title: 'Operating Systems', data: skillsData.os.data },
 ];
 
 function SkillCategory({ title, skills }: SkillCategoryProps) {
@@ -42,7 +42,7 @@ function SkillCategory({ title, skills }: SkillCategoryProps) {
 
 export function Skills({ className }: SkillsProps) {
   return (
-    <section className={cn("relative scroll-mt-20 py-20", className)} id="skills">
+    <section className={cn('relative scroll-mt-20 py-20', className)} id="skills">
       <div className="px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="mb-4 flex  items-center justify-center gap-3 font-heading text-h3 font-bold sm:text-h2">

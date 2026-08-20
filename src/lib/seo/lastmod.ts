@@ -1,5 +1,5 @@
-import { siteConfig } from "../../config/site";
-import { projectData } from "../../data/projects";
+import { siteConfig } from '../../config/site';
+import { projectData } from '../../data/projects';
 
 const monthNumbers: Record<string, number> = {
   jan: 1,
