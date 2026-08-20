@@ -1,5 +1,5 @@
-import type { Person, SoftwareSourceCode, WebSite } from 'schema-dts';
-import { siteConfig } from '@/config/site';
+import type { Person, SoftwareSourceCode, WebSite } from "schema-dts";
+import { siteConfig } from "@/config/site";
 
 export const {
   site: { title, description, url: siteUrl, contentLastModified },
@@ -24,8 +24,8 @@ export const softwareId = `${githubRepo}/#software`;
 export const homepageId = `${siteUrl}/#homepage`;
 
 export const personLd: Person = {
-  '@type': 'Person',
-  '@id': personId,
+  "@type": "Person",
+  "@id": personId,
   name,
   alternateName,
   givenName: firstName,
@@ -34,7 +34,7 @@ export const personLd: Person = {
   url: portfolioWebsite,
   sameAs: [githubProfile, linkedinProfile],
   alumniOf: {
-    '@type': 'EducationalOrganization',
+    "@type": "EducationalOrganization",
     name: universityName,
     url: universityUrl,
     logo: universityLogo,
@@ -42,38 +42,38 @@ export const personLd: Person = {
 };
 
 export const softwareLd: SoftwareSourceCode = {
-  '@type': 'SoftwareSourceCode',
-  '@id': softwareId,
-  name: 'Visakan Kirubakaran Portfolio',
-  description: 'The source code for my personal portfolio website.',
+  "@type": "SoftwareSourceCode",
+  "@id": softwareId,
+  name: "Visakan Kirubakaran Portfolio",
+  description: "The source code for my personal portfolio website.",
   url: githubRepo,
-  author: { '@id': personId },
-  maintainer: { '@id': personId },
+  author: { "@id": personId },
+  maintainer: { "@id": personId },
   keywords: keywords,
   version: version,
   programmingLanguage: programmingLanguage,
   license: license,
   codeRepository: githubRepo,
-  runtimePlatform: ['Node.js', 'Web', 'Browser'],
+  runtimePlatform: ["Node.js", "Web", "Browser"],
 };
 
 export const homepageLd: WebSite = {
-  '@type': 'WebSite',
-  '@id': homepageId,
+  "@type": "WebSite",
+  "@id": homepageId,
   name: title,
   description: description,
   url: `${siteUrl}/`,
-  creator: { '@id': personId },
+  creator: { "@id": personId },
   license: license,
-  inLanguage: 'en',
+  inLanguage: "en",
   dateModified: new Date(contentLastModified).toISOString(),
-  about: { '@id': personId },
-  mainEntity: { '@id': personId },
+  about: { "@id": personId },
+  mainEntity: { "@id": personId },
 };
 
 export const homeData = [softwareLd, homepageLd];
 
 export const homepageGraphSchema = {
-  '@context': 'https://schema.org',
-  '@graph': [personLd, ...homeData],
+  "@context": "https://schema.org",
+  "@graph": [personLd, ...homeData],
 };

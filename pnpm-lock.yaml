@@ -144,6 +144,9 @@ importers:
       semantic-release:
         specifier: ^24.2.9
         version: 24.2.9(supports-color@7.2.0)(typescript@5.9.3)
+      tsx:
+        specifier: ^4.23.12
+        version: 4.23.12
       tw-animate-css:
         specifier: ^1.4.0
         version: 1.4.0

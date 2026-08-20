@@ -1,7 +1,7 @@
-import { FaBook, FaGithub } from 'react-icons/fa6';
-import { LuExternalLink } from 'react-icons/lu';
-import { Button } from '@/lib/components/ui/button';
-import type { Project } from '@/types/Project';
+import { FaBook, FaGithub } from "react-icons/fa6";
+import { LuExternalLink } from "react-icons/lu";
+import { Button } from "@/lib/components/ui/button";
+import type { Project } from "@/types/Project";
 
 interface ProjectHeroProps {
   project: Project;
@@ -9,17 +9,17 @@ interface ProjectHeroProps {
 
 export function ProjectHero({ project }: ProjectHeroProps) {
   return (
-    <section className="-mt-14 lg:-mt-24 px-4 md:px-40 flex flex-1 justify-center py-20 relative overflow-hidden">
-      <div className="flex flex-col w-full flex-1 items-center text-center gap-8">
+    <section className="relative -mt-14 flex flex-1 justify-center overflow-hidden px-4 py-20 md:px-40 lg:-mt-24">
+      <div className="flex w-full flex-1 flex-col items-center gap-8 text-center">
         <div className="flex flex-col gap-6">
-          <h1 className="text-h1 font-bold tracking-tight font-heading text-foreground text-balance">
+          <h1 className="font-heading text-h1 font-bold tracking-tight text-balance text-foreground">
             {project.name}
           </h1>
-          <p className="body-large text-muted-foreground leading-relaxed max-w-[--container-measure] mx-auto">
+          <p className="body-large mx-auto max-w-[--container-measure] leading-relaxed text-muted-foreground">
             {project.description}
           </p>
         </div>
-        <div className="flex flex-wrap gap-4 justify-center mt-6">
+        <div className="mt-6 flex flex-wrap justify-center gap-4">
           {project.githubUrl && (
             <Button asChild size="2xl">
               <a
@@ -30,10 +30,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
               >
                 <FaGithub aria-hidden="true" className="size-icon-base" />
                 GitHub
-                <LuExternalLink
-                  aria-hidden="true"
-                  className="size-icon-sm opacity-70"
-                />
+                <LuExternalLink aria-hidden="true" className="size-icon-sm opacity-70" />
               </a>
             </Button>
           )}
@@ -47,10 +44,7 @@ export function ProjectHero({ project }: ProjectHeroProps) {
               >
                 <FaBook aria-hidden="true" className="size-icon-base" />
                 Documentation
-                <LuExternalLink
-                  aria-hidden="true"
-                  className="size-icon-sm opacity-70"
-                />
+                <LuExternalLink aria-hidden="true" className="size-icon-sm opacity-70" />
               </a>
             </Button>
           )}
