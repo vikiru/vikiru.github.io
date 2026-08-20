@@ -6,6 +6,7 @@ on:
       - Format Files
     types:
       - completed
+permissions: {}
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
