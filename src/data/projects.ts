@@ -118,7 +118,6 @@ const projectData: ProjectData = {
         'FlexSearch',
         'Zod',
         'Pydantic',
-        'Polars',
         'GitHub Actions',
       ],
       featured: false,

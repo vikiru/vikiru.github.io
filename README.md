@@ -118,7 +118,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 - **Wordapp | AI-Powered Word of the Day Web App**
 
-    - Technologies Used: `TypeScript`, `Python`, `Astro`, `Tailwind CSS`, `Starwind UI`, `Gemini AI`, `MongoDB`, `FlexSearch`, `Zod`, `Pydantic`, `Polars`, `GitHub Actions`
+    - Technologies Used: `TypeScript`, `Python`, `Astro`, `Tailwind CSS`, `Starwind UI`, `Gemini AI`, `MongoDB`, `FlexSearch`, `Zod`, `Pydantic`, `GitHub Actions`
 
     - [GitHub Repo](https://github.com/vikiru/wordapp)
 
