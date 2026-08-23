@@ -1,16 +1,13 @@
 name: Lighthouse CI
 run-name: Conduct tests on deployed site using Lighthouse CI
 on:
-  workflow_run:
-    workflows:
-      - Format Files
-    types:
-      - completed
+  push:
+    branches:
+      - main
 permissions: {}
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -18,7 +15,7 @@ jobs:
           persist-credentials: false
 
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v12
+        uses: treosh/lighthouse-ci-action@3e7e23fb74242897f95c0ba9cabad3d0227b9b18 # v12.6.2
         with:
           urls: |
             https://vikiru.vercel.app/
@@ -28,6 +25,7 @@ jobs:
             https://vikiru.vercel.app/projects/Paleodra/
             https://vikiru.vercel.app/projects/Grocadex/
             https://vikiru.vercel.app/projects/JobApp/
+            https://vikiru.vercel.app/projects/Saleway/
             https://vikiru.vercel.app/projects/Wordapp/
             https://vikiru.vercel.app/projects/Kelbrum/
             https://vikiru.vercel.app/projects/Parseum/

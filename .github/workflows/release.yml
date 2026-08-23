@@ -1,11 +1,9 @@
 name: Release
 run-name: Automate release using semantic-release
 on:
-  workflow_run:
-    workflows:
-      - 'Format Files'
-    types:
-      - completed
+  push:
+    branches:
+      - main
 permissions: {}
 jobs:
   release:
