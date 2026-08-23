@@ -69,6 +69,14 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
     - [Project Showcase](https://vikiru.vercel.app/projects/JobApp)
 
+- **Saleway | Microservice Based E-commerce Web App**
+
+    - Technologies Used: `TypeScript`, `Python`, `Java`, `PostgreSQL`, `Docker`, `Kubernetes`, `Stripe`, `Clerk`
+
+    - [GitHub Repo](https://github.com/vikiru/saleway)
+
+    - [Project Showcase](https://vikiru.vercel.app/projects/Saleway)
+
 - **Noterra | AI-Powered Learning Tool**
 
     - Technologies Used: `TypeScript`, `Next.js`, `React`, `TailwindCSS`, `shadcn/ui`, `PostgreSQL`, `Drizzle`, `Zod`, `Clerk`, `Gemini AI`
@@ -84,14 +92,6 @@ This project was bootstrapped with [Vite](https://vite.dev/).
     - [GitHub Repo](https://github.com/vikiru/paleodra)
 
     - [Project Showcase](https://vikiru.vercel.app/projects/Paleodra)
-
-- **Grocadex | Grocery Expenses and Expiry Tracker**
-
-    - Technologies Used: `TypeScript`, `React Native`, `Expo`, `Gluestack UI`, `NativeWind`, `Zustand`, `TanStack Query`, `Express`, `Passport`, `Prisma`, `PostgreSQL`
-
-    - [GitHub Repo](https://github.com/vikiru/grocadex)
-
-    - [Project Showcase](https://vikiru.vercel.app/projects/Grocadex)
 
 - **Kelbrum | Anime Recommendation System**
 
@@ -123,6 +123,14 @@ This project was bootstrapped with [Vite](https://vite.dev/).
     - [GitHub Repo](https://github.com/vikiru/wordapp)
 
     - [Project Showcase](https://vikiru.vercel.app/projects/wordapp)
+
+- **Grocadex | Grocery Expenses and Expiry Tracker**
+
+    - Technologies Used: `TypeScript`, `React Native`, `Expo`, `Gluestack UI`, `NativeWind`, `Zustand`, `TanStack Query`, `Express`, `Passport`, `Prisma`, `PostgreSQL`
+
+    - [GitHub Repo](https://github.com/vikiru/grocadex)
+
+    - [Project Showcase](https://vikiru.vercel.app/projects/Grocadex)
 
 - **RESTasaurus | Dinosaur REST API**
 
