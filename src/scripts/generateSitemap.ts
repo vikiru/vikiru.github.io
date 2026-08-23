@@ -53,7 +53,18 @@ function constructSitemap(items: { loc: string; lastmod: string; priority: numbe
 
 function constructLlmsIndex() {
   const projects = projectData.projects.filter((project) => !project.hidden);
-  const personalProjectSlugs = ['Noterra', 'Paleodra', 'Grocadex', 'Kelbrum', 'Parseum', 'RESTasaurus', 'Urvo'];
+  const personalProjectSlugs = [
+    'JobApp',
+    'wordapp',
+    'Saleway',
+    'Noterra',
+    'Paleodra',
+    'Grocadex',
+    'Kelbrum',
+    'Parseum',
+    'RESTasaurus',
+    'Urvo',
+  ];
   const personalProjects = projects.filter((project) => personalProjectSlugs.includes(project.slug));
   const academicProjects = projects.filter((project) => !personalProjectSlugs.includes(project.slug));
   const lines = [
