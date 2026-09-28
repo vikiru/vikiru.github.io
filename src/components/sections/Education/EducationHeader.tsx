@@ -13,7 +13,7 @@ export function EducationHeader({ className }: EducationHeaderProps) {
   return (
     <header className={cn('space-y-8 pb-10', className)}>
       <div className="space-y-6">
-        <h1 className="font-heading text-h1 font-bold tracking-tight text-foreground">Education</h1>
+        <h1 className="font-heading text-h2 font-bold tracking-tight text-foreground sm:text-h1">Education</h1>
 
         <div className="space-y-5">
           <h2 className="font-heading text-h3 font-bold tracking-tight text-foreground">
@@ -39,7 +39,7 @@ export function EducationHeader({ className }: EducationHeaderProps) {
                   <FaLocationDot aria-hidden="true" className="size-5 text-muted-foreground" />
                 </div>
                 <div>
-                  <p className="body-small font-medium tracking-wider text-muted-foreground/60 uppercase">Location</p>
+                  <p className="body-small font-medium tracking-wider text-muted-foreground uppercase">Location</p>
                   <p className="body-base font-mono font-medium text-foreground">{location}</p>
                 </div>
               </div>

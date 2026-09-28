@@ -32,7 +32,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <FaGithub className="size-icon-sm" />
+                  <FaGithub aria-hidden="true" className="size-icon-base" />
                 </a>
                 <a
                   aria-label="Visit LinkedIn profile"
@@ -41,7 +41,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <FaLinkedin className="size-icon-sm" />
+                  <FaLinkedin aria-hidden="true" className="size-icon-base" />
                 </a>
                 <Link
                   aria-label="Send an email"
@@ -49,7 +49,7 @@ export function Footer() {
                   hash="contact"
                   to="/"
                 >
-                  <FaEnvelope className="size-icon-sm" />
+                  <FaEnvelope aria-hidden="true" className="size-icon-base" />
                 </Link>
               </div>
             </section>

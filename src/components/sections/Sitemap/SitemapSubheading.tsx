@@ -7,8 +7,8 @@ interface SitemapSubheadingProps {
 
 export function SitemapSubheading({ title, className }: SitemapSubheadingProps) {
   return (
-    <h4 className={cn('font-heading text-h6 font-medium tracking-wider text-muted-foreground uppercase', className)}>
+    <h3 className={cn('font-heading text-h6 font-medium tracking-wider text-muted-foreground uppercase', className)}>
       {title}
-    </h4>
+    </h3>
   );
 }

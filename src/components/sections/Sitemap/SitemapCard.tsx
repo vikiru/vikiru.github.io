@@ -31,29 +31,33 @@ export function SitemapCard({ href, icon, title, path, hash, label, className }:
   const displayPath = isExternal ? href : hash ? `${path}#${hash}` : path;
 
   return isExternal ? (
-    <a
-      aria-label={`Visit ${title}`}
-      className={commonClassName}
-      href={href}
-      rel={'noopener noreferrer'}
-      target="_blank"
-    >
-      <span className="mt-2 shrink-0 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
+    <a className={commonClassName} href={href} rel={'noopener noreferrer'} target="_blank">
+      <span
+        aria-hidden="true"
+        className="mt-2 shrink-0 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none"
+      >
         {icon}
       </span>
       <div className="min-w-0 flex-1">
-        <h5 className="truncate font-heading text-h5 font-medium text-foreground">{title}</h5>
-        <p className="body-small mt-0.5 truncate font-mono text-muted-foreground">{label || displayPath}</p>
+        <h3 className="truncate font-heading text-h6 font-medium text-foreground sm:text-h5">{title}</h3>
+        <p aria-hidden="true" className="body-small mt-0.5 truncate font-mono text-muted-foreground">
+          {label || displayPath}
+        </p>
       </div>
     </a>
   ) : (
-    <Link aria-label={title} className={commonClassName} {...linkProps}>
-      <span className="mt-2 shrink-0 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none">
+    <Link className={commonClassName} {...linkProps}>
+      <span
+        aria-hidden="true"
+        className="mt-2 shrink-0 transition-transform duration-200 group-hover:scale-110 motion-reduce:transition-none"
+      >
         {icon}
       </span>
       <div className="min-w-0 flex-1">
-        <h5 className="truncate font-heading text-h5 font-medium text-foreground">{title}</h5>
-        <p className="body-small mt-0.5 truncate font-mono text-muted-foreground">{label || displayPath}</p>
+        <h3 className="truncate font-heading text-h6 font-medium text-foreground sm:text-h5">{title}</h3>
+        <p aria-hidden="true" className="body-small mt-0.5 truncate font-mono text-muted-foreground">
+          {label || displayPath}
+        </p>
       </div>
     </Link>
   );
