@@ -9,7 +9,8 @@ const projectData: ProjectData = {
     {
       slug: 'JobApp',
       name: 'JobApp',
-      description: 'An AI-powered job application tracker for managing applications, resumes, and job search insights.',
+      description:
+        'An AI-powered job application tracker for managing and viewing key application statistics, manual/AI-assisted extraction of key data from job descriptions, and AI resume vs. job description analysis.',
       startDate: 'Aug 2026',
       endDate: 'Aug 2026',
       technologiesUsed: [
@@ -104,7 +105,8 @@ const projectData: ProjectData = {
     {
       slug: 'wordapp',
       name: 'Wordapp',
-      description: 'An AI-powered word of the day web app, powered by Gemini AI.',
+      description:
+        'An AI-powered word of the day app, leveraging various filtering conditions to create a curated collection of words from an initial 236k words and using Gemini AI to generate word metadata every midnight.',
       startDate: 'Aug 2026',
       endDate: 'Aug 2026',
       technologiesUsed: [
@@ -120,7 +122,7 @@ const projectData: ProjectData = {
         'Pydantic',
         'GitHub Actions',
       ],
-      featured: false,
+      featured: true,
       hidden: false,
       contributors: 'This project was completed individually',
       githubUrl: 'https://github.com/vikiru/wordapp',
@@ -247,7 +249,8 @@ const projectData: ProjectData = {
     {
       slug: 'Kelbrum',
       name: 'Kelbrum',
-      description: 'A content-based anime recommendation system that combines structured metadata, semantic embeddings, taxonomy alignment, and relationship-aware processing to generate similarity-based recommendations.',
+      description:
+        'A content-based anime recommendation system that combines structured metadata, semantic embeddings, taxonomy alignment, and relationship-aware processing to generate similarity-based recommendations.',
       startDate: 'Feb 2024',
       endDate: 'Sept 2026',
       technologiesUsed: [
@@ -258,6 +261,7 @@ const projectData: ProjectData = {
         'scikit-learn',
         'sentence-transformers',
         'TypeScript',
+        'React',
         'TanStack Start',
         'FlexSearch',
         'TailwindCSS',
@@ -484,6 +488,11 @@ const projectData: ProjectData = {
     },
   ],
 };
+
+projectData.projects = projectData.projects.toSorted((a, b) => {
+  const endDateOrder = Date.parse(b.endDate) - Date.parse(a.endDate);
+  return endDateOrder || Date.parse(b.startDate) - Date.parse(a.startDate);
+});
 
 const featuredProjects = projectData.projects.filter((project) => project.featured && !project.hidden);
 
