@@ -5,6 +5,10 @@ on:
     branches:
       - main
 permissions: {}
+
+concurrency:
+  group: format-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   format:
     runs-on: ubuntu-latest
@@ -20,10 +24,13 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
       - name: Setup pnpm
-        uses: pnpm/setup@bf5bfae7d43e2b2b1191383f5005cd3fb69b848d # v2.0.2
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.0.0
         with:
-          runtime: node@22
-          install: false
+          version: 11.22.0
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
       - name: Format files
@@ -44,6 +51,8 @@ jobs:
         run: echo "$CHANGES_EXIST"
       - name: Commit formatting changes via GitHub Actions, if changes exist
         if: steps.changes.outputs.changes_exist == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |-
           git commit -m "chore: format files via github actions"
-          git push
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
