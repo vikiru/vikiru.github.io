@@ -47,7 +47,7 @@ export function SitemapPage() {
       <div className="flex flex-1 overflow-x-hidden px-4 py-10">
         <div className="layout-content-container flex w-full flex-1 flex-col gap-8">
           <header className="flex flex-col gap-3 pb-4">
-            <h1 className="font-heading text-h1 font-bold text-foreground">Sitemap</h1>
+            <h1 className="font-heading text-h2 font-bold text-foreground sm:text-h1">Sitemap</h1>
             <p className="body-large text-muted-foreground">
               Visual overview of my portfolio website structure and all available links within the site and any relevant
               external links.

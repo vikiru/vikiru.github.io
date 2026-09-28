@@ -12,10 +12,12 @@ interface ProjectHeroProps {
 export function ProjectHero({ project }: ProjectHeroProps) {
   return (
     <section className="relative -mt-14 flex flex-1 justify-center overflow-hidden px-4 py-20 md:px-40 lg:-mt-24">
-      <div className="flex w-full flex-1 flex-col items-center gap-8 text-center">
+      <div className="flex w-full max-w-5xl flex-1 flex-col items-center gap-8 text-center">
         <div className="flex flex-col gap-6">
-          <h1 className="font-heading text-h1 font-bold tracking-tight text-balance text-foreground">{project.name}</h1>
-          <p className="body-large mx-auto max-w-[--container-measure] leading-relaxed text-muted-foreground">
+          <h1 className="font-heading text-h2 font-bold tracking-tight text-balance text-foreground sm:text-h1">
+            {project.name}
+          </h1>
+          <p className="body-large mx-auto max-w-[--container-measure] leading-relaxed text-foreground">
             {project.description}
           </p>
         </div>

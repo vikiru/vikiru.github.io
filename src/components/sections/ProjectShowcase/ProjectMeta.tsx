@@ -8,8 +8,8 @@ interface ProjectMetaProps {
 
 export function ProjectMeta({ project }: ProjectMetaProps) {
   return (
-    <section className="flex justify-center px-4 py-20 md:px-10">
-      <div className="w-full max-w-8xl">
+    <section className="flex justify-center px-4 py-16 md:px-10 md:py-20">
+      <div className="w-full max-w-6xl">
         <div className="overflow-hidden rounded-2xl border border-border bg-muted/30">
           <div className="border-b border-border p-6 md:p-8">
             <div className="mb-6 flex items-center gap-3">
@@ -19,14 +19,14 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
               >
                 <LuCode aria-hidden="true" className="size-4.5" />
               </div>
-              <h2 className="font-heading text-h4 font-bold tracking-wider text-muted-foreground uppercase">
+              <h2 className="font-heading text-h5 font-bold tracking-wide text-foreground uppercase">
                 Technologies Used
               </h2>
             </div>
-            <div className="flex flex-wrap gap-2.5">
+            <div className="flex flex-wrap gap-2">
               {project.technologiesUsed.map((tech) => (
                 <span
-                  className="body-base rounded-xl border border-border bg-background px-4 py-2 font-medium text-foreground"
+                  className="rounded-lg border border-border bg-background px-3 py-1.5 text-sm font-medium text-foreground"
                   key={tech}
                 >
                   {tech}
@@ -43,7 +43,7 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 <LuCalendar aria-hidden="true" className="size-5" />
               </div>
               <div className="flex flex-col items-start text-left">
-                <h2 className="mb-1 font-heading text-h4 font-bold tracking-wider text-muted-foreground uppercase">
+                <h2 className="mb-1 font-heading text-h5 font-bold tracking-wide text-foreground uppercase">
                   Timeline
                 </h2>
                 <span className="body-base leading-tight text-foreground uppercase">
@@ -59,10 +59,10 @@ export function ProjectMeta({ project }: ProjectMetaProps) {
                 <LuUser aria-hidden="true" className="size-5" />
               </div>
               <div className="flex flex-col items-start text-left">
-                <h2 className="mb-1 font-heading text-h4 font-bold tracking-wider text-muted-foreground uppercase">
+                <h2 className="mb-1 font-heading text-h5 font-bold tracking-wide text-foreground uppercase">
                   Co-Authors
                 </h2>
-                <span className="body-base leading-tight text-foreground">{project.contributors}</span>
+                <span className="body-base leading-relaxed text-foreground">{project.contributors}</span>
               </div>
             </div>
           </div>

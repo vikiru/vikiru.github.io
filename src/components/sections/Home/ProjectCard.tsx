@@ -46,7 +46,7 @@ export const ProjectCard = memo(function ProjectCard({ project, className }: Pro
             {project.githubUrl && (
               <a
                 aria-label={`View source code for ${project.name}`}
-                className="relative z-20 rounded-md p-2 text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none"
+                className="relative z-20 rounded-md p-3 text-muted-foreground transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                 href={project.githubUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -57,7 +57,7 @@ export const ProjectCard = memo(function ProjectCard({ project, className }: Pro
             {project.documentationUrl && (
               <a
                 aria-label={`View documentation for ${project.name}`}
-                className="relative z-20 rounded-md p-2 text-muted-foreground transition-colors hover:text-primary motion-reduce:transition-none"
+                className="relative z-20 rounded-md p-3 text-muted-foreground transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none motion-reduce:transition-none"
                 href={project.documentationUrl}
                 rel="noopener noreferrer"
                 target="_blank"
