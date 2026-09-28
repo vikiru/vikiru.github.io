@@ -4,9 +4,6 @@
   <a href="https://github.com/vikiru/vikiru.github.io/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-aqua" alt="MIT License Badge" />
   </a>
-  <a href="https://biomejs.dev">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome">
-  </a>
   <a href="https://github.com/vikiru/vikiru.github.io/releases">
     <img src="https://img.shields.io/github/v/release/vikiru/vikiru.github.io" alt="Release" />
   </a>
@@ -46,12 +43,13 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 - **Languages**: TypeScript/JavaScript, Java, Python, HTML, CSS
 - **Frameworks**: TanStack Start, Next.js, Astro, React Native, React Router, TanStack Router, Express.js, Spring, Django, Flask
 - **Libraries**: React, TanStack Query, Zustand, Zod, NumPy, SciPy, SimPy, Pandas, Polars
-- **Tools**: pnpm, Node.js, npm, pip, uv, Maven, git, GitHub, GitHub Desktop, Postman
+- **Tools**: Maven, Node.js, npm, pip, uv, git, GitHub, GitHub Desktop, Postman
 - **Database**: PostgreSQL, MySQL, SQLite, MongoDB, Prisma, Drizzle, Sequelize, Mongoose
 - **DevOps**: CircleCI, GitHub Actions
 - **Editor/IDE**: NeoVim, Zed, Antigravity IDE, VSCode, IntelliJ, Eclipse
 - **Hosting**: GitHub Pages, Heroku, Render, Vercel, Firebase, Fl0, Surge.sh
-- **OS**: Windows, Ubuntu
+- **Operating Systems**: Windows, Ubuntu
+- **AI Tooling**: Codex, Antigravity, OpenCode, KiloCode, OpenSpec
 
 ### 📚 Projects
 
@@ -61,6 +59,14 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 <summary>View</summary>
 
+- **Kelbrum | Anime Recommendation System**
+
+    - Technologies Used: `Python`, `Polars`, `NumPy`, `SciPy`, `scikit-learn`, `sentence-transformers`, `TypeScript`, `React`, `TanStack Start`, `FlexSearch`, `TailwindCSS`, `shadcn/ui`
+
+    - [GitHub Repo](https://github.com/vikiru/kelbrum)
+
+    - [Project Showcase](https://vikiru.vercel.app/projects/Kelbrum)
+
 - **JobApp | AI-Powered Job Application Tracker**
 
     - Technologies Used: `TypeScript`, `React`, `TanStack Start`, `TanStack Router`, `TanStack Query`, `TanStack Table`, `PostgreSQL`, `Drizzle`, `Zod`, `Clerk`, `Gemini AI`, `TailwindCSS`, `shadcn/ui`, `Base UI`, `dnd-kit`, `FlexSearch`, `Recharts`
@@ -69,9 +75,17 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
     - [Project Showcase](https://vikiru.vercel.app/projects/JobApp)
 
+- **Wordapp | AI-Powered Word of the Day Web App**
+
+    - Technologies Used: `TypeScript`, `Python`, `Astro`, `Tailwind CSS`, `Starwind UI`, `Gemini AI`, `MongoDB`, `FlexSearch`, `Zod`, `Pydantic`, `GitHub Actions`
+
+    - [GitHub Repo](https://github.com/vikiru/wordapp)
+
+    - [Project Showcase](https://vikiru.vercel.app/projects/Wordapp)
+
 - **Saleway | Microservice Based E-commerce Web App**
 
-    - Technologies Used: `TypeScript`, `Python`, `Java`, `PostgreSQL`, `Docker`, `Kubernetes`, `Stripe`, `Clerk`
+    - Technologies Used: `TypeScript`, `Python`, `Java`, `Next.js`, `React`, `FastAPI`, `Spring Boot`, `Flask`, `Express.js`, `Django`, `Django Ninja`, `PostgreSQL`, `Prisma`, `SQLAlchemy`, `Pydantic`, `Marshmallow`, `Clerk`, `Stripe`, `Gemini AI`, `Docker`, `Kubernetes`, `Bruno`
 
     - [GitHub Repo](https://github.com/vikiru/saleway)
 
@@ -93,17 +107,9 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
     - [Project Showcase](https://vikiru.vercel.app/projects/Paleodra)
 
-- **Kelbrum | Anime Recommendation System**
-
-    - Technologies Used: `Node.js`, `React`, `React Router`, `TailwindCSS`, `DaisyUI`, `TensorFlow.js`
-
-    - [GitHub Repo](https://github.com/vikiru/kelbrum)
-
-    - [Project Showcase](https://vikiru.vercel.app/projects/Kelbrum)
-
 - **CodeSmell | Static Analysis Tool**
 
-    - Technologies Used: `Java`, `Maven`, `JUnit`, `Python`, `JavaFX WebView`, `HTML`, `CSS`, `JavaScript`
+    - Technologies Used: `Java`, `Python`, `Maven`, `JUnit`, `JavaFX`, `HTML`, `CSS`, `JavaScript`
 
     - [GitHub Repo](https://github.com/vikiru/CodeSmell)
 
@@ -116,14 +122,6 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 <summary>View</summary>
 
-- **Wordapp | AI-Powered Word of the Day Web App**
-
-    - Technologies Used: `TypeScript`, `Python`, `Astro`, `Tailwind CSS`, `Starwind UI`, `Gemini AI`, `MongoDB`, `FlexSearch`, `Zod`, `Pydantic`, `GitHub Actions`
-
-    - [GitHub Repo](https://github.com/vikiru/wordapp)
-
-    - [Project Showcase](https://vikiru.vercel.app/projects/wordapp)
-
 - **Grocadex | Grocery Expenses and Expiry Tracker**
 
     - Technologies Used: `TypeScript`, `React Native`, `Expo`, `Gluestack UI`, `NativeWind`, `Zustand`, `TanStack Query`, `Express`, `Passport`, `Prisma`, `PostgreSQL`
@@ -134,7 +132,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 - **RESTasaurus | Dinosaur REST API**
 
-    - Technologies Used: `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
+    - Technologies Used: `JavaScript`, `Node.js`, `Express.js`, `MongoDB`, `Mongoose`, `Sinon`, `Mocha`, `Chai`
 
     - [GitHub Repo](https://github.com/vikiru/restasaurus)
 
@@ -142,7 +140,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 - **Parseum | Markdown Editor and Parser**
 
-    - Technologies Used: `Node.js`, `Peggy.js`, `React`, `Tailwind CSS`, `DaisyUI`
+    - Technologies Used: `JavaScript`, `Node.js`, `Peggy.js`, `React`, `TailwindCSS`, `DaisyUI`, `Mocha`, `Chai`
 
     - [GitHub Repo](https://github.com/vikiru/parseum)
 
@@ -150,19 +148,11 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 - **Urvo | Multi-Purpose Discord Bot**
 
-    - Technologies Used: `Node.js`, `discord.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
+    - Technologies Used: `JavaScript`, `Node.js`, `discord.js`, `SQLite`, `Sequelize`, `Mocha`, `Chai`
 
     - [GitHub Repo](https://github.com/vikiru/Urvo)
 
     - [Project Showcase](https://vikiru.vercel.app/projects/Urvo)
-
-- **Portfolio Website**
-
-    - Technologies Used: `React`, `React Router`, `Tailwind CSS`
-
-    - [GitHub Repo](https://github.com/vikiru/vikiru.github.io)
-
-    - [Project Showcase](https://vikiru.vercel.app/projects/Portfolio)
 
 - **discrete-sim | Manufacturing Facility Simulation**
 
@@ -174,7 +164,7 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 - **Mini-SurveyMonkey | Spring Boot CRUD Web App**
 
-    - Technologies Used: `Java`, `Maven`, `Spring Boot`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`, `JavaScript`
+    - Technologies Used: `Java`, `Maven`, `Spring`, `Thymeleaf`, `JUnit`, `HTML`, `CSS`, `JavaScript`
 
     - [GitHub Repo](https://github.com/vikiru/Mini-SurveyMonkey)
 
@@ -232,14 +222,14 @@ This project was bootstrapped with [Vite](https://vite.dev/).
 
 ## 🛠️ Tech Stack
 
-**Frontend**: [React](https://react.dev/), [TanStack Start](https://tanstack.com/start/latest), [Zod](https://zod.dev/), [TailwindCSS](https://tailwindcss.com/)
+**Frontend**: [React](https://react.dev/), [TanStack Start](https://tanstack.com/start/latest), [Zod](https://zod.dev/), [TailwindCSS](https://tailwindcss.com/), [Kwes Forms](https://kwesforms.com/)
 
 **Hosting**: [Vercel](https://vercel.com/)
 
 **CI**: [GitHub Actions](https://github.com/features/actions), [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
 
 **Dev Tools**: [pnpm](https://pnpm.io/), [Oxlint](https://oxc.rs/docs/guide/usage/linter), [Oxfmt](https://oxc.rs/docs/guide/usage/formatter), [Knip](https://knip.dev/), [Lefthook](https://lefthook.dev/), [commitlint](https://commitlint.js.org/), [semantic-release](https://semantic-release.gitbook.io/semantic-release)
-- **Contact Form Backend**: [Kwes Forms](https://kwesforms.com/).
+
 
 ## 📝 Prerequisites
 
