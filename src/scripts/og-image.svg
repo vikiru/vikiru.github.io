@@ -5,29 +5,19 @@
 
   <defs>
     <style>
-      @font-face {
-        font-family: 'Lato Bold';
-        src: url('../public/Lato-Bold.ttf');
-      }
-
-      @font-face {
-        font-family: 'Lato Regular';
-        src: url('../public/Lato-Regular.ttf');
-      }
-
       .title {
-        font: 76px "Lato Bold";
+        font: 76px sans-serif;
         fill: #f7f9fb;
       }
 
       .subtitle {
-        font: 30px "Lato Regular";
+        font: 30px sans-serif;
         letter-spacing: 7px;
         fill: #8b96a6;
       }
 
       .meta {
-        font: 22px "Lato Regular";
+        font: 22px sans-serif;
         fill: #a6adb8;
       }
     </style>
