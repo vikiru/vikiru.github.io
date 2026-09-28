@@ -21,6 +21,7 @@ const categories = [
   { title: 'DevOps', data: skillsData.devops.data },
   { title: 'Hosting', data: skillsData.hosting.data },
   { title: 'Operating Systems', data: skillsData.os.data },
+  { title: 'AI Tooling', data: skillsData.ai.data },
 ];
 
 function SkillCategory({ title, skills }: SkillCategoryProps) {
