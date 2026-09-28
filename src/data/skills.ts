@@ -12,6 +12,7 @@ type SkillsData = {
   devops: SkillsCategory;
   hosting: SkillsCategory;
   os: SkillsCategory;
+  ai: SkillsCategory;
 };
 
 const skillsData: SkillsData = {
@@ -57,6 +58,10 @@ const skillsData: SkillsData = {
   os: {
     data: ['Windows', 'Ubuntu'],
     title: 'Operating Systems',
+  },
+  ai: {
+    data: ['Codex', 'Antigravity', 'OpenCode', 'KiloCode', 'OpenSpec'],
+    title: 'AI Tooling',
   },
 };
 
