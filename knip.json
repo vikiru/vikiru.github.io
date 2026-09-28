@@ -1,7 +1,7 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
   "project": ["tsconfig.json"],
-  "entry": ["src/**/*.{js,mjs,cjs,ts,jsx,tsx,css}", "*.{js,mjs,cjs,ts,jsx,tsx}"],
+  "entry": ["src/router.tsx", "src/routes/**", "*.config.{js,mjs,cjs,ts}"],
   "ignore": ["src/setupTests.js"],
   "ignoreDependencies": [
     "@radix-ui/react-dialog",
