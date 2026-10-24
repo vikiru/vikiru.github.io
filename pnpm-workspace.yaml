@@ -28,6 +28,8 @@ minimumReleaseAgeExclude:
   - '@oxlint/binding-win32-arm64-msvc@1.79.0'
   - '@oxlint/binding-win32-ia32-msvc@1.79.0'
   - '@oxlint/binding-win32-x64-msvc@1.79.0'
+  - smol-toml@1.8.1
+  - fast-uri@3.1.9
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - core-js
@@ -36,3 +38,5 @@ onlyBuiltDependencies:
   - lefthook
 overrides:
   srvx@<0.11.13: ^0.11.13
+  tinypool@<2.1.2: ^2.1.2
+  tinypool@<=2.1.0: ^2.1.1
